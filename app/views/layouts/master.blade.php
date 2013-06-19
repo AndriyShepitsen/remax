@@ -1,4 +1,4 @@
-<!-- //LOCATION: r/public
+<!-- //LOCATION: remax/public
 --<!DOCTYPE html>
 <!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
@@ -76,10 +76,17 @@
 
       <div class="logoWrapper">
         <div class="row">
-          <aside class="large-4 small-6 columns">
+          <aside class="large-4 columns">
             <img src="comp/img/REMAX1Logo.png" alt="Logo Remax First Class Realty">
           </aside>
-          <aside class="large-8 small-6 columns">
+          
+         <aside class="large-4 columns">
+        Login Here
+          </aside>
+          
+
+
+          <aside class="large-4 columns">
             <div class="call right">
              <p> <strong>Call to our agents: <br/> (847)674-9797</strong></p>
             </div>
