@@ -531,7 +531,7 @@
 			"file": "app/views/layouts/master.blade.php",
 			"settings":
 			{
-				"buffer_size": 8012,
+				"buffer_size": 8013,
 				"line_ending": "Windows"
 			}
 		},
@@ -560,10 +560,10 @@
 			}
 		},
 		{
-			"file": "app/views/selling/vw_selling.blade.php",
+			"file": "app/views/buying/vw_buying.blade.php",
 			"settings":
 			{
-				"buffer_size": 580,
+				"buffer_size": 587,
 				"line_ending": "Windows"
 			}
 		}
@@ -716,6 +716,12 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/remax/app/views/selling/vw_how_an_agent_markets_your_home.blade.php",
+		"/C/xampp/htdocs/remax/app/views/selling/vw_pricing_your_home_to_sell.blade.php",
+		"/C/xampp/htdocs/remax/app/views/selling/vw_preparing_your_house_for_sale.blade.php",
+		"/C/xampp/htdocs/remax/app/views/selling/vw_consider_a_home_inspection_when_selling.blade.php",
+		"/C/xampp/htdocs/remax/app/views/selling/vw_selling.blade.php",
+		"/C/xampp/htdocs/remax/app/views/selling/vw_the_right_listing_agent.blade.php",
 		"/C/xampp/htdocs/remax/app/views/mortgage/vw_renovating_a_home.blade.php",
 		"/C/xampp/htdocs/remax/app/views/mortgage/vw_mortgages_101_basic_loan_types.blade.php",
 		"/C/xampp/htdocs/remax/app/views/mortgage/vw_down_payments_how_much_do_you_need.blade.php",
@@ -723,7 +729,6 @@
 		"/C/xampp/htdocs/remax/app/views/mortgage/vw_getting_preapproved.blade.php",
 		"/C/xampp/htdocs/remax/app/views/mortgage/vw_how_much_can_you_afford.blade.php",
 		"/C/xampp/htdocs/remax/app/views/mortgage/vw_mortgage.blade.php",
-		"/C/xampp/htdocs/remax/app/views/selling/vw_selling.blade.php",
 		"/C/xampp/htdocs/remax/app/views/about/vw_about.blade.php",
 		"/C/xampp/htdocs/remax/app/views/buying/vw_buying.blade.php",
 		"/C/xampp/htdocs/remax/app/views/vw_home.blade.php",
@@ -838,12 +843,7 @@
 		"/C/xampp/htdocs/auv/application/modules/template/controllers/template.php",
 		"/C/xampp/htdocs/auv/comp/sass/screen.scss",
 		"/C/xampp/htdocs/auv/application/modules/buying/views/vw_buying.php",
-		"/C/xampp/htdocs/auv/user_guide/libraries/migration.html",
-		"/C/xampp/htdocs/auv/application/modules/news/views/vw_news.php",
-		"/C/xampp/htdocs/auv/application/modules/buying/models/md_buying.php",
-		"/C/xampp/htdocs/auv/application/config/database.php",
-		"/C/xampp/htdocs/auv/application/config/routes.php",
-		"/C/xampp/htdocs/auv/application/modules/template/controllers"
+		"/C/xampp/htdocs/auv/user_guide/libraries/migration.html"
 	],
 	"find":
 	{
@@ -1033,8 +1033,8 @@
 						"selection":
 						[
 							[
-								611,
-								611
+								610,
+								610
 							]
 						],
 						"settings":
@@ -1188,15 +1188,15 @@
 					"file": "app/views/layouts/master.blade.php",
 					"settings":
 					{
-						"buffer_size": 8012,
+						"buffer_size": 8013,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2354,
-								2354
+								1692,
+								1692
 							]
 						],
 						"settings":
@@ -1341,8 +1341,8 @@
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
-						"translation.y": 621.0,
+						"translation.x": 16.0,
+						"translation.y": 336.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1365,8 +1365,8 @@
 						"selection":
 						[
 							[
-								570,
-								570
+								569,
+								569
 							]
 						],
 						"settings":
@@ -1528,8 +1528,8 @@
 						"selection":
 						[
 							[
-								572,
-								572
+								571,
+								571
 							]
 						],
 						"settings":
@@ -1691,8 +1691,8 @@
 						"selection":
 						[
 							[
-								620,
-								620
+								619,
+								619
 							]
 						],
 						"settings":
@@ -1844,18 +1844,18 @@
 				},
 				{
 					"buffer": 5,
-					"file": "app/views/selling/vw_selling.blade.php",
+					"file": "app/views/buying/vw_buying.blade.php",
 					"settings":
 					{
-						"buffer_size": 580,
+						"buffer_size": 587,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								101,
-								101
+								109,
+								109
 							]
 						],
 						"settings":
@@ -2035,7 +2035,7 @@
 		"cols":
 		[
 			0.0,
-			0.468824940048,
+			0.493629117594,
 			1.0
 		],
 		"rows":
@@ -2462,6 +2462,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 252.0,
+	"side_bar_width": 388.0,
 	"status_bar_visible": true
 }
