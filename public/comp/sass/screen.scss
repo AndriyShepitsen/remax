@@ -1,0 +1,169 @@
+//LOCATION: remaxfc 
+@import "compass";
+@import "app";
+@import "foundation";
+@import "settings";
+@import "sassybuttons";
+
+
+* {
+	vertical-align: top;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+button{
+	@include sassy-button("glass", 10px, 19px, #4ba3cc);
+}
+.navPanel{
+	background-color: #313131;
+}
+.top-bar{
+	margin-bottom: 0 !important;
+	background-color: #313131 !important;
+}
+.top-bar-section ul li > a {
+	background-color: #313131 !important;
+}
+.toggle-topbar, .top-bar.expanded .title-area{
+	background-color: #313131 !important;
+}
+.logoWrapper{
+	padding: 10px;
+	background-color: darken(#F6F6F6, 5%);
+}
+
+.call{
+	font-size: 20px;
+	color: red;
+	line-height: 28px;
+	p{
+	text-align: right;
+	}
+}
+
+#mainContent{
+	padding-top: 10px;
+	background-color:#F6F6F6;
+	.small-block-grid-3 > li{
+		margin-bottom: 15px !important;
+	}
+	a{
+		color: #393939;
+	}
+	h4{
+		margin-bottom: 0px !important;
+	}
+}
+
+.orbit-container{
+height:400px;
+}
+
+
+.find{
+	display: inline-block;
+	font-weight:bold;
+	margin-bottom: 15px;
+	font-size: 20px;
+	color: #525252;
+}
+.findInput{
+	margin-bottom: 15px !important;
+}
+.connectFooter{
+	display: inline-block;
+	font-size: 11px;
+	float: left;
+	font-weight: bold;
+}
+.vcard .fn{
+	font-size: 12px;
+}
+.vcard .street-address{
+	font-size: 12px;
+}
+.vcard .locality{
+	font-size: 12px;
+}
+.vcard .state{
+	font-size: 12px;
+}
+.vcard .zip{
+	font-size: 12px;
+	display: inline-block;
+}
+.vcard .email{
+	a{
+		font-size: 11px !important;
+	}
+}
+footer{
+	background-color: darken(#F6F6F6, 5%);
+	padding-top: 10px;
+
+	.row .columns{
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+	.prop{
+		font-size: 11px !important;
+
+	}
+	.row.ul.li.a{
+
+		color: #F7F7F4;
+		cursor: pointer;
+
+	}
+
+
+}
+[class*="block-grid-"] {
+    display: block;
+    margin: 0 10px !important;
+    padding: 0;
+}
+.contactFooter{
+	padding-left: 10px;
+	font-size: 11px;
+	font-weight: bold !important;
+	margin-left: 10px;
+	margin-top: 5px !important;
+	margin-bottom: 10px !important;
+	display: inline-block;
+}
+.social{
+	padding-top: 10px;
+	padding-bottom: 20px;
+	// margin-left: 5px; 
+}
+.mls{
+	margin-top: 90px;
+	text-align: bottom;
+}
+.properties{
+	margin-left: 15px;
+}
+.propertiesFooter{
+	font-weight: bold;
+	// margin-top: 3px !important;
+	display: inline-block;
+	margin-bottom: 5px;
+	color: #393939;
+}
+.copyright{
+	background-color: #3F3F3F;
+	padding-top: 10px;
+	a{
+		color: #F7F7F4;
+	}
+}
+.copy{
+		color: #FFFFFF !important;
+	}
