@@ -1,6 +1,6 @@
 <?php
 
-class Renovating_a_homeControllerController extends BaseController {
+class Renovating_a_homeController extends BaseController {
 
 	/*
 	|--------------------------------------------------------------------------
@@ -17,7 +17,7 @@ class Renovating_a_homeControllerController extends BaseController {
 
 	public function index()
 	{
-		return View::make('mortgage.vw_renovating_a_homeController');
+		return View::make('mortgage.vw_renovating_a_home');
 
 	}
 

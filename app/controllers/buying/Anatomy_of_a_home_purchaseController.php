@@ -1,6 +1,6 @@
 <?php
 
-class Anatomy_of_a_home_purchase.Controller extends BaseController {
+class Anatomy_of_a_home_purchaseController extends BaseController {
 
 	/*
 	|--------------------------------------------------------------------------
@@ -17,7 +17,7 @@ class Anatomy_of_a_home_purchase.Controller extends BaseController {
 
 	public function index()
 	{
-		return View::make('buying.vw_anatomy_of_a_home_purchase.blade');
+		return View::make('buying.vw_anatomy_of_a_home_purchase');
 	}
 
 }

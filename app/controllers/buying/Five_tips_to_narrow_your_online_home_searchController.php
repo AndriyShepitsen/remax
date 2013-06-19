@@ -1,6 +1,6 @@
 <?php
 
-class Five_tips_to_narrow_your_online_home_search.Controller extends BaseController {
+class Five_tips_to_narrow_your_online_home_searchController extends BaseController {
 
 	/*
 	|--------------------------------------------------------------------------
@@ -17,7 +17,7 @@ class Five_tips_to_narrow_your_online_home_search.Controller extends BaseControl
 
 	public function index()
 	{
-		return View::make('buying.vw_five_tips_to_narrow_your_online_home_search.blade');
+		return View::make('buying.vw_five_tips_to_narrow_your_online_home_search');
 	}
 
 }

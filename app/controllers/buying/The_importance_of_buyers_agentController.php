@@ -1,6 +1,6 @@
 <?php
 
-class The_importance_of_buyers_agent.Controller extends BaseController {
+class The_importance_of_buyers_agentController extends BaseController {
 
 	/*
 	|--------------------------------------------------------------------------
@@ -17,7 +17,7 @@ class The_importance_of_buyers_agent.Controller extends BaseController {
 
 	public function index()
 	{
-		return View::make('buying.vw_the_importance_of_buyers_agent.blade');
+		return View::make('buying.vw_the_importance_of_buyers_agent');
 	}
 
 }

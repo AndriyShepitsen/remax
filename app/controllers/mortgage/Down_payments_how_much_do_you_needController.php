@@ -1,6 +1,6 @@
 <?php
 
-class Anatomy_of_a_home_purchaseController extends BaseController {
+class Down_payments_how_much_do_you_needController extends BaseController {
 
 	/*
 	|--------------------------------------------------------------------------
@@ -17,7 +17,7 @@ class Anatomy_of_a_home_purchaseController extends BaseController {
 
 	public function index()
 	{
-		return View::make('mortgage.vw_anatomy_of_a_home_purchase');
+		return View::make('mortgage.vw_down_payments_how_much_do_you_need');
 
 	}
 
