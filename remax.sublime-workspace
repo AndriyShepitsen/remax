@@ -519,6 +519,7 @@
 	},
 	"buffers":
 	[
+<<<<<<< HEAD
 		{
 			"file": "app/routes.php",
 			"settings":
@@ -567,6 +568,8 @@
 				"line_ending": "Windows"
 			}
 		}
+=======
+>>>>>>> ab8f0c437822d4ee57048d27e4a261773180f211
 	],
 	"build_system": "",
 	"command_palette":
@@ -716,6 +719,7 @@
 	},
 	"file_history":
 	[
+<<<<<<< HEAD
 		"/C/xampp/htdocs/remax/app/views/selling/vw_how_an_agent_markets_your_home.blade.php",
 		"/C/xampp/htdocs/remax/app/views/selling/vw_pricing_your_home_to_sell.blade.php",
 		"/C/xampp/htdocs/remax/app/views/selling/vw_preparing_your_house_for_sale.blade.php",
@@ -737,6 +741,8 @@
 		"/C/xampp/htdocs/remax/app/views/vw_home.php",
 		"/C/xampp/htdocs/remax/app/views/hello.php",
 		"/C/xampp/htdocs/remax/app/filters.php",
+=======
+>>>>>>> ab8f0c437822d4ee57048d27e4a261773180f211
 		"/C/xampp/htdocs/r/app/routes.php",
 		"/C/xampp/htdocs/remaxfc/application/modules/about/views/vw_about.php",
 		"/C/xampp/htdocs/r/app/models/User.php",
@@ -843,7 +849,32 @@
 		"/C/xampp/htdocs/auv/application/modules/template/controllers/template.php",
 		"/C/xampp/htdocs/auv/comp/sass/screen.scss",
 		"/C/xampp/htdocs/auv/application/modules/buying/views/vw_buying.php",
+<<<<<<< HEAD
 		"/C/xampp/htdocs/auv/user_guide/libraries/migration.html"
+=======
+		"/C/xampp/htdocs/auv/user_guide/libraries/migration.html",
+		"/C/xampp/htdocs/auv/application/modules/news/views/vw_news.php",
+		"/C/xampp/htdocs/auv/application/modules/buying/models/md_buying.php",
+		"/C/xampp/htdocs/auv/application/config/database.php",
+		"/C/xampp/htdocs/auv/application/config/routes.php",
+		"/C/xampp/htdocs/auv/application/modules/template/controllers",
+		"/C/xampp/htdocs/auv/application/controllers/home.php",
+		"/C/xampp/htdocs/auv/application/.htaccess",
+		"/C/xampp/htdocs/auv/application/config/config.php",
+		"/C/xampp/htdocs/auv/application/config/autoload.php",
+		"/C/xampp/htdocs/auv/application/controllers/welcome.php",
+		"/C/xampp/htdocs/auv/.htaccess",
+		"/C/xampp/htdocs/ukr/application/config/database.php",
+		"/C/xampp/htdocs/ukr/application/modules/tasks/models/tasks.php",
+		"/C/xampp/htdocs/ukr/application/modules/nofun/models/tasks.php",
+		"/C/xampp/htdocs/ukr/application/controllers/hello.php",
+		"/C/xampp/htdocs/ukr/application/models/nofun/controllers/nofun.php",
+		"/C/xampp/htdocs/ukr/application/config/autoload.php",
+		"/C/xampp/htdocs/ukr/application/config/config.php",
+		"/C/xampp/htdocs/ukr/application/config/routes.php",
+		"/C/xampp/htdocs/ukr/application/config/index.html",
+		"/C/xampp/htdocs/a/application/modules/template/views/includes/footer.php"
+>>>>>>> ab8f0c437822d4ee57048d27e4a261773180f211
 	],
 	"find":
 	{
@@ -1018,6 +1049,7 @@
 	"groups":
 	[
 		{
+<<<<<<< HEAD
 			"selected": 1,
 			"sheets":
 			[
@@ -2004,6 +2036,10 @@
 					},
 					"type": "text"
 				}
+=======
+			"sheets":
+			[
+>>>>>>> ab8f0c437822d4ee57048d27e4a261773180f211
 			]
 		}
 	],
@@ -2024,18 +2060,15 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+<<<<<<< HEAD
 			0.493629117594,
+=======
+>>>>>>> ab8f0c437822d4ee57048d27e4a261773180f211
 			1.0
 		],
 		"rows":
