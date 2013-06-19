@@ -9,6 +9,12 @@
 		"classmap": [
 			"app/commands",
 			"app/controllers",
+			"app/controllers/home",
+			"app/controllers/about",
+			"app/controllers/buying",
+			"app/controllers/selling",
+			"app/controllers/contact",
+			"app/controllers/mortgage",
 			"app/models",
 			"app/database/migrations",
 			"app/database/seeds",
