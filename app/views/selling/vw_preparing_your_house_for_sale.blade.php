@@ -1,13 +1,20 @@
 @extends('layouts.master')
 @section('content')
+<!-- //LOCATION: remax/public/preparing_your_house_for_sale
+-->
 
 <div class="mainContent">
-	<h1>Preparing Your House for Sale</h1>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
-@stop
+	<div class="row">
+		<div class="large-12 columns">
+			<h1>Prepping Your House for Sale</h1>
+			<hr/>
+			<p>Potential buyers get an impression of your home – either positive or negative – within 30 seconds of walking through the door. Having them see your home in tip-top selling shape is an absolute must.</p>
+			<p>There are countless ways to put the freshest face on your home, many of them costing little more than a bit of your time. Here are a few pointers for the most significant impact:</p>
+
+			<div class="panel">
+				
+			</div>
+			</div>
+		</div>
+	</div>
+	@stop
