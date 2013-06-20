@@ -76,10 +76,17 @@
 
       <div class="logoWrapper">
         <div class="row">
-          <aside class="large-4 small-6 columns">
+          <aside class="large-4 columns">
             <img src="comp/img/REMAX1Logo.png" alt="Logo Remax First Class Realty">
           </aside>
-          <aside class="large-8 small-6 columns">
+          
+         <aside class="large-4 columns">
+        Login Here
+          </aside>
+          
+
+
+          <aside class="large-4 columns">
             <div class="call right">
              <p> <strong>Call to our agents: <br/> (847)674-9797</strong></p>
             </div>
