@@ -527,6 +527,7 @@
 			"settings":
 			{
 <<<<<<< HEAD
+<<<<<<< HEAD
 				"buffer_size": 3206,
 				"line_ending": "Windows"
 			}
@@ -543,10 +544,14 @@
 =======
 				"buffer_size": 680,
 >>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
+=======
+				"buffer_size": 680,
+>>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
 				"line_ending": "Unix"
 			}
 		},
 		{
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 			"contents": "[SideBarGit@SublimeText remax/] git rebase master\n\n# Improve this command, the output or the tab title by posting here:\n# http://www.sublimetext.com/forum/viewtopic.php?f=5&t=3405\n# Tip: F5 will run the command again and refresh the contents of this tab\n\nIt seems that there is already a rebase-apply directory, and\nI wonder if you are in the middle of another rebase.  If that is the\ncase, please try\n	git rebase (--continue | --abort | --skip)\nIf that is not the case, please\n	rm -fr \"/c/xampp/htdocs/remax/.git/rebase-apply\"\nand run me again.  I am stopping in case you still have something\nvaluable there.",
@@ -587,6 +592,15 @@
 			"settings":
 			{
 				"buffer_size": 843,
+=======
+			"contents": "<?php\n",
+			"file": "app/controllers/Login",
+			"file_size": 0,
+			"file_write_time": 130161432382081731,
+			"settings":
+			{
+				"buffer_size": 6,
+>>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
 =======
 			"contents": "<?php\n",
 			"file": "app/controllers/Login",
@@ -768,6 +782,7 @@
 		"/C/xampp/htdocs/remax/app/controllers/home/HomeController.php",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		"/C/xampp/htdocs/remax/app/views/layouts/master.blade.php",
 		"/C/xampp/htdocs/remax/app/views/home/vw_home.blade.php",
 		"/C/xampp/htdocs/remax/app/controllers/selling/Pricing_your_home_to_sellController.php",
@@ -837,12 +852,22 @@
 		"/C/xampp/htdocs/remax/app/database/seeds/UserTableSeeder.php",
 		"/C/xampp/htdocs/remax/app/filters.php",
 >>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
+=======
+		"/C/xampp/htdocs/remax/app/database/migrations/2013_06_19_185755_create_user_table.php",
+		"/C/xampp/htdocs/remax/app/models/User.php",
+		"/C/xampp/htdocs/remax/app/database/seeds/DatabaseSeeder.php",
+		"/C/xampp/htdocs/remax/app/database/seeds/UserTableSeeder.php",
+		"/C/xampp/htdocs/remax/app/filters.php",
+>>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
 		"/C/xampp/htdocs/remax/app/config/database.php",
 		"/C/xampp/htdocs/remax/composer.json",
 		"/C/xampp/htdocs/remax/public/packages/.gitkeep",
 		"/C/xampp/htdocs/remax/.gitattributes",
 		"/C/xampp/htdocs/remax/.gitignore",
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
+=======
 >>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
 =======
 >>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
@@ -967,6 +992,9 @@
 		"/C/xampp/htdocs/auv/application/config/autoload.php",
 		"/C/xampp/htdocs/auv/application/controllers/welcome.php"
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
+=======
 >>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
 =======
 >>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
@@ -994,8 +1022,12 @@
 		[
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			"vw_about",
 			"about",
+=======
+			"Route",
+>>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
 =======
 			"Route",
 >>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
@@ -1133,6 +1165,9 @@
 			"icon-sf7affd0925.png",
 			".png"
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
+=======
 >>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
 =======
 >>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
@@ -1170,7 +1205,11 @@
 					{
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 						"buffer_size": 3206,
+=======
+						"buffer_size": 680,
+>>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
 =======
 						"buffer_size": 680,
 >>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
@@ -1185,12 +1224,17 @@
 							[
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 								2954,
 								2954
 							],
 							[
 								2993,
 								2993
+=======
+								592,
+								592
+>>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
 =======
 								592,
 								592
@@ -1345,8 +1389,11 @@
 						"translation.x": 0.0,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 						"translation.y": 399.0,
 =======
+=======
+>>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
 =======
 >>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
 						"translation.y": 0.0,
@@ -1359,10 +1406,17 @@
 					"buffer": 1,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 					"file": "/C/Users/ckotcha/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
 					"settings":
 					{
 						"buffer_size": 1414,
+=======
+					"file": "app/controllers/Login",
+					"settings":
+					{
+						"buffer_size": 6,
+>>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
 =======
 					"file": "app/controllers/Login",
 					"settings":
@@ -1383,8 +1437,13 @@
 							[
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 								1196,
 								1196
+=======
+								6,
+								6
+>>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
 =======
 								6,
 								6
@@ -1535,9 +1594,13 @@
 							"synced": false,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 							"syntax": "Packages/AAAPackageDev/Support/Sublime Key Map.tmLanguage",
 							"tab_size": 3,
 							"translate_tabs_to_spaces": true
+=======
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage"
+>>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
 =======
 							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage"
 >>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
@@ -1550,6 +1613,7 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 				},
@@ -2381,6 +2445,8 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
+=======
+>>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
 =======
 >>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
 =======
