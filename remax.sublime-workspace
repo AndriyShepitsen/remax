@@ -526,6 +526,7 @@
 			"file_write_time": 130161484600533876,
 			"settings":
 			{
+<<<<<<< HEAD
 				"buffer_size": 3206,
 				"line_ending": "Windows"
 			}
@@ -535,10 +536,14 @@
 			"settings":
 			{
 				"buffer_size": 1414,
+=======
+				"buffer_size": 680,
+>>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
 				"line_ending": "Unix"
 			}
 		},
 		{
+<<<<<<< HEAD
 			"contents": "[SideBarGit@SublimeText remax/] git rebase master\n\n# Improve this command, the output or the tab title by posting here:\n# http://www.sublimetext.com/forum/viewtopic.php?f=5&t=3405\n# Tip: F5 will run the command again and refresh the contents of this tab\n\nIt seems that there is already a rebase-apply directory, and\nI wonder if you are in the middle of another rebase.  If that is the\ncase, please try\n	git rebase (--continue | --abort | --skip)\nIf that is not the case, please\n	rm -fr \"/c/xampp/htdocs/remax/.git/rebase-apply\"\nand run me again.  I am stopping in case you still have something\nvaluable there.",
 			"settings":
 			{
@@ -577,6 +582,15 @@
 			"settings":
 			{
 				"buffer_size": 843,
+=======
+			"contents": "<?php\n",
+			"file": "app/controllers/Login",
+			"file_size": 0,
+			"file_write_time": 130161432382081731,
+			"settings":
+			{
+				"buffer_size": 6,
+>>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
 				"line_ending": "Windows"
 			}
 		}
@@ -584,9 +598,21 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 210.0,
+		"height": 375.0,
 		"selected_items":
 		[
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
 			[
 				"blade",
 				"Set Syntax: PHP - Laravel Blade"
@@ -602,10 +628,6 @@
 			[
 				"Snippet: ",
 				"Snippet: add"
-			],
-			[
-				"Package Control: ",
-				"Package Control: Remove Package"
 			],
 			[
 				"rea",
@@ -730,6 +752,7 @@
 	"file_history":
 	[
 		"/C/xampp/htdocs/remax/app/controllers/home/HomeController.php",
+<<<<<<< HEAD
 		"/C/xampp/htdocs/remax/app/views/layouts/master.blade.php",
 		"/C/xampp/htdocs/remax/app/views/home/vw_home.blade.php",
 		"/C/xampp/htdocs/remax/app/controllers/selling/Pricing_your_home_to_sellController.php",
@@ -786,6 +809,18 @@
 		"/C/xampp/htdocs/remax/app/views/vw_home.php",
 		"/C/xampp/htdocs/remax/app/views/hello.php",
 		"/C/xampp/htdocs/remax/app/filters.php",
+=======
+		"/C/xampp/htdocs/remax/app/database/migrations/2013_06_19_185755_create_user_table.php",
+		"/C/xampp/htdocs/remax/app/models/User.php",
+		"/C/xampp/htdocs/remax/app/database/seeds/DatabaseSeeder.php",
+		"/C/xampp/htdocs/remax/app/database/seeds/UserTableSeeder.php",
+		"/C/xampp/htdocs/remax/app/filters.php",
+		"/C/xampp/htdocs/remax/app/config/database.php",
+		"/C/xampp/htdocs/remax/composer.json",
+		"/C/xampp/htdocs/remax/public/packages/.gitkeep",
+		"/C/xampp/htdocs/remax/.gitattributes",
+		"/C/xampp/htdocs/remax/.gitignore",
+>>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
 		"/C/xampp/htdocs/r/app/routes.php",
 		"/C/xampp/htdocs/remaxfc/application/modules/about/views/vw_about.php",
 		"/C/xampp/htdocs/r/app/models/User.php",
@@ -856,7 +891,57 @@
 		"/C/xampp/htdocs/afc/code/style.css",
 		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
 		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+<<<<<<< HEAD
 		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings"
+=======
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/xampp/htdocs/afc/application/config/config.php",
+		"/C/xampp/htdocs/afc/application/config/database.php",
+		"/C/xampp/htdocs/afc/comp/javascripts/script.js",
+		"/C/xampp/htdocs/afc/comp/javascripts/vendor/script.js",
+		"/C/xampp/htdocs/afc/index.php",
+		"/C/xampp/htdocs/afc/comp/sass/side-nav",
+		"/C/xampp/htdocs/afc/comp/javascripts/welcome.js",
+		"/C/xampp/htdocs/afc/comp/javascripts/helloworld.js",
+		"/C/xampp/htdocs/afc/user_guide/general/controllers.html",
+		"/C/xampp/htdocs/afc/application/modules/template/helloworld.js",
+		"/C/xampp/htdocs/afc/application/modules/helloworld/helloworld.js",
+		"/C/xampp/htdocs/afc/application/modules/hello_world/helloworld.js",
+		"/C/xampp/htdocs/afc/application/modules/hello_world/hello_world.js",
+		"/C/xampp/htdocs/afc/application/modules/news/controllers/news.php",
+		"/C/xampp/htdocs/afc/application/modules/news/models/md_news.php",
+		"/C/xampp/htdocs/afc/application/modules/news/views/vw_news.php",
+		"/C/xampp/htdocs/afc/application/modules/about_us/controllers/name.php",
+		"/C/xampp/htdocs/afc/application/modules/buying/models/md_buying.php",
+		"/C/xampp/htdocs/afc/application/modules/buying/views/vw_buying.php",
+		"/C/xampp/htdocs/afc/application/modules/buying/controllers/buying.php",
+		"/C/xampp/htdocs/afc/application/modules/selling/models/md_selling.php",
+		"/C/xampp/htdocs/afc/application/modules/buying/controllers/md_buying.php",
+		"/C/xampp/htdocs/afc/application/controllers/home.php",
+		"/C/xampp/htdocs/afc/application/controllers/welcome.php",
+		"/C/xampp/htdocs/afc/application/config/autoload.php",
+		"/C/xampp/htdocs/afc/application/config/routes.php",
+		"/C/xampp/htdocs/auv/application/modules/news/controllers/news.php",
+		"/C/xampp/htdocs/auv/application/modules/news/models/md_news.php",
+		"/C/xampp/htdocs/auv/application/modules/buying/controllers/buying.php",
+		"/C/xampp/htdocs/auv/application/modules/home/views/vw_home.php",
+		"/C/xampp/htdocs/auv/application/modules/home/controllers/home.php",
+		"/C/xampp/htdocs/auv/application/modules/template/views/vw_template.php",
+		"/C/xampp/htdocs/auv/application/modules/template/controllers/template.php",
+		"/C/xampp/htdocs/auv/comp/sass/screen.scss",
+		"/C/xampp/htdocs/auv/application/modules/buying/views/vw_buying.php",
+		"/C/xampp/htdocs/auv/user_guide/libraries/migration.html",
+		"/C/xampp/htdocs/auv/application/modules/news/views/vw_news.php",
+		"/C/xampp/htdocs/auv/application/modules/buying/models/md_buying.php",
+		"/C/xampp/htdocs/auv/application/config/database.php",
+		"/C/xampp/htdocs/auv/application/config/routes.php",
+		"/C/xampp/htdocs/auv/application/modules/template/controllers",
+		"/C/xampp/htdocs/auv/application/controllers/home.php",
+		"/C/xampp/htdocs/auv/application/.htaccess",
+		"/C/xampp/htdocs/auv/application/config/config.php",
+		"/C/xampp/htdocs/auv/application/config/autoload.php",
+		"/C/xampp/htdocs/auv/application/controllers/welcome.php"
+>>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
 	],
 	"find":
 	{
@@ -879,8 +964,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+<<<<<<< HEAD
 			"vw_about",
 			"about",
+=======
+			"Route",
+>>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
 			"testp/public",
 			"orbit-container",
 			"orbi",
@@ -1006,7 +1095,12 @@
 			"facebookHeaderLogo",
 			"userName",
 			"companyNameStyle",
+<<<<<<< HEAD
 			"icon-sf7affd0925.png"
+=======
+			"icon-sf7affd0925.png",
+			".png"
+>>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1039,19 +1133,28 @@
 					"file": "app/routes.php",
 					"settings":
 					{
+<<<<<<< HEAD
 						"buffer_size": 3206,
+=======
+						"buffer_size": 680,
+>>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
+<<<<<<< HEAD
 								2954,
 								2954
 							],
 							[
 								2993,
 								2993
+=======
+								592,
+								592
+>>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
 							]
 						],
 						"settings":
@@ -1196,25 +1299,41 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
+<<<<<<< HEAD
 						"translation.y": 399.0,
+=======
+						"translation.y": 0.0,
+>>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+<<<<<<< HEAD
 					"file": "/C/Users/ckotcha/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
 					"settings":
 					{
 						"buffer_size": 1414,
+=======
+					"file": "app/controllers/Login",
+					"settings":
+					{
+						"buffer_size": 6,
+>>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
+<<<<<<< HEAD
 								1196,
 								1196
+=======
+								6,
+								6
+>>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
 							]
 						],
 						"settings":
@@ -1355,15 +1474,20 @@
 							},
 							"sublimelinter_wrap_find": true,
 							"synced": false,
+<<<<<<< HEAD
 							"syntax": "Packages/AAAPackageDev/Support/Sublime Key Map.tmLanguage",
 							"tab_size": 3,
 							"translate_tabs_to_spaces": true
+=======
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage"
+>>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
+<<<<<<< HEAD
 				},
 				{
 					"buffer": 2,
@@ -2193,6 +2317,8 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
+=======
+>>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
 				}
 			]
 		}
@@ -2263,6 +2389,10 @@
 		"selected_items":
 		[
 			[
+				"home",
+				"app/controllers/home/HomeController.php"
+			],
+			[
 				"rou",
 				"app/routes.php"
 			],
@@ -2321,10 +2451,6 @@
 			[
 				"sc",
 				"afc/comp/sass/screen.scss"
-			],
-			[
-				"home",
-				"afc/application/modules/home/controllers/home.php"
 			],
 			[
 				"vwt",
@@ -2645,6 +2771,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 388.0,
+	"side_bar_width": 459.0,
 	"status_bar_visible": true
 }
