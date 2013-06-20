@@ -17,7 +17,6 @@
 //	return View::make('hello');
 //});
 
-<<<<<<< HEAD
 /* =home */
 
 Route::get('/', array('as'=>'home', 'uses'=>'HomeController@index'));
@@ -57,15 +56,6 @@ Route::get('/renovating_a_home', array('as'=>'renovating_a_home', 'uses'=>'Renov
 
 Route::get('/contact', array('as'=>'contact', 'uses'=>'ContactController@index'));
 
+Route::post('/login', array('as'=>'login', 'uses'=>'LoginController@index'));
 
-=======
-	Route::get('/', array('as'=>'home', 'uses'=>'HomeController@index'));
-<<<<<<< HEAD
-	Route::post('/login', array('as'=>'login', 'uses'=>'LoginController@index'));
 
-	Route::get('/about', array('as'=>'about', 'uses'=>'AboutController@index'));
-=======
-	// Route::get('/login', array('as'=>'login', 'uses'=>'Login@index'));
-	Route::get('/about', array('as'=>'about', 'uses'=>'AboutController@index'));
->>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
->>>>>>> 15c2adc68c5f5cf1a8a731c7795efff993feec99
