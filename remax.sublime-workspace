@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"rou",
+				"route"
+			],
+			[
+				"For",
+				"Form-open	Form-open"
+			],
+			[
+				"ee",
+				"ee	echo_"
+			],
+			[
 				"R",
 				"Routes"
 			],
@@ -502,24 +514,13 @@
 			[
 				"file",
 				"filesList"
-			],
-			[
-				"p",
-				"public"
-			],
-			[
-				"is",
-				"isAdmin"
-			],
-			[
-				"fil",
-				"filesList"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
+<<<<<<< HEAD
 			"file": "app/views/layouts/master.blade.php",
 			"settings":
 			{
@@ -567,6 +568,15 @@
 			"settings":
 			{
 				"buffer_size": 2501,
+=======
+			"contents": "<?php\n\nclass LoginController extends BaseController {\n\n\n	/*\n	|--------------------------------------------------------------------------\n	| Default Home Controller\n	|--------------------------------------------------------------------------\n	|\n	| You may wish to use controllers instead of, or in addition to, Closure\n	| based routes. That's great! Here is an example controller method to\n	| get you started. To route to this controller, just add the route:\n	|\n	|	Route::get('/', 'HomeController@showWelcome');\n	|\n	*/\n\n	public function index()\n	{\n\n		\n		return View::make('addfdmin.vw_panel');\n	}\n\n}",
+			"file": "app/controllers/LoginController.php",
+			"file_size": 614,
+			"file_write_time": 130161451006686997,
+			"settings":
+			{
+				"buffer_size": 598,
+>>>>>>> 696fc42882fd0ebdb3883cc7c83f1bbb52e22548
 				"line_ending": "Windows"
 			}
 		}
@@ -578,6 +588,29 @@
 		"selected_items":
 		[
 			[
+<<<<<<< HEAD
+=======
+				"lala",
+				"Laravel Generate: Resource"
+			],
+			[
+				"la",
+				"Laravel Generate: Model"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+>>>>>>> 696fc42882fd0ebdb3883cc7c83f1bbb52e22548
 				"blade",
 				"Set Syntax: PHP - Laravel Blade"
 			],
@@ -719,6 +752,7 @@
 	},
 	"file_history":
 	[
+<<<<<<< HEAD
 		"/C/xampp/htdocs/remax/app/views/buying/vw_the_benefits_of_home_ownership.blade.php",
 		"/C/xampp/htdocs/remax/app/views/buying/vw_the_importance_of_buyers_agent.blade.php",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
@@ -785,6 +819,35 @@
 		"/C/xampp/htdocs/remax/app/views/layouts/vw_about.blade.php",
 		"/C/xampp/htdocs/remax/app/views/vw_home.php",
 		"/C/xampp/htdocs/remax/app/views/hello.php",
+=======
+		"/C/xampp/htdocs/remax/app/views/admin/vw_panel.blade.php",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 2/Packages/User/Sublime Key Map.sublime-settings",
+		"/C/xampp/htdocs/remax/app/routes.php",
+		"/C/xampp/htdocs/remax/artisan",
+		"/C/xampp/htdocs/remax/app/views/layouts/master.blade.php",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 2/Packages/User/deltoless.sublime-macro",
+		"/C/xampp/htdocs/remax/app/filters.php",
+		"//Kasper/c/xampp/htdocs/remax/app/routes.php",
+		"//Kasper/C/Users/ckotcha/AppData/Roaming/Sublime Text 2/Packages/User/ee.sublime-snippet",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 2/Packages/User/ee.sublime-snippet",
+		"/C/xampp/htdocs/remax/app/controllers/Login.php",
+		"/C/xampp/htdocs/remax/app/views/admin/vw_about.blade.php",
+		"/C/xampp/htdocs/remax/app/database/migrations/2013_06_19_185755_create_user_table.php",
+		"/C/xampp/htdocs/remax/app/controllers/Login",
+		"/C/xampp/htdocs/remax/app/controllers/home/HomeController.php",
+		"/C/xampp/htdocs/remax/app/models/User.php",
+		"/C/xampp/htdocs/remax/app/database/seeds/DatabaseSeeder.php",
+		"/C/xampp/htdocs/remax/app/database/seeds/UserTableSeeder.php",
+		"/C/xampp/htdocs/remax/app/config/database.php",
+		"/C/xampp/htdocs/remax/composer.json",
+		"/C/xampp/htdocs/remax/public/packages/.gitkeep",
+		"/C/xampp/htdocs/remax/.gitattributes",
+		"/C/xampp/htdocs/remax/.gitignore",
+>>>>>>> 696fc42882fd0ebdb3883cc7c83f1bbb52e22548
 		"/C/xampp/htdocs/r/app/routes.php",
 		"/C/xampp/htdocs/remaxfc/application/modules/about/views/vw_about.php",
 		"/C/xampp/htdocs/r/app/models/User.php",
@@ -843,10 +906,52 @@
 		"/C/xampp/htdocs/afc/comp/sass/screen2.scss",
 		"/C/xampp/htdocs/afc/application/modules/home/controllers/home.php",
 		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 2/Packages/Vintage Surround/README.md",
-		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 2/Packages/Vintage/README.TXT",
 		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 2/Packages/VintageEx/README.rst",
+<<<<<<< HEAD
 		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 2/Packages/Vintage Numbers/README.md"
+=======
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 2/Packages/Vintage Numbers/README.md",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 2/Packages/Vintage-Origami/readme.md",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 2/Packages/View Movement/README.md",
+		"/C/xampp/htdocs/afc/application/modules/about_us/controllers/about_us.php",
+		"/C/xampp/htdocs/afc/application/modules/contact_us/controllers/contact_us.php",
+		"/C/xampp/htdocs/afc/code/style.css",
+		"/C/xampp/htdocs/afc/application/config/config.php",
+		"/C/xampp/htdocs/afc/application/config/database.php",
+		"/C/xampp/htdocs/afc/comp/javascripts/script.js",
+		"/C/xampp/htdocs/afc/comp/javascripts/vendor/script.js",
+		"/C/xampp/htdocs/afc/index.php",
+		"/C/xampp/htdocs/afc/comp/sass/side-nav",
+		"/C/xampp/htdocs/afc/comp/javascripts/welcome.js",
+		"/C/xampp/htdocs/afc/comp/javascripts/helloworld.js",
+		"/C/xampp/htdocs/afc/user_guide/general/controllers.html",
+		"/C/xampp/htdocs/afc/application/modules/template/helloworld.js",
+		"/C/xampp/htdocs/afc/application/modules/helloworld/helloworld.js",
+		"/C/xampp/htdocs/afc/application/modules/hello_world/helloworld.js",
+		"/C/xampp/htdocs/afc/application/modules/hello_world/hello_world.js",
+		"/C/xampp/htdocs/afc/application/modules/news/controllers/news.php",
+		"/C/xampp/htdocs/afc/application/modules/news/models/md_news.php",
+		"/C/xampp/htdocs/afc/application/modules/news/views/vw_news.php",
+		"/C/xampp/htdocs/afc/application/modules/about_us/controllers/name.php",
+		"/C/xampp/htdocs/afc/application/modules/buying/models/md_buying.php",
+		"/C/xampp/htdocs/afc/application/modules/buying/views/vw_buying.php",
+		"/C/xampp/htdocs/afc/application/modules/buying/controllers/buying.php",
+		"/C/xampp/htdocs/afc/application/modules/selling/models/md_selling.php",
+		"/C/xampp/htdocs/afc/application/modules/buying/controllers/md_buying.php",
+		"/C/xampp/htdocs/afc/application/controllers/home.php",
+		"/C/xampp/htdocs/afc/application/controllers/welcome.php",
+		"/C/xampp/htdocs/afc/application/config/autoload.php",
+		"/C/xampp/htdocs/afc/application/config/routes.php",
+		"/C/xampp/htdocs/auv/application/modules/news/controllers/news.php",
+		"/C/xampp/htdocs/auv/application/modules/news/models/md_news.php",
+		"/C/xampp/htdocs/auv/application/modules/buying/controllers/buying.php",
+		"/C/xampp/htdocs/auv/application/modules/home/views/vw_home.php",
+		"/C/xampp/htdocs/auv/application/modules/home/controllers/home.php",
+		"/C/xampp/htdocs/auv/application/modules/template/views/vw_template.php",
+		"/C/xampp/htdocs/auv/application/modules/template/controllers/template.php",
+		"/C/xampp/htdocs/auv/comp/sass/screen.scss"
+>>>>>>> 696fc42882fd0ebdb3883cc7c83f1bbb52e22548
 	],
 	"find":
 	{
@@ -869,6 +974,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+<<<<<<< HEAD
 			"home",
 			"5",
 			"6",
@@ -879,6 +985,9 @@
 			"//LOCATION: r/public",
 			"vw_about",
 			"about",
+=======
+			"Route",
+>>>>>>> 696fc42882fd0ebdb3883cc7c83f1bbb52e22548
 			"testp/public",
 			"orbit-container",
 			"orbi",
@@ -996,7 +1105,20 @@
 			"border-color",
 			"navAFomatting",
 			"navUlDown",
+<<<<<<< HEAD
 			"skokie"
+=======
+			"skokie",
+			"ctrl+shift+s",
+			"skokie",
+			"//LOCATION:",
+			"contentFormatting",
+			"facebookHeaderLogo",
+			"userName",
+			"companyNameStyle",
+			"icon-sf7affd0925.png",
+			".png"
+>>>>>>> 696fc42882fd0ebdb3883cc7c83f1bbb52e22548
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1022,23 +1144,39 @@
 	"groups":
 	[
 		{
+<<<<<<< HEAD
 			"selected": 3,
+=======
+			"selected": 0,
+>>>>>>> 696fc42882fd0ebdb3883cc7c83f1bbb52e22548
 			"sheets":
 			[
 				{
 					"buffer": 0,
+<<<<<<< HEAD
 					"file": "app/views/layouts/master.blade.php",
 					"settings":
 					{
 						"buffer_size": 9428,
+=======
+					"file": "app/controllers/LoginController.php",
+					"settings":
+					{
+						"buffer_size": 598,
+>>>>>>> 696fc42882fd0ebdb3883cc7c83f1bbb52e22548
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
+<<<<<<< HEAD
 								636,
 								636
+=======
+								549,
+								549
+>>>>>>> 696fc42882fd0ebdb3883cc7c83f1bbb52e22548
 							]
 						],
 						"settings":
@@ -1184,6 +1322,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
+<<<<<<< HEAD
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -1347,10 +1486,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
+=======
+>>>>>>> 696fc42882fd0ebdb3883cc7c83f1bbb52e22548
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
+<<<<<<< HEAD
 				},
 				{
 					"buffer": 2,
@@ -2008,6 +2150,8 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
+=======
+>>>>>>> 696fc42882fd0ebdb3883cc7c83f1bbb52e22548
 				}
 			]
 		}
@@ -2085,6 +2229,7 @@
 		"selected_items":
 		[
 			[
+<<<<<<< HEAD
 				"vth",
 				"app/views/buying/vw_the_benefits_of_home_ownership.blade.php"
 			],
@@ -2107,6 +2252,22 @@
 			[
 				"vwth",
 				"app/views/buying/vw_the_benefits_of_home_ownership.blade.php"
+=======
+				"panel",
+				"app/views/admin/vw_panel.blade.php"
+			],
+			[
+				"ro",
+				"app/routes.php"
+			],
+			[
+				"fil",
+				"app/filters.php"
+			],
+			[
+				"home",
+				"app/controllers/home/HomeController.php"
+>>>>>>> 696fc42882fd0ebdb3883cc7c83f1bbb52e22548
 			],
 			[
 				"rou",
@@ -2445,10 +2606,6 @@
 				"application/controllers/Law_Practice_Areas.php"
 			],
 			[
-				"ro",
-				"application/config/routes.php"
-			],
-			[
 				"we",
 				"application/views/welcome_view.php"
 			],
@@ -2495,6 +2652,10 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
+<<<<<<< HEAD
 	"side_bar_width": 247.0,
+=======
+	"side_bar_width": 359.0,
+>>>>>>> 696fc42882fd0ebdb3883cc7c83f1bbb52e22548
 	"status_bar_visible": true
 }

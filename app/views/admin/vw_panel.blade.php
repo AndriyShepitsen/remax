@@ -1,8 +1,9 @@
 @extends('layouts.master')
 @section('content')
-
+<!-- //LOCATION: remax/public 
+-->
 <div class="mainContent">
-	<h1>About Content</h1>
-	<p>Izbil</p>
+	<h1>Admin Panel</h1>
+	<p class="admContent">Panel Content</p>
 </div>
 @stop
