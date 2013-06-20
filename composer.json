@@ -9,7 +9,24 @@
 		"classmap": [
 			"app/commands",
 			"app/controllers",
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+			"app/controllers/home",
+			"app/controllers/about",
+			"app/controllers/buying",
+			"app/controllers/selling",
+			"app/controllers/contact",
+			"app/controllers/mortgage",
+=======
 			"app/controllers",			
+>>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
+=======
+			"app/controllers",			
+>>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
+=======
+			"app/controllers",			
+>>>>>>> c1535677fb38f017f1348ce844b04cc36b9b9b26
 			"app/models",
 			"app/database/migrations",
 			"app/database/seeds",

@@ -38,34 +38,34 @@
             <ul class="right">
               <li><a href="{{ URL::route('home')}}">Home</a></li>
               <li><a href="{{ URL::route('about')}}">About</a></li>
-              <li class="has-dropdown"><a href="#">Buying</a>
+              <li class="has-dropdown"><a href="{{ URL::route('the_benefits_of_home_ownership')}}">Buying</a>
                 <ul class="dropdown">
-                  <li><a href="#">The Benefits of Home Ownership</a></li>
-                  <li><a href="#">The Importance of a Buyer's Agent</a></i>
-                  <li><a href="#">Deciding Where to Live </a></li>
-                  <li><a href="#">Anatomy of a Home Purchase</a></li>
-                  <li><a href="#">How Much House Can You Afford?</a></li>
-                  <li><a href="#">5 Tips to Narrow Your Online Home Search</a></li>
+                  <li><a href="{{ URL::route('the_benefits_of_home_ownership')}}">The Benefits of Home Ownership</a></li>
+                  <li><a href="{{ URL::route('the_importance_of_buyers_agent')}}">The Importance of a Buyer's Agent</a></i>
+                  <li><a href="{{ URL::route('deciding_where_to_live')}}">Deciding Where to Live </a></li>
+                  <li><a href="{{ URL::route('anatomy_of_a_home_purchase')}}">Anatomy of a Home Purchase</a></li>
+                  <li><a href="{{ URL::route('how_much_house_can_you_afford')}}">How Much House Can You Afford?</a></li>
+                  <li><a href="{{ URL::route('five_tips_to_narrow_your_online_home_search')}}">5 Tips to Narrow Your Online Home Search</a></li>
                 </ul>
               </li>
-              <li class="has-dropdown"><a href="#">Selling</a>
+              <li class="has-dropdown"><a href="{{ URL::route('consider_a_home_inspection_when_selling')}}">Selling</a>
                 <ul class="dropdown">
-                      <li><a href="#">The Right Listing Agent</a></li>
-                      <li><a href="#">How an Agent Markets Your Home</a></li>
-                      <li><a href="#">Pricing Your Home to Sell</a></li>
-                      <li><a href="#">Preparing Your House for Sale</a></li>
-                      <li><a href="#">Consider a Home Inspection When Selling</a></li>
+                      <li><a href="{{ URL::route('consider_a_home_inspection_when_selling')}}">The Right Listing Agent</a></li>
+                      <li><a href="{{ URL::route('how_an_agent_markets_your_home')}}">How an Agent Markets Your Home</a></li>
+                      <li><a href="{{ URL::route('pricing_your_home_to_sell')}}">Pricing Your Home to Sell</a></li>
+                      <li><a href="{{ URL::route('preparing_your_house_for_sale')}}">Preparing Your House for Sale</a></li>
+                      <li><a href="{{ URL::route('consider_a_home_inspection_when_selling')}}">Consider a Home Inspection When Selling</a></li>
                 </ul>
-              <li class="has-dropdown"><a href="#">Mortgage</a>
+              <li class="has-dropdown"><a href="{{ URL::route('finding_the_right_mortgage_professional')}}">Mortgage</a>
                 <ul class="dropdown">
-                  <li><a href="#">Finding the Right Mortgage Professional</a></li>
-                  <li><a href="#">Getting Preapproved</a></i>
-                  <li><a href="#">How Much Can You Afford?</a></li>
-                  <li><a href="#">Down Payments: How Much Do You Need?</a></li>
-                  <li><a href="#">Mortgages 101: Basic Loan Types </a></li>
-                  <li><a href="#">Renovating a home? Consider a 203(k) loan </a></li>
+                  <li><a href="{{ URL::route('finding_the_right_mortgage_professional')}}">Finding the Right Mortgage Professional</a></li>
+                  <li><a href="{{ URL::route('getting_preapproved')}}">Getting Preapproved</a></i>
+                  <li><a href="{{ URL::route('how_much_can_you_afford')}}">How Much Can You Afford?</a></li>
+                  <li><a href="{{ URL::route('down_payments_how_much_do_you_need')}}">Down Payments: How Much Do You Need?</a></li>
+                  <li><a href="{{ URL::route('mortgages_101_basic_loan_types')}}">Mortgages 101: Basic Loan Types </a></li>
+                  <li><a href="{{ URL::route('renovating_a_home')}}">Renovating a home? Consider a 203(k) loan </a></li>
                 </ul>
-                <li><a href="#">Contact</a></li>
+                <li><a href="{{ URL::route('contact')}}">Contact</a></li>
               </ul>
             </section>
 

@@ -1,6 +1,6 @@
 <?php
 
-class Deciding_where_to_liveController extends BaseController {
+class Five_tips_to_narrow_your_online_home_searchController extends BaseController {
 
 	/*
 	|--------------------------------------------------------------------------
@@ -17,7 +17,7 @@ class Deciding_where_to_liveController extends BaseController {
 
 	public function index()
 	{
-		return View::make('buying.vw_deciding_where_to_live');
+		return View::make('buying.vw_five_tips_to_narrow_your_online_home_search');
 	}
 
 }

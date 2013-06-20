@@ -1,6 +1,6 @@
 <?php
 
-class Deciding_where_to_liveController extends BaseController {
+class Finding_the_right_mortgage_professionalController extends BaseController {
 
 	/*
 	|--------------------------------------------------------------------------
@@ -17,7 +17,8 @@ class Deciding_where_to_liveController extends BaseController {
 
 	public function index()
 	{
-		return View::make('buying.vw_deciding_where_to_live');
+		return View::make('mortgage.vw_finding_the_right_mortgage_professional');
+
 	}
 
 }

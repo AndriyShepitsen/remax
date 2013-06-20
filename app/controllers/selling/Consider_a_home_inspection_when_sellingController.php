@@ -1,6 +1,6 @@
 <?php
 
-class Deciding_where_to_liveController extends BaseController {
+class Consider_a_home_inspection_when_sellingController extends BaseController {
 
 	/*
 	|--------------------------------------------------------------------------
@@ -17,7 +17,8 @@ class Deciding_where_to_liveController extends BaseController {
 
 	public function index()
 	{
-		return View::make('buying.vw_deciding_where_to_live');
+		return View::make('selling.vw_consider_a_home_inspection_when_selling');
+
 	}
 
 }

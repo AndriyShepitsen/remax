@@ -1,6 +1,6 @@
 <?php
 
-class Deciding_where_to_liveController extends BaseController {
+class The_benefits_of_home_ownershipController extends BaseController {
 
 	/*
 	|--------------------------------------------------------------------------
@@ -17,7 +17,7 @@ class Deciding_where_to_liveController extends BaseController {
 
 	public function index()
 	{
-		return View::make('buying.vw_deciding_where_to_live');
+		return View::make('buying.vw_the_benefits_of_home_ownership');
 	}
 
 }
