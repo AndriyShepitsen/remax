@@ -81,7 +81,12 @@
           </aside>
           
          <aside class="large-4 columns">
-        Login Here
+         {{Form::open(array('url'=>'/login'))}} 
+
+         {{ Form::email('email', $value = null, $attributes = array())}}
+         {{ Form::password('password', $value = null, $attributes = array())}}
+         {{ Form::submit('Login', $attributes = array('class'=>'button tiny radius'))}}
+         {{Form::close()}} 
           </aside>
           
 
