@@ -18,7 +18,8 @@ class LoginController extends BaseController {
 
 	public function index()
 	{
-		return View::make('admin.vw_panel');
+
+		return View::make('addfdmin.vw_panel');
 	}
 
 }
