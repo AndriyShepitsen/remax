@@ -35,12 +35,12 @@ button{
 }
 .logoWrapper{
 	padding: 10px;
-	background-color: darken(#F6F6F6, 5%);
+	background-color: darken(#F6F6F6, 10%);
 }
 
 .call{
 	font-size: 20px;
-	color: red;
+	color: #B92025;
 	line-height: 28px;
 	p{
 	text-align: right;
@@ -104,7 +104,7 @@ height:400px;
 	}
 }
 footer{
-	background-color: darken(#F6F6F6, 5%);
+	background-color: darken(#F6F6F6, 10%);
 	padding-top: 10px;
 
 	.row .columns{
@@ -167,3 +167,9 @@ footer{
 .copy{
 		color: #FFFFFF !important;
 	}
+	/* =Contact Us */
+	 textarea{
+	 	height: 300px;
+	 	cursor: pointer;
+	 }
+	
