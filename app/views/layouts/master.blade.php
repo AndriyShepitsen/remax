@@ -9,10 +9,10 @@
   <title>Remax First Class Realty</title>
   {{HTML::style("comp/stylesheets/normalize.css" )}} 
   {{HTML::style("comp/stylesheets/screen.css" )}} 
+  {{HTML::script("//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js")}} 
   {{HTML::style("comp/javascripts/foundation.min.js")}} 
   {{HTML::style("comp/javascripts/vendor/custom.modernizr.js")}} 
   {{HTML::script("comp/javascripts/script.js")}} 
-  {{HTML::script("//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js")}} 
 
 
 </head>
@@ -98,11 +98,11 @@
                </div>
                <div class="row">
                 <div class="large-5 columns right inline icon">
-                  <div id="home">
-                   <img src="comp/img/home_remax.png" alt="Remax First Class Mail Icon">
-                 </div>
-                 <div id="mail">
+                 <div id="mail" class="mail">
                    <img src="comp/img/mail_remax.png" alt="Remax First Class Home Icon">
+                 </div>
+                 <div id="home" class="home">
+                   <img src="comp/img/home_remax.png" alt="remax first class mail icon">
                  </div>
                </div>
              </div>

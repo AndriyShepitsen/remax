@@ -16,7 +16,7 @@ class LoginController extends BaseController {
 		$messages = $validator->messages();
 
 		if($validator->fails()){
-			return Redirect::route('home')->with('mess','SSS');
+			return Redirect::route('home')->withErrors($validator);
 		} else {
 		    
 		return View::make('admin.vw_panel');
