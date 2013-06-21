@@ -16,7 +16,12 @@ class HomeController extends BaseController {
 	*/
 	public function index()
 	{
-		return View::make('home.vw_home');
+	
+
+	$newsBuy = News::all();
+
+	return View::make('home.vw_home')
+	->with('newsBuy', $newsBuy);
 
 	}
 
