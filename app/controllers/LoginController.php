@@ -1,25 +1,27 @@
 <?php
-
+//LOCATION: remax/public 
 class LoginController extends BaseController {
-
-
-	/*
-	|--------------------------------------------------------------------------
-	| Default Home Controller
-	|--------------------------------------------------------------------------
-	|
-	| You may wish to use controllers instead of, or in addition to, Closure
-	| based routes. That's great! Here is an example controller method to
-	| get you started. To route to this controller, just add the route:
-	|
-	|	Route::get('/', 'HomeController@showWelcome');
-	|
-	*/
 
 	public function index()
 	{
+		//$test = Input::get('email');
+		$valRules = array('email'=>'required|email',
+			'password'=>'required');
 
-		return View::make('addfdmin.vw_panel');
+		$validator = Validator::make(
+			Input::all(), 
+			$valRules
+			);
+
+		$messages = $validator->messages();
+
+		if($validator->fails()){
+			return Redirect::route('home')->with('mess','SSS');
+		} else {
+		    
+		return View::make('admin.vw_panel');
+		}
 	}
 
 }
+

@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"req",
+				"requred|email"
+			],
+			[
+				"ema",
+				"email"
+			],
+			[
 				"rou",
 				"route"
 			],
@@ -506,78 +514,52 @@
 			[
 				"get_file",
 				"get_filePath"
-			],
-			[
-				"ta",
-				"ta	text-align: right"
-			],
-			[
-				"file",
-				"filesList"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-<<<<<<< HEAD
+			"file": "app/controllers/LoginController.php",
+			"settings":
+			{
+				"buffer_size": 476,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "app/views/layouts/master.blade.php",
 			"settings":
 			{
-				"buffer_size": 9428,
+				"buffer_size": 7188,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/views/home/vw_home.blade.php",
+			"file": "app/views/admin/vw_panel.blade.php",
 			"settings":
 			{
-				"buffer_size": 4706,
+				"buffer_size": 183,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/views/about/vw_about.blade.php",
+			"contents": "<?php\n//LOCATION: remax/public\nclass HomeController extends BaseController {\n\n	/*\n	|--------------------------------------------------------------------------\n	| Default Home Controller\n	|--------------------------------------------------------------------------\n	|\n	| You may wish to use controllers instead of, or in addition to, Closure\n	| based routes. That's great! Here is an example controller method to\n	| get you started. To route to this controller, just add the route:\n	|\n	|	Route::get('/', 'HomeController@showWelcome');\n	|\n	*/\n	public function index()\n	{\n		return View::make('home.vw_home');\n\n	}\n\n}",
+			"file": "app/controllers/home/HomeController.php",
+			"file_size": 635,
+			"file_write_time": 130161390550659110,
 			"settings":
 			{
-				"buffer_size": 704,
+				"buffer_size": 611,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "@extends('layouts.master')\n@section('content')\n<!-- //LOCATION: remax/public/the_benefits_of_home_ownership \n-->\n\n<div class=\"mainContent\">\n	<div class=\"row\">\n		<div class=\"large-12 columns\">\n			<h1>Deciding Where to Live </h1>\n			<hr/>\n				<p>If you're unfamiliar with the area where you’re moving, your buyer’s agent is an invaluable resource. He or she can offer insider knowledge on neighborhoods, schools, access to recreation and shopping districts, and the many other details on local neighborhoods and subdivisions.</p>\n				<p>It’s important to have a clear picture on the features that matter most to you in a home or location. Creating a list of “must haves” and flexible \"nice-to-haves\" from the start will make things a lot easier for you.</p>\n			<ol>\n			<h5>Factors to consider:</h5>	\n				<li>\n					<h5>Size of home</h5>\n					<p>-square footage, number of bathrooms, rooms, etc.</p>\n				</li>\n\n				<li>\n					<h5>Home features</h5>\n					<p>–updated fixtures/appliances, property size, garage, storage, etc.</p>\n				</li>\n\n				<li>\n					<h5>Location </h5>\n					<p>– proximity to schools, open space, entertainment, work, etc.</p>\n				</li>\n\n				<li>\n					<h5>Neighborhood </h5>\n					<p>– older or newer homes? Families, retirees or singles?</p>\n				</li>\n\n				<li>\n					<h5>Size of home</h5>\n					<p>-square footage, number of bathrooms, rooms, etc.</p>\n				</li>\n			</div>\n		</div>\n	</div> @stop",
-			"file": "app/views/buying/vw_deciding_where_to_live.blade.php",
-			"file_size": 1465,
-			"file_write_time": 130162189809564183,
+			"file": "app/config/app.php",
 			"settings":
 			{
-				"buffer_size": 1407,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/views/buying/vw_the_benefits_of_home_ownership.blade.php",
-			"settings":
-			{
-				"buffer_size": 1481,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "public/comp/sass/screen.scss",
-			"settings":
-			{
-				"buffer_size": 2501,
-=======
-			"contents": "<?php\n\nclass LoginController extends BaseController {\n\n\n	/*\n	|--------------------------------------------------------------------------\n	| Default Home Controller\n	|--------------------------------------------------------------------------\n	|\n	| You may wish to use controllers instead of, or in addition to, Closure\n	| based routes. That's great! Here is an example controller method to\n	| get you started. To route to this controller, just add the route:\n	|\n	|	Route::get('/', 'HomeController@showWelcome');\n	|\n	*/\n\n	public function index()\n	{\n\n		\n		return View::make('addfdmin.vw_panel');\n	}\n\n}",
-			"file": "app/controllers/LoginController.php",
-			"file_size": 614,
-			"file_write_time": 130161451006686997,
-			"settings":
-			{
-				"buffer_size": 598,
->>>>>>> 696fc42882fd0ebdb3883cc7c83f1bbb52e22548
-				"line_ending": "Windows"
+				"buffer_size": 7375,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -588,8 +570,10 @@
 		"selected_items":
 		[
 			[
-<<<<<<< HEAD
-=======
+				"gist",
+				"Git: Status"
+			],
+			[
 				"lala",
 				"Laravel Generate: Resource"
 			],
@@ -610,7 +594,6 @@
 				"Package Control: Disable Package"
 			],
 			[
->>>>>>> 696fc42882fd0ebdb3883cc7c83f1bbb52e22548
 				"blade",
 				"Set Syntax: PHP - Laravel Blade"
 			],
@@ -625,10 +608,6 @@
 			[
 				"Snippet: ",
 				"Snippet: add"
-			],
-			[
-				"Package Control: ",
-				"Package Control: Remove Package"
 			],
 			[
 				"rea",
@@ -735,7 +714,7 @@
 				"Package Control: Discover Packages"
 			]
 		],
-		"width": 646.0
+		"width": 698.0
 	},
 	"console":
 	{
@@ -752,78 +731,20 @@
 	},
 	"file_history":
 	[
-<<<<<<< HEAD
-		"/C/xampp/htdocs/remax/app/views/buying/vw_the_benefits_of_home_ownership.blade.php",
-		"/C/xampp/htdocs/remax/app/views/buying/vw_the_importance_of_buyers_agent.blade.php",
-		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
-		"/C/xampp/htdocs/remax/app/routes.php",
-		"/C/xampp/htdocs/remax/app/controllers/BaseController.php",
-		"/C/xampp/htdocs/remax/app/controllers/mortgage/Renovating_a_homeController.php",
-		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 2/Packages/User/url.sublime-snippet",
-		"/C/xampp/htdocs/remax/app/controllers/mortgage/Mortgages_101_basic_loan_typesController.php",
-		"/C/xampp/htdocs/remax/app/controllers/buying/How_much_house_can_you_affordController.php",
-		"/C/xampp/htdocs/remax/app/controllers/selling/Consider_a_home_inspection_when_sellingController.php",
-		"/C/xampp/htdocs/remax/app/views/buying/vw_how_much_house_can_you_afford.blade.php",
-		"/C/xampp/htdocs/remax/app/views/about/vw_about.blade.php",
-		"/C/xampp/htdocs/remax/app/views/layouts/master.blade.php",
-		"/C/xampp/htdocs/remax/app/controllers/selling/How_an_agent_markets_your_homeController.php",
-		"/C/xampp/htdocs/remax/app/controllers/selling/Preparing_your_house_for_saleController.php",
-		"/C/xampp/htdocs/remax/app/controllers/selling/Pricing_your_home_to_sellController.php",
-		"/C/xampp/htdocs/remax/app/controllers/selling/The_right_listing_agentController.php",
-		"/C/xampp/htdocs/remax/app/controllers/mortgage/How_much_can_you_affordController.php",
-		"/C/xampp/htdocs/remax/app/controllers/mortgage/Getting_preapprovedController.php",
-		"/C/xampp/htdocs/remax/app/controllers/mortgage/Finding_the_right_mortgage_professionalController.php",
-		"/C/xampp/htdocs/remax/app/controllers/mortgage/Down_payments_how_much_do_you_needController.php",
-		"/C/xampp/htdocs/remax/app/controllers/home/HomeController.php",
-		"/C/xampp/htdocs/remax/app/controllers/contact/ContactController.php",
 		"/C/xampp/htdocs/remax/composer.json",
-		"/C/xampp/htdocs/remax/app/controllers/buying/Anatomy_of_a_home_purchaseController.php",
-		"/C/xampp/htdocs/remax/app/controllers/buying/The_benefits_of_home_ownershipController.php",
-		"/C/xampp/htdocs/remax/app/controllers/buying/The_importance_of_buyers_agentController.php",
-		"/C/xampp/htdocs/remax/app/controllers/buying/Five_tips_to_narrow_your_online_home_searchController.php",
-		"/C/xampp/htdocs/remax/app/controllers/buying/Deciding_where_to_liveController.php",
-		"/C/xampp/htdocs/remax/app/storage/views/3a770d8d4c60d02cc9935d2da3235c6e",
-		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 2/Packages/User/Gist.sublime-settings",
-		"/C/xampp/htdocs/remax/app/filters.php",
-		"/C/xampp/htdocs/remax/app/views/home/vw_home.blade.php",
-		"/C/xampp/htdocs/remax/app/controllers/mortgage/Anatomy_of_a_home_purchaseController.php",
-		"/C/xampp/htdocs/remax/app/views/buying/vw_buying.blade.php",
-		"/C/xampp/htdocs/remax/artisan",
-		"/C/xampp/htdocs/remax/app/controllers/about/AboutController.php",
+		"/C/xampp/htdocs/remax/app/views/layouts/error_message.php",
+		"/C/xampp/htdocs/remax/app/views/layouts/error_message.blade.php",
+		"/C/xampp/htdocs/remax/.gitattributes",
 		"/C/xampp/htdocs/remax/.gitignore",
-		"/C/xampp/htdocs/remax/app/controllers/buying/anatomy_of_a_home_purchase.php",
-		"/C/xampp/htdocs/remax/app/controllers/buying/BuyingController.php",
-		"/C/xampp/htdocs/remax/app/controllers/about/BuyingController.php",
-		"/C/xampp/htdocs/remax/app/views/contact/vw_contact.blade.php",
-		"/C/xampp/htdocs/remax/app/controllers/AboutController.php",
-		"/C/xampp/htdocs/remax/app/controllers/HomeController.php",
-		"/C/xampp/htdocs/remax/app/views/buying/vw_five_tips_to_narrow_your_online_home_search.blade.php",
-		"/C/xampp/htdocs/remax/app/views/buying/vw_how_much_house_can_you_afford.php",
-		"/C/xampp/htdocs/remax/app/views/buying/vw_anatomy_of_a_home_purchase.blade.php",
-		"/C/xampp/htdocs/remax/app/views/buying/vw_deciding_where_to_live.blade.php",
-		"/C/xampp/htdocs/remax/app/views/selling/vw_how_an_agent_markets_your_home.blade.php",
-		"/C/xampp/htdocs/remax/app/views/selling/vw_pricing_your_home_to_sell.blade.php",
-		"/C/xampp/htdocs/remax/app/views/selling/vw_preparing_your_house_for_sale.blade.php",
-		"/C/xampp/htdocs/remax/app/views/selling/vw_consider_a_home_inspection_when_selling.blade.php",
-		"/C/xampp/htdocs/remax/app/views/selling/vw_selling.blade.php",
-		"/C/xampp/htdocs/remax/app/views/selling/vw_the_right_listing_agent.blade.php",
-		"/C/xampp/htdocs/remax/app/views/mortgage/vw_renovating_a_home.blade.php",
-		"/C/xampp/htdocs/remax/app/views/mortgage/vw_mortgages_101_basic_loan_types.blade.php",
-		"/C/xampp/htdocs/remax/app/views/mortgage/vw_down_payments_how_much_do_you_need.blade.php",
-		"/C/xampp/htdocs/remax/app/views/mortgage/vw_finding_the_right_mortgage_professional.blade.php",
-		"/C/xampp/htdocs/remax/app/views/mortgage/vw_getting_preapproved.blade.php",
-		"/C/xampp/htdocs/remax/app/views/mortgage/vw_how_much_can_you_afford.blade.php",
-		"/C/xampp/htdocs/remax/app/views/mortgage/vw_mortgage.blade.php",
-		"/C/xampp/htdocs/remax/app/views/vw_home.blade.php",
-		"/C/xampp/htdocs/remax/app/views/vw_about.blade.php",
-		"/C/xampp/htdocs/remax/app/views/layouts/vw_about.blade.php",
-		"/C/xampp/htdocs/remax/app/views/vw_home.php",
-		"/C/xampp/htdocs/remax/app/views/hello.php",
-=======
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 2/Packages/User/Gist.sublime-settings",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"//Kasper/C/Users/ckotcha/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"//Kasper/C/Users/ckotcha/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"//Kasper/C/Users/ckotcha/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-mousemap",
+		"/C/xampp/htdocs/remax/app/controllers/about/AboutController.php",
 		"/C/xampp/htdocs/remax/app/views/admin/vw_panel.blade.php",
 		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
 		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
 		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 2/Packages/User/Sublime Key Map.sublime-settings",
 		"/C/xampp/htdocs/remax/app/routes.php",
@@ -843,11 +764,7 @@
 		"/C/xampp/htdocs/remax/app/database/seeds/DatabaseSeeder.php",
 		"/C/xampp/htdocs/remax/app/database/seeds/UserTableSeeder.php",
 		"/C/xampp/htdocs/remax/app/config/database.php",
-		"/C/xampp/htdocs/remax/composer.json",
 		"/C/xampp/htdocs/remax/public/packages/.gitkeep",
-		"/C/xampp/htdocs/remax/.gitattributes",
-		"/C/xampp/htdocs/remax/.gitignore",
->>>>>>> 696fc42882fd0ebdb3883cc7c83f1bbb52e22548
 		"/C/xampp/htdocs/r/app/routes.php",
 		"/C/xampp/htdocs/remaxfc/application/modules/about/views/vw_about.php",
 		"/C/xampp/htdocs/r/app/models/User.php",
@@ -881,6 +798,7 @@
 		"/C/xampp/htdocs/remaxfc/application/config/config.php",
 		"/C/xampp/htdocs/remaxfc/application/config/autoload.php",
 		"/C/xampp/htdocs/remaxfc/application/modules/template/models/md_template.php",
+		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
 		"/C/xampp/htdocs/remaxfc/application/modules/copyme/views/vw_.php",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 2/Packages/User/dash.sublime-snippet",
@@ -908,9 +826,6 @@
 		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 2/Packages/Vintage Surround/README.md",
 		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 2/Packages/Vintage/README.TXT",
 		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 2/Packages/VintageEx/README.rst",
-<<<<<<< HEAD
-		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 2/Packages/Vintage Numbers/README.md"
-=======
 		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 2/Packages/Vintage Numbers/README.md",
 		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 2/Packages/Vintage-Origami/readme.md",
 		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 2/Packages/View Movement/README.md",
@@ -943,15 +858,7 @@
 		"/C/xampp/htdocs/afc/application/controllers/welcome.php",
 		"/C/xampp/htdocs/afc/application/config/autoload.php",
 		"/C/xampp/htdocs/afc/application/config/routes.php",
-		"/C/xampp/htdocs/auv/application/modules/news/controllers/news.php",
-		"/C/xampp/htdocs/auv/application/modules/news/models/md_news.php",
-		"/C/xampp/htdocs/auv/application/modules/buying/controllers/buying.php",
-		"/C/xampp/htdocs/auv/application/modules/home/views/vw_home.php",
-		"/C/xampp/htdocs/auv/application/modules/home/controllers/home.php",
-		"/C/xampp/htdocs/auv/application/modules/template/views/vw_template.php",
-		"/C/xampp/htdocs/auv/application/modules/template/controllers/template.php",
-		"/C/xampp/htdocs/auv/comp/sass/screen.scss"
->>>>>>> 696fc42882fd0ebdb3883cc7c83f1bbb52e22548
+		"/C/xampp/htdocs/auv/application/modules/news/controllers/news.php"
 	],
 	"find":
 	{
@@ -974,20 +881,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-<<<<<<< HEAD
-			"home",
-			"5",
-			"6",
-			"h6",
-			"about",
-			"#",
-			"=\"#\">",
-			"//LOCATION: r/public",
-			"vw_about",
-			"about",
-=======
+			"log",
+			"());",
 			"Route",
->>>>>>> 696fc42882fd0ebdb3883cc7c83f1bbb52e22548
 			"testp/public",
 			"orbit-container",
 			"orbi",
@@ -1105,9 +1001,6 @@
 			"border-color",
 			"navAFomatting",
 			"navUlDown",
-<<<<<<< HEAD
-			"skokie"
-=======
 			"skokie",
 			"ctrl+shift+s",
 			"skokie",
@@ -1115,10 +1008,7 @@
 			"contentFormatting",
 			"facebookHeaderLogo",
 			"userName",
-			"companyNameStyle",
-			"icon-sf7affd0925.png",
-			".png"
->>>>>>> 696fc42882fd0ebdb3883cc7c83f1bbb52e22548
+			"companyNameStyle"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1126,7 +1016,6 @@
 		"regex": false,
 		"replace_history":
 		[
-			"//LOCATION: remax/public",
 			"r/public",
 			"'",
 			"echo set_value",
@@ -1144,39 +1033,23 @@
 	"groups":
 	[
 		{
-<<<<<<< HEAD
-			"selected": 3,
-=======
-			"selected": 0,
->>>>>>> 696fc42882fd0ebdb3883cc7c83f1bbb52e22548
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-<<<<<<< HEAD
-					"file": "app/views/layouts/master.blade.php",
-					"settings":
-					{
-						"buffer_size": 9428,
-=======
 					"file": "app/controllers/LoginController.php",
 					"settings":
 					{
-						"buffer_size": 598,
->>>>>>> 696fc42882fd0ebdb3883cc7c83f1bbb52e22548
+						"buffer_size": 476,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-<<<<<<< HEAD
-								636,
-								636
-=======
-								549,
-								549
->>>>>>> 696fc42882fd0ebdb3883cc7c83f1bbb52e22548
+								398,
+								398
 							]
 						],
 						"settings":
@@ -1318,11 +1191,9 @@
 							"sublimelinter_wrap_find": true,
 							"synced": false,
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-<<<<<<< HEAD
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -1330,18 +1201,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "app/views/home/vw_home.blade.php",
+					"file": "app/views/layouts/master.blade.php",
 					"settings":
 					{
-						"buffer_size": 4706,
+						"buffer_size": 7188,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								75,
-								75
+								3426,
+								3426
 							]
 						],
 						"settings":
@@ -1482,32 +1353,30 @@
 							},
 							"sublimelinter_wrap_find": true,
 							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-=======
->>>>>>> 696fc42882fd0ebdb3883cc7c83f1bbb52e22548
-						"translation.y": 0.0,
+						"translation.y": 864.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-<<<<<<< HEAD
 				},
 				{
 					"buffer": 2,
-					"file": "app/views/about/vw_about.blade.php",
+					"file": "app/views/admin/vw_panel.blade.php",
 					"settings":
 					{
-						"buffer_size": 704,
+						"buffer_size": 183,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								704
+								171,
+								171
 							]
 						],
 						"settings":
@@ -1648,8 +1517,7 @@
 							},
 							"sublimelinter_wrap_find": true,
 							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1659,180 +1527,18 @@
 				},
 				{
 					"buffer": 3,
-					"file": "app/views/buying/vw_deciding_where_to_live.blade.php",
+					"file": "app/controllers/home/HomeController.php",
 					"settings":
 					{
-						"buffer_size": 1407,
+						"buffer_size": 611,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1407,
-								1407
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110
-							],
-							"gjslint_options":
-							[
-							],
-							"incomplete_sync": null,
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"remote_loading": false,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": true,
-							"sublimelinter_gutter_marks_theme": "simple",
-							"sublimelinter_mark_style": "none",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/views/buying/vw_the_benefits_of_home_ownership.blade.php",
-					"settings":
-					{
-						"buffer_size": 1481,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								1481
+								551,
+								551
 							]
 						],
 						"settings":
@@ -1981,27 +1687,21 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 5,
-					"file": "public/comp/sass/screen.scss",
+					"buffer": 4,
+					"file": "app/config/app.php",
 					"settings":
 					{
-						"buffer_size": 2501,
+						"buffer_size": 7375,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								4368,
+								4368
 							]
 						],
 						"settings":
@@ -2142,16 +1842,14 @@
 							},
 							"sublimelinter_wrap_find": true,
 							"synced": false,
-							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1944.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-=======
->>>>>>> 696fc42882fd0ebdb3883cc7c83f1bbb52e22548
 				}
 			]
 		}
@@ -2173,18 +1871,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.712193664077,
 			1.0
 		],
 		"rows":
@@ -2229,30 +1920,18 @@
 		"selected_items":
 		[
 			[
-<<<<<<< HEAD
-				"vth",
-				"app/views/buying/vw_the_benefits_of_home_ownership.blade.php"
-			],
-			[
-				"vwd",
-				"app/views/buying/vw_deciding_where_to_live.blade.php"
-			],
-			[
-				"vwtheb",
-				"app/views/buying/vw_the_benefits_of_home_ownership.blade.php"
-			],
-			[
-				"vwtheim",
-				"app/views/buying/vw_the_importance_of_buyers_agent.blade.php"
+				"pan",
+				"app/views/admin/vw_panel.blade.php"
 			],
 			[
 				"ma",
 				"app/views/layouts/master.blade.php"
 			],
 			[
-				"vwth",
-				"app/views/buying/vw_the_benefits_of_home_ownership.blade.php"
-=======
+				"maste",
+				"app/views/layouts/master.blade.php"
+			],
+			[
 				"panel",
 				"app/views/admin/vw_panel.blade.php"
 			],
@@ -2267,31 +1946,18 @@
 			[
 				"home",
 				"app/controllers/home/HomeController.php"
->>>>>>> 696fc42882fd0ebdb3883cc7c83f1bbb52e22548
 			],
 			[
 				"rou",
 				"app/routes.php"
 			],
 			[
-				"vwa",
-				"app/views/about/vw_about.blade.php"
+				"vw",
+				"application/modules/template/views/vw_template.php"
 			],
 			[
 				"vwh",
-				"app/views/home/vw_home.blade.php"
-			],
-			[
-				"scss",
-				"public/comp/sass/screen.scss"
-			],
-			[
-				"mast",
-				"app/views/layouts/master.blade.php"
-			],
-			[
-				"vw",
-				"application/modules/template/views/vw_template.php"
+				"application/modules/home/views/vw_home.php"
 			],
 			[
 				"ho",
@@ -2308,6 +1974,10 @@
 			[
 				"conta",
 				"application/modules/contact/controllers/contact.php"
+			],
+			[
+				"vwa",
+				"application/modules/about/views/vw_about.php"
 			],
 			[
 				"te",
@@ -2336,10 +2006,6 @@
 			[
 				"sc",
 				"afc/comp/sass/screen.scss"
-			],
-			[
-				"home",
-				"afc/application/modules/home/controllers/home.php"
 			],
 			[
 				"vwt",
@@ -2562,6 +2228,10 @@
 				"application/views/Home-view.php"
 			],
 			[
+				"scss",
+				"comp/sass/screen.scss"
+			],
+			[
 				"view",
 				"application/views/Admin-view.php"
 			],
@@ -2652,10 +2322,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-<<<<<<< HEAD
-	"side_bar_width": 247.0,
-=======
 	"side_bar_width": 359.0,
->>>>>>> 696fc42882fd0ebdb3883cc7c83f1bbb52e22548
 	"status_bar_visible": true
 }
