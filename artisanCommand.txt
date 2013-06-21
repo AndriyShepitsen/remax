@@ -1,0 +1,3 @@
+php artisan generate:migration create_news_table --fields="title:string, body:text"
+php artisan migrate
+php artisan db:seed
