@@ -32,3 +32,4 @@ class CreateNewsTable extends Migration {
 	}
 
 }
+

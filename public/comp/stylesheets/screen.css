@@ -11041,29 +11041,41 @@ button::-moz-focus-inner {
 }
 
 /* line 50, ../sass/screen.scss */
+.icon {
+  overflow: auto;
+  margin-top: 30px;
+}
+
+/* line 55, ../sass/screen.scss */
+.mail, .home {
+  float: right;
+  padding: 10px;
+}
+
+/* line 65, ../sass/screen.scss */
 #mainContent {
   padding-top: 10px;
   background-color: #F6F6F6;
 }
-/* line 53, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 #mainContent .small-block-grid-3 > li {
   margin-bottom: 15px !important;
 }
-/* line 56, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 #mainContent a {
   color: #393939;
 }
-/* line 59, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 #mainContent h4 {
   margin-bottom: 0px !important;
 }
 
-/* line 64, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 .orbit-container {
   height: 400px;
 }
 
-/* line 69, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 .find {
   display: inline-block;
   font-weight: bold;
@@ -11072,12 +11084,12 @@ button::-moz-focus-inner {
   color: #525252;
 }
 
-/* line 76, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 .findInput {
   margin-bottom: 15px !important;
 }
 
-/* line 79, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .connectFooter {
   display: inline-block;
   font-size: 11px;
@@ -11085,65 +11097,65 @@ button::-moz-focus-inner {
   font-weight: bold;
 }
 
-/* line 85, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 .vcard .fn {
   font-size: 12px;
 }
 
-/* line 88, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 .vcard .street-address {
   font-size: 12px;
 }
 
-/* line 91, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 .vcard .locality {
   font-size: 12px;
 }
 
-/* line 94, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 .vcard .state {
   font-size: 12px;
 }
 
-/* line 97, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 .vcard .zip {
   font-size: 12px;
   display: inline-block;
 }
 
-/* line 102, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 .vcard .email a {
   font-size: 11px !important;
 }
 
-/* line 106, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 footer {
   background-color: #dddddd;
   padding-top: 10px;
 }
-/* line 110, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 footer .row .columns {
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
-/* line 114, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 footer .prop {
   font-size: 11px !important;
 }
-/* line 118, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 footer .row.ul.li.a {
   color: #F7F7F4;
   cursor: pointer;
 }
 
-/* line 127, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 [class*="block-grid-"] {
   display: block;
   margin: 0 10px !important;
   padding: 0;
 }
 
-/* line 132, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 .contactFooter {
   padding-left: 10px;
   font-size: 11px;
@@ -11154,24 +11166,24 @@ footer .row.ul.li.a {
   display: inline-block;
 }
 
-/* line 141, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 .social {
   padding-top: 10px;
   padding-bottom: 20px;
 }
 
-/* line 146, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 .mls {
   margin-top: 90px;
   text-align: bottom;
 }
 
-/* line 150, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 .properties {
   margin-left: 15px;
 }
 
-/* line 153, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 .propertiesFooter {
   font-weight: bold;
   display: inline-block;
@@ -11179,23 +11191,23 @@ footer .row.ul.li.a {
   color: #393939;
 }
 
-/* line 160, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 .copyright {
   background-color: #3F3F3F;
   padding-top: 10px;
 }
-/* line 163, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 .copyright a {
   color: #F7F7F4;
 }
 
-/* line 167, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 .copy {
   color: #FFFFFF !important;
 }
 
 /* =Contact Us */
-/* line 171, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 textarea {
   height: 300px;
   cursor: pointer;
