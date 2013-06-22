@@ -62,6 +62,9 @@ button{
 .home{
 	@extend .mail;
 }
+#inline{
+	display:none;
+}
 #mainContent{
 	padding-top: 10px;
 	background-color:#F6F6F6;

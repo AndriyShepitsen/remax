@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"news",
+				"newsSel"
+			],
+			[
+				"new",
+				"news"
+			],
+			[
+				"N",
+				"News"
+			],
+			[
 				"fun",
 				"function"
 			],
@@ -502,36 +514,32 @@
 			[
 				"foe",
 				"foreach	foreach …"
-			],
-			[
-				"userFi",
-				"userFilesFinal"
-			],
-			[
-				"array_k",
-				"array_key_exists  (function)"
-			],
-			[
-				"get_file",
-				"get_filePath"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/views/layouts/master.blade.php",
+			"file": "app/views/home/vw_home.blade.php",
 			"settings":
 			{
-				"buffer_size": 9798,
+				"buffer_size": 4274,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "public/comp/javascripts/script.js",
+			"file": "app/views/layouts/master.blade.php",
 			"settings":
 			{
-				"buffer_size": 748,
+				"buffer_size": 10847,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/comp/sass/screen.scss",
+			"settings":
+			{
+				"buffer_size": 2730,
 				"line_ending": "Windows"
 			}
 		}
@@ -688,6 +696,15 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/remax/app/controllers/home/HomeController.php",
+		"/C/xampp/htdocs/remax/app/views/layouts/master.blade.php",
+		"/C/xampp/htdocs/remax/artisanCommand.txt",
+		"/C/xampp/htdocs/remax/app/database/migrations/2013_06_21_201010_create_news_table.php",
+		"/C/xampp/htdocs/remax/app/database/seeds/NewsTableSeeder.php",
+		"/C/xampp/htdocs/remax/app/models/News.php",
+		"/C/xampp/htdocs/remax/app/database/seeds/DatabaseSeeder.php",
+		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/xampp/htdocs/remax/public/comp/javascripts/script.js",
 		"/C/xampp/htdocs/remax/app/views/contact/vw_contact.blade.php",
 		"/C/xampp/htdocs/remax/public/comp/sass/screen.scss",
 		"/C/xampp/htdocs/remax/app/database/migrations/2013_06_21_143823_create_news_table.php",
@@ -699,7 +716,6 @@
 		"/C/xampp/htdocs/remax/app/database/migrations/2013_06_19_185755_create_user_table.php",
 		"/C/xampp/htdocs/remax/app/config/database.php",
 		"/C/xampp/htdocs/remax/app/views/about/vw_about.blade.php",
-		"/C/xampp/htdocs/remax/app/views/layouts/master.blade.php",
 		"/C/xampp/htdocs/remax/app/views/home/vw_home.blade.php",
 		"/C/xampp/htdocs/remax/app/views/buying/vw_the_benefits_of_home_ownership.blade.php",
 		"/C/xampp/htdocs/remax/app/views/selling/vw_how_an_agent_markets_your_home.blade.php",
@@ -719,7 +735,6 @@
 		"/C/xampp/htdocs/remax/app/views/buying/vw_anatomy_of_a_home_purchase.blade.php",
 		"/C/xampp/htdocs/remax/app/views/buying/vw_deciding_where_to_live.blade.php",
 		"/C/xampp/htdocs/remax/app/views/buying/vw_the_importance_of_buyers_agent.blade.php",
-		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
 		"/C/xampp/htdocs/remax/app/routes.php",
 		"/C/xampp/htdocs/remax/app/controllers/BaseController.php",
 		"/C/xampp/htdocs/remax/app/controllers/mortgage/Renovating_a_homeController.php",
@@ -736,7 +751,6 @@
 		"/C/xampp/htdocs/remax/app/controllers/mortgage/Getting_preapprovedController.php",
 		"/C/xampp/htdocs/remax/app/controllers/mortgage/Finding_the_right_mortgage_professionalController.php",
 		"/C/xampp/htdocs/remax/app/controllers/mortgage/Down_payments_how_much_do_you_needController.php",
-		"/C/xampp/htdocs/remax/app/controllers/home/HomeController.php",
 		"/C/xampp/htdocs/remax/app/controllers/contact/ContactController.php",
 		"/C/xampp/htdocs/remax/composer.json",
 		"/C/xampp/htdocs/remax/app/controllers/buying/The_benefits_of_home_ownershipController.php",
@@ -809,13 +823,7 @@
 		"/C/xampp/htdocs/remaxfc/application/config/routes.php",
 		"/C/xampp/htdocs/remaxfc/application/controllers/welcome.php",
 		"/C/xampp/htdocs/afc/comp/sass/screen.scss",
-		"/C/xampp/htdocs/afc/application/modules/about_us/views/vw_about_us.php",
-		"/C/xampp/htdocs/afc/application/modules/template/controllers/template.php",
-		"/C/xampp/htdocs/afc/application/modules/selling/views/vw_selling.php",
-		"/C/xampp/htdocs/afc/application/modules/selling/controllers/selling.php",
-		"/C/xampp/htdocs/afc/application/modules/contact_us/controllers/name.php",
-		"/C/xampp/htdocs/afc/application/modules/contact_us/views/vw_name.php",
-		"/C/xampp/htdocs/afc/application/modules/home/views/vw_home.php"
+		"/C/xampp/htdocs/afc/application/modules/about_us/views/vw_about_us.php"
 	],
 	"find":
 	{
@@ -838,6 +846,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"LaRue",
+			"larue",
+			"mail",
+			"news",
 			"id",
 			"Class",
 			"class",
@@ -961,11 +973,7 @@
 			"current",
 			"title",
 			"body",
-			"newsSubmiButton",
-			"content",
-			"news",
-			"h4",
-			"?></"
+			"newsSubmiButton"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -991,22 +999,197 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/layouts/master.blade.php",
+					"file": "app/views/home/vw_home.blade.php",
 					"settings":
 					{
-						"buffer_size": 9798,
+						"buffer_size": 4274,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5533,
-								5533
+								104,
+								104
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/layouts/master.blade.php",
+					"settings":
+					{
+						"buffer_size": 10847,
+						"regions":
+						{
+							"bookmark_i":
+							{
+								"flags": 144,
+								"regions":
+								[
+									[
+										1200,
+										1200
+									]
+								]
+							}
+						},
+						"selection":
+						[
+							[
+								6925,
+								6925
 							]
 						],
 						"settings":
@@ -1152,25 +1335,31 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1854.0,
+						"translation.y": 2120.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
 				{
-					"buffer": 1,
-					"file": "public/comp/javascripts/script.js",
+					"buffer": 2,
+					"file": "public/comp/sass/screen.scss",
 					"settings":
 					{
-						"buffer_size": 748,
+						"buffer_size": 2730,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								686,
-								686
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1311,7 +1500,8 @@
 							},
 							"sublimelinter_wrap_find": true,
 							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1319,11 +1509,6 @@
 					},
 					"type": "text"
 				}
-			]
-		},
-		{
-			"sheets":
-			[
 			]
 		}
 	],
@@ -1355,7 +1540,7 @@
 		"cols":
 		[
 			0.0,
-			0.464408855791,
+			0.666666666667,
 			1.0
 		],
 		"rows":
@@ -1400,6 +1585,22 @@
 		"selected_items":
 		[
 			[
+				"scr",
+				"public/comp/sass/screen.scss"
+			],
+			[
+				"vw",
+				"app/views/home/vw_home.blade.php"
+			],
+			[
+				"vwh",
+				"app/views/home/vw_home.blade.php"
+			],
+			[
+				"home",
+				"app/controllers/home/HomeController.php"
+			],
+			[
 				"s",
 				"public/comp/sass/screen.scss"
 			],
@@ -1422,10 +1623,6 @@
 			[
 				"vwab",
 				"app/views/about/vw_about.blade.php"
-			],
-			[
-				"scr",
-				"public/comp/sass/screen.scss"
 			],
 			[
 				"vwcont",
@@ -1516,20 +1713,12 @@
 				"app/views/about/vw_about.blade.php"
 			],
 			[
-				"vwh",
-				"app/views/home/vw_home.blade.php"
-			],
-			[
 				"scss",
 				"public/comp/sass/screen.scss"
 			],
 			[
 				"mast",
 				"app/views/layouts/master.blade.php"
-			],
-			[
-				"vw",
-				"application/modules/template/views/vw_template.php"
 			],
 			[
 				"ho",
@@ -1566,10 +1755,6 @@
 			[
 				"sc",
 				"afc/comp/sass/screen.scss"
-			],
-			[
-				"home",
-				"afc/application/modules/home/controllers/home.php"
 			],
 			[
 				"vwt",
@@ -1881,7 +2066,7 @@
 	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 317.0,
 	"status_bar_visible": true
 }

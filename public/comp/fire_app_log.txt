@@ -289,3 +289,10 @@ Load paths:
 2013-06-21 14:33:53 identical stylesheets/screen.css 
 2013-06-21 14:34:37 overwrite stylesheets/screen.css 
 2013-06-21 14:35:12 overwrite stylesheets/screen.css 
+2013-06-22 09:42:25 overwrite stylesheets/screen.css 
+2013-06-22 09:42:56 identical stylesheets/screen.css 
+2013-06-22 09:43:20    remove .sass-cache/ 
+2013-06-22 09:43:20    remove stylesheets/screen.css 
+2013-06-22 09:43:35    create stylesheets/screen.css 
+2013-06-22 09:46:41 identical stylesheets/screen.css 
+2013-06-22 10:02:28 identical stylesheets/screen.css 
