@@ -16,6 +16,7 @@
 			"app/controllers/selling",
 			"app/controllers/contact",
 			"app/controllers/mortgage",
+			"app/controllers/news",
 			"app/models",
 			"app/database/migrations",
 			"app/database/seeds",

@@ -25,13 +25,9 @@ class HomeController extends BaseController {
 	$newsBuy[0]->body = TextOperations::shortenString($newsBuy[0]->body, 420);  	
 	$newsSell[0]->body = TextOperations::shortenString($newsSell[0]->body, 420);  	
 
-
-
+		
 	return View::make('home.vw_home')
 	->with('newsBuy',$newsBuy[0])
 	->with('newsSell', $newsSell[0]);
-
 	}
-
-	
 }

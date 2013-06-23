@@ -3,6 +3,9 @@
 	[
 		{
 			"path": "/C/xampp/htdocs/remax"
+		},
+		{
+			"path": "/W/xampp/htdocs/remax"
 		}
 	]
 }

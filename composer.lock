@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "9f626a2187f77ac85c0a61ef57da53ad",
+    "hash": "7d7d9cb884e29e0507205e1c2afa4853",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -339,12 +339,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "f2f8adcc13b55d1104b4f9f9aa58d775e8850484"
+                "reference": "4804a9a096f1a3f048da11b192b9df5caafc1a5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/f2f8adcc13b55d1104b4f9f9aa58d775e8850484",
-                "reference": "f2f8adcc13b55d1104b4f9f9aa58d775e8850484",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/4804a9a096f1a3f048da11b192b9df5caafc1a5d",
+                "reference": "4804a9a096f1a3f048da11b192b9df5caafc1a5d",
                 "shasum": ""
             },
             "require": {
@@ -401,7 +401,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2013-06-18 06:42:37"
+            "time": "2013-06-21 19:00:38"
         },
         {
             "name": "doctrine/inflector",
@@ -1320,12 +1320,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/DomCrawler.git",
-                "reference": "09a06fc14c914663f7c34aa28088aaa90367f7b7"
+                "reference": "761ea57ee2839c79dd04fe39b73bacd2ba133f22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/DomCrawler/zipball/09a06fc14c914663f7c34aa28088aaa90367f7b7",
-                "reference": "09a06fc14c914663f7c34aa28088aaa90367f7b7",
+                "url": "https://api.github.com/repos/symfony/DomCrawler/zipball/761ea57ee2839c79dd04fe39b73bacd2ba133f22",
+                "reference": "761ea57ee2839c79dd04fe39b73bacd2ba133f22",
                 "shasum": ""
             },
             "require": {
@@ -1364,7 +1364,7 @@
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "http://symfony.com",
-            "time": "2013-06-13 07:51:49"
+            "time": "2013-06-23 08:16:02"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -1521,12 +1521,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpFoundation.git",
-                "reference": "v2.3.1"
+                "reference": "997715db218331076ef21c5a6ae622595755c6ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/v2.3.1",
-                "reference": "v2.3.1",
+                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/997715db218331076ef21c5a6ae622595755c6ef",
+                "reference": "997715db218331076ef21c5a6ae622595755c6ef",
                 "shasum": ""
             },
             "require": {
@@ -1562,7 +1562,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "http://symfony.com",
-            "time": "2013-05-10 06:00:03"
+            "time": "2013-06-23 08:16:02"
         },
         {
             "name": "symfony/http-kernel",
@@ -1641,12 +1641,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Process.git",
-                "reference": "18e399f3d6cf7a6ddf175d7cb30aee01812a31e6"
+                "reference": "f12e5857c60fa572b4f7d947276ffc2336ddea04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Process/zipball/18e399f3d6cf7a6ddf175d7cb30aee01812a31e6",
-                "reference": "18e399f3d6cf7a6ddf175d7cb30aee01812a31e6",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/f12e5857c60fa572b4f7d947276ffc2336ddea04",
+                "reference": "f12e5857c60fa572b4f7d947276ffc2336ddea04",
                 "shasum": ""
             },
             "require": {
@@ -1679,7 +1679,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "http://symfony.com",
-            "time": "2013-06-14 09:45:32"
+            "time": "2013-06-23 08:16:02"
         },
         {
             "name": "symfony/routing",
@@ -1688,12 +1688,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Routing.git",
-                "reference": "v2.3.1"
+                "reference": "3deda53b19ee9d361b03de5268bc91533eb76235"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Routing/zipball/v2.3.1",
-                "reference": "v2.3.1",
+                "url": "https://api.github.com/repos/symfony/Routing/zipball/3deda53b19ee9d361b03de5268bc91533eb76235",
+                "reference": "3deda53b19ee9d361b03de5268bc91533eb76235",
                 "shasum": ""
             },
             "require": {
@@ -1737,7 +1737,7 @@
             ],
             "description": "Symfony Routing Component",
             "homepage": "http://symfony.com",
-            "time": "2013-05-20 08:57:26"
+            "time": "2013-06-23 08:16:02"
         },
         {
             "name": "symfony/translation",
@@ -1800,12 +1800,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JeffreyWay/Laravel-4-Generators.git",
-                "reference": "0d4fed6f0f95629fd306dc3085edb218d17bc279"
+                "reference": "2b45547a5f90e4ee009c562c1932e02b8f0d781c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JeffreyWay/Laravel-4-Generators/zipball/0d4fed6f0f95629fd306dc3085edb218d17bc279",
-                "reference": "0d4fed6f0f95629fd306dc3085edb218d17bc279",
+                "url": "https://api.github.com/repos/JeffreyWay/Laravel-4-Generators/zipball/2b45547a5f90e4ee009c562c1932e02b8f0d781c",
+                "reference": "2b45547a5f90e4ee009c562c1932e02b8f0d781c",
                 "shasum": ""
             },
             "require": {
@@ -1842,7 +1842,7 @@
                     "role": "Developer"
                 }
             ],
-            "time": "2013-06-06 17:08:50"
+            "time": "2013-06-21 20:18:30"
         },
         {
             "name": "way/laravel-test-helpers",

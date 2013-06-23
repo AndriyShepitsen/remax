@@ -72,23 +72,27 @@
 		</aside>
 	</div>
 
+	<!-- =news start here -->
 	<div class="row">
+		<!-- =news for buyers start here -->
 		<article class="large-4 columns">
 			<h4> <a href="#">NEWS FOR BUYERS</a> </h4>
 			<hr/>
 			<a class="th" href="#"> <img src="comp/img/buyers.jpg" alt="News for Buyers"><a/>
 				<h5 class="subheader">{{$newsBuy->title}}</h5>
-				<p>{{$newsBuy->body}}</p>
+				<p>{{$newsBuy->body}}</p> 
+				<a class="readMore" href="<?php echo 'news/'.$newsBuy->id; ?>">Read More</a>
 			</article>
-
+			<!-- =news for sellers start here  -->
 			<article class="large-4 columns">
 				<h4> <a href="#">NEWS FOR SELLERS</a> </h4>
 				<hr/>
 				<a class="th" href="#"><img src="comp/img/sellers.jpg" alt="News for Sellers"> <a/>
 					<h5 class="subheader">{{$newsSell->title}}</h5>
 					<p>{{$newsSell->body}}</p>
+					<a class="readMore" href="<?php echo 'news/'.$newsSell->id; ?>">Read More</a>
 				</article>
-
+				<!--  =latest listings start here-->
 				<section class="large-4 columns">
 					<h4> <a href="#">LATEST LISTINGS</a> </h4>
 					<hr/>

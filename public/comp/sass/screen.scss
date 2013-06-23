@@ -81,6 +81,11 @@ button{
 	a{
 		color: #393939;
 	}
+	p{
+		font-size: .8em;
+		line-height:1.8; 
+		// text-align: justify ;
+	}
 	h4{
 		margin-bottom: 0px !important;
 	}
@@ -102,6 +107,12 @@ button{
 .findInput{
 	margin-bottom: 15px !important;
 }
+
+/* news start here */
+.readMore{
+	font-size: 0.6em;
+}
+
 /*=footer starts here */
 
 .connectFooter{

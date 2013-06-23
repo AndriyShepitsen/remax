@@ -23,8 +23,10 @@ Route::get('/', array('as'=>'home', 'uses'=>'HomeController@index'));
 /* =about */
 
 Route::get('/about', array('as'=>'about', 'uses'=>'AboutController@index'));
+Route::get('/news/{id}', array('as'=>'news', 'uses'=>'NewsController@show'));
 
 /* =buying */
+
 
 Route::get('/anatomy_of_a_home_purchase', array('as'=>'anatomy_of_a_home_purchase', 'uses'=>'Anatomy_of_a_home_purchaseController@index'));
 Route::get('/deciding_where_to_live', array('as'=>'deciding_where_to_live', 'uses'=>'Deciding_where_to_liveController@index'));
