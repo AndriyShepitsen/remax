@@ -531,7 +531,7 @@
 			"file": "app/views/layouts/master.blade.php",
 			"settings":
 			{
-				"buffer_size": 10847,
+				"buffer_size": 11172,
 				"line_ending": "Windows"
 			}
 		},
@@ -539,7 +539,7 @@
 			"file": "public/comp/sass/screen.scss",
 			"settings":
 			{
-				"buffer_size": 2730,
+				"buffer_size": 2874,
 				"line_ending": "Windows"
 			}
 		}
@@ -1170,7 +1170,7 @@
 					"file": "app/views/layouts/master.blade.php",
 					"settings":
 					{
-						"buffer_size": 10847,
+						"buffer_size": 11172,
 						"regions":
 						{
 							"bookmark_i":
@@ -1188,8 +1188,8 @@
 						"selection":
 						[
 							[
-								6925,
-								6925
+								5806,
+								5806
 							]
 						],
 						"settings":
@@ -1335,7 +1335,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2120.0,
+						"translation.y": 2206.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1351,15 +1351,15 @@
 					"file": "public/comp/sass/screen.scss",
 					"settings":
 					{
-						"buffer_size": 2730,
+						"buffer_size": 2874,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								484,
+								484
 							]
 						],
 						"settings":
@@ -1504,7 +1504,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 340.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1540,7 +1540,7 @@
 		"cols":
 		[
 			0.0,
-			0.666666666667,
+			0.609375,
 			1.0
 		],
 		"rows":

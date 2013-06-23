@@ -111,154 +111,152 @@
                  <p> <strong>Call to our agents: <br/> (847)674-9797</strong></p>
                </div>
 
+<!--                <div class="row">
+</div>
+ -->
                <div class="row">
-               </div>
 
-               <div class="row">
-                <div class="large-3 columns right inline icon">
+                <div class="large-10 large-centered columns">
+                  <a href="#" data-reveal-id="mail" class="mail"> <img src="comp/img/mail_remax.png" alt="Remax First Class Mail Icon" ></a>
+                  <div id="mail" class="reveal-modal">
+                    <form id="contact" name="contact" action="#" method="post">
+                      <label for="email">Your E-mail</label>
+                      <input type="text" id="email" name="email" class="txt">
+                      <br>
+                      <label for="msg">Enter a Message</label>
+                      <textarea id="msg" name="msg" class="txtarea"></textarea>
 
-                  <div class="large-10 large-centered columns">
-                    <p><a href="#" data-reveal-id="mail" class="mail"> <img src="comp/img/mail_remax.png" alt="Remax First Class Mail Icon" ></a></p>
-                    <div id="mail" class="reveal-modal">
-                      <form id="contact" name="contact" action="#" method="post">
-                        <label for="email">Your E-mail</label>
-                        <input type="text" id="email" name="email" class="txt">
-                        <br>
-                        <label for="msg">Enter a Message</label>
-                        <textarea id="msg" name="msg" class="txtarea"></textarea>
-
-                        <button id="send">Send</button>
-                      </form>
-                      <a class="close-reveal-modal">&#215</a>
-                    </div>
-                  </div> 
-                </div>
+                      <button id="send">Send</button>
+                    </form>
+                    <a class="close-reveal-modal">&#215</a>
+                  </div>
+                </div> 
 <!--                <div id="mail" class="mail">
                  <img src="comp/img/mail_remax.png" alt="Remax First Class Mail Icon">
                </div>
              -->               
-             <div id="home" class="home">
-               <img src="comp/img/home_remax.png" alt="Remax First Class Home Icon">
+             <div class="large-2 columns right inline icon">
+               <div id="home" class="home">
+                 <img src="comp/img/home_remax.png" alt="Remax First Class Home Icon">
+               </div>
              </div>
-           </div>
+           </aside>
+
          </div>
-       </aside>
-
-     </div>
-   </div>
+       </div>
 
 
-   @yield('content')
+       @yield('content')
 
 
 
-   <footer>
-    <div class="row">
-      <div class="large-4 columns">
-        <div class="large-12 columns">
-          <img src="comp/img/logo-footer.png" alt="">
+       <footer>
+        <div class="row">
+          <div class="large-4 columns">
+            <div class="large-12 columns">
+              <img src="comp/img/logo-footer.png" alt="">
+            </div>
+            <div class="large-12 columns mls">
+              <img src="comp/img/mls.jpg" alt="">
+            </div>
+          </div>
+          <div class="large-4 columns">
+            <div class="large-6 columns"></div>
+
+            <section class="large-6 columns social">
+              <ul class="prop">
+                <span class="propertiesFooter">PROPERTIES FOR SALE:</span> <br/>
+                <li class="locality properties"><a href="#">Single home</a></li>
+                <li class="locality properties"><a href="#">Family home</a></li>
+                <li class="locality properties"><a href="#">Apartment</a></li>
+                <li class="locality properties"><a href="#">Villa</a></li>
+                <li class="locality properties"><a href="#">Condo</a></li>
+                <li class="locality properties"><a href="#">Other</a></li>
+              </ul>
+            </section>
+
+            <section class="large-6 columns social">
+              <ul class="prop">
+                <span class="propertiesFooter">PROPERTIES FOR RENT:</span> <br/>
+                <li class="locality properties"><a href="#">Single home</a></li>
+                <li class="locality properties"><a href="#">Family home</a></li>
+                <li class="locality properties"><a href="#">Apartment</a></li>
+                <li class="locality properties"><a href="#">Villa</a></li>
+                <li class="locality properties"><a href="#">Condo</a></li>
+                <li class="locality properties"><a href="#">Other</a></li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="large-4 columns">
+            <div class="large-6 columns">
+              <ul class="vcard">
+                <span class="connectFooter">CONTACT INFORMATION:</span>
+                <li class="locality"> PHONE: (847) 674-9797</li>
+                <li class="locality"> FAX: (847) 674-0411</li>
+                <li class="street-address">4023 W. Church St.</li>
+                <li class="locality">Skokie</li>
+                <li><span class="state">IL</span> <span class="zip">600076</span></li>
+                <li class="email"><a href="#">remax1stclass@gmail.com </a></li>
+              </ul>
+            </div>
+            <section class="large-6 columns social">
+              <span class="contactFooter">CONNECT WITH US:</span>
+              <ul class="small-block-grid-3">
+                <li><img src="comp/img/facebook.png" alt=""></li>
+                <li><img src="comp/img/feed.png" alt=""></li>
+                <li><img src="comp/img/youtube.png" alt=""></li>
+                <li><img src="comp/img/twitter.png" alt=""></li>
+                <li><img src="comp/img/google.png" alt=""></li>
+                <li><img src="comp/img/linkedin.png" alt=""></li>
+              </ul>
+            </section>
+          </div>
         </div>
-        <div class="large-12 columns mls">
-          <img src="comp/img/mls.jpg" alt="">
+
+      </footer>
+      <div class="copyright">
+        <div class="row">
+          <div class="large-4 columns copy">
+            <p>© 2013 RE/MAX FIRST CLASS</p>
+          </div>
+          <div class="large-8 columns">
+            <ul class="inline-list right">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Buying</a></li>
+              <li><a href="#">Selling</a></li>
+              <li><a href="#">Renting</a></li>
+              <li><a href="#">Contact</a></li>
+
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="large-4 columns">
-        <div class="large-6 columns"></div>
-
-        <section class="large-6 columns social">
-          <ul class="prop">
-            <span class="propertiesFooter">PROPERTIES FOR SALE:</span> <br/>
-            <li class="locality properties"><a href="#">Single home</a></li>
-            <li class="locality properties"><a href="#">Family home</a></li>
-            <li class="locality properties"><a href="#">Apartment</a></li>
-            <li class="locality properties"><a href="#">Villa</a></li>
-            <li class="locality properties"><a href="#">Condo</a></li>
-            <li class="locality properties"><a href="#">Other</a></li>
-          </ul>
-        </section>
-
-        <section class="large-6 columns social">
-          <ul class="prop">
-            <span class="propertiesFooter">PROPERTIES FOR RENT:</span> <br/>
-            <li class="locality properties"><a href="#">Single home</a></li>
-            <li class="locality properties"><a href="#">Family home</a></li>
-            <li class="locality properties"><a href="#">Apartment</a></li>
-            <li class="locality properties"><a href="#">Villa</a></li>
-            <li class="locality properties"><a href="#">Condo</a></li>
-            <li class="locality properties"><a href="#">Other</a></li>
-          </ul>
-        </section>
-      </div>
-
-      <div class="large-4 columns">
-        <div class="large-6 columns">
-          <ul class="vcard">
-            <span class="connectFooter">CONTACT INFORMATION:</span>
-            <li class="locality"> PHONE: (847) 674-9797</li>
-            <li class="locality"> FAX: (847) 674-0411</li>
-            <li class="street-address">4023 W. Church St.</li>
-            <li class="locality">Skokie</li>
-            <li><span class="state">IL</span> <span class="zip">600076</span></li>
-            <li class="email"><a href="#">remax1stclass@gmail.com </a></li>
-          </ul>
-        </div>
-        <section class="large-6 columns social">
-          <span class="contactFooter">CONNECT WITH US:</span>
-          <ul class="small-block-grid-3">
-            <li><img src="comp/img/facebook.png" alt=""></li>
-            <li><img src="comp/img/feed.png" alt=""></li>
-            <li><img src="comp/img/youtube.png" alt=""></li>
-            <li><img src="comp/img/twitter.png" alt=""></li>
-            <li><img src="comp/img/google.png" alt=""></li>
-            <li><img src="comp/img/linkedin.png" alt=""></li>
-          </ul>
-        </section>
-      </div>
-    </div>
-
-  </footer>
-  <div class="copyright">
-    <div class="row">
-      <div class="large-4 columns copy">
-        <p>© 2013 RE/MAX FIRST CLASS</p>
-      </div>
-      <div class="large-8 columns">
-        <ul class="inline-list right">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Buying</a></li>
-          <li><a href="#">Selling</a></li>
-          <li><a href="#">Renting</a></li>
-          <li><a href="#">Contact</a></li>
-
-        </ul>
-      </div>
-    </div>
-  </div>
-  <script>
+      <script>
 
 
-  document.write('<script src=' +
-    ('_proto_' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
-    '.javascripts><\/script>')
-  </script>
-  <script src="javascripts/foundation.min.js"></script>
-  <script>
-  $(document).foundation();
+      document.write('<script src=' +
+        ('_proto_' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
+        '.javascripts><\/script>')
+      </script>
+      <script src="javascripts/foundation.min.js"></script>
+      <script>
+      $(document).foundation();
 
 
-  /* My slideDown mail form starts here */
+      /* My slideDown mail form starts here */
 
-  $('#mail').on('click', function(){
-    $('#inline').slideDown();
-  });
+      $('#mail').on('click', function(){
+        $('#inline').slideDown();
+      });
 
-  $('#close').on('click', function(){
+      $('#close').on('click', function(){
 
-    $('#inline').slideUp();
-  })
+        $('#inline').slideUp();
+      })
 
 
-  </script>
-</body>
-</html>
+      </script>
+    </body>
+    </html>

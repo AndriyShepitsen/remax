@@ -7,7 +7,7 @@
 	<div class="row">
 		<div class="large-12 columns">
 			<h1>ReMax First Class</h1>
-
+			<hr/>
 			<p>On the Shoulders of Titan – we are the biggest Real Estate company in the World. All Real Estate property gets maximum exposure. 
 				<div class="panel">
 					<dl>

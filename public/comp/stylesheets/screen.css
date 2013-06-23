@@ -10943,144 +10943,95 @@ table tfoot tr td {
 }
 
 /* line 20, ../sass/screen.scss */
-button {
-  font-size: 19px;
-  padding: 0.3em 1.5em;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF4BA3CC', endColorstr='#FF276B8A');
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #6bb3d5), color-stop(51%, #4ba3cc));
-  background: -webkit-linear-gradient(#6bb3d5 50%, #4ba3cc 51%);
-  background: -moz-linear-gradient(#6bb3d5 50%, #4ba3cc 51%);
-  background: -o-linear-gradient(#6bb3d5 50%, #4ba3cc 51%);
-  background: linear-gradient(#6bb3d5 50%, #4ba3cc 51%);
-  -webkit-box-shadow: #a6d2e6 0 1px 0 inset;
-  -moz-box-shadow: #a6d2e6 0 1px 0 inset;
-  box-shadow: #a6d2e6 0 1px 0 inset;
-  border: 1px solid #3899c6;
-  color: white;
-  text-shadow: #2a7193 0 -1px 0;
-}
-/* line 15, ../../../../../../Users/ckotcha/.compass/extensions/Sassy-Buttons-master/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-button:hover {
-  text-decoration: none;
-}
-/* line 30, ../../../../../../Users/ckotcha/.compass/extensions/Sassy-Buttons-master/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-button:hover {
-  background-color: #3692be;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #4fa5cd), color-stop(51%, #3692be));
-  background: -webkit-linear-gradient(#4fa5cd 50%, #3692be 51%);
-  background: -moz-linear-gradient(#4fa5cd 50%, #3692be 51%);
-  background: -o-linear-gradient(#4fa5cd 50%, #3692be 51%);
-  background: linear-gradient(#4fa5cd 50%, #3692be 51%);
-}
-/* line 33, ../../../../../../Users/ckotcha/.compass/extensions/Sassy-Buttons-master/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-button:active {
-  -webkit-box-shadow: #358fba 0 1px 2px inset;
-  -moz-box-shadow: #358fba 0 1px 2px inset;
-  box-shadow: #358fba 0 1px 2px inset;
-}
-/* line 6, ../../../../../../Users/ckotcha/.compass/extensions/Sassy-Buttons-master/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-button.disabled, button[disabled] {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
-  opacity: 0.6;
-  background: #4ba3cc;
-  cursor: default;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-/* line 74, ../../../../../../Users/ckotcha/.compass/extensions/Sassy-Buttons-master/stylesheets/_sassy-buttons.sass */
-button::-moz-focus-inner {
-  padding: 0 !important;
-  margin: -1px !important;
+.button {
+  background-color: #0176B0;
 }
 
-/* line 23, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
+.button:hover, .button:focus, button:hover, button:focus {
+  background-color: #01547d;
+}
+
+/* style */
+/* line 28, ../sass/screen.scss */
 .navPanel {
   background-color: #313131;
 }
 
-/* line 26, ../sass/screen.scss */
+/* line 31, ../sass/screen.scss */
 .top-bar {
   margin-bottom: 0 !important;
   background-color: #313131 !important;
 }
 
-/* line 30, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 .top-bar-section ul li > a {
   background-color: #313131 !important;
 }
 
-/* line 33, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 .toggle-topbar, .top-bar.expanded .title-area {
   background-color: #313131 !important;
 }
 
-/* line 36, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 .logoWrapper {
   padding: 10px;
   background-color: #dddddd;
 }
 
-/* line 41, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 .call {
   font-size: 20px;
   color: #B92025;
   line-height: 28px;
 }
-/* line 45, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 .call p {
   text-align: right;
 }
 
-/* line 50, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 .icon {
   overflow: auto;
   margin-top: 30px;
 }
 
-/* line 55, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 .mail, .home {
   float: right;
   padding: 10px;
 }
 
-/* line 65, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 #inline {
   display: none;
 }
 
-/* line 68, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 #mainContent {
   padding-top: 10px;
   background-color: #F6F6F6;
 }
-/* line 71, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 #mainContent .small-block-grid-3 > li {
   margin-bottom: 15px !important;
 }
-/* line 74, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 #mainContent a {
   color: #393939;
 }
-/* line 77, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 #mainContent h4 {
   margin-bottom: 0px !important;
 }
 
-/* line 82, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 .orbit-container {
   height: 400px;
 }
 
-/* line 87, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 .find {
   display: inline-block;
   font-weight: bold;
@@ -11089,12 +11040,12 @@ button::-moz-focus-inner {
   color: #525252;
 }
 
-/* line 94, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 .findInput {
   margin-bottom: 15px !important;
 }
 
-/* line 97, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 .connectFooter {
   display: inline-block;
   font-size: 11px;
@@ -11102,65 +11053,65 @@ button::-moz-focus-inner {
   font-weight: bold;
 }
 
-/* line 103, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 .vcard .fn {
   font-size: 12px;
 }
 
-/* line 106, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 .vcard .street-address {
   font-size: 12px;
 }
 
-/* line 109, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 .vcard .locality {
   font-size: 12px;
 }
 
-/* line 112, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 .vcard .state {
   font-size: 12px;
 }
 
-/* line 115, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 .vcard .zip {
   font-size: 12px;
   display: inline-block;
 }
 
-/* line 120, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 .vcard .email a {
   font-size: 11px !important;
 }
 
-/* line 124, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 footer {
   background-color: #dddddd;
   padding-top: 10px;
 }
-/* line 128, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 footer .row .columns {
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
-/* line 132, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 footer .prop {
   font-size: 11px !important;
 }
-/* line 136, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 footer .row.ul.li.a {
   color: #F7F7F4;
   cursor: pointer;
 }
 
-/* line 145, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 [class*="block-grid-"] {
   display: block;
   margin: 0 10px !important;
   padding: 0;
 }
 
-/* line 150, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 .contactFooter {
   padding-left: 10px;
   font-size: 11px;
@@ -11171,24 +11122,24 @@ footer .row.ul.li.a {
   display: inline-block;
 }
 
-/* line 159, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 .social {
   padding-top: 10px;
   padding-bottom: 20px;
 }
 
-/* line 164, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 .mls {
   margin-top: 90px;
   text-align: bottom;
 }
 
-/* line 168, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 .properties {
   margin-left: 15px;
 }
 
-/* line 171, ../sass/screen.scss */
+/* line 176, ../sass/screen.scss */
 .propertiesFooter {
   font-weight: bold;
   display: inline-block;
@@ -11196,23 +11147,23 @@ footer .row.ul.li.a {
   color: #393939;
 }
 
-/* line 178, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 .copyright {
   background-color: #3F3F3F;
   padding-top: 10px;
 }
-/* line 181, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 .copyright a {
   color: #F7F7F4;
 }
 
-/* line 185, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 .copy {
   color: #FFFFFF !important;
 }
 
 /* =Contact Us */
-/* line 189, ../sass/screen.scss */
+/* line 194, ../sass/screen.scss */
 textarea {
   height: 300px;
   cursor: pointer;

@@ -17,9 +17,14 @@
 	padding: 0;
 	margin: 0;
 }
-button{
-	@include sassy-button("glass", 10px, 19px, #4ba3cc);
+.button{
+	background-color:#0176B0;
+	// @include sassy-button("glass", 10px, 19px, #4ba3cc);
 }
+.button:hover, .button:focus, button:hover, button:focus{
+	background-color:darken(#0176B0, 10%);
+}
+	/* style */
 .navPanel{
 	background-color: #313131;
 }
