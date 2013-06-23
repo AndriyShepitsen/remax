@@ -17,14 +17,11 @@
 	padding: 0;
 	margin: 0;
 }
-.button{
-	background-color:#0176B0;
-	// @include sassy-button("glass", 10px, 19px, #4ba3cc);
+/* =navPanel starts here */
+
+button{
+	@include sassy-button("glass", 10px, 19px, #4ba3cc);
 }
-.button:hover, .button:focus, button:hover, button:focus{
-	background-color:darken(#0176B0, 10%);
-}
-	/* style */
 .navPanel{
 	background-color: #313131;
 }
@@ -41,6 +38,12 @@
 .logoWrapper{
 	padding: 10px;
 	background-color: darken(#F6F6F6, 10%);
+	.button{
+		background-color:#428CB9 !important;
+	}
+	.button:hover{
+		background-color:darken(#428CB9, 10%)!important;
+	}
 }
 
 .call{
@@ -48,14 +51,14 @@
 	color: #B92025;
 	line-height: 28px;
 	p{
-	text-align: right;
+		text-align: right;
 	}
 }
 
 .icon{
-margin-top: 30px;
-text-align: right;
-	}
+	margin-top: 30px;
+	text-align: right;
+}
 .mailIcon{
 	padding-left:10px;
 	padding-top:10px;
@@ -66,9 +69,9 @@ text-align: right;
 	@extend .mailIcon;
 }
 
-#element_to_pop_up { display:none; }
-
-
+// #element_to_pop_up { 
+// 	display:none; 
+// }
 #mainContent{
 	padding-top: 10px;
 	background-color:#F6F6F6;
@@ -84,9 +87,10 @@ text-align: right;
 }
 
 .orbit-container{
-height:400px;
+	height:400px;
 }
 
+/* =find starts here */
 
 .find{
 	display: inline-block;
@@ -98,6 +102,8 @@ height:400px;
 .findInput{
 	margin-bottom: 15px !important;
 }
+/*=footer starts here */
+
 .connectFooter{
 	display: inline-block;
 	font-size: 11px;
@@ -135,21 +141,16 @@ footer{
 	}
 	.prop{
 		font-size: 11px !important;
-
 	}
 	.row.ul.li.a{
-
 		color: #F7F7F4;
 		cursor: pointer;
-
 	}
-
-
 }
 [class*="block-grid-"] {
-    display: block;
-    margin: 0 10px !important;
-    padding: 0;
+	display: block;
+	margin: 0 10px !important;
+	padding: 0;
 }
 .contactFooter{
 	padding-left: 10px;
@@ -163,7 +164,7 @@ footer{
 .social{
 	padding-top: 10px;
 	padding-bottom: 20px;
-	// margin-left: 5px; 
+  // margin-left: 5px; 
 }
 .mls{
 	margin-top: 90px;
@@ -174,10 +175,10 @@ footer{
 }
 .propertiesFooter{
 	font-weight: bold;
-	// margin-top: 3px !important;
-	display: inline-block;
-	margin-bottom: 5px;
-	color: #393939;
+  // margin-top: 3px !important;
+  display: inline-block;
+  margin-bottom: 5px;
+  color: #393939;
 }
 .copyright{
 	background-color: #3F3F3F;
@@ -187,11 +188,10 @@ footer{
 	}
 }
 .copy{
-		color: #FFFFFF !important;
-	}
-	/* =Contact Us */
-	 textarea{
-	 	height: 300px;
-	 	cursor: pointer;
-	 }
-	
+	color: #FFFFFF !important;
+}
+/* =Contact Us */
+textarea{
+	height: 300px;
+	cursor: pointer;
+}

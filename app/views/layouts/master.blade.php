@@ -17,24 +17,8 @@
 
 
 </head>
-
 <body>
-<!--   <div id="inline">
-  <p id='close'>X</p>
-  <h2>Send us a Message</h2>
-
-  <form id="contact" name="contact" action="#" method="post">
-    <label for="email">Your E-mail</label>
-    <input type="text" id="email" name="email" class="txt">
-    <br>
-    <label for="msg">Enter a Message</label>
-    <textarea id="msg" name="msg" class="txtarea"></textarea>
-
-    <button id="send">Send</button>
-  </form>
--->
-
-
+<!-- navPanel starts here -->
 </div>
 <div class="navPanel">
   <div class="row">
@@ -111,64 +95,25 @@
                 <div class="large-12 colomns call right">
                  <p> <strong>Call to our agents: <br/> (847)674-9797</strong></p>
                </div>
-<<<<<<< HEAD
-
-<!--                <div class="row">
-</div>
- -->
-               <div class="row">
-
-                <div class="large-10 large-centered columns">
-                  <a href="#" data-reveal-id="mail" class="mail"> <img src="comp/img/mail_remax.png" alt="Remax First Class Mail Icon" ></a>
-                  <div id="mail" class="reveal-modal">
-                    <form id="contact" name="contact" action="#" method="post">
-                      <label for="email">Your E-mail</label>
-                      <input type="text" id="email" name="email" class="txt">
-                      <br>
-                      <label for="msg">Enter a Message</label>
-                      <textarea id="msg" name="msg" class="txtarea"></textarea>
-
-                      <button id="send">Send</button>
-                    </form>
-                    <a class="close-reveal-modal">&#215</a>
-                  </div>
-                </div> 
-=======
-         </div>
-               <div class="row">
+             </div>
+             <div class="row">
                <div class="large-12 columns right icon">
-             <a href="#" class="homeIcon">
-               <img src="comp/img/home_remax.png" alt="Remax First Class Home Icon">
-             </a> 
+                 <a href="#" class="homeIcon">
+                   <img src="comp/img/home_remax.png" alt="Remax First Class Home Icon">
+                 </a> 
 
-                    <a href="#" class="mailIcon" data-reveal-id="myModal2"> <img src="comp/img/mail_remax.png" alt="Remax First Class Mail Icon" ></a>
-                  </div> 
-                </div>
->>>>>>> de8b4e77e65651afd3eba23d3729463dc31c884f
-<!--                <div id="mail" class="mail">
-                 <img src="comp/img/mail_remax.png" alt="Remax First Class Mail Icon">
-               </div>
-             -->               
-<<<<<<< HEAD
-             <div class="large-2 columns right inline icon">
-               <div id="home" class="home">
-                 <img src="comp/img/home_remax.png" alt="Remax First Class Home Icon">
-               </div>
+                 <a href="#" class="mailIcon" data-reveal-id="myModal2"> <img src="comp/img/mail_remax.png" alt="Remax First Class Mail Icon" ></a>
+               </div> 
              </div>
            </aside>
-
          </div>
        </div>
-=======
-            
-             
-       </aside>
->>>>>>> de8b4e77e65651afd3eba23d3729463dc31c884f
 
 
        @yield('content')
 
 
+<!-- /* =footeer starts here */ -->
 
        <footer>
         <div class="row">
@@ -233,8 +178,10 @@
             </section>
           </div>
         </div>
-
       </footer>
+
+      <!-- /* =copyright starts here */ -->
+      
       <div class="copyright">
         <div class="row">
           <div class="large-4 columns copy">
@@ -242,62 +189,31 @@
           </div>
           <div class="large-8 columns">
             <ul class="inline-list right">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Buying</a></li>
-              <li><a href="#">Selling</a></li>
-              <li><a href="#">Renting</a></li>
-              <li><a href="#">Contact</a></li>
-
-            </ul>
+<!--               <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Buying</a></li>
+            <li><a href="#">Selling</a></li>
+            <li><a href="#">Renting</a></li>
+            <li><a href="#">Contact</a></li>
+            
+             -->            </ul>
           </div>
         </div>
       </div>
-<<<<<<< HEAD
-      <script>
 
+<!-- /* My slideDown mail form starts here  */
+      
+       -->      <div id="myModal" class="reveal-modal medium">
+        <form id="contact" name="contact" action="#" method="post">
+          <label for="email">Your E-mail</label>
+          <input type="text" id="email" name="email" class="txt">
+          <br>
+          <label for="msg">Enter a Message</label>
+          <textarea id="msg" name="msg" class="txtarea"></textarea>
 
-      document.write('<script src=' +
-        ('_proto_' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
-        '.javascripts><\/script>')
-      </script>
-      <script src="javascripts/foundation.min.js"></script>
-      <script>
-      $(document).foundation();
-
-
-      /* My slideDown mail form starts here */
-
-      $('#mail').on('click', function(){
-        $('#inline').slideDown();
-      });
-
-      $('#close').on('click', function(){
-
-        $('#inline').slideUp();
-      })
-=======
-    </div>
-  </div>
->>>>>>> de8b4e77e65651afd3eba23d3729463dc31c884f
-
-  <div id="myModal" class="reveal-modal medium">
-                      <form id="contact" name="contact" action="#" method="post">
-                        <label for="email">Your E-mail</label>
-                        <input type="text" id="email" name="email" class="txt">
-                        <br>
-                        <label for="msg">Enter a Message</label>
-                        <textarea id="msg" name="msg" class="txtarea"></textarea>
-
-<<<<<<< HEAD
-      </script>
+          <button id="send">Send</button>
+        </form>
+        <a class="close-reveal-modal">&#215</a>
+      </div>
     </body>
     </html>
-=======
-                        <button id="send">Send</button>
-                      </form>
-                      <a class="close-reveal-modal">&#215</a>
-                    </div>
-</body>
-</html>
->>>>>>> de8b4e77e65651afd3eba23d3729463dc31c884f

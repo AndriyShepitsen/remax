@@ -73,23 +73,23 @@
 	</div>
 
 	<div class="row">
-		<article class="large-4 small-4 columns">
+		<article class="large-4 columns">
 			<h4> <a href="#">NEWS FOR BUYERS</a> </h4>
 			<hr/>
 			<a class="th" href="#"> <img src="comp/img/buyers.jpg" alt="News for Buyers"><a/>
-				<h5 class="subheader">{{$newsBuy[0]->title}}</h5>
-				<p>{{$newsBuy[0]->body}}</p>
+				<h5 class="subheader">{{$newsBuy->title}}</h5>
+				<p>{{$newsBuy->body}}</p>
 			</article>
 
-			<article class="large-4 small-4 columns">
+			<article class="large-4 columns">
 				<h4> <a href="#">NEWS FOR SELLERS</a> </h4>
 				<hr/>
 				<a class="th" href="#"><img src="comp/img/sellers.jpg" alt="News for Sellers"> <a/>
-					<h5 class="subheader">{{$newsBuy[0]->title}}</h5>
-					<p>{{$newsBuy[0]->body}}</p>
+					<h5 class="subheader">{{$newsSell->title}}</h5>
+					<p>{{$newsSell->body}}</p>
 				</article>
 
-				<section class="large-4 small-4 columns">
+				<section class="large-4 columns">
 					<h4> <a href="#">LATEST LISTINGS</a> </h4>
 					<hr/>
 					<ul class="small-block-grid-3 clearing-thumbs" data-clearing>
