@@ -76,7 +76,7 @@
           <div class="logoWrapper">
             <div class="row">
               <aside class="large-4 columns">
-                <img src="comp/img/REMAX1Logo.png" alt="Logo Remax First Class Realty">
+                <img src="{{url('comp/img/REMAX1Logo.png')}}" alt="Logo Remax First Class Realty">
               </aside>
 
               <aside class="large-4 columns">
