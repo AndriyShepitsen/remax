@@ -10,8 +10,9 @@
   {{HTML::style("comp/stylesheets/normalize.css" )}} 
   {{HTML::style("comp/stylesheets/screen.css" )}} 
   {{HTML::script("//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js")}} 
-  {{HTML::style("comp/javascripts/foundation.min.js")}} 
-  {{HTML::style("comp/javascripts/vendor/custom.modernizr.js")}} 
+
+  {{HTML::script("comp/javascripts/vendor/custom.modernizr.js")}} 
+  {{HTML::script("comp/javascripts/foundation.min.js")}} 
   {{HTML::script("comp/javascripts/script.js")}} 
 
 
@@ -110,38 +111,22 @@
                 <div class="large-12 colomns call right">
                  <p> <strong>Call to our agents: <br/> (847)674-9797</strong></p>
                </div>
-
+         </div>
                <div class="row">
-               </div>
+               <div class="large-12 columns right icon">
+             <a href="#" class="homeIcon">
+               <img src="comp/img/home_remax.png" alt="Remax First Class Home Icon">
+             </a> 
 
-               <div class="row">
-                <div class="large-3 columns right inline icon">
-
-                  <div class="large-10 large-centered columns">
-                    <p><a href="#" data-reveal-id="mail" class="mail"> <img src="comp/img/mail_remax.png" alt="Remax First Class Mail Icon" ></a></p>
-                    <div id="mail" class="reveal-modal">
-                      <form id="contact" name="contact" action="#" method="post">
-                        <label for="email">Your E-mail</label>
-                        <input type="text" id="email" name="email" class="txt">
-                        <br>
-                        <label for="msg">Enter a Message</label>
-                        <textarea id="msg" name="msg" class="txtarea"></textarea>
-
-                        <button id="send">Send</button>
-                      </form>
-                      <a class="close-reveal-modal">&#215</a>
-                    </div>
+                    <a href="#" class="mailIcon" data-reveal-id="myModal2"> <img src="comp/img/mail_remax.png" alt="Remax First Class Mail Icon" ></a>
                   </div> 
                 </div>
 <!--                <div id="mail" class="mail">
                  <img src="comp/img/mail_remax.png" alt="Remax First Class Mail Icon">
                </div>
              -->               
-             <div id="home" class="home">
-               <img src="comp/img/home_remax.png" alt="Remax First Class Home Icon">
-             </div>
-           </div>
-         </div>
+            
+             
        </aside>
 
      </div>
@@ -235,30 +220,18 @@
       </div>
     </div>
   </div>
-  <script>
 
+  <div id="myModal" class="reveal-modal medium">
+                      <form id="contact" name="contact" action="#" method="post">
+                        <label for="email">Your E-mail</label>
+                        <input type="text" id="email" name="email" class="txt">
+                        <br>
+                        <label for="msg">Enter a Message</label>
+                        <textarea id="msg" name="msg" class="txtarea"></textarea>
 
-  document.write('<script src=' +
-    ('_proto_' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
-    '.javascripts><\/script>')
-  </script>
-  <script src="javascripts/foundation.min.js"></script>
-  <script>
-  $(document).foundation();
-
-
-  /* My slideDown mail form starts here */
-
-  $('#mail').on('click', function(){
-    $('#inline').slideDown();
-  });
-
-  $('#close').on('click', function(){
-
-    $('#inline').slideUp();
-  })
-
-
-  </script>
+                        <button id="send">Send</button>
+                      </form>
+                      <a class="close-reveal-modal">&#215</a>
+                    </div>
 </body>
 </html>
