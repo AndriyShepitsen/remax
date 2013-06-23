@@ -10993,45 +10993,46 @@ table tfoot tr td {
 
 /* line 55, ../sass/screen.scss */
 .icon {
-  overflow: auto;
   margin-top: 30px;
+  text-align: right;
 }
 
-/* line 60, ../sass/screen.scss */
-.mail, .home {
-  float: right;
-  padding: 10px;
+/* line 59, ../sass/screen.scss */
+.mailIcon, .homeIcon {
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-/* line 70, ../sass/screen.scss */
-#inline {
+/* line 69, ../sass/screen.scss */
+#element_to_pop_up {
   display: none;
 }
 
-/* line 73, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 #mainContent {
   padding-top: 10px;
   background-color: #F6F6F6;
 }
-/* line 76, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 #mainContent .small-block-grid-3 > li {
   margin-bottom: 15px !important;
 }
-/* line 79, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 #mainContent a {
   color: #393939;
 }
-/* line 82, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 #mainContent h4 {
   margin-bottom: 0px !important;
 }
 
-/* line 87, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 .orbit-container {
   height: 400px;
 }
 
-/* line 92, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 .find {
   display: inline-block;
   font-weight: bold;
@@ -11040,12 +11041,12 @@ table tfoot tr td {
   color: #525252;
 }
 
-/* line 99, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 .findInput {
   margin-bottom: 15px !important;
 }
 
-/* line 102, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 .connectFooter {
   display: inline-block;
   font-size: 11px;
@@ -11053,65 +11054,65 @@ table tfoot tr td {
   font-weight: bold;
 }
 
-/* line 108, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 .vcard .fn {
   font-size: 12px;
 }
 
-/* line 111, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 .vcard .street-address {
   font-size: 12px;
 }
 
-/* line 114, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 .vcard .locality {
   font-size: 12px;
 }
 
-/* line 117, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 .vcard .state {
   font-size: 12px;
 }
 
-/* line 120, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 .vcard .zip {
   font-size: 12px;
   display: inline-block;
 }
 
-/* line 125, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 .vcard .email a {
   font-size: 11px !important;
 }
 
-/* line 129, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 footer {
   background-color: #dddddd;
   padding-top: 10px;
 }
-/* line 133, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 footer .row .columns {
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
-/* line 137, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 footer .prop {
   font-size: 11px !important;
 }
-/* line 141, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 footer .row.ul.li.a {
   color: #F7F7F4;
   cursor: pointer;
 }
 
-/* line 150, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 [class*="block-grid-"] {
   display: block;
   margin: 0 10px !important;
   padding: 0;
 }
 
-/* line 155, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 .contactFooter {
   padding-left: 10px;
   font-size: 11px;
@@ -11122,24 +11123,24 @@ footer .row.ul.li.a {
   display: inline-block;
 }
 
-/* line 164, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 .social {
   padding-top: 10px;
   padding-bottom: 20px;
 }
 
-/* line 169, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 .mls {
   margin-top: 90px;
   text-align: bottom;
 }
 
-/* line 173, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 .properties {
   margin-left: 15px;
 }
 
-/* line 176, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 .propertiesFooter {
   font-weight: bold;
   display: inline-block;
@@ -11147,23 +11148,23 @@ footer .row.ul.li.a {
   color: #393939;
 }
 
-/* line 183, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 .copyright {
   background-color: #3F3F3F;
   padding-top: 10px;
 }
-/* line 186, ../sass/screen.scss */
+/* line 185, ../sass/screen.scss */
 .copyright a {
   color: #F7F7F4;
 }
 
-/* line 190, ../sass/screen.scss */
+/* line 189, ../sass/screen.scss */
 .copy {
   color: #FFFFFF !important;
 }
 
 /* =Contact Us */
-/* line 194, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 textarea {
   height: 300px;
   cursor: pointer;

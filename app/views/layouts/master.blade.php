@@ -10,8 +10,9 @@
   {{HTML::style("comp/stylesheets/normalize.css" )}} 
   {{HTML::style("comp/stylesheets/screen.css" )}} 
   {{HTML::script("//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js")}} 
-  {{HTML::style("comp/javascripts/foundation.min.js")}} 
-  {{HTML::style("comp/javascripts/vendor/custom.modernizr.js")}} 
+
+  {{HTML::script("comp/javascripts/vendor/custom.modernizr.js")}} 
+  {{HTML::script("comp/javascripts/foundation.min.js")}} 
   {{HTML::script("comp/javascripts/script.js")}} 
 
 
@@ -110,6 +111,7 @@
                 <div class="large-12 colomns call right">
                  <p> <strong>Call to our agents: <br/> (847)674-9797</strong></p>
                </div>
+<<<<<<< HEAD
 
 <!--                <div class="row">
 </div>
@@ -131,10 +133,23 @@
                     <a class="close-reveal-modal">&#215</a>
                   </div>
                 </div> 
+=======
+         </div>
+               <div class="row">
+               <div class="large-12 columns right icon">
+             <a href="#" class="homeIcon">
+               <img src="comp/img/home_remax.png" alt="Remax First Class Home Icon">
+             </a> 
+
+                    <a href="#" class="mailIcon" data-reveal-id="myModal2"> <img src="comp/img/mail_remax.png" alt="Remax First Class Mail Icon" ></a>
+                  </div> 
+                </div>
+>>>>>>> de8b4e77e65651afd3eba23d3729463dc31c884f
 <!--                <div id="mail" class="mail">
                  <img src="comp/img/mail_remax.png" alt="Remax First Class Mail Icon">
                </div>
              -->               
+<<<<<<< HEAD
              <div class="large-2 columns right inline icon">
                <div id="home" class="home">
                  <img src="comp/img/home_remax.png" alt="Remax First Class Home Icon">
@@ -144,6 +159,11 @@
 
          </div>
        </div>
+=======
+            
+             
+       </aside>
+>>>>>>> de8b4e77e65651afd3eba23d3729463dc31c884f
 
 
        @yield('content')
@@ -233,6 +253,7 @@
           </div>
         </div>
       </div>
+<<<<<<< HEAD
       <script>
 
 
@@ -255,8 +276,28 @@
 
         $('#inline').slideUp();
       })
+=======
+    </div>
+  </div>
+>>>>>>> de8b4e77e65651afd3eba23d3729463dc31c884f
 
+  <div id="myModal" class="reveal-modal medium">
+                      <form id="contact" name="contact" action="#" method="post">
+                        <label for="email">Your E-mail</label>
+                        <input type="text" id="email" name="email" class="txt">
+                        <br>
+                        <label for="msg">Enter a Message</label>
+                        <textarea id="msg" name="msg" class="txtarea"></textarea>
 
+<<<<<<< HEAD
       </script>
     </body>
     </html>
+=======
+                        <button id="send">Send</button>
+                      </form>
+                      <a class="close-reveal-modal">&#215</a>
+                    </div>
+</body>
+</html>
+>>>>>>> de8b4e77e65651afd3eba23d3729463dc31c884f

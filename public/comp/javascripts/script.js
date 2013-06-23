@@ -1,5 +1,5 @@
 $(function () {
-	$('#home').on('mousemove',function(e){
+	$('.homeIcon').on('mousemove',function(e){
 
 		$('#popup').remove();
 
@@ -14,30 +14,53 @@ $(function () {
 		varPopup.appendTo('body');
 	});
 
-	$('#home').on('mouseout',function(){
+	$('.homeIcon').on('mouseout',function(){
 
 		$('#popup').remove();
 	});
-});	
 
-$(function () {
-	$('#mail').on('mousemove',function(e){
+		$('.mailIcon').on('mousemove',function(e){
 
 		$('#popup').remove();
 
 		var varPopup = $('<div></div>',{
-			text: 'Mail',
+			text: 'Contact Us',
 			id:'popup'});
 
 		varPopup.css('position', 'absolute');
-		varPopup.css('left', e.pageX-35);
+		varPopup.css('left', e.pageX-60);
 		varPopup.css('top', e.pageY-30);
 
 		varPopup.appendTo('body');
 	});
 
-	$('#mail').on('mouseout',function(){
+	$('.mailIcon').on('mouseout',function(){
 
 		$('#popup').remove();
 	});
-});
+
+	$('.mailIcon').on('click', function(){
+        // Prevents the default action to be triggered. 
+              $('#myModal').foundation('reveal', 'open');
+
+
+  });
+
+
+	$('a.close-reveal-modal').on('click', function(){
+        // Prevents the default action to be triggered. 
+              $('#myModal').foundation('reveal', 'close');
+
+
+  });
+
+
+
+});	
+
+
+  
+
+
+  /* My slideDown mail form starts here */
+
