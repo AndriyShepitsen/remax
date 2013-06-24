@@ -28,7 +28,7 @@
         <ul class="title-area">
           <!-- Title Area -->
           <li class="name">
-            <h1><a href="#">REMAX FIRST CLASS</a></h1>
+            <h1><a href="{{ URL::route('home')}}">REMAX FIRST CLASS</a></h1>
           </li>
           <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
           <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -76,7 +76,9 @@
           <div class="logoWrapper">
             <div class="row">
               <aside class="large-4 columns">
+                <a href="{{ URL::route('home')}}"> 
                 <img src="{{url('comp/img/REMAX1Logo.png')}}" alt="Logo Remax First Class Realty">
+                <a/>
               </aside>
 
               <aside class="large-4 columns">
@@ -98,11 +100,11 @@
              </div>
              <div class="row">
                <div class="large-12 columns right icon">
-                 <a href="#" class="homeIcon" >
+                 <a href="#" class="homeIcon has-tip-left" title="Home Page">
                    <img src="{{url('comp/img/home_remax.png')}}" alt="Remax First Class Home Icon">
                  </a> 
 
-                 <a href="#" class="mailIcon" data-reveal-id="myModal2"> <img src="{{url('comp/img/mail_remax.png')}}" alt="Remax First Class Mail Icon" ></a>
+                 <a href="#" class="mailIcon has-tip-left" title="Send Us Email" data-reveal-id="myModal2"> <img src="{{url('comp/img/mail_remax.png')}}" alt="Remax First Class Mail Icon" ></a>
                </div> 
              </div>
            </aside>
@@ -119,10 +121,12 @@
         <div class="row">
           <div class="large-4 columns">
             <div class="large-12 columns">
-              <img src="{{url('comp/img/logo-footer.png')}}" alt="">
+              <a href="{{ URL::route('home')}}">
+              <img src="{{url('comp/img/logo-footer.png')}}" alt="Logo Remax First Class">
+              <a/>
             </div>
             <div class="large-12 columns mls">
-              <img src="{{url('comp/img/mls.jpg')}}" alt="">
+              <img src="{{url('comp/img/mls.jpg')}}" alt="Multiple Listing Service">
             </div>
           </div>
           <div class="large-4 columns">
@@ -168,12 +172,12 @@
             <section class="large-6 columns social">
               <span class="contactFooter">CONNECT WITH US:</span>
               <ul class="small-block-grid-3">
-                <li><img src="{{url('comp/img/facebook.png')}}" alt=""></li>
-                <li><img src="{{url('comp/img/feed.png')}}" alt=""></li>
-                <li><img src="{{url('comp/img/youtube.png')}}" alt=""></li>
-                <li><img src="{{url('comp/img/twitter.png')}}" alt=""></li>
-                <li><img src="{{url('comp/img/google.png')}}" alt=""></li>
-                <li><img src="{{url('comp/img/linkedin.png')}}" alt=""></li>
+                <li><a class="has-tip-left" title="Our Facebook Page" href="#"><img src="{{url('comp/img/facebook.png')}}" alt="Skokie Remax First Class Facebook Icon"><a/></li>
+                <li><a class="has-tip-left" title="Our Feed Page" href="#"><img src="{{url('comp/img/feed.png')}}" alt="Skokie Remax First Class Feed Icon"><a/></li>
+                <li><a class="has-tip-left" title="Our Page" href="#"><img src="{{url('comp/img/youtube.png')}}" alt="Skokie Remax First Class Youtube Icon"><a/></li>
+                <li><a class="has-tip-left" title="Our Twitter Page" href="#"><img src="{{url('comp/img/twitter.png')}}" alt="Skokie Remax First Class Twitter Icon"><a/></li>
+                <li><a class="has-tip-left" title="Our Google Plus Page" href="#"><img src="{{url('comp/img/google.png')}}" alt="Skokie Remax First Class Google Icon"><a/></li>
+                <li><a class="has-tip-left" title="Our Linkedin Page" href="#"><img src="{{url('comp/img/linkedin.png')}}" alt="Skokie Remax First Class Linkedin Icon"><a/></li>
               </ul>
             </section>
           </div>

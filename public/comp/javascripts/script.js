@@ -1,50 +1,50 @@
-/* =popup for home and mail icons in footer */
+/* =popup for home and mail icons in header */
 
-$(function () {
-	$('.homeIcon').on('mousemove',function(e){
+// $(function () {
+// 	$('.homeIcon').on('mousemove',function(e){
 
-		$('#popup').remove();
+// 		$('#popup').remove();
 
-		var varPopup = $('<div></div>',{
-			text: 'Home page',
-			id:'popup'});
+// 		var varPopup = $('<div></div>',{
+// 			text: 'Home page',
+// 			id:'popup'});
 
-		varPopup.css('position', 'absolute');
-		varPopup.css('left', e.pageX-80);
-		varPopup.css('top', e.pageY-30);
+// 		varPopup.css('position', 'absolute');
+// 		varPopup.css('left', e.pageX-80);
+// 		varPopup.css('top', e.pageY-30);
 
-		varPopup.appendTo('body');
-	});
+// 		varPopup.appendTo('body');
+// 	});
 
-	$('.homeIcon').on('mouseout',function(){
+// 	$('.homeIcon').on('mouseout',function(){
 
-		$('#popup').remove();
-	});
+// 		$('#popup').remove();
+// 	});
 
-	$('.mailIcon').on('mousemove',function(e){
+// 	$('.mailIcon').on('mousemove',function(e){
 
-		$('#popup').remove();
+// 		$('#popup').remove();
 
-		var varPopup = $('<div></div>',{
-			text: 'Contact Us',
-			id:'popup'});
+// 		var varPopup = $('<div></div>',{
+// 			text: 'Contact Us',
+// 			id:'popup'});
 
-		varPopup.css('position', 'absolute');
-		varPopup.css('left', e.pageX-60);
-		varPopup.css('top', e.pageY-30);
+// 		varPopup.css('position', 'absolute');
+// 		varPopup.css('left', e.pageX-60);
+// 		varPopup.css('top', e.pageY-30);
 
-		varPopup.appendTo('body');
-	});
+// 		varPopup.appendTo('body');
+// 	});
 
-	$('.mailIcon').on('mouseout',function(){
+// 	$('.mailIcon').on('mouseout',function(){
 
-		$('#popup').remove();
-	});
+// 		$('#popup').remove();
+// 	});
 
-	$('.mailIcon').on('click', function(){
-        // Prevents the default action to be triggered. 
-        $('#myModal').foundation('reveal', 'open');
-    });
+// 	$('.mailIcon').on('click', function(){
+//         // Prevents the default action to be triggered. 
+//         $('#myModal').foundation('reveal', 'open');
+//     });
 
 
 	/* My slideDown mail form starts here */
