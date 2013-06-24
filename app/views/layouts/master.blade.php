@@ -72,7 +72,7 @@
               </div>
             </div>
           </div>
-
+<!-- =logoWrapper -->
           <div class="logoWrapper">
             <div class="row">
               <aside class="large-4 columns">
@@ -98,11 +98,11 @@
              </div>
              <div class="row">
                <div class="large-12 columns right icon">
-                 <a href="#" class="homeIcon">
-                   <img src="comp/img/home_remax.png" alt="Remax First Class Home Icon">
+                 <a href="#" class="homeIcon" >
+                   <img src="{{url('comp/img/home_remax.png')}}" alt="Remax First Class Home Icon">
                  </a> 
 
-                 <a href="#" class="mailIcon" data-reveal-id="myModal2"> <img src="comp/img/mail_remax.png" alt="Remax First Class Mail Icon" ></a>
+                 <a href="#" class="mailIcon" data-reveal-id="myModal2"> <img src="{{url('comp/img/mail_remax.png')}}" alt="Remax First Class Mail Icon" ></a>
                </div> 
              </div>
            </aside>
@@ -119,10 +119,10 @@
         <div class="row">
           <div class="large-4 columns">
             <div class="large-12 columns">
-              <img src="comp/img/logo-footer.png" alt="">
+              <img src="{{url('comp/img/logo-footer.png')}}" alt="">
             </div>
             <div class="large-12 columns mls">
-              <img src="comp/img/mls.jpg" alt="">
+              <img src="{{url('comp/img/mls.jpg')}}" alt="">
             </div>
           </div>
           <div class="large-4 columns">
@@ -168,12 +168,12 @@
             <section class="large-6 columns social">
               <span class="contactFooter">CONNECT WITH US:</span>
               <ul class="small-block-grid-3">
-                <li><img src="comp/img/facebook.png" alt=""></li>
-                <li><img src="comp/img/feed.png" alt=""></li>
-                <li><img src="comp/img/youtube.png" alt=""></li>
-                <li><img src="comp/img/twitter.png" alt=""></li>
-                <li><img src="comp/img/google.png" alt=""></li>
-                <li><img src="comp/img/linkedin.png" alt=""></li>
+                <li><img src="{{url('comp/img/facebook.png')}}" alt=""></li>
+                <li><img src="{{url('comp/img/feed.png')}}" alt=""></li>
+                <li><img src="{{url('comp/img/youtube.png')}}" alt=""></li>
+                <li><img src="{{url('comp/img/twitter.png')}}" alt=""></li>
+                <li><img src="{{url('comp/img/google.png')}}" alt=""></li>
+                <li><img src="{{url('comp/img/linkedin.png')}}" alt=""></li>
               </ul>
             </section>
           </div>

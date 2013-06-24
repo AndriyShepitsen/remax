@@ -72,8 +72,12 @@ button{
 // #element_to_pop_up { 
 // 	display:none; 
 // }
+
+/* =mainContert starts here */
+
 #mainContent{
 	padding-top: 10px;
+	padding-bottom: 10px;
 	background-color:#F6F6F6;
 	.small-block-grid-3 > li{
 		margin-bottom: 15px !important;
@@ -83,14 +87,20 @@ button{
 	}
 	p{
 		font-size: .8em;
-		line-height:1.8; 
+		line-height:1.7; 
+		margin-bottom: .5em;
 		// text-align: justify ;
 	}
 	h4{
 		margin-bottom: 0px !important;
 	}
 }
-
+.readMore{
+	color: #2BA6CB !important;
+}
+.readMore:hover{
+	color: darken(#2BA6CB, 10%)!important;
+}
 .orbit-container{
 	height:400px;
 }

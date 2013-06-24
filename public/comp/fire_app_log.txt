@@ -379,3 +379,21 @@ Load paths:
 2013-06-23 11:07:43 identical stylesheets/screen.css 
 2013-06-23 11:20:55 overwrite stylesheets/screen.css 
 2013-06-23 15:15:46 overwrite stylesheets/screen.css 
+2013-06-23 23:04:08    remove .sass-cache/ 
+2013-06-23 23:04:08    remove stylesheets/screen.css 
+2013-06-23 23:04:16    create stylesheets/screen.css 
+2013-06-23 23:09:23 overwrite stylesheets/screen.css 
+2013-06-23 23:10:25 overwrite stylesheets/screen.css 
+2013-06-23 23:10:45 overwrite stylesheets/screen.css 
+2013-06-23 23:11:11 overwrite stylesheets/screen.css 
+2013-06-23 23:13:11 overwrite stylesheets/screen.css 
+2013-06-23 23:13:37 overwrite stylesheets/screen.css 
+2013-06-23 23:14:18 overwrite stylesheets/screen.css 
+2013-06-23 23:14:58     error sass/screen.scss (Line 156: Invalid CSS after "	margin-top: 1em": expected ";", was ".row .columns{")
+2013-06-23 23:14:58 overwrite stylesheets/screen.css 
+2013-06-23 23:15:29 overwrite stylesheets/screen.css 
+2013-06-23 23:17:12 overwrite stylesheets/screen.css 
+2013-06-23 23:22:19 overwrite stylesheets/screen.css 
+2013-06-23 23:23:54 overwrite stylesheets/screen.css 
+2013-06-23 23:24:43 overwrite stylesheets/screen.css 
+2013-06-23 23:25:29 overwrite stylesheets/screen.css 

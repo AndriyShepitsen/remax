@@ -4,4 +4,4 @@ php artisan db:seed  - start seeding
 php artisan migrate --seed - umeste
 php artisan generate:model news
 
-run php composer dump-autoload
+composer dump-autoload

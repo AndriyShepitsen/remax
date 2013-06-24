@@ -8,14 +8,14 @@
 
 			<div class="orbit-container">
 				<ul class="orbit-slides-container" data-orbit data-options="timer_speed:2600;">
-					<li><img src="comp/img/house.jpg" alt="">
+					<li><img src="{{url('comp/img/house.jpg')}}" alt="">
 						<div class="orbit-caption">Lorem ipsum dolor sit amet, consectetur adipisicing</div>
 					</li>
-					<li><img src="comp/img/house.jpg" alt="">
+					<li><img src="{{url('comp/img/house.jpg')}}" alt="">
 						<div class="orbit-caption">Lorem ipsum dolor sit amet, consectetur adipisicing</div>
 					</li>
 
-					<li><img src="comp/img/house.jpg" alt="">
+					<li><img src="{{url('comp/img/house.jpg')}}" alt="">
 
 						<div class="orbit-caption">Lorem ipsum dolor sit amet, consectetur adipisicing</div>
 					</li>
@@ -78,7 +78,7 @@
 		<article class="large-4 columns">
 			<h4> <a href="#">NEWS FOR BUYERS</a> </h4>
 			<hr/>
-			<a class="th" href="#"> <img src="comp/img/buyers.jpg" alt="News for Buyers"><a/>
+			<a class="th" href="#"> <img src="{{url('comp/img/buyers.jpg')}}" alt="News for Buyers"><a/>
 				<h5 class="subheader">{{$newsBuy->title}}</h5>
 				<p>{{$newsBuy->body}}</p> 
 				<a class="readMore" href="<?php echo 'news/'.$newsBuy->id; ?>">Read More</a>
@@ -87,33 +87,33 @@
 			<article class="large-4 columns">
 				<h4> <a href="#">NEWS FOR SELLERS</a> </h4>
 				<hr/>
-				<a class="th" href="#"><img src="comp/img/sellers.jpg" alt="News for Sellers"> <a/>
+				<a class="th" href="#"><img src="{{url('comp/img/sellers.jpg')}}" alt="News for Sellers"> <a/>
 					<h5 class="subheader">{{$newsSell->title}}</h5>
 					<p>{{$newsSell->body}}</p>
 					<a class="readMore" href="<?php echo 'news/'.$newsSell->id; ?>">Read More</a>
 				</article>
 				<!--  =latest listings start here-->
 				<section class="large-4 columns">
-					<h4> <a href="#">LATEST LISTINGS</a> </h4>
+					<h4> <a href="#">NEW LISTINGS</a> </h4>
 					<hr/>
 					<ul class="small-block-grid-3 clearing-thumbs" data-clearing>
-						<li><a class="th radius" href="#"><img src="comp/img/agent.png" alt=""><a/></li>
-						<li><a class="th radius" href="#"><img src="comp/img/agent.png" alt=""><a/></li>
-						<li><a class="th radius" href="#"><img src="comp/img/agent.png" alt=""><a/></li>
-						<li><a class="th radius" href="#"><img src="comp/img/agent.png" alt=""><a/></li>
-						<li><a class="th radius" href="#"><img src="comp/img/agent.png" alt=""><a/></li>
-						<li><a class="th radius" href="#"><img src="comp/img/agent.png" alt=""><a/></li>
+						<li><a class="th radius" href="#"><img src="{{url('comp/img/new/10s.jpg')}}" alt=""><a/></li>
+						<li><a class="th radius" href="#"><img src="{{url('comp/img/new/9s.jpg')}}" alt=""><a/></li>
+						<li><a class="th radius" href="#"><img src="{{url('comp/img/new/8s.jpg')}}" alt=""><a/></li>
+						<li><a class="th radius" href="#"><img src="{{url('comp/img/new/7s.jpg')}}" alt=""><a/></li>
+						<li><a class="th radius" href="#"><img src="{{url('comp/img/new/6s.jpg')}}" alt=""><a/></li>
+						<li><a class="th radius" href="#"><img src="{{url('comp/img/new/3s.jpg')}}" alt=""><a/></li>
 					</ul>
 
 					<h4><a href="">FOR RENT</a> <h4>
 						<hr/>
-						<ul class="small-block-grid-3 clearing-thumbs" data-clearing>
-							<li><a class="th radius" href="#"><img src="comp/img/agent.png" alt=""><a/></li>
-							<li><a class="th radius" href="#"><img src="comp/img/agent.png" alt=""><a/></li>
-							<li><a class="th radius" href="#"><img src="comp/img/agent.png" alt=""><a/></li>
-							<li><a class="th radius" href="#"><img src="comp/img/agent.png" alt=""><a/></li>
-							<li><a class="th radius" href="#"><img src="comp/img/agent.png" alt=""><a/></li>
-							<li><a class="th radius" href="#"><img src="comp/img/agent.png" alt=""><a/></li>
+						<ul class="small-block-grid-3 clearing-thumbs " data-clearing>
+							<li><a class="th radius" href="#"><img src="{{url('comp/img/rent/1s.jpg')}}" alt=""><a/></li>
+							<li><a class="th radius" href="#"><img src="{{url('comp/img/rent/2s.jpg')}}" alt=""><a/></li>
+							<li><a class="th radius" href="#"><img src="{{url('comp/img/rent/3s.jpg')}}" alt=""><a/></li>
+							<li><a class="th radius" href="#"><img src="{{url('comp/img/rent/4s.jpg')}}" alt=""><a/></li>
+							<li><a class="th radius" href="#"><img src="{{url('comp/img/rent/5s.jpg')}}" alt=""><a/></li>
+							<li><a class="th radius" href="#"><img src="{{url('comp/img/rent/6s.jpg')}}" alt=""><a/></li>
 						</ul>
 					</section>
 				</div>
