@@ -18,7 +18,7 @@
 
 </head>
 <body>
-<!-- navPanel starts here -->
+  <!-- navPanel starts here -->
 </div>
 <div class="navPanel">
   <div class="row">
@@ -55,28 +55,37 @@
                   <li><a href="{{ URL::route('preparing_your_house_for_sale')}}">Preparing Your House for Sale</a></li>
                   <li><a href="{{ URL::route('consider_a_home_inspection_when_selling')}}">Consider a Home Inspection When Selling</a></li>
                 </ul>
+                <li/>
                 <li class="has-dropdown"><a href="{{ URL::route('finding_the_right_mortgage_professional')}}">Mortgage</a>
                   <ul class="dropdown">
                     <li><a href="{{ URL::route('finding_the_right_mortgage_professional')}}">Finding the Right Mortgage Professional</a></li>
-                    <li><a href="{{ URL::route('getting_preapproved')}}">Getting Preapproved</a></i>
-                      <li><a href="{{ URL::route('how_much_can_you_afford')}}">How Much Can You Afford?</a></li>
-                      <li><a href="{{ URL::route('down_payments_how_much_do_you_need')}}">Down Payments: How Much Do You Need?</a></li>
-                      <li><a href="{{ URL::route('mortgages_101_basic_loan_types')}}">Mortgages 101: Basic Loan Types </a></li>
-                      <li><a href="{{ URL::route('renovating_a_home')}}">Renovating a home? Consider a 203(k) loan </a></li>
-                    </ul>
-                    <li><a href="{{ URL::route('contact')}}">Contact</a></li>
+                    <li><a href="{{ URL::route('getting_preapproved')}}">Getting Preapproved</a></li>
+                    <li><a href="{{ URL::route('how_much_can_you_afford')}}">How Much Can You Afford?</a></li>
+                    <li><a href="{{ URL::route('down_payments_how_much_do_you_need')}}">Down Payments: How Much Do You Need?</a></li>
+                    <li><a href="{{ URL::route('mortgages_101_basic_loan_types')}}">Mortgages 101: Basic Loan Types </a></li>
+                    <li><a href="{{ URL::route('renovating_a_home')}}">Renovating a home? Consider a 203(k) loan </a></li>
                   </ul>
-                </section>
+                  <li/>
+                <li class="has-dropdown"><a href="{{ URL::route('finding_the_right_mortgage_professional')}}">News</a>
+                  <ul class="dropdown">
+                    <li><a href="{{ URL::route('finding_the_right_mortgage_professional')}}">Real estate news</a></li>
+                    <li><a href="{{ URL::route('finding_the_right_mortgage_professional')}}">News for buyers</a></li>
+                    <li><a href="{{ URL::route('getting_preapproved')}}">News for sellers</a></li>
+                  </ul>
+                  <li/>
+                  <li><a href="{{ URL::route('contact')}}">Contact</a></li>
+                </ul>
+              </section>
 
 
-              </div>
             </div>
           </div>
-<!-- =logoWrapper -->
-          <div class="logoWrapper">
-            <div class="row">
-              <aside class="large-4 columns">
-                <a href="{{ URL::route('home')}}"> 
+        </div>
+        <!-- =logoWrapper -->
+        <div class="logoWrapper">
+          <div class="row">
+            <aside class="large-4 columns">
+              <a href="{{ URL::route('home')}}"> 
                 <img src="{{url('comp/img/REMAX1Logo.png')}}" alt="Logo Remax First Class Realty">
                 <a/>
               </aside>
@@ -115,84 +124,84 @@
        @yield('content')
 
 
-<!-- /* =footeer starts here */ -->
+       <!-- /* =footeer starts here */ -->
 
        <footer>
         <div class="row">
           <div class="large-4 columns">
             <div class="large-12 columns">
               <a href="{{ URL::route('home')}}">
-              <img src="{{url('comp/img/logo-footer.png')}}" alt="Logo Remax First Class">
-              <a/>
+                <img src="{{url('comp/img/logo-footer.png')}}" alt="Logo Remax First Class">
+                <a/>
+              </div>
+              <div class="large-12 columns mls">
+                <img src="{{url('comp/img/mls.jpg')}}" alt="Multiple Listing Service">
+              </div>
             </div>
-            <div class="large-12 columns mls">
-              <img src="{{url('comp/img/mls.jpg')}}" alt="Multiple Listing Service">
+            <div class="large-4 columns">
+              <div class="large-6 columns"></div>
+
+              <section class="large-6 columns social">
+                <ul class="prop">
+                  <span class="propertiesFooter">PROPERTIES FOR SALE:</span> <br/>
+                  <li class="locality properties"><a href="#">Single home</a></li>
+                  <li class="locality properties"><a href="#">Family home</a></li>
+                  <li class="locality properties"><a href="#">Apartment</a></li>
+                  <li class="locality properties"><a href="#">Villa</a></li>
+                  <li class="locality properties"><a href="#">Condo</a></li>
+                  <li class="locality properties"><a href="#">Other</a></li>
+                </ul>
+              </section>
+
+              <section class="large-6 columns social">
+                <ul class="prop">
+                  <span class="propertiesFooter">PROPERTIES FOR RENT:</span> <br/>
+                  <li class="locality properties"><a href="#">Single home</a></li>
+                  <li class="locality properties"><a href="#">Family home</a></li>
+                  <li class="locality properties"><a href="#">Apartment</a></li>
+                  <li class="locality properties"><a href="#">Villa</a></li>
+                  <li class="locality properties"><a href="#">Condo</a></li>
+                  <li class="locality properties"><a href="#">Other</a></li>
+                </ul>
+              </section>
+            </div>
+
+            <div class="large-4 columns">
+              <div class="large-6 columns">
+                <ul class="vcard">
+                  <span class="connectFooter">CONTACT INFORMATION:</span>
+                  <li class="locality"> PHONE: (847) 674-9797</li>
+                  <li class="locality"> FAX: (847) 674-0411</li>
+                  <li class="street-address">4023 W. Church St.</li>
+                  <li class="locality">Skokie</li>
+                  <li><span class="state">IL</span> <span class="zip">600076</span></li>
+                  <li class="email"><a href="#">remax1stclass@gmail.com </a></li>
+                </ul>
+              </div>
+              <section class="large-6 columns social">
+                <span class="contactFooter">CONNECT WITH US:</span>
+                <ul class="small-block-grid-3">
+                  <li><a class="has-tip-left" title="Our Facebook Page" href="#"><img src="{{url('comp/img/facebook.png')}}" alt="Skokie Remax First Class Facebook Icon"><a/></li>
+                  <li><a class="has-tip-left" title="Our Feed Page" href="#"><img src="{{url('comp/img/feed.png')}}" alt="Skokie Remax First Class Feed Icon"><a/></li>
+                  <li><a class="has-tip-left" title="Our Page" href="#"><img src="{{url('comp/img/youtube.png')}}" alt="Skokie Remax First Class Youtube Icon"><a/></li>
+                  <li><a class="has-tip-left" title="Our Twitter Page" href="#"><img src="{{url('comp/img/twitter.png')}}" alt="Skokie Remax First Class Twitter Icon"><a/></li>
+                  <li><a class="has-tip-left" title="Our Google Plus Page" href="#"><img src="{{url('comp/img/google.png')}}" alt="Skokie Remax First Class Google Icon"><a/></li>
+                  <li><a class="has-tip-left" title="Our Linkedin Page" href="#"><img src="{{url('comp/img/linkedin.png')}}" alt="Skokie Remax First Class Linkedin Icon"><a/></li>
+                </ul>
+              </section>
             </div>
           </div>
-          <div class="large-4 columns">
-            <div class="large-6 columns"></div>
+        </footer>
 
-            <section class="large-6 columns social">
-              <ul class="prop">
-                <span class="propertiesFooter">PROPERTIES FOR SALE:</span> <br/>
-                <li class="locality properties"><a href="#">Single home</a></li>
-                <li class="locality properties"><a href="#">Family home</a></li>
-                <li class="locality properties"><a href="#">Apartment</a></li>
-                <li class="locality properties"><a href="#">Villa</a></li>
-                <li class="locality properties"><a href="#">Condo</a></li>
-                <li class="locality properties"><a href="#">Other</a></li>
-              </ul>
-            </section>
+        <!-- /* =copyright starts here */ -->
 
-            <section class="large-6 columns social">
-              <ul class="prop">
-                <span class="propertiesFooter">PROPERTIES FOR RENT:</span> <br/>
-                <li class="locality properties"><a href="#">Single home</a></li>
-                <li class="locality properties"><a href="#">Family home</a></li>
-                <li class="locality properties"><a href="#">Apartment</a></li>
-                <li class="locality properties"><a href="#">Villa</a></li>
-                <li class="locality properties"><a href="#">Condo</a></li>
-                <li class="locality properties"><a href="#">Other</a></li>
-              </ul>
-            </section>
-          </div>
-
-          <div class="large-4 columns">
-            <div class="large-6 columns">
-              <ul class="vcard">
-                <span class="connectFooter">CONTACT INFORMATION:</span>
-                <li class="locality"> PHONE: (847) 674-9797</li>
-                <li class="locality"> FAX: (847) 674-0411</li>
-                <li class="street-address">4023 W. Church St.</li>
-                <li class="locality">Skokie</li>
-                <li><span class="state">IL</span> <span class="zip">600076</span></li>
-                <li class="email"><a href="#">remax1stclass@gmail.com </a></li>
-              </ul>
+        <div class="copyright">
+          <div class="row">
+            <div class="large-4 columns copy">
+              <p>© 2013 RE/MAX FIRST CLASS</p> 
             </div>
-            <section class="large-6 columns social">
-              <span class="contactFooter">CONNECT WITH US:</span>
-              <ul class="small-block-grid-3">
-                <li><a class="has-tip-left" title="Our Facebook Page" href="#"><img src="{{url('comp/img/facebook.png')}}" alt="Skokie Remax First Class Facebook Icon"><a/></li>
-                <li><a class="has-tip-left" title="Our Feed Page" href="#"><img src="{{url('comp/img/feed.png')}}" alt="Skokie Remax First Class Feed Icon"><a/></li>
-                <li><a class="has-tip-left" title="Our Page" href="#"><img src="{{url('comp/img/youtube.png')}}" alt="Skokie Remax First Class Youtube Icon"><a/></li>
-                <li><a class="has-tip-left" title="Our Twitter Page" href="#"><img src="{{url('comp/img/twitter.png')}}" alt="Skokie Remax First Class Twitter Icon"><a/></li>
-                <li><a class="has-tip-left" title="Our Google Plus Page" href="#"><img src="{{url('comp/img/google.png')}}" alt="Skokie Remax First Class Google Icon"><a/></li>
-                <li><a class="has-tip-left" title="Our Linkedin Page" href="#"><img src="{{url('comp/img/linkedin.png')}}" alt="Skokie Remax First Class Linkedin Icon"><a/></li>
-              </ul>
-            </section>
-          </div>
-        </div>
-      </footer>
-
-      <!-- /* =copyright starts here */ -->
-      
-      <div class="copyright">
-        <div class="row">
-          <div class="large-4 columns copy">
-            <p>© 2013 RE/MAX FIRST CLASS</p>
-          </div>
-          <div class="large-8 columns">
-            <ul class="inline-list right">
+            <div class="large-8 columns">
+              <ul class="inline-list right">
 <!--               <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Buying</a></li>
@@ -200,24 +209,24 @@
             <li><a href="#">Renting</a></li>
             <li><a href="#">Contact</a></li>
             
-             -->            </ul>
-          </div>
+          -->            </ul>
         </div>
       </div>
+    </div>
 
 <!-- /* My slideDown mail form starts here  */
       
-       -->      <div id="myModal" class="reveal-modal medium">
-        <form id="contact" name="contact" action="#" method="post">
-          <label for="email">Your E-mail</label>
-          <input type="text" id="email" name="email" class="txt">
-          <br>
-          <label for="msg">Enter a Message</label>
-          <textarea id="msg" name="msg" class="txtarea"></textarea>
+-->      <div id="myModal" class="reveal-modal medium">
+<form id="contact" name="contact" action="#" method="post">
+  <label for="email">Your E-mail</label>
+  <input type="text" id="email" name="email" class="txt">
+  <br>
+  <label for="msg">Enter a Message</label>
+  <textarea id="msg" name="msg" class="txtarea"></textarea>
 
-          <button id="send">Send</button>
-        </form>
-        <a class="close-reveal-modal">&#215</a>
-      </div>
-    </body>
-    </html>
+  <button id="send">Send</button>
+</form>
+<a class="close-reveal-modal">&#215</a>
+</div>
+</body>
+</html>
