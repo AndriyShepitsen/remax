@@ -11041,7 +11041,7 @@ button::-moz-focus-inner {
 /* line 49, ../sass/screen.scss */
 .call {
   font-size: 20px;
-  color: #B92025;
+  color: #FFFFFF;
   line-height: 28px;
 }
 /* line 53, ../sass/screen.scss */
@@ -11049,13 +11049,28 @@ button::-moz-focus-inner {
   text-align: right;
 }
 
-/* line 58, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
+.alert-box {
+  background-color: #2BA6CB;
+  border-color: #2284A1;
+  border-style: solid;
+  border-width: 1px;
+  color: white;
+  display: block;
+  font-size: 0.875em;
+  font-weight: bold;
+  margin-bottom: 1.25em;
+  padding: 0.6875em 1.3125em 0.75em 0.6875em;
+  position: relative;
+}
+
+/* line 70, ../sass/screen.scss */
 .icon {
   margin-top: 30px;
   text-align: right;
 }
 
-/* line 62, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 .mailIcon, .homeIcon {
   padding-left: 10px;
   padding-top: 10px;
@@ -11063,48 +11078,49 @@ button::-moz-focus-inner {
 }
 
 /* =mainContert starts here */
-/* line 78, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 #mainContent {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #F6F6F6;
 }
-/* line 82, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 #mainContent .small-block-grid-3 > li {
   margin-bottom: 15px !important;
 }
-/* line 85, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 #mainContent a {
   color: #393939;
 }
-/* line 88, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 #mainContent p {
   font-size: .8em;
   line-height: 1.7;
   margin-bottom: .5em;
 }
-/* line 94, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 #mainContent h4 {
   margin-bottom: 0px !important;
 }
 
-/* line 98, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 .readMore {
   color: #2BA6CB !important;
 }
 
-/* line 101, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 .readMore:hover {
   color: #2284a1 !important;
 }
 
-/* line 104, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 .orbit-container {
   height: 400px;
+  margin-bottom: 1em;
 }
 
 /* =find starts here */
-/* line 110, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 .find {
   display: inline-block;
   font-weight: bold;
@@ -11113,19 +11129,19 @@ button::-moz-focus-inner {
   color: #525252;
 }
 
-/* line 117, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 .findInput {
   margin-bottom: 15px !important;
 }
 
 /* news start here */
-/* line 122, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 .readMore {
   font-size: 0.6em;
 }
 
 /*=footer starts here */
-/* line 128, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 .connectFooter {
   display: inline-block;
   font-size: 11px;
@@ -11133,65 +11149,65 @@ button::-moz-focus-inner {
   font-weight: bold;
 }
 
-/* line 134, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 .vcard .fn {
   font-size: 12px;
 }
 
-/* line 137, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 .vcard .street-address {
   font-size: 12px;
 }
 
-/* line 140, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 .vcard .locality {
   font-size: 12px;
 }
 
-/* line 143, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 .vcard .state {
   font-size: 12px;
 }
 
-/* line 146, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 .vcard .zip {
   font-size: 12px;
   display: inline-block;
 }
 
-/* line 151, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 .vcard .email a {
   font-size: 11px !important;
 }
 
-/* line 155, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 footer {
   background-color: #dddddd;
   padding-top: 10px;
 }
-/* line 159, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 footer .row .columns {
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
-/* line 163, ../sass/screen.scss */
+/* line 176, ../sass/screen.scss */
 footer .prop {
   font-size: 11px !important;
 }
-/* line 166, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 footer .row.ul.li.a {
   color: #F7F7F4;
   cursor: pointer;
 }
 
-/* line 171, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 [class*="block-grid-"] {
   display: block;
   margin: 0 10px !important;
   padding: 0;
 }
 
-/* line 176, ../sass/screen.scss */
+/* line 189, ../sass/screen.scss */
 .contactFooter {
   padding-left: 10px;
   font-size: 11px;
@@ -11202,24 +11218,24 @@ footer .row.ul.li.a {
   display: inline-block;
 }
 
-/* line 185, ../sass/screen.scss */
+/* line 198, ../sass/screen.scss */
 .social {
   padding-top: 10px;
   padding-bottom: 20px;
 }
 
-/* line 190, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 .mls {
   margin-top: 70px;
   text-align: bottom;
 }
 
-/* line 194, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 .properties {
   margin-left: 15px;
 }
 
-/* line 197, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 .propertiesFooter {
   font-weight: bold;
   display: inline-block;
@@ -11227,23 +11243,23 @@ footer .row.ul.li.a {
   color: #393939;
 }
 
-/* line 204, ../sass/screen.scss */
+/* line 217, ../sass/screen.scss */
 .copyright {
   background-color: #3F3F3F;
   padding-top: 10px;
 }
-/* line 207, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 .copyright a {
   color: #F7F7F4;
 }
 
-/* line 211, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 .copy {
   color: #FFFFFF !important;
 }
 
 /* =Contact Us */
-/* line 215, ../sass/screen.scss */
+/* line 228, ../sass/screen.scss */
 textarea {
   height: 300px;
   cursor: pointer;

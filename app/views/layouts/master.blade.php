@@ -103,7 +103,7 @@
 
                <aside class="large-4 columns">
                 <div class="row">
-                  <div class="large-12 colomns call right">
+                  <div class="large-8 colomns alert-box call right">
                    <p> <strong>Call to our agents: <br/> (847)674-9797</strong></p>
                  </div>
                </div>
@@ -309,17 +309,17 @@
       </div>
     </div>
 
-<!-- /* My slideDown mail form starts here  */
-      
--->      <div id="myModal" class="reveal-modal medium">
-<form id="contact" name="contact" action="#" method="post">
-  <label for="email">Your E-mail</label>
-  <input type="text" id="email" name="email" class="txt">
-  <br>
-  <label for="msg">Enter a Message</label>
-  <textarea id="msg" name="msg" class="txtarea"></textarea>
+<!-- /* My slideDown mail form starts here */
 
-  <button id="send">Send</button>
+--> <div id="myModal" class="reveal-modal medium">
+<form id="contact" name="contact" action="#" method="post">
+<label for="email">Your E-mail</label>
+<input type="text" id="email" name="email" class="txt">
+<br>
+<label for="msg">Enter a Message</label>
+<textarea id="msg" name="msg" class="txtarea"></textarea>
+
+<button id="send">Send</button>
 </form>
 <a class="close-reveal-modal">&#215</a>
 </div>
