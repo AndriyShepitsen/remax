@@ -121,6 +121,9 @@
        </div>
 
 
+
+
+
        @yield('content')
 
 
@@ -135,7 +138,9 @@
                 <a/>
               </div>
               <div class="large-12 columns mls">
+                <a class="th" href="#">
                 <img src="{{url('comp/img/mls.jpg')}}" alt="Multiple Listing Service">
+                </a>
               </div>
             </div>
             <div class="large-4 columns">
