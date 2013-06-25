@@ -2,9 +2,9 @@
 @section('content')
 <!-- //LOCATION: remax/public
 -->
-<div id="mainContent">
+<div id="innerContent">
 	<div class="row">
-		<div class="large-8 columns">
+		<div class="large-12 columns">
 			<div class="orbit-container">
 				<ul class="orbit-slides-container" data-orbit data-options="timer_speed:2600;">
 					<li><img src="{{url('comp/img/house.jpg')}}" alt="">
@@ -53,87 +53,9 @@
 
 
 
-		<!--  =aside starts here-->
-		<adide class="large-4 columns">
-			<div class="large-12 columns panel">
-				<span class="find">FIND YOUR HOME</span>
-				<div class="row">
-					<div class="large-12 columns">
-						<input type="text" placeholder="LOCATION" class="findInput">
-					</div>
-				</div>
-				<div class="row">
-					<div class="large-12 columns">
-						<input type="text" placeholder="PROPERTY TYPE" class="findInput">
-					</div>
-				</div>
-				<div class="row">
-					<div class="large-12 columns">
-						<input type="text" placeholder="SELECT STATUS" class="findInput">
-					</div>
-				</div>
-				<div class="row">
-					<div class="large-4 columns">
-						<input type="text" placeholder="BADS" class="findInput">
-					</div>
-					<div class="large-4 columns">
-						<input type="text" placeholder="BATHS" class="findInput">
-					</div>
-					<div class="large-4 columns">
-						<input type="text" placeholder="GARAGE" class="findInput">
-					</div>
-				</div>
-				<div class="row">
-					<div class="large-6 columns">
-						<input type="text" placeholder="PRICE FROM:" class="findInput">
-					</div>
-					<div class="large-6 columns">
-						<input type="text" placeholder="PRICE TO:" class="findInput">
-					</div>
-				</div>
-				<div class="row">
-					<div class="large-6 columns">
-						<input type="text" placeholder="LOT SIZE:" class="findInput">
-					</div>
-					<div class="large-6 columns">
-						<input type="text" placeholder="AGE OF HOME:" class="findInput">
-					</div>
-				</div>
-				<input type="submit" class="small button secondary" name="submit" id="submit" value="SEARCH">
-			</div>
-
-			<!-- =find your home ends here -->
-			<section class="large-12 columns">
-				<h4> <a href="#">NEW LISTINGS</a> </h4>
-				<hr/>
-				<ul class="small-block-grid-3 clearing-thumbs" data-clearing>
-					<li><a class="th radius" href="#"><img src="{{url('comp/img/new/10s.jpg')}}" alt=""><a/></li>
-					<li><a class="th radius" href="#"><img src="{{url('comp/img/new/9s.jpg')}}" alt=""><a/></li>
-					<li><a class="th radius" href="#"><img src="{{url('comp/img/new/8s.jpg')}}" alt=""><a/></li>
-					<li><a class="th radius" href="#"><img src="{{url('comp/img/new/7s.jpg')}}" alt=""><a/></li>
-					<li><a class="th radius" href="#"><img src="{{url('comp/img/new/6s.jpg')}}" alt=""><a/></li>
-					<li><a class="th radius" href="#"><img src="{{url('comp/img/new/3s.jpg')}}" alt=""><a/></li>
-				</ul>
-			</section>
-			
-			<section class="large-12 columns">
-				<h4><a href="">FOR RENT</a> <h4>
-					<hr/>
-					<ul class="small-block-grid-3 clearing-thumbs " data-clearing>
-						<li><a class="th radius" href="#"><img src="{{url('comp/img/rent/1s.jpg')}}" alt=""><a/></li>
-						<li><a class="th radius" href="#"><img src="{{url('comp/img/rent/2s.jpg')}}" alt=""><a/></li>
-						<li><a class="th radius" href="#"><img src="{{url('comp/img/rent/3s.jpg')}}" alt=""><a/></li>
-						<li><a class="th radius" href="#"><img src="{{url('comp/img/rent/4s.jpg')}}" alt=""><a/></li>
-						<li><a class="th radius" href="#"><img src="{{url('comp/img/rent/5s.jpg')}}" alt=""><a/></li>
-						<li><a class="th radius" href="#"><img src="{{url('comp/img/rent/6s.jpg')}}" alt=""><a/></li>
-					</ul>
-				</section>
-
-			</adide>
-			<!-- =adide ands here -->
 
 
-			<!--  =latest listings start here-->
-		</div>
+		<!--  =latest listings start here-->
 	</div>
-	@stop
+</div>
+@stop
