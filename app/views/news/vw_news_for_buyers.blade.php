@@ -7,16 +7,19 @@
 		<div class="large-8 columns">
 			<ul class="breadcrumbs">
 				<li><a href="#">NEWS</a></li>
-				@if ($news->bs == 1 )	
+				@if ($news[0]->bs == 1 )	
 				<li><a href="#">NEWS FOR BUYERS</a></li>
 				@else 	
 				<li><a href="#">NEWS FOR SELLERS</a></li>
 				@endif
 			</ul>
-
-			<h4>{{$news->title}}</h4>
+			
+			@foreach($news as $new)
+			<h4>{{$new->title}}</h4>
 			<hr/>
-			<p>{{$news->body}}</p>
+			<p>{{$new->body}}</p>
+			@endforeach
+
 		</div>
 		<aside class="large-4 columns panel">
 

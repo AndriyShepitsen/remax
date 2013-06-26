@@ -69,8 +69,8 @@
                   <li class="has-dropdown"><a href="{{ URL::route('finding_the_right_mortgage_professional')}}">News</a>
                     <ul class="dropdown">
                       <li><a href="{{ URL::route('finding_the_right_mortgage_professional')}}">Real estate news</a></li>
-                      <li><a href="{{ URL::route('finding_the_right_mortgage_professional')}}">News for buyers</a></li>
-                      <li><a href="{{ URL::route('getting_preapproved')}}">News for sellers</a></li>
+                      <li><a href="{{ URL::route('news_for_buyers')}}">News for buyers</a></li>
+                      <li><a href="{{ URL::route('news_for_sellers')}}">News for sellers</a></li>
                     </ul>
                     <li/>
                     <li><a href="{{ URL::route('contact')}}">Contact</a></li>
