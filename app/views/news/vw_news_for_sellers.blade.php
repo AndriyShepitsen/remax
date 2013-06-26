@@ -4,7 +4,7 @@
 -->
 <div id="mainContent">
 	<div class="row">
-		<div class="large-8 columns">
+		<div class="large-12 columns">
 			<ul class="breadcrumbs">
 				<li><a href="#">NEWS</a></li>
 				@if ($news[0]->bs == 1 )	
@@ -20,9 +20,6 @@
 			<p>{{$new->body}}</p>
 			@endforeach
 		</div>
-		<aside class="large-4 columns panel">
-
-		</aside>
 	</div>
 </div>
 @stop

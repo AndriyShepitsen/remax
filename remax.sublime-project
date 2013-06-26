@@ -6,6 +6,7 @@
   {
    "path": "/W/xampp/htdocs/remax", 
    "file_exclude_patterns": [
+    "/W/xampp/htdocs/remax", 
     "/W/xampp/htdocs/remax"
    ]
   }
