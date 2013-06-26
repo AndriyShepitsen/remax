@@ -7,8 +7,11 @@
 		<div class="large-8 columns">
 			<ul class="breadcrumbs">
 				<li><a href="#">NEWS</a></li>
+				@if ($news->bs == 1 )	
 				<li><a href="#">NEWS FOR BUYERS</a></li>
+				@else 	
 				<li><a href="#">NEWS FOR SELLERS</a></li>
+				@endif
 			</ul>
 
 			<h4>{{$news->title}}</h4>

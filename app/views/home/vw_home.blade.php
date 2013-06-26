@@ -13,9 +13,7 @@
 					<li><i12g src="{{url('comp/img/house.jpg')}}" alt="">
 						<div class="orbit-caption">Lorem ipsum dolor sit amet, consectetur adipisicing</div>
 					</li>
-
 					<li><img src="{{url('comp/img/house.jpg')}}" alt="">
-
 						<div class="orbit-caption">Lorem ipsum dolor sit amet, consectetur adipisicing</div>
 					</li>
 				</ul>
@@ -49,13 +47,6 @@
 			</div>
 
 		</div>
-		<!-- =content ends here -->
-
-
-
-
-
-		<!--  =latest listings start here-->
 	</div>
 </div>
 @stop

@@ -23,7 +23,7 @@ There are differences between this run-up in prices and the housing bubble that 
 Those sales rose 4.2 percent to an annualized rate of 5.18 million from 4.97 million in April. There were 2.22 million existing homes on the market in May, up from 2.15 million in April. The supply fell to 5.1 months’ worth in May from 5.2 months. Listed inventory is 10.1 percent below a year ago, according to the report released today.
 Brian Jones, senior U.S. economist at financial services firm Societe Generale in New York, projected a 5.17 million annual rate for home sales.',
 'bs'=>1],
-        ['title'=>'Mortgage Applications Decrease, Mortgage Rates Increase',
+        ['title'=>'Real House Prices, Price-to-Rent Ratio, City Prices relative to 2000',
         'body'=>'The Refinance Index decreased 3 percent from the previous week. The seasonally adjusted Purchase Index decreased 3 percent from one week earlier.
 The average contract interest rate for 30-year fixed-rate mortgages with conforming loan balances ($417,500 or less) increased to 4.17 percent, the highest rate since March 2012, from 4.15 percent, with points decreasing to 0.41 from 0.48 (including the origination fee) for 80 percent loan-to-value ratio (LTV) loans. This is the sixth straight weekly increase for this rate. 
 Read more at http://www.calculatedriskblog.com/2013/06/mba-mortgage-applications-decrease.html#MAFr7M4qiQK01UoC.99 ',
