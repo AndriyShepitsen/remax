@@ -1,14 +1,8 @@
 {
- "folders": [
-  {
-   "path": "/C/xampp/htdocs/remax"
-  }, 
-  {
-   "path": "/W/xampp/htdocs/remax", 
-   "file_exclude_patterns": [
-    "/W/xampp/htdocs/remax", 
-    "/W/xampp/htdocs/remax"
-   ]
-  }
- ]
+	"folders":
+	[
+		{
+			"path": "/C/xampp/htdocs/remax"
+		}
+	]
 }
