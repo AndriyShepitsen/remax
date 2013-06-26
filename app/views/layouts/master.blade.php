@@ -66,9 +66,9 @@
                     <li><a href="{{ URL::route('renovating_a_home')}}">Renovating a home? Consider a 203(k) loan </a></li>
                   </ul>
                   <li/>
-                  <li class="has-dropdown"><a href="{{ URL::route('finding_the_right_mortgage_professional')}}">News</a>
+                  <li class="has-dropdown"><a href="{{ URL::route('real_estate_news')}}">News</a>
                     <ul class="dropdown">
-                      <li><a href="{{ URL::route('finding_the_right_mortgage_professional')}}">Real estate news</a></li>
+                      <li><a href="{{ URL::route('real_estate_news')}}">Real estate news</a></li>
                       <li><a href="{{ URL::route('news_for_buyers')}}">News for buyers</a></li>
                       <li><a href="{{ URL::route('news_for_sellers')}}">News for sellers</a></li>
                     </ul>

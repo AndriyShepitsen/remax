@@ -24,6 +24,7 @@ Route::get('/', array('as'=>'home', 'uses'=>'HomeController@index'));
 
 Route::get('/about', array('as'=>'about', 'uses'=>'AboutController@index'));
 Route::get('/news/{id}', array('as'=>'news', 'uses'=>'NewsController@show'));
+Route::get('/real_estate_news', array('as'=>'real_estate_news', 'uses'=>'RealEstateNewsController@index'));
 Route::get('/news-for-buyers', array('as'=>'news_for_buyers', 'uses'=>'NewsForBuyersController@index'));
 Route::get('/news-for-sellers', array('as'=>'news_for_sellers', 'uses'=>'NewsForSellersController@index'));
 
