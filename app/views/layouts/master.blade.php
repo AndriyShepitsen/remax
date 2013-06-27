@@ -318,8 +318,51 @@
     </div>
 
 <!-- /* My slideDown mail form starts here */
+--> 
+<script>
+document.write('<script src=' +
+('_proto_' in {} ? 'comp/javascripts/vendor/zepto' : 'comp/javascripts/vendor/jquery') +
+'.js><\/script>')
+</script>
 
---> <div id="myModal" class="reveal-modal medium">
+<script src="comp/javascripts/foundation/foundation.js"></script>
+
+<script src="comp/javascripts/foundation/foundation.alerts.js"></script>
+
+<script src="comp/javascripts/foundation/foundation.clearing.js"></script>
+
+<script src="comp/javascripts/foundation/foundation.cookie.js"></script>
+
+<script src="comp/javascripts/foundation/foundation.dropdown.js"></script>
+
+<script src="comp/javascripts/foundation/foundation.forms.js"></script>
+
+<script src="comp/javascripts/foundation/foundation.interchange.js"></script>
+
+<script src="comp/javascripts/foundation/foundation.joyride.js"></script>
+
+<script src="comp/javascripts/foundation/foundation.magellan.js"></script>
+
+<script src="comp/javascripts/foundation/foundation.orbit.js"></script>
+
+<script src="comp/javascripts/foundation/foundation.placeholder.js"></script>
+
+<script src="comp/javascripts/foundation/foundation.reveal.js"></script>
+
+<script src="comp/javascripts/foundation/foundation.section.js"></script>
+
+<script src="comp/javascripts/foundation/foundation.tooltips.js"></script>
+
+<script src="comp/javascripts/foundation/foundation.topbar.js"></script>
+
+
+<script>
+$(document).foundation();
+</script>
+
+
+
+<div id="myModal" class="reveal-modal medium">
 <form id="contact" name="contact" action="#" method="post">
   <label for="email">Your E-mail</label>
   <input type="text" id="email" name="email" class="txt">
