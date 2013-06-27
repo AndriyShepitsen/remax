@@ -10,8 +10,8 @@ class RealEstateNewsController extends BaseController {
     public function index()
     {
 
-      return View::make('news.vw_news_for_buyers')
-     ->with('news', News::where('bs','=', 1)->get());
+      return View::make('news.vw_real_estate_news')
+     ->with('news', News::all());
         
 
     }
