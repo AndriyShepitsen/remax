@@ -3,20 +3,20 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "7d7d9cb884e29e0507205e1c2afa4853",
+    "hash": "9c64fdc53983c766efef4b2a482792f2",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
-            "version": "dev-master",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mtdowling/ClassPreloader.git",
-                "reference": "62c99d52ce2f1b0b8449c61e2d94f48d918222eb"
+                "reference": "1.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mtdowling/ClassPreloader/zipball/62c99d52ce2f1b0b8449c61e2d94f48d918222eb",
-                "reference": "62c99d52ce2f1b0b8449c61e2d94f48d918222eb",
+                "url": "https://api.github.com/repos/mtdowling/ClassPreloader/zipball/1.0.1",
+                "reference": "1.0.1",
                 "shasum": ""
             },
             "require": {
@@ -50,7 +50,7 @@
                 "class",
                 "preload"
             ],
-            "time": "2013-05-26 16:10:36"
+            "time": "2013-06-24 22:58:34"
         },
         {
             "name": "doctrine/annotations",
@@ -339,12 +339,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "4804a9a096f1a3f048da11b192b9df5caafc1a5d"
+                "reference": "3253f7a1c13a2177d925bd0f6ee8387c5dd9c57a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/4804a9a096f1a3f048da11b192b9df5caafc1a5d",
-                "reference": "4804a9a096f1a3f048da11b192b9df5caafc1a5d",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/3253f7a1c13a2177d925bd0f6ee8387c5dd9c57a",
+                "reference": "3253f7a1c13a2177d925bd0f6ee8387c5dd9c57a",
                 "shasum": ""
             },
             "require": {
@@ -401,7 +401,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2013-06-21 19:00:38"
+            "time": "2013-06-25 17:49:29"
         },
         {
             "name": "doctrine/inflector",
@@ -624,12 +624,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "8683a510b3e5541cb57d1ef6a09d66b713e42a13"
+                "reference": "9f6bc71167e27759410afecedde2b6540df9fe63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/8683a510b3e5541cb57d1ef6a09d66b713e42a13",
-                "reference": "8683a510b3e5541cb57d1ef6a09d66b713e42a13",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/9f6bc71167e27759410afecedde2b6540df9fe63",
+                "reference": "9f6bc71167e27759410afecedde2b6540df9fe63",
                 "shasum": ""
             },
             "require": {
@@ -726,7 +726,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2013-06-20 20:50:36"
+            "time": "2013-06-24 18:36:56"
         },
         {
             "name": "monolog/monolog",
@@ -1048,6 +1048,49 @@
                 "psr-3"
             ],
             "time": "2012-12-21 11:40:51"
+        },
+        {
+            "name": "sunra/php-simple-html-dom-parser",
+            "version": "1.5.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sunra/php-simple-html-dom-parser.git",
+                "reference": "691f701e814302deabb1c721fed7c05663704fa8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sunra/php-simple-html-dom-parser/zipball/691f701e814302deabb1c721fed7c05663704fa8",
+                "reference": "691f701e814302deabb1c721fed7c05663704fa8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Sunra\\PhpSimple\\HtmlDomParser": "Src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sunra",
+                    "email": "sunra@yandex.ru",
+                    "homepage": "https://github.com/sunra"
+                }
+            ],
+            "description": "Composer adaptation of: A HTML DOM parser written in PHP5+ let you manipulate HTML in a very easy way! Require PHP 5+. Supports invalid HTML. Find tags on an HTML page with selectors just like jQuery. Extract contents from HTML in a single line.",
+            "homepage": "https://github.com/sunra/php-simple-html-dom-parser",
+            "keywords": [
+                "dom",
+                "html",
+                "parser"
+            ],
+            "time": "2013-05-04 19:23:02"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1800,12 +1843,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JeffreyWay/Laravel-4-Generators.git",
-                "reference": "2b45547a5f90e4ee009c562c1932e02b8f0d781c"
+                "reference": "fccf81af42cb39d97dd26fd026196ebf2c4f02ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JeffreyWay/Laravel-4-Generators/zipball/2b45547a5f90e4ee009c562c1932e02b8f0d781c",
-                "reference": "2b45547a5f90e4ee009c562c1932e02b8f0d781c",
+                "url": "https://api.github.com/repos/JeffreyWay/Laravel-4-Generators/zipball/fccf81af42cb39d97dd26fd026196ebf2c4f02ba",
+                "reference": "fccf81af42cb39d97dd26fd026196ebf2c4f02ba",
                 "shasum": ""
             },
             "require": {
@@ -1842,7 +1885,7 @@
                     "role": "Developer"
                 }
             ],
-            "time": "2013-06-21 20:18:30"
+            "time": "2013-06-25 02:57:14"
         },
         {
             "name": "way/laravel-test-helpers",
@@ -1892,7 +1935,8 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "way/generators": 20
+        "way/generators": 20,
+        "sunra/php-simple-html-dom-parser": 20
     },
     "platform": [
 
