@@ -104,7 +104,7 @@ button{
 
 #mainContent{
 	padding-top: 10px;
-	// padding-bottom: 10px;
+	padding-bottom: 10px;
 	background-color:#F6F6F6;
 	.small-block-grid-3 > li{
 		margin-bottom: 15px !important;
@@ -113,7 +113,7 @@ button{
 		margin-bottom: 9px !important;
 	}
 	article a{
-		// color: #393939 !important;
+		color: #393939 !important;
 	}
 	section a{
 		color: #393939 !important;
@@ -122,12 +122,13 @@ button{
 		color: lighten(#393939, 15%)!important;
 	}
 	article a:hover{
-		// color: lighten(#393939, 15%)!important;
+		color: lighten(#393939, 15%)!important;
 	}
 }
-a .newsTitle{
-	color: #393939;
-}
+	.panel{
+		padding-bottom: 20px !important;
+		margin-bottom: 10px;
+	}
 article p{
 
 	font-size: .8em;
@@ -167,28 +168,30 @@ article p{
 	.find{
 		display: inline-block;
 		font-weight:bold;
-		margin-bottom: 15px;
+		margin-bottom: 25px;
 		font-size: 20px;
 		color: #525252;
 	}
 	.findInput{
 		margin-bottom: 15px !important;
 	}
-
+	label{
+		margin-bottom: .5em;
+	}
 	/* news start here */
 	.readMore{
 		font-size: 0.6em;
 	}
 
 	/*=footer starts here */
-.logoPadding{
-	margin-left:1em;
-	margin-top: 1em;
-}
-.logoFooter{
-	margin-left:1em;
-	margin-top: 2em;
-}
+	.logoPadding{
+		margin-left:1em;
+		margin-top: 1em;
+	}
+	.logoFooter{
+		margin-left:1em;
+		margin-top: 2em;
+	}
 	.connectFooter{
 		display: inline-block;
 		font-size: 11px;

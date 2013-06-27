@@ -6,7 +6,7 @@
 	<div class="row">
 		<div class="large-12 columns">
 			<div class="orbit-container">
-				<ul class="orbit-slides-container" data-orbit data-options="timer_speed:2600;">
+				<ul class="orbit-slides-container" data-orbit data-options="timer_speed:260000;">
 					<li><img src="{{url('comp/img/house.jpg')}}" alt="">
 						<div class="orbit-caption">Lorem ipsum dolor sit amet, consectetur adipisicing</div>
 					</li>
