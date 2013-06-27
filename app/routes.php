@@ -23,12 +23,12 @@ Route::get('/', array('as'=>'home', 'uses'=>'HomeController@index'));
 /* =about */
 
 Route::get('/about', array('as'=>'about', 'uses'=>'AboutController@index'));
+Route::get('/parse', array('as'=>'parse', 'uses'=>'ParseController@index'));
 Route::get('/news/{id}', array('as'=>'news', 'uses'=>'NewsController@show'));
 Route::get('/news-for-buyers', array('as'=>'news_for_buyers', 'uses'=>'NewsForBuyersController@index'));
 Route::get('/news-for-sellers', array('as'=>'news_for_sellers', 'uses'=>'NewsForSellersController@index'));
 
 /* =buying */
-
 
 Route::get('/anatomy_of_a_home_purchase', array('as'=>'anatomy_of_a_home_purchase', 'uses'=>'Anatomy_of_a_home_purchaseController@index'));
 Route::get('/deciding_where_to_live', array('as'=>'deciding_where_to_live', 'uses'=>'Deciding_where_to_liveController@index'));
@@ -59,7 +59,6 @@ Route::get('/renovating_a_home', array('as'=>'renovating_a_home', 'uses'=>'Renov
 /* =contact */
 
 Route::get('/contact', array('as'=>'contact', 'uses'=>'ContactController@index'));
-
 Route::post('/login', array('as'=>'login', 'uses'=>'LoginController@index'));
 
 
