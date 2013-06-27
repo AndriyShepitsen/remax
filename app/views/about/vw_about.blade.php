@@ -6,9 +6,9 @@
 <div class="mainContent">
 	<div class="row">
 		<div class="large-12 columns">
-			<h1>ReMax First Class</h1>
+			<h1 class="docs header">ReMax First Class</h1>
 			<hr/>
-			<p>On the Shoulders of Titan – we are the biggest Real Estate company in the World. All Real Estate property gets maximum exposure. 
+			<p>On the Shoulders of Titan – we are the biggest Real Estate company in the World. All Real Estate property gets maximum exposure.</p> 
 				<div class="panel">
 					<dl>
 						<dt>
