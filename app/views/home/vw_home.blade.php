@@ -22,7 +22,7 @@
 			<div class="row">
 				<!-- =news for buyers start here -->
 				<article class="large-6 columns">
-					<h4> <a href="#">NEWS FOR BUYERS</a> </h4>
+					<h4> <a class="newsTitle" href="#">NEWS FOR BUYERS</a> </h4>
 					<hr/>
 					<a class="th" href="<?php echo 'news/'.$newsBuy->id; ?>"><img src="{{url('comp/img/buyers.jpg')}}" alt="News for Buyers"></a>
 					<a class="newsTitleHover" href="<?php echo 'news/'.$newsBuy->id; ?>">
