@@ -12,7 +12,7 @@
 				@else 	
 				<li><a href="#">NEWS FOR SELLERS</a></li>
 				@endif
-				<li><a href="#">{{$news->title}}</a></li>
+				<li class="current"><a href="#">{{$news->title}}</a></li>
 			</ul>
 
 			<h4>{{$news->title}}</h4>

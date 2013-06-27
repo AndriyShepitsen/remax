@@ -11109,20 +11109,12 @@ button::-moz-focus-inner {
 #mainContent h4 {
   margin-bottom: 9px !important;
 }
-/* line 115, ../sass/screen.scss */
-#mainContent article a {
-  color: #393939 !important;
-}
 /* line 118, ../sass/screen.scss */
 #mainContent section a {
   color: #393939 !important;
 }
 /* line 121, ../sass/screen.scss */
 #mainContent section a:hover {
-  color: #5f5f5f !important;
-}
-/* line 124, ../sass/screen.scss */
-#mainContent article a:hover {
   color: #5f5f5f !important;
 }
 
@@ -11153,16 +11145,6 @@ article p {
   content: "/";
   position: relative;
   top: -3px;
-}
-
-/* line 151, ../sass/screen.scss */
-.readMore {
-  color: #2BA6CB !important;
-}
-
-/* line 154, ../sass/screen.scss */
-.readMore:hover {
-  color: #2284a1 !important;
 }
 
 /* line 157, ../sass/screen.scss */
@@ -11215,68 +11197,69 @@ article p {
 
 /* line 195, ../sass/screen.scss */
 .vcard {
+  border: 0em;
   margin-bottom: 0em !important;
 }
 
-/* line 198, ../sass/screen.scss */
+/* line 199, ../sass/screen.scss */
 .vcard .fn {
   font-size: 12px;
 }
 
-/* line 201, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
 .vcard .street-address {
   font-size: 12px;
 }
 
-/* line 204, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 .vcard .locality {
   font-size: 12px;
 }
 
-/* line 207, ../sass/screen.scss */
+/* line 208, ../sass/screen.scss */
 .vcard .state {
   font-size: 12px;
 }
 
-/* line 210, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 .vcard .zip {
   font-size: 12px;
   display: inline-block;
 }
 
-/* line 215, ../sass/screen.scss */
+/* line 216, ../sass/screen.scss */
 .vcard .email a {
   font-size: 11px !important;
 }
 
-/* line 219, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 footer {
   background-color: #dddddd;
   padding-top: 10px;
 }
-/* line 223, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 footer .row .columns {
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
-/* line 227, ../sass/screen.scss */
+/* line 228, ../sass/screen.scss */
 footer .prop {
   font-size: 11px !important;
 }
-/* line 230, ../sass/screen.scss */
+/* line 231, ../sass/screen.scss */
 footer .row.ul.li.a {
   color: #F7F7F4;
   cursor: pointer;
 }
 
-/* line 235, ../sass/screen.scss */
+/* line 236, ../sass/screen.scss */
 [class*="block-grid-"] {
   display: block;
   margin: 0 10px !important;
   padding: 0;
 }
 
-/* line 240, ../sass/screen.scss */
+/* line 241, ../sass/screen.scss */
 .contactFooter {
   padding-left: 10px;
   font-size: 11px;
@@ -11287,23 +11270,23 @@ footer .row.ul.li.a {
   display: inline-block;
 }
 
-/* line 249, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 .social {
   padding-top: 10px;
 }
 
-/* line 254, ../sass/screen.scss */
+/* line 255, ../sass/screen.scss */
 .mls {
   margin-top: 70px;
   text-align: bottom;
 }
 
-/* line 258, ../sass/screen.scss */
+/* line 259, ../sass/screen.scss */
 .properties {
   margin-left: 15px;
 }
 
-/* line 261, ../sass/screen.scss */
+/* line 262, ../sass/screen.scss */
 .propertiesFooter {
   font-weight: bold;
   display: inline-block;
@@ -11311,23 +11294,23 @@ footer .row.ul.li.a {
   color: #393939;
 }
 
-/* line 268, ../sass/screen.scss */
+/* line 269, ../sass/screen.scss */
 .copyright {
   background-color: #3F3F3F;
   padding-top: 10px;
 }
-/* line 271, ../sass/screen.scss */
+/* line 272, ../sass/screen.scss */
 .copyright a {
   color: #F7F7F4;
 }
 
-/* line 275, ../sass/screen.scss */
+/* line 276, ../sass/screen.scss */
 .copy {
   color: #FFFFFF !important;
 }
 
 /* =Contact Us */
-/* line 279, ../sass/screen.scss */
+/* line 280, ../sass/screen.scss */
 textarea {
   height: 300px;
   cursor: pointer;

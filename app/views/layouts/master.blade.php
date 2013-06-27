@@ -57,22 +57,22 @@
                   <li/>
                   <li class="has-dropdown"><a href="{{ URL::route('finding_the_right_mortgage_professional')}}">Mortgage</a>
                     <ul class="dropdown">
-                      <li><a href="{{ url::route('finding_the_right_mortgage_professional')}}">finding the right mortgage professional</a></li>
-                      <li><a href="{{ url::route('getting_preapproved')}}">getting preapproved</a></li>
-                      <li><a href="{{ url::route('how_much_can_you_afford')}}">how much can you afford?</a></li>
+                      <li><a href="{{ url::route('finding_the_right_mortgage_professional')}}">Finding the Right Mortgage Professional</a></li>
+                      <li><a href="{{ url::route('getting_preapproved')}}">Getting Preapproved</a></li>
+                      <li><a href="{{ url::route('how_much_can_you_afford')}}">How Much Can you afford?</a></li>
                       <li><a href="{{ url::route('down_payments_how_much_do_you_need')}}">down payments: how much do you need?</a></li>
                       <li><a href="{{ url::route('mortgages_101_basic_loan_types')}}">mortgages 101: basic loan types </a></li>
                       <li><a href="{{ url::route('renovating_a_home')}}">renovating a home? consider a 203(k) loan </a></li>
                     </ul>
                     <li/>
-                    <li class="has-dropdown"><a href="{{ url::route('real_estate_news')}}">news</a>
+                    <li class="has-dropdown"><a href="{{ url::route('real_estate_news')}}">News</a>
                       <ul class="dropdown">
-                        <li><a href="{{ url::route('real_estate_news')}}">real estate news</a></li>
-                        <li><a href="{{ url::route('news_for_buyers')}}">news for buyers</a></li>
-                        <li><a href="{{ url::route('news_for_sellers')}}">news for sellers</a></li>
+                        <li><a href="{{ url::route('real_estate_news')}}">Real Estate News</a></li>
+                        <li><a href="{{ url::route('news_for_buyers')}}">News for Buyers</a></li>
+                        <li><a href="{{ url::route('news_for_sellers')}}">News for Sellers</a></li>
                       </ul>
                       <li/>
-                      <li><a href="{{ url::route('contact')}}">contact</a></li>
+                      <li><a href="{{ url::route('contact')}}">Contact</a></li>
 
                     </ul>
                   </section>
@@ -115,7 +115,7 @@
                 </div>
                 <div class="row">
                  <div class="large-12 columns right icon">
-                   <a href="#" class="homeIcon has-tip-left" title="Home Page">
+                   <a href="{{ URL::route('home')}}" class="homeIcon has-tip-left" title="Home Page">
                      <img src="{{url('comp/img/home_remax.png')}}" alt="Remax First Class Home Icon">
                    </a> 
 
@@ -308,19 +308,11 @@
 
       <div class="copyright">
         <div class="row">
-          <div class="large-4 columns copy">
+          <div class="large-4 large-centered columns copy">
             <p>© 2013 RE/MAX FIRST CLASS</p> 
           </div>
-          <div class="large-8 columns">
-            <ul class="inline-list right">
-<!--               <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Buying</a></li>
-            <li><a href="#">Selling</a></li>
-            <li><a href="#">Renting</a></li>
-            <li><a href="#">Contact</a></li>
             
-          -->            </ul>
+          </ul>
         </div>
       </div>
     </div>
