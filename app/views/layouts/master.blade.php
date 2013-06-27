@@ -230,19 +230,19 @@
             <div class="large-4 columns">
               <div class="row">
               <div class="large-12 columns">
-                  <a class="th has-tip-left" title="Multiple Listing Service" href="#">
+                  <a class="th has-tip-left logoPadding" title="Multiple Listing Service" href="#">
                     <img src="{{url('comp/img/mls.png')}}" alt="Multiple Listing Service">
                   </a>
-                  <a class="th has-tip-left" title="Remax Commercial" href="#">
+                  <a class="th has-tip-left logoPadding" title="Remax Commercial" href="#">
                     <img src="{{url('comp/img/remax-commercial-logo.png')}}" alt="Remax Commercial">
                   </a>
-                  <a class="th has-tip-left"  title="Remax Short Sale Chicago"  href="http://www.shortsalechicago.us/Short-Sale-Chicago">
+                  <a class="th has-tip-left logoPadding"  title="Remax Short Sale Chicago"  href="http://www.shortsalechicago.us/Short-Sale-Chicago">
                     <img src="{{url('comp/img/Chicago-Short-Sale-Logo.png')}}" alt="Chicago Short Sale">
                   </a>
               </div>
             </div>
               <div class="row">
-              <div class="large-12 columns">
+              <div class="large-12 columns logoFooter">
                 <a href="{{ URL::route('home')}}">
                   <img src="{{url('comp/img/logo-footer.png')}}" alt="Logo Remax First Class">
                   <a/>
@@ -251,7 +251,7 @@
             </div>
               <div class="large-4 columns">
                   
-<!--                 <section class="large-6 columns social">
+                <section class="large-6 columns social">
                 <ul class="prop">
                   <span class="propertiesFooter">PROPERTIES FOR SALE:</span> <br/>
                   <li class="locality properties"><a href="#">Single home</a></li>
@@ -274,7 +274,7 @@
                   <li class="locality properties"><a href="#">Other</a></li>
                 </ul>
               </section>
-            -->              
+                         
           </div>
 
           <div class="large-4 columns">

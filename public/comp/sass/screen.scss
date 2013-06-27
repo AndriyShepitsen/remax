@@ -83,7 +83,7 @@ button{
 	position: relative;
 }
 .icon{
-	margin-top: 30px;
+	margin-top: 80px;
 	text-align: right;
 }
 .mailIcon{
@@ -178,12 +178,22 @@ article p{
 	}
 
 	/*=footer starts here */
-
+.logoPadding{
+	margin-left:1em;
+	margin-top: 1em;
+}
+.logoFooter{
+	margin-left:1em;
+	margin-top: 2em;
+}
 	.connectFooter{
 		display: inline-block;
 		font-size: 11px;
 		float: left;
 		font-weight: bold;
+	}
+	.vcard{
+		margin-bottom: 0em !important;
 	}
 	.vcard .fn{
 		font-size: 12px;
@@ -238,7 +248,7 @@ article p{
 	}
 	.social{
 		padding-top: 10px;
-		padding-bottom: 20px;
+		// padding-bottom: 20px;
   // margin-left: 5px; 
 }
 .mls{
