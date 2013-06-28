@@ -102,23 +102,21 @@
 
 
 
+               <!-- =loginButton -->
                <aside class="large-4 columns">
                 <div class="row">
                   <div class="large-12 columns">
-                    <!-- <div class="large-3 columns right"> -->
-                    <input type="submit" class="button tiny right" value="LOGIN">
-                    <!-- </div> -->
-                    <!-- <div class="large-5 columns right"> -->
+                    <input type="submit" class="button tiny right loginButton" data-reveal-id="adminAuth2" value="LOGIN">
                     <input type="submit" class="button tiny right" value="Create an account">
-                    <!-- </div> -->
                   </div>
                 </div>
+                <!-- =homeIcon -->
                 <div class="row">
                  <div class="large-12 columns right icon">
                    <a href="{{ URL::route('home')}}" class="homeIcon has-tip-left" title="Home Page">
                      <img src="{{url('comp/img/home_remax.png')}}" alt="Remax First Class Home Icon">
                    </a> 
-
+<!-- =mailIcon -->
                    <a href="#" class="mailIcon has-tip-left" title="Send Us Email" data-reveal-id="myModal2"> <img src="{{url('comp/img/mail_remax.png')}}" alt="Remax First Class Mail Icon" ></a>
                  </div> 
                </div>
@@ -141,107 +139,122 @@
               <span class="find">FIND YOUR HOME</span>
               <div class="row">
                 <div class="large-12 columns">
-                  <input type="text" placeholder="LOCATION" class="findInput">
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <input type="text" placeholder="PROPERTY TYPE" class="findInput">
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <input type="text" placeholder="SELECT STATUS" class="findInput">
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-4 columns">
-                  <input type="text" placeholder="BADS" class="findInput">
-                </div>
-                <div class="large-4 columns">
-                  <input type="text" placeholder="BATHS" class="findInput">
-                </div>
-                <div class="large-4 columns">
-                  <input type="text" placeholder="GARAGE" class="findInput">
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-6 columns">
-                  <input type="text" placeholder="PRICE FROM:" class="findInput">
-                </div>
-                <div class="large-6 columns">
-                  <input type="text" placeholder="PRICE TO:" class="findInput">
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-6 columns">
-                  <input type="text" placeholder="LOT SIZE:" class="findInput">
-                </div>
-                <div class="large-6 columns">
-                  <input type="text" placeholder="AGE OF HOME:" class="findInput">
-                </div>
-              </div>
-              <input type="submit" class="small button secondary" name="submit" id="submit" value="SEARCH">
-            </div>
 
-            <!-- =find your home ends here -->
-            <section class="large-12 columns">
-              <h4> <a href="#">NEW LISTINGS</a> </h4>
+                  {{Form::open(array('url' => 'foo/bar'))}}
+
+                  <div class="row">
+                    <div class="large-12 columns">
+                      {{Form::label('location', 'Location')}}
+                      {{Form::text('location', '', array('placeholder'=>'City and State, Address or Zip Code', 'class'=>'findInput'))}}
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="large-12 columns">
+                      {{Form::label('location', 'Price Range')}}
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="large-6 columns">
+                      {{Form::text('location', '', array('placeholder'=>'$ From', 'class'=>'findInput'))}}
+                    </div>
+                    <div class="large-6 columns">
+                      {{Form::text('location', '', array('placeholder'=>'$ To', 'class'=>'findInput'))}}
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="large-4 columns">
+                      {{Form::label('location', 'Bads')}}
+                      {{Form::text('location', '', array('placeholder'=>'#', 'class'=>'findInput'))}}
+                    </div>
+                    <div class="large-4 columns">
+                      {{Form::label('location', 'Baths')}}
+                      {{Form::text('location', '', array('placeholder'=>'#', 'class'=>'findInput'))}}
+                    </div>
+                    <div class="large-4 columns">
+                      {{Form::label('location', 'Garage')}}
+                      {{Form::text('location', '', array('placeholder'=>'#', 'class'=>'findInput'))}}
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="small-2 columns">
+
+                      {{ Form::submit('Submit', $attributes = array('class'=>'secondary button small radius'))}}
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="large-12 column">
+                      <ul class="breadcrumbs">
+                       <li> <a href="#">Advances Search</a></li> 
+                       <li> <a href="#">Seearch by MLS#</a></li> 
+                     </ul>
+                   </div>
+                 </div>
+                 {{Form::close()}}
+
+
+               </div>
+             </div>
+           </div>
+
+           <!-- =find your home ends here -->
+           <section class="large-12 columns">
+            <h4> <a class="secondary alert-box" href="#">NEW LISTINGS</a> </h4>
+            <ul class="small-block-grid-3 clearing-thumbs" data-clearing>
+              <li><a class="th radius" href="#"><img src="{{url('comp/img/new/10s.jpg')}}" alt=""><a/></li>
+              <li><a class="th radius" href="#"><img src="{{url('comp/img/new/9s.jpg')}}" alt=""><a/></li>
+              <li><a class="th radius" href="#"><img src="{{url('comp/img/new/8s.jpg')}}" alt=""><a/></li>
+              <li><a class="th radius" href="#"><img src="{{url('comp/img/new/7s.jpg')}}" alt=""><a/></li>
+              <li><a class="th radius" href="#"><img src="{{url('comp/img/new/6s.jpg')}}" alt=""><a/></li>
+              <li><a class="th radius" href="#"><img src="{{url('comp/img/new/3s.jpg')}}" alt=""><a/></li>
+            </ul>
+          </section>
+
+          <section class="large-12 columns">
+            <h4><a class="secondary alert-box" href="">FOR RENT</a> <h4>
               <hr/>
-              <ul class="small-block-grid-3 clearing-thumbs" data-clearing>
-                <li><a class="th radius" href="#"><img src="{{url('comp/img/new/10s.jpg')}}" alt=""><a/></li>
-                <li><a class="th radius" href="#"><img src="{{url('comp/img/new/9s.jpg')}}" alt=""><a/></li>
-                <li><a class="th radius" href="#"><img src="{{url('comp/img/new/8s.jpg')}}" alt=""><a/></li>
-                <li><a class="th radius" href="#"><img src="{{url('comp/img/new/7s.jpg')}}" alt=""><a/></li>
-                <li><a class="th radius" href="#"><img src="{{url('comp/img/new/6s.jpg')}}" alt=""><a/></li>
-                <li><a class="th radius" href="#"><img src="{{url('comp/img/new/3s.jpg')}}" alt=""><a/></li>
+              <ul class="small-block-grid-3 clearing-thumbs " data-clearing>
+                <li><a class="th radius" href="#"><img src="{{url('comp/img/rent/1s.jpg')}}" alt=""><a/></li>
+                <li><a class="th radius" href="#"><img src="{{url('comp/img/rent/2s.jpg')}}" alt=""><a/></li>
+                <li><a class="th radius" href="#"><img src="{{url('comp/img/rent/3s.jpg')}}" alt=""><a/></li>
+                <li><a class="th radius" href="#"><img src="{{url('comp/img/rent/4s.jpg')}}" alt=""><a/></li>
+                <li><a class="th radius" href="#"><img src="{{url('comp/img/rent/5s.jpg')}}" alt=""><a/></li>
+                <li><a class="th radius" href="#"><img src="{{url('comp/img/rent/6s.jpg')}}" alt=""><a/></li>
               </ul>
             </section>
 
-            <section class="large-12 columns">
-              <h4><a href="">FOR RENT</a> <h4>
-                <hr/>
-                <ul class="small-block-grid-3 clearing-thumbs " data-clearing>
-                  <li><a class="th radius" href="#"><img src="{{url('comp/img/rent/1s.jpg')}}" alt=""><a/></li>
-                  <li><a class="th radius" href="#"><img src="{{url('comp/img/rent/2s.jpg')}}" alt=""><a/></li>
-                  <li><a class="th radius" href="#"><img src="{{url('comp/img/rent/3s.jpg')}}" alt=""><a/></li>
-                  <li><a class="th radius" href="#"><img src="{{url('comp/img/rent/4s.jpg')}}" alt=""><a/></li>
-                  <li><a class="th radius" href="#"><img src="{{url('comp/img/rent/5s.jpg')}}" alt=""><a/></li>
-                  <li><a class="th radius" href="#"><img src="{{url('comp/img/rent/6s.jpg')}}" alt=""><a/></li>
-                </ul>
-              </section>
-
-            </adide>
-            <!-- =adide ands here -->
+          </adide>
+          <!-- =adide ands here -->
 
 
-          </div>
+        </div>
 
-        </div>     
+      </div>     
 
 
 
 
 
-        <!-- /* =footeer starts here */ -->
+      <!-- /* =footeer starts here */ -->
 
-        <footer>
-          <div class="row">
-            <div class="large-4 columns">
-              <div class="row">
+      <footer>
+        <div class="row">
+          <div class="large-4 columns">
+            <div class="row">
               <div class="large-12 columns">
-                  <a class="th has-tip-left logoPadding" title="Multiple Listing Service" href="#">
-                    <img src="{{url('comp/img/mls.png')}}" alt="Multiple Listing Service">
-                  </a>
-                  <a class="th has-tip-left logoPadding" title="Remax Commercial" href="#">
-                    <img src="{{url('comp/img/remax-commercial-logo.png')}}" alt="Remax Commercial">
-                  </a>
-                  <a class="th has-tip-left logoPadding"  title="Remax Short Sale Chicago"  href="http://www.shortsalechicago.us/Short-Sale-Chicago">
-                    <img src="{{url('comp/img/Chicago-Short-Sale-Logo.png')}}" alt="Chicago Short Sale">
-                  </a>
+                <a class="th has-tip-left logoPadding" title="Multiple Listing Service" href="#">
+                  <img src="{{url('comp/img/mls.png')}}" alt="Multiple Listing Service">
+                </a>
+                <a class="th has-tip-left logoPadding" title="Remax Commercial" href="#">
+                  <img src="{{url('comp/img/remax-commercial-logo.png')}}" alt="Remax Commercial">
+                </a>
+                <a class="th has-tip-left logoPadding"  title="Remax Short Sale Chicago"  href="http://www.shortsalechicago.us/Short-Sale-Chicago">
+                  <img src="{{url('comp/img/Chicago-Short-Sale-Logo.png')}}" alt="Chicago Short Sale">
+                </a>
               </div>
             </div>
-              <div class="row">
+            <div class="row">
               <div class="large-12 columns logoFooter">
                 <a href="{{ URL::route('home')}}">
                   <img src="{{url('comp/img/logo-footer.png')}}" alt="Logo Remax First Class">
@@ -249,9 +262,9 @@
                 </div>
               </div>
             </div>
-              <div class="large-4 columns">
-                  
-                <section class="large-6 columns social">
+            <div class="large-4 columns">
+
+              <section class="large-6 columns social">
                 <ul class="prop">
                   <span class="propertiesFooter">PROPERTIES FOR SALE:</span> <br/>
                   <li class="locality properties"><a href="#">Single home</a></li>
@@ -262,7 +275,7 @@
                   <li class="locality properties"><a href="#">Other</a></li>
                 </ul>
               </section>
-              
+
               <section class="large-6 columns social">
                 <ul class="prop">
                   <span class="propertiesFooter">PROPERTIES FOR RENT:</span> <br/>
@@ -274,44 +287,44 @@
                   <li class="locality properties"><a href="#">Other</a></li>
                 </ul>
               </section>
-                         
-          </div>
 
-          <div class="large-4 columns">
-            <div class="large-6 columns">
-              <ul class="vcard">
-                <span class="connectFooter">CONTACT INFORMATION:</span>
-                <li class="locality"> PHONE: (847) 674-9797</li>
-                <li class="locality"> FAX: (847) 674-0411</li>
-                <li class="street-address">4023 W. Church St.</li>
-                <li class="locality">Skokie</li>
-                <li><span class="state">IL</span> <span class="zip">600076</span></li>
-                <li class="email"><a href="#">remax1stclass@gmail.com </a></li>
-              </ul>
             </div>
-            <section class="large-6 columns social">
-              <span class="contactFooter">CONNECT WITH US:</span>
-              <ul class="small-block-grid-3">
-                <li><a class="has-tip-left" title="Our Facebook Page" href="#"><img src="{{url('comp/img/facebook.png')}}" alt="Skokie Remax First Class Facebook Icon"><a/></li>
-                <li><a class="has-tip-left" title="Our Feed Page" href="#"><img src="{{url('comp/img/feed.png')}}" alt="Skokie Remax First Class Feed Icon"><a/></li>
-                <li><a class="has-tip-left" title="Our Page" href="#"><img src="{{url('comp/img/youtube.png')}}" alt="Skokie Remax First Class Youtube Icon"><a/></li>
-                <li><a class="has-tip-left" title="Our Twitter Page" href="#"><img src="{{url('comp/img/twitter.png')}}" alt="Skokie Remax First Class Twitter Icon"><a/></li>
-                <li><a class="has-tip-left" title="Our Google Plus Page" href="#"><img src="{{url('comp/img/google.png')}}" alt="Skokie Remax First Class Google Icon"><a/></li>
-                <li><a class="has-tip-left" title="Our Linkedin Page" href="#"><img src="{{url('comp/img/linkedin.png')}}" alt="Skokie Remax First Class Linkedin Icon"><a/></li>
-              </ul>
-            </section>
-          </div>
-        </div>
-      </footer>
 
-      <!-- /* =copyright starts here */ -->
-
-      <div class="copyright">
-        <div class="row">
-          <div class="large-4 large-centered columns copy">
-            <p>© 2013 RE/MAX FIRST CLASS</p> 
+            <div class="large-4 columns">
+              <div class="large-6 columns">
+                <ul class="vcard">
+                  <span class="connectFooter">CONTACT INFORMATION:</span>
+                  <li class="locality"> PHONE: (847) 674-9797</li>
+                  <li class="locality"> FAX: (847) 674-0411</li>
+                  <li class="street-address">4023 W. Church St.</li>
+                  <li class="locality">Skokie</li>
+                  <li><span class="state">IL</span> <span class="zip">600076</span></li>
+                  <li class="email"><a href="#">remax1stclass@gmail.com </a></li>
+                </ul>
+              </div>
+              <section class="large-6 columns social">
+                <span class="contactFooter">CONNECT WITH US:</span>
+                <ul class="small-block-grid-3">
+                  <li><a class="has-tip-left" title="Our Facebook Page" href="#"><img src="{{url('comp/img/facebook.png')}}" alt="Skokie Remax First Class Facebook Icon"><a/></li>
+                  <li><a class="has-tip-left" title="Our Feed Page" href="#"><img src="{{url('comp/img/feed.png')}}" alt="Skokie Remax First Class Feed Icon"><a/></li>
+                  <li><a class="has-tip-left" title="Our Page" href="#"><img src="{{url('comp/img/youtube.png')}}" alt="Skokie Remax First Class Youtube Icon"><a/></li>
+                  <li><a class="has-tip-left" title="Our Twitter Page" href="#"><img src="{{url('comp/img/twitter.png')}}" alt="Skokie Remax First Class Twitter Icon"><a/></li>
+                  <li><a class="has-tip-left" title="Our Google Plus Page" href="#"><img src="{{url('comp/img/google.png')}}" alt="Skokie Remax First Class Google Icon"><a/></li>
+                  <li><a class="has-tip-left" title="Our Linkedin Page" href="#"><img src="{{url('comp/img/linkedin.png')}}" alt="Skokie Remax First Class Linkedin Icon"><a/></li>
+                </ul>
+              </section>
+            </div>
           </div>
-            
+        </footer>
+
+        <!-- /* =copyright starts here */ -->
+
+        <div class="copyright">
+          <div class="row">
+            <div class="large-4 large-centered columns copy">
+              <p>© 2013 RE/MAX FIRST CLASS</p> 
+            </div>
+
           </ul>
         </div>
       </div>
@@ -321,39 +334,39 @@
 --> 
 <script>
 document.write('<script src=' +
-('_proto_' in {} ? 'comp/javascripts/vendor/zepto' : 'comp/javascripts/vendor/jquery') +
-'.js><\/script>')
+  ('_proto_' in {} ? 'comp/javascripts/vendor/zepto' : 'comp/javascripts/vendor/jquery') +
+  '.js><\/script>')
 </script>
 
-<script src="comp/javascripts/foundation/foundation.js"></script>
+{{HTML::script("comp/javascripts/foundation/foundation.js")}}
 
-<script src="comp/javascripts/foundation/foundation.alerts.js"></script>
+{{HTML::script("comp/javascripts/foundation/foundation.alerts.js")}}
 
-<script src="comp/javascripts/foundation/foundation.clearing.js"></script>
+{{HTML::script("comp/javascripts/foundation/foundation.clearing.js")}}
 
-<script src="comp/javascripts/foundation/foundation.cookie.js"></script>
+{{HTML::script("comp/javascripts/foundation/foundation.cookie.js")}}
 
-<script src="comp/javascripts/foundation/foundation.dropdown.js"></script>
+{{HTML::script("comp/javascripts/foundation/foundation.dropdown.js")}}
 
-<script src="comp/javascripts/foundation/foundation.forms.js"></script>
+{{HTML::script("comp/javascripts/foundation/foundation.forms.js")}}
 
-<script src="comp/javascripts/foundation/foundation.interchange.js"></script>
+{{HTML::script("comp/javascripts/foundation/foundation.interchange.js")}}
 
-<script src="comp/javascripts/foundation/foundation.joyride.js"></script>
+{{HTML::script("comp/javascripts/foundation/foundation.joyride.js")}}
 
-<script src="comp/javascripts/foundation/foundation.magellan.js"></script>
+{{HTML::script("comp/javascripts/foundation/foundation.magellan.js")}}
 
-<script src="comp/javascripts/foundation/foundation.orbit.js"></script>
+{{HTML::script("comp/javascripts/foundation/foundation.orbit.js")}}
 
-<script src="comp/javascripts/foundation/foundation.placeholder.js"></script>
+{{HTML::script("comp/javascripts/foundation/foundation.placeholder.js")}}
 
-<script src="comp/javascripts/foundation/foundation.reveal.js"></script>
+{{HTML::script("comp/javascripts/foundation/foundation.reveal.js")}}
 
-<script src="comp/javascripts/foundation/foundation.section.js"></script>
+{{HTML::script("comp/javascripts/foundation/foundation.section.js")}}
 
-<script src="comp/javascripts/foundation/foundation.tooltips.js"></script>
+{{HTML::script("comp/javascripts/foundation/foundation.tooltips.js")}}
 
-<script src="comp/javascripts/foundation/foundation.topbar.js"></script>
+{{HTML::script("comp/javascripts/foundation/foundation.topbar.js")}}
 
 
 <script>
@@ -362,17 +375,36 @@ $(document).foundation();
 
 
 
-<div id="myModal" class="reveal-modal medium">
-<form id="contact" name="contact" action="#" method="post">
-  <label for="email">Your E-mail</label>
-  <input type="text" id="email" name="email" class="txt">
-  <br>
-  <label for="msg">Enter a Message</label>
-  <textarea id="msg" name="msg" class="txtarea"></textarea>
+<div id="myModal" class="reveal-modal medium myModal2">
+  <form id="contact" name="contact" action="#" method="post">
+    <label for="email">Your E-mail</label>
+    <input type="text" id="email" name="email" class="txt">
+    <br>
+    <label for="msg">Enter a Message</label>
+    <textarea id="msg" name="msg" class="txtarea"></textarea>
 
-  <button id="send">Send</button>
-</form>
-<a class="close-reveal-modal">&#215</a>
+    <button id="send">Send</button>
+  </form>
+  <a class="close-reveal-modal">&#215</a>
 </div>
+
+<!-- /* My slideDown Authentification Form Starts Here */ -->
+
+
+<div id="adminAuth" class="reveal-modal medium adminAuth2">
+  {{Form::open(array('url'=>'/login'))}} 
+
+  {{ Form::email('email', $value = null, $attributes = array())}}
+  {{ Form::password('password', $value = null, $attributes = array())}}
+  {{ Form::submit('Login', $attributes = array('class'=>'button tiny radius'))}}
+  <a class="close-reveal-modal">&#215</a>
+  {{Form::close()}} 
+  
+</div>
+
+
 </body>
 </html>
+
+
+

@@ -96,15 +96,12 @@ button{
 	@extend .mailIcon;
 }
 
-// #element_to_pop_up { 
-// 	display:none; 
-// }
 
 /* =mainContert starts here */
 
 #mainContent{
 	padding-top: 10px;
-	// padding-bottom: 10px;
+	padding-bottom: 10px;
 	background-color:#F6F6F6;
 	.small-block-grid-3 > li{
 		margin-bottom: 15px !important;
@@ -113,7 +110,7 @@ button{
 		margin-bottom: 9px !important;
 	}
 	article a{
-		// color: #393939 !important;
+		color: #393939 !important;
 	}
 	section a{
 		color: #393939 !important;
@@ -122,65 +119,60 @@ button{
 		color: lighten(#393939, 15%)!important;
 	}
 	article a:hover{
-		// color: lighten(#393939, 15%)!important;
+		color: lighten(#393939, 15%)!important;
 	}
 }
-a .newsTitle{
-	color: #393939;
+.panel{
+	padding-bottom: 20px !important;
+	margin-bottom: 10px;
 }
-article p{
+.orbit-container{
+	height:400px;
+	margin-bottom: 1em;
+}
 
+/* =find starts here */
+
+.find{
+	display: inline-block;
+	font-weight:bold;
+	margin-bottom: 25px;
+	font-size: 20px;
+	color: #525252;
+}
+.findInput{
+	margin-bottom: 15px !important;
+}
+label{
+	margin-bottom: .5em;
+}
+/* news start here */
+.readMore{
+	font-size: 0.6em;
+}
+
+article p{
 	font-size: .8em;
 	line-height:1.7; 
 	margin-bottom: .5em;
-		// text-align: justify ;
-	}
-	.breadcrumbs{
-		border:none !important;
-		padding: 0px  !important;
-	}
-	.breadcrumbs li:before {
-		color: #AAAAAA;
-		content: "/";
-		position: relative;
-		top: 1px;
-	}
-	.breadcrumbs li:before {
-		color: #AAAAAA;
-		content: "/";
-		position: relative;
-		top: -3px;
-	}
-	// .readMore{
-	// 	color: #2BA6CB !important;
-	// }
-	// .readMore:hover{
-	// 	color: darken(#2BA6CB, 10%)!important;
-	// }
-	.orbit-container{
-		height:400px;
-		margin-bottom: 1em;
-	}
-
-	/* =find starts here */
-
-	.find{
-		display: inline-block;
-		font-weight:bold;
-		margin-bottom: 15px;
-		font-size: 20px;
-		color: #525252;
-	}
-	.findInput{
-		margin-bottom: 15px !important;
-	}
-
-	/* news start here */
-	.readMore{
-		font-size: 0.6em;
-	}
-
-	/*=footer starts here */
+}
+.breadcrumbs{
+	border:none !important;
+	padding: 0px  !important;
+}
+.breadcrumbs li:before {
+	color: #AAAAAA;
+	content: "/";
+	position: relative;
+	top: 1px;
+}
+.breadcrumbs li:before {
+	color: #AAAAAA;
+	content: "/";
+	position: relative;
+	top: -3px;
+}
+/*=footer starts here */
 .logoPadding{
 	margin-left:1em;
 	margin-top: 1em;
@@ -189,69 +181,69 @@ article p{
 	margin-left:1em;
 	margin-top: 2em;
 }
-	.connectFooter{
-		display: inline-block;
-		font-size: 11px;
-		float: left;
-		font-weight: bold;
+.connectFooter{
+	display: inline-block;
+	font-size: 11px;
+	float: left;
+	font-weight: bold;
+}
+.vcard{
+	border: 0em;
+	margin-bottom: 0em !important;
+}
+.vcard .fn{
+	font-size: 12px;
+}
+.vcard .street-address{
+	font-size: 12px;
+}
+.vcard .locality{
+	font-size: 12px;
+}
+.vcard .state{
+	font-size: 12px;
+}
+.vcard .zip{
+	font-size: 12px;
+	display: inline-block;
+}
+.vcard .email{
+	a{
+		font-size: 11px !important;
 	}
-	.vcard{
-		border: 0em;
-		margin-bottom: 0em !important;
-	}
-	.vcard .fn{
-		font-size: 12px;
-	}
-	.vcard .street-address{
-		font-size: 12px;
-	}
-	.vcard .locality{
-		font-size: 12px;
-	}
-	.vcard .state{
-		font-size: 12px;
-	}
-	.vcard .zip{
-		font-size: 12px;
-		display: inline-block;
-	}
-	.vcard .email{
-		a{
-			font-size: 11px !important;
-		}
-	}
-	footer{
-		background-color: darken(#F6F6F6, 10%);
-		padding-top: 10px;
+}
+footer{
+	background-color: darken(#F6F6F6, 10%);
+	padding-top: 10px;
 
-		.row .columns{
-			padding-left: 0px !important;
-			padding-right: 0px !important;
-		}
-		.prop{
-			font-size: 11px !important;
-		}
-		.row.ul.li.a{
-			color: #F7F7F4;
-			cursor: pointer;
-		}
+	.row .columns{
+		padding-left: 0px !important;
+		padding-right: 0px !important;
 	}
-	[class*="block-grid-"] {
-		display: block;
-		margin: 0 10px !important;
-		padding: 0;
+	.prop{
+		font-size: 11px !important;
 	}
-	.contactFooter{
-		padding-left: 10px;
-		font-size: 11px;
-		font-weight: bold !important;
-		margin-left: 10px;
-		margin-top: 5px !important;
-		margin-bottom: 10px !important;
-		display: inline-block;
+	.row.ul.li.a{
+		color: #F7F7F4;
+		cursor: pointer;
 	}
-	.social{
-		padding-top: 10px;
+}
+[class*="block-grid-"] {
+	display: block;
+	margin: 0 10px !important;
+	padding: 0;
+}
+.contactFooter{
+	padding-left: 10px;
+	font-size: 11px;
+	font-weight: bold !important;
+	margin-left: 10px;
+	margin-top: 5px !important;
+	margin-bottom: 10px !important;
+	display: inline-block;
+}
+.social{
+	padding-top: 10px;
 		// padding-bottom: 20px;
   // margin-left: 5px; 
 }
