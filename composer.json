@@ -5,6 +5,7 @@
 	"require": {
 		"laravel/framework": "4.0.*",
 		"way/generators": "dev-master",
+		"pafelin/laravel-nonce": "dev-master",
 		"sunra/php-simple-html-dom-parser": "1.5.0.*@dev"
 	},
 	"autoload": {

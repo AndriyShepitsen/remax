@@ -20,8 +20,13 @@ class ParseController extends BaseController {
 
 	public function index()
 	{
-	$html = readfile( 'http://www.remax-ni.net/realestatehomesforsale/60076-p001.html' );
-	echo $html;
+	$str = 'http://www.remax-ni.net/realestatehomesforsale/60076-p001.html';
+	$dom = HtmlDomParser::str_get_html( $str );
+	
+	$elems = $dom->find('li');
+	dd($dom);
+	//$html = readfile( 'http://www.remax-ni.net/realestatehomesforsale/60076-p001.html' );
+	//echo $html;
 	      
 
 	return 'test';
