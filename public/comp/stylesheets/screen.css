@@ -11159,26 +11159,31 @@ label {
   margin-bottom: .5em;
 }
 
+/* line 149, ../sass/screen.scss */
+.advanceSearch {
+  font-size: 12px !important;
+}
+
 /* news start here */
-/* line 150, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 .readMore {
   font-size: 0.6em;
 }
 
-/* line 154, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 article p {
   font-size: .8em;
   line-height: 1.7;
   margin-bottom: .5em;
 }
 
-/* line 159, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 .breadcrumbs {
   border: none !important;
   padding: 0px !important;
 }
 
-/* line 163, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 .breadcrumbs li:before {
   color: #AAAAAA;
   content: "/";
@@ -11186,7 +11191,7 @@ article p {
   top: 1px;
 }
 
-/* line 169, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 .breadcrumbs li:before {
   color: #AAAAAA;
   content: "/";
@@ -11195,19 +11200,19 @@ article p {
 }
 
 /*=footer starts here */
-/* line 176, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 .logoPadding {
   margin-left: 1em;
   margin-top: 1em;
 }
 
-/* line 180, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 .logoFooter {
   margin-left: 1em;
   margin-top: 2em;
 }
 
-/* line 184, ../sass/screen.scss */
+/* line 187, ../sass/screen.scss */
 .connectFooter {
   display: inline-block;
   font-size: 11px;
@@ -11215,71 +11220,71 @@ article p {
   font-weight: bold;
 }
 
-/* line 190, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 .vcard {
   border: 0em;
   margin-bottom: 0em !important;
 }
 
-/* line 194, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 .vcard .fn {
   font-size: 12px;
 }
 
-/* line 197, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 .vcard .street-address {
   font-size: 12px;
 }
 
-/* line 200, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 .vcard .locality {
   font-size: 12px;
 }
 
-/* line 203, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
 .vcard .state {
   font-size: 12px;
 }
 
-/* line 206, ../sass/screen.scss */
+/* line 209, ../sass/screen.scss */
 .vcard .zip {
   font-size: 12px;
   display: inline-block;
 }
 
-/* line 211, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 .vcard .email a {
   font-size: 11px !important;
 }
 
-/* line 215, ../sass/screen.scss */
+/* line 218, ../sass/screen.scss */
 footer {
   background-color: #dddddd;
   padding-top: 10px;
 }
-/* line 219, ../sass/screen.scss */
+/* line 222, ../sass/screen.scss */
 footer .row .columns {
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
-/* line 223, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 footer .prop {
   font-size: 11px !important;
 }
-/* line 226, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 footer .row.ul.li.a {
   color: #F7F7F4;
   cursor: pointer;
 }
 
-/* line 231, ../sass/screen.scss */
+/* line 234, ../sass/screen.scss */
 [class*="block-grid-"] {
   display: block;
   margin: 0 10px !important;
   padding: 0;
 }
 
-/* line 236, ../sass/screen.scss */
+/* line 239, ../sass/screen.scss */
 .contactFooter {
   padding-left: 10px;
   font-size: 11px;
@@ -11290,23 +11295,23 @@ footer .row.ul.li.a {
   display: inline-block;
 }
 
-/* line 245, ../sass/screen.scss */
+/* line 248, ../sass/screen.scss */
 .social {
   padding-top: 10px;
 }
 
-/* line 250, ../sass/screen.scss */
+/* line 253, ../sass/screen.scss */
 .mls {
   margin-top: 70px;
   text-align: bottom;
 }
 
-/* line 254, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 .properties {
   margin-left: 15px;
 }
 
-/* line 257, ../sass/screen.scss */
+/* line 260, ../sass/screen.scss */
 .propertiesFooter {
   font-weight: bold;
   display: inline-block;
@@ -11314,23 +11319,23 @@ footer .row.ul.li.a {
   color: #393939;
 }
 
-/* line 264, ../sass/screen.scss */
+/* line 267, ../sass/screen.scss */
 .copyright {
   background-color: #3F3F3F;
   padding-top: 10px;
 }
-/* line 267, ../sass/screen.scss */
+/* line 270, ../sass/screen.scss */
 .copyright a {
   color: #F7F7F4;
 }
 
-/* line 271, ../sass/screen.scss */
+/* line 274, ../sass/screen.scss */
 .copy {
   color: #FFFFFF !important;
 }
 
 /* =Contact Us */
-/* line 275, ../sass/screen.scss */
+/* line 278, ../sass/screen.scss */
 textarea {
   height: 300px;
   cursor: pointer;

@@ -1,32 +1,32 @@
- /* =popup for mail icons in heaher */
+//  /* =popup for mail icons in heaher */
 
- $(function () {
+//  $(function () {
 
- 	$('#modalw').hide();
- 	$('.mailIcon').on('click', function(){
-// Prevents the default action to be triggered.
-$('#modalw').show();
-});
-
-
- 	$('a.close-reveal-modal').on('click', function(){
-// Prevents the default action to be triggered.
-$('#myModal').foundation('reveal', 'close');
-});
+//  	$('#modalw').hide();
+//  	$('.mailIcon').on('click', function(){
+// // Prevents the default action to be triggered.
+// $('#modalw').show();
+// });
 
 
- /* =popup for login button in heaher */
-
- 	$('.loginButton').on('click', function(){
-// Prevents the default action to be triggered.
-$('#adminAuth').foundation('reveal', 'open');
-});
+//  	$('a.close-reveal-modal').on('click', function(){
+// // Prevents the default action to be triggered.
+// $('#myModal').foundation('reveal', 'close');
+// });
 
 
- 	$('a.close-reveal-modal').on('click', function(){
-// Prevents the default action to be triggered.
-$('#adminAuth').foundation('reveal', 'close');
-});
- });
+//  /* =popup for login button in heaher */
+
+//  	$('.loginButton').on('click', function(){
+// // Prevents the default action to be triggered.
+// $('#adminAuth').foundation('reveal', 'open');
+// });
+
+
+//  	$('a.close-reveal-modal').on('click', function(){
+// // Prevents the default action to be triggered.
+// $('#adminAuth').foundation('reveal', 'close');
+// });
+//  });
 
 
