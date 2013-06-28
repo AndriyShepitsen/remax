@@ -102,23 +102,21 @@
 
 
 
+               <!-- =loginButton -->
                <aside class="large-4 columns">
                 <div class="row">
                   <div class="large-12 columns">
-                    <!-- <div class="large-3 columns right"> -->
                     <input type="submit" class="button tiny right loginButton" data-reveal-id="adminAuth2" value="LOGIN">
-                    <!-- </div> -->
-                    <!-- <div class="large-5 columns right"> -->
                     <input type="submit" class="button tiny right" value="Create an account">
-                    <!-- </div> -->
                   </div>
                 </div>
+                <!-- =homeIcon -->
                 <div class="row">
                  <div class="large-12 columns right icon">
                    <a href="{{ URL::route('home')}}" class="homeIcon has-tip-left" title="Home Page">
                      <img src="{{url('comp/img/home_remax.png')}}" alt="Remax First Class Home Icon">
                    </a> 
-
+<!-- =mailIcon -->
                    <a href="#" class="mailIcon has-tip-left" title="Send Us Email" data-reveal-id="myModal2"> <img src="{{url('comp/img/mail_remax.png')}}" alt="Remax First Class Mail Icon" ></a>
                  </div> 
                </div>
@@ -340,35 +338,35 @@ document.write('<script src=' +
   '.js><\/script>')
 </script>
 
-<script src="comp/javascripts/foundation/foundation.js"></script>
+{{HTML::script("comp/javascripts/foundation/foundation.js")}}
 
-<script src="comp/javascripts/foundation/foundation.alerts.js"></script>
+{{HTML::script("comp/javascripts/foundation/foundation.alerts.js")}}
 
-<script src="comp/javascripts/foundation/foundation.clearing.js"></script>
+{{HTML::script("comp/javascripts/foundation/foundation.clearing.js")}}
 
-<script src="comp/javascripts/foundation/foundation.cookie.js"></script>
+{{HTML::script("comp/javascripts/foundation/foundation.cookie.js")}}
 
-<script src="comp/javascripts/foundation/foundation.dropdown.js"></script>
+{{HTML::script("comp/javascripts/foundation/foundation.dropdown.js")}}
 
-<script src="comp/javascripts/foundation/foundation.forms.js"></script>
+{{HTML::script("comp/javascripts/foundation/foundation.forms.js")}}
 
-<script src="comp/javascripts/foundation/foundation.interchange.js"></script>
+{{HTML::script("comp/javascripts/foundation/foundation.interchange.js")}}
 
-<script src="comp/javascripts/foundation/foundation.joyride.js"></script>
+{{HTML::script("comp/javascripts/foundation/foundation.joyride.js")}}
 
-<script src="comp/javascripts/foundation/foundation.magellan.js"></script>
+{{HTML::script("comp/javascripts/foundation/foundation.magellan.js")}}
 
-<script src="comp/javascripts/foundation/foundation.orbit.js"></script>
+{{HTML::script("comp/javascripts/foundation/foundation.orbit.js")}}
 
-<script src="comp/javascripts/foundation/foundation.placeholder.js"></script>
+{{HTML::script("comp/javascripts/foundation/foundation.placeholder.js")}}
 
-<script src="comp/javascripts/foundation/foundation.reveal.js"></script>
+{{HTML::script("comp/javascripts/foundation/foundation.reveal.js")}}
 
-<script src="comp/javascripts/foundation/foundation.section.js"></script>
+{{HTML::script("comp/javascripts/foundation/foundation.section.js")}}
 
-<script src="comp/javascripts/foundation/foundation.tooltips.js"></script>
+{{HTML::script("comp/javascripts/foundation/foundation.tooltips.js")}}
 
-<script src="comp/javascripts/foundation/foundation.topbar.js"></script>
+{{HTML::script("comp/javascripts/foundation/foundation.topbar.js")}}
 
 
 <script>
