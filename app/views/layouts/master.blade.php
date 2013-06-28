@@ -15,7 +15,7 @@
     {{HTML::script("comp/javascripts/foundation.min.js")}} 
     {{HTML::script("comp/javascripts/script.js")}} 
 
-
+      
   </head>
   <body>
     <!-- navPanel starts here -->
@@ -374,7 +374,7 @@ $(document).foundation();
 
     <button id="send">Send</button>
   </form>
-  <a class="close-reveal-modal">&#215</a>
+  <a class="close-reveal-modal">&#215;</a>
 </div>
 
 <!-- /* My slideDown Authentification Form Starts Here */ -->
