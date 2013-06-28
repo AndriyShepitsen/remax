@@ -85,28 +85,28 @@
           <!-- =logoWrapper -->
           <div class="logoWrapper">
             <div class="row">
-              <aside class="large-4 columns">
+              <aside class="large-8 columns">
                 <a href="{{ URL::route('home')}}"> 
                   <img src="{{url('comp/img/REMAX1Logo.png')}}" alt="Logo Remax First Class Realty">
                   <a/>
                 </aside>
 
-                <aside class="large-4 columns">
-                 {{Form::open(array('url'=>'/login'))}} 
+<!--                 <aside class="large-4 columns">
+ {{Form::open(array('url'=>'/login'))}} 
 
-                 {{ Form::email('email', $value = null, $attributes = array())}}
-                 {{ Form::password('password', $value = null, $attributes = array())}}
-                 {{ Form::submit('Login', $attributes = array('class'=>'button tiny radius'))}}
-                 {{Form::close()}} 
+ {{ Form::email('email', $value = null, $attributes = array())}}
+ {{ Form::password('password', $value = null, $attributes = array())}}
+ {{ Form::submit('Login', $attributes = array('class'=>'button tiny radius'))}}
+ {{Form::close()}} 
                </aside>
 
-
+ -->
 
                <!-- =loginButton -->
                <aside class="large-4 columns">
                 <div class="row">
                   <div class="large-12 columns">
-                    <input type="submit" class="button tiny right loginButton" data-reveal-id="adminAuth2" value="LOGIN">
+                    <input type="submit" class="button tiny right loginButton" data-reveal-id="adminAuth" value="LOGIN">
                     <input type="submit" class="button tiny right" value="Create an account">
                   </div>
                 </div>
@@ -117,7 +117,7 @@
                      <img src="{{url('comp/img/home_remax.png')}}" alt="Remax First Class Home Icon">
                    </a> 
 <!-- =mailIcon -->
-                   <a href="#" class="mailIcon has-tip-left" title="Send Us Email" data-reveal-id="myModal2"> <img src="{{url('comp/img/mail_remax.png')}}" alt="Remax First Class Mail Icon" ></a>
+                   <a href="#" class="mailIcon has-tip-left" title="Send Us Email" data-reveal-id="myModal"> <img src="{{url('comp/img/mail_remax.png')}}" alt="Remax First Class Mail Icon" ></a>
                  </div> 
                </div>
              </aside>
@@ -151,30 +151,30 @@
 
                   <div class="row">
                     <div class="large-12 columns">
-                      {{Form::label('location', 'Price Range')}}
+                      {{Form::label('from', 'Price Range')}}
                     </div>
                   </div>
 
                   <div class="row">
                     <div class="large-6 columns">
-                      {{Form::text('location', '', array('placeholder'=>'$ From', 'class'=>'findInput'))}}
+                      {{Form::text('from', '', array('placeholder'=>'$ From', 'class'=>'findInput'))}}
                     </div>
                     <div class="large-6 columns">
-                      {{Form::text('location', '', array('placeholder'=>'$ To', 'class'=>'findInput'))}}
+                      {{Form::text('to', '', array('placeholder'=>'$ To', 'class'=>'findInput'))}}
                     </div>
                   </div>
                   <div class="row">
                     <div class="large-4 columns">
-                      {{Form::label('location', 'Bads')}}
-                      {{Form::text('location', '', array('placeholder'=>'#', 'class'=>'findInput'))}}
+                      {{Form::label('bads', 'Bads')}}
+                      {{Form::text('bads', '', array('placeholder'=>'#', 'class'=>'findInput'))}}
                     </div>
                     <div class="large-4 columns">
-                      {{Form::label('location', 'Baths')}}
-                      {{Form::text('location', '', array('placeholder'=>'#', 'class'=>'findInput'))}}
+                      {{Form::label('baths', 'Baths')}}
+                      {{Form::text('baths', '', array('placeholder'=>'#', 'class'=>'findInput'))}}
                     </div>
                     <div class="large-4 columns">
-                      {{Form::label('location', 'Garage')}}
-                      {{Form::text('location', '', array('placeholder'=>'#', 'class'=>'findInput'))}}
+                      {{Form::label('garage', 'Garage')}}
+                      {{Form::text('garage', '', array('placeholder'=>'#', 'class'=>'findInput'))}}
                     </div>
                   </div>
                   <div class="row">
@@ -186,8 +186,8 @@
                   <div class="row">
                     <div class="large-12 column">
                       <ul class="breadcrumbs">
-                       <li> <a href="#">Advances Search</a></li> 
-                       <li> <a href="#">Seearch by MLS#</a></li> 
+                       <li> <a class="advanceSearch" href="#">Advances Search</a></li> 
+                       <li> <a class="advanceSearch" href="#">Seearch by MLS#</a></li> 
                      </ul>
                    </div>
                  </div>
@@ -397,7 +397,7 @@ $(document).foundation();
   {{ Form::email('email', $value = null, $attributes = array())}}
   {{ Form::password('password', $value = null, $attributes = array())}}
   {{ Form::submit('Login', $attributes = array('class'=>'button tiny radius'))}}
-  <a class="close-reveal-modal">&#215</a>
+  <a class="close-reveal-modal">&#215;</a>
   {{Form::close()}} 
   
 </div>
