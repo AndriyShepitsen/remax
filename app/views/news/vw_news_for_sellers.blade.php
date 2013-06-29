@@ -10,12 +10,13 @@
 				@if ($news[0]->bs == 2 )	
 				<li class="current"><a href="#">NEWS FOR SELLERS</a></li>
 				@endif
-<hr/> 
+				<hr/> 
 			</ul>
 			@foreach($news as $new)
 			<h4>{{$new->title}}</h4>
-			<p>{{$new->body}}</p>
 			<hr/>
+			<p>{{$new->body}}</p>
+			<br/>
 			@endforeach
 		</div>
 	</div>

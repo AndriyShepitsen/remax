@@ -15,7 +15,7 @@
     {{HTML::script("comp/javascripts/foundation.min.js")}} 
     {{HTML::script("comp/javascripts/script.js")}} 
 
-      
+
   </head>
   <body>
     <!-- navPanel starts here -->
@@ -27,10 +27,13 @@
             <ul class="title-area">
               <!-- Title Area -->
               <li class="name">
-                <h1><a href="{{ URL::route('home')}}">REMAX FIRST CLASS</a></h1>
+                <h1>
+                  {{HTML::linkRoute('home', 'REMAX FIRST CLASS');}}
+                </h1>
               </li>
               <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-              <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+
+             <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
             </ul>
             <section class="top-bar-section">
               <ul class="right">
@@ -129,6 +132,7 @@
                 <div class="row">
                   <div class="large-12 columns">
 
+
                     {{Form::open(array('url' => 'foo/bar'))}}
 
                     <div class="row">
@@ -154,22 +158,22 @@
                     </div>
                     <div class="row">
                       <div class="large-4 columns">
-                        {{form::label('bads', 'bads')}}
-                        {{form::text('bads', '', array('placeholder'=>'#', 'class'=>'findinput'))}}
+                        {{Form::label('bads', 'bads')}}
+                        {{Form::text('bads', '', array('placeholder'=>'#', 'class'=>'findinput'))}}
                       </div>
                       <div class="large-4 columns">
-                        {{form::label('baths', 'baths')}}
-                        {{form::text('baths', '', array('placeholder'=>'#', 'class'=>'findinput'))}}
+                        {{Form::label('baths', 'baths')}}
+                        {{Form::text('baths', '', array('placeholder'=>'#', 'class'=>'findinput'))}}
                       </div>
                       <div class="large-4 columns">
-                        {{form::label('garage', 'garage')}}
-                        {{form::text('garage', '', array('placeholder'=>'#', 'class'=>'findinput'))}}
+                        {{Form::label('garage', 'garage')}}
+                        {{Form::text('garage', '', array('placeholder'=>'#', 'class'=>'findinput'))}}
                       </div>
                     </div>
                     <div class="row">
                       <div class="small-2 columns">
 
-                        {{ Form::submit('Submit', $attributes = array('class'=>'secondary button small radius'))}}
+                        {{ Form::submit('Search', array('class'=>'secondary button small radius'))}}
                       </div>
                     </div>
                     <div class="row">
@@ -394,6 +398,5 @@ $(document).foundation();
 
 </body>
 </html>
-
 
 

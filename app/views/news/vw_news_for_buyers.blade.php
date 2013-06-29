@@ -15,8 +15,9 @@
 			
 			@foreach($news as $n) <!-- Iterate over the array of news -->
 			<h4>{{$n->title}}</h4>
-			<p>{{$n->body}}</p>
 			<hr/>
+			<p>{{$n->body}}</p>
+			<br/>
 			@endforeach
 
 		</div>
