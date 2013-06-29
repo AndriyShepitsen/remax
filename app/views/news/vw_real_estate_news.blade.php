@@ -7,12 +7,13 @@
 		<div class="large-12 columns">
 			<div class="newsContent">
 
-
+				<h1>Real Estate News</h1>		
+				<hr/>
 				@foreach($news as $n)
 				<h4>{{$n->title}}</h4>
+				<hr/>
 				<p>{{$n->body}}</p>
 			</br>
-			<hr/>
 			@endforeach
 		</div>				
 	</div>
