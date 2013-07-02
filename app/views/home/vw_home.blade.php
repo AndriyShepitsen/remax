@@ -29,11 +29,12 @@
 						<h5 class="subheader">{{$newsBuy->title}}</h5>
 					</a>
 					<p>{{$newsBuy->body}}</p> 
-					<a class="readMore" href="<?php echo 'news/'.$newsBuy->id; ?>">Read More</a>
+
+					{{link_to('news/'.$newsBuy->id, 'Read more', array('class'=>'readMore'));}}	
 				</article>
 				<!-- =news for sellers start here  -->
 				<article class="large-6 columns">
-					<h4> <a href="#">NEWS FOR SELLERS</a> </h4>
+					<h4> <a class="newsTitle" href="#">NEWS FOR SELLERS</a> </h4>
 					<hr/>
 					<a class="th" href="<?php echo 'news/'.$newsSell->id; ?>"><img src="{{url('comp/img/sellers.jpg')}}" alt="News for Sellers">
 					</a>
@@ -41,8 +42,7 @@
 						<h5 class="subheader">{{$newsSell->title}}</h5>
 					</a>
 					<p>{{$newsSell->body}}</p>
-					<a class="readMore" href="<?php echo 'news/'.$newsSell->id; ?>">Read More</a>
-
+					{{link_to('news/'.$newsSell->id, 'Read more', array('class'=>'readMore'));}}	
 				</article>
 			</div>
 

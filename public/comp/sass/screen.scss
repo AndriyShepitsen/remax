@@ -148,7 +148,7 @@ $copyrightBackgroundColor: #3F3F3F;
 	h4{
 		margin-bottom: 9px !important;
 	}
-	article a{
+/* 	article a{
 		color: $colorNavPanel !important;
 	}
 	section a{
@@ -160,7 +160,7 @@ $copyrightBackgroundColor: #3F3F3F;
 	article a:hover{
 		color: lighten($colorNavPanel, 15%)!important;
 	}
-}
+ */}
 .panel{
 	padding-bottom: 20px !important;
 	margin-bottom: 10px;
@@ -188,8 +188,11 @@ label{
 /* news start here */
 .readMore{
 	font-size: 0.6em;
+	// color: #0080FF !important;    
 }
-
+.newsTitle{
+	color: $colorNavPanel; 
+}
 article p{
 	font-size: .8em;
 	line-height: 1.7em; 
