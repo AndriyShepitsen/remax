@@ -18,78 +18,119 @@
 	margin: 0;
 }
 /* =navPanel starts here */
+/* =variables*/
+$colorNavPanel: #393939;
+$colorButtonBackground: #428CB9;
+$colorLogoWrapper: #F6F6F6;
+$colorFindFormFont: #525252;
+$colorSlash: #AAAAAA;
+$colorFontOffWhite: #F7F7F4;
+$copyrightBackgroundColor: #3F3F3F;
 
-button{
-	@include sassy-button("glass", 10px, 19px, #4ba3cc);
+/*=mixins*/
+@mixin myButtonStyle {
+	background-color: $colorButtonBackground !important;
+	margin-top: .5em !important;
+	margin-bottom: .5em !important;
+	margin-right: 7em !important;
+}
+
+@mixin logoWrapperStyle{
+	padding: 10px;
+	background-color: darken($colorLogoWrapper, 10%);
+}
+
+@mixin mailIconStyle {
+	padding-left:10px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+@mixin mainContentStyle{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: $colorLogoWrapper;
+}
+@mixin findFormStyle {
+	display: inline-block;
+	font-weight:bold;
+	margin-bottom: 25px;
+	font-size: 20px;
+	color: $colorFindFormFont;
+}
+
+@mixin slashBefore{
+	color: $colorSlash;
+	content: "/";
+	position: relative;
+	top: -3px;
+}
+@mixin footerStyle{
+	background-color: darken($colorLogoWrapper, 10%);
+	padding-top: 10px;
+}
+@mixin contactFooterStyle{
+	padding-left: 10px;
+	font-size: 11px;
+	font-weight: bold !important;
+	margin-left: 10px;
+	margin-top: 3px !important;
+	margin-bottom: 10px !important;
+	display: inline-block;
+}
+@mixin propertiesFooterStyle{
+	font-weight: bold;
+	display: inline-block;
+	margin-bottom: 5px;
+	color: $colorNavPanel;
+}
+
+@mixin connectFooterStyle{
+	display: inline-block;
+	font-size: 11px;
+	float: left;
+	font-weight: bold;
 }
 .navPanel{
-	background-color: #313131;
+	background-color: $colorNavPanel;
 	.button{
-		background-color:#428CB9 !important;
-		margin-top: .5em !important;
-		margin-bottom: .5em !important;
-		margin-right: 7em !important;
+		@include myButtonStyle;
 	}
 	.button:hover{
-		background-color:darken(#428CB9, 10%)!important;
+		background-color:darken($colorButtonBackground, 10%)!important;
 	}
 }
 .top-bar{
 	margin-bottom: 0 !important;
-	background-color: #313131 !important;
+	background-color: $colorNavPanel !important;
 }
 .top-bar-section ul li > a {
-	background-color: #313131 !important;
+	background-color: $colorNavPanel !important;
 }
 .toggle-topbar, .top-bar.expanded .title-area{
-	background-color: #313131 !important;
+	background-color: $colorNavPanel !important;
 }
 .loginWrapper{
-	background-color: darken(#313131, 8%);
+	background-color: darken($colorNavPanel, 8%);
 
 }
 .logoWrapper{
-	padding: 10px;
-	background-color: darken(#F6F6F6, 10%);
+	@include logoWrapperStyle;
 	.button{
-		background-color:#428CB9 !important;
+		background-color: $colorButtonBackground !important;
 		margin-left: 5px;
 	}
 	.button:hover{
-		background-color:darken(#428CB9, 10%)!important;
+		background-color:darken( $colorButtonBackground, 10%)!important;
 	}
 }
 
-.call{
-	font-size: 20px;
-	color: #FFFFFF;
-	line-height: 28px;
-	margin-right: 15px;
-	p{
-		text-align: right;
-	}
-}
-.alert-box {
-	background-color: #2BA6CB;
-	border-color: #2284A1;
-	border-style: solid;
-	border-width: 1px;
-	color: white;
-	display: block;
-	font-size: 0.875em;
-	font-weight: bold;
-	margin-bottom: 1.25em;
-	padding: 0.6875em 1.3125em 0.5em 0.6875em;
-	position: relative;
-}
 .icon{
 	margin-top: 80px;
 	text-align: right;
 }
 .mailIcon{
-	padding-left:10px;
-	padding-top:10px;
-	padding-bottom:10px;
+	@include mailIconStyle;
 }
 
 .homeIcon{
@@ -97,12 +138,10 @@ button{
 }
 
 
-/* =mainContert starts here */
-
+/* =mainContent starts here */
 #mainContent{
-	padding-top: 10px;
-	padding-bottom: 10px;
-	background-color:#F6F6F6;
+	@include mainContentStyle;
+
 	.small-block-grid-3 > li{
 		margin-bottom: 15px !important;
 	}
@@ -110,16 +149,16 @@ button{
 		margin-bottom: 9px !important;
 	}
 	article a{
-		color: #393939 !important;
+		color: $colorNavPanel !important;
 	}
 	section a{
-		color: #393939 !important;
+		color: $colorNavPanel !important;
 	}
 	section a:hover{
-		color: lighten(#393939, 15%)!important;
+		color: lighten($colorNavPanel, 15%)!important;
 	}
 	article a:hover{
-		color: lighten(#393939, 15%)!important;
+		color: lighten($colorNavPanel, 15%)!important;
 	}
 }
 .panel{
@@ -133,12 +172,9 @@ button{
 
 /* =find starts here */
 
+
 .find{
-	display: inline-block;
-	font-weight:bold;
-	margin-bottom: 25px;
-	font-size: 20px;
-	color: #525252;
+	@include findFormStyle;
 }
 .findInput{
 	margin-bottom: 15px !important;
@@ -156,7 +192,7 @@ label{
 
 article p{
 	font-size: .8em;
-	line-height:1.7; 
+	line-height: 1.7em; 
 	margin-bottom: .5em;
 }
 .breadcrumbs{
@@ -164,31 +200,22 @@ article p{
 	padding: 0px  !important;
 }
 .breadcrumbs li:before {
-	color: #AAAAAA;
-	content: "/";
-	position: relative;
-	top: 1px;
+	@include slashBefore;
 }
-.breadcrumbs li:before {
-	color: #AAAAAA;
-	content: "/";
-	position: relative;
-	top: -3px;
-}
+
 /*=footer starts here */
-.logoPadding{
+@mixin marginOneEmTopLeft{
 	margin-left:1em;
 	margin-top: 1em;
 }
-.logoFooter{
-	margin-left:1em;
-	margin-top: 2em;
+.logoPadding{
+	@include marginOneEmTopLeft;
+}
+.logoRemaxFooter{
+	@include marginOneEmTopLeft;
 }
 .connectFooter{
-	display: inline-block;
-	font-size: 11px;
-	float: left;
-	font-weight: bold;
+	@include connectFooterStyle;
 }
 .vcard{
 	border: 0em;
@@ -216,9 +243,7 @@ article p{
 	}
 }
 footer{
-	background-color: darken(#F6F6F6, 10%);
-	padding-top: 10px;
-
+	@include footerStyle;
 	.row .columns{
 		padding-left: 0px !important;
 		padding-right: 0px !important;
@@ -227,7 +252,7 @@ footer{
 		font-size: 11px !important;
 	}
 	.row.ul.li.a{
-		color: #F7F7F4;
+		color: $colorFontOffWhite;
 		cursor: pointer;
 	}
 }
@@ -237,45 +262,32 @@ footer{
 	padding: 0;
 }
 .contactFooter{
-	padding-left: 10px;
-	font-size: 11px;
-	font-weight: bold !important;
-	margin-left: 10px;
-	margin-top: 5px !important;
-	margin-bottom: 10px !important;
-	display: inline-block;
+	@include contactFooterStyle;
 }
 .social{
 	padding-top: 10px;
-		// padding-bottom: 20px;
-  // margin-left: 5px; 
 }
 .mls{
 	margin-top: 70px;
-	text-align: bottom;
 }
 .properties{
 	margin-left: 15px;
 }
 .propertiesFooter{
-	font-weight: bold;
-  // margin-top: 3px !important;
-  display: inline-block;
-  margin-bottom: 5px;
-  color: #393939;
+	@include propertiesFooterStyle;
 }
 .copyright{
-	background-color: #3F3F3F;
+	background-color: $copyrightBackgroundColor;
 	padding-top: 10px;
-	a{
-		color: #F7F7F4;
-	}
 }
 .copy{
-	color: #FFFFFF !important;
+	color: $colorFontOffWhite !important;
 }
 /* =Contact Us */
 textarea{
 	height: 300px;
 	cursor: pointer;
+}
+fieldset legend{
+	background-color: $colorLogoWrapper !important;
 }

@@ -2,7 +2,8 @@
 	"folders":
 	[
 		{
-			"path": "/C/xampp/htdocs/remax"
+			"follow_symlinks": true,
+			"path": "C:\\xampp\\htdocs\\remax"
 		}
 	]
 }
