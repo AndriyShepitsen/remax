@@ -193,6 +193,13 @@ label{
 .newsTitle{
 	color: $colorNavPanel; 
 }
+.newsTitle:hover{
+	color: lighten($colorNavPanel, 15%);
+}
+.newsTitle:active{
+	color: lighten($colorNavPanel, 15%);
+	
+}
 article p{
 	font-size: .8em;
 	line-height: 1.7em; 

@@ -31,7 +31,7 @@
                   {{link_to_route('home', 'REMAX FIRST CLASS');}}
                 </h1>
               </li>
-              <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+              <!-- Remove the class "menu-icon" to get rid of menu icon. Take out  "Menu" to just have icon alone -->
 
               <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
             </ul>
@@ -101,12 +101,12 @@
               <div class="row">
                 <div class="large-12 columns">
                   <input type="submit" class="button tiny right loginButton" data-reveal-id="adminAuth" value="LOGIN">
-                  <input type="submit" class="button tiny right" value="Create an account">
+                  <input type="submit" class="button tiny right" data-reveal-id="createAccount" value="Create an account">
                 </div>
               </div>
               <!-- =homeIcon -->
               <div class="row">
-               <div class="large-12 columns right icon">
+               <div class="large-12 columns right icon";>
                  <a href="{{ URL::route('home')}}" class="homeIcon has-tip-left" title="Home Page">
                    <img src="{{url('comp/img/home_remax.png')}}" alt="Remax First Class Home Icon">
                  </a> 
@@ -316,7 +316,7 @@
               <p>© 2013 RE/MAX FIRST CLASS</p> 
             </div>
 
-          </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -324,9 +324,9 @@
 <!-- /* My slideDown mail form starts here */
 --> 
 <script>
-document.write('<script src=' +
-  ('_proto_' in {} ? 'comp/javascripts/vendor/zepto' : 'comp/javascripts/vendor/jquery') +
-  '.js><\/script>')
+  document.write('<script src=' +
+    ('_proto_' in {} ? 'comp/javascripts/vendor/zepto' : 'comp/javascripts/vendor/jquery') +
+    '.js><\/script>')
 </script>
 
 {{HTML::script("comp/javascripts/foundation/foundation.js")}}
@@ -361,7 +361,7 @@ document.write('<script src=' +
 
 
 <script>
-$(document).foundation();
+  $(document).foundation();
 </script>
 
 
@@ -385,29 +385,125 @@ $(document).foundation();
 /* insert data-reveal-id to link with the same id */
 
 <a href="#" class="mailIcon has-tip-left" title="Send Us Email" data-reveal-id="myModal"> <img src="{{url('comp/img/mail_remax.png')}}" alt="Remax First Class Mail Icon" ></a>
- -->
+-->
 
 
 
-<!-- /* My slideDown Authentification Form Starts Here */ -->
+<!-- /* My slideDown Create account Form Starts Here */ -->
 
 
-<div id="adminAuth" class="reveal-modal medium adminAuth2">
-  {{Form::open(array('url'=>'/login'))}} 
+<div id="createAccount" class="reveal-modal medium createAccount">
+  <div class="navPanel">
+    <div class="row">
+      <div class="large-12 columns">
 
-  {{ Form::email('email', $value = null, $attributes = array())}}
-  {{ Form::password('password', $value = null, $attributes = array())}}
-  {{ Form::submit('Login', $attributes = array('class'=>'button tiny radius'))}}
-  <a class="close-reveal-modal">&#215;</a>
-  {{Form::close()}} 
-  
+        <nav class="top-bar">
+          <ul class="title-area right">
+            <!-- Title Area -->
+            <li class="name">
+              <h1>
+                {{link_to_route('home', 'REMAX FIRST CLASS');}}
+              </h1>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- =create an account panel ends here -->
+
+  <!-- =create an account form starts here -->
+  <div class="row">
+
+    <div class="large-12 columns">  
+      <h3 class="subheader">Create Your Account</h3>
+      {{Form::open(array('url' => 'foo/bar'))}}
+
+      <div class="row">
+        <div class="large-6 columns">
+          {{Form::label('firstNameCreate', 'First Name')}}
+          {{Form::text('firstNameCreate', '', array('placeholder'=>'Your Name', 'class'=>'className'))}}
+        </div>
+
+        <div class="large-6 columns">{{Form::label('lastNameCreate', 'Last Name')}}
+          {{Form::text('lastNameCreate', '', array('placeholder'=>'Your last name', 'class'=>'className'))}}
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="large-6 columns">
+          {{Form::label('emailCreate', 'Email Address')}}
+          <div class="row collapse">
+            <div class="small-2 columns">
+              <span class="prefix">@</span>
+            </div>
+            <div class="small-10 columns">
+              {{Form::text('emailCreate', '', array('placeholder'=>'Your email', 'class'=>'className'))}}
+            </div>
+          </div>
+        </div>        
+
+        <div class="large-6 columns">
+          {{Form::label('mobilePhoneCreate', 'Mobile Phone')}}
+          {{Form::text('mobilePhoneCreate', '', array('placeholder'=>'(***)***-****', 'class'=>'className'))}}
+        </div>
+      </div>      
+
+      <div class="row">
+        <div class="large-6 columns">
+          {{Form::label('passwordCreate', 'Password')}}
+          {{Form::text('passwordCreate', '', array('placeholder'=>'**********', 'class'=>'className'))}}
+        </div>
+        <div class="large-6 columns">
+          {{Form::label('confirmPasswordCreate', 'Confirm Password')}}
+          {{Form::text('confirmPasswordCreate', '', array('placeholder'=>'**********', 'class'=>'className'))}}
+        </div>
+      </div>      
+
+      <div class="row">
+        <div class="small-2 columns">
+          {{ Form::submit('Create Your Free Account', array('class'=>'button small radius'))}}
+        </div>
+      </div>
+    </div>
+
+
+    <a class="close-reveal-modal">&#215;</a>
+    {{Form::close()}}
+  </div>
+</div>
+
+<!-- =create an account form ends here -->
+
 </div>
 <!--
 /* insert data-reveal-id to your button with the same id */
                    <input type="submit" class="button tiny right loginButton" data-reveal-id="adminAuth" value="LOGIN">
- -->
+                 -->
 
-</body>
-</html>
+                 <!-- /* My slideDown Authentification Form Starts Here */ -->
+
+
+                 <div id="adminAuth" class="reveal-modal medium adminAuth2">
+                  {{Form::open(array('url'=>'/login'))}} 
+
+                  {{ Form::email('email', $value = null, $attributes = array())}}
+                  {{ Form::password('password', $value = null, $attributes = array())}}
+                  {{ Form::submit('Login', $attributes = array('class'=>'button tiny radius'))}}
+                  <a class="close-reveal-modal">&#215;</a>
+                  {{Form::close()}} 
+
+                </div>
+<!--
+/* insert data-reveal-id to your button with the same id */
+                   <input type="submit" class="button tiny right loginButton" data-reveal-id="adminAuth" value="LOGIN">
+                 -->
+
+
+
+
+               </body>
+               </html>
 
 
