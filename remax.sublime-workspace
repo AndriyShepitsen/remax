@@ -16,14 +16,6 @@
 	"buffers":
 	[
 		{
-			"file": "app/views/layouts/master.blade.php",
-			"settings":
-			{
-				"buffer_size": 18831,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "app/views/home/vw_home.blade.php",
 			"settings":
 			{
@@ -32,10 +24,26 @@
 			}
 		},
 		{
+			"file": "app/views/contact/vw_contact.blade.php",
+			"settings":
+			{
+				"buffer_size": 2181,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/layouts/master.blade.php",
+			"settings":
+			{
+				"buffer_size": 24072,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "public/comp/sass/screen.scss",
 			"settings":
 			{
-				"buffer_size": 5101,
+				"buffer_size": 5564,
 				"line_ending": "Windows"
 			}
 		}
@@ -100,6 +108,7 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/remax/app/views/layouts/master.blade.php",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/laravel_link.sublime-snippet",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/1symsemi.sublime-macro",
@@ -118,13 +127,12 @@
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/C/xampp/htdocs/remax/app/controllers/news/RealEstateNewsController.php",
 		"/C/xampp/htdocs/remax/app/models/User.php",
-		"/C/xampp/htdocs/remax/app/views/layouts/master.blade.php",
 		"/C/xampp/htdocs/remax/app/controllers/BaseController.php",
 		"/C/xampp/htdocs/remaxfc/application/modules/home/controllers/home.php"
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 37.0
 	},
 	"find_in_files":
 	{
@@ -138,6 +146,21 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"DDDDDD",
+			" !",
+			"section",
+			"account",
+			"loginwrapper",
+			"button",
+			"\n        ",
+			"1",
+			"mobilePhone",
+			"m",
+			"6",
+			"					<div class=\"small-4 columns\">\n						{{Form::label('mobilePhone', 'Mobile Phone')}}\n						{{Form::text('mobilePhone', '', array('placeholder'=>'(***)***-****', 'class'=>'className'))}}\n					</div>\n",
+			"firstNameCreate",
+			"password",
+			"email",
 			"BUYERS",
 			"newsTitle",
 			"read",
@@ -168,43 +191,11 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/layouts/master.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 18831,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5495,
-								5495
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"vintage":
-							{
-							}
-						},
-						"translation.x": 0.0,
-						"translation.y": 1691.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "app/views/home/vw_home.blade.php",
 					"semi_transient": false,
 					"settings":
@@ -216,8 +207,8 @@
 						"selection":
 						[
 							[
-								1429,
-								1429
+								1331,
+								1331
 							]
 						],
 						"settings":
@@ -226,7 +217,68 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 771.0,
+						"translation.y": 352.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/contact/vw_contact.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2181,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								181,
+								181
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/layouts/master.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 24072,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9248,
+								9248
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"vintage":
+							{
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 4280.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -238,20 +290,20 @@
 			"sheets":
 			[
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "public/comp/sass/screen.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5101,
+						"buffer_size": 5564,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3161,
-								3162
+								3290,
+								3290
 							]
 						],
 						"settings":
@@ -260,7 +312,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3178.0,
+						"translation.y": 3135.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -270,7 +322,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 38.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -309,7 +361,7 @@
 	"project": "remax.sublime-project",
 	"replace":
 	{
-		"height": 68.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -317,6 +369,14 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"ma",
+				"app\\views\\layouts\\master.blade.php"
+			],
+			[
+				"vwco",
+				"app\\views\\contact\\vw_contact.blade.php"
+			],
 			[
 				"contavw",
 				"app\\views\\contact\\vw_contact.blade.php"

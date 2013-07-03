@@ -5,7 +5,7 @@
 
 <div class="mainContent">
 	<div class="row">
-		<div class="large-12 columns">
+		<div class="large-12 columns panel">
 			{{Form::open(array('url' => 'foo/bar'))}}
 			<fieldset >
 				<legend><h3>Contact Us</h3></legend>

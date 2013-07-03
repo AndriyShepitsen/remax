@@ -10978,32 +10978,47 @@ table tfoot tr td {
 }
 
 /* line 113, ../sass/screen.scss */
-.loginWrapper {
-  background-color: #252525;
-}
-
-/* line 117, ../sass/screen.scss */
 .logoWrapper {
   padding: 10px;
   background-color: #dddddd;
 }
-/* line 119, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 .logoWrapper .button {
   background-color: #428cb9 !important;
   margin-left: 5px;
 }
-/* line 123, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 .logoWrapper .button:hover {
   background-color: #357093 !important;
 }
 
+/* =create an account style starts here */
 /* line 128, ../sass/screen.scss */
+.createAccount .account {
+  margin-top: 15px !important;
+  margin-bottom: 25px !important;
+}
+/* line 133, ../sass/screen.scss */
+.createAccount label {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+/* line 137, ../sass/screen.scss */
+.createAccount .button {
+  background-color: #428cb9 !important;
+  margin-top: .5em !important;
+  margin-bottom: .5em !important;
+  margin-right: 7em !important;
+}
+
+/* =create an account style ends here*/
+/* line 144, ../sass/screen.scss */
 .icon {
   margin-top: 80px;
   text-align: right;
 }
 
-/* line 132, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 .mailIcon, .homeIcon {
   padding-left: 10px;
   padding-top: 10px;
@@ -11011,7 +11026,7 @@ table tfoot tr td {
 }
 
 /* =mainContent starts here */
-/* line 142, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 #mainContent {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -11028,31 +11043,35 @@ table tfoot tr td {
   	article a:hover{
   		color: lighten($colorNavPanel, 15%)!important;
   	}
-   */
+  	*/
 }
-/* line 145, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 #mainContent .small-block-grid-3 > li {
   margin-bottom: 15px !important;
 }
-/* line 148, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 #mainContent h4 {
   margin-bottom: 9px !important;
 }
+/* line 181, ../sass/screen.scss */
+#mainContent section .newListings {
+  color: #393939;
+}
 
-/* line 164, ../sass/screen.scss */
+/* line 191, ../sass/screen.scss */
 .panel {
   padding-bottom: 20px !important;
   margin-bottom: 10px;
 }
 
-/* line 168, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 .orbit-container {
   height: 400px;
   margin-bottom: 1em;
 }
 
 /* =find starts here */
-/* line 176, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 .find {
   display: inline-block;
   font-weight: bold;
@@ -11061,56 +11080,71 @@ table tfoot tr td {
   color: #525252;
 }
 
-/* line 179, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
 .findInput {
   margin-bottom: 15px !important;
 }
 
-/* line 182, ../sass/screen.scss */
+/* line 209, ../sass/screen.scss */
 label {
   margin-bottom: .5em;
 }
 
-/* line 185, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 .advanceSearch {
   font-size: 12px !important;
 }
 
 /* news start here */
-/* line 189, ../sass/screen.scss */
+/* line 216, ../sass/screen.scss */
 .readMore {
   font-size: 0.6em;
 }
 
-/* line 193, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 .newsTitle {
   color: #393939;
 }
 
-/* line 196, ../sass/screen.scss */
+/* line 223, ../sass/screen.scss */
 .newsTitle:hover {
   color: #5f5f5f;
 }
 
-/* line 199, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 .newsTitle:active {
   color: #5f5f5f;
 }
 
-/* line 203, ../sass/screen.scss */
+/* line 230, ../sass/screen.scss */
+.newListingsTitle {
+  color: #393939;
+}
+
+/* line 233, ../sass/screen.scss */
+.newListingsTitle:hover {
+  color: #5f5f5f;
+}
+
+/* line 236, ../sass/screen.scss */
+.newListingsTitle:active {
+  color: #5f5f5f;
+}
+
+/* line 240, ../sass/screen.scss */
 article p {
   font-size: .8em;
   line-height: 1.7em;
   margin-bottom: .5em;
 }
 
-/* line 208, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 .breadcrumbs {
   border: none !important;
   padding: 0px !important;
 }
 
-/* line 212, ../sass/screen.scss */
+/* line 249, ../sass/screen.scss */
 .breadcrumbs li:before {
   color: #aaaaaa;
   content: "/";
@@ -11119,19 +11153,19 @@ article p {
 }
 
 /*=footer starts here */
-/* line 221, ../sass/screen.scss */
+/* line 259, ../sass/screen.scss */
 .logoPadding {
   margin-left: 1em;
   margin-top: 1em;
 }
 
-/* line 224, ../sass/screen.scss */
+/* line 262, ../sass/screen.scss */
 .logoRemaxFooter {
   margin-left: 1em;
   margin-top: 1em;
 }
 
-/* line 227, ../sass/screen.scss */
+/* line 265, ../sass/screen.scss */
 .connectFooter {
   display: inline-block;
   font-size: 11px;
@@ -11139,71 +11173,71 @@ article p {
   font-weight: bold;
 }
 
-/* line 230, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 .vcard {
   border: 0em;
   margin-bottom: 0em !important;
 }
 
-/* line 234, ../sass/screen.scss */
+/* line 272, ../sass/screen.scss */
 .vcard .fn {
   font-size: 12px;
 }
 
-/* line 237, ../sass/screen.scss */
+/* line 275, ../sass/screen.scss */
 .vcard .street-address {
   font-size: 12px;
 }
 
-/* line 240, ../sass/screen.scss */
+/* line 278, ../sass/screen.scss */
 .vcard .locality {
   font-size: 12px;
 }
 
-/* line 243, ../sass/screen.scss */
+/* line 281, ../sass/screen.scss */
 .vcard .state {
   font-size: 12px;
 }
 
-/* line 246, ../sass/screen.scss */
+/* line 284, ../sass/screen.scss */
 .vcard .zip {
   font-size: 12px;
   display: inline-block;
 }
 
-/* line 251, ../sass/screen.scss */
+/* line 289, ../sass/screen.scss */
 .vcard .email a {
   font-size: 11px !important;
 }
 
-/* line 255, ../sass/screen.scss */
+/* line 293, ../sass/screen.scss */
 footer {
   background-color: #dddddd;
   padding-top: 10px;
 }
-/* line 257, ../sass/screen.scss */
+/* line 295, ../sass/screen.scss */
 footer .row .columns {
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
-/* line 261, ../sass/screen.scss */
+/* line 299, ../sass/screen.scss */
 footer .prop {
   font-size: 11px !important;
 }
-/* line 264, ../sass/screen.scss */
+/* line 302, ../sass/screen.scss */
 footer .row.ul.li.a {
   color: #f7f7f4;
   cursor: pointer;
 }
 
-/* line 269, ../sass/screen.scss */
+/* line 307, ../sass/screen.scss */
 [class*="block-grid-"] {
   display: block;
   margin: 0 10px !important;
   padding: 0;
 }
 
-/* line 274, ../sass/screen.scss */
+/* line 312, ../sass/screen.scss */
 .contactFooter {
   padding-left: 10px;
   font-size: 11px;
@@ -11214,22 +11248,22 @@ footer .row.ul.li.a {
   display: inline-block;
 }
 
-/* line 277, ../sass/screen.scss */
+/* line 315, ../sass/screen.scss */
 .social {
   padding-top: 10px;
 }
 
-/* line 280, ../sass/screen.scss */
+/* line 318, ../sass/screen.scss */
 .mls {
   margin-top: 70px;
 }
 
-/* line 283, ../sass/screen.scss */
+/* line 321, ../sass/screen.scss */
 .properties {
   margin-left: 15px;
 }
 
-/* line 286, ../sass/screen.scss */
+/* line 324, ../sass/screen.scss */
 .propertiesFooter {
   font-weight: bold;
   display: inline-block;
@@ -11237,25 +11271,25 @@ footer .row.ul.li.a {
   color: #393939;
 }
 
-/* line 289, ../sass/screen.scss */
+/* line 327, ../sass/screen.scss */
 .copyright {
   background-color: #3f3f3f;
   padding-top: 10px;
 }
 
-/* line 293, ../sass/screen.scss */
+/* line 331, ../sass/screen.scss */
 .copy {
   color: #f7f7f4 !important;
 }
 
 /* =Contact Us */
-/* line 297, ../sass/screen.scss */
+/* line 335, ../sass/screen.scss */
 textarea {
   height: 300px;
   cursor: pointer;
 }
 
-/* line 301, ../sass/screen.scss */
+/* line 339, ../sass/screen.scss */
 fieldset legend {
   background-color: #f6f6f6 !important;
 }

@@ -110,10 +110,6 @@ $copyrightBackgroundColor: #3F3F3F;
 .toggle-topbar, .top-bar.expanded .title-area{
 	background-color: $colorNavPanel !important;
 }
-.loginWrapper{
-	background-color: darken($colorNavPanel, 8%);
-
-}
 .logoWrapper{
 	@include logoWrapperStyle;
 	.button{
@@ -124,6 +120,26 @@ $copyrightBackgroundColor: #3F3F3F;
 		background-color:darken( $colorButtonBackground, 10%)!important;
 	}
 }
+
+
+/* =create an account style starts here */
+.createAccount{
+
+	.account{
+		margin-top: 15px !important;
+		margin-bottom: 25px !important;
+	}
+
+	label{
+		font-size: 1em;
+		margin-bottom: 10px;
+	}
+	.button{
+		@include myButtonStyle;		
+	}
+}
+
+/* =create an account style ends here*/
 
 .icon{
 	margin-top: 80px;
@@ -160,11 +176,22 @@ $copyrightBackgroundColor: #3F3F3F;
 	article a:hover{
 		color: lighten($colorNavPanel, 15%)!important;
 	}
- */}
-.panel{
+	*/
+	section{
+		.newListings{
+			color: $colorNavPanel;
+		}
+
+		
+	}
+}
+
+
+
+ .panel{
 	padding-bottom: 20px !important;
 	margin-bottom: 10px;
-}
+} 
 .orbit-container{
 	height:400px;
 	margin-bottom: 1em;
@@ -200,6 +227,16 @@ label{
 	color: lighten($colorNavPanel, 15%);
 	
 }
+.newListingsTitle{
+	color: $colorNavPanel; 
+}
+.newListingsTitle:hover{
+	color: lighten($colorNavPanel, 15%);
+}
+.newListingsTitle:active{
+	color: lighten($colorNavPanel, 15%);
+	
+}
 article p{
 	font-size: .8em;
 	line-height: 1.7em; 
@@ -212,6 +249,7 @@ article p{
 .breadcrumbs li:before {
 	@include slashBefore;
 }
+
 
 /*=footer starts here */
 @mixin marginOneEmTopLeft{
