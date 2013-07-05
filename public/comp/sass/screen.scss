@@ -164,25 +164,12 @@ $copyrightBackgroundColor: #3F3F3F;
 	h4{
 		margin-bottom: 9px !important;
 	}
-/* 	article a{
-		color: $colorNavPanel !important;
-	}
-	section a{
-		color: $colorNavPanel !important;
-	}
-	section a:hover{
-		color: lighten($colorNavPanel, 15%)!important;
-	}
-	article a:hover{
-		color: lighten($colorNavPanel, 15%)!important;
-	}
-	*/
+
 	section{
 		.newListings{
 			color: $colorNavPanel;
 		}
 
-		
 	}
 	.panel{
 		padding-top: 15px !important;
@@ -217,7 +204,6 @@ label{
 /* news start here */
 .readMore{
 	font-size: 0.6em;
-	// color: #0080FF !important;    
 }
 .newsTitle{
 	color: $colorNavPanel; 
