@@ -65,3 +65,5 @@ Route::get('contact', array('as'=>'contact', 'uses'=>'ContactController@index'))
 Route::post('login', array('as'=>'login', 'uses'=>'LoginController@index'));
 
 
+Route::get('search', 'SearchController@index');
+Route::get('search/{id}', 'SearchController@show');
