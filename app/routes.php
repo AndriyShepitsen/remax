@@ -66,4 +66,5 @@ Route::post('login', array('as'=>'login', 'uses'=>'LoginController@index'));
 
 
 Route::get('search', 'SearchController@index');
+Route::post('search', 'SearchController@find');
 Route::get('search/{id}', 'SearchController@show');
