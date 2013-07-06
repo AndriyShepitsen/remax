@@ -136,7 +136,7 @@
                <div class="large-12 columns">
 
 
-                 {{Form::open(array('url' => 'foo/bar'))}}
+                 {{Form::open(array('url' => 'search'))}}
 
                  <div class="row">
                    <div class="large-12 columns">
@@ -600,7 +600,7 @@
                          <div class="row">
                            <div class="large-12 columns left">
                              <ul>
-                               <h3 class="subheader account">Dan I. Florian </h3>
+                             <h3 class="subheader">Dan I. Florian </h3>
                                <a class="label">ABR</a> <a class="label">CRS</a>
                              </ul>
                            </div>                           
