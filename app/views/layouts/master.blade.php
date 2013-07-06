@@ -136,7 +136,7 @@
                <div class="large-12 columns">
 
 
-                 {{Form::open(array('url' => 'foo/bar'))}}
+                 {{Form::open(array('url' => 'search'))}}
 
                  <div class="row">
                    <div class="large-12 columns">

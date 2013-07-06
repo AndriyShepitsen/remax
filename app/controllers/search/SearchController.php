@@ -17,7 +17,13 @@ class SearchController extends BaseController {
 
     }
 
+  public function find()
+    {
+    $houses = House::with('images')->get();
 
+    return View::make('search.results')->with(compact('houses'));
+
+    }
     public function show($id)
     {
      $house = House::with('images')->where('id', '=', $id)->first();   
