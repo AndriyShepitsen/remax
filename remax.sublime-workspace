@@ -20,42 +20,59 @@
 	"buffers":
 	[
 		{
+			"file": "app/views/search/results.blade.php",
+			"settings":
+			{
+				"buffer_size": 682,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "remax.sublime-project",
+			"settings":
+			{
+				"buffer_size": 96,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "public/comp/sass/screen.scss",
 			"settings":
 			{
-				"buffer_size": 5320,
+				"buffer_size": 5422,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "@extends('layouts.master')\n@section('content')\n\n<!-- //LOCATION: remax/public/search \n-->\n<div class=\"mainContent\">\n@if(count($houses)>0)\n<ol>\n@foreach ($houses as $house)\n<li>\n<div class=\"panel\">\n<strong>\n{{$house->address}}\n</strong>\n<br/>\n<small>\n\n{{$house->address}}\n</small>\n</div>\n</li>\n@endforeach\n</ol>\n@else\n{No result found for your request}\n@endif\n</div>\n@stop",
-			"file": "app/views/search/results.blade.php",
-			"file_size": 349,
-			"file_write_time": 130175993329162344,
+			"file": "public/comp/stylesheets/screen.css",
 			"settings":
 			{
-				"buffer_size": 371,
+				"buffer_size": 458582,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+			"file": "app/controllers/search/SearchController.php",
 			"settings":
 			{
-				"buffer_size": 3238,
-				"line_ending": "Windows"
+				"buffer_size": 647,
+				"line_ending": "Unix"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 335.0,
+		"height": 210.0,
 		"selected_items":
 		[
 			[
+				"Package Control: gi",
+				"Package Control: Install Package"
+			],
+			[
 				"Package Control: ",
-				"Package Control: Remove Package"
+				"Package Control: Install Package"
 			],
 			[
 				"ins",
@@ -86,7 +103,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 498.0
+		"width": 402.0
 	},
 	"console":
 	{
@@ -106,13 +123,19 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/remax/app/views/search/onehouse.blade.php",
+		"/C/xampp/htdocs/remax/.sassbuilder-config",
+		"/C/xampp/htdocs/remax/app/routes.php",
+		"/C/xampp/htdocs/remax/app/models/House.php",
+		"/C/xampp/htdocs/remax/app/models/Image.php",
+		"/C/xampp/htdocs/remax/artisanCommand.txt",
+		"/C/xampp/htdocs/remax/app/views/layouts/master.blade.php",
+		"/C/xampp/htdocs/remax/public/comp/sass/screen.scss",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 		"/C/xampp/htdocs/remax/app/views/search/results.blade.php",
 		"/C/xampp/htdocs/remax/app/controllers/search/SearchController.php",
 		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
-		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
-		"/C/xampp/htdocs/remax/app/routes.php",
 		"/C/xampp/htdocs/remax/app/models/Home.php",
-		"/C/xampp/htdocs/remax/app/models/House.php",
 		"/C/xampp/htdocs/remax/composer.json",
 		"/C/xampp/htdocs/remax/app/controllers/home/HomeController.php",
 		"/C/xampp/htdocs/remax/app/controllers/BaseController.php",
@@ -121,7 +144,6 @@
 		"/C/xampp/htdocs/remax/app/database/seeds/DatabaseSeeder.php",
 		"/C/xampp/htdocs/remax/app/models/User.php",
 		"/C/xampp/htdocs/remax/app/models/Dog.php",
-		"/C/xampp/htdocs/remax/artisanCommand.txt",
 		"/C/xampp/htdocs/remax/app/views/homes/index.blade.php",
 		"/C/xampp/htdocs/remax/app/views/about/vw_about.blade.php",
 		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/CHANGELOG",
@@ -161,6 +183,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"a hre",
 			"ctrl+k",
 			"esc",
 			"vintage",
@@ -190,50 +213,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "public/comp/sass/screen.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5320,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								129,
-								129
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false,
-							"vintage":
-							{
-							}
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "app/views/search/results.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 371,
+						"buffer_size": 682,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								251,
-								251
+								578,
+								511
 							]
 						],
 						"settings":
@@ -251,30 +243,111 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
-					"semi_transient": false,
+					"buffer": 1,
+					"file": "remax.sublime-project",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 3238,
+						"buffer_size": 96,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								237,
-								237
+								96,
+								96
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 3,
-							"translate_tabs_to_spaces": true,
-							"vintage":
-							{
-							}
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "public/comp/sass/screen.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5422,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								904,
+								904
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "public/comp/stylesheets/screen.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 458582,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/controllers/search/SearchController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 647,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								435,
+								435
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -327,6 +400,14 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"rou",
+				"app\\routes.php"
+			],
+			[
+				"mastee",
+				"app\\views\\layouts\\master.blade.php"
+			],
 			[
 				"scree",
 				"public\\comp\\sass\\screen.scss"
