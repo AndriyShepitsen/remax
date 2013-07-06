@@ -237,8 +237,13 @@ article p{
 .breadcrumbs li:before {
 	@include slashBefore;
 }
-
-
+/* =our agents style starts here */
+.agentLink{
+	font-size: 12px;
+}
+.specialties{
+	font-size: 12px;
+}
 /*=footer starts here */
 @mixin marginOneEmTopLeft{
 	margin-left:1em;
