@@ -77,7 +77,7 @@
                         <li>{{link_to_route('news_for_sellers', 'News for Sellers');}}</li>
                       </ul>
                       <li/>
-                      <li>{{link_to_route('contact', 'Contact');}}</li>
+                      <li>{{link_to_route('contact', 'Contact');}}</li> 
                     </ul>
                   </section>
                 </nav>
@@ -161,11 +161,11 @@
                  </div>
                  <div class="row">
                    <div class="large-6 columns">
-                     {{Form::label('bads', 'Bads')}}
-                     {{Form::text('bads', '', array('placeholder'=>'#', 'class'=>'findinput'))}}
+                     {{Form::label('beds', 'Bedrooms')}}
+                     {{Form::text('beds', '', array('placeholder'=>'#', 'class'=>'findinput'))}}
                    </div>
                    <div class="large-6 columns">
-                     {{Form::label('baths', 'Baths')}}
+                     {{Form::label('baths', 'Bathroomss')}}
                      {{Form::text('baths', '', array('placeholder'=>'#', 'class'=>'findinput'))}}
                    </div>
 <!--                    <div class="large-4 columns">
@@ -577,21 +577,16 @@
                     <div class="large-12 columns">
                       {{Form::open(array('url'=>'/login'))}} 
                       <div class="navPanel">
-                        <div class="row">
-                          <div class="large-12 columns">
-
-                            <nav class="top-bar">
-                              <ul class="title-area right">
-                                <!-- Title Area -->
-                                <li class="name">
-                                  <h1>
-                                    {{link_to_route('home', 'REMAX FIRST CLASS');}}
-                                  </h1>
-                                </li>
-                              </ul>
-                            </nav>
-                          </div>
-                        </div>
+                        <nav class="top-bar">
+                          <ul class="title-area right">
+                            <!-- Title Area -->
+                            <li class="name">
+                              <h1>
+                                {{link_to_route('home', 'REMAX FIRST CLASS');}}
+                              </h1>
+                            </li>
+                          </ul>
+                        </nav>
                       </div>
 
 
@@ -599,9 +594,11 @@
                        <div class="large-12 columns">
                          <div class="row">
                            <div class="large-12 columns left">
+                            <br/>
                              <ul>
-                             <h3 class="subheader">Dan I. Florian </h3>
-                               <a class="label">ABR</a> <a class="label">CRS</a>
+                               <h3 class="subheader agentName">Dan I. Florian </h3>
+                               <a class="label has-tip-left" title="Accredited Buyers Representative">ABR</a> 
+                               <a class="label">CRS</a>
                              </ul>
                            </div>                           
                          </div>
