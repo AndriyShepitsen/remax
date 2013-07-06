@@ -4,97 +4,112 @@
 		"selected_items":
 		[
 			[
-				"colo",
-				"colorButtonBackground"
+				"coun",
+				"counter"
 			],
 			[
-				"my",
-				"myButtonStyle"
+				"Vi",
+				"View	Laravel: View::make()"
+			],
+			[
+				"Ret",
+				"Redir-to	Redir-to"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/views/home/vw_home.blade.php",
+			"file": "app/views/search/results.blade.php",
 			"settings":
 			{
-				"buffer_size": 2056,
+				"buffer_size": 682,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/views/contact/vw_contact.blade.php",
+			"file": "remax.sublime-project",
 			"settings":
 			{
-				"buffer_size": 2181,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/views/layouts/master.blade.php",
-			"settings":
-			{
-				"buffer_size": 24072,
-				"line_ending": "Windows"
+				"buffer_size": 96,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "public/comp/sass/screen.scss",
 			"settings":
 			{
-				"buffer_size": 5564,
+				"buffer_size": 5422,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/comp/stylesheets/screen.css",
+			"settings":
+			{
+				"buffer_size": 458582,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/controllers/search/SearchController.php",
+			"settings":
+			{
+				"buffer_size": 647,
+				"line_ending": "Unix"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 375.0,
+		"height": 210.0,
 		"selected_items":
 		[
+			[
+				"Package Control: gi",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
 			[
 				"ins",
 				"Package Control: Install Package"
 			],
 			[
-				"sass",
-				"Set Syntax: Sass"
+				"rem",
+				"Package Control: Remove Package"
 			],
 			[
-				"i",
+				"routes",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"re",
+				"ReadmePlease"
+			],
+			[
+				"read",
+				"ReadmePlease"
+			],
+			[
+				"Package Control: i",
 				"Package Control: Install Package"
 			],
 			[
 				"inst",
 				"Package Control: Install Package"
-			],
-			[
-				"color",
-				"Convert Case: Lower Case"
-			],
-			[
-				"in",
-				"Package Control: Install Package"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
-				"Package Control: ",
-				"Package Control: Remove Package"
 			]
 		],
 		"width": 402.0
 	},
 	"console":
 	{
-		"height": 152.0,
+		"height": 0.0,
 		"history":
 		[
-			"import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')"
 		]
 	},
 	"distraction_free":
@@ -108,37 +123,59 @@
 	},
 	"file_history":
 	[
-		"/C/xampp/htdocs/remax/app/views/layouts/master.blade.php",
-		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
-		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/laravel_link.sublime-snippet",
-		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/1symsemi.sublime-macro",
-		"/C/xampp/htdocs/remax/app/views/contact/vw_contact.blade.php",
-		"/C/xampp/htdocs/remax/app/views/about/vw_about.blade.php",
+		"/C/xampp/htdocs/remax/app/views/search/onehouse.blade.php",
+		"/C/xampp/htdocs/remax/.sassbuilder-config",
 		"/C/xampp/htdocs/remax/app/routes.php",
-		"/C/xampp/htdocs/remax/app/util/textoperations.php",
-		"/C/xampp/htdocs/remax/app/models/News.php",
-		"/C/xampp/htdocs/remax/app/controllers/news/NewsController.php",
-		"/C/xampp/htdocs/remax/app/views/news/vw_news.blade.php",
-		"/C/xampp/htdocs/remax/app/controllers/admin/ParseController.php",
+		"/C/xampp/htdocs/remax/app/models/House.php",
+		"/C/xampp/htdocs/remax/app/models/Image.php",
+		"/C/xampp/htdocs/remax/artisanCommand.txt",
+		"/C/xampp/htdocs/remax/app/views/layouts/master.blade.php",
 		"/C/xampp/htdocs/remax/public/comp/sass/screen.scss",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/xampp/htdocs/remax/app/views/search/results.blade.php",
+		"/C/xampp/htdocs/remax/app/controllers/search/SearchController.php",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/xampp/htdocs/remax/app/models/Home.php",
+		"/C/xampp/htdocs/remax/composer.json",
 		"/C/xampp/htdocs/remax/app/controllers/home/HomeController.php",
-		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/Gist.sublime-settings",
-		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/Gist/Gist.sublime-settings",
-		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/C/xampp/htdocs/remax/app/controllers/news/RealEstateNewsController.php",
-		"/C/xampp/htdocs/remax/app/models/User.php",
 		"/C/xampp/htdocs/remax/app/controllers/BaseController.php",
-		"/C/xampp/htdocs/remaxfc/application/modules/home/controllers/home.php"
+		"/C/xampp/htdocs/remax/app/controllers/LoginController.php",
+		"/C/xampp/htdocs/remax/app/database/seeds/ProptypeTableSeeder.php",
+		"/C/xampp/htdocs/remax/app/database/seeds/DatabaseSeeder.php",
+		"/C/xampp/htdocs/remax/app/models/User.php",
+		"/C/xampp/htdocs/remax/app/models/Dog.php",
+		"/C/xampp/htdocs/remax/app/views/homes/index.blade.php",
+		"/C/xampp/htdocs/remax/app/views/about/vw_about.blade.php",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/CHANGELOG",
+		"/C/xampp/htdocs/remax/app/database/seeds/NewsTableSeeder.php",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/Gist/Gist.sublime-settings",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/User/Gist.sublime-settings",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/xampp/htdocs/code/system/fonts/index.html",
+		"/C/xampp/htdocs/code/sssss",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/Default (Windows).sublime-keymap",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/Browser Refresh/Default (Windows).sublime-keymap",
+		"/C/xampp/htdocs/code/index.php",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/View In Browser/View In Browser.sublime-settings",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/C/xampp/htdocs/remax/app/database/migrations/2013_06_29_170323_homes.php",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/User/View In Browser.sublime-settings",
+		"/C/xampp/htdocs/remax/remax.sublime-project",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/C/xampp/htdocs/remax/app/views/news/vw_news.blade.php",
+		"/C/xampp/htdocs/remax/app/database/migrations/2013_06_21_182451_create_news_table.php"
 	],
 	"find":
 	{
-		"height": 37.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
-		"height": 98.0,
+		"height": 96.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -146,34 +183,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"DDDDDD",
-			" !",
-			"section",
-			"account",
-			"loginwrapper",
-			"button",
-			"\n        ",
-			"1",
-			"mobilePhone",
-			"m",
-			"6",
-			"					<div class=\"small-4 columns\">\n						{{Form::label('mobilePhone', 'Mobile Phone')}}\n						{{Form::text('mobilePhone', '', array('placeholder'=>'(***)***-****', 'class'=>'className'))}}\n					</div>\n",
-			"firstNameCreate",
-			"password",
-			"email",
-			"BUYERS",
-			"newsTitle",
-			"read",
-			"logop",
-			"\n	",
-			"breadcrumbsBefore",
-			"#393939",
-			"#428CB9",
-			"#428CB9 ",
-			"#428CB9",
-			"#313131",
-			"BaseController",
-			" {"
+			"a hre",
+			"ctrl+k",
+			"esc",
+			"vintage",
+			"\"setting.command_mode\"",
+			"vintage",
+			"esc",
+			"soda"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -191,58 +208,60 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/home/vw_home.blade.php",
+					"file": "app/views/search/results.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2056,
+						"buffer_size": 682,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1331,
-								1331
+								578,
+								511
 							]
 						],
 						"settings":
 						{
+							"highlight_line": true,
 							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"vintage":
+							{
+							}
 						},
 						"translation.x": 0.0,
-						"translation.y": 352.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/views/contact/vw_contact.blade.php",
-					"semi_transient": false,
+					"file": "remax.sublime-project",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 2181,
+						"buffer_size": 96,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								181,
-								181
+								96,
+								96
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -252,58 +271,19 @@
 				},
 				{
 					"buffer": 2,
-					"file": "app/views/layouts/master.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 24072,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								9248,
-								9248
-							]
-						],
-						"settings":
-						{
-							"history_list_is_closing": true,
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"vintage":
-							{
-							}
-						},
-						"translation.x": 0.0,
-						"translation.y": 4280.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 3,
 					"file": "public/comp/sass/screen.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5564,
+						"buffer_size": 5422,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3290,
-								3290
+								904,
+								904
 							]
 						],
 						"settings":
@@ -312,7 +292,65 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3135.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "public/comp/stylesheets/screen.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 458582,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/controllers/search/SearchController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 647,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								435,
+								435
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -322,7 +360,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 38.0
 	},
 	"input":
 	{
@@ -337,18 +375,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
@@ -361,7 +392,7 @@
 	"project": "remax.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 52.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -370,63 +401,11 @@
 		"selected_items":
 		[
 			[
-				"ma",
-				"app\\views\\layouts\\master.blade.php"
-			],
-			[
-				"vwco",
-				"app\\views\\contact\\vw_contact.blade.php"
-			],
-			[
-				"contavw",
-				"app\\views\\contact\\vw_contact.blade.php"
-			],
-			[
-				"aboutv",
-				"app\\views\\about\\vw_about.blade.php"
-			],
-			[
-				"ro",
-				"app\\routes.php"
-			],
-			[
-				"homev",
-				"app\\views\\home\\vw_home.blade.php"
-			],
-			[
-				"s",
-				"public\\comp\\sass\\screen.scss"
-			],
-			[
-				"gis",
-				"C:\\Users\\ckotcha\\AppData\\Roaming\\Sublime Text 3\\Packages\\User\\Gist.sublime-settings"
-			],
-			[
-				"newc",
-				"app\\controllers\\news\\NewsController.php"
-			],
-			[
-				"vwne",
-				"app\\views\\news\\vw_news.blade.php"
-			],
-			[
 				"rou",
 				"app\\routes.php"
 			],
 			[
-				"mas",
-				"app\\views\\layouts\\master.blade.php"
-			],
-			[
-				"scr",
-				"public\\comp\\sass\\screen.scss"
-			],
-			[
-				"controllhom",
-				"app\\controllers\\home\\HomeController.php"
-			],
-			[
-				"mast",
+				"mastee",
 				"app\\views\\layouts\\master.blade.php"
 			],
 			[
@@ -434,58 +413,40 @@
 				"public\\comp\\sass\\screen.scss"
 			],
 			[
-				"home",
-				"application\\modules\\home\\controllers\\home.php"
+				"search/re",
+				"app\\views\\search\\results.blade.php"
 			]
 		],
 		"width": 0.0
 	},
 	"select_project":
 	{
-		"height": 500.0,
+		"height": 0.0,
 		"selected_items":
 		[
-			[
-				"",
-				"C:\\xampp\\htdocs\\remax\\remax.sublime-project"
-			]
 		],
-		"width": 380.0
+		"width": 0.0
 	},
 	"select_symbol":
 	{
-		"height": 375.0,
+		"height": 0.0,
 		"selected_items":
 		[
 		],
-		"width": 746.0
+		"width": 0.0
 	},
 	"settings":
 	{
-		"last_automatic_layout":
-		[
-			[
-				0,
-				0,
-				1,
-				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
-			]
-		],
 		"vintage":
 		{
+			"last_buffer_search": "alt+s\""
 		}
 	},
-	"show_minimap": true,
+	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
-	"side_bar_width": 287.0,
+	"side_bar_visible": true,
+	"side_bar_width": 384.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

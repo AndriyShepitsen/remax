@@ -12,7 +12,7 @@
 		"classmap": [
 			"app/commands",
 			"app/controllers",
-			"app/controllers/home",
+			"app/controllers/search",
 			"app/controllers/about",
 			"app/controllers/buying",
 			"app/controllers/selling",
