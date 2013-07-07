@@ -178,7 +178,7 @@ $copyrightBackgroundColor: #3F3F3F;
 }
 
 
- .panel{
+.panel{
 	padding-bottom: 20px !important;
 	margin-bottom: 10px;
 } 
@@ -247,6 +247,18 @@ article p{
 }
 .agentName{
 	margin-bottom: 5px 	!important;
+}
+.specialist:hover, .specialist:focus{
+	color: #FFFFFF !important;
+}
+.info{
+	margin-top: 25px !important;
+	padding-bottom: 15px !important;
+	padding-top: 0px !important;
+}
+.innerInfo{
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
 }
 /*=footer starts here */
 @mixin marginOneEmTopLeft{
