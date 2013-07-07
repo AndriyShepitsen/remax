@@ -30,6 +30,7 @@ size:{{$house->size}} sqft.
 </li>
 @endforeach
 </ol>
+{{$houses->appends(array('sort'=>'id'))->links()}}
 @else
 {No result found for your request}
 @endif
