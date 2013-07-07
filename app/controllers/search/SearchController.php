@@ -19,32 +19,34 @@ class SearchController extends BaseController {
 
      public function find()
     {
-    $houses = "House::with('images')";
-    
+    $housesQuery = House::with('images')->where(function($query){
 
     $location  = Input::get('location');
     if($location)
-    $houses .="->where('address', 'LIKE', '%'.$location.'%')";
+    $query->where('address', 'LIKE', '%'.$location.'%');
 
-     $price_l  = Input::get('from');
+    $price_l  = Input::get('from');
     if($price_l)
-    $houses .="->where('price', '>=', $price_l)";
+    $query->where('price', '>=', $price_l);
 
     $price_h  = Input::get('to');
     if($price_h)
-    $houses .="->where('price', '<=', $price_h)";
+    $query->where('price', '<=', $price_h);
 
     $beds  = Input::get('beds');
     if($beds)
-    $houses .="->where('bedrooms', '>=', $beds)";
-    
+    $query->where('bedrooms', '>=', $beds);
+
     $baths  = Input::get('baths');
     if($baths)
-    $houses .="->where('bathrooms', '>=', $baths)";
+    $query->where('bathrooms', '>=', $baths);
 
-   // $houses = ${houses};
-    dd($houses);
-   // return View::make('search.results')->with(compact('houses'));
+    })->get();
+    
+    $houses =$housesQuery;
+
+   // dd($housesQuery);
+    return View::make('search.results')->with(compact('houses'));
 
     }
     public function show($id)
