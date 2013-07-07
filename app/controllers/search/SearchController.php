@@ -43,10 +43,10 @@ class SearchController extends BaseController {
 
     })->get();
     
-    $houses =$housesQuery;
+    $houses = $housesQuery;
 
    // dd($housesQuery);
-    return View::make('search.results')->with(compact('houses'));
+    return View::make('search.results')->with(compact('houses'))->with('Input', Input::all());
 
     }
     public function show($id)
