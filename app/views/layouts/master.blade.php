@@ -222,10 +222,10 @@
                <li><a class="th radius" data-reveal-id="danFlorian" href="#"><img src="{{url('comp/img/agents/Dan_I_Florian.jpg')}}" alt=""><a/>
                  {{link_to('#', 'Dan I. Florian', array('class'=>'agentLink'));}}
                </li>
-               <li><a class="th radius" href="#"><img src="{{url('comp/img/agents/Ivy_Moy.jpg')}}" alt=""><a/>
+               <li><a class="th radius" data-reveal-id="ivyMoy" href="#"><img src="{{url('comp/img/agents/Ivy_Moy.jpg')}}" alt=""><a/>
                  {{link_to('#', 'Ivy Moy', array('class'=>'agentLink'));}}
                </li>
-               <li><a class="th radius" href="#"><img src="{{url('comp/img/agents/Cherylette_Hilton.jpg')}}" alt=""><a/>
+               <li><a class="th radius" data-reveal-id="cheryletteHilton" href="#"><img src="{{url('comp/img/agents/Cherylette_Hilton.jpg')}}" alt=""><a/>
                  {{link_to('#', 'Crerylette Hilton', array('class'=>'agentLink'));}}
                </li>
                <li><a class="th radius" href="#"><img src="{{url('comp/img/agents/Dan_Elena.jpg')}}" alt=""><a/>
@@ -569,7 +569,7 @@
 
 
 
-
+<!-- =Dan Florian profile starts here -->
 
                  <div id="danFlorian" class="reveal-modal medium adminAuth2 createAccount panel">
                   <a class="close-reveal-modal">&#215;</a>
@@ -589,7 +589,7 @@
                         </nav>
                       </div>
 
-
+<!--  =danFlorian top bar ends here-->
 
                       <div class="row">
                        <div class="large-4 columns">
@@ -605,23 +605,25 @@
                      </div>
                      <img src="{{url('comp/img/agentsL/Dan_I_Florian.jpg')}}" alt="Dan I. Florian">
 
-                   </div>
-
-                   <div class="large-7 columns left panel info">
-                     <br/>
-                     <ul class="vcard innerInfo">
-                       <h5>Associate</h5>
-                       <li class="subheader">Year Joined: 2003</li>
-                       <li class="subheader">Year Licensed: 2003</li>
-                       <hr/>
-                       <h6>Contact Information:</h6>
-                       <li class="subheader">Main: (847)674-9797</li>
-                       <li class="subheader">Fax: (847)674-0411</li>
-                       <li class="subheader">Direct: (773) 543-3500 </li>
-                       <li class="subheader">Languages: English, Italian, Romanian, Spanish</li>
-                     </ul>
-                   </div>
                  </div>
+
+                 <div class="large-7 columns left panel info">
+                   <br/>
+                   <ul class="vcard innerInfo">
+                     <h5>Associate</h5>
+                     <li class="subheader">Year Joined: 2003</li>
+                     <li class="subheader">Year Licensed: 2003</li>
+                     <hr/>
+                     <h6>Contact Information:</h6>
+                     <li class="subheader">Main: (847) 674-9797</li>
+                     <li class="subheader">Fax: (847) 674-0411</li>
+                     <li class="subheader">Direct: (773) 543-3500 </li>
+                     <li class="subheader">Languages: English, Italian, Romanian, Spanish</li>
+                   </ul>
+                 </div>
+               </div>
+
+<!--  =danFlorian contact information ends here-->
 
                  <div class="row">
                   <div class="large-12 columns">
@@ -641,10 +643,170 @@
                     </div>
                   </div>
 
+                </div>
+              </div>
+            </div>
+<!-- =Dan Florian profile ends here -->
+
+
+
+<!-- =Ivy Moy  profile starts here -->
+
+                 <div id="ivyMoy" class="reveal-modal medium adminAuth2 createAccount panel">
+                  <a class="close-reveal-modal">&#215;</a>
+                  <div class="row">
+                    <div class="large-12 columns">
+                      {{Form::open(array('url'=>'/login'))}} 
+                      <div class="navPanel">
+                        <nav class="top-bar">
+                          <ul class="title-area right">
+                            <!-- Title Area -->
+                            <li class="name">
+                              <h1>
+                                {{link_to_route('home', 'REMAX FIRST CLASS');}}
+                              </h1>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+
+<!--  =ivyMoy top bar ends here-->
+
+                      <div class="row">
+                       <div class="large-4 columns">
+                        <div class="row">
+                         <div class="large-12 columns left">
+                          <br/>
+                          <ul>
+                           <h3 class="subheader agentName">Ivy Moy</h3>
+                           <!-- <a class="label has-tip-left specialist" title="Accredited Buyers Representative">ABR</a>  -->
+                           <a class="label has-tip-left specialist" title="Certified Residential Specialist">CRS</a>
+                         </ul>
+                       </div>                           
+                     </div>
+                     <img src="{{url('comp/img/agentsL/Ivy_Moy.jpg')}}" alt="Dan I. Florian">
+
+                 </div>
+
+                 <div class="large-7 columns left panel info">
+                   <br/>
+                   <ul class="vcard innerInfo">
+                     <h5>Associate</h5>
+                     <li class="subheader">Year Joined: 2001</li>
+                     <li class="subheader">Year Licensed: 1998</li>
+                     <hr/>
+                     <h6>Contact Information:</h6>
+                     <li class="subheader">Main: (847) 674-9797</li>
+                     <li class="subheader">Fax: (847) 674-0411</li>
+                     <li class="subheader">Direct: (847) 568-3115</li>
+                     <li class="subheader">Mobile: (847) 913-3710</li>
+                     <li class="subheader">Languages: Chinese, English, Mandarin </li>
+                   </ul>
+                 </div>
+               </div>
+
+<!--  =ivyMoy contact information ends here-->
+
+                 <div class="row">
+                  <div class="large-12 columns">
+                    <dl>                              
+                      <!-- <dt><h5>Specialties</h5></dt>
+                      <hr/>
+                      <dd class="specialties"><p>Buyer Brokerage, Business Opportunities, Condominiums, Foreclosure Property, Investments, Lake/Beach Property, Luxury Homes, New Construction, Property Management, Relocation, Rentals, Short Sales, Vacation and Resorts</p>
+                      </dd>   -->
+                      <dt><h5>Service Area Information</h5></dt>
+                      <hr/>
+                      <dd class="specialties">
+                        <h6>Office Area:</h6>
+                        <p>Skokie IL, Chicago IL, Glenview IL, Morton Grove IL, Evanston IL, Wilmette IL, Niles IL, Lincolnwood IL</p>                            
+                        <h6>Agent Area:</h6>
+                        <p>Chicago IL, Evanston IL, Morton Grove IL, Niles IL, Skokie IL, Skokie IL </p>  
+                      </dd>
+                    </div>
+                  </div>
 
                 </div>
               </div>
-
             </div>
+<!-- =Ivy Moy profile ends here -->
 
+
+<!-- =Cherylette Hilton profile starts here -->
+
+                 <div id="cheryletteHilton" class="reveal-modal medium adminAuth2 createAccount panel">
+                  <a class="close-reveal-modal">&#215;</a>
+                  <div class="row">
+                    <div class="large-12 columns">
+                      {{Form::open(array('url'=>'/login'))}} 
+                      <div class="navPanel">
+                        <nav class="top-bar">
+                          <ul class="title-area right">
+                            <!-- Title Area -->
+                            <li class="name">
+                              <h1>
+                                {{link_to_route('home', 'REMAX FIRST CLASS');}}
+                              </h1>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+
+<!--  =cheryletteHilton top bar ends here-->
+
+                      <div class="row">
+                       <div class="large-4 columns">
+                        <div class="row">
+                         <div class="large-12 columns left">
+                          <br/>
+                          <ul>
+                           <h3 class="subheader agentName">Crerylette Hilton</h3>
+                           <a class="label has-tip-left specialist" title="Accredited Buyers Representative">ABR</a> 
+                           <a class="label has-tip-left specialist" title="Certified Residential Specialist">CRS</a>
+                         </ul>
+                       </div>                           
+                     </div>
+                     <img src="{{url('comp/img/agentsL/Dan_I_Florian.jpg')}}" alt="Dan I. Florian">
+
+                 </div>
+
+                 <div class="large-7 columns left panel info">
+                   <br/>
+                   <ul class="vcard innerInfo">
+                     <h5>Associate</h5>
+                     <li class="subheader">Year Joined: 2003</li>
+                     <li class="subheader">Year Licensed: 2003</li>
+                     <hr/>
+                     <h6>Contact Information:</h6>
+                     <li class="subheader">Main: (847) 674-9797</li>
+                     <li class="subheader">Fax: (847) 674-0411</li>
+                     <li class="subheader">Direct: (773) 543-3500 </li>
+                     <li class="subheader">Languages: English, Italian, Romanian, Spanish</li>
+                   </ul>
+                 </div>
+               </div>
+
+<!--  =cheryletteHilton contact information ends here-->
+
+                 <div class="row">
+                  <div class="large-12 columns">
+                    <dl>                              
+                      <dt><h5>Specialties</h5></dt>
+                      <hr/>
+                      <dd class="specialties"><p>Buyer Brokerage, Business Opportunities, Condominiums, Foreclosure Property, Investments, Lake/Beach Property, Luxury Homes, New Construction, Property Management, Relocation, Rentals, Short Sales, Vacation and Resorts</p>
+                      </dd>  
+                      <dt><h5>Service Area Information</h5></dt>
+                      <hr/>
+                      <dd class="specialties">
+                        <h6>Office Area:</h6>
+                        <p>Skokie IL, Chicago IL, Glenview IL, Morton Grove IL, Evanston IL, Wilmette IL, Niles IL, Lincolnwood IL</p>                            
+                        <h6>Agent Area:</h6>
+                        <p>Chicago IL, Glenview IL, Morton Grove IL, Niles IL, Skokie IL, Skokie IL</p>  
+                      </dd>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+<!-- =Crerylette Hilton profile ends here -->
 

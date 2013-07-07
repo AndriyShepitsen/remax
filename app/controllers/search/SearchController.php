@@ -41,7 +41,7 @@ class SearchController extends BaseController {
     if($baths)
     $query->where('bathrooms', '>=', $baths);
 
-    })->paginate(5);
+    });
     
     $houses = $housesQuery;
 
