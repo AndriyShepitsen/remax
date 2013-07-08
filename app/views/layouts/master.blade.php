@@ -177,13 +177,14 @@
                  <div class="small-2 columns">
 
                    {{ Form::submit('Search', array('class'=>'secondary button small radius'))}}
+                   <br/>
                  </div>
                </div>
                <div class="row">
                  <div class="large-12 column">
                    <ul class="breadcrumbs">
-                     <li>{{link_to('#', 'Advanced Search', array('class'=>'advanceSearch'));}}</li>
-                     <li>{{link_to('#', 'Search by MLS#', array('class'=>'advanceSearch'));}}</li>
+                     <li>{{link_to('http://www.remaxskokie.com/search', 'Browse All Listings', array('class'=>'advanceSearch'));}}</li>
+                     <!-- <li>{{link_to('#', 'Search by MLS#', array('class'=>'advanceSearch'));}}</li> -->
                    </ul>
                  </div>
                </div>
@@ -200,16 +201,16 @@
        <div class="row">
          <section class="large-12 columns panel ">
            <div>
-             <h4> <a class="newListingsTitle" href="http://www.remaxskokie.com/search">NEW LISTINGS</a> </h4>
+             <h4> <a class="newListingsTitle" href="#">NEW LISTINGS</a> </h4>
            </div>
            <hr/>
-           <ul class="small-block-grid-3 clearing-thumbs" data-clearing>
-             <li><a class="th radius" data-reveal-id="a" href="#"><img src="{{url('comp/img/thumbs/1/1s.jpg')}}" alt=""><a/></li>
-             <li><a class="th radius" data-reveal-id="b" href="#"><img src="{{url('comp/img/thumbs/15/1s.jpg')}}" alt=""><a/></li>
-             <li><a class="th radius" data-reveal-id="c" href="#"><img src="{{url('comp/img/thumbs/16/1s.jpg')}}" alt=""><a/></li>
-             <li><a class="th radius" data-reveal-id="d" href="#"><img src="{{url('comp/img/thumbs/19/1s.jpg')}}" alt=""><a/></li>
-             <li><a class="th radius" data-reveal-id="e" href="#"><img src="{{url('comp/img/thumbs/5/1s.jpg')}}" alt=""><a/></li>
-             <li><a class="th radius" data-reveal-id="f" href="#"><img src="{{url('comp/img/thumbs/10/1s.jpg')}}" alt=""><a/></li>
+           <ul class="small-block-grid-3 clearing-thumbs">
+             <li><a class="th radius" href="{{URL::to('search/1')}}"><img src="{{url('comp/img/thumbs/1/1s.jpg')}}" alt=""><a/></li>
+             <li><a class="th radius" href="{{URL::to('search/15')}}"><img src="{{url('comp/img/thumbs/15/1s.jpg')}}" alt=""><a/></li>
+             <li><a class="th radius" href="{{URL::to('search/16')}}"><img src="{{url('comp/img/thumbs/16/1s.jpg')}}" alt=""><a/></li>
+             <li><a class="th radius" href="{{URL::to('search/19')}}"><img src="{{url('comp/img/thumbs/19/1s.jpg')}}" alt=""><a/></li>
+             <li><a class="th radius" href="{{URL::to('search/5')}}"><img src="{{url('comp/img/thumbs/5/1s.jpg')}}" alt=""><a/></li>
+             <li><a class="th radius" href="{{URL::to('search/10')}}"><img src="{{url('comp/img/thumbs/10/1s.jpg')}}" alt=""><a/></li>
            </ul>
          </section>
        </div>
@@ -1175,6 +1176,7 @@
                      <hr/>
                      <h6>Contact Information:</h6>
                      <li class="subheader">Main: (847) 674-9797</li>
+                     <li class="subheader">Mobile: (847) 708-1149</li>
                      <li class="subheader">Fax: (847) 674-0411</li>
                      
                      <li class="subheader">Languages: English</li>
