@@ -22,6 +22,8 @@
 Route::get('/', array('as'=>'home', 'uses'=>'HomeController@index'));
 /* =about */
 
+Route::post('sendmail', array('uses'=>'MailController@index'));
+
 Route::get('about', array('as'=>'about', 'uses'=>'AboutController@index'));
 Route::get('parse', array('as'=>'parse', 'uses'=>'ParseController@index'));
 
@@ -68,3 +70,7 @@ Route::post('login', array('as'=>'login', 'uses'=>'LoginController@index'));
 Route::get('search', 'SearchController@index');
 Route::post('search', 'SearchController@find');
 Route::get('search/{id}', 'SearchController@show');
+
+/*  Browse db */
+Route::get('browse/{type}', array('as'=>'browse', 'uses'=>'BrowseController@index'));
+

@@ -204,6 +204,15 @@
              <h4> <a class="newListingsTitle" href="#">NEW LISTINGS</a> </h4>
            </div>
            <hr/>
+<<<<<<< HEAD
+           <ul class="small-block-grid-3 clearing-thumbs" data-clearing>
+             <li><a class="th radius" data-reveal-id="a" href="{{URL::to('search/1')}}"><img src="{{url('comp/img/thumbs/1/1s.jpg')}}" alt=""><a/></li>
+             <li><a class="th radius" data-reveal-id="b" href="#"><img src="{{url('comp/img/thumbs/15/1s.jpg')}}" alt=""><a/></li>
+             <li><a class="th radius" data-reveal-id="c" href="#"><img src="{{url('comp/img/thumbs/16/1s.jpg')}}" alt=""><a/></li>
+             <li><a class="th radius" data-reveal-id="d" href="#"><img src="{{url('comp/img/thumbs/19/1s.jpg')}}" alt=""><a/></li>
+             <li><a class="th radius" data-reveal-id="e" href="#"><img src="{{url('comp/img/thumbs/5/1s.jpg')}}" alt=""><a/></li>
+             <li><a class="th radius" data-reveal-id="f" href="#"><img src="{{url('comp/img/thumbs/10/1s.jpg')}}" alt=""><a/></li>
+=======
            <ul class="small-block-grid-3 clearing-thumbs">
              <li><a class="th radius" href="{{URL::to('search/1')}}"><img src="{{url('comp/img/thumbs/1/1s.jpg')}}" alt=""><a/></li>
              <li><a class="th radius" href="{{URL::to('search/15')}}"><img src="{{url('comp/img/thumbs/15/1s.jpg')}}" alt=""><a/></li>
@@ -211,6 +220,7 @@
              <li><a class="th radius" href="{{URL::to('search/19')}}"><img src="{{url('comp/img/thumbs/19/1s.jpg')}}" alt=""><a/></li>
              <li><a class="th radius" href="{{URL::to('search/5')}}"><img src="{{url('comp/img/thumbs/5/1s.jpg')}}" alt=""><a/></li>
              <li><a class="th radius" href="{{URL::to('search/10')}}"><img src="{{url('comp/img/thumbs/10/1s.jpg')}}" alt=""><a/></li>
+>>>>>>> 37cc0ee678fd000affaa243a56fcdf2ba1a9c325
            </ul>
          </section>
        </div>
