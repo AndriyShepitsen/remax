@@ -232,20 +232,20 @@
                <li><a class="th radius" data-reveal-id="elenaDan" href="#"><img src="{{url('comp/img/agents/Dan_Elena.jpg')}}" alt=""><a/>
                  {{link_to('#', 'Elena Dan', array('class'=>'agentLink'));}}
                </li>
+               <li><a class="th radius" data-reveal-id="mariusDan" href="#"><img src="{{url('comp/img/agents/Dan_Elena.jpg')}}" alt=""><a/>
+                 {{link_to('#', 'Marius Dan', array('class'=>'agentLink'));}}
+               </li>
+               <li><a class="th radius" data-reveal-id="barryBenveniste" href="#"><img src="{{url('comp/img/agents/Barry_Benveniste.jpg')}}" alt=""><a/>
+                 {{link_to('#', 'Barry Benveniste', array('class'=>'agentLink'));}}
+               </li>
+               <li><a class="th radius" data-reveal-id="markFeyman" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt=""><a/>
+                 {{link_to('#', 'Mark Feyman', array('class'=>'agentLink'));}}
+               </li>
                <li><a class="th radius" data-reveal-id="haroldOza" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt=""><a/>
                  {{link_to('#', 'Harold Oza', array('class'=>'agentLink'));}}
                </li>
                <li><a class="th radius" data-reveal-id="johnDias" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt=""><a/>
                  {{link_to('#', 'John B. Dias', array('class'=>'agentLink'));}}
-               </li>
-               <li><a class="th radius" data-reveal-id="mariusDan" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt=""><a/>
-                 {{link_to('#', 'Marius Dan', array('class'=>'agentLink'));}}
-               </li>
-               <li><a class="th radius" data-reveal-id="barryBenveniste" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt=""><a/>
-                 {{link_to('#', 'Barry Benveniste', array('class'=>'agentLink'));}}
-               </li>
-               <li><a class="th radius" data-reveal-id="markFeyman" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt=""><a/>
-                 {{link_to('#', 'Mark Feyman', array('class'=>'agentLink'));}}
                </li>
              </ul>
            </section>
@@ -893,6 +893,243 @@
             </div>
 <!-- =Elena Dan  profile ends here -->
 
+
+
+
+<!-- =Marius Dan profile starts here -->
+
+                 <div id="mariusDan" class="reveal-modal medium adminAuth2 createAccount panel">
+                  <a class="close-reveal-modal">&#215;</a>
+                  <div class="row">
+                    <div class="large-12 columns">
+                      {{Form::open(array('url'=>'/login'))}} 
+                      <div class="navPanel">
+                        <nav class="top-bar">
+                          <ul class="title-area right">
+                            <!-- Title Area -->
+                            <li class="name">
+                              <h1>
+                                {{link_to_route('home', 'REMAX FIRST CLASS');}}
+                              </h1>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+
+<!--  =mariusDan  top bar ends here-->
+
+                      <div class="row">
+                       <div class="large-4 columns">
+                        <div class="row">
+                         <div class="large-12 columns left">
+                          <br/>
+                          <ul>
+                           <h3 class="subheader agentName">Marius Dan</h3>
+                           
+                         </ul>
+                       </div>                           
+                     </div>
+                     <img src="{{url('comp/img/agentsL/Dan_Elena.jpg')}}" alt="Marius Dan">
+
+                 </div>
+
+                 <div class="large-7 columns left panel info">
+                   <br/>
+                   <ul class="vcard innerInfo">
+                     <h5>Associate</h5>
+                     <li class="subheader">Year Joined: 2003</li>
+                     <li class="subheader">Year Licensed: 2003</li>
+                     <hr/>
+                     <h6>Contact Information:</h6>
+                     <li class="subheader">Main: (847) 674-9797</li>
+                     <li class="subheader">Fax: (847) 674-0411</li>
+                     <li class="subheader">Direct: (847) 568-3125  </li>
+                     <li class="subheader">Mobile: (312) 208-6034 </li>
+                     <li class="subheader">Languages: English, Romanian</li>
+                   </ul>
+                 </div>
+               </div>
+
+<!--  =mariusDan contact information ends here-->
+
+                 <div class="row">
+                  <div class="large-12 columns">
+                    <dl>                              
+                      <dt><h5>Specialties</h5></dt>
+                      <hr/>
+                      <dd class="specialties"><p>Buyer Brokerage, Condominiums, Investments </p>
+                      </dd>  
+                      <dt><h5>Service Area Information</h5></dt>
+                      <hr/>
+                      <dd class="specialties">
+                        <h6>Office Area:</h6>
+                        <p>Skokie IL, Chicago IL, Glenview IL, Morton Grove IL, Evanston IL, Wilmette IL, Niles IL, Lincolnwood IL</p>                            
+                        <h6>Agent Area:</h6>
+                        <p>Skokie IL</p>  
+                      </dd>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+<!-- =Marius Dan  profile ends here -->
+
+
+
+<!-- =Barry Benveniste profile starts here -->
+
+                 <div id="barryBenveniste" class="reveal-modal medium adminAuth2 createAccount panel">
+                  <a class="close-reveal-modal">&#215;</a>
+                  <div class="row">
+                    <div class="large-12 columns">
+                      {{Form::open(array('url'=>'/login'))}} 
+                      <div class="navPanel">
+                        <nav class="top-bar">
+                          <ul class="title-area right">
+                            <!-- Title Area -->
+                            <li class="name">
+                              <h1>
+                                {{link_to_route('home', 'REMAX FIRST CLASS');}}
+                              </h1>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+
+<!--  =barryBenveniste  top bar ends here-->
+
+                      <div class="row">
+                       <div class="large-4 columns">
+                        <div class="row">
+                         <div class="large-12 columns left">
+                          <br/>
+                          <ul>
+                           <h3 class="subheader agentName">Barry Benveniste</h3>
+                           
+                         </ul>
+                       </div>                           
+                     </div>
+                     <img src="{{url('comp/img/agentsL/Barry_Benveniste.jpg')}}" alt="Barry Benveniste">
+
+                 </div>
+
+                 <div class="large-7 columns left panel info">
+                   <br/>
+                   <ul class="vcard innerInfo">
+                     <h5>Associate</h5>
+                     <li class="subheader">Year Joined: 1987</li>
+                     <li class="subheader">Year Licensed: 1972</li>
+                     <hr/>
+                     <h6>Contact Information:</h6>
+                     <li class="subheader">Main: (847) 674-9797</li>
+                     <li class="subheader">Mobile: (847) 708-1149</li>
+                     <li class="subheader">Fax: (847) 674-0411</li>
+                     
+                     <li class="subheader">Languages: English</li>
+                   </ul>
+                 </div>
+               </div>
+
+<!--  =barryBenveniste contact information ends here-->
+
+                 <div class="row">
+                  <div class="large-12 columns">
+                    <dl>                              
+                      
+                      <dt><h5>Service Area Information</h5></dt>
+                      <hr/>
+                      <dd class="specialties">
+                        <h6>Office Area:</h6>
+                        <p>Skokie IL, Chicago IL, Glenview IL, Morton Grove IL, Evanston IL, Wilmette IL, Niles IL, Lincolnwood IL</p>                            
+                        <h6>Agent Area:</h6>
+                        <p>Skokie IL</p>  
+                      </dd>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+<!-- =Barry Benveniste  profile ends here -->
+
+<!-- =Mark Feyman profile starts here -->
+
+                 <div id="markFeyman" class="reveal-modal medium adminAuth2 createAccount panel">
+                  <a class="close-reveal-modal">&#215;</a>
+                  <div class="row">
+                    <div class="large-12 columns">
+                      {{Form::open(array('url'=>'/login'))}} 
+                      <div class="navPanel">
+                        <nav class="top-bar">
+                          <ul class="title-area right">
+                            <!-- Title Area -->
+                            <li class="name">
+                              <h1>
+                                {{link_to_route('home', 'REMAX FIRST CLASS');}}
+                              </h1>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+
+<!--  =markFeyman  top bar ends here-->
+
+                      <div class="row">
+                       <div class="large-4 columns">
+                        <div class="row">
+                         <div class="large-12 columns left">
+                          <br/>
+                          <ul>
+                           <h3 class="subheader agentName">Mark Feyman</h3>
+                           
+                         </ul>
+                       </div>                           
+                     </div>
+                     <img src="{{url('comp/img/agentsL/3.png')}}" alt="Mark Feyman">
+
+                 </div>
+
+                 <div class="large-7 columns left panel info">
+                   <br/>
+                   <ul class="vcard innerInfo">
+                     <h5>Associate</h5>
+                     <li class="subheader">Year Joined: 2011</li>
+                     <li class="subheader">Year Licensed: 2011</li>
+                     <hr/>
+                     <h6>Contact Information:</h6>
+                     <li class="subheader">Main: (847) 674-9797</li>
+                     <li class="subheader">Fax: (847) 674-0411</li>
+                     <li class="subheader">Mobile: (847) 971-8559</li>
+                     
+                     <li class="subheader">Languages: English, Russian</li>
+                   </ul>
+                 </div>
+               </div>
+
+<!--  =markFeyman contact information ends here-->
+
+                 <div class="row">
+                  <div class="large-12 columns">
+                    <dl>                              
+                      
+                      <dt><h5>Service Area Information</h5></dt>
+                      <hr/>
+                      <dd class="specialties">
+                        <h6>Office Area:</h6>
+                        <p>Skokie IL, Chicago IL, Glenview IL, Morton Grove IL, Evanston IL, Wilmette IL, Niles IL, Lincolnwood IL</p>                            
+                        <h6>Agent Area:</h6>
+                        <p>Skokie IL</p>  
+                      </dd>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+<!-- =Mark Feyman  profile ends here -->
+
+
 <!-- =Harold Oza profile starts here -->
 
                  <div id="haroldOza" class="reveal-modal medium adminAuth2 createAccount panel">
@@ -1047,237 +1284,3 @@
               </div>
             </div>
 <!-- =John Dias  profile ends here -->
-
-
-<!-- =Marius Dan profile starts here -->
-
-                 <div id="mariusDan" class="reveal-modal medium adminAuth2 createAccount panel">
-                  <a class="close-reveal-modal">&#215;</a>
-                  <div class="row">
-                    <div class="large-12 columns">
-                      {{Form::open(array('url'=>'/login'))}} 
-                      <div class="navPanel">
-                        <nav class="top-bar">
-                          <ul class="title-area right">
-                            <!-- Title Area -->
-                            <li class="name">
-                              <h1>
-                                {{link_to_route('home', 'REMAX FIRST CLASS');}}
-                              </h1>
-                            </li>
-                          </ul>
-                        </nav>
-                      </div>
-
-<!--  =mariusDan  top bar ends here-->
-
-                      <div class="row">
-                       <div class="large-4 columns">
-                        <div class="row">
-                         <div class="large-12 columns left">
-                          <br/>
-                          <ul>
-                           <h3 class="subheader agentName">Marius Dan</h3>
-                           
-                         </ul>
-                       </div>                           
-                     </div>
-                     <img src="{{url('comp/img/agentsL/3.png')}}" alt="Marius Dan">
-
-                 </div>
-
-                 <div class="large-7 columns left panel info">
-                   <br/>
-                   <ul class="vcard innerInfo">
-                     <h5>Associate</h5>
-                     <li class="subheader">Year Joined: 2003</li>
-                     <li class="subheader">Year Licensed: 2003</li>
-                     <hr/>
-                     <h6>Contact Information:</h6>
-                     <li class="subheader">Main: (847) 674-9797</li>
-                     <li class="subheader">Fax: (847) 674-0411</li>
-                     <li class="subheader">Direct: (847) 568-3125  </li>
-                     <li class="subheader">Mobile: (312) 208-6034 </li>
-                     <li class="subheader">Languages: English, Romanian</li>
-                   </ul>
-                 </div>
-               </div>
-
-<!--  =mariusDan contact information ends here-->
-
-                 <div class="row">
-                  <div class="large-12 columns">
-                    <dl>                              
-                      <dt><h5>Specialties</h5></dt>
-                      <hr/>
-                      <dd class="specialties"><p>Buyer Brokerage, Condominiums, Investments </p>
-                      </dd>  
-                      <dt><h5>Service Area Information</h5></dt>
-                      <hr/>
-                      <dd class="specialties">
-                        <h6>Office Area:</h6>
-                        <p>Skokie IL, Chicago IL, Glenview IL, Morton Grove IL, Evanston IL, Wilmette IL, Niles IL, Lincolnwood IL</p>                            
-                        <h6>Agent Area:</h6>
-                        <p>Skokie IL</p>  
-                      </dd>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-<!-- =Marius Dan  profile ends here -->
-
-
-
-<!-- =Barry Benveniste profile starts here -->
-
-                 <div id="barryBenveniste" class="reveal-modal medium adminAuth2 createAccount panel">
-                  <a class="close-reveal-modal">&#215;</a>
-                  <div class="row">
-                    <div class="large-12 columns">
-                      {{Form::open(array('url'=>'/login'))}} 
-                      <div class="navPanel">
-                        <nav class="top-bar">
-                          <ul class="title-area right">
-                            <!-- Title Area -->
-                            <li class="name">
-                              <h1>
-                                {{link_to_route('home', 'REMAX FIRST CLASS');}}
-                              </h1>
-                            </li>
-                          </ul>
-                        </nav>
-                      </div>
-
-<!--  =barryBenveniste  top bar ends here-->
-
-                      <div class="row">
-                       <div class="large-4 columns">
-                        <div class="row">
-                         <div class="large-12 columns left">
-                          <br/>
-                          <ul>
-                           <h3 class="subheader agentName">Barry Benveniste</h3>
-                           
-                         </ul>
-                       </div>                           
-                     </div>
-                     <img src="{{url('comp/img/agentsL/3.png')}}" alt="Barry Benveniste">
-
-                 </div>
-
-                 <div class="large-7 columns left panel info">
-                   <br/>
-                   <ul class="vcard innerInfo">
-                     <h5>Associate</h5>
-                     <li class="subheader">Year Joined: 1987</li>
-                     <li class="subheader">Year Licensed: 1972</li>
-                     <hr/>
-                     <h6>Contact Information:</h6>
-                     <li class="subheader">Main: (847) 674-9797</li>
-                     <li class="subheader">Mobile: (847) 708-1149</li>
-                     <li class="subheader">Fax: (847) 674-0411</li>
-                     
-                     <li class="subheader">Languages: English</li>
-                   </ul>
-                 </div>
-               </div>
-
-<!--  =barryBenveniste contact information ends here-->
-
-                 <div class="row">
-                  <div class="large-12 columns">
-                    <dl>                              
-                      
-                      <dt><h5>Service Area Information</h5></dt>
-                      <hr/>
-                      <dd class="specialties">
-                        <h6>Office Area:</h6>
-                        <p>Skokie IL, Chicago IL, Glenview IL, Morton Grove IL, Evanston IL, Wilmette IL, Niles IL, Lincolnwood IL</p>                            
-                        <h6>Agent Area:</h6>
-                        <p>Skokie IL</p>  
-                      </dd>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-<!-- =Barry Benveniste  profile ends here -->
-
-<!-- =Mark Feyman profile starts here -->
-
-                 <div id="markFeyman" class="reveal-modal medium adminAuth2 createAccount panel">
-                  <a class="close-reveal-modal">&#215;</a>
-                  <div class="row">
-                    <div class="large-12 columns">
-                      {{Form::open(array('url'=>'/login'))}} 
-                      <div class="navPanel">
-                        <nav class="top-bar">
-                          <ul class="title-area right">
-                            <!-- Title Area -->
-                            <li class="name">
-                              <h1>
-                                {{link_to_route('home', 'REMAX FIRST CLASS');}}
-                              </h1>
-                            </li>
-                          </ul>
-                        </nav>
-                      </div>
-
-<!--  =markFeyman  top bar ends here-->
-
-                      <div class="row">
-                       <div class="large-4 columns">
-                        <div class="row">
-                         <div class="large-12 columns left">
-                          <br/>
-                          <ul>
-                           <h3 class="subheader agentName">Mark Feyman</h3>
-                           
-                         </ul>
-                       </div>                           
-                     </div>
-                     <img src="{{url('comp/img/agentsL/3.png')}}" alt="Mark Feyman">
-
-                 </div>
-
-                 <div class="large-7 columns left panel info">
-                   <br/>
-                   <ul class="vcard innerInfo">
-                     <h5>Associate</h5>
-                     <li class="subheader">Year Joined: 2011</li>
-                     <li class="subheader">Year Licensed: 2011</li>
-                     <hr/>
-                     <h6>Contact Information:</h6>
-                     <li class="subheader">Main: (847) 674-9797</li>
-                     <li class="subheader">Fax: (847) 674-0411</li>
-                     <li class="subheader">Mobile: (847) 971-8559</li>
-                     
-                     <li class="subheader">Languages: English, Russian</li>
-                   </ul>
-                 </div>
-               </div>
-
-<!--  =markFeyman contact information ends here-->
-
-                 <div class="row">
-                  <div class="large-12 columns">
-                    <dl>                              
-                      
-                      <dt><h5>Service Area Information</h5></dt>
-                      <hr/>
-                      <dd class="specialties">
-                        <h6>Office Area:</h6>
-                        <p>Skokie IL, Chicago IL, Glenview IL, Morton Grove IL, Evanston IL, Wilmette IL, Niles IL, Lincolnwood IL</p>                            
-                        <h6>Agent Area:</h6>
-                        <p>Skokie IL</p>  
-                      </dd>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-<!-- =Mark Feyman  profile ends here -->
