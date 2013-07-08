@@ -204,7 +204,7 @@
            </div>
            <hr/>
            <ul class="small-block-grid-3 clearing-thumbs" data-clearing>
-             <li><a class="th radius" data-reveal-id="a" href="#"><img src="{{url('comp/img/thumbs/1/1s.jpg')}}" alt=""><a/></li>
+             <li><a class="th radius" data-reveal-id="a" href="{{URL::to('search/1')}}"><img src="{{url('comp/img/thumbs/1/1s.jpg')}}" alt=""><a/></li>
              <li><a class="th radius" data-reveal-id="b" href="#"><img src="{{url('comp/img/thumbs/15/1s.jpg')}}" alt=""><a/></li>
              <li><a class="th radius" data-reveal-id="c" href="#"><img src="{{url('comp/img/thumbs/16/1s.jpg')}}" alt=""><a/></li>
              <li><a class="th radius" data-reveal-id="d" href="#"><img src="{{url('comp/img/thumbs/19/1s.jpg')}}" alt=""><a/></li>
