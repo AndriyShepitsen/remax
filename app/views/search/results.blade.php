@@ -5,7 +5,7 @@
 -->
 <div class="mainContent">
 	@if(count($houses)>0)
-	<ol>
+	<ul class="no-bullet">
 		@foreach ($houses as $house)
 		<li>
 
@@ -32,7 +32,7 @@
 			</a>
 		</li>
 		@endforeach
-	</ol>
+	</ul class="no-bullet">
 
 	@else
 	{No result found for your request}
