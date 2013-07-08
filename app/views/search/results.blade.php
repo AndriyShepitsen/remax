@@ -13,7 +13,7 @@
 				<div class="panel">
 					<strong>
 						{{$house->address}}
-					</strong> &nbsp	&nbsp	<span class="priceStyle">${{$house->price}}</span>
+					</strong> &nbsp	&nbsp	<span class="priceStyle">${{number_format($house->price)}}</span>
 					<br/>
 					<small>
 						bedrooms:{{$house->bedrooms}} | 
