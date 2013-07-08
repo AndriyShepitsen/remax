@@ -5,15 +5,15 @@
 @stop
 @section('content')
 
-<!-- //LOCATION: remax/public/search 
+<!-- //LOCATION: remax/public/search
 -->
 <div class="mainContent">
-<div class="panel">
-{{$house->address}} &nbsp &nbsp {{$house->price}}
- <br><br>
-Decription:
-</br>
-{{$house->details}}
+	<div class="panel">
+		{{$house->address}} &nbsp &nbsp {{$house->price}}
+		<br><br>
+		Decription:
+	</br>
+	{{$house->details}}
 
 </br></br>
 MLS:{{$house->listing}} <br></br>
@@ -36,3 +36,5 @@ Year:{{$house->year}} <br></br>
 </div>
 </div>
 @stop
+
+

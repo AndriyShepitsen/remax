@@ -19,7 +19,7 @@ class SearchController extends BaseController {
 
      public function find()
     {
-    $housesQuery = House::with('images')->where(function($query){
+    $houses = House::with('images')->where(function($query){
 
     $location  = Input::get('location');
     if($location)
@@ -41,11 +41,13 @@ class SearchController extends BaseController {
     if($baths)
     $query->where('bathrooms', '>=', $baths);
 
-    });
-    
-    $houses = $housesQuery;
 
-   // dd($housesQuery);
+    })->get();
+
+      
+   
+
+
     return View::make('search.results')->with(compact('houses'))->with('Input', Input::all());
 
     }
@@ -55,11 +57,6 @@ class SearchController extends BaseController {
      return View::make('search.onehouse')->with(compact('house'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return Response
-     */
+
    
 }

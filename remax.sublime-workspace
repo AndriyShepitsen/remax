@@ -20,58 +20,18 @@
 	"buffers":
 	[
 		{
-			"file": "app/views/home/vw_home.blade.php",
+			"file": "app/views/search/results.blade.php",
 			"settings":
 			{
-				"buffer_size": 2056,
+				"buffer_size": 1018,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/controllers/search/SearchController.php",
+			"file": "app/views/news/vw_news.blade.php",
 			"settings":
 			{
-				"buffer_size": 1415,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/database/seeds/NewsTableSeeder.php",
-			"settings":
-			{
-				"buffer_size": 5730,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/database/seeds/DatabaseSeeder.php",
-			"settings":
-			{
-				"buffer_size": 198,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/views/contact/vw_contact.blade.php",
-			"settings":
-			{
-				"buffer_size": 2174,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "public/comp/sass/screen.scss",
-			"settings":
-			{
-				"buffer_size": 5716,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "artisanCommand.txt",
-			"settings":
-			{
-				"buffer_size": 271,
+				"buffer_size": 525,
 				"line_ending": "Windows"
 			}
 		},
@@ -79,15 +39,7 @@
 			"file": "app/views/layouts/master.blade.php",
 			"settings":
 			{
-				"buffer_size": 36055,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/views/search/results.blade.php",
-			"settings":
-			{
-				"buffer_size": 4824,
+				"buffer_size": 56110,
 				"line_ending": "Windows"
 			}
 		},
@@ -95,7 +47,7 @@
 			"file": "app/views/search/onehouse.blade.php",
 			"settings":
 			{
-				"buffer_size": 665,
+				"buffer_size": 675,
 				"line_ending": "Windows"
 			}
 		}
@@ -160,12 +112,20 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/remax/public/comp/sass/screen.scss",
+		"/C/xampp/htdocs/remax/app/views/home/vw_home.blade.php",
+		"/C/xampp/htdocs/remax/app/views/contact/vw_contact.blade.php",
+		"/C/xampp/htdocs/remax/app/controllers/search/SearchController.php",
+		"/C/xampp/htdocs/remax/app/database/seeds/NewsTableSeeder.php",
+		"/C/xampp/htdocs/remax/app/database/seeds/DatabaseSeeder.php",
+		"/C/xampp/htdocs/remax/app/views/search/onehouse.blade.php",
 		"/C/xampp/htdocs/remax/app/views/layouts/master.blade.php",
+		"/C/xampp/htdocs/remax/app/views/search/results.blade.php",
+		"/C/xampp/htdocs/remax/artisanCommand.txt",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/Gist.sublime-settings",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/laravel_link.sublime-snippet",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/1symsemi.sublime-macro",
-		"/C/xampp/htdocs/remax/app/views/contact/vw_contact.blade.php",
 		"/C/xampp/htdocs/remax/app/views/about/vw_about.blade.php",
 		"/C/xampp/htdocs/remax/app/routes.php",
 		"/C/xampp/htdocs/remax/app/util/textoperations.php",
@@ -173,7 +133,6 @@
 		"/C/xampp/htdocs/remax/app/controllers/news/NewsController.php",
 		"/C/xampp/htdocs/remax/app/views/news/vw_news.blade.php",
 		"/C/xampp/htdocs/remax/app/controllers/admin/ParseController.php",
-		"/C/xampp/htdocs/remax/public/comp/sass/screen.scss",
 		"/C/xampp/htdocs/remax/app/controllers/home/HomeController.php",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/Gist/Gist.sublime-settings",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
@@ -198,6 +157,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"@extends('layouts.master')",
+			"		<",
+			"clearing",
+			"2",
 			"23",
 			"3",
 			"2",
@@ -270,285 +233,137 @@
 	"groups":
 	[
 		{
-			"selected": 8,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/home/vw_home.blade.php",
+					"file": "app/views/search/results.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2056,
+						"buffer_size": 1018,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1490,
-								1491
+								227,
+								227
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 70.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/controllers/search/SearchController.php",
+					"file": "app/views/news/vw_news.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1415,
+						"buffer_size": 525,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								935,
-								935
+								0,
+								525
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 360.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "app/database/seeds/NewsTableSeeder.php",
+					"file": "app/views/layouts/master.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5730,
+						"buffer_size": 56110,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								11506,
+								11531
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/layouts/master.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 56110,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9516,
+								9516
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2100.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "app/database/seeds/DatabaseSeeder.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 198,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								184,
-								184
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/views/contact/vw_contact.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2174,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								670,
-								670
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "public/comp/sass/screen.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5716,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4318,
-								4318
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 4330.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "artisanCommand.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 271,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								271,
-								249
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "app/views/layouts/master.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 36055,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								36029,
-								36029
-							]
-						],
-						"settings":
-						{
-							"history_list_is_closing": true,
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 18362.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "app/views/search/results.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4824,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								887,
-								887
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 300.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 9,
 					"file": "app/views/search/onehouse.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 665,
+						"buffer_size": 675,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								673,
+								673
 							]
 						],
 						"settings":
@@ -581,18 +396,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.973958333333,
 			1.0
 		],
 		"rows":
@@ -614,15 +422,27 @@
 		"selected_items":
 		[
 			[
+				"vwho",
+				"app\\views\\home\\vw_home.blade.php"
+			],
+			[
+				"s",
+				"public\\comp\\sass\\screen.scss"
+			],
+			[
+				"mast",
+				"app\\views\\layouts\\master.blade.php"
+			],
+			[
+				"mas",
+				"app\\views\\layouts\\master.blade.php"
+			],
+			[
 				"m",
 				"app\\views\\layouts\\master.blade.php"
 			],
 			[
 				"ma",
-				"app\\views\\layouts\\master.blade.php"
-			],
-			[
-				"mas",
 				"app\\views\\layouts\\master.blade.php"
 			],
 			[
@@ -644,10 +464,6 @@
 			[
 				"homev",
 				"app\\views\\home\\vw_home.blade.php"
-			],
-			[
-				"s",
-				"public\\comp\\sass\\screen.scss"
 			],
 			[
 				"gis",
@@ -672,10 +488,6 @@
 			[
 				"controllhom",
 				"app\\controllers\\home\\HomeController.php"
-			],
-			[
-				"mast",
-				"app\\views\\layouts\\master.blade.php"
 			],
 			[
 				"scree",
@@ -710,21 +522,6 @@
 	},
 	"settings":
 	{
-		"last_automatic_layout":
-		[
-			[
-				0,
-				0,
-				1,
-				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
-			]
-		],
 		"vintage":
 		{
 		}
@@ -732,7 +529,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 287.0,
 	"status_bar_visible": true,
 	"template_settings":
