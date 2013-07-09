@@ -4,126 +4,129 @@
 		"selected_items":
 		[
 			[
-				"Inp",
-				"Input	Laravel: Input::get()"
+				"inl",
+				"inline-block"
 			],
 			[
-				"coun",
-				"counter"
+				"fsi",
+				"font-size"
 			],
 			[
-				"Vi",
-				"View	Laravel: View::make()"
+				"colo",
+				"colorButtonBackground"
 			],
 			[
-				"Ret",
-				"Redir-to	Redir-to"
+				"my",
+				"myButtonStyle"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/controllers/contact/ContactController.php",
+			"file": "app/views/search/results.blade.php",
 			"settings":
 			{
-				"buffer_size": 596,
+				"buffer_size": 1100,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "<?php\n\nclass EmailController extends BaseController {\n\n	/*\n	|--------------------------------------------------------------------------\n	| Default Home Controller\n	|--------------------------------------------------------------------------\n	|\n	| You may wish to use controllers instead of, or in addition to, Closure\n	| based routes. That's great! Here is an example controller method to\n	| get you started. To route to this controller, just add the route:\n	|\n	|	Route::get('/', 'HomeController@showWelcome');\n	|\n	*/\n\n	public function index()\n	{\n		return View::make('contact.vw_contact');\n	}\n\n}",
-			"file": "app/controllers/mail/EmailController.php",
-			"file_size": 616,
-			"file_write_time": 130178581477341530,
+			"file": "app/views/news/vw_news.blade.php",
 			"settings":
 			{
-				"buffer_size": 594,
+				"buffer_size": 525,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "// Place your settings in the file \"User/Preferences.sublime-settings\", which\n// overrides the settings in here.\n//\n// Settings may also be placed in file type specific options files, for\n// example, in Packages/Python/Python.sublime-settings for python files.\n{\n    // Sets the colors used within the text area\n    \"color_scheme\": \"Packages/Color Scheme - Default/Monokai.tmTheme\",\n\n    // Note that the font_face and font_size are overriden in the platform\n    // specific settings file, for example, \"Preferences (Linux).sublime-settings\".\n    // Because of this, setting them here will have no effect: you must set them\n    // in your User File Preferences.\n    \"font_face\": \"\",\n    \"font_size\": 10,\n\n    // Valid options are \"no_bold\", \"no_italic\", \"no_antialias\", \"gray_antialias\",\n    // \"subpixel_antialias\", \"no_round\" (OS X only), \"GDI\" (Windows only) and\n    // \"directwrite\" (Windows only)\n    \"font_options\": [],\n\n    // Characters that are considered to separate words\n    \"word_separators\": \"./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?\",\n\n    // Set to false to prevent line numbers being drawn in the gutter\n    \"line_numbers\": true,\n\n    // Set to false to hide the gutter altogether\n    \"gutter\": true,\n\n    // Spacing between the gutter and the text\n    \"margin\": 4,\n\n    // Fold buttons are the triangles shown in the gutter to fold regions of text\n    \"fold_buttons\": true,\n\n    // Hides the fold buttons unless the mouse is over the gutter\n    \"fade_fold_buttons\": true,\n\n    // Columns in which to display vertical rulers\n    \"rulers\": [],\n\n    // Set to true to turn spell checking on by default\n    \"spell_check\": false,\n\n    // The number of spaces a tab is considered equal to\n    \"tab_size\": 4,\n\n    // Set to true to insert spaces when tab is pressed\n    \"translate_tabs_to_spaces\": false,\n\n    // If translate_tabs_to_spaces is true, use_tab_stops will make tab and\n    // backspace insert/delete up to the next tabstop\n    \"use_tab_stops\": true,\n\n    // Set to false to disable detection of tabs vs. spaces on load\n    \"detect_indentation\": true,\n\n    // Calculates indentation automatically when pressing enter\n    \"auto_indent\": true,\n\n    // Makes auto indent a little smarter, e.g., by indenting the next line\n    // after an if statement in C. Requires auto_indent to be enabled.\n    \"smart_indent\": true,\n\n    // Adds whitespace up to the first open bracket when indenting. Requires\n    // auto_indent to be enabled.\n    \"indent_to_bracket\": false,\n\n    // Trims white space added by auto_indent when moving the caret off the\n    // line.\n    \"trim_automatic_white_space\": true,\n\n    // Disables horizontal scrolling if enabled.\n    // May be set to true, false, or \"auto\", where it will be disabled for\n    // source code, and otherwise enabled.\n    \"word_wrap\": \"auto\",\n\n    // Set to a value other than 0 to force wrapping at that column rather than the\n    // window width\n    \"wrap_width\": 0,\n\n    // Set to false to prevent word wrapped lines from being indented to the same\n    // level\n    \"indent_subsequent_lines\": true,\n\n    // Draws text centered in the window rather than left aligned\n    \"draw_centered\": false,\n\n    // Controls auto pairing of quotes, brackets etc\n    \"auto_match_enabled\": true,\n\n    // Word list to use for spell checking\n    \"dictionary\": \"Packages/Language - English/en_US.dic\",\n\n    // Set to true to draw a border around the visible rectangle on the minimap.\n    // The color of the border will be determined by the \"minimapBorder\" key in\n    // the color scheme\n    \"draw_minimap_border\": false,\n\n    // Always visualise the viewport on the minimap, as oppossed to only\n    // showing it on mouse over\n    \"always_show_minimap_viewport\": false,\n\n    // If enabled, will highlight any line with a caret\n    \"highlight_line\": false,\n\n    // Valid values are \"smooth\", \"phase\", \"blink\", \"wide\" and \"solid\".\n    \"caret_style\": \"smooth\",\n\n    // Set to false to disable underlining the brackets surrounding the caret\n    \"match_brackets\": true,\n\n    // Set to false if you'd rather only highlight the brackets when the caret is\n    // next to one\n    \"match_brackets_content\": true,\n\n    // Set to false to not highlight square brackets. This only takes effect if\n    // match_brackets is true\n    \"match_brackets_square\": true,\n\n    // Set to false to not highlight curly brackets. This only takes effect if\n    // match_brackets is true\n    \"match_brackets_braces\": true,\n\n    // Set to false to not highlight angle brackets. This only takes effect if\n    // match_brackets is true\n    \"match_brackets_angle\": false,\n\n    // Enable visualization of the matching tag in HTML and XML\n    \"match_tags\": true,\n\n    // Highlights other occurrences of the currently selected text\n    \"match_selection\": true,\n\n    // Additional spacing at the top of each line, in pixels\n    \"line_padding_top\": 0,\n\n    // Additional spacing at the bottom of each line, in pixels\n    \"line_padding_bottom\": 0,\n\n    // Set to false to disable scrolling past the end of the buffer.\n    // On OS X, this value is overridden in the platform specific settings, so\n    // you'll need to place this line in your user settings to override it.\n    \"scroll_past_end\": true,\n\n    // This controls what happens when pressing up or down when on the first\n    // or last line.\n    // On OS X, this value is overridden in the platform specific settings, so\n    // you'll need to place this line in your user settings to override it.\n    \"move_to_limit_on_up_down\": false,\n\n    // Set to \"none\" to turn off drawing white space, \"selection\" to draw only the\n    // white space within the selection, and \"all\" to draw all white space\n    \"draw_white_space\": \"selection\",\n\n    // Set to false to turn off the indentation guides.\n    // The color and width of the indent guides may be customized by editing\n    // the corresponding .tmTheme file, and specifying the colors \"guide\",\n    // \"activeGuide\" and \"stackGuide\"\n    \"draw_indent_guides\": true,\n\n    // Controls how the indent guides are drawn, valid options are\n    // \"draw_normal\" and \"draw_active\". draw_active will draw the indent\n    // guides containing the caret in a different color.\n    \"indent_guide_options\": [\"draw_normal\"],\n\n    // Set to true to removing trailing white space on save\n    \"trim_trailing_white_space_on_save\": false,\n\n    // Set to true to ensure the last line of the file ends in a newline\n    // character when saving\n    \"ensure_newline_at_eof_on_save\": false,\n\n    // Set to true to automatically save files when switching to a different file\n    // or application\n    \"save_on_focus_lost\": false,\n\n    // Save via writing to an alternate file, and then renaming it over the\n    // original file.\n    \"atomic_save\": true,\n\n    // The encoding to use when the encoding can't be determined automatically.\n    // ASCII, UTF-8 and UTF-16 encodings will be automatically detected.\n    \"fallback_encoding\": \"Western (Windows 1252)\",\n\n    // Encoding used when saving new files, and files opened with an undefined\n    // encoding (e.g., plain ascii files). If a file is opened with a specific\n    // encoding (either detected or given explicitly), this setting will be\n    // ignored, and the file will be saved with the encoding it was opened\n    // with.\n    \"default_encoding\": \"UTF-8\",\n\n    // Files containing null bytes are opened as hexadecimal by default\n    \"enable_hexadecimal_encoding\": true,\n\n    // Determines what character(s) are used to terminate each line in new files.\n    // Valid values are 'system' (whatever the OS uses), 'windows' (CRLF) and\n    // 'unix' (LF only).\n    \"default_line_ending\": \"system\",\n\n    // When enabled, pressing tab will insert the best matching completion.\n    // When disabled, tab will only trigger snippets or insert a tab.\n    // Shift+tab can be used to insert an explicit tab when tab_completion is\n    // enabled.\n    \"tab_completion\": true,\n\n    // Enable auto complete to be triggered automatically when typing.\n    \"auto_complete\": true,\n\n    // The maximum file size where auto complete will be automatically triggered.\n    \"auto_complete_size_limit\": 4194304,\n\n    // The delay, in ms, before the auto complete window is shown after typing\n    \"auto_complete_delay\": 50,\n\n    // Controls what scopes auto complete will be triggered in\n    \"auto_complete_selector\": \"source - comment, meta.tag - punctuation.definition.tag.begin\",\n\n    // Additional situations to trigger auto complete\n    \"auto_complete_triggers\": [ {\"selector\": \"text.html\", \"characters\": \"<\"} ],\n\n    // By default, auto complete will commit the current completion on enter.\n    // This setting can be used to make it complete on tab instead.\n    // Completing on tab is generally a superior option, as it removes\n    // ambiguity between committing the completion and inserting a newline.\n    \"auto_complete_commit_on_tab\": false,\n\n    // Controls if auto complete is shown when snippet fields are active.\n    // Only relevant if auto_complete_commit_on_tab is true.\n    \"auto_complete_with_fields\": false,\n\n    // Automatically close HTML and XML tags when </ is entered.\n    \"auto_close_tags\": true,\n\n    // By default, shift+tab will only unindent if the selection spans\n    // multiple lines. When pressing shift+tab at other times, it'll insert a\n    // tab character - this allows tabs to be inserted when tab_completion is\n    // enabled. Set this to true to make shift+tab always unindent, instead of\n    // inserting tabs.\n    \"shift_tab_unindent\": false,\n\n    // If true, the copy and cut commands will operate on the current line\n    // when the selection is empty, rather than doing nothing.\n    \"copy_with_empty_selection\": true,\n\n    // If true, the selected text will be copied into the find panel when it's\n    // shown.\n    // On OS X, this value is overridden in the platform specific settings, so\n    // you'll need to place this line in your user settings to override it.\n    \"find_selected_text\": true,\n\n    // When auto_find_in_selection is enabled, the \"Find in Selection\" flag\n    // will be enabled automatically when multiple lines of text are selected\n    \"auto_find_in_selection\": false,\n\n    // When drag_text is enabled, clicking on selected text will begin a\n    // drag-drop operation. This is not currently implemented under Linux.\n    \"drag_text\": true,\n\n    //\n    // User Interface Settings\n    //\n\n    // The theme controls the look of Sublime Text's UI (buttons, tabs, scroll bars, etc)\n    \"theme\": \"Default.sublime-theme\",\n\n    // Set to 0 to disable smooth scrolling. Set to a value between 0 and 1 to\n    // scroll slower, or set to larger than 1 to scroll faster\n    \"scroll_speed\": 1.0,\n\n    // Controls side bar animation when expanding or collapsing folders\n    \"tree_animation_enabled\": true,\n\n    // Controls animation throughout the application\n    \"animation_enabled\": true,\n\n    // Makes tabs with modified files more visible\n    \"highlight_modified_tabs\": false,\n\n    \"show_tab_close_buttons\": true,\n\n    // Show folders in the side bar in bold\n    \"bold_folder_labels\": false,\n\n    // OS X only: Set to true to disable Lion style full screen support.\n    // Sublime Text must be restarted for this to take effect.\n    \"use_simple_full_screen\": false,\n\n    // OS X only. Valid values are true, false, and \"auto\". Auto will enable\n    // the setting when running on a screen 2560 pixels or wider (i.e., a\n    // Retina display). When this setting is enabled, OpenGL is used to\n    // accelerate drawing. Sublime Text must be restarted for changes to take\n    // effect.\n    \"gpu_window_buffer\": \"auto\",\n\n    // Valid values are \"system\", \"enabled\" and \"disabled\"\n    \"overlay_scroll_bars\": \"system\",\n\n    //\n    // Application Behavior Settings\n    //\n\n    // Exiting the application with hot_exit enabled will cause it to close\n    // immediately without prompting. Unsaved modifications and open files will\n    // be preserved and restored when next starting.\n    //\n    // Closing a window with an associated project will also close the window\n    // without prompting, preserving unsaved changes in the workspace file\n    // alongside the project.\n    \"hot_exit\": true,\n\n    // remember_open_files makes the application start up with the last set of\n    // open files. Changing this to false will have no effect if hot_exit is\n    // true\n    \"remember_open_files\": true,\n\n    // Always prompt before reloading a file, even if the file hasn't been\n    // modified. The default behavior is to automatically reload a file if it\n    // hasn't been edited. If a file has unsaved changes, a prompt will always\n    // be shown.\n    \"always_prompt_for_file_reload\": false,\n\n    // OS X only: When files are opened from finder, or by dragging onto the\n    // dock icon, this controls if a new window is created or not.\n    \"open_files_in_new_window\": true,\n\n    // OS X only: This controls if an empty window is created at startup or not.\n    \"create_window_at_startup\": true,\n\n    // Set to true to close windows as soon as the last file is closed, unless\n    // there's a folder open within the window. This is always enabled on OS X,\n    // changing it here won't modify the behavior.\n    \"close_windows_when_empty\": false,\n\n    // Show the full path to files in the title bar.\n    // On OS X, this value is overridden in the platform specific settings, so\n    // you'll need to place this line in your user settings to override it.\n    \"show_full_path\": true,\n\n    // Shows the Build Results panel when building. If set to false, the Build\n    // Results can be shown via the Tools/Build Results menu.\n    \"show_panel_on_build\": true,\n\n    // Preview file contents when clicking on a file in the side bar. Double\n    // clicking or editing the preview will open the file and assign it a tab.\n    \"preview_on_click\": true,\n\n    // folder_exclude_patterns and file_exclude_patterns control which files\n    // are listed in folders on the side bar. These can also be set on a per-\n    // project basis.\n    \"folder_exclude_patterns\": [\".svn\", \".git\", \".hg\", \"CVS\"],\n    \"file_exclude_patterns\": [\"*.pyc\", \"*.pyo\", \"*.exe\", \"*.dll\", \"*.obj\",\"*.o\", \"*.a\", \"*.lib\", \"*.so\", \"*.dylib\", \"*.ncb\", \"*.sdf\", \"*.suo\", \"*.pdb\", \"*.idb\", \".DS_Store\", \"*.class\", \"*.psd\", \"*.db\", \"*.sublime-workspace\"],\n    // These files will still show up in the side bar, but won't be included in\n    // Goto Anything or Find in Files\n    \"binary_file_patterns\": [\"*.jpg\", \"*.jpeg\", \"*.png\", \"*.gif\", \"*.ttf\", \"*.tga\", \"*.dds\", \"*.ico\", \"*.eot\", \"*.pdf\", \"*.swf\", \"*.jar\", \"*.zip\"],\n\n    // File indexing parses all files in the side bar, and builds an index of\n    // their symbols. This is required for Goto Definition to work.\n    \"index_files\": true,\n\n    // When enabled, anonymised usage data is sent back, assisting Sublime HQ\n    // in making informed decisions about improving Sublime Text. File names\n    // and file contents are never included, but data such as computer\n    // specifications, startup time, installed packages, and edited file types\n    // are. When disabled, telemetry is neither recorded or sent.\n    // A setting of auto will enable telementry in dev builds, and disable\n    // telemetry in regular builds.\n    \"enable_telemetry\": \"auto\",\n\n    // List any packages to ignore here. When removing entries from this list,\n    // a restart may be required if the package contains plugins.\n    \"ignored_packages\": [\"Vintage\"]\n}\n",
-			"file": "/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-			"file_size": -1,
-			"file_write_time": -1,
+			"file": "app/views/search/onehouse.blade.php",
 			"settings":
 			{
-				"buffer_size": 15412,
-				"line_ending": "Windows",
-				"read_only": true,
-				"scratch": true
+				"buffer_size": 675,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+			"file": "app/views/layouts/master.blade.php",
 			"settings":
 			{
-				"buffer_size": 399,
-				"line_ending": "Unix"
+				"buffer_size": 57740,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "Searching 4382 files for \"vintage\"\n\nC:\\Users\\Eatthatfrog\\AppData\\Roaming\\Sublime Text 3\\Packages\\User\\Preferences.sublime-settings:\n    9  	],\n   10  	\"theme\": \"Soda Dark.sublime-theme\",\n   11: 	\"vintage_start_in_command_mode\": true,\n   12: 	\"vintage_use_clipboard\": true,\n   13  	\"wide_caret\": true\n   14  }\n\n2 matches in 1 file\n",
+			"file": "public/comp/sass/screen.scss",
 			"settings":
 			{
-				"buffer_size": 330,
-				"line_ending": "Windows",
-				"name": "Find Results",
-				"scratch": true
+				"buffer_size": 6764,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/contact/vw_contact.blade.php",
+			"settings":
+			{
+				"buffer_size": 2174,
+				"line_ending": "Windows"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 335.0,
+		"height": 375.0,
 		"selected_items":
 		[
 			[
-				"Package Control: ",
-				"Package Control: Install Package"
+				"rem",
+				"Package Control: Remove Package"
 			],
 			[
-				"Package Control: gi",
-				"Package Control: Install Package"
+				"remov",
+				"Package Control: Remove Package"
 			],
 			[
 				"ins",
 				"Package Control: Install Package"
 			],
 			[
-				"rem",
-				"Package Control: Remove Package"
+				"sass",
+				"Set Syntax: Sass"
 			],
 			[
-				"routes",
-				"Package Control: Upgrade/Overwrite All Packages"
-			],
-			[
-				"re",
-				"ReadmePlease"
-			],
-			[
-				"read",
-				"ReadmePlease"
-			],
-			[
-				"Package Control: i",
+				"i",
 				"Package Control: Install Package"
 			],
 			[
 				"inst",
 				"Package Control: Install Package"
+			],
+			[
+				"color",
+				"Convert Case: Lower Case"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
 			]
 		],
 		"width": 402.0
 	},
 	"console":
 	{
-		"height": 0.0,
+		"height": 152.0,
 		"history":
 		[
+			"import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')"
 		]
 	},
 	"distraction_free":
@@ -137,63 +140,38 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
-		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/User/JSON.sublime-settings",
-		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/C/xampp/htdocs/remax/app/views/search/results.blade.php",
-		"/C/xampp/htdocs/remax/app/views/layouts/master.blade.php",
-		"/C/xampp/htdocs/remax/app/controllers/search/SearchController.php",
-		"/C/xampp/htdocs/remax/app/controllers/search/BrowseController.php",
 		"/C/xampp/htdocs/remax/app/routes.php",
-		"/C/xampp/htdocs/remax/artisanCommand.txt",
-		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/User/Gist.sublime-settings",
-		"/C/xampp/htdocs/remax/public/.htaccess",
-		"/W/xampp/apache/conf/extra/httpd-vhosts.conf",
-		"/C/xampp/apache/conf/extra/httpd-vhosts.conf",
-		"/C/Windows/System32/drivers/etc/hosts",
-		"/W/Windows/System32/Drivers/etc/hosts",
-		"/W/xampp/apache/conf/httpd.conf",
-		"/C/xampp/apache/conf/original/extra/httpd-vhosts.conf",
-		"/C/xampp/apache/logs/error.log",
-		"/C/xampp/htdocs/remax/app/config/view.php",
-		"/C/xampp/htdocs/remax/vendor/laravel/framework/src/Illuminate/View/View.php",
-		"/C/xampp/htdocs/remax/app/storage/logs/log-apache2handler-2013-06-23.txt",
-		"/C/xampp/htdocs/remax/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php",
-		"/C/xampp/htdocs/remax/public/comp/stylesheets/screen.css",
-		"/C/xampp/htdocs/remax/public/comp/sass/screen.scss",
-		"/C/xampp/htdocs/remax/app/views/search/onehouse.blade.php",
-		"/C/xampp/htdocs/remax/.sassbuilder-config",
-		"/C/xampp/htdocs/remax/app/models/House.php",
-		"/C/xampp/htdocs/remax/app/models/Image.php",
-		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
-		"/C/xampp/htdocs/remax/app/models/Home.php",
+		"/C/xampp/htdocs/remax/app/controllers/search/BrowseController.php",
+		"/C/xampp/htdocs/remax/app/controllers/agent/AgentController.php",
 		"/C/xampp/htdocs/remax/composer.json",
-		"/C/xampp/htdocs/remax/app/controllers/home/HomeController.php",
-		"/C/xampp/htdocs/remax/app/controllers/BaseController.php",
-		"/C/xampp/htdocs/remax/app/controllers/LoginController.php",
-		"/C/xampp/htdocs/remax/app/database/seeds/ProptypeTableSeeder.php",
-		"/C/xampp/htdocs/remax/app/database/seeds/DatabaseSeeder.php",
-		"/C/xampp/htdocs/remax/app/models/User.php",
-		"/C/xampp/htdocs/remax/app/models/Dog.php",
-		"/C/xampp/htdocs/remax/app/views/homes/index.blade.php",
-		"/C/xampp/htdocs/remax/app/views/about/vw_about.blade.php",
-		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/CHANGELOG",
+		"/C/xampp/htdocs/remax/artisanCommand.txt",
+		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/CHANGELOG",
+		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/Gist.sublime-settings",
+		"/C/xampp/htdocs/remax/app/views/layouts/master.blade.php",
+		"/C/xampp/htdocs/remax/public/comp/sass/screen.scss",
+		"/C/xampp/htdocs/remax/app/views/home/vw_home.blade.php",
+		"/C/xampp/htdocs/remax/app/views/contact/vw_contact.blade.php",
+		"/C/xampp/htdocs/remax/app/controllers/search/SearchController.php",
 		"/C/xampp/htdocs/remax/app/database/seeds/NewsTableSeeder.php",
-		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/Gist/Gist.sublime-settings",
-		"/C/xampp/htdocs/code/system/fonts/index.html",
-		"/C/xampp/htdocs/code/sssss",
-		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/Default (Windows).sublime-keymap",
-		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/Browser Refresh/Default (Windows).sublime-keymap",
-		"/C/xampp/htdocs/code/index.php",
-		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/View In Browser/View In Browser.sublime-settings",
-		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
-		"/C/xampp/htdocs/remax/app/database/migrations/2013_06_29_170323_homes.php",
-		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/User/View In Browser.sublime-settings",
-		"/C/xampp/htdocs/remax/remax.sublime-project",
-		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/C/xampp/htdocs/remax/app/database/seeds/DatabaseSeeder.php",
+		"/C/xampp/htdocs/remax/app/views/search/onehouse.blade.php",
+		"/C/xampp/htdocs/remax/app/views/search/results.blade.php",
+		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/laravel_link.sublime-snippet",
+		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/1symsemi.sublime-macro",
+		"/C/xampp/htdocs/remax/app/views/about/vw_about.blade.php",
+		"/C/xampp/htdocs/remax/app/util/textoperations.php",
+		"/C/xampp/htdocs/remax/app/models/News.php",
+		"/C/xampp/htdocs/remax/app/controllers/news/NewsController.php",
 		"/C/xampp/htdocs/remax/app/views/news/vw_news.blade.php",
-		"/C/xampp/htdocs/remax/app/database/migrations/2013_06_21_182451_create_news_table.php"
+		"/C/xampp/htdocs/remax/app/controllers/admin/ParseController.php",
+		"/C/xampp/htdocs/remax/app/controllers/home/HomeController.php",
+		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/Gist/Gist.sublime-settings",
+		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/xampp/htdocs/remax/app/controllers/news/RealEstateNewsController.php",
+		"/C/xampp/htdocs/remax/app/models/User.php",
+		"/C/xampp/htdocs/remax/app/controllers/BaseController.php",
+		"/C/xampp/htdocs/remaxfc/application/modules/home/controllers/home.php"
 	],
 	"find":
 	{
@@ -201,10 +179,9 @@
 	},
 	"find_in_files":
 	{
-		"height": 96.0,
+		"height": 98.0,
 		"where_history":
 		[
-			""
 		]
 	},
 	"find_state":
@@ -212,18 +189,104 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"vintage",
-			"Vintage",
-			"input",
-			"Illuminate\\Database\\Eloquent\\Builder",
-			"a hre",
-			"ctrl+k",
-			"esc",
-			"vintage",
-			"\"setting.command_mode\"",
-			"vintage",
-			"esc",
-			"soda"
+			"icon",
+			"reale",
+			"residen",
+			"pric",
+			"outs",
+			"outsta",
+			"</p>",
+			"<p>",
+			"real",
+			"=foo",
+			"icon",
+			"p",
+			"icon",
+			"12",
+			"button expand",
+			"secondary",
+			"label radius",
+			"li",
+			"box",
+			"</li>",
+			"<li>",
+			">\n",
+			"button",
+			"secondary",
+			"Li",
+			"li",
+			"class=\"locality properties\"",
+			"condo",
+			"browse all ",
+			"remax1stclass@gmail.com",
+			"contact us",
+			"<div>{{link_to('agent/4', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}\n                 </div>",
+			"\n                   ",
+			"');",
+			"Barry Benveniste",
+			"new",
+			"advanc",
+			"margin",
+			"ol",
+			"@extends('layouts.master')",
+			"		<",
+			"clearing",
+			"2",
+			"23",
+			"3",
+			"2",
+			"columns",
+			"locality",
+			"panel",
+			"panel h3",
+			"account",
+			"accon",
+			"h6",
+			"span",
+			"p",
+			"h4",
+			"href",
+			"subheader",
+			"vcard",
+			"span",
+			"9797",
+			"rent",
+			"garage",
+			"footer",
+			"#",
+			" \">",
+			"panel",
+			"newListingsTitle",
+			"class=\"label\"",
+			"alert-box",
+			"DDDDDD",
+			" !",
+			"section",
+			"account",
+			"loginwrapper",
+			"button",
+			"\n        ",
+			"1",
+			"mobilePhone",
+			"m",
+			"6",
+			"					<div class=\"small-4 columns\">\n						{{Form::label('mobilePhone', 'Mobile Phone')}}\n						{{Form::text('mobilePhone', '', array('placeholder'=>'(***)***-****', 'class'=>'className'))}}\n					</div>\n",
+			"firstNameCreate",
+			"password",
+			"email",
+			"BUYERS",
+			"newsTitle",
+			"read",
+			"logop",
+			"\n	",
+			"breadcrumbsBefore",
+			"#393939",
+			"#428CB9",
+			"#428CB9 ",
+			"#428CB9",
+			"#313131",
+			"BaseController",
+			" {"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -246,28 +309,28 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/controllers/contact/ContactController.php",
+					"file": "app/views/search/results.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 596,
+						"buffer_size": 1100,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								54,
-								54
+								160,
+								160
+							],
+							[
+								986,
+								986
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false,
-							"vintage":
-							{
-							}
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -277,82 +340,24 @@
 				},
 				{
 					"buffer": 1,
-					"file": "app/controllers/mail/EmailController.php",
+					"file": "app/views/news/vw_news.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 594,
+						"buffer_size": 525,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								13,
-								13
+								0,
+								525
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false,
-							"vintage":
-							{
-							}
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 15412,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1044,
-								986
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 399,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								396,
-								396
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -362,53 +367,148 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 2,
+					"file": "app/views/search/onehouse.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 330,
+						"buffer_size": 675,
 						"regions":
 						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										196,
-										203
-									],
-									[
-										243,
-										250
-									]
-								],
-								"scope": ""
-							}
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								598,
+								598
 							]
 						],
 						"settings":
 						{
-							"detect_indentation": false,
-							"line_numbers": false,
-							"output_tag": 1,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
-							"vintage":
-							{
-							}
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/layouts/master.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 57740,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5706,
+								5712
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2330.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "app/views/layouts/master.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 57740,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7283,
+								7283
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2870.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "public/comp/sass/screen.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6764,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3346,
+								3346
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2970.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/views/contact/vw_contact.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2174,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1513,
+								1513
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 780.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -433,11 +533,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.455022907883,
 			1.0
 		],
 		"rows":
@@ -447,6 +554,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 132.0
+	},
 	"project": "remax.sublime-project",
 	"replace":
 	{
@@ -459,60 +570,134 @@
 		"selected_items":
 		[
 			[
-				"ma",
+				"cont",
+				"app\\views\\contact\\vw_contact.blade.php"
+			],
+			[
+				"ro",
+				"app\\routes.php"
+			],
+			[
+				"m",
 				"app\\views\\layouts\\master.blade.php"
+			],
+			[
+				"s",
+				"public\\comp\\sass\\screen.scss"
+			],
+			[
+				"vwho",
+				"app\\views\\home\\vw_home.blade.php"
 			],
 			[
 				"mast",
 				"app\\views\\layouts\\master.blade.php"
 			],
 			[
+				"mas",
+				"app\\views\\layouts\\master.blade.php"
+			],
+			[
+				"ma",
+				"app\\views\\layouts\\master.blade.php"
+			],
+			[
+				"vwco",
+				"app\\views\\contact\\vw_contact.blade.php"
+			],
+			[
+				"contavw",
+				"app\\views\\contact\\vw_contact.blade.php"
+			],
+			[
+				"aboutv",
+				"app\\views\\about\\vw_about.blade.php"
+			],
+			[
+				"homev",
+				"app\\views\\home\\vw_home.blade.php"
+			],
+			[
+				"gis",
+				"C:\\Users\\ckotcha\\AppData\\Roaming\\Sublime Text 3\\Packages\\User\\Gist.sublime-settings"
+			],
+			[
+				"newc",
+				"app\\controllers\\news\\NewsController.php"
+			],
+			[
+				"vwne",
+				"app\\views\\news\\vw_news.blade.php"
+			],
+			[
 				"rou",
 				"app\\routes.php"
 			],
 			[
-				"mastee",
-				"app\\views\\layouts\\master.blade.php"
+				"scr",
+				"public\\comp\\sass\\screen.scss"
+			],
+			[
+				"controllhom",
+				"app\\controllers\\home\\HomeController.php"
 			],
 			[
 				"scree",
 				"public\\comp\\sass\\screen.scss"
 			],
 			[
-				"search/re",
-				"app\\views\\search\\results.blade.php"
+				"home",
+				"application\\modules\\home\\controllers\\home.php"
 			]
 		],
 		"width": 0.0
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"",
+				"C:\\xampp\\htdocs\\foundation\\foundation.sublime-project"
+			]
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"select_symbol":
 	{
-		"height": 0.0,
+		"height": 375.0,
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 746.0
 	},
 	"settings":
 	{
+		"last_automatic_layout":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
 		"vintage":
 		{
-			"last_buffer_search": "alt+s\""
 		}
 	},
-	"show_minimap": false,
+	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 382.0,
+	"side_bar_width": 124.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
