@@ -68,8 +68,8 @@ Route::get('contact', array('as'=>'contact', 'uses'=>'ContactController@index'))
 Route::post('login', array('as'=>'login', 'uses'=>'LoginController@index'));
 
 
-Route::any('search', 'SearchController@index');
-//Route::post('search', 'SearchController@find');
+Route::any('show-all-listings', 'SearchController@index');
+Route::get('search', 'SearchController@index');
 Route::get('search/{id}', 'SearchController@show');
 
 /*  Browse db */

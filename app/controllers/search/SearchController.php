@@ -9,15 +9,9 @@ class SearchController extends BaseController {
      *
      * @return Response
      */
-    public function index()
-    {
-    $houses = House::with('images')->paginate(5);
+  
 
-    return View::make('search.results')->with(compact('houses'));
-
-    }
-
-     public function find()
+     public function index()
     {
     $houses = House::with('images')->where(function($query){
 
@@ -42,7 +36,7 @@ class SearchController extends BaseController {
     $query->where('bathrooms', '>=', $baths);
 
 
-    })->get();
+    })->paginate(5);
 
       
    
