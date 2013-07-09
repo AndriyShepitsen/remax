@@ -7,6 +7,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Remax First Class Realty</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Numans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
     {{HTML::style("comp/stylesheets/normalize.css" )}} 
     {{HTML::style("comp/stylesheets/screen.css" )}} 
     {{HTML::script("//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js")}} 
@@ -88,93 +92,118 @@
           <!-- =logoWrapper -->
           <div class="logoWrapper">
             <div class="row">
-              <aside class="large-8 columns">
+              <aside class="large-2 columns">
 
                <a href="{{URL::route('home')}}" title="Home Page">
                  <img src="{{url('comp/img/REMAX1Logo.png')}}" alt="Remax First Class Logo">
                </a> 
 
-             </aside>
 
-             <!-- =loginButton -->
-             <aside class="large-4 columns">
-              <div class="row">
-                <div class="large-12 columns">
-                  <input type="submit" class="button tiny right loginButton" data-reveal-id="adminAuth" value="LOGIN">
-                  <input type="submit" class="button tiny right" data-reveal-id="createAccount" value="Create an account">
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <a class="th has-tip-left logoPaddingHeader right"  title="Remax Short Sale Chicago"  href="http://www.shortsalechicago.us/Short-Sale-Chicago">
-                    <img src="{{url('comp/img/Chicago-Short-Sale-Logo.png')}}" alt="Chicago Short Sale">
+             </aside>
+             <div class="large-7 columns">
+               <div class="row">
+                 <div class="large-11 columns">
+                   <div class="outstandingAgents">OUTSTANDING AGENTS. </div>
+               
+                 
+                   <div class="outstandingAgents right">OUTSTANDING RESULTS.</div>
+                 </div>
+               </div>
+
+               <div class="row">
+                 <div class="large-12 columns">
+                  <a class="th has-tip-left logoPaddingHeader"  title="Remax Short Sale Chicago"  href="http://www.shortsalechicago.us/Short-Sale-Chicago">
+                    <img src="{{url('comp/img/Chicago-Short-Sale-Logo-head.png')}}" alt="Chicago Short Sale">
+                  </a> 
+                  <a class="th has-tip-left logoPaddingHeader" title="Remax Commercial" href="#">
+                    <img src="{{url('comp/img/remax-commercial-logo-head.png')}}" alt="Remax Commercial">
                   </a>
                 </div>
               </div>
-              <!-- =homeIcon -->
               <div class="row">
-               <div class="large-12 columns right icon">
-                 <a href="{{ URL::route('home')}}" class="homeIcon has-tip-left" title="Home Page">
-                   <img src="{{url('comp/img/home_remax.png')}}" alt="Remax First Class Home Icon">
-                 </a> 
-                 <!-- =mailIcon -->
-                 <a href="#" class="mailIcon has-tip-left" title="Send Us Email" data-reveal-id="myModal"> <img src="{{url('comp/img/mail_remax.png')}}" alt="Remax First Class Mail Icon" ></a>
-               </div> 
-             </div>
-           </aside>
-         </div>
-       </div>
-       <!-- =header ends here -->
-
-
-       <div id="mainContent">
-         <div class="row">
-          <div class="large-8 columns">
-
-           @yield('content')
-         </div>
-
-         <!--  =aside starts here-->
-         <adide class="large-4 columns">
-           <div class="row">
-            <div class="large-12 columns panel">
-             <span class="find">FIND YOUR HOME</span>
-             <div class="row">
                <div class="large-12 columns">
+                 <div class="realEstateRC">Residential, Commercial & Investment Real Estate</div>
+               </div>
+             </div>
+           </div>
+
+           <!-- =loginButton -->
+           <aside class="large-3 columns">
+            <div class="row">
+              <div class="large-12 columns">
+                <input type="submit" class="button tiny right loginButton" data-reveal-id="adminAuth" value="LOGIN">
+                <input type="submit" class="button tiny right" data-reveal-id="createAccount" value="Create an account">
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+
+              </div>
+            </div>
+            <!-- =homeIcon -->
+            <div class="row">
+             <div class="large-12 columns right icon">
+               <a href="{{ URL::route('home')}}" class="homeIcon has-tip-left" title="Home Page">
+                 <img src="{{url('comp/img/home_remax.png')}}" alt="Remax First Class Home Icon">
+               </a> 
+               <!-- =mailIcon -->
+               <a href="#" class="mailIcon has-tip-left" title="Send Us Email" data-reveal-id="myModal"> <img src="{{url('comp/img/mail_remax.png')}}" alt="Remax First Class Mail Icon" ></a>
+             </div> 
+           </div>
+         </aside>
+       </div>
+     </div>
+     <!-- =header ends here -->
 
 
-                 {{Form::open(array('url' => 'search', 'method'=>'POST'))}}
+     <div id="mainContent">
+       <div class="row">
+        <div class="large-8 columns">
 
-                 <div class="row">
-                   <div class="large-12 columns">
-                     {{Form::label('location', 'Location')}}
-                     {{Form::text('location',Input::get('location'), array('placeholder'=>'City and State, Address or Zip Code', 'class'=>'findInput'))}}
-                   </div>
+         @yield('content')
+       </div>
+
+       <!--  =aside starts here-->
+       <adide class="large-4 columns">
+         <div class="row">
+          <div class="large-12 columns panel">
+           <span class="find">FIND YOUR HOME</span>
+           <div class="row">
+             <div class="large-12 columns">
+
+
+               {{Form::open(array('url' => 'search', 'method'=>'POST'))}}
+
+               <div class="row">
+                 <div class="large-12 columns">
+                   {{Form::label('location', 'Location')}}
+                   {{Form::text('location',Input::get('location'), array('placeholder'=>'City and State, Address or Zip Code', 'class'=>'findInput'))}}
                  </div>
+               </div>
 
-                 <div class="row">
-                   <div class="large-12 columns">
-                     {{Form::label('from', 'Price Range')}}
-                   </div>
+               <div class="row">
+                 <div class="large-12 columns">
+                   {{Form::label('from', 'Price Range')}}
                  </div>
+               </div>
 
-                 <div class="row">
-                   <div class="large-6 columns">
-                     {{Form::text('from', Input::get('from'), array('placeholder'=>'$ From', 'class'=>'findInput'))}}
-                   </div>
-                   <div class="large-6 columns">
-                     {{Form::text('to',  Input::get('to'), array('placeholder'=>'$ To', 'class'=>'findInput'))}}
-                   </div>
+               <div class="row">
+                 <div class="large-6 columns">
+                   {{Form::text('from', Input::get('from'), array('placeholder'=>'$ From', 'class'=>'findInput'))}}
                  </div>
-                 <div class="row">
-                   <div class="large-6 columns">
-                     {{Form::label('beds', 'Bedrooms')}}
-                     {{Form::text('beds', Input::get('beds'), array('placeholder'=>'#', 'class'=>'findinput'))}}
-                   </div>
-                   <div class="large-6 columns">
-                     {{Form::label('baths', 'Bathroomss')}}
-                     {{Form::text('baths', Input::get('baths'), array('placeholder'=>'#', 'class'=>'findinput'))}}
-                   </div>
+                 <div class="large-6 columns">
+                   {{Form::text('to',  Input::get('to'), array('placeholder'=>'$ To', 'class'=>'findInput'))}}
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="large-6 columns">
+                   {{Form::label('beds', 'Bedrooms')}}
+                   {{Form::text('beds', Input::get('beds'), array('placeholder'=>'#', 'class'=>'findinput'))}}
+                 </div>
+                 <div class="large-6 columns">
+                   {{Form::label('baths', 'Bathroomss')}}
+                   {{Form::text('baths', Input::get('baths'), array('placeholder'=>'#', 'class'=>'findinput'))}}
+                 </div>
 <!--                    <div class="large-4 columns">
                    {{Form::label('garage', 'garage')}}
                    {{Form::text('garage', '', array('placeholder'=>'#', 'class'=>'findinput'))}}
@@ -196,94 +225,94 @@
          </div>
        </div>
      </div>
-<div class="row">
- <div class="large-12 columns">
-  {{link_to('http://www.remaxskokie.com/search', 'BROWSE ALL LISTINGS', array('class'=>'browseAllListings button radius expand '));}} 
-</div>
-</div>
      <div class="row">
-       <div class="large-6 columns">
-       {{link_to('browse/1', 'SINGLE FAMILY', array('class'=>'alert-box expand radius propertiesAllert'));}}
+       <div class="large-12 columns">
+        {{link_to('http://www.remaxskokie.com/search', 'BROWSE ALL LISTINGS', array('class'=>'browseAllListings button radius expand '));}} 
       </div>
-    
-     <div class="large-6 columns">
-     {{link_to('browse/4', 'MULTI-FAMILY', array('class'=>'alert-box expand radius propertiesAllert'));}}
     </div>
-  </div>
+    <div class="row">
+     <div class="large-6 columns">
+       {{link_to('browse/1', 'SINGLE FAMILY', array('class'=>'alert-box expand radius propertiesAllert'));}}
+     </div>
 
-  <div class="row">
-   <div class="large-6 columns">
-   {{link_to('browse/3', 'CONDO', array('class'=>'alert-box expand radius propertiesAllert'));}}
-  </div>
-
- <div class="large-6 columns">
- {{link_to('browse/2', 'VACANT LAND', array('class'=>'alert-box expand radius propertiesAllert'));}}
-</div>
-</div>
-
-<!-- =find your home ends here -->
-
-<div class="row">
- <section class="large-12 columns panel ">
-   <div>
-     <h4> <a class="newListingsTitle" href="#">NEW LISTINGS</a> </h4>
+     <div class="large-6 columns">
+       {{link_to('browse/4', 'MULTI-FAMILY', array('class'=>'alert-box expand radius propertiesAllert'));}}
+     </div>
    </div>
-   <hr/>
-   <ul class="small-block-grid-3 clearing-thumbs">
-     <li><a class="th radius" href="{{URL::to('search/1')}}"><img src="{{url('comp/img/thumbs/1/1s.jpg')}}" alt=""><a/></li>
-     <li><a class="th radius" href="{{URL::to('search/15')}}"><img src="{{url('comp/img/thumbs/15/1s.jpg')}}" alt=""><a/></li>
-     <li><a class="th radius" href="{{URL::to('search/16')}}"><img src="{{url('comp/img/thumbs/16/1s.jpg')}}" alt=""><a/></li>
-     <li><a class="th radius" href="{{URL::to('search/19')}}"><img src="{{url('comp/img/thumbs/19/1s.jpg')}}" alt=""><a/></li>
-     <li><a class="th radius" href="{{URL::to('search/5')}}"><img src="{{url('comp/img/thumbs/5/1s.jpg')}}" alt=""><a/></li>
-     <li><a class="th radius" href="{{URL::to('search/10')}}"><img src="{{url('comp/img/thumbs/10/1s.jpg')}}" alt=""><a/></li>
-   </ul>
- </section>
-</div>
 
-<div class="row">
- <section class="large-12 columns panel ">
-   <h4><a class="newListingsTitle"href="">OUR AGENTS</a> <h4>
-     <hr/>
-     <ul class="small-block-grid-3 clearing-thumbs " data-clearing>
-       <li><a class="th radius" data-reveal-id="danFlorian" href="#"><img src="{{url('comp/img/agents/Dan_I_Florian.jpg')}}" alt=""><a/>
-         {{link_to('#', 'Dan I. Florian', array('class'=>'agentLink'));}}
-       </li>
-       <li><a class="th radius" data-reveal-id="ivyMoy" href="#"><img src="{{url('comp/img/agents/Ivy_Moy.jpg')}}" alt=""><a/>
-         {{link_to('#', 'Ivy Moy', array('class'=>'agentLink'));}}
-       </li>
-       <li><a class="th radius" data-reveal-id="cheryletteHilton" href="#"><img src="{{url('comp/img/agents/Cherylette_Hilton.jpg')}}" alt=""><a/>
-         {{link_to('#', 'Crerylette Hilton', array('class'=>'agentLink'));}}
-       </li>
-       <li><a class="th radius" data-reveal-id="elenaDan" href="#"><img src="{{url('comp/img/agents/Dan_Elena.jpg')}}" alt=""><a/>
-         {{link_to('#', 'Elena Dan', array('class'=>'agentLink'));}}
-       </li>
-       <li><a class="th radius" data-reveal-id="mariusDan" href="#"><img src="{{url('comp/img/agents/Dan_Elena.jpg')}}" alt=""><a/>
-         {{link_to('#', 'Marius Dan', array('class'=>'agentLink'));}}
-       </li>
-       <li><a class="th radius" data-reveal-id="barryBenveniste" href="#"><img src="{{url('comp/img/agents/Barry_Benveniste.jpg')}}" alt=""><a/>
-         {{link_to('#', 'Barry Benveniste', array('class'=>'agentLink'));}}
-       </li>
-       <li><a class="th radius" data-reveal-id="markFeyman" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt=""><a/>
-         {{link_to('#', 'Mark Feyman', array('class'=>'agentLink'));}}
-       </li>
-       <li><a class="th radius" data-reveal-id="haroldOza" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt=""><a/>
-         {{link_to('#', 'Harold Oza', array('class'=>'agentLink'));}}
-       </li>
-       <li><a class="th radius" data-reveal-id="johnDias" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt=""><a/>
-         {{link_to('#', 'John B. Dias', array('class'=>'agentLink'));}}
-       </li>
-     </ul>
-   </section>
+   <div class="row">
+     <div class="large-6 columns">
+       {{link_to('browse/3', 'CONDO', array('class'=>'alert-box expand radius propertiesAllert'));}}
+     </div>
+
+     <div class="large-6 columns">
+       {{link_to('browse/2', 'VACANT LAND', array('class'=>'alert-box expand radius propertiesAllert'));}}
+     </div>
+   </div>
+
+   <!-- =find your home ends here -->
+
+   <div class="row">
+     <section class="large-12 columns panel ">
+       <div>
+         <h4> <a class="newListingsTitle" href="#">NEW LISTINGS</a> </h4>
+       </div>
+       <hr/>
+       <ul class="small-block-grid-3 clearing-thumbs">
+         <li><a class="th radius" href="{{URL::to('search/1')}}"><img src="{{url('comp/img/thumbs/1/1s.jpg')}}" alt=""><a/></li>
+         <li><a class="th radius" href="{{URL::to('search/15')}}"><img src="{{url('comp/img/thumbs/15/1s.jpg')}}" alt=""><a/></li>
+         <li><a class="th radius" href="{{URL::to('search/16')}}"><img src="{{url('comp/img/thumbs/16/1s.jpg')}}" alt=""><a/></li>
+         <li><a class="th radius" href="{{URL::to('search/19')}}"><img src="{{url('comp/img/thumbs/19/1s.jpg')}}" alt=""><a/></li>
+         <li><a class="th radius" href="{{URL::to('search/5')}}"><img src="{{url('comp/img/thumbs/5/1s.jpg')}}" alt=""><a/></li>
+         <li><a class="th radius" href="{{URL::to('search/10')}}"><img src="{{url('comp/img/thumbs/10/1s.jpg')}}" alt=""><a/></li>
+       </ul>
+     </section>
+   </div>
+
+   <div class="row">
+     <section class="large-12 columns panel ">
+       <h4><a class="newListingsTitle"href="">OUR AGENTS</a> <h4>
+         <hr/>
+         <ul class="small-block-grid-3 clearing-thumbs " data-clearing>
+           <li><a class="th radius" data-reveal-id="danFlorian" href="#"><img src="{{url('comp/img/agents/Dan_I_Florian.jpg')}}" alt=""><a/>
+             {{link_to('#', 'Dan I. Florian', array('class'=>'agentLink'));}}
+           </li>
+           <li><a class="th radius" data-reveal-id="ivyMoy" href="#"><img src="{{url('comp/img/agents/Ivy_Moy.jpg')}}" alt=""><a/>
+             {{link_to('#', 'Ivy Moy', array('class'=>'agentLink'));}}
+           </li>
+           <li><a class="th radius" data-reveal-id="cheryletteHilton" href="#"><img src="{{url('comp/img/agents/Cherylette_Hilton.jpg')}}" alt=""><a/>
+             {{link_to('#', 'Crerylette Hilton', array('class'=>'agentLink'));}}
+           </li>
+           <li><a class="th radius" data-reveal-id="elenaDan" href="#"><img src="{{url('comp/img/agents/Dan_Elena.jpg')}}" alt=""><a/>
+             {{link_to('#', 'Elena Dan', array('class'=>'agentLink'));}}
+           </li>
+           <li><a class="th radius" data-reveal-id="mariusDan" href="#"><img src="{{url('comp/img/agents/Dan_Elena.jpg')}}" alt=""><a/>
+             {{link_to('#', 'Marius Dan', array('class'=>'agentLink'));}}
+           </li>
+           <li><a class="th radius" data-reveal-id="barryBenveniste" href="#"><img src="{{url('comp/img/agents/Barry_Benveniste.jpg')}}" alt=""><a/>
+             {{link_to('#', 'Barry Benveniste', array('class'=>'agentLink'));}}
+           </li>
+           <li><a class="th radius" data-reveal-id="markFeyman" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt=""><a/>
+             {{link_to('#', 'Mark Feyman', array('class'=>'agentLink'));}}
+           </li>
+           <li><a class="th radius" data-reveal-id="haroldOza" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt=""><a/>
+             {{link_to('#', 'Harold Oza', array('class'=>'agentLink'));}}
+           </li>
+           <li><a class="th radius" data-reveal-id="johnDias" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt=""><a/>
+             {{link_to('#', 'John B. Dias', array('class'=>'agentLink'));}}
+           </li>
+         </ul>
+       </section>
+     </div>
+
+   </adide>
+   <!-- =adide ands here -->
+
  </div>
-
-</adide>
-<!-- =adide ands here -->
-
-</div>
 </div>     
 
 
-<!-- /* =footeer starts here */ -->
+<!-- /* =footer starts here */ -->
 
 <footer>
   <div class="row">

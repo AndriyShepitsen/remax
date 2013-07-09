@@ -121,8 +121,30 @@ $copyrightBackgroundColor: #3F3F3F;
 .logoWrapper{
 	@include logoWrapperStyle;
 }
-
-
+.logoPaddingHeader{
+	margin-top: 5px;
+}
+.realEstateRC{
+	font-family: 'Roboto Slab', serif;
+	color: #4B4F54;
+	font-size: 1.2em;
+	margin-top: 5px;
+}
+.outstandingAgents{
+	// font-family: 'Roboto Slab', serif;
+	// font-family: 'Numans', sans-serif;
+	// font-family: 'Noto Sans', sans-serif;
+	font-family: 'Archivo Black', sans-serif;
+	// font-style: italic; 
+	// font-weight: bold;
+	word-spacing: .1em;	
+	letter-spacing: 3px;
+	font-size: 1.3em;
+	color: #EA1E28;
+	// color: #FFFFFF;
+	margin-bottom: 0.4em;
+	text-shadow: #FFFFFF 1px 1px 0px
+}
 
 /* =create an account style starts here */
 .createAccount{
@@ -144,7 +166,7 @@ $copyrightBackgroundColor: #3F3F3F;
 /* =create an account style ends here*/
 
 .icon{
-	margin-top: 20px;
+	margin-top: 70px;
 	text-align: right;
 }
 .mailIcon{
