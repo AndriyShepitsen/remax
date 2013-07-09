@@ -120,6 +120,9 @@ $copyrightBackgroundColor: #3F3F3F;
 }
 .logoWrapper{
 	@include logoWrapperStyle;
+	.th{
+		border-width: 1px !important;
+	}
 }
 .logoPaddingHeader{
 	margin-top: 5px;
@@ -129,6 +132,7 @@ $copyrightBackgroundColor: #3F3F3F;
 	color: #4B4F54;
 	font-size: 1.2em;
 	margin-top: 5px;
+	text-shadow: #FFFFFF 1px 1px 0px
 }
 .outstandingAgents{
 	// font-family: 'Roboto Slab', serif;
@@ -140,7 +144,7 @@ $copyrightBackgroundColor: #3F3F3F;
 	word-spacing: .1em;	
 	letter-spacing: 3px;
 	font-size: 1.3em;
-	color: #EA1E28;
+	color: lighten(#B92025, 10%);
 	// color: #FFFFFF;
 	margin-bottom: 0.4em;
 	text-shadow: #FFFFFF 1px 1px 0px
@@ -230,7 +234,7 @@ label{
 }
 .priceStyle{
 	font-weight: bold !important;
-	color: #B92025 !important;
+	color: lighten(#B92025, 10%) !important;
 }
 .small-block-grid-3 > li{
 	padding-left: 0px !important;
