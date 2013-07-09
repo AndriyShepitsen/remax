@@ -11,7 +11,7 @@ class SearchController extends BaseController {
      */
     public function index()
     {
-    $houses = House::with('images')->get();
+    $houses = House::with('images')->paginate(5);
 
     return View::make('search.results')->with(compact('houses'));
 
