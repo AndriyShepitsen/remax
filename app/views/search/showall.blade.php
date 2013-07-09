@@ -33,12 +33,7 @@
 		</li>
 		@endforeach
 	</ul class="no-bullet">
-<?php echo $houses->appends(array(
-	'location' => Input::get('location'),
-	'from' => Input::get('from'),
-	'to' => Input::get('to'),
-	'beds' => Input::get('beds'),
-	'baths' => Input::get('baths')))->links(); ?>
+<?php echo $houses->appends(array('sort' => 'id'))->links(); ?>
 	@else
 	{No result found for your request}
 	@endif
