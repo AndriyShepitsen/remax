@@ -10,7 +10,7 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Numans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'
     {{HTML::style("comp/stylesheets/normalize.css" )}} 
     {{HTML::style("comp/stylesheets/screen.css" )}} 
     {{HTML::script("//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js")}} 
@@ -104,8 +104,8 @@
                <div class="row">
                  <div class="large-11 columns">
                    <div class="outstandingAgents">OUTSTANDING AGENTS. </div>
-               
-                 
+
+
                    <div class="outstandingAgents right">OUTSTANDING RESULTS.</div>
                  </div>
                </div>
@@ -404,8 +404,6 @@
 </div>
 </div>
 
-<!-- /* My slideDown mail form starts here */
---> 
 <script>
   document.write('<script src=' +
     ('_proto_' in {} ? 'comp/javascripts/vendor/zepto' : 'comp/javascripts/vendor/jquery') +
@@ -448,8 +446,10 @@
 </script>
 
 
+<!-- /* My slideDown mail form starts here */
+--> 
 
-<div id="myModal" class="reveal-modal medium myModal2">
+<div id="myModal" class="reveal-modal small myModal2 panel">
   <a class="close-reveal-modal">&#215;</a>
   <div class="row">
     <div class="large-12 columns">
@@ -477,6 +477,9 @@
   {{Form::open(array('url' => 'foo/bar'))}}
   {{Form::label('email', 'Your E-mail')}}
   {{Form::text('email', '', array('placeholder'=>'@', 'class'=>'txt'))}}
+  {{Form::label('subject', 'Subject')}}
+  {{Form::text('subject', '', array('placeholder'=>'Your subject', 'class'=>'className'))}}
+
   {{Form::label('msg', 'Enter a Message')}}
   {{Form::textarea('msg', '', array('placeholder'=>'', 'class'=>'txtarea'))}}
   {{ Form::submit('Send', array('class'=>'button small radius'))}}
@@ -503,7 +506,6 @@
   <a class="close-reveal-modal">&#215;</a>
   <div class="row">
     <div class="large-12 columns">
-      {{Form::open(array('url' => 'foo/bar'))}}
       <div class="navPanel">
         <nav class="top-bar min">
           <div class="large-2 columns">
@@ -527,6 +529,7 @@
   <!-- =create an account panel ends here -->
 
   <!-- =create an account form starts here -->
+      {{Form::open(array('url' => 'foo/bar'))}}
   <div class="row">
 
     <div class="large-12 columns createAccount">  
