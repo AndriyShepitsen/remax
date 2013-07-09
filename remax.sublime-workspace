@@ -4,172 +4,126 @@
 		"selected_items":
 		[
 			[
-				"inl",
-				"inline-block"
+				"Inp",
+				"Input	Laravel: Input::get()"
 			],
 			[
-				"fsi",
-				"font-size"
+				"coun",
+				"counter"
 			],
 			[
-				"colo",
-				"colorButtonBackground"
+				"Vi",
+				"View	Laravel: View::make()"
 			],
 			[
-				"my",
-				"myButtonStyle"
+				"Ret",
+				"Redir-to	Redir-to"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/views/search/results.blade.php",
+			"file": "app/controllers/contact/ContactController.php",
 			"settings":
 			{
-				"buffer_size": 1069,
+				"buffer_size": 596,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/views/news/vw_news.blade.php",
+			"contents": "<?php\n\nclass EmailController extends BaseController {\n\n	/*\n	|--------------------------------------------------------------------------\n	| Default Home Controller\n	|--------------------------------------------------------------------------\n	|\n	| You may wish to use controllers instead of, or in addition to, Closure\n	| based routes. That's great! Here is an example controller method to\n	| get you started. To route to this controller, just add the route:\n	|\n	|	Route::get('/', 'HomeController@showWelcome');\n	|\n	*/\n\n	public function index()\n	{\n		return View::make('contact.vw_contact');\n	}\n\n}",
+			"file": "app/controllers/mail/EmailController.php",
+			"file_size": 616,
+			"file_write_time": 130178581477341530,
 			"settings":
 			{
-				"buffer_size": 525,
+				"buffer_size": 594,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "<!-- //LOCATION: remax/public\n<!-- //<!DOCTYPE html>\n  <!--[if IE 8]> <html class=\"no-js lt-ie9\" lang=\"en\"> <![endif]-->\n  <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en\"> <!--<![endif]-->\n  <html>\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width\" />\n    <title>Remax First Class Realty</title>\n    {{HTML::style(\"comp/stylesheets/normalize.css\" )}} \n    {{HTML::style(\"comp/stylesheets/screen.css\" )}} \n    {{HTML::script(\"//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js\")}} \n\n    {{HTML::script(\"comp/javascripts/vendor/custom.modernizr.js\")}} \n    {{HTML::script(\"comp/javascripts/foundation.min.js\")}} \n    {{HTML::script(\"comp/javascripts/script.js\")}} \n\n\n  </head>\n  <body>\n    <!-- navPanel starts here -->\n    <div class=\"navPanel\">\n      <div class=\"row\">\n        <div class=\"large-12 columns\">\n\n          <nav class=\"top-bar\">\n            <ul class=\"title-area\">\n              <!-- Title Area -->\n              <li class=\"name\">\n                <h1>\n                  {{link_to_route('home', 'REMAX FIRST CLASS');}}\n                </h1>\n              </li>\n              <!-- Remove the class \"menu-icon\" to get rid of menu icon. Take out  \"Menu\" to just have icon alone -->\n\n              <li class=\"toggle-topbar menu-icon\"><a href=\"#\"><span>Menu</span></a></li>\n            </ul>\n            <section class=\"top-bar-section\">\n              <ul class=\"right\">\n                <li>{{link_to_route('home', 'Home');}}</li>\n                <li>{{link_to_route('about', 'About');}}</li>\n                <li class=\"has-dropdown\">{{link_to('#', 'Buying');}}\n\n                  <ul class=\"dropdown\">\n                    <li>{{link_to_route('the_benefits_of_home_ownership', 'The Benefits of Home Ownership');}}</li>\n                    <li>{{link_to_route('the_importance_of_buyers_agent', 'The Importance of a Buyer\\'s Agent');}}</li>\n                    <li>{{link_to_route('deciding_where_to_live', 'Deciding Where to Live');}}</li>\n                    <li>{{link_to_route('anatomy_of_a_home_purchase', 'Anatomy of a Home Purchase');}}</li>\n                    <li>{{link_to_route('how_much_house_can_you_afford', 'How Much House Can You Afford?');}}</li>\n                    <li>{{link_to_route('five_tips_to_narrow_your_online_home_search', '5 Tips to Narrow Your Online Home Search');}}</li>\n                  </ul>\n                </li>\n                <li class=\"has-dropdown\">{{link_to('#', 'Selling');}}\n                  <ul class=\"dropdown\">\n                    <li>{{link_to_route('the_right_listing_agent', 'The Right Listing Agent');}}</li>\n                    <li>{{link_to_route('how_an_agent_markets_your_home', 'How an Agent Markets Your Home');}}</li>\n                    <li>{{link_to_route('pricing_your_home_to_sell', 'Pricing Your Home to Sell');}}</li>\n                    <li>{{link_to_route('preparing_your_house_for_sale', 'Preparing Your House for Sale');}}</li>\n                    <li>{{link_to_route('consider_a_home_inspection_when_selling', 'Consider a Home Inspection When Selling');}}</li>\n                  </ul>\n                  <li/>\n                  <li class=\"has-dropdown\">{{link_to('#', 'Mortgage');}}\n                    <ul class=\"dropdown\">\n                      <li>{{link_to_route('preparing_your_house_for_sale', 'Preparing Your House for Sale');}}</li>\n                      <li>{{link_to_route('finding_the_right_mortgage_professional', 'Finding the Right Mortgage Professional');}}</li>\n                      <li>{{link_to_route('getting_preapproved', 'Getting Preapproved');}}</li>\n                      <li>{{link_to_route('how_much_can_you_afford', 'How Much Can you afford?');}}</li>\n                      <li>{{link_to_route('down_payments_how_much_do_you_need', 'Down Payments: How Much Do You Need?');}}</li>\n                      <li>{{link_to_route('mortgages_101_basic_loan_types', 'Mortgages 101: Basic Loan Types');}}</li>\n                      <li>{{link_to_route('renovating_a_home', 'Renovating a Home? Consider a 203(k) Loan');}}</li>\n                    </ul>\n                    <li/>\n                    <li class=\"has-dropdown\">{{link_to('#', 'News');}}\n                      <ul class=\"dropdown\">\n                        <li>{{link_to_route('real_estate_news', 'Real Estate News');}}</li>\n                        <li>{{link_to_route('news_for_buyers', 'News for Buyers');}}</li>\n                        <li>{{link_to_route('news_for_sellers', 'News for Sellers');}}</li>\n                      </ul>\n                      <li/>\n                      <li>{{link_to_route('contact', 'Contact');}}</li> \n                    </ul>\n                  </section>\n                </nav>\n              </div>\n            </div>\n          </div>\n\n          <!-- =logoWrapper -->\n          <div class=\"logoWrapper\">\n            <div class=\"row\">\n              <aside class=\"large-8 columns\">\n\n               <a href=\"{{URL::route('home')}}\" title=\"Home Page\">\n                 <img src=\"{{url('comp/img/REMAX1Logo.png')}}\" alt=\"Remax First Class Logo\">\n               </a> \n\n             </aside>\n\n             <!-- =loginButton -->\n             <aside class=\"large-4 columns\">\n              <div class=\"row\">\n                <div class=\"large-12 columns\">\n                  <input type=\"submit\" class=\"button tiny right loginButton\" data-reveal-id=\"adminAuth\" value=\"LOGIN\">\n                  <input type=\"submit\" class=\"button tiny right\" data-reveal-id=\"createAccount\" value=\"Create an account\">\n                </div>\n              </div>\n              <!-- =homeIcon -->\n              <div class=\"row\">\n               <div class=\"large-12 columns right icon\";>\n                 <a href=\"{{ URL::route('home')}}\" class=\"homeIcon has-tip-left\" title=\"Home Page\">\n                   <img src=\"{{url('comp/img/home_remax.png')}}\" alt=\"Remax First Class Home Icon\">\n                 </a> \n                 <!-- =mailIcon -->\n                 <a href=\"#\" class=\"mailIcon has-tip-left\" title=\"Send Us Email\" data-reveal-id=\"myModal\"> <img src=\"{{url('comp/img/mail_remax.png')}}\" alt=\"Remax First Class Mail Icon\" ></a>\n               </div> \n             </div>\n           </aside>\n         </div>\n       </div>\n       <!-- =header ends here -->\n\n\n       <div id=\"mainContent\">\n         <div class=\"row\">\n          <div class=\"large-8 columns\">\n\n           @yield('content')\n         </div>\n\n         <!--  =aside starts here-->\n         <adide class=\"large-4 columns\">\n           <div class=\"row\">\n            <div class=\"large-12 columns panel\">\n             <span class=\"find\">FIND YOUR HOME</span>\n             <div class=\"row\">\n               <div class=\"large-12 columns\">\n\n\n                 {{Form::open(array('url' => 'search', 'method'=>'POST'))}}\n\n                 <div class=\"row\">\n                   <div class=\"large-12 columns\">\n                     {{Form::label('location', 'Location')}}\n                     {{Form::text('location',Input::get('location'), array('placeholder'=>'City and State, Address or Zip Code', 'class'=>'findInput'))}}\n                   </div>\n                 </div>\n\n                 <div class=\"row\">\n                   <div class=\"large-12 columns\">\n                     {{Form::label('from', 'Price Range')}}\n                   </div>\n                 </div>\n\n                 <div class=\"row\">\n                   <div class=\"large-6 columns\">\n                     {{Form::text('from', Input::get('from'), array('placeholder'=>'$ From', 'class'=>'findInput'))}}\n                   </div>\n                   <div class=\"large-6 columns\">\n                     {{Form::text('to',  Input::get('to'), array('placeholder'=>'$ To', 'class'=>'findInput'))}}\n                   </div>\n                 </div>\n                 <div class=\"row\">\n                   <div class=\"large-6 columns\">\n                     {{Form::label('beds', 'Bedrooms')}}\n                     {{Form::text('beds', Input::get('beds'), array('placeholder'=>'#', 'class'=>'findinput'))}}\n                   </div>\n                   <div class=\"large-6 columns\">\n                     {{Form::label('baths', 'Bathroomss')}}\n                     {{Form::text('baths', Input::get('baths'), array('placeholder'=>'#', 'class'=>'findinput'))}}\n                   </div>\n<!--                    <div class=\"large-4 columns\">\n                   {{Form::label('garage', 'garage')}}\n                   {{Form::text('garage', '', array('placeholder'=>'#', 'class'=>'findinput'))}}\n                 </div>\n               -->                 </div>\n               <div class=\"row\">\n                 <div class=\"small-2 columns\">\n\n                   {{ Form::submit('Search', array('class'=>'secondary button small radius'))}}\n                   <br/>\n                 </div>\n               </div>\n               <div class=\"row\">\n                 <div class=\"large-12 column\">\n                   <ul class=\"breadcrumbs\">\n                     <li>{{link_to('http://www.remaxskokie.com/search', 'Browse All Listings', array('class'=>'advanceSearch'));}}</li>\n                     <!-- <li>{{link_to('#', 'Search by MLS#', array('class'=>'advanceSearch'));}}</li> -->\n                   </ul>\n                 </div>\n               </div>\n               {{Form::close()}}\n\n\n             </div>\n           </div>\n         </div>\n       </div>\n\n       <!-- =find your home ends here -->\n\n       <div class=\"row\">\n         <section class=\"large-12 columns panel \">\n           <div>\n             <h4> <a class=\"newListingsTitle\" href=\"#\">NEW LISTINGS</a> </h4>\n           </div>\n           <hr/>\n           <ul class=\"small-block-grid-3 clearing-thumbs\">\n             <li><a class=\"th radius\" href=\"{{URL::to('search/1')}}\"><img src=\"{{url('comp/img/thumbs/1/1s.jpg')}}\" alt=\"\"><a/></li>\n             <li><a class=\"th radius\" href=\"{{URL::to('search/15')}}\"><img src=\"{{url('comp/img/thumbs/15/1s.jpg')}}\" alt=\"\"><a/></li>\n             <li><a class=\"th radius\" href=\"{{URL::to('search/16')}}\"><img src=\"{{url('comp/img/thumbs/16/1s.jpg')}}\" alt=\"\"><a/></li>\n             <li><a class=\"th radius\" href=\"{{URL::to('search/19')}}\"><img src=\"{{url('comp/img/thumbs/19/1s.jpg')}}\" alt=\"\"><a/></li>\n             <li><a class=\"th radius\" href=\"{{URL::to('search/5')}}\"><img src=\"{{url('comp/img/thumbs/5/1s.jpg')}}\" alt=\"\"><a/></li>\n             <li><a class=\"th radius\" href=\"{{URL::to('search/10')}}\"><img src=\"{{url('comp/img/thumbs/10/1s.jpg')}}\" alt=\"\"><a/></li>\n           </ul>\n         </section>\n       </div>\n\n       <div class=\"row\">\n         <section class=\"large-12 columns panel \">\n           <h4><a class=\"newListingsTitle\"href=\"\">OUR AGENTS</a> <h4>\n             <hr/>\n             <ul class=\"small-block-grid-3 clearing-thumbs \" data-clearing>\n               <li><a class=\"th radius\" data-reveal-id=\"danFlorian\" href=\"#\"><img src=\"{{url('comp/img/agents/Dan_I_Florian.jpg')}}\" alt=\"\"><a/>\n                 {{link_to('#', 'Dan I. Florian', array('class'=>'agentLink'));}}\n               </li>\n               <li><a class=\"th radius\" data-reveal-id=\"ivyMoy\" href=\"#\"><img src=\"{{url('comp/img/agents/Ivy_Moy.jpg')}}\" alt=\"\"><a/>\n                 {{link_to('#', 'Ivy Moy', array('class'=>'agentLink'));}}\n               </li>\n               <li><a class=\"th radius\" data-reveal-id=\"cheryletteHilton\" href=\"#\"><img src=\"{{url('comp/img/agents/Cherylette_Hilton.jpg')}}\" alt=\"\"><a/>\n                 {{link_to('#', 'Crerylette Hilton', array('class'=>'agentLink'));}}\n               </li>\n               <li><a class=\"th radius\" data-reveal-id=\"elenaDan\" href=\"#\"><img src=\"{{url('comp/img/agents/Dan_Elena.jpg')}}\" alt=\"\"><a/>\n                 {{link_to('#', 'Elena Dan', array('class'=>'agentLink'));}}\n               </li>\n               <li><a class=\"th radius\" data-reveal-id=\"mariusDan\" href=\"#\"><img src=\"{{url('comp/img/agents/Dan_Elena.jpg')}}\" alt=\"\"><a/>\n                 {{link_to('#', 'Marius Dan', array('class'=>'agentLink'));}}\n               </li>\n               <li><a class=\"th radius\" data-reveal-id=\"barryBenveniste\" href=\"#\"><img src=\"{{url('comp/img/agents/Barry_Benveniste.jpg')}}\" alt=\"\"><a/>\n                 {{link_to('#', 'Barry Benveniste', array('class'=>'agentLink'));}}\n               </li>\n               <li><a class=\"th radius\" data-reveal-id=\"markFeyman\" href=\"#\"><img src=\"{{url('comp/img/agents/3.png')}}\" alt=\"\"><a/>\n                 {{link_to('#', 'Mark Feyman', array('class'=>'agentLink'));}}\n               </li>\n               <li><a class=\"th radius\" data-reveal-id=\"haroldOza\" href=\"#\"><img src=\"{{url('comp/img/agents/3.png')}}\" alt=\"\"><a/>\n                 {{link_to('#', 'Harold Oza', array('class'=>'agentLink'));}}\n               </li>\n               <li><a class=\"th radius\" data-reveal-id=\"johnDias\" href=\"#\"><img src=\"{{url('comp/img/agents/3.png')}}\" alt=\"\"><a/>\n                 {{link_to('#', 'John B. Dias', array('class'=>'agentLink'));}}\n               </li>\n             </ul>\n           </section>\n         </div>\n\n       </adide>\n       <!-- =adide ands here -->\n\n     </div>\n   </div>     \n\n\n   <!-- /* =footeer starts here */ -->\n\n   <footer>\n    <div class=\"row\">\n      <div class=\"large-4 columns\">\n        <div class=\"row\">\n          <div class=\"large-12 columns\">\n            <a class=\"th has-tip-left logoPadding\" title=\"Multiple Listing Service\" href=\"#\">\n              <img src=\"{{url('comp/img/mls.png')}}\" alt=\"Multiple Listing Service\">\n            </a>\n            <a class=\"th has-tip-left logoPadding\" title=\"Remax Commercial\" href=\"#\">\n              <img src=\"{{url('comp/img/remax-commercial-logo.png')}}\" alt=\"Remax Commercial\">\n            </a>\n            <a class=\"th has-tip-left logoPadding\"  title=\"Remax Short Sale Chicago\"  href=\"http://www.shortsalechicago.us/Short-Sale-Chicago\">\n              <img src=\"{{url('comp/img/Chicago-Short-Sale-Logo.png')}}\" alt=\"Chicago Short Sale\">\n            </a>\n          </div>\n        </div>\n        <div class=\"row\">\n          <div class=\"large-12 columns logoRemaxFooter\">\n            <a href=\"{{ URL::route('home')}}\">\n              <img src=\"{{url('comp/img/logo-footer.png')}}\" alt=\"Logo Remax First Class\">\n              <a/>\n            </div>\n          </div>\n        </div>\n        <div class=\"large-4 columns\">\n\n          <section class=\"large-6 columns social\">\n            <ul class=\"prop\">\n              <span class=\"propertiesFooter\">PROPERTIES FOR SALE:</span> <br/>\n              <li class=\"locality properties\">{{link_to('browse/1', 'Single Family');}}</li>\n              <li class=\"locality properties\">{{link_to('browse/4', 'Multi-Family');}}</li>\n              <li class=\"locality properties\">{{link_to('browse/3', 'Condo');}}</li>\n              <li class=\"locality properties\">{{link_to('browse/2', 'Vacant Land');}}</li>\n            </ul>\n          </section>\n\n<!--             <section class=\"large-6 columns social\">\n  <ul class=\"prop\">\n    <span class=\"propertiesFooter\">PROPERTIES FOR RENT:</span> <br/>\n    <li class=\"locality properties\">{{link_to('#', 'Single home');}}</li>\n    <li class=\"locality properties\">{{link_to('#', 'Family home');}}</li>\n    <li class=\"locality properties\">{{link_to('#', 'Apartment');}}</li>\n    <li class=\"locality properties\">{{link_to('#', 'Villa');}}</li>\n    <li class=\"locality properties\">{{link_to('#', 'Condo');}}</li>\n    <li class=\"locality properties\">{{link_to('#', 'Other');}}</li>\n  </ul>\n</section>\n-->\n</div>\n\n<div class=\"large-4 columns\">\n  <div class=\"large-6 columns\">\n    <ul class=\"vcard\">\n      <span class=\"connectFooter\">CONTACT INFORMATION:</span>\n      <li class=\"locality\"> PHONE: (847) 674-9797</li>\n      <li class=\"locality\"> FAX: (847) 674-0411</li>\n      <li class=\"street-address\">4023 W. Church St.</li>\n      <li class=\"locality\">Skokie</li>\n      <li><span class=\"state\">IL</span> <span class=\"zip\">600076</span></li>\n      <li class=\"email\">{{link_to('#', 'remax1stclass@gmail.com');}}</li>\n    </ul>\n  </div>\n  <section class=\"large-6 columns social\">\n    <span class=\"contactFooter\">CONNECT WITH US:</span>\n    <ul class=\"small-block-grid-3\">\n      <li><a class=\"has-tip-left\" title=\"Our Facebook Page\" href=\"#\"><img src=\"{{url('comp/img/facebook.png')}}\" alt=\"Skokie Remax First Class Facebook Icon\"><a/></li>\n      <li><a class=\"has-tip-left\" title=\"Our Feed Page\" href=\"#\"><img src=\"{{url('comp/img/feed.png')}}\" alt=\"Skokie Remax First Class Feed Icon\"><a/></li>\n      <li><a class=\"has-tip-left\" title=\"Our Page\" href=\"#\"><img src=\"{{url('comp/img/youtube.png')}}\" alt=\"Skokie Remax First Class Youtube Icon\"><a/></li>\n      <li><a class=\"has-tip-left\" title=\"Our Twitter Page\" href=\"#\"><img src=\"{{url('comp/img/twitter.png')}}\" alt=\"Skokie Remax First Class Twitter Icon\"><a/></li>\n      <li><a class=\"has-tip-left\" title=\"Our Google Plus Page\" href=\"#\"><img src=\"{{url('comp/img/google.png')}}\" alt=\"Skokie Remax First Class Google Icon\"><a/></li>\n      <li><a class=\"has-tip-left\" title=\"Our Linkedin Page\" href=\"#\"><img src=\"{{url('comp/img/linkedin.png')}}\" alt=\"Skokie Remax First Class Linkedin Icon\"><a/></li>\n    </ul>\n  </section>\n</div>\n</div>\n</footer>\n\n<!-- /* =copyright starts here */ -->\n\n<div class=\"copyright\">\n  <div class=\"row\">\n    <div class=\"large-4 large-centered columns copy\">\n      <p>© 2013 RE/MAX FIRST CLASS</p> \n    </div>\n\n  </div>\n</div>\n</div>\n</div>\n\n<!-- /* My slideDown mail form starts here */\n--> \n<script>\n  document.write('<script src=' +\n    ('_proto_' in {} ? 'comp/javascripts/vendor/zepto' : 'comp/javascripts/vendor/jquery') +\n    '.js><\\/script>')\n</script>\n\n{{HTML::script(\"comp/javascripts/foundation/foundation.js\")}}\n\n{{HTML::script(\"comp/javascripts/foundation/foundation.alerts.js\")}}\n\n{{HTML::script(\"comp/javascripts/foundation/foundation.clearing.js\")}}\n\n{{HTML::script(\"comp/javascripts/foundation/foundation.cookie.js\")}}\n\n{{HTML::script(\"comp/javascripts/foundation/foundation.dropdown.js\")}}\n\n{{HTML::script(\"comp/javascripts/foundation/foundation.forms.js\")}}\n\n{{HTML::script(\"comp/javascripts/foundation/foundation.interchange.js\")}}\n\n{{HTML::script(\"comp/javascripts/foundation/foundation.joyride.js\")}}\n\n{{HTML::script(\"comp/javascripts/foundation/foundation.magellan.js\")}}\n\n{{HTML::script(\"comp/javascripts/foundation/foundation.orbit.js\")}}\n\n{{HTML::script(\"comp/javascripts/foundation/foundation.placeholder.js\")}}\n\n{{HTML::script(\"comp/javascripts/foundation/foundation.reveal.js\")}}\n\n{{HTML::script(\"comp/javascripts/foundation/foundation.section.js\")}}\n\n{{HTML::script(\"comp/javascripts/foundation/foundation.tooltips.js\")}}\n\n{{HTML::script(\"comp/javascripts/foundation/foundation.topbar.js\")}}\n\n\n<script>\n  $(document).foundation();\n</script>\n\n\n\n<div id=\"myModal\" class=\"reveal-modal medium myModal2\">\n  <h3 class=\"subheader\">Contact Us</h3>\n  {{Form::open(array('url' => 'foo/bar'))}}\n  {{Form::label('email', 'Your E-mail')}}\n  {{Form::text('email', '', array('placeholder'=>'@', 'class'=>'txt'))}}\n  {{Form::label('msg', 'Enter a Message')}}\n  {{Form::textarea('msg', '', array('placeholder'=>'', 'class'=>'txtarea'))}}\n  {{ Form::submit('Send', array('class'=>'secondary button small radius'))}}\n\n\n  <a class=\"close-reveal-modal\">&#215;</a>\n  {{Form::close()}}\n</div>\n\n\n<!--\n/* insert data-reveal-id to link with the same id */\n\n<a href=\"#\" class=\"mailIcon has-tip-left\" title=\"Send Us Email\" data-reveal-id=\"myModal\"> <img src=\"{{url('comp/img/mail_remax.png')}}\" alt=\"Remax First Class Mail Icon\" ></a>\n-->\n\n\n\n<!-- /* My slideDown Create account Form Starts Here */ -->\n\n\n<div id=\"createAccount\" class=\"reveal-modal medium createAccount panel\">\n  <a class=\"close-reveal-modal\">&#215;</a>\n  <div class=\"row\">\n    <div class=\"large-12 columns\">\n      {{Form::open(array('url' => 'foo/bar'))}}\n      <div class=\"navPanel\">\n        <div class=\"row\">\n          <div class=\"large-12 columns\">\n\n            <nav class=\"top-bar\">\n              <ul class=\"title-area right\">\n                <!-- Title Area -->\n                <li class=\"name\">\n                  <h1>\n                    {{link_to_route('home', 'REMAX FIRST CLASS');}}\n                  </h1>\n                </li>\n              </ul>\n            </nav>\n          </div>\n        </div>\n      </div>\n      <!-- =create an account panel ends here -->\n\n      <!-- =create an account form starts here -->\n      <div class=\"row\">\n\n        <div class=\"large-12 columns createAccount\">  \n          <h3 class=\"subheader account\">Create Your Account</h3>\n\n          <div class=\"row\">\n            <div class=\"large-6 columns\">\n              {{Form::label('firstNameCreate', 'First Name')}}\n              {{Form::text('firstNameCreate', '', array('placeholder'=>'Your Name', 'class'=>'className'))}}\n            </div>\n\n            <div class=\"large-6 columns\">{{Form::label('lastNameCreate', 'Last Name')}}\n              {{Form::text('lastNameCreate', '', array('placeholder'=>'Your last name', 'class'=>'className'))}}\n            </div>\n          </div>\n\n\n          <div class=\"row\">\n            <div class=\"large-6 columns\">\n              {{Form::label('emailCreate', 'Email Address')}}\n              <div class=\"row collapse\">\n                <div class=\"small-2 columns\">\n                  <span class=\"prefix\">@</span>\n                </div>\n                <div class=\"small-10 columns\">\n                  {{Form::text('emailCreate', '', array('placeholder'=>'Your email', 'class'=>'className'))}}\n                </div>\n              </div>\n            </div>        \n\n            <div class=\"large-6 columns\">\n              {{Form::label('mobilePhoneCreate', 'Mobile Phone')}}\n              {{Form::text('mobilePhoneCreate', '', array('placeholder'=>'(***)***-****', 'class'=>'className'))}}\n            </div>\n          </div>      \n\n          <div class=\"row\">\n            <div class=\"large-6 columns\">\n              {{Form::label('passwordCreate', 'Password')}}\n              {{Form::text('passwordCreate', '', array('placeholder'=>'**********', 'class'=>'className'))}}\n            </div>\n            <div class=\"large-6 columns\">\n              {{Form::label('confirmPasswordCreate', 'Confirm Password')}}\n              {{Form::text('confirmPasswordCreate', '', array('placeholder'=>'**********', 'class'=>'className'))}}\n            </div>\n          </div>      \n\n          <div class=\"row\">\n            <div class=\"small-2 columns\">\n              {{ Form::submit('Create Your Free Account', array('class'=>'button small radius'))}}\n            </div>\n          </div>\n        </div>\n\n\n        {{Form::close()}}\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- =create an account form ends here -->\n\n</div>\n<!--\n/* insert data-reveal-id to your button with the same id */\n                   <input type=\"submit\" class=\"button tiny right loginButton\" data-reveal-id=\"adminAuth\" value=\"LOGIN\">\n                 -->\n\n                 <!-- /* My slideDown Authentification Form Starts Here */ -->\n\n\n                 <div id=\"adminAuth\" class=\"reveal-modal small adminAuth2 createAccount panel\">\n                  <a class=\"close-reveal-modal\">&#215;</a>\n                  <div class=\"row\">\n                    <div class=\"large-12 columns\">\n                      {{Form::open(array('url'=>'/login'))}} \n                      <div class=\"navPanel\">\n                        <div class=\"row\">\n                          <div class=\"large-12 columns\">\n\n                            <nav class=\"top-bar\">\n                              <ul class=\"title-area right\">\n                                <!-- Title Area -->\n                                <li class=\"name\">\n                                  <h1>\n                                    {{link_to_route('home', 'REMAX FIRST CLASS');}}\n                                  </h1>\n                                </li>\n                              </ul>\n                            </nav>\n                          </div>\n                        </div>\n                      </div>\n\n\n                      <div class=\"row\"> \n                       <div class=\"large-12 columns\">\n                         <h3 class=\"subheader account\">Sign in to Your Account</h3>\n                         <div class=\"row\">\n                          <div class=\"large-6 columns\">\n                            {{Form::label('emailSignIn', 'Your Email')}}\n                            {{ Form::email('emailSignIn', $value = null, $attributes = array())}}\n                          </div>\n                          <div class=\"large-6 columns\">\n                            {{Form::label('passwordSignIn', 'Your Password')}}\n                            {{ Form::password('passwordSignIn', $value = null, $attributes = array())}}\n                          </div>\n                        </div>\n                        {{ Form::submit('Login', $attributes = array('class'=>'button tiny radius'))}}\n                        {{Form::close()}} \n                      </div>\n                    </div>\n                  </div>\n                </div>\n\n              </div>\n<!--\n/* insert data-reveal-id to your button with the same id */\n                   <input type=\"submit\" class=\"button tiny right loginButton\" data-reveal-id=\"adminAuth\" value=\"LOGIN\">\n                 -->\n\n\n\n                 <!-- =Dan Florian profile starts here -->\n\n                 <div id=\"danFlorian\" class=\"reveal-modal medium adminAuth2 createAccount panel\">\n                  <a class=\"close-reveal-modal\">&#215;</a>\n                  <div class=\"row\">\n                    <div class=\"large-12 columns\">\n                      <div class=\"navPanel\">\n                        <nav class=\"top-bar min\">\n                          <div class=\"large-2 columns\">\n\n                            <a class=\"logoS\" href=\"{{URL::route('home')}}\" title=\"Home Page\">\n                             <img src=\"{{url('comp/img/REMAX1LogoS.png')}}\" alt=\"Remax First Class Logo\">\n                           </a> \n                         </div>\n\n                         <div class=\"large-10 columns\"> <ul class=\"title-area right\">\n                          <!-- Title Area -->\n                          <li class=\"name\">\n                            <h1>\n                              {{link_to_route('home', 'REMAX FIRST CLASS');}}\n                            </h1>\n                          </li>\n                        </ul>\n                      </div>\n                    </nav>\n                  </div>\n\n                  <!--  =danFlorian top bar ends here-->\n\n                  <div class=\"row\">\n                   <div class=\"large-4 columns\">\n                    <div class=\"row\">\n                     <div class=\"large-12 columns left\">\n                      <br/>\n                      <ul>\n                       <h3 class=\"subheader agentName\">Dan I. Florian </h3>\n                       <a class=\"label has-tip-left specialist\" title=\"Accredited Buyers Representative\">ABR</a> \n                       <a class=\"label has-tip-left specialist\" title=\"Certified Residential Specialist\">CRS</a>\n                     </ul>\n                   </div>                           \n                 </div>\n                 <div class=\"agentPic\"><img src=\"{{url('comp/img/agentsL/Dan_I_Florian.jpg')}}\" alt=\"Dan I. Florian\"></div>\n                 <div>{{link_to('agent/4', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}\n                 </div>\n               </div>\n\n               <div class=\"large-7 columns left panel info\">\n                 <br/>\n                 <ul class=\"vcard innerInfo\">\n                   <h5>Associate</h5>\n                   <li class=\"subheader\">Year Joined: 2003</li>\n                   <li class=\"subheader\">Year Licensed: 2003</li>\n                   <hr/>\n                   <h6>Contact Information:</h6>\n                   <li class=\"subheader\">Main: (847) 674-9797</li>\n                   <li class=\"subheader\">Fax: (847) 674-0411</li>\n                   <li class=\"subheader\">Direct: (773) 543-3500 </li>\n                   <li class=\"subheader\">Languages: English, Italian, Romanian, Spanish</li>\n                 </ul>\n               </div>\n             </div>\n\n             <!--  =danFlorian contact information ends here-->\n\n             <div class=\"row\">\n              <div class=\"large-12 columns\">\n                <dl>                              \n                  <dt><h5>Specialties</h5></dt>\n                  <hr/>\n                  <dd class=\"specialties\"><p>Buyer Brokerage, Business Opportunities, Condominiums, Foreclosure Property, Investments, Lake/Beach Property, Luxury Homes, New Construction, Property Management, Relocation, Rentals, Short Sales, Vacation and Resorts</p>\n                  </dd>  \n                  <dt><h5>Service Area Information</h5></dt>\n                  <hr/>\n                  <dd class=\"specialties\">\n                    <h6>Office Area:</h6>\n                    <p>Skokie IL, Chicago IL, Glenview IL, Morton Grove IL, Evanston IL, Wilmette IL, Niles IL, Lincolnwood IL</p>                            \n                    <h6>Agent Area:</h6>\n                    <p>Chicago IL, Glenview IL, Morton Grove IL, Niles IL, Skokie IL, Skokie IL</p>  \n                  </dd>\n                </div>\n              </div>\n\n            </div>\n          </div>\n        </div>\n        <!-- =Dan Florian profile ends here -->\n\n\n\n        <!-- =Ivy Moy  profile starts here -->\n\n        <div id=\"ivyMoy\" class=\"reveal-modal medium adminAuth2 createAccount panel\">\n          <a class=\"close-reveal-modal\">&#215;</a>\n          <div class=\"row\">\n            <div class=\"large-12 columns\">\n              <div class=\"navPanel\">\n                <nav class=\"top-bar min\">\n                  <div class=\"large-2 columns\">\n\n                    <a class=\"logoS\" href=\"{{URL::route('home')}}\" title=\"Home Page\">\n                     <img src=\"{{url('comp/img/REMAX1LogoS.png')}}\" alt=\"Remax First Class Logo\">\n                   </a> \n                 </div>\n\n                 <div class=\"large-10 columns\"> <ul class=\"title-area right\">\n                  <!-- Title Area -->\n                  <li class=\"name\">\n                    <h1>\n                      {{link_to_route('home', 'REMAX FIRST CLASS');}}\n                    </h1>\n                  </li>\n                </ul>\n              </div>\n            </nav>\n          </div>\n\n\n          <!--  =ivyMoy top bar ends here-->\n\n          <div class=\"row\">\n           <div class=\"large-4 columns\">\n            <div class=\"row\">\n             <div class=\"large-12 columns left\">\n              <br/>\n              <ul>\n               <h3 class=\"subheader agentName\">Ivy Moy</h3>\n               <!-- <a class=\"label has-tip-left specialist\" title=\"Accredited Buyers Representative\">ABR</a>  -->\n               <a class=\"label has-tip-left specialist\" title=\"Certified Residential Specialist\">CRS</a>\n             </ul>\n           </div>                           \n         </div>\n         <div class=\"agentPic\"><img src=\"{{url('comp/img/agentsL/Ivy_Moy.jpg')}}\" alt=\"Ivy Moy\"></div>\n         <div>{{link_to('agent/4', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}\n         </div>\n       </div>\n\n\n       <div class=\"large-7 columns left panel info\">\n         <br/>\n         <ul class=\"vcard innerInfo\">\n           <h5>Associate</h5>\n           <li class=\"subheader\">Year Joined: 2001</li>\n           <li class=\"subheader\">Year Licensed: 1998</li>\n           <hr/>\n           <h6>Contact Information:</h6>\n           <li class=\"subheader\">Main: (847) 674-9797</li>\n           <li class=\"subheader\">Fax: (847) 674-0411</li>\n           <li class=\"subheader\">Direct: (847) 568-3115</li>\n           <li class=\"subheader\">Mobile: (847) 913-3710</li>\n           <li class=\"subheader\">Languages: Chinese, English, Mandarin </li>\n         </ul>\n       </div>\n     </div>\n\n     <!--  =ivyMoy contact information ends here-->\n\n     <div class=\"row\">\n      <div class=\"large-12 columns\">\n        <dl>                              \n                      <!-- <dt><h5>Specialties</h5></dt>\n                      <hr/>\n                      <dd class=\"specialties\"><p>Buyer Brokerage, Business Opportunities, Condominiums, Foreclosure Property, Investments, Lake/Beach Property, Luxury Homes, New Construction, Property Management, Relocation, Rentals, Short Sales, Vacation and Resorts</p>\n                      </dd>   -->\n                      <dt><h5>Service Area Information</h5></dt>\n                      <hr/>\n                      <dd class=\"specialties\">\n                        <h6>Office Area:</h6>\n                        <p>Skokie IL, Chicago IL, Glenview IL, Morton Grove IL, Evanston IL, Wilmette IL, Niles IL, Lincolnwood IL</p>                            \n                        <h6>Agent Area:</h6>\n                        <p>Chicago IL, Evanston IL, Morton Grove IL, Niles IL, Skokie IL </p>  \n                      </dd>\n                    </div>\n                  </div>\n\n                </div>\n              </div>\n            </div>\n            <!-- =Ivy Moy profile ends here -->\n\n\n            <!-- =Cherylette Hilton profile starts here -->\n\n            <div id=\"cheryletteHilton\" class=\"reveal-modal medium adminAuth2 createAccount panel\">\n              <a class=\"close-reveal-modal\">&#215;</a>\n              <div class=\"row\">\n                <div class=\"large-12 columns\">\n                  <div class=\"navPanel\">\n                    <nav class=\"top-bar min\">\n                      <div class=\"large-2 columns\">\n\n                        <a class=\"logoS\" href=\"{{URL::route('home')}}\" title=\"Home Page\">\n                         <img src=\"{{url('comp/img/REMAX1LogoS.png')}}\" alt=\"Remax First Class Logo\">\n                       </a> \n                     </div>\n\n                     <div class=\"large-10 columns\"> <ul class=\"title-area right\">\n                      <!-- Title Area -->\n                      <li class=\"name\">\n                        <h1>\n                          {{link_to_route('home', 'REMAX FIRST CLASS');}}\n                        </h1>\n                      </li>\n                    </ul>\n                  </div>\n                </nav>\n              </div>\n\n\n              <!--  =cheryletteHilton top bar ends here-->\n\n              <div class=\"row\">\n               <div class=\"large-4 columns\">\n                <div class=\"row\">\n                 <div class=\"large-12 columns left\">\n                  <br/>\n                  <ul>\n                   <h3 class=\"subheader agentName\">Crerylette Hilton</h3>\n                          <!--  <a class=\"label has-tip-left specialist\" title=\"Accredited Buyers Representative\">ABR</a> \n                          <a class=\"label has-tip-left specialist\" title=\"Certified Residential Specialist\">CRS</a> -->\n                        </ul>\n                      </div>                           \n                    </div>\n                    <div class=\"agentPic\">\n                      <img src=\"{{url('comp/img/agentsL/Cherylette_Hilton.jpg')}}\" alt=\"Crerylette Hilton\">\n                    </div>\n                    <div>{{link_to('agent/4', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}\n                    </div>\n                  </div>\n\n                  <div class=\"large-7 columns left panel info\">\n                   <br/>\n                   <ul class=\"vcard innerInfo\">\n                     <h5>Associate</h5>\n                     <li class=\"subheader\">Year Joined: 2004</li>\n                     <li class=\"subheader\">Year Licensed: 1974</li>\n                     <hr/>\n                     <h6>Contact Information:</h6>\n                     <li class=\"subheader\">Main: (847) 674-9797</li>\n                     <li class=\"subheader\">Fax: (847) 674-0411</li>\n                     <li class=\"subheader\">Direct: (847) 864-7073 </li>\n                     <li class=\"subheader\">Mobile: (847) 269-7073 </li>\n                     <li class=\"subheader\">Languages: English</li>\n                   </ul>\n                 </div>\n               </div>\n\n               <!--  =cheryletteHilton contact information ends here-->\n\n               <div class=\"row\">\n                <div class=\"large-12 columns\">\n                  <dl>                              \n                    <dt><h5>Specialties</h5></dt>\n                    <hr/>\n                    <dd class=\"specialties\"><p>Auctions, Condominiums, Foreclosure Property, Investments, New Construction, Relocation, Rentals </p>\n                    </dd>  \n                    <dt><h5>Service Area Information</h5></dt>\n                    <hr/>\n                    <dd class=\"specialties\">\n                      <h6>Office Area:</h6>\n                      <p>Skokie IL, Chicago IL, Glenview IL, Morton Grove IL, Evanston IL, Wilmette IL, Niles IL, Lincolnwood IL</p>                            \n                      <h6>Agent Area:</h6>\n                      <p>Skokie IL</p>  \n                    </dd>\n                  </div>\n                </div>\n\n              </div>\n            </div>\n          </div>\n          <!-- =Crerylette Hilton profile ends here -->\n\n\n          <!-- =Elena Dan profile starts here -->\n\n          <div id=\"elenaDan\" class=\"reveal-modal medium adminAuth2 createAccount panel\">\n            <a class=\"close-reveal-modal\">&#215;</a>\n            <div class=\"row\">\n              <div class=\"large-12 columns\">\n                <div class=\"navPanel\">\n                  <nav class=\"top-bar min\">\n                    <div class=\"large-2 columns\">\n\n                      <a class=\"logoS\" href=\"{{URL::route('home')}}\" title=\"Home Page\">\n                       <img src=\"{{url('comp/img/REMAX1LogoS.png')}}\" alt=\"Remax First Class Logo\">\n                     </a> \n                   </div>\n\n                   <div class=\"large-10 columns\"> <ul class=\"title-area right\">\n                    <!-- Title Area -->\n                    <li class=\"name\">\n                      <h1>\n                        {{link_to_route('home', 'REMAX FIRST CLASS');}}\n                      </h1>\n                    </li>\n                  </ul>\n                </div>\n              </nav>\n            </div>\n\n\n\n            <!--  =elenaDan  top bar ends here-->\n\n            <div class=\"row\">\n             <div class=\"large-4 columns\">\n              <div class=\"row\">\n               <div class=\"large-12 columns left\">\n                <br/>\n                <ul>\n                 <h3 class=\"subheader agentName\">Elena Dan</h3>\n                 <a class=\"label has-tip-left specialist\" title=\"Accredited Buyers Representative\">ABR</a> \n                 <a class=\"label has-tip-left specialist\" title=\"Certified Residential Specialist\">CRS</a>\n               </ul>\n             </div>                           \n           </div>\n           <div class=\"agentPic\"><img src=\"{{url('comp/img/agentsL/Dan_Elena.jpg')}}\" alt=\"Elena Dan\"></div>\n           <div>{{link_to('agent/4', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}\n           </div>\n         </div>\n\n         <div class=\"large-7 columns left panel info\">\n           <br/>\n           <ul class=\"vcard innerInfo\">\n             <h5>Associate</h5>\n             <li class=\"subheader\">Year Joined: 1993</li>\n             <li class=\"subheader\">Year Licensed: 1989</li>\n             <hr/>\n             <h6>Contact Information:</h6>\n             <li class=\"subheader\">Main: (847) 674-9797</li>\n             <li class=\"subheader\">Fax: (847) 674-0411</li>\n             <li class=\"subheader\">Direct: (847) 329-3888 </li>\n             <li class=\"subheader\">Mobile: (773) 230-5985 </li>\n             <li class=\"subheader\">Languages: English, Romanian</li>\n           </ul>\n         </div>\n       </div>\n\n       <!--  =elenaDan contact information ends here-->\n\n       <div class=\"row\">\n        <div class=\"large-12 columns\">\n          <dl>                              \n            <dt><h5>Specialties</h5></dt>\n            <hr/>\n            <dd class=\"specialties\"><p>Condominiums, Foreclosure Property, Investments, Luxury Homes, New Construction, Relocation, Rentals, Senior Communities, Short Sales </p>\n            </dd>  \n            <dt><h5>Service Area Information</h5></dt>\n            <hr/>\n            <dd class=\"specialties\">\n              <h6>Office Area:</h6>\n              <p>Skokie IL, Chicago IL, Glenview IL, Morton Grove IL, Evanston IL, Wilmette IL, Niles IL, Lincolnwood IL</p>                            \n              <h6>Agent Area:</h6>\n              <p>Skokie IL</p>  \n            </dd>\n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n  <!-- =Elena Dan  profile ends here -->\n\n\n\n\n  <!-- =Marius Dan profile starts here -->\n\n  <div id=\"mariusDan\" class=\"reveal-modal medium adminAuth2 createAccount panel\">\n    <a class=\"close-reveal-modal\">&#215;</a>\n    <div class=\"row\">\n      <div class=\"large-12 columns\">\n        <div class=\"navPanel\">\n          <nav class=\"top-bar min\">\n            <div class=\"large-2 columns\">\n\n              <a class=\"logoS\" href=\"{{URL::route('home')}}\" title=\"Home Page\">\n               <img src=\"{{url('comp/img/REMAX1LogoS.png')}}\" alt=\"Remax First Class Logo\">\n             </a> \n           </div>\n\n           <div class=\"large-10 columns\"> <ul class=\"title-area right\">\n            <!-- Title Area -->\n            <li class=\"name\">\n              <h1>\n                {{link_to_route('home', 'REMAX FIRST CLASS');}}\n              </h1>\n            </li>\n          </ul>\n        </div>\n      </nav>\n    </div>\n\n\n    <!--  =mariusDan  top bar ends here-->\n\n    <div class=\"row\">\n     <div class=\"large-4 columns\">\n      <div class=\"row\">\n       <div class=\"large-12 columns left\">\n        <br/>\n        <ul>\n         <h3 class=\"subheader agentName\">Marius Dan</h3>\n\n       </ul>\n     </div>                           \n   </div>\n   <div class=\"agentPic\">\n     <img src=\"{{url('comp/img/agentsL/Dan_Elena.jpg')}}\" alt=\"Marius Dan\">\n   </div>\n   <div>{{link_to('agent/4', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}\n   </div>\n </div>\n\n <div class=\"large-7 columns left panel info\">\n   <br/>\n   <ul class=\"vcard innerInfo\">\n     <h5>Associate</h5>\n     <li class=\"subheader\">Year Joined: 2003</li>\n     <li class=\"subheader\">Year Licensed: 2003</li>\n     <hr/>\n     <h6>Contact Information:</h6>\n     <li class=\"subheader\">Main: (847) 674-9797</li>\n     <li class=\"subheader\">Fax: (847) 674-0411</li>\n     <li class=\"subheader\">Direct: (847) 568-3125  </li>\n     <li class=\"subheader\">Mobile: (312) 208-6034 </li>\n     <li class=\"subheader\">Languages: English, Romanian</li>\n   </ul>\n </div>\n</div>\n\n<!--  =mariusDan contact information ends here-->\n\n<div class=\"row\">\n  <div class=\"large-12 columns\">\n    <dl>                              \n      <dt><h5>Specialties</h5></dt>\n      <hr/>\n      <dd class=\"specialties\"><p>Buyer Brokerage, Condominiums, Investments </p>\n      </dd>  \n      <dt><h5>Service Area Information</h5></dt>\n      <hr/>\n      <dd class=\"specialties\">\n        <h6>Office Area:</h6>\n        <p>Skokie IL, Chicago IL, Glenview IL, Morton Grove IL, Evanston IL, Wilmette IL, Niles IL, Lincolnwood IL</p>                            \n        <h6>Agent Area:</h6>\n        <p>Skokie IL</p>  \n      </dd>\n    </div>\n  </div>\n\n</div>\n</div>\n</div>\n<!-- =Marius Dan  profile ends here -->\n\n\n\n<!-- =Barry Benveniste profile starts here -->\n\n<div id=\"barryBenveniste\" class=\"reveal-modal medium adminAuth2 createAccount panel\">\n  <a class=\"close-reveal-modal\">&#215;</a>\n  <div class=\"row\">\n    <div class=\"large-12 columns\">\n      <div class=\"navPanel\">\n        <nav class=\"top-bar min\">\n          <div class=\"large-2 columns\">\n\n            <a class=\"logoS\" href=\"{{URL::route('home')}}\" title=\"Home Page\">\n             <img src=\"{{url('comp/img/REMAX1LogoS.png')}}\" alt=\"Remax First Class Logo\">\n           </a> \n         </div>\n\n         <div class=\"large-10 columns\"> <ul class=\"title-area right\">\n          <!-- Title Area -->\n          <li class=\"name\">\n            <h1>\n              {{link_to_route('home', 'REMAX FIRST CLASS');}}\n            </h1>\n          </li>\n        </ul>\n      </div>\n    </nav>\n  </div>\n\n\n  <!--  =barryBenveniste  top bar ends here-->\n\n  <div class=\"row\">\n   <div class=\"large-4 columns\">\n    <div class=\"row\">\n     <div class=\"large-12 columns left\">\n      <br/>\n      <ul>\n       <h3 class=\"subheader agentName\">Barry Benveniste</h3>\n\n     </ul>\n   </div>                           \n </div>\n <img src=\"{{url('comp/img/agentsL/Barry_Benveniste.jpg')}}\" alt=\"Barry Benveniste\">\n<div>{{link_to('agent/4', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}\n                 </div>\n</div>\n\n<div class=\"large-7 columns left panel info\">\n <br/>\n <ul class=\"vcard innerInfo\">\n   <h5>Associate</h5>\n   <li class=\"subheader\">Year Joined: 1987</li>\n   <li class=\"subheader\">Year Licensed: 1972</li>\n   <hr/>\n   <h6>Contact Information:</h6>\n   <li class=\"subheader\">Main: (847) 674-9797</li>\n   <li class=\"subheader\">Mobile: (847) 708-1149</li>\n   <li class=\"subheader\">Fax: (847) 674-0411</li>\n\n   <li class=\"subheader\">Languages: English</li>\n </ul>\n</div>\n</div>\n\n<!--  =barryBenveniste contact information ends here-->\n\n<div class=\"row\">\n  <div class=\"large-12 columns\">\n    <dl>                              \n\n      <dt><h5>Service Area Information</h5></dt>\n      <hr/>\n      <dd class=\"specialties\">\n        <h6>Office Area:</h6>\n        <p>Skokie IL, Chicago IL, Glenview IL, Morton Grove IL, Evanston IL, Wilmette IL, Niles IL, Lincolnwood IL</p>                            \n        <h6>Agent Area:</h6>\n        <p>Skokie IL</p>  \n      </dd>\n    </div>\n  </div>\n\n</div>\n</div>\n</div>\n<!-- =Barry Benveniste  profile ends here -->\n\n<!-- =Mark Feyman profile starts here -->\n\n<div id=\"markFeyman\" class=\"reveal-modal medium adminAuth2 createAccount panel\">\n  <a class=\"close-reveal-modal\">&#215;</a>\n  <div class=\"row\">\n    <div class=\"large-12 columns\">\n      <div class=\"navPanel\">\n        <nav class=\"top-bar min\">\n          <div class=\"large-2 columns\">\n\n            <a class=\"logoS\" href=\"{{URL::route('home')}}\" title=\"Home Page\">\n             <img src=\"{{url('comp/img/REMAX1LogoS.png')}}\" alt=\"Remax First Class Logo\">\n           </a> \n         </div>\n\n         <div class=\"large-10 columns\"> <ul class=\"title-area right\">\n          <!-- Title Area -->\n          <li class=\"name\">\n            <h1>\n              {{link_to_route('home', 'REMAX FIRST CLASS');}}\n            </h1>\n          </li>\n        </ul>\n      </div>\n    </nav>\n  </div>\n\n\n  <!--  =markFeyman  top bar ends here-->\n\n  <div class=\"row\">\n   <div class=\"large-4 columns\">\n    <div class=\"row\">\n     <div class=\"large-12 columns left\">\n      <br/>\n      <ul>\n       <h3 class=\"subheader agentName\">Mark Feyman</h3>\n\n     </ul>\n   </div>                           \n </div>\n <img src=\"{{url('comp/img/agentsL/3.png')}}\" alt=\"Mark Feyman\">\n\n</div>\n\n<div class=\"large-7 columns left panel info\">\n <br/>\n <ul class=\"vcard innerInfo\">\n   <h5>Associate</h5>\n   <li class=\"subheader\">Year Joined: 2011</li>\n   <li class=\"subheader\">Year Licensed: 2011</li>\n   <hr/>\n   <h6>Contact Information:</h6>\n   <li class=\"subheader\">Main: (847) 674-9797</li>\n   <li class=\"subheader\">Fax: (847) 674-0411</li>\n   <li class=\"subheader\">Mobile: (847) 971-8559</li>\n\n   <li class=\"subheader\">Languages: English, Russian</li>\n </ul>\n</div>\n</div>\n\n<!--  =markFeyman contact information ends here-->\n\n<div class=\"row\">\n  <div class=\"large-12 columns\">\n    <dl>                              \n\n      <dt><h5>Service Area Information</h5></dt>\n      <hr/>\n      <dd class=\"specialties\">\n        <h6>Office Area:</h6>\n        <p>Skokie IL, Chicago IL, Glenview IL, Morton Grove IL, Evanston IL, Wilmette IL, Niles IL, Lincolnwood IL</p>                            \n        <h6>Agent Area:</h6>\n        <p>Skokie IL</p>  \n      </dd>\n    </div>\n  </div>\n\n</div>\n</div>\n</div>\n<!-- =Mark Feyman  profile ends here -->\n\n\n<!-- =Harold Oza profile starts here -->\n\n<div id=\"haroldOza\" class=\"reveal-modal medium adminAuth2 createAccount panel\">\n  <a class=\"close-reveal-modal\">&#215;</a>\n  <div class=\"row\">\n    <div class=\"large-12 columns\">\n      <div class=\"navPanel\">\n        <nav class=\"top-bar min\">\n          <div class=\"large-2 columns\">\n\n            <a class=\"logoS\" href=\"{{URL::route('home')}}\" title=\"Home Page\">\n             <img src=\"{{url('comp/img/REMAX1LogoS.png')}}\" alt=\"Remax First Class Logo\">\n           </a> \n         </div>\n\n         <div class=\"large-10 columns\"> <ul class=\"title-area right\">\n          <!-- Title Area -->\n          <li class=\"name\">\n            <h1>\n              {{link_to_route('home', 'REMAX FIRST CLASS');}}\n            </h1>\n          </li>\n        </ul>\n      </div>\n    </nav>\n  </div>\n\n\n  <!--  =haroldOza  top bar ends here-->\n\n  <div class=\"row\">\n   <div class=\"large-4 columns\">\n    <div class=\"row\">\n     <div class=\"large-12 columns left\">\n      <br/>\n      <ul>\n       <h3 class=\"subheader agentName\">Harold Oza</h3>\n                           <!-- <a class=\"label has-tip-left specialist\" title=\"Accredited Buyers Representative\">ABR</a> \n                           <a class=\"label has-tip-left specialist\" title=\"Certified Residential Specialist\">CRS</a> -->\n                         </ul>\n                       </div>                           \n                     </div>\n                     <img src=\"{{url('comp/img/agentsL/3.jpg')}}\" alt=\"Harold Oza\">\n\n                   </div>\n\n                   <div class=\"large-7 columns left panel info\">\n                     <br/>\n                     <ul class=\"vcard innerInfo\">\n                       <h5>Associate</h5>\n                       <li class=\"subheader\">Year Joined: 2008</li>\n                       <li class=\"subheader\">Year Licensed: 2008</li>\n                       <hr/>\n                       <h6>Contact Information:</h6>\n                       <li class=\"subheader\">Main: (847) 674-9797</li>\n                       <li class=\"subheader\">Fax: (847) 674-0411</li>\n                       <!-- <li class=\"subheader\">Direct: (847) 329-3888 </li> -->\n                       <li class=\"subheader\">Mobile: (312) 720-0743</li>\n                       <li class=\"subheader\">Languages: English</li>\n                     </ul>\n                   </div>\n                 </div>\n\n                 <!--  =haroldOza contact information ends here-->\n\n                 <div class=\"row\">\n                  <div class=\"large-12 columns\">\n                    <dl>                              \n\n                      <dt><h5>Service Area Information</h5></dt>\n                      <hr/>\n                      <dd class=\"specialties\">\n                        <h6>Office Area:</h6>\n                        <p>Skokie IL, Chicago IL, Glenview IL, Morton Grove IL, Evanston IL, Wilmette IL, Niles IL, Lincolnwood IL</p>                            \n                        <h6>Agent Area:</h6>\n                        <p>Skokie IL</p>  \n                      </dd>\n                    </div>\n                  </div>\n\n                </div>\n              </div>\n            </div>\n            <!-- =Harold Oza  profile ends here -->\n\n\n            <!-- =John Dias profile starts here -->\n\n            <div id=\"johnDias\" class=\"reveal-modal medium adminAuth2 createAccount panel\">\n              <a class=\"close-reveal-modal\">&#215;</a>\n              <div class=\"row\">\n                <div class=\"large-12 columns\">\n                  {{Form::open(array('url'=>'/login'))}} \n                  <div class=\"navPanel\">\n                    <nav class=\"top-bar\">\n                      <ul class=\"title-area right\">\n                        <!-- Title Area -->\n                        <li class=\"name\">\n                          <h1>\n                            {{link_to_route('home', 'REMAX FIRST CLASS');}}\n                          </h1>\n                        </li>\n                      </ul>\n                    </nav>\n                  </div>\n\n                  <!--  =johnDias  top bar ends here-->\n\n                  <div class=\"row\">\n                   <div class=\"large-4 columns\">\n                    <div class=\"row\">\n                     <div class=\"large-12 columns left\">\n                      <br/>\n                      <ul>\n                       <h3 class=\"subheader agentName\">John B. Dias</h3>\n                       <a class=\"label has-tip-left specialist\" title=\"Short Sale and Foreclosure Resource\">SFR</a> \n                     </ul>\n                   </div>                           \n                 </div>\n                 <div class=\"agentPic\"><img src=\"{{url('comp/img/agentsL/3.png')}}\" alt=\"John Dias\"></div>\n                 <div class=\"agentProp label alert\">{{link_to('#', 'Agent Property For Sale', array('class'=>'advanceSearch'));}}</div>\n\n               </div>\n\n               <div class=\"large-7 columns left panel info\">\n                 <br/>\n                 <ul class=\"vcard innerInfo\">\n                   <h5>Associate</h5>\n                   <li class=\"subheader\">Year Joined: 1994</li>\n                   <li class=\"subheader\">Year Licensed: 1982</li>\n                   <hr/>\n                   <h6>Contact Information:</h6>\n                   <li class=\"subheader\">Main: (847) 674-9797</li>\n                   <li class=\"subheader\">Fax: (847) 674-0411</li>\n                   <li class=\"subheader\">Languages: English, Hindi</li>\n                 </ul>\n               </div>\n             </div>\n\n             <!--  =johnDias contact information ends here-->\n\n             <div class=\"row\">\n              <div class=\"large-12 columns\">\n                <dl>                              \n                  <dt><h5>Specialties</h5></dt>\n                  <hr/>\n                  <dd class=\"specialties\"><p>Condominiums, Foreclosure Property, Investments, Luxury Homes, New Construction, Relocation, Rentals, Senior Communities, Short Sales </p>\n                  </dd>  \n                  <dt><h5>Service Area Information</h5></dt>\n                  <hr/>\n                  <dd class=\"specialties\">\n                    <h6>Office Area:</h6>\n                    <p>Skokie IL, Chicago IL, Glenview IL, Morton Grove IL, Evanston IL, Wilmette IL, Niles IL, Lincolnwood IL</p>                            \n                    <h6>Agent Area:</h6>\n                    <p>Skokie IL</p>  \n                  </dd>\n                </div>\n              </div>\n\n            </div>\n          </div>\n        </div>\n<!-- =John Dias  profile ends here --><!-- //LOCATION: remax/public\n",
-			"file": "app/views/layouts/master.blade.php",
-			"file_size": 55727,
-			"file_write_time": 130178023293593219,
+			"contents": "// Place your settings in the file \"User/Preferences.sublime-settings\", which\n// overrides the settings in here.\n//\n// Settings may also be placed in file type specific options files, for\n// example, in Packages/Python/Python.sublime-settings for python files.\n{\n    // Sets the colors used within the text area\n    \"color_scheme\": \"Packages/Color Scheme - Default/Monokai.tmTheme\",\n\n    // Note that the font_face and font_size are overriden in the platform\n    // specific settings file, for example, \"Preferences (Linux).sublime-settings\".\n    // Because of this, setting them here will have no effect: you must set them\n    // in your User File Preferences.\n    \"font_face\": \"\",\n    \"font_size\": 10,\n\n    // Valid options are \"no_bold\", \"no_italic\", \"no_antialias\", \"gray_antialias\",\n    // \"subpixel_antialias\", \"no_round\" (OS X only), \"GDI\" (Windows only) and\n    // \"directwrite\" (Windows only)\n    \"font_options\": [],\n\n    // Characters that are considered to separate words\n    \"word_separators\": \"./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?\",\n\n    // Set to false to prevent line numbers being drawn in the gutter\n    \"line_numbers\": true,\n\n    // Set to false to hide the gutter altogether\n    \"gutter\": true,\n\n    // Spacing between the gutter and the text\n    \"margin\": 4,\n\n    // Fold buttons are the triangles shown in the gutter to fold regions of text\n    \"fold_buttons\": true,\n\n    // Hides the fold buttons unless the mouse is over the gutter\n    \"fade_fold_buttons\": true,\n\n    // Columns in which to display vertical rulers\n    \"rulers\": [],\n\n    // Set to true to turn spell checking on by default\n    \"spell_check\": false,\n\n    // The number of spaces a tab is considered equal to\n    \"tab_size\": 4,\n\n    // Set to true to insert spaces when tab is pressed\n    \"translate_tabs_to_spaces\": false,\n\n    // If translate_tabs_to_spaces is true, use_tab_stops will make tab and\n    // backspace insert/delete up to the next tabstop\n    \"use_tab_stops\": true,\n\n    // Set to false to disable detection of tabs vs. spaces on load\n    \"detect_indentation\": true,\n\n    // Calculates indentation automatically when pressing enter\n    \"auto_indent\": true,\n\n    // Makes auto indent a little smarter, e.g., by indenting the next line\n    // after an if statement in C. Requires auto_indent to be enabled.\n    \"smart_indent\": true,\n\n    // Adds whitespace up to the first open bracket when indenting. Requires\n    // auto_indent to be enabled.\n    \"indent_to_bracket\": false,\n\n    // Trims white space added by auto_indent when moving the caret off the\n    // line.\n    \"trim_automatic_white_space\": true,\n\n    // Disables horizontal scrolling if enabled.\n    // May be set to true, false, or \"auto\", where it will be disabled for\n    // source code, and otherwise enabled.\n    \"word_wrap\": \"auto\",\n\n    // Set to a value other than 0 to force wrapping at that column rather than the\n    // window width\n    \"wrap_width\": 0,\n\n    // Set to false to prevent word wrapped lines from being indented to the same\n    // level\n    \"indent_subsequent_lines\": true,\n\n    // Draws text centered in the window rather than left aligned\n    \"draw_centered\": false,\n\n    // Controls auto pairing of quotes, brackets etc\n    \"auto_match_enabled\": true,\n\n    // Word list to use for spell checking\n    \"dictionary\": \"Packages/Language - English/en_US.dic\",\n\n    // Set to true to draw a border around the visible rectangle on the minimap.\n    // The color of the border will be determined by the \"minimapBorder\" key in\n    // the color scheme\n    \"draw_minimap_border\": false,\n\n    // Always visualise the viewport on the minimap, as oppossed to only\n    // showing it on mouse over\n    \"always_show_minimap_viewport\": false,\n\n    // If enabled, will highlight any line with a caret\n    \"highlight_line\": false,\n\n    // Valid values are \"smooth\", \"phase\", \"blink\", \"wide\" and \"solid\".\n    \"caret_style\": \"smooth\",\n\n    // Set to false to disable underlining the brackets surrounding the caret\n    \"match_brackets\": true,\n\n    // Set to false if you'd rather only highlight the brackets when the caret is\n    // next to one\n    \"match_brackets_content\": true,\n\n    // Set to false to not highlight square brackets. This only takes effect if\n    // match_brackets is true\n    \"match_brackets_square\": true,\n\n    // Set to false to not highlight curly brackets. This only takes effect if\n    // match_brackets is true\n    \"match_brackets_braces\": true,\n\n    // Set to false to not highlight angle brackets. This only takes effect if\n    // match_brackets is true\n    \"match_brackets_angle\": false,\n\n    // Enable visualization of the matching tag in HTML and XML\n    \"match_tags\": true,\n\n    // Highlights other occurrences of the currently selected text\n    \"match_selection\": true,\n\n    // Additional spacing at the top of each line, in pixels\n    \"line_padding_top\": 0,\n\n    // Additional spacing at the bottom of each line, in pixels\n    \"line_padding_bottom\": 0,\n\n    // Set to false to disable scrolling past the end of the buffer.\n    // On OS X, this value is overridden in the platform specific settings, so\n    // you'll need to place this line in your user settings to override it.\n    \"scroll_past_end\": true,\n\n    // This controls what happens when pressing up or down when on the first\n    // or last line.\n    // On OS X, this value is overridden in the platform specific settings, so\n    // you'll need to place this line in your user settings to override it.\n    \"move_to_limit_on_up_down\": false,\n\n    // Set to \"none\" to turn off drawing white space, \"selection\" to draw only the\n    // white space within the selection, and \"all\" to draw all white space\n    \"draw_white_space\": \"selection\",\n\n    // Set to false to turn off the indentation guides.\n    // The color and width of the indent guides may be customized by editing\n    // the corresponding .tmTheme file, and specifying the colors \"guide\",\n    // \"activeGuide\" and \"stackGuide\"\n    \"draw_indent_guides\": true,\n\n    // Controls how the indent guides are drawn, valid options are\n    // \"draw_normal\" and \"draw_active\". draw_active will draw the indent\n    // guides containing the caret in a different color.\n    \"indent_guide_options\": [\"draw_normal\"],\n\n    // Set to true to removing trailing white space on save\n    \"trim_trailing_white_space_on_save\": false,\n\n    // Set to true to ensure the last line of the file ends in a newline\n    // character when saving\n    \"ensure_newline_at_eof_on_save\": false,\n\n    // Set to true to automatically save files when switching to a different file\n    // or application\n    \"save_on_focus_lost\": false,\n\n    // Save via writing to an alternate file, and then renaming it over the\n    // original file.\n    \"atomic_save\": true,\n\n    // The encoding to use when the encoding can't be determined automatically.\n    // ASCII, UTF-8 and UTF-16 encodings will be automatically detected.\n    \"fallback_encoding\": \"Western (Windows 1252)\",\n\n    // Encoding used when saving new files, and files opened with an undefined\n    // encoding (e.g., plain ascii files). If a file is opened with a specific\n    // encoding (either detected or given explicitly), this setting will be\n    // ignored, and the file will be saved with the encoding it was opened\n    // with.\n    \"default_encoding\": \"UTF-8\",\n\n    // Files containing null bytes are opened as hexadecimal by default\n    \"enable_hexadecimal_encoding\": true,\n\n    // Determines what character(s) are used to terminate each line in new files.\n    // Valid values are 'system' (whatever the OS uses), 'windows' (CRLF) and\n    // 'unix' (LF only).\n    \"default_line_ending\": \"system\",\n\n    // When enabled, pressing tab will insert the best matching completion.\n    // When disabled, tab will only trigger snippets or insert a tab.\n    // Shift+tab can be used to insert an explicit tab when tab_completion is\n    // enabled.\n    \"tab_completion\": true,\n\n    // Enable auto complete to be triggered automatically when typing.\n    \"auto_complete\": true,\n\n    // The maximum file size where auto complete will be automatically triggered.\n    \"auto_complete_size_limit\": 4194304,\n\n    // The delay, in ms, before the auto complete window is shown after typing\n    \"auto_complete_delay\": 50,\n\n    // Controls what scopes auto complete will be triggered in\n    \"auto_complete_selector\": \"source - comment, meta.tag - punctuation.definition.tag.begin\",\n\n    // Additional situations to trigger auto complete\n    \"auto_complete_triggers\": [ {\"selector\": \"text.html\", \"characters\": \"<\"} ],\n\n    // By default, auto complete will commit the current completion on enter.\n    // This setting can be used to make it complete on tab instead.\n    // Completing on tab is generally a superior option, as it removes\n    // ambiguity between committing the completion and inserting a newline.\n    \"auto_complete_commit_on_tab\": false,\n\n    // Controls if auto complete is shown when snippet fields are active.\n    // Only relevant if auto_complete_commit_on_tab is true.\n    \"auto_complete_with_fields\": false,\n\n    // Automatically close HTML and XML tags when </ is entered.\n    \"auto_close_tags\": true,\n\n    // By default, shift+tab will only unindent if the selection spans\n    // multiple lines. When pressing shift+tab at other times, it'll insert a\n    // tab character - this allows tabs to be inserted when tab_completion is\n    // enabled. Set this to true to make shift+tab always unindent, instead of\n    // inserting tabs.\n    \"shift_tab_unindent\": false,\n\n    // If true, the copy and cut commands will operate on the current line\n    // when the selection is empty, rather than doing nothing.\n    \"copy_with_empty_selection\": true,\n\n    // If true, the selected text will be copied into the find panel when it's\n    // shown.\n    // On OS X, this value is overridden in the platform specific settings, so\n    // you'll need to place this line in your user settings to override it.\n    \"find_selected_text\": true,\n\n    // When auto_find_in_selection is enabled, the \"Find in Selection\" flag\n    // will be enabled automatically when multiple lines of text are selected\n    \"auto_find_in_selection\": false,\n\n    // When drag_text is enabled, clicking on selected text will begin a\n    // drag-drop operation. This is not currently implemented under Linux.\n    \"drag_text\": true,\n\n    //\n    // User Interface Settings\n    //\n\n    // The theme controls the look of Sublime Text's UI (buttons, tabs, scroll bars, etc)\n    \"theme\": \"Default.sublime-theme\",\n\n    // Set to 0 to disable smooth scrolling. Set to a value between 0 and 1 to\n    // scroll slower, or set to larger than 1 to scroll faster\n    \"scroll_speed\": 1.0,\n\n    // Controls side bar animation when expanding or collapsing folders\n    \"tree_animation_enabled\": true,\n\n    // Controls animation throughout the application\n    \"animation_enabled\": true,\n\n    // Makes tabs with modified files more visible\n    \"highlight_modified_tabs\": false,\n\n    \"show_tab_close_buttons\": true,\n\n    // Show folders in the side bar in bold\n    \"bold_folder_labels\": false,\n\n    // OS X only: Set to true to disable Lion style full screen support.\n    // Sublime Text must be restarted for this to take effect.\n    \"use_simple_full_screen\": false,\n\n    // OS X only. Valid values are true, false, and \"auto\". Auto will enable\n    // the setting when running on a screen 2560 pixels or wider (i.e., a\n    // Retina display). When this setting is enabled, OpenGL is used to\n    // accelerate drawing. Sublime Text must be restarted for changes to take\n    // effect.\n    \"gpu_window_buffer\": \"auto\",\n\n    // Valid values are \"system\", \"enabled\" and \"disabled\"\n    \"overlay_scroll_bars\": \"system\",\n\n    //\n    // Application Behavior Settings\n    //\n\n    // Exiting the application with hot_exit enabled will cause it to close\n    // immediately without prompting. Unsaved modifications and open files will\n    // be preserved and restored when next starting.\n    //\n    // Closing a window with an associated project will also close the window\n    // without prompting, preserving unsaved changes in the workspace file\n    // alongside the project.\n    \"hot_exit\": true,\n\n    // remember_open_files makes the application start up with the last set of\n    // open files. Changing this to false will have no effect if hot_exit is\n    // true\n    \"remember_open_files\": true,\n\n    // Always prompt before reloading a file, even if the file hasn't been\n    // modified. The default behavior is to automatically reload a file if it\n    // hasn't been edited. If a file has unsaved changes, a prompt will always\n    // be shown.\n    \"always_prompt_for_file_reload\": false,\n\n    // OS X only: When files are opened from finder, or by dragging onto the\n    // dock icon, this controls if a new window is created or not.\n    \"open_files_in_new_window\": true,\n\n    // OS X only: This controls if an empty window is created at startup or not.\n    \"create_window_at_startup\": true,\n\n    // Set to true to close windows as soon as the last file is closed, unless\n    // there's a folder open within the window. This is always enabled on OS X,\n    // changing it here won't modify the behavior.\n    \"close_windows_when_empty\": false,\n\n    // Show the full path to files in the title bar.\n    // On OS X, this value is overridden in the platform specific settings, so\n    // you'll need to place this line in your user settings to override it.\n    \"show_full_path\": true,\n\n    // Shows the Build Results panel when building. If set to false, the Build\n    // Results can be shown via the Tools/Build Results menu.\n    \"show_panel_on_build\": true,\n\n    // Preview file contents when clicking on a file in the side bar. Double\n    // clicking or editing the preview will open the file and assign it a tab.\n    \"preview_on_click\": true,\n\n    // folder_exclude_patterns and file_exclude_patterns control which files\n    // are listed in folders on the side bar. These can also be set on a per-\n    // project basis.\n    \"folder_exclude_patterns\": [\".svn\", \".git\", \".hg\", \"CVS\"],\n    \"file_exclude_patterns\": [\"*.pyc\", \"*.pyo\", \"*.exe\", \"*.dll\", \"*.obj\",\"*.o\", \"*.a\", \"*.lib\", \"*.so\", \"*.dylib\", \"*.ncb\", \"*.sdf\", \"*.suo\", \"*.pdb\", \"*.idb\", \".DS_Store\", \"*.class\", \"*.psd\", \"*.db\", \"*.sublime-workspace\"],\n    // These files will still show up in the side bar, but won't be included in\n    // Goto Anything or Find in Files\n    \"binary_file_patterns\": [\"*.jpg\", \"*.jpeg\", \"*.png\", \"*.gif\", \"*.ttf\", \"*.tga\", \"*.dds\", \"*.ico\", \"*.eot\", \"*.pdf\", \"*.swf\", \"*.jar\", \"*.zip\"],\n\n    // File indexing parses all files in the side bar, and builds an index of\n    // their symbols. This is required for Goto Definition to work.\n    \"index_files\": true,\n\n    // When enabled, anonymised usage data is sent back, assisting Sublime HQ\n    // in making informed decisions about improving Sublime Text. File names\n    // and file contents are never included, but data such as computer\n    // specifications, startup time, installed packages, and edited file types\n    // are. When disabled, telemetry is neither recorded or sent.\n    // A setting of auto will enable telementry in dev builds, and disable\n    // telemetry in regular builds.\n    \"enable_telemetry\": \"auto\",\n\n    // List any packages to ignore here. When removing entries from this list,\n    // a restart may be required if the package contains plugins.\n    \"ignored_packages\": [\"Vintage\"]\n}\n",
+			"file": "/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+			"file_size": -1,
+			"file_write_time": -1,
 			"settings":
 			{
-				"buffer_size": 54490,
-				"line_ending": "Windows"
+				"buffer_size": 15412,
+				"line_ending": "Windows",
+				"read_only": true,
+				"scratch": true
 			}
 		},
 		{
-			"file": "app/views/search/onehouse.blade.php",
+			"file": "/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 			"settings":
 			{
-				"buffer_size": 675,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "public/comp/sass/screen.scss",
-			"settings":
-			{
-				"buffer_size": 6087,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/routes.php",
-			"settings":
-			{
-				"buffer_size": 4348,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/controllers/search/BrowseController.php",
-			"settings":
-			{
-				"buffer_size": 387,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/controllers/agent/AgentController.php",
-			"settings":
-			{
-				"buffer_size": 383,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "composer.json",
-			"settings":
-			{
-				"buffer_size": 1027,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "artisanCommand.txt",
-			"settings":
-			{
-				"buffer_size": 271,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "artisan",
-			"settings":
-			{
-				"buffer_size": 2424,
+				"buffer_size": 399,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 4382 files for \"vintage\"\n\nC:\\Users\\Eatthatfrog\\AppData\\Roaming\\Sublime Text 3\\Packages\\User\\Preferences.sublime-settings:\n    9  	],\n   10  	\"theme\": \"Soda Dark.sublime-theme\",\n   11: 	\"vintage_start_in_command_mode\": true,\n   12: 	\"vintage_use_clipboard\": true,\n   13  	\"wide_caret\": true\n   14  }\n\n2 matches in 1 file\n",
+			"settings":
+			{
+				"buffer_size": 330,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 375.0,
+		"height": 335.0,
 		"selected_items":
 		[
 			[
-				"rem",
-				"Package Control: Remove Package"
+				"Package Control: ",
+				"Package Control: Install Package"
 			],
 			[
-				"remov",
-				"Package Control: Remove Package"
+				"Package Control: gi",
+				"Package Control: Install Package"
 			],
 			[
 				"ins",
 				"Package Control: Install Package"
 			],
 			[
-				"sass",
-				"Set Syntax: Sass"
+				"rem",
+				"Package Control: Remove Package"
 			],
 			[
-				"i",
+				"routes",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"re",
+				"ReadmePlease"
+			],
+			[
+				"read",
+				"ReadmePlease"
+			],
+			[
+				"Package Control: i",
 				"Package Control: Install Package"
 			],
 			[
 				"inst",
 				"Package Control: Install Package"
-			],
-			[
-				"color",
-				"Convert Case: Lower Case"
-			],
-			[
-				"in",
-				"Package Control: Install Package"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
-				"Package Control: ",
-				"Package Control: Remove Package"
 			]
 		],
 		"width": 402.0
 	},
 	"console":
 	{
-		"height": 152.0,
+		"height": 0.0,
 		"history":
 		[
-			"import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')"
 		]
 	},
 	"distraction_free":
@@ -183,46 +137,74 @@
 	},
 	"file_history":
 	[
-		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/CHANGELOG",
-		"/C/xampp/htdocs/remax/app/controllers/search/BrowseController.php",
-		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/Gist.sublime-settings",
-		"/C/xampp/htdocs/remax/app/views/layouts/master.blade.php",
-		"/C/xampp/htdocs/remax/public/comp/sass/screen.scss",
-		"/C/xampp/htdocs/remax/app/views/home/vw_home.blade.php",
-		"/C/xampp/htdocs/remax/app/views/contact/vw_contact.blade.php",
-		"/C/xampp/htdocs/remax/app/controllers/search/SearchController.php",
-		"/C/xampp/htdocs/remax/app/database/seeds/NewsTableSeeder.php",
-		"/C/xampp/htdocs/remax/app/database/seeds/DatabaseSeeder.php",
-		"/C/xampp/htdocs/remax/app/views/search/onehouse.blade.php",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/User/JSON.sublime-settings",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/C/xampp/htdocs/remax/app/views/search/results.blade.php",
-		"/C/xampp/htdocs/remax/artisanCommand.txt",
-		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
-		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/laravel_link.sublime-snippet",
-		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/1symsemi.sublime-macro",
-		"/C/xampp/htdocs/remax/app/views/about/vw_about.blade.php",
+		"/C/xampp/htdocs/remax/app/views/layouts/master.blade.php",
+		"/C/xampp/htdocs/remax/app/controllers/search/SearchController.php",
+		"/C/xampp/htdocs/remax/app/controllers/search/BrowseController.php",
 		"/C/xampp/htdocs/remax/app/routes.php",
-		"/C/xampp/htdocs/remax/app/util/textoperations.php",
-		"/C/xampp/htdocs/remax/app/models/News.php",
-		"/C/xampp/htdocs/remax/app/controllers/news/NewsController.php",
-		"/C/xampp/htdocs/remax/app/views/news/vw_news.blade.php",
-		"/C/xampp/htdocs/remax/app/controllers/admin/ParseController.php",
+		"/C/xampp/htdocs/remax/artisanCommand.txt",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/User/Gist.sublime-settings",
+		"/C/xampp/htdocs/remax/public/.htaccess",
+		"/W/xampp/apache/conf/extra/httpd-vhosts.conf",
+		"/C/xampp/apache/conf/extra/httpd-vhosts.conf",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/W/Windows/System32/Drivers/etc/hosts",
+		"/W/xampp/apache/conf/httpd.conf",
+		"/C/xampp/apache/conf/original/extra/httpd-vhosts.conf",
+		"/C/xampp/apache/logs/error.log",
+		"/C/xampp/htdocs/remax/app/config/view.php",
+		"/C/xampp/htdocs/remax/vendor/laravel/framework/src/Illuminate/View/View.php",
+		"/C/xampp/htdocs/remax/app/storage/logs/log-apache2handler-2013-06-23.txt",
+		"/C/xampp/htdocs/remax/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php",
+		"/C/xampp/htdocs/remax/public/comp/stylesheets/screen.css",
+		"/C/xampp/htdocs/remax/public/comp/sass/screen.scss",
+		"/C/xampp/htdocs/remax/app/views/search/onehouse.blade.php",
+		"/C/xampp/htdocs/remax/.sassbuilder-config",
+		"/C/xampp/htdocs/remax/app/models/House.php",
+		"/C/xampp/htdocs/remax/app/models/Image.php",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/xampp/htdocs/remax/app/models/Home.php",
+		"/C/xampp/htdocs/remax/composer.json",
 		"/C/xampp/htdocs/remax/app/controllers/home/HomeController.php",
-		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/Gist/Gist.sublime-settings",
-		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/C/xampp/htdocs/remax/app/controllers/news/RealEstateNewsController.php",
-		"/C/xampp/htdocs/remax/app/models/User.php",
 		"/C/xampp/htdocs/remax/app/controllers/BaseController.php",
-		"/C/xampp/htdocs/remaxfc/application/modules/home/controllers/home.php"
+		"/C/xampp/htdocs/remax/app/controllers/LoginController.php",
+		"/C/xampp/htdocs/remax/app/database/seeds/ProptypeTableSeeder.php",
+		"/C/xampp/htdocs/remax/app/database/seeds/DatabaseSeeder.php",
+		"/C/xampp/htdocs/remax/app/models/User.php",
+		"/C/xampp/htdocs/remax/app/models/Dog.php",
+		"/C/xampp/htdocs/remax/app/views/homes/index.blade.php",
+		"/C/xampp/htdocs/remax/app/views/about/vw_about.blade.php",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/CHANGELOG",
+		"/C/xampp/htdocs/remax/app/database/seeds/NewsTableSeeder.php",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/Gist/Gist.sublime-settings",
+		"/C/xampp/htdocs/code/system/fonts/index.html",
+		"/C/xampp/htdocs/code/sssss",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/Default (Windows).sublime-keymap",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/Browser Refresh/Default (Windows).sublime-keymap",
+		"/C/xampp/htdocs/code/index.php",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/View In Browser/View In Browser.sublime-settings",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/C/xampp/htdocs/remax/app/database/migrations/2013_06_29_170323_homes.php",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/User/View In Browser.sublime-settings",
+		"/C/xampp/htdocs/remax/remax.sublime-project",
+		"/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/C/xampp/htdocs/remax/app/views/news/vw_news.blade.php",
+		"/C/xampp/htdocs/remax/app/database/migrations/2013_06_21_182451_create_news_table.php"
 	],
 	"find":
 	{
-		"height": 58.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
-		"height": 98.0,
+		"height": 96.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -230,73 +212,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"<div>{{link_to('agent/4', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}\n                 </div>",
-			"\n                   ",
-			"');",
-			"Barry Benveniste",
-			"new",
-			"advanc",
-			"margin",
-			"ol",
-			"@extends('layouts.master')",
-			"		<",
-			"clearing",
-			"2",
-			"23",
-			"3",
-			"2",
-			"columns",
-			"locality",
-			"panel",
-			"panel h3",
-			"account",
-			"accon",
-			"h6",
-			"span",
-			"p",
-			"h4",
-			"href",
-			"subheader",
-			"vcard",
-			"span",
-			"9797",
-			"rent",
-			"garage",
-			"footer",
-			"#",
-			" \">",
-			"panel",
-			"newListingsTitle",
-			"class=\"label\"",
-			"alert-box",
-			"DDDDDD",
-			" !",
-			"section",
-			"account",
-			"loginwrapper",
-			"button",
-			"\n        ",
-			"1",
-			"mobilePhone",
-			"m",
-			"6",
-			"					<div class=\"small-4 columns\">\n						{{Form::label('mobilePhone', 'Mobile Phone')}}\n						{{Form::text('mobilePhone', '', array('placeholder'=>'(***)***-****', 'class'=>'className'))}}\n					</div>\n",
-			"firstNameCreate",
-			"password",
-			"email",
-			"BUYERS",
-			"newsTitle",
-			"read",
-			"logop",
-			"\n	",
-			"breadcrumbsBefore",
-			"#393939",
-			"#428CB9",
-			"#428CB9 ",
-			"#428CB9",
-			"#313131",
-			"BaseController",
-			" {"
+			"vintage",
+			"Vintage",
+			"input",
+			"Illuminate\\Database\\Eloquent\\Builder",
+			"a hre",
+			"ctrl+k",
+			"esc",
+			"vintage",
+			"\"setting.command_mode\"",
+			"vintage",
+			"esc",
+			"soda"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -314,33 +241,33 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/search/results.blade.php",
+					"file": "app/controllers/contact/ContactController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1069,
+						"buffer_size": 596,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								160,
-								160
-							],
-							[
-								986,
-								986
+								54,
+								54
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"vintage":
+							{
+							}
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -350,25 +277,28 @@
 				},
 				{
 					"buffer": 1,
-					"file": "app/views/news/vw_news.blade.php",
+					"file": "app/controllers/mail/EmailController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 525,
+						"buffer_size": 594,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								525
+								13,
+								13
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"vintage":
+							{
+							}
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -378,223 +308,46 @@
 				},
 				{
 					"buffer": 2,
-					"file": "app/views/layouts/master.blade.php",
+					"file": "/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 54490,
+						"buffer_size": 15412,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								44491,
-								44408
+								1044,
+								986
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 27502.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "app/views/search/onehouse.blade.php",
+					"file": "/C/Users/Eatthatfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 675,
+						"buffer_size": 399,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								673,
-								673
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 1,
-			"sheets":
-			[
-				{
-					"buffer": 4,
-					"file": "public/comp/sass/screen.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6087,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4760,
-								4760
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 4770.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/views/layouts/master.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 54490,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								27208,
-								27333
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 14651.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/routes.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4348,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4269,
-								4280
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1058.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/controllers/search/BrowseController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 387,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "app/controllers/agent/AgentController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 383,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								290,
-								288
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "composer.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1027,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								587,
-								587
+								396,
+								396
 							]
 						],
 						"settings":
@@ -602,33 +355,6 @@
 							"syntax": "Packages/JavaScript/JSON.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 39.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "artisanCommand.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 271,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								271,
-								249
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
@@ -636,14 +362,29 @@
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "artisan",
-					"semi_transient": true,
+					"buffer": 4,
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2424,
+						"buffer_size": 330,
 						"regions":
 						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										196,
+										203
+									],
+									[
+										243,
+										250
+									]
+								],
+								"scope": ""
+							}
 						},
 						"selection":
 						[
@@ -654,7 +395,17 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
+							"vintage":
+							{
+							}
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -667,7 +418,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 38.0
 	},
 	"input":
 	{
@@ -682,18 +433,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.471726694074,
 			1.0
 		],
 		"rows":
@@ -703,10 +447,6 @@
 		]
 	},
 	"menu_visible": true,
-	"output.exec":
-	{
-		"height": 132.0
-	},
 	"project": "remax.sublime-project",
 	"replace":
 	{
@@ -719,130 +459,60 @@
 		"selected_items":
 		[
 			[
-				"ro",
-				"app\\routes.php"
-			],
-			[
-				"m",
+				"ma",
 				"app\\views\\layouts\\master.blade.php"
-			],
-			[
-				"s",
-				"public\\comp\\sass\\screen.scss"
-			],
-			[
-				"vwho",
-				"app\\views\\home\\vw_home.blade.php"
 			],
 			[
 				"mast",
 				"app\\views\\layouts\\master.blade.php"
 			],
 			[
-				"mas",
-				"app\\views\\layouts\\master.blade.php"
-			],
-			[
-				"ma",
-				"app\\views\\layouts\\master.blade.php"
-			],
-			[
-				"vwco",
-				"app\\views\\contact\\vw_contact.blade.php"
-			],
-			[
-				"contavw",
-				"app\\views\\contact\\vw_contact.blade.php"
-			],
-			[
-				"aboutv",
-				"app\\views\\about\\vw_about.blade.php"
-			],
-			[
-				"homev",
-				"app\\views\\home\\vw_home.blade.php"
-			],
-			[
-				"gis",
-				"C:\\Users\\ckotcha\\AppData\\Roaming\\Sublime Text 3\\Packages\\User\\Gist.sublime-settings"
-			],
-			[
-				"newc",
-				"app\\controllers\\news\\NewsController.php"
-			],
-			[
-				"vwne",
-				"app\\views\\news\\vw_news.blade.php"
-			],
-			[
 				"rou",
 				"app\\routes.php"
 			],
 			[
-				"scr",
-				"public\\comp\\sass\\screen.scss"
-			],
-			[
-				"controllhom",
-				"app\\controllers\\home\\HomeController.php"
+				"mastee",
+				"app\\views\\layouts\\master.blade.php"
 			],
 			[
 				"scree",
 				"public\\comp\\sass\\screen.scss"
 			],
 			[
-				"home",
-				"application\\modules\\home\\controllers\\home.php"
+				"search/re",
+				"app\\views\\search\\results.blade.php"
 			]
 		],
 		"width": 0.0
 	},
 	"select_project":
 	{
-		"height": 500.0,
+		"height": 0.0,
 		"selected_items":
 		[
-			[
-				"",
-				"C:\\xampp\\htdocs\\foundation\\foundation.sublime-project"
-			]
 		],
-		"width": 380.0
+		"width": 0.0
 	},
 	"select_symbol":
 	{
-		"height": 375.0,
+		"height": 0.0,
 		"selected_items":
 		[
 		],
-		"width": 746.0
+		"width": 0.0
 	},
 	"settings":
 	{
-		"last_automatic_layout":
-		[
-			[
-				0,
-				0,
-				1,
-				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
-			]
-		],
 		"vintage":
 		{
+			"last_buffer_search": "alt+s\""
 		}
 	},
-	"show_minimap": true,
+	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 352.0,
+	"side_bar_width": 382.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

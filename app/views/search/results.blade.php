@@ -33,7 +33,7 @@
 		</li>
 		@endforeach
 	</ul class="no-bullet">
-
+<?php echo $houses->links(); ?>
 	@else
 	{No result found for your request}
 	@endif

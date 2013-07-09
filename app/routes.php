@@ -20,6 +20,7 @@
 /* =home */
 Route::post('sendmail', array('uses'=>'MailController@index'));
 Route::get('/', array('as'=>'home', 'uses'=>'HomeController@index'));
+Route::get('sendmail', array('as'=>'sendmail', 'uses'=>'EmailController@index'));
 /* =about */
 
 Route::post('sendmail', array('uses'=>'MailController@index'));
@@ -67,8 +68,8 @@ Route::get('contact', array('as'=>'contact', 'uses'=>'ContactController@index'))
 Route::post('login', array('as'=>'login', 'uses'=>'LoginController@index'));
 
 
-Route::get('search', 'SearchController@index');
-Route::post('search', 'SearchController@find');
+Route::any('search', 'SearchController@index');
+//Route::post('search', 'SearchController@find');
 Route::get('search/{id}', 'SearchController@show');
 
 /*  Browse db */
