@@ -178,7 +178,7 @@
              <div class="large-12 columns">
 
 
-               {{Form::open(array('url' => 'search', 'method'=>'POST'))}}
+               {{Form::open(array('url' => 'search', 'method'=>'GET'))}}
 
                <div class="row">
                  <div class="large-12 columns">
@@ -233,7 +233,7 @@
      </div>
      <div class="row">
        <div class="large-12 columns">
-        {{link_to('http://www.remaxskokie.com/search', 'BROWSE ALL LISTINGS', array('class'=>'browseAllListings button radius expand '));}} 
+        {{link_to('show-all-listings', 'BROWSE ALL LISTINGS', array('class'=>'browseAllListings button radius expand '));}} 
       </div>
     </div>
     <div class="row">
@@ -480,14 +480,14 @@
     </nav>
   </div>
   <h3 class="subheader">Contact Us</h3>
-  {{Form::open(array('url' => 'foo/bar'))}}
+  {{Form::open(array('url' => 'sendmail'))}}
   {{Form::label('email', 'Your E-mail')}}
   {{Form::text('email', '', array('placeholder'=>'@', 'class'=>'txt'))}}
   {{Form::label('subject', 'Subject')}}
   {{Form::text('subject', '', array('placeholder'=>'Your subject', 'class'=>'className'))}}
 
-  {{Form::label('msg', 'Enter a Message')}}
-  {{Form::textarea('msg', '', array('placeholder'=>'', 'class'=>'txtarea'))}}
+  {{Form::label('message', 'Enter a Message')}}
+  {{Form::textarea('message', '', array('placeholder'=>'', 'class'=>'txtarea'))}}
   {{ Form::submit('Send', array('class'=>'button small radius'))}}
 
 
