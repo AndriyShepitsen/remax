@@ -92,6 +92,13 @@ $copyrightBackgroundColor: #3F3F3F;
 	float: left;
 	font-weight: bold;
 }
+.button{
+	background-color: $colorButtonBackground !important;
+	margin-left: 5px;
+}
+.button:hover{
+	background-color:darken( $colorButtonBackground, 10%)!important;
+}
 .navPanel{
 	background-color: $colorNavPanel;
 	.button{
@@ -113,14 +120,8 @@ $copyrightBackgroundColor: #3F3F3F;
 }
 .logoWrapper{
 	@include logoWrapperStyle;
-	.button{
-		background-color: $colorButtonBackground !important;
-		margin-left: 5px;
-	}
-	.button:hover{
-		background-color:darken( $colorButtonBackground, 10%)!important;
-	}
 }
+
 
 
 /* =create an account style starts here */
@@ -143,7 +144,7 @@ $copyrightBackgroundColor: #3F3F3F;
 /* =create an account style ends here*/
 
 .icon{
-	margin-top: 80px;
+	margin-top: 20px;
 	text-align: right;
 }
 .mailIcon{
@@ -179,7 +180,7 @@ $copyrightBackgroundColor: #3F3F3F;
 
 
 .panel{
-	padding-bottom: 20px !important;
+	padding-bottom: 0px !important;
 	margin-bottom: 10px;
 } 
 .orbit-container{
@@ -201,6 +202,9 @@ label{
 }
 .advanceSearch{
 	font-size: 12px !important;
+}
+.propertiesAllert{
+	text-align: center;
 }
 .priceStyle{
 	font-weight: bold !important;
@@ -271,6 +275,16 @@ article p{
 .innerInfo{
 	padding-top: 0px !important;
 	padding-bottom: 0px !important;
+}
+.agentProp{
+	margin-top: 10px;
+}
+.logoS{
+	margin-top:5px;
+	display: inline-block;
+}
+.min{
+// background-color: #DDDDDD !important;
 }
 /*=footer starts here */
 @mixin marginOneEmTopLeft{

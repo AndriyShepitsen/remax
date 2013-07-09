@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"inl",
+				"inline-block"
+			],
+			[
 				"fsi",
 				"font-size"
 			],
@@ -23,7 +27,7 @@
 			"file": "app/views/search/results.blade.php",
 			"settings":
 			{
-				"buffer_size": 1018,
+				"buffer_size": 1069,
 				"line_ending": "Windows"
 			}
 		},
@@ -36,10 +40,13 @@
 			}
 		},
 		{
+			"contents": "<!-- //LOCATION: remax/public\n<!-- //<!DOCTYPE html>\n  <!--[if IE 8]> <html class=\"no-js lt-ie9\" lang=\"en\"> <![endif]-->\n  <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en\"> <!--<![endif]-->\n  <html>\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width\" />\n    <title>Remax First Class Realty</title>\n    {{HTML::style(\"comp/stylesheets/normalize.css\" )}} \n    {{HTML::style(\"comp/stylesheets/screen.css\" )}} \n    {{HTML::script(\"//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js\")}} \n\n    {{HTML::script(\"comp/javascripts/vendor/custom.modernizr.js\")}} \n    {{HTML::script(\"comp/javascripts/foundation.min.js\")}} \n    {{HTML::script(\"comp/javascripts/script.js\")}} \n\n\n  </head>\n  <body>\n    <!-- navPanel starts here -->\n    <div class=\"navPanel\">\n      <div class=\"row\">\n        <div class=\"large-12 columns\">\n\n          <nav class=\"top-bar\">\n            <ul class=\"title-area\">\n              <!-- Title Area -->\n              <li class=\"name\">\n                <h1>\n                  {{link_to_route('home', 'REMAX FIRST CLASS');}}\n                </h1>\n              </li>\n              <!-- Remove the class \"menu-icon\" to get rid of menu icon. Take out  \"Menu\" to just have icon alone -->\n\n              <li class=\"toggle-topbar menu-icon\"><a href=\"#\"><span>Menu</span></a></li>\n            </ul>\n            <section class=\"top-bar-section\">\n              <ul class=\"right\">\n                <li>{{link_to_route('home', 'Home');}}</li>\n                <li>{{link_to_route('about', 'About');}}</li>\n                <li class=\"has-dropdown\">{{link_to('#', 'Buying');}}\n\n                  <ul class=\"dropdown\">\n                    <li>{{link_to_route('the_benefits_of_home_ownership', 'The Benefits of Home Ownership');}}</li>\n                    <li>{{link_to_route('the_importance_of_buyers_agent', 'The Importance of a Buyer\\'s Agent');}}</li>\n                    <li>{{link_to_route('deciding_where_to_live', 'Deciding Where to Live');}}</li>\n                    <li>{{link_to_route('anatomy_of_a_home_purchase', 'Anatomy of a Home Purchase');}}</li>\n                    <li>{{link_to_route('how_much_house_can_you_afford', 'How Much House Can You Afford?');}}</li>\n                    <li>{{link_to_route('five_tips_to_narrow_your_online_home_search', '5 Tips to Narrow Your Online Home Search');}}</li>\n                  </ul>\n                </li>\n                <li class=\"has-dropdown\">{{link_to('#', 'Selling');}}\n                  <ul class=\"dropdown\">\n                    <li>{{link_to_route('the_right_listing_agent', 'The Right Listing Agent');}}</li>\n                    <li>{{link_to_route('how_an_agent_markets_your_home', 'How an Agent Markets Your Home');}}</li>\n                    <li>{{link_to_route('pricing_your_home_to_sell', 'Pricing Your Home to Sell');}}</li>\n                    <li>{{link_to_route('preparing_your_house_for_sale', 'Preparing Your House for Sale');}}</li>\n                    <li>{{link_to_route('consider_a_home_inspection_when_selling', 'Consider a Home Inspection When Selling');}}</li>\n                  </ul>\n                  <li/>\n                  <li class=\"has-dropdown\">{{link_to('#', 'Mortgage');}}\n                    <ul class=\"dropdown\">\n                      <li>{{link_to_route('preparing_your_house_for_sale', 'Preparing Your House for Sale');}}</li>\n                      <li>{{link_to_route('finding_the_right_mortgage_professional', 'Finding the Right Mortgage Professional');}}</li>\n                      <li>{{link_to_route('getting_preapproved', 'Getting Preapproved');}}</li>\n                      <li>{{link_to_route('how_much_can_you_afford', 'How Much Can you afford?');}}</li>\n                      <li>{{link_to_route('down_payments_how_much_do_you_need', 'Down Payments: How Much Do You Need?');}}</li>\n                      <li>{{link_to_route('mortgages_101_basic_loan_types', 'Mortgages 101: Basic Loan Types');}}</li>\n                      <li>{{link_to_route('renovating_a_home', 'Renovating a Home? Consider a 203(k) Loan');}}</li>\n                    </ul>\n                    <li/>\n                    <li class=\"has-dropdown\">{{link_to('#', 'News');}}\n                      <ul class=\"dropdown\">\n                        <li>{{link_to_route('real_estate_news', 'Real Estate News');}}</li>\n                        <li>{{link_to_route('news_for_buyers', 'News for Buyers');}}</li>\n                        <li>{{link_to_route('news_for_sellers', 'News for Sellers');}}</li>\n                      </ul>\n                      <li/>\n                      <li>{{link_to_route('contact', 'Contact');}}</li> \n                    </ul>\n                  </section>\n                </nav>\n              </div>\n            </div>\n          </div>\n\n          <!-- =logoWrapper -->\n          <div class=\"logoWrapper\">\n            <div class=\"row\">\n              <aside class=\"large-8 columns\">\n\n               <a href=\"{{URL::route('home')}}\" title=\"Home Page\">\n                 <img src=\"{{url('comp/img/REMAX1Logo.png')}}\" alt=\"Remax First Class Logo\">\n               </a> \n\n             </aside>\n\n             <!-- =loginButton -->\n             <aside class=\"large-4 columns\">\n              <div class=\"row\">\n                <div class=\"large-12 columns\">\n                  <input type=\"submit\" class=\"button tiny right loginButton\" data-reveal-id=\"adminAuth\" value=\"LOGIN\">\n                  <input type=\"submit\" class=\"button tiny right\" data-reveal-id=\"createAccount\" value=\"Create an account\">\n                </div>\n              </div>\n              <!-- =homeIcon -->\n              <div class=\"row\">\n               <div class=\"large-12 columns right icon\";>\n                 <a href=\"{{ URL::route('home')}}\" class=\"homeIcon has-tip-left\" title=\"Home Page\">\n                   <img src=\"{{url('comp/img/home_remax.png')}}\" alt=\"Remax First Class Home Icon\">\n                 </a> \n                 <!-- =mailIcon -->\n                 <a href=\"#\" class=\"mailIcon has-tip-left\" title=\"Send Us Email\" data-reveal-id=\"myModal\"> <img src=\"{{url('comp/img/mail_remax.png')}}\" alt=\"Remax First Class Mail Icon\" ></a>\n               </div> \n             </div>\n           </aside>\n         </div>\n       </div>\n       <!-- =header ends here -->\n\n\n       <div id=\"mainContent\">\n         <div class=\"row\">\n          <div class=\"large-8 columns\">\n\n           @yield('content')\n         </div>\n\n         <!--  =aside starts here-->\n         <adide class=\"large-4 columns\">\n           <div class=\"row\">\n            <div class=\"large-12 columns panel\">\n             <span class=\"find\">FIND YOUR HOME</span>\n             <div class=\"row\">\n               <div class=\"large-12 columns\">\n\n\n                 {{Form::open(array('url' => 'search', 'method'=>'POST'))}}\n\n                 <div class=\"row\">\n                   <div class=\"large-12 columns\">\n                     {{Form::label('location', 'Location')}}\n                     {{Form::text('location',Input::get('location'), array('placeholder'=>'City and State, Address or Zip Code', 'class'=>'findInput'))}}\n                   </div>\n                 </div>\n\n                 <div class=\"row\">\n                   <div class=\"large-12 columns\">\n                     {{Form::label('from', 'Price Range')}}\n                   </div>\n                 </div>\n\n                 <div class=\"row\">\n                   <div class=\"large-6 columns\">\n                     {{Form::text('from', Input::get('from'), array('placeholder'=>'$ From', 'class'=>'findInput'))}}\n                   </div>\n                   <div class=\"large-6 columns\">\n                     {{Form::text('to',  Input::get('to'), array('placeholder'=>'$ To', 'class'=>'findInput'))}}\n                   </div>\n                 </div>\n                 <div class=\"row\">\n                   <div class=\"large-6 columns\">\n                     {{Form::label('beds', 'Bedrooms')}}\n                     {{Form::text('beds', Input::get('beds'), array('placeholder'=>'#', 'class'=>'findinput'))}}\n                   </div>\n                   <div class=\"large-6 columns\">\n                     {{Form::label('baths', 'Bathroomss')}}\n                     {{Form::text('baths', Input::get('baths'), array('placeholder'=>'#', 'class'=>'findinput'))}}\n                   </div>\n<!--                    <div class=\"large-4 columns\">\n                   {{Form::label('garage', 'garage')}}\n                   {{Form::text('garage', '', array('placeholder'=>'#', 'class'=>'findinput'))}}\n                 </div>\n               -->                 </div>\n               <div class=\"row\">\n                 <div class=\"small-2 columns\">\n\n                   {{ Form::submit('Search', array('class'=>'secondary button small radius'))}}\n                   <br/>\n                 </div>\n               </div>\n               <div class=\"row\">\n                 <div class=\"large-12 column\">\n                   <ul class=\"breadcrumbs\">\n                     <li>{{link_to('http://www.remaxskokie.com/search', 'Browse All Listings', array('class'=>'advanceSearch'));}}</li>\n                     <!-- <li>{{link_to('#', 'Search by MLS#', array('class'=>'advanceSearch'));}}</li> -->\n                   </ul>\n                 </div>\n               </div>\n               {{Form::close()}}\n\n\n             </div>\n           </div>\n         </div>\n       </div>\n\n       <!-- =find your home ends here -->\n\n       <div class=\"row\">\n         <section class=\"large-12 columns panel \">\n           <div>\n             <h4> <a class=\"newListingsTitle\" href=\"#\">NEW LISTINGS</a> </h4>\n           </div>\n           <hr/>\n           <ul class=\"small-block-grid-3 clearing-thumbs\">\n             <li><a class=\"th radius\" href=\"{{URL::to('search/1')}}\"><img src=\"{{url('comp/img/thumbs/1/1s.jpg')}}\" alt=\"\"><a/></li>\n             <li><a class=\"th radius\" href=\"{{URL::to('search/15')}}\"><img src=\"{{url('comp/img/thumbs/15/1s.jpg')}}\" alt=\"\"><a/></li>\n             <li><a class=\"th radius\" href=\"{{URL::to('search/16')}}\"><img src=\"{{url('comp/img/thumbs/16/1s.jpg')}}\" alt=\"\"><a/></li>\n             <li><a class=\"th radius\" href=\"{{URL::to('search/19')}}\"><img src=\"{{url('comp/img/thumbs/19/1s.jpg')}}\" alt=\"\"><a/></li>\n             <li><a class=\"th radius\" href=\"{{URL::to('search/5')}}\"><img src=\"{{url('comp/img/thumbs/5/1s.jpg')}}\" alt=\"\"><a/></li>\n             <li><a class=\"th radius\" href=\"{{URL::to('search/10')}}\"><img src=\"{{url('comp/img/thumbs/10/1s.jpg')}}\" alt=\"\"><a/></li>\n           </ul>\n         </section>\n       </div>\n\n       <div class=\"row\">\n         <section class=\"large-12 columns panel \">\n           <h4><a class=\"newListingsTitle\"href=\"\">OUR AGENTS</a> <h4>\n             <hr/>\n             <ul class=\"small-block-grid-3 clearing-thumbs \" data-clearing>\n               <li><a class=\"th radius\" data-reveal-id=\"danFlorian\" href=\"#\"><img src=\"{{url('comp/img/agents/Dan_I_Florian.jpg')}}\" alt=\"\"><a/>\n                 {{link_to('#', 'Dan I. Florian', array('class'=>'agentLink'));}}\n               </li>\n               <li><a class=\"th radius\" data-reveal-id=\"ivyMoy\" href=\"#\"><img src=\"{{url('comp/img/agents/Ivy_Moy.jpg')}}\" alt=\"\"><a/>\n                 {{link_to('#', 'Ivy Moy', array('class'=>'agentLink'));}}\n               </li>\n               <li><a class=\"th radius\" data-reveal-id=\"cheryletteHilton\" href=\"#\"><img src=\"{{url('comp/img/agents/Cherylette_Hilton.jpg')}}\" alt=\"\"><a/>\n                 {{link_to('#', 'Crerylette Hilton', array('class'=>'agentLink'));}}\n               </li>\n               <li><a class=\"th radius\" data-reveal-id=\"elenaDan\" href=\"#\"><img src=\"{{url('comp/img/agents/Dan_Elena.jpg')}}\" alt=\"\"><a/>\n                 {{link_to('#', 'Elena Dan', array('class'=>'agentLink'));}}\n               </li>\n               <li><a class=\"th radius\" data-reveal-id=\"mariusDan\" href=\"#\"><img src=\"{{url('comp/img/agents/Dan_Elena.jpg')}}\" alt=\"\"><a/>\n                 {{link_to('#', 'Marius Dan', array('class'=>'agentLink'));}}\n               </li>\n               <li><a class=\"th radius\" data-reveal-id=\"barryBenveniste\" href=\"#\"><img src=\"{{url('comp/img/agents/Barry_Benveniste.jpg')}}\" alt=\"\"><a/>\n                 {{link_to('#', 'Barry Benveniste', array('class'=>'agentLink'));}}\n               </li>\n               <li><a class=\"th radius\" data-reveal-id=\"markFeyman\" href=\"#\"><img src=\"{{url('comp/img/agents/3.png')}}\" alt=\"\"><a/>\n                 {{link_to('#', 'Mark Feyman', array('class'=>'agentLink'));}}\n               </li>\n               <li><a class=\"th radius\" data-reveal-id=\"haroldOza\" href=\"#\"><img src=\"{{url('comp/img/agents/3.png')}}\" alt=\"\"><a/>\n                 {{link_to('#', 'Harold Oza', array('class'=>'agentLink'));}}\n               </li>\n               <li><a class=\"th radius\" data-reveal-id=\"johnDias\" href=\"#\"><img src=\"{{url('comp/img/agents/3.png')}}\" alt=\"\"><a/>\n                 {{link_to('#', 'John B. Dias', array('class'=>'agentLink'));}}\n               </li>\n             </ul>\n           </section>\n         </div>\n\n       </adide>\n       <!-- =adide ands here -->\n\n     </div>\n   </div>     \n\n\n   <!-- /* =footeer starts here */ -->\n\n   <footer>\n    <div class=\"row\">\n      <div class=\"large-4 columns\">\n        <div class=\"row\">\n          <div class=\"large-12 columns\">\n            <a class=\"th has-tip-left logoPadding\" title=\"Multiple Listing Service\" href=\"#\">\n              <img src=\"{{url('comp/img/mls.png')}}\" alt=\"Multiple Listing Service\">\n            </a>\n            <a class=\"th has-tip-left logoPadding\" title=\"Remax Commercial\" href=\"#\">\n              <img src=\"{{url('comp/img/remax-commercial-logo.png')}}\" alt=\"Remax Commercial\">\n            </a>\n            <a class=\"th has-tip-left logoPadding\"  title=\"Remax Short Sale Chicago\"  href=\"http://www.shortsalechicago.us/Short-Sale-Chicago\">\n              <img src=\"{{url('comp/img/Chicago-Short-Sale-Logo.png')}}\" alt=\"Chicago Short Sale\">\n            </a>\n          </div>\n        </div>\n        <div class=\"row\">\n          <div class=\"large-12 columns logoRemaxFooter\">\n            <a href=\"{{ URL::route('home')}}\">\n              <img src=\"{{url('comp/img/logo-footer.png')}}\" alt=\"Logo Remax First Class\">\n              <a/>\n            </div>\n          </div>\n        </div>\n        <div class=\"large-4 columns\">\n\n          <section class=\"large-6 columns social\">\n            <ul class=\"prop\">\n              <span class=\"propertiesFooter\">PROPERTIES FOR SALE:</span> <br/>\n              <li class=\"locality properties\">{{link_to('browse/1', 'Single Family');}}</li>\n              <li class=\"locality properties\">{{link_to('browse/4', 'Multi-Family');}}</li>\n              <li class=\"locality properties\">{{link_to('browse/3', 'Condo');}}</li>\n              <li class=\"locality properties\">{{link_to('browse/2', 'Vacant Land');}}</li>\n            </ul>\n          </section>\n\n<!--             <section class=\"large-6 columns social\">\n  <ul class=\"prop\">\n    <span class=\"propertiesFooter\">PROPERTIES FOR RENT:</span> <br/>\n    <li class=\"locality properties\">{{link_to('#', 'Single home');}}</li>\n    <li class=\"locality properties\">{{link_to('#', 'Family home');}}</li>\n    <li class=\"locality properties\">{{link_to('#', 'Apartment');}}</li>\n    <li class=\"locality properties\">{{link_to('#', 'Villa');}}</li>\n    <li class=\"locality properties\">{{link_to('#', 'Condo');}}</li>\n    <li class=\"locality properties\">{{link_to('#', 'Other');}}</li>\n  </ul>\n</section>\n-->\n</div>\n\n<div class=\"large-4 columns\">\n  <div class=\"large-6 columns\">\n    <ul class=\"vcard\">\n      <span class=\"connectFooter\">CONTACT INFORMATION:</span>\n      <li class=\"locality\"> PHONE: (847) 674-9797</li>\n      <li class=\"locality\"> FAX: (847) 674-0411</li>\n      <li class=\"street-address\">4023 W. Church St.</li>\n      <li class=\"locality\">Skokie</li>\n      <li><span class=\"state\">IL</span> <span class=\"zip\">600076</span></li>\n      <li class=\"email\">{{link_to('#', 'remax1stclass@gmail.com');}}</li>\n    </ul>\n  </div>\n  <section class=\"large-6 columns social\">\n    <span class=\"contactFooter\">CONNECT WITH US:</span>\n    <ul class=\"small-block-grid-3\">\n      <li><a class=\"has-tip-left\" title=\"Our Facebook Page\" href=\"#\"><img src=\"{{url('comp/img/facebook.png')}}\" alt=\"Skokie Remax First Class Facebook Icon\"><a/></li>\n      <li><a class=\"has-tip-left\" title=\"Our Feed Page\" href=\"#\"><img src=\"{{url('comp/img/feed.png')}}\" alt=\"Skokie Remax First Class Feed Icon\"><a/></li>\n      <li><a class=\"has-tip-left\" title=\"Our Page\" href=\"#\"><img src=\"{{url('comp/img/youtube.png')}}\" alt=\"Skokie Remax First Class Youtube Icon\"><a/></li>\n      <li><a class=\"has-tip-left\" title=\"Our Twitter Page\" href=\"#\"><img src=\"{{url('comp/img/twitter.png')}}\" alt=\"Skokie Remax First Class Twitter Icon\"><a/></li>\n      <li><a class=\"has-tip-left\" title=\"Our Google Plus Page\" href=\"#\"><img src=\"{{url('comp/img/google.png')}}\" alt=\"Skokie Remax First Class Google Icon\"><a/></li>\n      <li><a class=\"has-tip-left\" title=\"Our Linkedin Page\" href=\"#\"><img src=\"{{url('comp/img/linkedin.png')}}\" alt=\"Skokie Remax First Class Linkedin Icon\"><a/></li>\n    </ul>\n  </section>\n</div>\n</div>\n</footer>\n\n<!-- /* =copyright starts here */ -->\n\n<div class=\"copyright\">\n  <div class=\"row\">\n    <div class=\"large-4 large-centered columns copy\">\n      <p>© 2013 RE/MAX FIRST CLASS</p> \n    </div>\n\n  </div>\n</div>\n</div>\n</div>\n\n<!-- /* My slideDown mail form starts here */\n--> \n<script>\n  document.write('<script src=' +\n    ('_proto_' in {} ? 'comp/javascripts/vendor/zepto' : 'comp/javascripts/vendor/jquery') +\n    '.js><\\/script>')\n</script>\n\n{{HTML::script(\"comp/javascripts/foundation/foundation.js\")}}\n\n{{HTML::script(\"comp/javascripts/foundation/foundation.alerts.js\")}}\n\n{{HTML::script(\"comp/javascripts/foundation/foundation.clearing.js\")}}\n\n{{HTML::script(\"comp/javascripts/foundation/foundation.cookie.js\")}}\n\n{{HTML::script(\"comp/javascripts/foundation/foundation.dropdown.js\")}}\n\n{{HTML::script(\"comp/javascripts/foundation/foundation.forms.js\")}}\n\n{{HTML::script(\"comp/javascripts/foundation/foundation.interchange.js\")}}\n\n{{HTML::script(\"comp/javascripts/foundation/foundation.joyride.js\")}}\n\n{{HTML::script(\"comp/javascripts/foundation/foundation.magellan.js\")}}\n\n{{HTML::script(\"comp/javascripts/foundation/foundation.orbit.js\")}}\n\n{{HTML::script(\"comp/javascripts/foundation/foundation.placeholder.js\")}}\n\n{{HTML::script(\"comp/javascripts/foundation/foundation.reveal.js\")}}\n\n{{HTML::script(\"comp/javascripts/foundation/foundation.section.js\")}}\n\n{{HTML::script(\"comp/javascripts/foundation/foundation.tooltips.js\")}}\n\n{{HTML::script(\"comp/javascripts/foundation/foundation.topbar.js\")}}\n\n\n<script>\n  $(document).foundation();\n</script>\n\n\n\n<div id=\"myModal\" class=\"reveal-modal medium myModal2\">\n  <h3 class=\"subheader\">Contact Us</h3>\n  {{Form::open(array('url' => 'foo/bar'))}}\n  {{Form::label('email', 'Your E-mail')}}\n  {{Form::text('email', '', array('placeholder'=>'@', 'class'=>'txt'))}}\n  {{Form::label('msg', 'Enter a Message')}}\n  {{Form::textarea('msg', '', array('placeholder'=>'', 'class'=>'txtarea'))}}\n  {{ Form::submit('Send', array('class'=>'secondary button small radius'))}}\n\n\n  <a class=\"close-reveal-modal\">&#215;</a>\n  {{Form::close()}}\n</div>\n\n\n<!--\n/* insert data-reveal-id to link with the same id */\n\n<a href=\"#\" class=\"mailIcon has-tip-left\" title=\"Send Us Email\" data-reveal-id=\"myModal\"> <img src=\"{{url('comp/img/mail_remax.png')}}\" alt=\"Remax First Class Mail Icon\" ></a>\n-->\n\n\n\n<!-- /* My slideDown Create account Form Starts Here */ -->\n\n\n<div id=\"createAccount\" class=\"reveal-modal medium createAccount panel\">\n  <a class=\"close-reveal-modal\">&#215;</a>\n  <div class=\"row\">\n    <div class=\"large-12 columns\">\n      {{Form::open(array('url' => 'foo/bar'))}}\n      <div class=\"navPanel\">\n        <div class=\"row\">\n          <div class=\"large-12 columns\">\n\n            <nav class=\"top-bar\">\n              <ul class=\"title-area right\">\n                <!-- Title Area -->\n                <li class=\"name\">\n                  <h1>\n                    {{link_to_route('home', 'REMAX FIRST CLASS');}}\n                  </h1>\n                </li>\n              </ul>\n            </nav>\n          </div>\n        </div>\n      </div>\n      <!-- =create an account panel ends here -->\n\n      <!-- =create an account form starts here -->\n      <div class=\"row\">\n\n        <div class=\"large-12 columns createAccount\">  \n          <h3 class=\"subheader account\">Create Your Account</h3>\n\n          <div class=\"row\">\n            <div class=\"large-6 columns\">\n              {{Form::label('firstNameCreate', 'First Name')}}\n              {{Form::text('firstNameCreate', '', array('placeholder'=>'Your Name', 'class'=>'className'))}}\n            </div>\n\n            <div class=\"large-6 columns\">{{Form::label('lastNameCreate', 'Last Name')}}\n              {{Form::text('lastNameCreate', '', array('placeholder'=>'Your last name', 'class'=>'className'))}}\n            </div>\n          </div>\n\n\n          <div class=\"row\">\n            <div class=\"large-6 columns\">\n              {{Form::label('emailCreate', 'Email Address')}}\n              <div class=\"row collapse\">\n                <div class=\"small-2 columns\">\n                  <span class=\"prefix\">@</span>\n                </div>\n                <div class=\"small-10 columns\">\n                  {{Form::text('emailCreate', '', array('placeholder'=>'Your email', 'class'=>'className'))}}\n                </div>\n              </div>\n            </div>        \n\n            <div class=\"large-6 columns\">\n              {{Form::label('mobilePhoneCreate', 'Mobile Phone')}}\n              {{Form::text('mobilePhoneCreate', '', array('placeholder'=>'(***)***-****', 'class'=>'className'))}}\n            </div>\n          </div>      \n\n          <div class=\"row\">\n            <div class=\"large-6 columns\">\n              {{Form::label('passwordCreate', 'Password')}}\n              {{Form::text('passwordCreate', '', array('placeholder'=>'**********', 'class'=>'className'))}}\n            </div>\n            <div class=\"large-6 columns\">\n              {{Form::label('confirmPasswordCreate', 'Confirm Password')}}\n              {{Form::text('confirmPasswordCreate', '', array('placeholder'=>'**********', 'class'=>'className'))}}\n            </div>\n          </div>      \n\n          <div class=\"row\">\n            <div class=\"small-2 columns\">\n              {{ Form::submit('Create Your Free Account', array('class'=>'button small radius'))}}\n            </div>\n          </div>\n        </div>\n\n\n        {{Form::close()}}\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- =create an account form ends here -->\n\n</div>\n<!--\n/* insert data-reveal-id to your button with the same id */\n                   <input type=\"submit\" class=\"button tiny right loginButton\" data-reveal-id=\"adminAuth\" value=\"LOGIN\">\n                 -->\n\n                 <!-- /* My slideDown Authentification Form Starts Here */ -->\n\n\n                 <div id=\"adminAuth\" class=\"reveal-modal small adminAuth2 createAccount panel\">\n                  <a class=\"close-reveal-modal\">&#215;</a>\n                  <div class=\"row\">\n                    <div class=\"large-12 columns\">\n                      {{Form::open(array('url'=>'/login'))}} \n                      <div class=\"navPanel\">\n                        <div class=\"row\">\n                          <div class=\"large-12 columns\">\n\n                            <nav class=\"top-bar\">\n                              <ul class=\"title-area right\">\n                                <!-- Title Area -->\n                                <li class=\"name\">\n                                  <h1>\n                                    {{link_to_route('home', 'REMAX FIRST CLASS');}}\n                                  </h1>\n                                </li>\n                              </ul>\n                            </nav>\n                          </div>\n                        </div>\n                      </div>\n\n\n                      <div class=\"row\"> \n                       <div class=\"large-12 columns\">\n                         <h3 class=\"subheader account\">Sign in to Your Account</h3>\n                         <div class=\"row\">\n                          <div class=\"large-6 columns\">\n                            {{Form::label('emailSignIn', 'Your Email')}}\n                            {{ Form::email('emailSignIn', $value = null, $attributes = array())}}\n                          </div>\n                          <div class=\"large-6 columns\">\n                            {{Form::label('passwordSignIn', 'Your Password')}}\n                            {{ Form::password('passwordSignIn', $value = null, $attributes = array())}}\n                          </div>\n                        </div>\n                        {{ Form::submit('Login', $attributes = array('class'=>'button tiny radius'))}}\n                        {{Form::close()}} \n                      </div>\n                    </div>\n                  </div>\n                </div>\n\n              </div>\n<!--\n/* insert data-reveal-id to your button with the same id */\n                   <input type=\"submit\" class=\"button tiny right loginButton\" data-reveal-id=\"adminAuth\" value=\"LOGIN\">\n                 -->\n\n\n\n                 <!-- =Dan Florian profile starts here -->\n\n                 <div id=\"danFlorian\" class=\"reveal-modal medium adminAuth2 createAccount panel\">\n                  <a class=\"close-reveal-modal\">&#215;</a>\n                  <div class=\"row\">\n                    <div class=\"large-12 columns\">\n                      <div class=\"navPanel\">\n                        <nav class=\"top-bar min\">\n                          <div class=\"large-2 columns\">\n\n                            <a class=\"logoS\" href=\"{{URL::route('home')}}\" title=\"Home Page\">\n                             <img src=\"{{url('comp/img/REMAX1LogoS.png')}}\" alt=\"Remax First Class Logo\">\n                           </a> \n                         </div>\n\n                         <div class=\"large-10 columns\"> <ul class=\"title-area right\">\n                          <!-- Title Area -->\n                          <li class=\"name\">\n                            <h1>\n                              {{link_to_route('home', 'REMAX FIRST CLASS');}}\n                            </h1>\n                          </li>\n                        </ul>\n                      </div>\n                    </nav>\n                  </div>\n\n                  <!--  =danFlorian top bar ends here-->\n\n                  <div class=\"row\">\n                   <div class=\"large-4 columns\">\n                    <div class=\"row\">\n                     <div class=\"large-12 columns left\">\n                      <br/>\n                      <ul>\n                       <h3 class=\"subheader agentName\">Dan I. Florian </h3>\n                       <a class=\"label has-tip-left specialist\" title=\"Accredited Buyers Representative\">ABR</a> \n                       <a class=\"label has-tip-left specialist\" title=\"Certified Residential Specialist\">CRS</a>\n                     </ul>\n                   </div>                           \n                 </div>\n                 <div class=\"agentPic\"><img src=\"{{url('comp/img/agentsL/Dan_I_Florian.jpg')}}\" alt=\"Dan I. Florian\"></div>\n                 <div>{{link_to('agent/4', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}\n                 </div>\n               </div>\n\n               <div class=\"large-7 columns left panel info\">\n                 <br/>\n                 <ul class=\"vcard innerInfo\">\n                   <h5>Associate</h5>\n                   <li class=\"subheader\">Year Joined: 2003</li>\n                   <li class=\"subheader\">Year Licensed: 2003</li>\n                   <hr/>\n                   <h6>Contact Information:</h6>\n                   <li class=\"subheader\">Main: (847) 674-9797</li>\n                   <li class=\"subheader\">Fax: (847) 674-0411</li>\n                   <li class=\"subheader\">Direct: (773) 543-3500 </li>\n                   <li class=\"subheader\">Languages: English, Italian, Romanian, Spanish</li>\n                 </ul>\n               </div>\n             </div>\n\n             <!--  =danFlorian contact information ends here-->\n\n             <div class=\"row\">\n              <div class=\"large-12 columns\">\n                <dl>                              \n                  <dt><h5>Specialties</h5></dt>\n                  <hr/>\n                  <dd class=\"specialties\"><p>Buyer Brokerage, Business Opportunities, Condominiums, Foreclosure Property, Investments, Lake/Beach Property, Luxury Homes, New Construction, Property Management, Relocation, Rentals, Short Sales, Vacation and Resorts</p>\n                  </dd>  \n                  <dt><h5>Service Area Information</h5></dt>\n                  <hr/>\n                  <dd class=\"specialties\">\n                    <h6>Office Area:</h6>\n                    <p>Skokie IL, Chicago IL, Glenview IL, Morton Grove IL, Evanston IL, Wilmette IL, Niles IL, Lincolnwood IL</p>                            \n                    <h6>Agent Area:</h6>\n                    <p>Chicago IL, Glenview IL, Morton Grove IL, Niles IL, Skokie IL, Skokie IL</p>  \n                  </dd>\n                </div>\n              </div>\n\n            </div>\n          </div>\n        </div>\n        <!-- =Dan Florian profile ends here -->\n\n\n\n        <!-- =Ivy Moy  profile starts here -->\n\n        <div id=\"ivyMoy\" class=\"reveal-modal medium adminAuth2 createAccount panel\">\n          <a class=\"close-reveal-modal\">&#215;</a>\n          <div class=\"row\">\n            <div class=\"large-12 columns\">\n              <div class=\"navPanel\">\n                <nav class=\"top-bar min\">\n                  <div class=\"large-2 columns\">\n\n                    <a class=\"logoS\" href=\"{{URL::route('home')}}\" title=\"Home Page\">\n                     <img src=\"{{url('comp/img/REMAX1LogoS.png')}}\" alt=\"Remax First Class Logo\">\n                   </a> \n                 </div>\n\n                 <div class=\"large-10 columns\"> <ul class=\"title-area right\">\n                  <!-- Title Area -->\n                  <li class=\"name\">\n                    <h1>\n                      {{link_to_route('home', 'REMAX FIRST CLASS');}}\n                    </h1>\n                  </li>\n                </ul>\n              </div>\n            </nav>\n          </div>\n\n\n          <!--  =ivyMoy top bar ends here-->\n\n          <div class=\"row\">\n           <div class=\"large-4 columns\">\n            <div class=\"row\">\n             <div class=\"large-12 columns left\">\n              <br/>\n              <ul>\n               <h3 class=\"subheader agentName\">Ivy Moy</h3>\n               <!-- <a class=\"label has-tip-left specialist\" title=\"Accredited Buyers Representative\">ABR</a>  -->\n               <a class=\"label has-tip-left specialist\" title=\"Certified Residential Specialist\">CRS</a>\n             </ul>\n           </div>                           \n         </div>\n         <div class=\"agentPic\"><img src=\"{{url('comp/img/agentsL/Ivy_Moy.jpg')}}\" alt=\"Ivy Moy\"></div>\n         <div>{{link_to('agent/4', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}\n         </div>\n       </div>\n\n\n       <div class=\"large-7 columns left panel info\">\n         <br/>\n         <ul class=\"vcard innerInfo\">\n           <h5>Associate</h5>\n           <li class=\"subheader\">Year Joined: 2001</li>\n           <li class=\"subheader\">Year Licensed: 1998</li>\n           <hr/>\n           <h6>Contact Information:</h6>\n           <li class=\"subheader\">Main: (847) 674-9797</li>\n           <li class=\"subheader\">Fax: (847) 674-0411</li>\n           <li class=\"subheader\">Direct: (847) 568-3115</li>\n           <li class=\"subheader\">Mobile: (847) 913-3710</li>\n           <li class=\"subheader\">Languages: Chinese, English, Mandarin </li>\n         </ul>\n       </div>\n     </div>\n\n     <!--  =ivyMoy contact information ends here-->\n\n     <div class=\"row\">\n      <div class=\"large-12 columns\">\n        <dl>                              \n                      <!-- <dt><h5>Specialties</h5></dt>\n                      <hr/>\n                      <dd class=\"specialties\"><p>Buyer Brokerage, Business Opportunities, Condominiums, Foreclosure Property, Investments, Lake/Beach Property, Luxury Homes, New Construction, Property Management, Relocation, Rentals, Short Sales, Vacation and Resorts</p>\n                      </dd>   -->\n                      <dt><h5>Service Area Information</h5></dt>\n                      <hr/>\n                      <dd class=\"specialties\">\n                        <h6>Office Area:</h6>\n                        <p>Skokie IL, Chicago IL, Glenview IL, Morton Grove IL, Evanston IL, Wilmette IL, Niles IL, Lincolnwood IL</p>                            \n                        <h6>Agent Area:</h6>\n                        <p>Chicago IL, Evanston IL, Morton Grove IL, Niles IL, Skokie IL </p>  \n                      </dd>\n                    </div>\n                  </div>\n\n                </div>\n              </div>\n            </div>\n            <!-- =Ivy Moy profile ends here -->\n\n\n            <!-- =Cherylette Hilton profile starts here -->\n\n            <div id=\"cheryletteHilton\" class=\"reveal-modal medium adminAuth2 createAccount panel\">\n              <a class=\"close-reveal-modal\">&#215;</a>\n              <div class=\"row\">\n                <div class=\"large-12 columns\">\n                  <div class=\"navPanel\">\n                    <nav class=\"top-bar min\">\n                      <div class=\"large-2 columns\">\n\n                        <a class=\"logoS\" href=\"{{URL::route('home')}}\" title=\"Home Page\">\n                         <img src=\"{{url('comp/img/REMAX1LogoS.png')}}\" alt=\"Remax First Class Logo\">\n                       </a> \n                     </div>\n\n                     <div class=\"large-10 columns\"> <ul class=\"title-area right\">\n                      <!-- Title Area -->\n                      <li class=\"name\">\n                        <h1>\n                          {{link_to_route('home', 'REMAX FIRST CLASS');}}\n                        </h1>\n                      </li>\n                    </ul>\n                  </div>\n                </nav>\n              </div>\n\n\n              <!--  =cheryletteHilton top bar ends here-->\n\n              <div class=\"row\">\n               <div class=\"large-4 columns\">\n                <div class=\"row\">\n                 <div class=\"large-12 columns left\">\n                  <br/>\n                  <ul>\n                   <h3 class=\"subheader agentName\">Crerylette Hilton</h3>\n                          <!--  <a class=\"label has-tip-left specialist\" title=\"Accredited Buyers Representative\">ABR</a> \n                          <a class=\"label has-tip-left specialist\" title=\"Certified Residential Specialist\">CRS</a> -->\n                        </ul>\n                      </div>                           \n                    </div>\n                    <div class=\"agentPic\">\n                      <img src=\"{{url('comp/img/agentsL/Cherylette_Hilton.jpg')}}\" alt=\"Crerylette Hilton\">\n                    </div>\n                    <div>{{link_to('agent/4', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}\n                    </div>\n                  </div>\n\n                  <div class=\"large-7 columns left panel info\">\n                   <br/>\n                   <ul class=\"vcard innerInfo\">\n                     <h5>Associate</h5>\n                     <li class=\"subheader\">Year Joined: 2004</li>\n                     <li class=\"subheader\">Year Licensed: 1974</li>\n                     <hr/>\n                     <h6>Contact Information:</h6>\n                     <li class=\"subheader\">Main: (847) 674-9797</li>\n                     <li class=\"subheader\">Fax: (847) 674-0411</li>\n                     <li class=\"subheader\">Direct: (847) 864-7073 </li>\n                     <li class=\"subheader\">Mobile: (847) 269-7073 </li>\n                     <li class=\"subheader\">Languages: English</li>\n                   </ul>\n                 </div>\n               </div>\n\n               <!--  =cheryletteHilton contact information ends here-->\n\n               <div class=\"row\">\n                <div class=\"large-12 columns\">\n                  <dl>                              \n                    <dt><h5>Specialties</h5></dt>\n                    <hr/>\n                    <dd class=\"specialties\"><p>Auctions, Condominiums, Foreclosure Property, Investments, New Construction, Relocation, Rentals </p>\n                    </dd>  \n                    <dt><h5>Service Area Information</h5></dt>\n                    <hr/>\n                    <dd class=\"specialties\">\n                      <h6>Office Area:</h6>\n                      <p>Skokie IL, Chicago IL, Glenview IL, Morton Grove IL, Evanston IL, Wilmette IL, Niles IL, Lincolnwood IL</p>                            \n                      <h6>Agent Area:</h6>\n                      <p>Skokie IL</p>  \n                    </dd>\n                  </div>\n                </div>\n\n              </div>\n            </div>\n          </div>\n          <!-- =Crerylette Hilton profile ends here -->\n\n\n          <!-- =Elena Dan profile starts here -->\n\n          <div id=\"elenaDan\" class=\"reveal-modal medium adminAuth2 createAccount panel\">\n            <a class=\"close-reveal-modal\">&#215;</a>\n            <div class=\"row\">\n              <div class=\"large-12 columns\">\n                <div class=\"navPanel\">\n                  <nav class=\"top-bar min\">\n                    <div class=\"large-2 columns\">\n\n                      <a class=\"logoS\" href=\"{{URL::route('home')}}\" title=\"Home Page\">\n                       <img src=\"{{url('comp/img/REMAX1LogoS.png')}}\" alt=\"Remax First Class Logo\">\n                     </a> \n                   </div>\n\n                   <div class=\"large-10 columns\"> <ul class=\"title-area right\">\n                    <!-- Title Area -->\n                    <li class=\"name\">\n                      <h1>\n                        {{link_to_route('home', 'REMAX FIRST CLASS');}}\n                      </h1>\n                    </li>\n                  </ul>\n                </div>\n              </nav>\n            </div>\n\n\n\n            <!--  =elenaDan  top bar ends here-->\n\n            <div class=\"row\">\n             <div class=\"large-4 columns\">\n              <div class=\"row\">\n               <div class=\"large-12 columns left\">\n                <br/>\n                <ul>\n                 <h3 class=\"subheader agentName\">Elena Dan</h3>\n                 <a class=\"label has-tip-left specialist\" title=\"Accredited Buyers Representative\">ABR</a> \n                 <a class=\"label has-tip-left specialist\" title=\"Certified Residential Specialist\">CRS</a>\n               </ul>\n             </div>                           \n           </div>\n           <div class=\"agentPic\"><img src=\"{{url('comp/img/agentsL/Dan_Elena.jpg')}}\" alt=\"Elena Dan\"></div>\n           <div>{{link_to('agent/4', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}\n           </div>\n         </div>\n\n         <div class=\"large-7 columns left panel info\">\n           <br/>\n           <ul class=\"vcard innerInfo\">\n             <h5>Associate</h5>\n             <li class=\"subheader\">Year Joined: 1993</li>\n             <li class=\"subheader\">Year Licensed: 1989</li>\n             <hr/>\n             <h6>Contact Information:</h6>\n             <li class=\"subheader\">Main: (847) 674-9797</li>\n             <li class=\"subheader\">Fax: (847) 674-0411</li>\n             <li class=\"subheader\">Direct: (847) 329-3888 </li>\n             <li class=\"subheader\">Mobile: (773) 230-5985 </li>\n             <li class=\"subheader\">Languages: English, Romanian</li>\n           </ul>\n         </div>\n       </div>\n\n       <!--  =elenaDan contact information ends here-->\n\n       <div class=\"row\">\n        <div class=\"large-12 columns\">\n          <dl>                              \n            <dt><h5>Specialties</h5></dt>\n            <hr/>\n            <dd class=\"specialties\"><p>Condominiums, Foreclosure Property, Investments, Luxury Homes, New Construction, Relocation, Rentals, Senior Communities, Short Sales </p>\n            </dd>  \n            <dt><h5>Service Area Information</h5></dt>\n            <hr/>\n            <dd class=\"specialties\">\n              <h6>Office Area:</h6>\n              <p>Skokie IL, Chicago IL, Glenview IL, Morton Grove IL, Evanston IL, Wilmette IL, Niles IL, Lincolnwood IL</p>                            \n              <h6>Agent Area:</h6>\n              <p>Skokie IL</p>  \n            </dd>\n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n  <!-- =Elena Dan  profile ends here -->\n\n\n\n\n  <!-- =Marius Dan profile starts here -->\n\n  <div id=\"mariusDan\" class=\"reveal-modal medium adminAuth2 createAccount panel\">\n    <a class=\"close-reveal-modal\">&#215;</a>\n    <div class=\"row\">\n      <div class=\"large-12 columns\">\n        <div class=\"navPanel\">\n          <nav class=\"top-bar min\">\n            <div class=\"large-2 columns\">\n\n              <a class=\"logoS\" href=\"{{URL::route('home')}}\" title=\"Home Page\">\n               <img src=\"{{url('comp/img/REMAX1LogoS.png')}}\" alt=\"Remax First Class Logo\">\n             </a> \n           </div>\n\n           <div class=\"large-10 columns\"> <ul class=\"title-area right\">\n            <!-- Title Area -->\n            <li class=\"name\">\n              <h1>\n                {{link_to_route('home', 'REMAX FIRST CLASS');}}\n              </h1>\n            </li>\n          </ul>\n        </div>\n      </nav>\n    </div>\n\n\n    <!--  =mariusDan  top bar ends here-->\n\n    <div class=\"row\">\n     <div class=\"large-4 columns\">\n      <div class=\"row\">\n       <div class=\"large-12 columns left\">\n        <br/>\n        <ul>\n         <h3 class=\"subheader agentName\">Marius Dan</h3>\n\n       </ul>\n     </div>                           \n   </div>\n   <div class=\"agentPic\">\n     <img src=\"{{url('comp/img/agentsL/Dan_Elena.jpg')}}\" alt=\"Marius Dan\">\n   </div>\n   <div>{{link_to('agent/4', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}\n   </div>\n </div>\n\n <div class=\"large-7 columns left panel info\">\n   <br/>\n   <ul class=\"vcard innerInfo\">\n     <h5>Associate</h5>\n     <li class=\"subheader\">Year Joined: 2003</li>\n     <li class=\"subheader\">Year Licensed: 2003</li>\n     <hr/>\n     <h6>Contact Information:</h6>\n     <li class=\"subheader\">Main: (847) 674-9797</li>\n     <li class=\"subheader\">Fax: (847) 674-0411</li>\n     <li class=\"subheader\">Direct: (847) 568-3125  </li>\n     <li class=\"subheader\">Mobile: (312) 208-6034 </li>\n     <li class=\"subheader\">Languages: English, Romanian</li>\n   </ul>\n </div>\n</div>\n\n<!--  =mariusDan contact information ends here-->\n\n<div class=\"row\">\n  <div class=\"large-12 columns\">\n    <dl>                              \n      <dt><h5>Specialties</h5></dt>\n      <hr/>\n      <dd class=\"specialties\"><p>Buyer Brokerage, Condominiums, Investments </p>\n      </dd>  \n      <dt><h5>Service Area Information</h5></dt>\n      <hr/>\n      <dd class=\"specialties\">\n        <h6>Office Area:</h6>\n        <p>Skokie IL, Chicago IL, Glenview IL, Morton Grove IL, Evanston IL, Wilmette IL, Niles IL, Lincolnwood IL</p>                            \n        <h6>Agent Area:</h6>\n        <p>Skokie IL</p>  \n      </dd>\n    </div>\n  </div>\n\n</div>\n</div>\n</div>\n<!-- =Marius Dan  profile ends here -->\n\n\n\n<!-- =Barry Benveniste profile starts here -->\n\n<div id=\"barryBenveniste\" class=\"reveal-modal medium adminAuth2 createAccount panel\">\n  <a class=\"close-reveal-modal\">&#215;</a>\n  <div class=\"row\">\n    <div class=\"large-12 columns\">\n      <div class=\"navPanel\">\n        <nav class=\"top-bar min\">\n          <div class=\"large-2 columns\">\n\n            <a class=\"logoS\" href=\"{{URL::route('home')}}\" title=\"Home Page\">\n             <img src=\"{{url('comp/img/REMAX1LogoS.png')}}\" alt=\"Remax First Class Logo\">\n           </a> \n         </div>\n\n         <div class=\"large-10 columns\"> <ul class=\"title-area right\">\n          <!-- Title Area -->\n          <li class=\"name\">\n            <h1>\n              {{link_to_route('home', 'REMAX FIRST CLASS');}}\n            </h1>\n          </li>\n        </ul>\n      </div>\n    </nav>\n  </div>\n\n\n  <!--  =barryBenveniste  top bar ends here-->\n\n  <div class=\"row\">\n   <div class=\"large-4 columns\">\n    <div class=\"row\">\n     <div class=\"large-12 columns left\">\n      <br/>\n      <ul>\n       <h3 class=\"subheader agentName\">Barry Benveniste</h3>\n\n     </ul>\n   </div>                           \n </div>\n <img src=\"{{url('comp/img/agentsL/Barry_Benveniste.jpg')}}\" alt=\"Barry Benveniste\">\n<div>{{link_to('agent/4', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}\n                 </div>\n</div>\n\n<div class=\"large-7 columns left panel info\">\n <br/>\n <ul class=\"vcard innerInfo\">\n   <h5>Associate</h5>\n   <li class=\"subheader\">Year Joined: 1987</li>\n   <li class=\"subheader\">Year Licensed: 1972</li>\n   <hr/>\n   <h6>Contact Information:</h6>\n   <li class=\"subheader\">Main: (847) 674-9797</li>\n   <li class=\"subheader\">Mobile: (847) 708-1149</li>\n   <li class=\"subheader\">Fax: (847) 674-0411</li>\n\n   <li class=\"subheader\">Languages: English</li>\n </ul>\n</div>\n</div>\n\n<!--  =barryBenveniste contact information ends here-->\n\n<div class=\"row\">\n  <div class=\"large-12 columns\">\n    <dl>                              \n\n      <dt><h5>Service Area Information</h5></dt>\n      <hr/>\n      <dd class=\"specialties\">\n        <h6>Office Area:</h6>\n        <p>Skokie IL, Chicago IL, Glenview IL, Morton Grove IL, Evanston IL, Wilmette IL, Niles IL, Lincolnwood IL</p>                            \n        <h6>Agent Area:</h6>\n        <p>Skokie IL</p>  \n      </dd>\n    </div>\n  </div>\n\n</div>\n</div>\n</div>\n<!-- =Barry Benveniste  profile ends here -->\n\n<!-- =Mark Feyman profile starts here -->\n\n<div id=\"markFeyman\" class=\"reveal-modal medium adminAuth2 createAccount panel\">\n  <a class=\"close-reveal-modal\">&#215;</a>\n  <div class=\"row\">\n    <div class=\"large-12 columns\">\n      <div class=\"navPanel\">\n        <nav class=\"top-bar min\">\n          <div class=\"large-2 columns\">\n\n            <a class=\"logoS\" href=\"{{URL::route('home')}}\" title=\"Home Page\">\n             <img src=\"{{url('comp/img/REMAX1LogoS.png')}}\" alt=\"Remax First Class Logo\">\n           </a> \n         </div>\n\n         <div class=\"large-10 columns\"> <ul class=\"title-area right\">\n          <!-- Title Area -->\n          <li class=\"name\">\n            <h1>\n              {{link_to_route('home', 'REMAX FIRST CLASS');}}\n            </h1>\n          </li>\n        </ul>\n      </div>\n    </nav>\n  </div>\n\n\n  <!--  =markFeyman  top bar ends here-->\n\n  <div class=\"row\">\n   <div class=\"large-4 columns\">\n    <div class=\"row\">\n     <div class=\"large-12 columns left\">\n      <br/>\n      <ul>\n       <h3 class=\"subheader agentName\">Mark Feyman</h3>\n\n     </ul>\n   </div>                           \n </div>\n <img src=\"{{url('comp/img/agentsL/3.png')}}\" alt=\"Mark Feyman\">\n\n</div>\n\n<div class=\"large-7 columns left panel info\">\n <br/>\n <ul class=\"vcard innerInfo\">\n   <h5>Associate</h5>\n   <li class=\"subheader\">Year Joined: 2011</li>\n   <li class=\"subheader\">Year Licensed: 2011</li>\n   <hr/>\n   <h6>Contact Information:</h6>\n   <li class=\"subheader\">Main: (847) 674-9797</li>\n   <li class=\"subheader\">Fax: (847) 674-0411</li>\n   <li class=\"subheader\">Mobile: (847) 971-8559</li>\n\n   <li class=\"subheader\">Languages: English, Russian</li>\n </ul>\n</div>\n</div>\n\n<!--  =markFeyman contact information ends here-->\n\n<div class=\"row\">\n  <div class=\"large-12 columns\">\n    <dl>                              \n\n      <dt><h5>Service Area Information</h5></dt>\n      <hr/>\n      <dd class=\"specialties\">\n        <h6>Office Area:</h6>\n        <p>Skokie IL, Chicago IL, Glenview IL, Morton Grove IL, Evanston IL, Wilmette IL, Niles IL, Lincolnwood IL</p>                            \n        <h6>Agent Area:</h6>\n        <p>Skokie IL</p>  \n      </dd>\n    </div>\n  </div>\n\n</div>\n</div>\n</div>\n<!-- =Mark Feyman  profile ends here -->\n\n\n<!-- =Harold Oza profile starts here -->\n\n<div id=\"haroldOza\" class=\"reveal-modal medium adminAuth2 createAccount panel\">\n  <a class=\"close-reveal-modal\">&#215;</a>\n  <div class=\"row\">\n    <div class=\"large-12 columns\">\n      <div class=\"navPanel\">\n        <nav class=\"top-bar min\">\n          <div class=\"large-2 columns\">\n\n            <a class=\"logoS\" href=\"{{URL::route('home')}}\" title=\"Home Page\">\n             <img src=\"{{url('comp/img/REMAX1LogoS.png')}}\" alt=\"Remax First Class Logo\">\n           </a> \n         </div>\n\n         <div class=\"large-10 columns\"> <ul class=\"title-area right\">\n          <!-- Title Area -->\n          <li class=\"name\">\n            <h1>\n              {{link_to_route('home', 'REMAX FIRST CLASS');}}\n            </h1>\n          </li>\n        </ul>\n      </div>\n    </nav>\n  </div>\n\n\n  <!--  =haroldOza  top bar ends here-->\n\n  <div class=\"row\">\n   <div class=\"large-4 columns\">\n    <div class=\"row\">\n     <div class=\"large-12 columns left\">\n      <br/>\n      <ul>\n       <h3 class=\"subheader agentName\">Harold Oza</h3>\n                           <!-- <a class=\"label has-tip-left specialist\" title=\"Accredited Buyers Representative\">ABR</a> \n                           <a class=\"label has-tip-left specialist\" title=\"Certified Residential Specialist\">CRS</a> -->\n                         </ul>\n                       </div>                           \n                     </div>\n                     <img src=\"{{url('comp/img/agentsL/3.jpg')}}\" alt=\"Harold Oza\">\n\n                   </div>\n\n                   <div class=\"large-7 columns left panel info\">\n                     <br/>\n                     <ul class=\"vcard innerInfo\">\n                       <h5>Associate</h5>\n                       <li class=\"subheader\">Year Joined: 2008</li>\n                       <li class=\"subheader\">Year Licensed: 2008</li>\n                       <hr/>\n                       <h6>Contact Information:</h6>\n                       <li class=\"subheader\">Main: (847) 674-9797</li>\n                       <li class=\"subheader\">Fax: (847) 674-0411</li>\n                       <!-- <li class=\"subheader\">Direct: (847) 329-3888 </li> -->\n                       <li class=\"subheader\">Mobile: (312) 720-0743</li>\n                       <li class=\"subheader\">Languages: English</li>\n                     </ul>\n                   </div>\n                 </div>\n\n                 <!--  =haroldOza contact information ends here-->\n\n                 <div class=\"row\">\n                  <div class=\"large-12 columns\">\n                    <dl>                              \n\n                      <dt><h5>Service Area Information</h5></dt>\n                      <hr/>\n                      <dd class=\"specialties\">\n                        <h6>Office Area:</h6>\n                        <p>Skokie IL, Chicago IL, Glenview IL, Morton Grove IL, Evanston IL, Wilmette IL, Niles IL, Lincolnwood IL</p>                            \n                        <h6>Agent Area:</h6>\n                        <p>Skokie IL</p>  \n                      </dd>\n                    </div>\n                  </div>\n\n                </div>\n              </div>\n            </div>\n            <!-- =Harold Oza  profile ends here -->\n\n\n            <!-- =John Dias profile starts here -->\n\n            <div id=\"johnDias\" class=\"reveal-modal medium adminAuth2 createAccount panel\">\n              <a class=\"close-reveal-modal\">&#215;</a>\n              <div class=\"row\">\n                <div class=\"large-12 columns\">\n                  {{Form::open(array('url'=>'/login'))}} \n                  <div class=\"navPanel\">\n                    <nav class=\"top-bar\">\n                      <ul class=\"title-area right\">\n                        <!-- Title Area -->\n                        <li class=\"name\">\n                          <h1>\n                            {{link_to_route('home', 'REMAX FIRST CLASS');}}\n                          </h1>\n                        </li>\n                      </ul>\n                    </nav>\n                  </div>\n\n                  <!--  =johnDias  top bar ends here-->\n\n                  <div class=\"row\">\n                   <div class=\"large-4 columns\">\n                    <div class=\"row\">\n                     <div class=\"large-12 columns left\">\n                      <br/>\n                      <ul>\n                       <h3 class=\"subheader agentName\">John B. Dias</h3>\n                       <a class=\"label has-tip-left specialist\" title=\"Short Sale and Foreclosure Resource\">SFR</a> \n                     </ul>\n                   </div>                           \n                 </div>\n                 <div class=\"agentPic\"><img src=\"{{url('comp/img/agentsL/3.png')}}\" alt=\"John Dias\"></div>\n                 <div class=\"agentProp label alert\">{{link_to('#', 'Agent Property For Sale', array('class'=>'advanceSearch'));}}</div>\n\n               </div>\n\n               <div class=\"large-7 columns left panel info\">\n                 <br/>\n                 <ul class=\"vcard innerInfo\">\n                   <h5>Associate</h5>\n                   <li class=\"subheader\">Year Joined: 1994</li>\n                   <li class=\"subheader\">Year Licensed: 1982</li>\n                   <hr/>\n                   <h6>Contact Information:</h6>\n                   <li class=\"subheader\">Main: (847) 674-9797</li>\n                   <li class=\"subheader\">Fax: (847) 674-0411</li>\n                   <li class=\"subheader\">Languages: English, Hindi</li>\n                 </ul>\n               </div>\n             </div>\n\n             <!--  =johnDias contact information ends here-->\n\n             <div class=\"row\">\n              <div class=\"large-12 columns\">\n                <dl>                              \n                  <dt><h5>Specialties</h5></dt>\n                  <hr/>\n                  <dd class=\"specialties\"><p>Condominiums, Foreclosure Property, Investments, Luxury Homes, New Construction, Relocation, Rentals, Senior Communities, Short Sales </p>\n                  </dd>  \n                  <dt><h5>Service Area Information</h5></dt>\n                  <hr/>\n                  <dd class=\"specialties\">\n                    <h6>Office Area:</h6>\n                    <p>Skokie IL, Chicago IL, Glenview IL, Morton Grove IL, Evanston IL, Wilmette IL, Niles IL, Lincolnwood IL</p>                            \n                    <h6>Agent Area:</h6>\n                    <p>Skokie IL</p>  \n                  </dd>\n                </div>\n              </div>\n\n            </div>\n          </div>\n        </div>\n<!-- =John Dias  profile ends here --><!-- //LOCATION: remax/public\n",
 			"file": "app/views/layouts/master.blade.php",
+			"file_size": 55727,
+			"file_write_time": 130178023293593219,
 			"settings":
 			{
-				"buffer_size": 56110,
+				"buffer_size": 54490,
 				"line_ending": "Windows"
 			}
 		},
@@ -50,6 +57,62 @@
 				"buffer_size": 675,
 				"line_ending": "Windows"
 			}
+		},
+		{
+			"file": "public/comp/sass/screen.scss",
+			"settings":
+			{
+				"buffer_size": 6087,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/routes.php",
+			"settings":
+			{
+				"buffer_size": 4348,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/controllers/search/BrowseController.php",
+			"settings":
+			{
+				"buffer_size": 387,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/controllers/agent/AgentController.php",
+			"settings":
+			{
+				"buffer_size": 383,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "composer.json",
+			"settings":
+			{
+				"buffer_size": 1027,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "artisanCommand.txt",
+			"settings":
+			{
+				"buffer_size": 271,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "artisan",
+			"settings":
+			{
+				"buffer_size": 2424,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -58,6 +121,14 @@
 		"height": 375.0,
 		"selected_items":
 		[
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
 			[
 				"ins",
 				"Package Control: Install Package"
@@ -112,6 +183,10 @@
 	},
 	"file_history":
 	[
+		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/CHANGELOG",
+		"/C/xampp/htdocs/remax/app/controllers/search/BrowseController.php",
+		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/Gist.sublime-settings",
+		"/C/xampp/htdocs/remax/app/views/layouts/master.blade.php",
 		"/C/xampp/htdocs/remax/public/comp/sass/screen.scss",
 		"/C/xampp/htdocs/remax/app/views/home/vw_home.blade.php",
 		"/C/xampp/htdocs/remax/app/views/contact/vw_contact.blade.php",
@@ -119,10 +194,8 @@
 		"/C/xampp/htdocs/remax/app/database/seeds/NewsTableSeeder.php",
 		"/C/xampp/htdocs/remax/app/database/seeds/DatabaseSeeder.php",
 		"/C/xampp/htdocs/remax/app/views/search/onehouse.blade.php",
-		"/C/xampp/htdocs/remax/app/views/layouts/master.blade.php",
 		"/C/xampp/htdocs/remax/app/views/search/results.blade.php",
 		"/C/xampp/htdocs/remax/artisanCommand.txt",
-		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/Gist.sublime-settings",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/laravel_link.sublime-snippet",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/1symsemi.sublime-macro",
@@ -143,7 +216,7 @@
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 58.0
 	},
 	"find_in_files":
 	{
@@ -157,6 +230,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"<div>{{link_to('agent/4', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}\n                 </div>",
+			"\n                   ",
+			"');",
+			"Barry Benveniste",
+			"new",
+			"advanc",
+			"margin",
+			"ol",
 			"@extends('layouts.master')",
 			"		<",
 			"clearing",
@@ -233,7 +314,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -242,15 +323,19 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1018,
+						"buffer_size": 1069,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								227,
-								227
+								160,
+								160
+							],
+							[
+								986,
+								986
 							]
 						],
 						"settings":
@@ -297,15 +382,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 56110,
+						"buffer_size": 54490,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								11506,
-								11531
+								44491,
+								44408
 							]
 						],
 						"settings":
@@ -315,36 +400,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/views/layouts/master.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 56110,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								9516,
-								9516
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2100.0,
+						"translation.y": 27502.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -377,6 +433,236 @@
 					"type": "text"
 				}
 			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "public/comp/sass/screen.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6087,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4760,
+								4760
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4770.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/layouts/master.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 54490,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								27208,
+								27333
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 14651.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/routes.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4348,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4269,
+								4280
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1058.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/controllers/search/BrowseController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 387,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/controllers/agent/AgentController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 383,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								290,
+								288
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "composer.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1027,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								587,
+								587
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 39.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "artisanCommand.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 271,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								271,
+								249
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "artisan",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 2424,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
 		}
 	],
 	"incremental_find":
@@ -396,11 +682,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.471726694074,
 			1.0
 		],
 		"rows":
@@ -410,6 +703,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 132.0
+	},
 	"project": "remax.sublime-project",
 	"replace":
 	{
@@ -422,12 +719,20 @@
 		"selected_items":
 		[
 			[
-				"vwho",
-				"app\\views\\home\\vw_home.blade.php"
+				"ro",
+				"app\\routes.php"
+			],
+			[
+				"m",
+				"app\\views\\layouts\\master.blade.php"
 			],
 			[
 				"s",
 				"public\\comp\\sass\\screen.scss"
+			],
+			[
+				"vwho",
+				"app\\views\\home\\vw_home.blade.php"
 			],
 			[
 				"mast",
@@ -435,10 +740,6 @@
 			],
 			[
 				"mas",
-				"app\\views\\layouts\\master.blade.php"
-			],
-			[
-				"m",
 				"app\\views\\layouts\\master.blade.php"
 			],
 			[
@@ -456,10 +757,6 @@
 			[
 				"aboutv",
 				"app\\views\\about\\vw_about.blade.php"
-			],
-			[
-				"ro",
-				"app\\routes.php"
 			],
 			[
 				"homev",
@@ -522,6 +819,21 @@
 	},
 	"settings":
 	{
+		"last_automatic_layout":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
 		"vintage":
 		{
 		}
@@ -530,7 +842,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 287.0,
+	"side_bar_width": 352.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

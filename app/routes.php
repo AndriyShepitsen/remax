@@ -18,7 +18,7 @@
 //});
 
 /* =home */
-
+Route::post('sendmail', array('uses'=>'MailController@index'));
 Route::get('/', array('as'=>'home', 'uses'=>'HomeController@index'));
 /* =about */
 
@@ -74,3 +74,6 @@ Route::get('search/{id}', 'SearchController@show');
 /*  Browse db */
 Route::get('browse/{type}', array('as'=>'browse', 'uses'=>'BrowseController@index'));
 
+/* Agent listing */
+
+Route::get('agent/{id}', 'AgentController@show_listings');
