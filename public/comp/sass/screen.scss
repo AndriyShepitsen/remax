@@ -26,6 +26,7 @@ $colorFindFormFont: #525252;
 $colorSlash: #AAAAAA;
 $colorFontOffWhite: #F7F7F4;
 $copyrightBackgroundColor: #3F3F3F;
+$colorRed: lighten(#B92025, 10%);
 
 /*=mixins*/
 @mixin myButtonStyle {
@@ -92,49 +93,76 @@ $copyrightBackgroundColor: #3F3F3F;
 	float: left;
 	font-weight: bold;
 }
-.button{
+/* .button{
 	background-color: $colorButtonBackground !important;
 	margin-left: 5px;
 }
 .button:hover{
 	background-color:darken( $colorButtonBackground, 10%)!important;
-}
-.navPanel{
-	background-color: $colorNavPanel;
-	.button{
-		@include myButtonStyle;
+	} */
+	.navPanel{
+		background-color: $colorNavPanel;
+
 	}
-	.button:hover{
-		background-color:darken($colorButtonBackground, 10%)!important;
+	.top-bar{
+		margin-bottom: 0 !important;
+		background-color: $colorNavPanel !important;
 	}
-}
-.top-bar{
-	margin-bottom: 0 !important;
-	background-color: $colorNavPanel !important;
-}
-.top-bar-section ul li > a {
-	background-color: $colorNavPanel !important;
-}
-.toggle-topbar, .top-bar.expanded .title-area{
-	background-color: $colorNavPanel !important;
-}
-.logoWrapper{
-	@include logoWrapperStyle;
-	.th{
-		border-width: 1px !important;
+	.top-bar-section ul li > a {
+		background-color: $colorNavPanel !important;
 	}
-}
-.logoPaddingHeader{
-	margin-top: 5px;
-}
-.realEstateRC{
-	font-family: 'Roboto Slab', serif;
-	color: #4B4F54;
-	font-size: 1.2em;
-	margin-top: 5px;
-	text-shadow: #FFFFFF 1px 1px 0px
-}
-.outstandingAgents{
+	.toggle-topbar, .top-bar.expanded .title-area{
+		background-color: $colorNavPanel !important;
+	}
+	.logoWrapper{
+		@include logoWrapperStyle;
+		.th{
+			border-width: 1px !important;
+		}
+		[class*="block-grid-"]{
+			// margin-right: 5px !important;
+			margin-left: 5px !important;
+		}
+		// .row .columns{
+		// 	padding-right: 5px !important;
+		// 	padding-left: 5px !important;
+		// }
+		.small-block-grid-3 > li{
+			width: 20px !important;
+			margin-left: 5px !important;
+		}
+		.connectHeader{
+			// @include connectFooterStyle;
+			font-size: 11px;
+			font-weight: bold;
+			margin-bottom: 5px;
+			color: $colorNavPanel;
+		}
+		.callHeader{
+			// font-size: 11px;
+			// font-weight: bold;
+			// margin-bottom: 5px;
+			// color: $colorNavPanel;
+
+			@extend .connectHeader;
+			margin-top: 10px;
+		}
+		.connectHeaderWrapper{
+			padding-right: 0px !important;
+		}
+
+	}
+	.logoPaddingHeader{
+		margin-top: 5px;
+	}
+	.realEstateRC{
+		font-family: 'Roboto Slab', serif;
+		color: #4B4F54;
+		font-size: 1.2em;
+		margin-top: 5px;
+		text-shadow: #FFFFFF 1px 1px 0px
+	}
+	.outstandingAgents{
 	// font-family: 'Roboto Slab', serif;
 	// font-family: 'Numans', sans-serif;
 	// font-family: 'Noto Sans', sans-serif;
@@ -144,7 +172,7 @@ $copyrightBackgroundColor: #3F3F3F;
 	word-spacing: .1em;	
 	letter-spacing: 3px;
 	font-size: 1.3em;
-	color: lighten(#B92025, 10%);
+	color: $colorRed;
 	// color: #FFFFFF;
 	margin-bottom: 0.4em;
 	text-shadow: #FFFFFF 1px 1px 0px
@@ -166,12 +194,32 @@ $copyrightBackgroundColor: #3F3F3F;
 		@include myButtonStyle;		
 	}
 }
-
 /* =create an account style ends here*/
 
+/* =socialHeader starts here */
+
+
+
+/*  =call us style starts here*/
+.callUs{
+	color: $colorRed;
+	text-shadow: #FFFFFF 1px 1px 0px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.callPanel{
+	// background-color: lighten(#393939, 60%);
+	border-color: $colorRed !important;
+	background-color: #DDDDDD;
+	// padding: 10px !important;
+}
+.phoneImg{
+	margin-bottom: 5px;
+}
 .icon{
 	// margin-top: 10px;
 	text-align: right;
+	padding-right: 0px;
 }
 .mailIcon{
 	@include mailIconStyle;
@@ -234,7 +282,7 @@ label{
 }
 .priceStyle{
 	font-weight: bold !important;
-	color: lighten(#B92025, 10%) !important;
+	color: $colorRed !important;
 }
 .small-block-grid-3 > li{
 	padding-left: 0px !important;
@@ -244,6 +292,18 @@ label{
 	margin-top: 5px !important;
 	margin-left: -10px !important;
 }
+.showAllListings{
+	button, .button {
+		@include myButtonStyle;
+	}
+	button:hover, button:focus, .button:hover, .button:focus{
+		background-color: darken($colorButtonBackground, 10%) !important;
+	}
+	
+}
+.alert-box{
+	margin-bottom: .5em !important;
+}	
 /* news start here */
 .readMore{
 	font-size: 0.6em;
@@ -365,11 +425,11 @@ footer{
 		cursor: pointer;
 	}
 }
-[class*="block-grid-"] {
+/* [class*="block-grid-"] {
 	display: block;
 	margin: 0 10px !important;
 	padding: 0;
-}
+} */
 .contactFooter{
 	@include contactFooterStyle;
 }
