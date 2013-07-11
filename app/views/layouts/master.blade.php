@@ -130,7 +130,11 @@
                                <div class="outstandingResults">OUTSTANDING RESULTS.</div>
                              </div> <!-- =sloganContent-->
 
-                             <div class="large-5 columns"></div>
+                             <div class="large-5 columns callUsContent">
+                               <span class="contactTextStyle">  CALL US:</span>
+
+                               <span class="callUs">(847) 674-9797</span>
+                             </div>
                            </div>
 
                            <div class="row">
