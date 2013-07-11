@@ -10,10 +10,10 @@
 		<li>
 
 			<a href="{{url('search/'.$house->id)}}">
-				<div class="panel">
+				<div class="panel addressColor">
 					<strong>
 						{{$house->address}}
-					</strong> &nbsp	&nbsp	<span class="priceStyle">${{number_format($house->price)}}</span>
+					</strong> &nbsp	&nbsp	<span class="priceStyle right radius label">${{number_format($house->price)}}</span>
 					<br/>
 					<small>
 						bedrooms:{{$house->bedrooms}} | 
@@ -32,7 +32,7 @@
 			</a>
 		</li>
 		@endforeach
-	</ul class="no-bullet">
+	</ul>
 <?php echo $houses->appends(array(
 	'location' => Input::get('location'),
 	'from' => Input::get('from'),

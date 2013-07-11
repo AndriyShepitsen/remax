@@ -1,6 +1,6 @@
 <?php
 //LOCATION: remax/public
-include_once app_path() . '\util\TextOperations.php';
+include_once app_path() . '/util/TextOperations.php';
 class HomeController extends BaseController {
 
 	/*

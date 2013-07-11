@@ -30,10 +30,12 @@ $colorRed: lighten(#B92025, 10%);
 
 /*=mixins*/
 @mixin myButtonStyle {
-	background-color: $colorButtonBackground !important;
+	background-color: lighten($colorNavPanel, 15%) !important;
 	margin-top: .5em !important;
 	margin-bottom: .5em !important;
 	margin-right: 7em !important;
+	border-color: lighten($colorNavPanel, 15%) !important;
+	color: $colorFontOffWhite;
 }
 
 @mixin logoWrapperStyle{
@@ -43,8 +45,8 @@ $colorRed: lighten(#B92025, 10%);
 
 @mixin mailIconStyle {
 	padding-left:10px;
-	padding-top:10px;
-	padding-bottom:10px;
+	padding-top:0px;
+	padding-bottom:0px;
 	
 }
 
@@ -93,32 +95,31 @@ $colorRed: lighten(#B92025, 10%);
 	float: left;
 	font-weight: bold;
 }
-/* .button{
-	background-color: $colorButtonBackground !important;
-	margin-left: 5px;
+.name{
+	a{
+		
+	color: $colorFontOffWhite; 
+	}
 }
-.button:hover{
-	background-color:darken( $colorButtonBackground, 10%)!important;
-	} */
-	.navPanel{
-		background-color: $colorNavPanel;
+.navPanel{
+	background-color: $colorNavPanel;
 
+}
+.top-bar{
+	margin-bottom: 0 !important;
+	background-color: $colorNavPanel !important;
+}
+.top-bar-section ul li > a {
+	background-color: $colorNavPanel !important;
+}
+.toggle-topbar, .top-bar.expanded .title-area{
+	background-color: $colorNavPanel !important;
+}
+.logoWrapper{
+	@include logoWrapperStyle;
+	.th{
+		border-width: 1px !important;
 	}
-	.top-bar{
-		margin-bottom: 0 !important;
-		background-color: $colorNavPanel !important;
-	}
-	.top-bar-section ul li > a {
-		background-color: $colorNavPanel !important;
-	}
-	.toggle-topbar, .top-bar.expanded .title-area{
-		background-color: $colorNavPanel !important;
-	}
-	.logoWrapper{
-		@include logoWrapperStyle;
-		.th{
-			border-width: 1px !important;
-		}
 		// [class*="block-grid-"]{
 		// 	margin-right: 5px !important;
 		// 	margin-left: 5px !important;
@@ -135,25 +136,20 @@ $colorRed: lighten(#B92025, 10%);
 			font-weight: bold;
 			display: inline-block;
 		}
+		.callUsContent{
+			margin-top: 20px !important;
+			text-align: right;
+		}
 
 		.contactTextStyle{
-			// @include connectFooterStyle;
 			font-size: 12px;
 			font-weight: bold;
 			margin-top: 5px;
-			color: $colorNavPanel;
+			color: $colorFindFormFont;
 			display: inline-block;
 		}
-		.callHeader{
-			// font-size: 11px;
-			// font-weight: bold;
-			// margin-bottom: 5px;
-			// color: $colorNavPanel;
-
-			@extend .connectHeader;
-			margin-top: 10px;
-		}
-		.connectHeaderWrapper{
+		
+		.HeaderWrapper{
 			padding-right: 0px !important;
 		}
 		.connectWithContent{
@@ -165,26 +161,21 @@ $colorRed: lighten(#B92025, 10%);
 	// font-family: 'Numans', sans-serif;
 	// font-family: 'Noto Sans', sans-serif;
 	font-family: 'Archivo Black', sans-serif;
-	// font-style: italic; 
-	// font-weight: bold;
 	word-spacing: .1em;	
 	letter-spacing: 3px;
 	font-size: 1.3em;
 	color: $colorRed;
-	// color: #FFFFFF;
-	margin-bottom: 0.4em;
+	margin-bottom: 0.7em;
 	text-shadow: #03669E 1px 1px 0px;
-	.callUsContent{
-		padding-left:70px !important;
-		padding-right: 0px !important;
-	}
+	padding-left: -20px;
 }
 
 .outstandingResults{
 	@extend .outstandingAgents;
-	padding-left: 110px;
+	padding-left: 90px;
 }
 }
+
 .logoPaddingHeader{
 	margin-top: 5px;
 }
@@ -192,10 +183,11 @@ $colorRed: lighten(#B92025, 10%);
 	font-family: 'Roboto Slab', serif;
 	color: #4B4F54;
 	font-size: .7em;
-	margin-top: 3px;
+	margin-top: 1px;
 	text-shadow: #FFFFFF 1px 1px 0px;
-	margin-left: -75px;
+	margin-left: -80px;
 }
+
 
 /* =create an account style starts here */
 .createAccount{
@@ -230,8 +222,9 @@ $colorRed: lighten(#B92025, 10%);
 	margin-bottom: 5px;
 }
 .icon{
-	// margin-top: 10px;
+	margin-top: 10px;
 	text-align: right;
+	margin-bottom: -5px;
 }
 .mailIcon{
 	@include mailIconStyle;
@@ -292,10 +285,15 @@ label{
 }
 .propertiesAllert{
 	text-align: center;
+	color: $colorNavPanel;
+}
+.propertiesAllert:hover, .propertiesAllert:active{
+	color: lighten($colorNavPanel, 25%);
 }
 .priceStyle{
 	font-weight: bold !important;
-	color: $colorRed !important;
+	color: $colorFontOffWhite !important;
+	background-color: lighten($colorNavPanel, 15%) !important;
 }
 .small-block-grid-3 > li{
 	padding-left: 0px !important;
@@ -310,25 +308,36 @@ label{
 		@include myButtonStyle;
 	}
 	button:hover, button:focus, .button:hover, .button:focus{
-		background-color: darken($colorButtonBackground, 10%) !important;
+		background-color: $colorNavPanel !important;
 	}
 	
 }
 .alert-box{
 	margin-bottom: .5em !important;
 }	
+
+.addressColor{
+	a{
+
+	color: $colorFindFormFont;
+	}
+	a:hover{
+		color: lighten($colorFindFormFont, 10%);
+	}
+}
+
 /* news start here */
 .readMore{
 	font-size: 0.6em;
 }
-.newsTitle{
-	color: $colorNavPanel; 
+.newsHead{
+	color: $colorFindFormFont; 
 }
-.newsTitle:hover{
-	color: lighten($colorNavPanel, 15%);
+.newsHead:hover{
+	color: lighten($colorFindFormFont, 15%);
 }
-.newsTitle:active{
-	color: lighten($colorNavPanel, 15%);
+.newsHead:active{
+	color: lighten($colorFindFormFont, 15%);
 	
 }
 .newListingsTitle{
