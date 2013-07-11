@@ -10,7 +10,7 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Numans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'
+    <link href='http://fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
     {{HTML::style("comp/stylesheets/normalize.css" )}} 
     {{HTML::style("comp/stylesheets/screen.css" )}} 
     {{HTML::script("//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js")}} 
@@ -92,145 +92,124 @@
           <!-- =logoWrapper -->
           <div class="logoWrapper">
             <div class="row">
+
               <aside class="large-2 columns">
                <a href="{{URL::route('home')}}" title="Home Page">
                  <img src="{{url('comp/img/REMAX1Logo.png')}}" alt="Remax First Class Logo">
                </a> 
-             </aside>
-
-             <div class="large-7 columns">
-               <div class="row">
-                 <div class="large-11 columns">
-                   <div class="outstandingAgents">OUTSTANDING AGENTS. </div>
-
-
-                   <div class="outstandingAgents right">OUTSTANDING RESULTS.</div>
-                 </div>
-               </div>
-
-               <div class="row">
-                 <div class="large-12 columns">
-                  <a class="th has-tip-left logoPaddingHeader"  title="Remax Short Sale Chicago"  href="http://www.shortsalechicago.us/Short-Sale-Chicago">
-                    <img src="{{url('comp/img/Chicago-Short-Sale-Logo-head.png')}}" alt="Chicago Short Sale">
-                  </a> 
-                  <a class="th has-tip-left logoPaddingHeader" title="Remax Commercial" href="#">
-                    <img src="{{url('comp/img/remax-commercial-logo-head.png')}}" alt="Remax Commercial">
-                  </a>
-                </div>
-              </div>
+             </aside><!-- =logoContent -->
+             <div class="large-10 columns infoContent">
               <div class="row">
-               <div class="large-12 columns">
-                 <div class="realEstateRC">Residential, Commercial & Investment Real Estate</div>
-               </div>
-             </div>
-           </div>
+                <div class="large-6 columns residentialCommercialContent">
 
-           <!-- =loginButton -->
-           <aside class="large-3 columns">
-<!--             <div class="row">
-              <div class="large-12 columns">
-                <input type="submit" class="button tiny right loginButton" data-reveal-id="adminAuth" value="LOGIN">
-                <input type="submit" class="button tiny right" data-reveal-id="createAccount" value="Create an account">
-              </div>
-            </div>
-          -->            
+                  <!-- callUsContent -->
+                   <!-- <span class="contactTextStyle">  CALL US:</span>
 
-          <div class="row">
-            <div class="large-12 columns right connectHeaderWraper">
-              <div class="connectHeader">CONNECT WITH US:
-              </div> 
-              <div>
-                <a class="has-tip-left" title="Our Facebook Page" href="#"><img src="{{url('comp/img/social_header/facebook.png')}}" alt="Skokie Remax First Class Facebook Icon"><a/>
-                  <a class="has-tip-left" title="Our Twitter Page" href="#"><img src="{{url('comp/img/social_header/twitter.png')}}" alt="Skokie Remax First Class Twitter Icon"><a/>
-                    <a class="has-tip-left" title="Our Linkedin Page" href="#"><img src="{{url('comp/img/social_header/linkedin.png')}}" alt="Skokie Remax First Class Linkedin Icon"><a/>
-                      <a class="has-tip-left" title="Our Google Plus Page" href="#"><img src="{{url('comp/img/social_header/google.png')}}" alt="Skokie Remax First Class Google Icon"><a/>
-                        <a class="has-tip-left" title="Our Yelp Page" href="#"><img src="{{url('comp/img/social_header/yelp.png')}}" alt="Skokie Remax First Class Feed Icon"><a/>
-                          <a class="has-tip-left" title="Our Page" href="#"><img src="{{url('comp/img/social_header/you_tube.png')}}" alt="Skokie Remax First Class Youtube Icon"><a/>
-                          </div>
+                   <span class="callUs">(847) 674-9797</span> -->
+                   <div class="realEstateRC">RESIDENTIAL, COMMERCIAL & INVESTMENT REAL ESTATE</div>
 
-                        </div>
-                      </div>
+                 </div><!-- =residentialCommercialContent -->
+
+                 <div class="large-6 columns connectWithContent">
+                  <div class="right">
+                    <span class="contactTextStyle">CONNECT WITH US:</span>
+
+                    <a class="has-tip-left" title="Our Facebook Page" href="#"><img src="{{url('comp/img/social_header/facebook.png')}}" alt="Skokie Remax First Class Facebook Icon"><a/>
+                      <a class="has-tip-left" title="Our Twitter Page" href="#"><img src="{{url('comp/img/social_header/twitter.png')}}" alt="Skokie Remax First Class Twitter Icon"><a/>
+                        <a class="has-tip-left" title="Our Linkedin Page" href="#"><img src="{{url('comp/img/social_header/linkedin.png')}}" alt="Skokie Remax First Class Linkedin Icon"><a/>
+                          <a class="has-tip-left" title="Our Google Plus Page" href="#"><img src="{{url('comp/img/social_header/google.png')}}" alt="Skokie Remax First Class Google Icon"><a/>
+                            <a class="has-tip-left" title="Our Yelp Page" href="#"><img src="{{url('comp/img/social_header/yelp.png')}}" alt="Skokie Remax First Class Feed Icon"><a/>
+                              <a class="has-tip-left" title="Our Page" href="#"><img src="{{url('comp/img/social_header/you_tube.png')}}" alt="Skokie Remax First Class Youtube Icon"><a/>
+                              </div>
+                            </div> <!--connecWithContent-->
 
 
-                      <div class="row">
-                        <div class="large-12 columns right callPanel">
-                          <div class="callHeader">
-                            <!-- <img class="phoneImg" src="{{url('comp/img/phone40.png')}}" alt="name"> -->
-                            CALL US:
-                          </div>
-                           <div class="callUs">(847) 674-9797</div>                 
+                            <div class="row">
+                             <div class="large-7 columns sloganContent">
+                               <div class="outstandingAgents">OUTSTANDING AGENTS. </div>
+                               <div class="outstandingResults">OUTSTANDING RESULTS.</div>
+                             </div> <!-- =sloganContent-->
+
+                             <div class="large-5 columns"></div>
+                           </div>
+
+                           <div class="row">
+                            <div class="large-7 columns">
+                             <!--  <div class="realEstateRC">Residential, Commercial & Investment Real Estate</div> -->
+
+                           </div>
+                           <div class="large-5 columns right icon">
+
+                             <a href="{{ URL::route('home')}}" class="homeIcon has-tip-left" title="Home Page">
+                               <img src="{{url('comp/img/icons/home_remax.png')}}" alt="Remax First Class Home Icon">
+                             </a> 
+                             <!-- =mailIcon -->
+                             <a href="#" class="mailIcon has-tip-left" title="Send Us Email" data-reveal-id="myModal"> 
+                               <img src="{{url('comp/img/icons/mail_remax.png')}}" alt="Remax First Class Mail Icon" ></a>
+
+                             </div>
+                           </div>
+
+
+
+
+
+                         </div>
+                       </div> <!--infoContent-->
+
                      </div>
                    </div>
-
-                   <div class="row">
-                    <div class="large-12 columns">
-
-                    </div>
-                  </div>
-                  <!-- =homeIcon -->
-                  <div class="row">
-                   <div class="large-12 columns right icon">
-                     <a href="{{ URL::route('home')}}" class="homeIcon has-tip-left" title="Home Page">
-                       <img src="{{url('comp/img/home_remax.png')}}" alt="Remax First Class Home Icon">
-                     </a> 
-                     <!-- =mailIcon -->
-                     <a href="#" class="mailIcon has-tip-left" title="Send Us Email" data-reveal-id="myModal"> <img src="{{url('comp/img/mail_remax.png')}}" alt="Remax First Class Mail Icon" ></a>
-                   </div> 
-                 </div>
-               </aside>
-             </div>
-           </div>
-           <!-- =header ends here -->
+                   <!-- =header ends here -->
 
 
-           <div id="mainContent">
-             <div class="row">
-              <div class="large-8 columns">
-
-               @yield('content')
-             </div>
-
-             <!--  =aside starts here-->
-             <adide class="large-4 columns">
-               <div class="row">
-                <div class="large-12 columns panel">
-                 <span class="find">FIND YOUR HOME</span>
-                 <div class="row">
-                   <div class="large-12 columns">
-
-
-                     {{Form::open(array('url' => 'search', 'method'=>'GET'))}}
-
+                   <div id="mainContent">
                      <div class="row">
-                       <div class="large-12 columns">
-                         {{Form::label('location', 'Location')}}
-                         {{Form::text('location',Input::get('location'), array('placeholder'=>'City and State, Address or Zip Code', 'class'=>'findInput'))}}
-                       </div>
+                      <div class="large-8 columns">
+
+                       @yield('content')
                      </div>
 
-                     <div class="row">
-                       <div class="large-12 columns">
-                         {{Form::label('from', 'Price Range')}}
-                       </div>
-                     </div>
+                     <!--  =aside starts here-->
+                     <adide class="large-4 columns">
+                       <div class="row">
+                        <div class="large-12 columns panel">
+                         <span class="find">FIND YOUR HOME</span>
+                         <div class="row">
+                           <div class="large-12 columns">
 
-                     <div class="row">
-                       <div class="large-6 columns">
-                         {{Form::text('from', Input::get('from'), array('placeholder'=>'$ From', 'class'=>'findInput'))}}
-                       </div>
-                       <div class="large-6 columns">
-                         {{Form::text('to',  Input::get('to'), array('placeholder'=>'$ To', 'class'=>'findInput'))}}
-                       </div>
-                     </div>
-                     <div class="row">
-                       <div class="large-6 columns">
-                         {{Form::label('beds', 'Bedrooms')}}
-                         {{Form::text('beds', Input::get('beds'), array('placeholder'=>'#', 'class'=>'findinput'))}}
-                       </div>
-                       <div class="large-6 columns">
-                         {{Form::label('baths', 'Bathroomss')}}
-                         {{Form::text('baths', Input::get('baths'), array('placeholder'=>'#', 'class'=>'findinput'))}}
-                       </div>
+
+                             {{Form::open(array('url' => 'search', 'method'=>'GET'))}}
+
+                             <div class="row">
+                               <div class="large-12 columns">
+                                 {{Form::label('location', 'Location')}}
+                                 {{Form::text('location',Input::get('location'), array('placeholder'=>'City and State, Address or Zip Code', 'class'=>'findInput'))}}
+                               </div>
+                             </div>
+
+                             <div class="row">
+                               <div class="large-12 columns">
+                                 {{Form::label('from', 'Price Range')}}
+                               </div>
+                             </div>
+
+                             <div class="row">
+                               <div class="large-6 columns">
+                                 {{Form::text('from', Input::get('from'), array('placeholder'=>'$ From', 'class'=>'findInput'))}}
+                               </div>
+                               <div class="large-6 columns">
+                                 {{Form::text('to',  Input::get('to'), array('placeholder'=>'$ To', 'class'=>'findInput'))}}
+                               </div>
+                             </div>
+                             <div class="row">
+                               <div class="large-6 columns">
+                                 {{Form::label('beds', 'Bedrooms')}}
+                                 {{Form::text('beds', Input::get('beds'), array('placeholder'=>'#', 'class'=>'findinput'))}}
+                               </div>
+                               <div class="large-6 columns">
+                                 {{Form::label('baths', 'Bathroomss')}}
+                                 {{Form::text('baths', Input::get('baths'), array('placeholder'=>'#', 'class'=>'findinput'))}}
+                               </div>
 <!--                    <div class="large-4 columns">
                    {{Form::label('garage', 'garage')}}
                    {{Form::text('garage', '', array('placeholder'=>'#', 'class'=>'findinput'))}}

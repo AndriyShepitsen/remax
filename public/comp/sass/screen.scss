@@ -119,24 +119,30 @@ $colorRed: lighten(#B92025, 10%);
 		.th{
 			border-width: 1px !important;
 		}
-		[class*="block-grid-"]{
-			// margin-right: 5px !important;
-			margin-left: 5px !important;
-		}
-		// .row .columns{
-		// 	padding-right: 5px !important;
-		// 	padding-left: 5px !important;
+		// [class*="block-grid-"]{
+		// 	margin-right: 5px !important;
+		// 	margin-left: 5px !important;
 		// }
+		
 		.small-block-grid-3 > li{
 			width: 20px !important;
 			margin-left: 5px !important;
 		}
-		.connectHeader{
-			// @include connectFooterStyle;
-			font-size: 11px;
+		.callUs{
+			color: $colorRed;
+			text-shadow: #FFFFFF 1px 1px 0px;
+			font-size: 20px;
 			font-weight: bold;
-			margin-bottom: 5px;
+			display: inline-block;
+		}
+
+		.contactTextStyle{
+			// @include connectFooterStyle;
+			font-size: 12px;
+			font-weight: bold;
+			margin-top: 5px;
 			color: $colorNavPanel;
+			display: inline-block;
 		}
 		.callHeader{
 			// font-size: 11px;
@@ -150,19 +156,10 @@ $colorRed: lighten(#B92025, 10%);
 		.connectHeaderWrapper{
 			padding-right: 0px !important;
 		}
-
-	}
-	.logoPaddingHeader{
-		margin-top: 5px;
-	}
-	.realEstateRC{
-		font-family: 'Roboto Slab', serif;
-		color: #4B4F54;
-		font-size: 1.2em;
-		margin-top: 5px;
-		text-shadow: #FFFFFF 1px 1px 0px
-	}
-	.outstandingAgents{
+		.connectWithContent{
+			margin-bottom: 10px;
+		}
+		.outstandingAgents{
 	// font-family: 'Roboto Slab', serif;
 	// font-family: 'Numans', sans-serif;
 	// font-family: 'Noto Sans', sans-serif;
@@ -175,7 +172,24 @@ $colorRed: lighten(#B92025, 10%);
 	color: $colorRed;
 	// color: #FFFFFF;
 	margin-bottom: 0.4em;
-	text-shadow: #FFFFFF 1px 1px 0px
+	text-shadow: #03669E 1px 1px 0px
+}
+
+.outstandingResults{
+	@extend .outstandingAgents;
+	padding-left: 120px;
+}
+}
+.logoPaddingHeader{
+	margin-top: 5px;
+}
+.realEstateRC{
+	font-family: 'Roboto Slab', serif;
+	color: #4B4F54;
+	font-size: .7em;
+	margin-top: 3px;
+	text-shadow: #FFFFFF 1px 1px 0px;
+	margin-left: -75px;
 }
 
 /* =create an account style starts here */
@@ -201,12 +215,6 @@ $colorRed: lighten(#B92025, 10%);
 
 
 /*  =call us style starts here*/
-.callUs{
-	color: $colorRed;
-	text-shadow: #FFFFFF 1px 1px 0px;
-	font-size: 20px;
-	font-weight: bold;
-}
 .callPanel{
 	// background-color: lighten(#393939, 60%);
 	border-color: $colorRed !important;
@@ -219,7 +227,6 @@ $colorRed: lighten(#B92025, 10%);
 .icon{
 	// margin-top: 10px;
 	text-align: right;
-	padding-right: 0px;
 }
 .mailIcon{
 	@include mailIconStyle;
@@ -236,6 +243,7 @@ $colorRed: lighten(#B92025, 10%);
 
 	.small-block-grid-3 > li{
 		margin-bottom: 15px !important;
+		margin-right: 0px !important;
 	}
 	h4{
 		margin-bottom: 9px !important;
@@ -429,34 +437,34 @@ footer{
 	display: block;
 	margin: 0 10px !important;
 	padding: 0;
-} */
-.contactFooter{
-	@include contactFooterStyle;
-}
-.social{
-	padding-top: 10px;
-}
-.mls{
-	margin-top: 70px;
-}
-.properties{
-	margin-left: 15px;
-}
-.propertiesFooter{
-	@include propertiesFooterStyle;
-}
-.copyright{
-	background-color: $copyrightBackgroundColor;
-	padding-top: 10px;
-}
-.copy{
-	color: $colorFontOffWhite !important;
-}
-/* =Contact Us */
-textarea{
-	height: 300px;
-	cursor: pointer;
-}
-fieldset legend{
-	background-color: $colorLogoWrapper !important;
-}
+	} */
+	.contactFooter{
+		@include contactFooterStyle;
+	}
+	.social{
+		padding-top: 10px;
+	}
+	.mls{
+		margin-top: 70px;
+	}
+	.properties{
+		margin-left: 15px;
+	}
+	.propertiesFooter{
+		@include propertiesFooterStyle;
+	}
+	.copyright{
+		background-color: $copyrightBackgroundColor;
+		padding-top: 10px;
+	}
+	.copy{
+		color: $colorFontOffWhite !important;
+	}
+	/* =Contact Us */
+	textarea{
+		height: 300px;
+		cursor: pointer;
+	}
+	fieldset legend{
+		background-color: $colorLogoWrapper !important;
+	}

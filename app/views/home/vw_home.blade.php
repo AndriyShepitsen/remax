@@ -5,22 +5,7 @@
 <div id="innerContent">
 	<div class="row">
 		<div class="large-12 columns">
-			<!-- <div class="orbit-container">
-				<ul class="orbit-slides-container" data-orbit data-options="timer_speed:26000;">
-					<li> -->
-						<img src="{{url('comp/img/house.jpg')}}" alt="">
-						<!-- <div class="orbit-caption">Lorem ipsum dolor sit amet, consectetur adipisicing</div>
-											</li>
-											<li>
-						<img src="{{url('comp/img/house2.jpg')}}" alt="">
-						<div class="orbit-caption">Lorem ipsum dolor sit amet, consectetur adipisicing</div>
-											</li>
-											<li>
-						<img src="{{url('comp/img/house.jpg')}}" alt="">
-						<div class="orbit-caption">Lorem ipsum dolor sit amet, consectetur adipisicing</div>
-											</li>
-										</ul>
-									</div> -->
+			
 			<!-- =news start here -->
 			<div class="row">
 				<!-- =news for buyers start here -->
