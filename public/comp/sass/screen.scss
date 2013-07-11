@@ -173,7 +173,11 @@ $colorRed: lighten(#B92025, 10%);
 	color: $colorRed;
 	// color: #FFFFFF;
 	margin-bottom: 0.4em;
-	text-shadow: #03669E 1px 1px 0px
+	text-shadow: #03669E 1px 1px 0px;
+	.callUsContent{
+		padding-left:70px !important;
+		padding-right: 0px !important;
+	}
 }
 
 .outstandingResults{

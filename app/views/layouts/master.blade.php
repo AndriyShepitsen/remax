@@ -130,8 +130,10 @@
                                <div class="outstandingResults">OUTSTANDING RESULTS.</div>
                              </div> <!-- =sloganContent-->
 
-                             <div class="large-5 columns callUsContent">
-                               <span class="contactTextStyle">  CALL US:</span>
+                             <div class="large-5 columns right callUsContent">
+                               <!-- <span class="contactTextStyle">  CALL US:</span> -->
+                               <img src="{{url('comp/img/phone40.png')}}" alt="name">
+                                                   
 
                                <span class="callUs">(847) 674-9797</span>
                              </div>
