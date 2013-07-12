@@ -1454,8 +1454,4 @@
   $(document).foundation();
 </script>
 </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> 020edec50509fa3ed875cfa41c5f8e407f1a5b75
