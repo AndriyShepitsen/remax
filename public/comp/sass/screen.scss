@@ -27,6 +27,7 @@ $colorSlash: #AAAAAA;
 $colorFontOffWhite: #F7F7F4;
 $copyrightBackgroundColor: #3F3F3F;
 $colorRed: lighten(#B92025, 10%);
+$myTextShadow: #FFFFFF 1px 1px 0px;
 
 /*=mixins*/
 @mixin myButtonStyle {
@@ -52,7 +53,7 @@ $colorRed: lighten(#B92025, 10%);
 
 @mixin mainContentStyle{
 	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 	background-color: $colorLogoWrapper;
 }
 @mixin findFormStyle {
@@ -95,10 +96,23 @@ $colorRed: lighten(#B92025, 10%);
 	float: left;
 	font-weight: bold;
 }
+@mixin myThLiStyle{
+	margin-bottom: 0px !important;
+	margin-right: 0px !important;
+	padding-bottom: 0px !important;
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+}
+@mixin myPanelStyle {
+	margin-top: 15px;
+	padding-bottom: 0px !important;
+	padding-top: 15px !important;
+	
+}
 .name{
 	a{
-		
-	color: $colorFontOffWhite; 
+
+		color: $colorFontOffWhite; 
 	}
 }
 .navPanel{
@@ -156,63 +170,46 @@ $colorRed: lighten(#B92025, 10%);
 			margin-bottom: 10px;
 			padding-right: 0px !important;
 		}
-		.outstandingAgents{
-	// font-family: 'Roboto Slab', serif;
-	// font-family: 'Numans', sans-serif;
-	// font-family: 'Noto Sans', sans-serif;
-	font-family: 'Archivo Black', sans-serif;
-	word-spacing: .1em;	
-	letter-spacing: 3px;
-	font-size: 1.3em;
-	color: $colorRed;
-	margin-bottom: 0.7em;
-	text-shadow: #03669E 1px 1px 0px;
-	padding-left: -20px;
-}
-
-.outstandingResults{
-	@extend .outstandingAgents;
-	padding-left: 90px;
-}
-}
-
-.logoPaddingHeader{
-	margin-top: 5px;
-}
-.realEstateRC{
-	font-family: 'Roboto Slab', serif;
-	color: #4B4F54;
-	font-size: .7em;
-	margin-top: 1px;
-	text-shadow: #FFFFFF 1px 1px 0px;
-	margin-left: -80px;
-}
-
-
-/* =create an account style starts here */
-.createAccount{
-
-	.account{
-		margin-top: 15px !important;
-		margin-bottom: 25px !important;
+		
 	}
 
-	label{
-		font-size: 1em;
-		margin-bottom: 10px;
+	.logoPaddingHeader{
+		margin-top: 5px;
 	}
-	.button{
-		@include myButtonStyle;		
+	.realEstateRC{
+		font-family: 'Roboto Slab', serif;
+		color: #4B4F54;
+		font-size: .7em;
+		margin-top: 1px;
+		text-shadow: #FFFFFF 1px 1px 0px;
+		margin-left: -80px;
 	}
-}
-/* =create an account style ends here*/
-
-/* =socialHeader starts here */
 
 
+	/* =create an account style starts here */
+	.createAccount{
 
-/*  =call us style starts here*/
-.callPanel{
+		.account{
+			margin-top: 15px !important;
+			margin-bottom: 25px !important;
+		}
+
+		label{
+			font-size: 1em;
+			margin-bottom: 10px;
+		}
+		.button{
+			@include myButtonStyle;		
+		}
+	}
+	/* =create an account style ends here*/
+
+	/* =socialHeader starts here */
+
+
+
+	/*  =call us style starts here*/
+	.callPanel{
 	// background-color: lighten(#393939, 60%);
 	border-color: $colorRed !important;
 	background-color: #DDDDDD;
@@ -239,34 +236,15 @@ $colorRed: lighten(#B92025, 10%);
 #mainContent{
 	@include mainContentStyle;
 
-	.small-block-grid-3 > li{
-		margin-bottom: 15px !important;
-		margin-right: 0px !important;
-	}
+
 	h4{
 		margin-bottom: 9px !important;
 	}
 
-	section{
-		.newListings{
-			color: $colorNavPanel;
-		}
-
-	}
-	.panel{
-		padding-top: 15px !important;
-	}
 }
 
 
-.panel{
-	padding-bottom: 0px !important;
-	margin-bottom: 10px;
-} 
-.orbit-container{
-	height:400px;
-	margin-bottom: 1em;
-}
+
 
 /* =find starts here */
 
@@ -293,16 +271,10 @@ label{
 .priceStyle{
 	font-weight: bold !important;
 	color: $colorFontOffWhite !important;
-	background-color: lighten($colorNavPanel, 15%) !important;
+	background-color: lighten($colorNavPanel, 20%) !important;
 }
-.small-block-grid-3 > li{
-	padding-left: 0px !important;
-	padding-right: 0px !important;
-}
-.carousel{
-	margin-top: 5px !important;
-	margin-left: -10px !important;
-}
+
+
 .showAllListings{
 	button, .button {
 		@include myButtonStyle;
@@ -319,7 +291,7 @@ label{
 .addressColor{
 	a{
 
-	color: $colorFindFormFont;
+		color: $colorFindFormFont;
 	}
 	a:hover{
 		color: lighten($colorFindFormFont, 10%);
@@ -334,20 +306,20 @@ label{
 	color: $colorFindFormFont; 
 }
 .newsHead:hover{
-	color: lighten($colorFindFormFont, 15%);
+	color: lighten($colorFindFormFont, 10%);
 }
 .newsHead:active{
-	color: lighten($colorFindFormFont, 15%);
+	color: lighten($colorFindFormFont, 10%);
 	
 }
 .newListingsTitle{
-	color: $colorNavPanel; 
+	color: $colorFindFormFont;
 }
 .newListingsTitle:hover{
-	color: lighten($colorNavPanel, 15%);
+	color: lighten($colorFindFormFont, 10%);
 }
 .newListingsTitle:active{
-	color: lighten($colorNavPanel, 15%);
+	color: lighten($colorFindFormFont, 10%);
 	
 }
 article p{
@@ -362,10 +334,80 @@ article p{
 .breadcrumbs li:before {
 	@include slashBefore;
 }
-/* =our agents style starts here */
-.agentLink{
-	font-size: 12px;
+/* =newListings style starts here  */
+.newListings{
+	@include myPanelStyle;
+	.liNewListings{
+		padding-right: 0px !important;
+		padding-left: 0px !important;
+
+	}
+	
 }
+.imgNewListings{
+	width: 75px;
+}
+.ullistings{
+	display: inline-block;
+	padding-left: 15px;
+}
+ul.newListings li{
+}
+/* =newListings style ends here  *
+
+/* =our agents style starts here */
+.ulagents{
+	overflow: auto;
+	display: inline-block; 
+	a{
+		text-align: center;
+	}
+}
+
+ul.ulagents li {
+
+	font-size: 12px;
+	color: $colorNavPanel;
+	display: inline-block;
+	text-shadow:$myTextShadow;
+	text-align: center !important;
+	font-weight: bold;
+	letter-spacing: .04em;
+}
+
+.ourAgents{
+	@include myPanelStyle;
+	margin-bottom: 0px !important;
+	.carousel{
+		margin-left: -12px !important;
+	}
+	.liAgents{
+		margin-bottom: 0px !important;
+		margin-right: 0px !important;
+		padding-bottom: 0px !important;
+		padding-right: 0px !important;
+		padding-left: 0px !important;
+		text-align: center !important;
+	}
+	.agentLink{
+		color: $colorNavPanel;
+	}
+	.agentLinkLast{
+		color: $colorNavPanel;
+		margin-top: -5px;
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+	.agentLink:hover{
+		color: lighten($colorNavPanel, 15%);
+	}
+	.agentLinkLast:hover{
+		color: lighten($colorNavPanel, 15%);
+	}
+}
+
+/* =agent profile starts here */
+
 .specialties{
 	font-size: 12px;
 }
@@ -447,38 +489,34 @@ footer{
 		cursor: pointer;
 	}
 }
-/* [class*="block-grid-"] {
-	display: block;
-	margin: 0 10px !important;
-	padding: 0;
-	} */
-	.contactFooter{
-		@include contactFooterStyle;
-	}
-	.social{
-		padding-top: 10px;
-	}
-	.mls{
-		margin-top: 70px;
-	}
-	.properties{
-		margin-left: 15px;
-	}
-	.propertiesFooter{
-		@include propertiesFooterStyle;
-	}
-	.copyright{
-		background-color: $copyrightBackgroundColor;
-		padding-top: 10px;
-	}
-	.copy{
-		color: $colorFontOffWhite !important;
-	}
-	/* =Contact Us */
-	textarea{
-		height: 300px;
-		cursor: pointer;
-	}
-	fieldset legend{
-		background-color: $colorLogoWrapper !important;
-	}
+
+.contactFooter{
+	@include contactFooterStyle;
+}
+.social{
+	padding-top: 10px;
+}
+.mls{
+	margin-top: 70px;
+}
+.properties{
+	margin-left: 15px;
+}
+.propertiesFooter{
+	@include propertiesFooterStyle;
+}
+.copyright{
+	background-color: $copyrightBackgroundColor;
+	padding-top: 10px;
+}
+.copy{
+	color: $colorFontOffWhite !important;
+}
+/* =Contact Us */
+textarea{
+	height: 300px;
+	cursor: pointer;
+}
+fieldset legend{
+	background-color: $colorLogoWrapper !important;
+}

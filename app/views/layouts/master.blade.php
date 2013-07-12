@@ -126,8 +126,7 @@
 
                             <div class="row">
                              <div class="large-7 columns sloganContent">
-                               <div class="outstandingAgents">OUTSTANDING AGENTS. </div>
-                               <div class="outstandingResults">OUTSTANDING RESULTS.</div>
+                               
                              </div> <!-- =sloganContent-->
 
                              <div class="large-5 columns right callUsContent">
@@ -261,56 +260,65 @@
    <!-- =find your home ends here -->
 
    <div class="row">
-     <section class="large-12 columns panel ">
+     <section class="large-12 columns panel newListings">
        <div>
          <h4> <a class="newListingsTitle" href="#">NEW LISTINGS</a> </h4>
        </div>
        <hr/>
-       <ul class="small-block-grid-3 clearing-thumbs">
-         <li><a class="th radius" href="{{URL::to('search/1')}}"><img src="{{url('comp/img/thumbs/1/1s.jpg')}}" alt=""><a/></li>
-         <li><a class="th radius" href="{{URL::to('search/15')}}"><img src="{{url('comp/img/thumbs/15/1s.jpg')}}" alt=""><a/></li>
-         <li><a class="th radius" href="{{URL::to('search/16')}}"><img src="{{url('comp/img/thumbs/16/1s.jpg')}}" alt=""><a/></li>
-         <li><a class="th radius" href="{{URL::to('search/19')}}"><img src="{{url('comp/img/thumbs/19/1s.jpg')}}" alt=""><a/></li>
-         <li><a class="th radius" href="{{URL::to('search/5')}}"><img src="{{url('comp/img/thumbs/5/1s.jpg')}}" alt=""><a/></li>
-         <li><a class="th radius" href="{{URL::to('search/10')}}"><img src="{{url('comp/img/thumbs/10/1s.jpg')}}" alt=""><a/></li>
+       <ul class="small-block-grid-3 clearing-thumbs ullistings">
+         <li class="liNewListings"><a class="th radius" href="{{URL::to('search/1')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/1/1s.jpg')}}" alt=""><a/></li>
+         <li class="liNewListings"><a class="th radius" href="{{URL::to('search/15')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/15/1s.jpg')}}" alt=""><a/></li>
+         <li class="liNewListings"><a class="th radius" href="{{URL::to('search/16')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/16/1s.jpg')}}" alt=""><a/></li>
+         <li class="liNewListings"><a class="th radius" href="{{URL::to('search/19')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/19/1s.jpg')}}" alt=""><a/></li>
+         <li class="liNewListings"><a class="th radius" href="{{URL::to('search/5')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/5/1s.jpg')}}" alt=""><a/></li>
+         <li class="liNewListings"><a class="th radius" href="{{URL::to('search/10')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/10/1s.jpg')}}" alt=""><a/></li>
        </ul>
      </section>
    </div>
 
    <div class="row">
-     <section class="large-12 columns panel ">
+     <div class="large-12 columns panel ourAgents">
        <h4><a class="newListingsTitle"href="">OUR AGENTS</a> <h4>
          <hr/>
-         <ul class="small-block-grid-3 clearing-thumbs " data-clearing>
-           <li><a class="th radius" data-reveal-id="danFlorian" href="#"><img src="{{url('comp/img/agents/Dan_I_Florian.jpg')}}" alt=""><a/>
-             {{link_to('#', 'Dan I. Florian', array('class'=>'agentLink'));}}
+         <ul class="small-block-grid-3 clearing-thumbs ulagents" data-clearing>
+           <li  class="liAgents"><a class="th radius" data-reveal-id="danFlorian" href="#"><img src="{{url('comp/img/agents/Dan_I_Florian.jpg')}}" alt=""><a/>
+             {{link_to('#', 'DAN I.', array('class'=>'agentLink'));}} <br/>
+             {{link_to('#', 'FLORIAN', array('class'=>'agentLinkLast'));}}
            </li>
-           <li><a class="th radius" data-reveal-id="ivyMoy" href="#"><img src="{{url('comp/img/agents/Ivy_Moy.jpg')}}" alt=""><a/>
-             {{link_to('#', 'Ivy Moy', array('class'=>'agentLink'));}}
+           <li class="liAgents"><a class="th radius ulagents" data-reveal-id="ivyMoy" href="#"><img src="{{url('comp/img/agents/Ivy_Moy.jpg')}}" alt=""><a/>
+             {{link_to('#', 'IVY', array('class'=>'agentLink'));}} <br/>
+             {{link_to('#', 'MOY', array('class'=>'agentLinkLast'));}}
            </li>
-           <li><a class="th radius" data-reveal-id="cheryletteHilton" href="#"><img src="{{url('comp/img/agents/Cherylette_Hilton.jpg')}}" alt=""><a/>
-             {{link_to('#', 'Crerylette Hilton', array('class'=>'agentLink'));}}
+           <li class="liAgents"><a class="th radius ulagents" data-reveal-id="cheryletteHilton" href="#"><img src="{{url('comp/img/agents/Cherylette_Hilton.jpg')}}" alt=""><a/>
+             {{link_to('#', 'CHERYLETTE', array('class'=>'agentLink'));}} <br/>
+             {{link_to('#', 'HILTON', array('class'=>'agentLinkLast'));}}
            </li>
-           <li><a class="th radius" data-reveal-id="elenaDan" href="#"><img src="{{url('comp/img/agents/Dan_Elena.jpg')}}" alt=""><a/>
-             {{link_to('#', 'Elena Dan', array('class'=>'agentLink'));}}
+           <li class="liAgents"><a class="th radius ulagents" data-reveal-id="elenaDan" href="#"><img src="{{url('comp/img/agents/Dan_Elena.jpg')}}" alt=""><a/>
+             {{link_to('#', 'ELENA', array('class'=>'agentLink'));}} <br/>
+             {{link_to('#', 'DAN', array('class'=>'agentLinkLast'));}}
            </li>
-           <li><a class="th radius" data-reveal-id="mariusDan" href="#"><img src="{{url('comp/img/agents/Dan_Elena.jpg')}}" alt=""><a/>
-             {{link_to('#', 'Marius Dan', array('class'=>'agentLink'));}}
+           <li class="liAgents"><a class="th radius ulagents" data-reveal-id="mariusDan" href="#"><img src="{{url('comp/img/agents/Dan_Elena.jpg')}}" alt=""><a/>
+             {{link_to('#', 'MARIUS', array('class'=>'agentLink'));}} <br/>
+             {{link_to('#', 'DAN', array('class'=>'agentLinkLast'));}}
            </li>
-           <li><a class="th radius" data-reveal-id="barryBenveniste" href="#"><img src="{{url('comp/img/agents/Barry_Benveniste.jpg')}}" alt=""><a/>
-             {{link_to('#', 'Barry Benveniste', array('class'=>'agentLink'));}}
+           <li class="liAgents"><a class="th radius ulagents" data-reveal-id="barryBenveniste" href="#"><img src="{{url('comp/img/agents/Barry_Benveniste.jpg')}}" alt=""><a/>
+             {{link_to('#', 'BARRY', array('class'=>'agentLink'));}} <br/>
+             {{link_to('#', 'BENVENISTE', array('class'=>'agentLinkLast'));}}
            </li>
-           <li><a class="th radius" data-reveal-id="markFeyman" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt=""><a/>
-             {{link_to('#', 'Mark Feyman', array('class'=>'agentLink'));}}
+           <li class="liAgents"><a class="th radius ulagents" data-reveal-id="markFeyman" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt=""><a/>
+             {{link_to('#', 'MARK', array('class'=>'agentLink'));}} <br/>
+             {{link_to('#', 'FEYMAN', array('class'=>'agentLinkLast'));}}
            </li>
-           <li><a class="th radius" data-reveal-id="haroldOza" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt=""><a/>
-             {{link_to('#', 'Harold Oza', array('class'=>'agentLink'));}}
+           <li class="liAgents"><a class="th radius ulagents" data-reveal-id="haroldOza" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt=""><a/>
+             {{link_to('#', 'HAROLD', array('class'=>'agentLink'));}} <br/>
+             {{link_to('#', 'OZA', array('class'=>'agentLinkLast'));}}
            </li>
-           <li><a class="th radius" data-reveal-id="johnDias" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt=""><a/>
-             {{link_to('#', 'John B. Dias', array('class'=>'agentLink'));}}
+           <li class="liAgents"><a class="th radius ulagents" data-reveal-id="johnDias" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt=""><a/>
+             {{link_to('#', 'JOHN B.', array('class'=>'agentLink'));}} <br/>
+             {{link_to('#', 'DIAS', array('class'=>'agentLinkLast'));}}
            </li>
          </ul>
-       </section>
+       </div>
      </div>
 
    </adide>
