@@ -156,7 +156,7 @@
                      </div> <!--infoContent-->
 
                    </div>
-                 </div>
+                 </div><!-- =logoWrapper ends here -->
                  <!-- =header ends here -->
 
 
@@ -321,7 +321,7 @@
    <!-- =adide ands here -->
 
  </div>
-</div>     
+</div>     <!-- /* =mainContent ends here */ -->
 
 
 <!-- /* =footer starts here */ -->
@@ -362,61 +362,46 @@
           </ul>
         </section>
 
-<!--             <section class="large-6 columns social">
-  <ul class="prop">
-    <span class="propertiesFooter">PROPERTIES FOR RENT:</span> <br/>
-    <li class="locality properties">{{link_to('#', 'Single home');}}</li>
-    <li class="locality properties">{{link_to('#', 'Family home');}}</li>
-    <li class="locality properties">{{link_to('#', 'Apartment');}}</li>
-    <li class="locality properties">{{link_to('#', 'Villa');}}</li>
-    <li class="locality properties">{{link_to('#', 'Condo');}}</li>
-    <li class="locality properties">{{link_to('#', 'Other');}}</li>
-  </ul>
-</section>
--->
-</div>
+      </div>
 
-<div class="large-4 columns">
-  <div class="large-6 columns">
-    <ul class="vcard">
-      <span class="connectFooter">CONTACT INFORMATION:</span>
-      <li class="locality"> PHONE: (847) 674-9797</li>
-      <li class="locality"> FAX: (847) 674-0411</li>
-      <li class="street-address">4023 W. Church St.</li>
-      <li class="locality">Skokie</li>
-      <li><span class="state">IL</span> <span class="zip">600076</span></li>
-      <li class="email" data-reveal-id="myModal">{{link_to('#', 'remax1stclass@gmail.com');}}</li>
-    </ul>
-  </div>
-  <section class="large-6 columns social">
-    <span class="contactFooter">CONNECT WITH US:</span>
-    <ul class="small-block-grid-3">
-      <li><a class="has-tip-left" title="Our Facebook Page" href="#"><img src="{{url('comp/img/social_footer/facebook.png')}}" alt="Skokie Remax First Class Facebook Icon"><a/></li>
-      <li><a class="has-tip-left" title="Our Twitter Page" href="#"><img src="{{url('comp/img/social_footer/twitter.png')}}" alt="Skokie Remax First Class Twitter Icon"><a/></li>
-      <li><a class="has-tip-left" title="Our Linkedin Page" href="#"><img src="{{url('comp/img/social_footer/linkedin.png')}}" alt="Skokie Remax First Class Linkedin Icon"><a/></li>
-      <li><a class="has-tip-left" title="Our Google Plus Page" href="#"><img src="{{url('comp/img/social_footer/google.png')}}" alt="Skokie Remax First Class Google Icon"><a/></li>
-      <li><a class="has-tip-left" title="Our Yelp Page" href="#"><img src="{{url('comp/img/social_footer/yelp.png')}}" alt="Skokie Remax First Class Feed Icon"><a/></li>
-      <li><a class="has-tip-left" title="Our Page" href="#"><img src="{{url('comp/img/social_footer/you_tube.png')}}" alt="Skokie Remax First Class Youtube Icon"><a/></li>
-    </ul>
-  </section>
-</div>
-</div>
-</footer>
-
-<!-- /* =copyright starts here */ -->
-
-<div class="copyright">
-  <div class="row">
-    <div class="large-4 large-centered columns copy">
-      <p>© 2013 RE/MAX FIRST CLASS</p> 
+      <div class="large-4 columns">
+        <div class="large-6 columns">
+          <ul class="vcard">
+            <span class="connectFooter">CONTACT INFORMATION:</span>
+            <li class="locality"> PHONE: (847) 674-9797</li>
+            <li class="locality"> FAX: (847) 674-0411</li>
+            <li class="street-address">4023 W. Church St.</li>
+            <li class="locality">Skokie</li>
+            <li><span class="state">IL</span> <span class="zip">600076</span></li>
+            <li class="email" data-reveal-id="myModal">{{link_to('#', 'remax1stclass@gmail.com');}}</li>
+          </ul>
+        </div>
+        <section class="large-6 columns social">
+          <span class="contactFooter">CONNECT WITH US:</span>
+          <ul class="small-block-grid-3">
+            <li><a class="has-tip-left" title="Our Facebook Page" href="#"><img src="{{url('comp/img/social_footer/facebook.png')}}" alt="Skokie Remax First Class Facebook Icon"><a/></li>
+            <li><a class="has-tip-left" title="Our Twitter Page" href="#"><img src="{{url('comp/img/social_footer/twitter.png')}}" alt="Skokie Remax First Class Twitter Icon"><a/></li>
+            <li><a class="has-tip-left" title="Our Linkedin Page" href="#"><img src="{{url('comp/img/social_footer/linkedin.png')}}" alt="Skokie Remax First Class Linkedin Icon"><a/></li>
+            <li><a class="has-tip-left" title="Our Google Plus Page" href="#"><img src="{{url('comp/img/social_footer/google.png')}}" alt="Skokie Remax First Class Google Icon"><a/></li>
+            <li><a class="has-tip-left" title="Our Yelp Page" href="#"><img src="{{url('comp/img/social_footer/yelp.png')}}" alt="Skokie Remax First Class Feed Icon"><a/></li>
+            <li><a class="has-tip-left" title="Our Page" href="#"><img src="{{url('comp/img/social_footer/you_tube.png')}}" alt="Skokie Remax First Class Youtube Icon"><a/></li>
+          </ul>
+        </section>
+      </div>
     </div>
+  </footer>
 
-  </div>
-</div>
-</div>
-</div>
+  <!-- /* =copyright starts here */ -->
 
+  <div class="copyright">
+    <div class="row">
+      <div class="large-4 large-centered columns copy">
+        <p>© 2013 RE/MAX FIRST CLASS</p> 
+      </div>
 
+  <!-- /* =copyright ends here */ -->
+<!-- </div>
+</div> -->
 
 
 <!-- /* My slideDown mail form starts here */
@@ -462,6 +447,7 @@
 </div>
 </div>
 </div>
+<!-- =myModal ends here -->
 
 
 <!--
@@ -566,7 +552,6 @@
 
 <!-- =create an account form ends here -->
 
-</div>
 <!--
 /* insert data-reveal-id to your button with the same id */
                    <input type="submit" class="button tiny right loginButton" data-reveal-id="adminAuth" value="LOGIN">
@@ -1428,8 +1413,7 @@
             </div>
           </div>
         </div>
-<!-- =John Dias  profile ends here -->
-<script>
+        <!-- =John Dias  profile ends here --><script>
   document.write('<script src=' +
     ('_proto_' in {} ? 'comp/javascripts/vendor/zepto' : 'comp/javascripts/vendor/jquery') +
     '.js><\/script>')
