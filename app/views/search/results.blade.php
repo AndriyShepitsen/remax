@@ -23,8 +23,8 @@
 						@endif
 					</small>
 					@if($house->images()->first()->maxid)
-					<ul class="small-block-grid-3 clearing-thumbs" data-clearing>
-						<li class="clearing-feature"><a href="comp/img/images/1/1.jpg"><img src="{{url('comp/img/thumbs/'.$house->id.'/1.jpg')}}" data-caption="This is a caption for the photo." class="th"></a> </li>
+					<ul class="no-bullet listingImage">
+						<li><a href=""><img src="{{url('comp/img/thumbs/'.$house->id.'/1.jpg')}}"  class="th"></a> </li>
 						
 					</ul>
 					@endif

@@ -301,6 +301,18 @@ article p{
 }
 ul.newListings li{
 }
+
+.priceStyle{
+	font-size: 15px;
+	margin-top: -10px; 
+}
+.oneListing{
+	font-size:12px;
+	h5{
+		color: $colorFontGray;
+		font-size: 16px;
+	}
+}
 /* =newListings style ends here  *
 
 /* =our agents style starts here */
@@ -436,6 +448,9 @@ footer{
 }
 .social{
 	padding-top: 10px;
+	.small-block-grid-3 > li{
+		padding: 10px !important;
+	}
 }
 .mls{
 	margin-top: 70px;
