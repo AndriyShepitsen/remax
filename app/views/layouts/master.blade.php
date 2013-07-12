@@ -416,46 +416,7 @@
 </div>
 </div>
 
-<script>
-  document.write('<script src=' +
-    ('_proto_' in {} ? 'comp/javascripts/vendor/zepto' : 'comp/javascripts/vendor/jquery') +
-    '.js><\/script>')
-</script>
 
-{{HTML::script("comp/javascripts/foundation/foundation.js")}}
-
-{{HTML::script("comp/javascripts/foundation/foundation.alerts.js")}}
-
-{{HTML::script("comp/javascripts/foundation/foundation.clearing.js")}}
-
-{{HTML::script("comp/javascripts/foundation/foundation.cookie.js")}}
-
-{{HTML::script("comp/javascripts/foundation/foundation.dropdown.js")}}
-
-{{HTML::script("comp/javascripts/foundation/foundation.forms.js")}}
-
-{{HTML::script("comp/javascripts/foundation/foundation.interchange.js")}}
-
-{{HTML::script("comp/javascripts/foundation/foundation.joyride.js")}}
-
-{{HTML::script("comp/javascripts/foundation/foundation.magellan.js")}}
-
-{{HTML::script("comp/javascripts/foundation/foundation.orbit.js")}}
-
-{{HTML::script("comp/javascripts/foundation/foundation.placeholder.js")}}
-
-{{HTML::script("comp/javascripts/foundation/foundation.reveal.js")}}
-
-{{HTML::script("comp/javascripts/foundation/foundation.section.js")}}
-
-{{HTML::script("comp/javascripts/foundation/foundation.tooltips.js")}}
-
-{{HTML::script("comp/javascripts/foundation/foundation.topbar.js")}}
-
-
-<script>
-  $(document).foundation();
-</script>
 
 
 <!-- /* My slideDown mail form starts here */
@@ -1467,4 +1428,46 @@
             </div>
           </div>
         </div>
-<!-- =John Dias  profile ends here --><!-- //LOCATION: remax/public
+<!-- =John Dias  profile ends here -->
+<script>
+  document.write('<script src=' +
+    ('_proto_' in {} ? 'comp/javascripts/vendor/zepto' : 'comp/javascripts/vendor/jquery') +
+    '.js><\/script>')
+</script>
+
+{{HTML::script("comp/javascripts/foundation/foundation.js")}}
+
+{{HTML::script("comp/javascripts/foundation/foundation.alerts.js")}}
+
+{{HTML::script("comp/javascripts/foundation/foundation.clearing.js")}}
+
+{{HTML::script("comp/javascripts/foundation/foundation.cookie.js")}}
+
+{{HTML::script("comp/javascripts/foundation/foundation.dropdown.js")}}
+
+{{HTML::script("comp/javascripts/foundation/foundation.forms.js")}}
+
+{{HTML::script("comp/javascripts/foundation/foundation.interchange.js")}}
+
+{{HTML::script("comp/javascripts/foundation/foundation.joyride.js")}}
+
+{{HTML::script("comp/javascripts/foundation/foundation.magellan.js")}}
+
+{{HTML::script("comp/javascripts/foundation/foundation.orbit.js")}}
+
+{{HTML::script("comp/javascripts/foundation/foundation.placeholder.js")}}
+
+{{HTML::script("comp/javascripts/foundation/foundation.reveal.js")}}
+
+{{HTML::script("comp/javascripts/foundation/foundation.section.js")}}
+
+{{HTML::script("comp/javascripts/foundation/foundation.tooltips.js")}}
+
+{{HTML::script("comp/javascripts/foundation/foundation.topbar.js")}}
+
+
+<script>
+  $(document).foundation();
+</script>
+</body>
+</html>
