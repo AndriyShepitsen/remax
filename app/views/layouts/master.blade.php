@@ -121,13 +121,18 @@
 
 
                           <div class="row">
-                           <div class="large-5 columns sloganContent">
+                          <div class="large-4 columns sloganText">
+                             
+<p>YOU NEED ONLY ONE</p> <p> COMPANY FOR ALL </p>  
+<p>YOUR REAL ESTATE NEEDS</p>
+                          </div>
+                           <div class="large-4 columns sloganContent">
 
-                              <p>ONE STOP SERVICE</p>
+                              <a>ONE STOP SERVICE</a>
 
                            </div> <!-- =sloganContent-->
 
-                           <div class="large-5 columns right ">
+                           <div class="large-4 columns right ">
                              <div class="large-12 columns callUsContent right">
                                <img  src="{{url('comp/img/phone40.png')}}" alt="name">
                                <span class="callUs">(847) 674-9797</span>
