@@ -12604,8 +12604,9 @@ a.th {
 .logoWrapper .callUsContent {
   margin-top: 20px !important;
   text-align: right;
+  padding: 0px;
 }
-/* line 151, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 .logoWrapper .contactTextStyle {
   font-size: 12px;
   font-weight: bold;
@@ -12613,17 +12614,31 @@ a.th {
   color: #525252;
   display: inline-block;
 }
-/* line 159, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 .logoWrapper .HeaderWrapper {
   padding-right: 0px !important;
 }
-/* line 162, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 .logoWrapper .connectWithContent {
   margin-bottom: 10px;
   padding-right: 0px !important;
 }
 
 /* line 168, ../sass/screen.scss */
+.sloganContent {
+  background: url("/comp/img/one_stop_service/One-Stop-Service.png");
+  width: 136px;
+  height: 136px;
+  margin-left: 260px;
+  margin-top: -30px;
+  padding-top: 36px;
+  text-align: center;
+  color: #f7f7f4;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+/* line 180, ../sass/screen.scss */
 .realEstateRC {
   font-family: 'Roboto Slab', serif;
   color: #4B4F54;
@@ -12634,14 +12649,15 @@ a.th {
 }
 
 /*  =call us style starts here*/
-/* line 182, ../sass/screen.scss */
+/* line 194, ../sass/screen.scss */
 .iconMailHome {
-  margin-top: 10px;
+  margin-top: 45px;
   text-align: right;
   margin-bottom: -5px;
+  padding: 0px;
 }
 
-/* line 187, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 .mailIcon, .homeIcon {
   padding-left: 10px;
   padding-top: 0px;
@@ -12649,19 +12665,19 @@ a.th {
 }
 
 /* =mainContent starts here */
-/* line 197, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 #mainContent {
   padding-top: 10px;
   padding-bottom: 20px;
   background-color: #f6f6f6;
 }
-/* line 199, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 #mainContent h4 {
   margin-bottom: 9px !important;
 }
 
 /* =find starts here */
-/* line 207, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 .find {
   display: inline-block;
   font-weight: bold;
@@ -12670,35 +12686,35 @@ a.th {
   color: #525252;
 }
 
-/* line 210, ../sass/screen.scss */
+/* line 223, ../sass/screen.scss */
 .findInput {
   margin-bottom: 15px !important;
 }
 
-/* line 213, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 label {
   margin-bottom: .5em;
 }
 
-/* line 216, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 .propertiesAllert {
   text-align: center;
   color: #393939;
 }
 
-/* line 220, ../sass/screen.scss */
+/* line 233, ../sass/screen.scss */
 .propertiesAllert:hover, .propertiesAllert:active {
   color: #797979;
 }
 
-/* line 223, ../sass/screen.scss */
+/* line 236, ../sass/screen.scss */
 .priceStyle {
   font-weight: bold !important;
   color: #f7f7f4 !important;
   background-color: #6c6c6c !important;
 }
 
-/* line 231, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 .showAllListings button, .showAllListings .button {
   background-color: #5f5f5f !important;
   margin-top: .5em !important;
@@ -12707,75 +12723,75 @@ label {
   border-color: #5f5f5f !important;
   color: #f7f7f4;
 }
-/* line 234, ../sass/screen.scss */
+/* line 247, ../sass/screen.scss */
 .showAllListings button:hover, .showAllListings button:focus, .showAllListings .button:hover, .showAllListings .button:focus {
   background-color: #393939 !important;
 }
 
-/* line 238, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 .alert-box {
   margin-bottom: .5em !important;
 }
 
-/* line 243, ../sass/screen.scss */
+/* line 256, ../sass/screen.scss */
 .addressColor a {
   color: #525252;
 }
-/* line 246, ../sass/screen.scss */
+/* line 259, ../sass/screen.scss */
 .addressColor a:hover {
   color: #6c6c6c;
 }
 
 /* news start here */
-/* line 252, ../sass/screen.scss */
+/* line 265, ../sass/screen.scss */
 .readMore {
   font-size: 0.6em;
 }
 
-/* line 255, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 .newsHead {
   color: #525252;
 }
 
-/* line 258, ../sass/screen.scss */
+/* line 271, ../sass/screen.scss */
 .newsHead:hover {
   color: #6c6c6c;
 }
 
-/* line 261, ../sass/screen.scss */
+/* line 274, ../sass/screen.scss */
 .newsHead:active {
   color: #6c6c6c;
 }
 
-/* line 265, ../sass/screen.scss */
+/* line 278, ../sass/screen.scss */
 .newListingsTitle {
   color: #525252;
 }
 
-/* line 268, ../sass/screen.scss */
+/* line 281, ../sass/screen.scss */
 .newListingsTitle:hover {
   color: #6c6c6c;
 }
 
-/* line 271, ../sass/screen.scss */
+/* line 284, ../sass/screen.scss */
 .newListingsTitle:active {
   color: #6c6c6c;
 }
 
-/* line 275, ../sass/screen.scss */
+/* line 288, ../sass/screen.scss */
 article p {
   font-size: .8em;
   line-height: 1.7em;
   margin-bottom: .5em;
 }
 
-/* line 280, ../sass/screen.scss */
+/* line 293, ../sass/screen.scss */
 .breadcrumbs {
   border: none !important;
   padding: 0px !important;
 }
 
-/* line 284, ../sass/screen.scss */
+/* line 297, ../sass/screen.scss */
 .breadcrumbs li:before {
   color: #aaaaaa;
   content: "/";
@@ -12784,40 +12800,40 @@ article p {
 }
 
 /* =newListings style starts here  */
-/* line 288, ../sass/screen.scss */
+/* line 301, ../sass/screen.scss */
 .newListings {
   margin-top: 15px;
   padding-bottom: 0px !important;
   padding-top: 15px !important;
 }
-/* line 290, ../sass/screen.scss */
+/* line 303, ../sass/screen.scss */
 .newListings .liNewListings {
   padding-right: 0px !important;
   padding-left: 0px !important;
 }
 
-/* line 295, ../sass/screen.scss */
+/* line 308, ../sass/screen.scss */
 .imgNewListings {
   width: 75px;
 }
 
-/* line 298, ../sass/screen.scss */
+/* line 311, ../sass/screen.scss */
 .ullistings {
   display: inline-block;
   padding-left: 15px;
 }
 
-/* line 305, ../sass/screen.scss */
+/* line 318, ../sass/screen.scss */
 .priceStyle {
   font-size: 15px;
   margin-top: -10px;
 }
 
-/* line 309, ../sass/screen.scss */
+/* line 322, ../sass/screen.scss */
 .oneListing {
   font-size: 12px;
 }
-/* line 311, ../sass/screen.scss */
+/* line 324, ../sass/screen.scss */
 .oneListing h5 {
   color: #525252;
   font-size: 16px;
@@ -12826,17 +12842,17 @@ article p {
 /* =newListings style ends here  *
 
 /* =our agents style starts here */
-/* line 319, ../sass/screen.scss */
+/* line 332, ../sass/screen.scss */
 .ulagents {
   overflow: auto;
   display: inline-block;
 }
-/* line 322, ../sass/screen.scss */
+/* line 335, ../sass/screen.scss */
 .ulagents a {
   text-align: center;
 }
 
-/* line 327, ../sass/screen.scss */
+/* line 340, ../sass/screen.scss */
 ul.ulagents li {
   font-size: 12px;
   color: #393939;
@@ -12847,18 +12863,18 @@ ul.ulagents li {
   letter-spacing: .04em;
 }
 
-/* line 337, ../sass/screen.scss */
+/* line 350, ../sass/screen.scss */
 .ourAgents {
   margin-top: 15px;
   padding-bottom: 0px !important;
   padding-top: 15px !important;
   margin-bottom: 0px !important;
 }
-/* line 340, ../sass/screen.scss */
+/* line 353, ../sass/screen.scss */
 .ourAgents .carousel {
   margin-left: -12px !important;
 }
-/* line 343, ../sass/screen.scss */
+/* line 356, ../sass/screen.scss */
 .ourAgents .liAgents {
   margin-bottom: 0px !important;
   margin-right: 0px !important;
@@ -12867,80 +12883,80 @@ ul.ulagents li {
   padding-left: 0px !important;
   text-align: center !important;
 }
-/* line 351, ../sass/screen.scss */
+/* line 364, ../sass/screen.scss */
 .ourAgents .agentLink {
   color: #393939;
 }
-/* line 354, ../sass/screen.scss */
+/* line 367, ../sass/screen.scss */
 .ourAgents .agentLinkLast {
   color: #393939;
   margin-top: -5px;
   display: inline-block;
   margin-bottom: 10px;
 }
-/* line 360, ../sass/screen.scss */
+/* line 373, ../sass/screen.scss */
 .ourAgents .agentLink:hover {
   color: #5f5f5f;
 }
-/* line 363, ../sass/screen.scss */
+/* line 376, ../sass/screen.scss */
 .ourAgents .agentLinkLast:hover {
   color: #5f5f5f;
 }
 
 /* =agent profile starts here */
-/* line 370, ../sass/screen.scss */
+/* line 383, ../sass/screen.scss */
 .specialties {
   font-size: 12px;
 }
 
-/* line 373, ../sass/screen.scss */
+/* line 386, ../sass/screen.scss */
 .agentName {
   margin-bottom: 5px !important;
 }
 
-/* line 376, ../sass/screen.scss */
+/* line 389, ../sass/screen.scss */
 .specialist:hover, .specialist:focus {
   color: #f7f7f4 !important;
 }
 
-/* line 379, ../sass/screen.scss */
+/* line 392, ../sass/screen.scss */
 .info {
   margin-top: 25px !important;
   padding-bottom: 15px !important;
   padding-top: 0px !important;
 }
 
-/* line 384, ../sass/screen.scss */
+/* line 397, ../sass/screen.scss */
 .innerInfo {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
 }
 
-/* line 388, ../sass/screen.scss */
+/* line 401, ../sass/screen.scss */
 .agentProp {
   margin-top: 10px;
 }
 
-/* line 391, ../sass/screen.scss */
+/* line 404, ../sass/screen.scss */
 .logoS {
   margin-top: 5px;
   display: inline-block;
 }
 
 /*=footer starts here */
-/* line 397, ../sass/screen.scss */
+/* line 410, ../sass/screen.scss */
 .logoFooterPadding {
   margin-left: 1em;
   margin-top: 1em;
 }
 
-/* line 400, ../sass/screen.scss */
+/* line 413, ../sass/screen.scss */
 .logoRemaxFooter {
   margin-left: 1em;
   margin-top: 1em;
 }
 
-/* line 403, ../sass/screen.scss */
+/* line 416, ../sass/screen.scss */
 .connectFooter {
   display: inline-block;
   font-size: 11px;
@@ -12948,64 +12964,64 @@ ul.ulagents li {
   font-weight: bold;
 }
 
-/* line 406, ../sass/screen.scss */
+/* line 419, ../sass/screen.scss */
 .vcard {
   border: 0em;
   margin-bottom: 0em !important;
 }
 
-/* line 410, ../sass/screen.scss */
+/* line 423, ../sass/screen.scss */
 .vcard .fn {
   font-size: 12px;
 }
 
-/* line 413, ../sass/screen.scss */
+/* line 426, ../sass/screen.scss */
 .vcard .street-address {
   font-size: 12px;
 }
 
-/* line 416, ../sass/screen.scss */
+/* line 429, ../sass/screen.scss */
 .vcard .locality {
   font-size: 12px;
 }
 
-/* line 419, ../sass/screen.scss */
+/* line 432, ../sass/screen.scss */
 .vcard .state {
   font-size: 12px;
 }
 
-/* line 422, ../sass/screen.scss */
+/* line 435, ../sass/screen.scss */
 .vcard .zip {
   font-size: 12px;
   display: inline-block;
 }
 
-/* line 427, ../sass/screen.scss */
+/* line 440, ../sass/screen.scss */
 .vcard .email a {
   font-size: 11px !important;
 }
 
-/* line 431, ../sass/screen.scss */
+/* line 444, ../sass/screen.scss */
 footer {
   background-color: #dddddd;
   padding-top: 10px;
 }
-/* line 433, ../sass/screen.scss */
+/* line 446, ../sass/screen.scss */
 footer .row .columns {
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
-/* line 437, ../sass/screen.scss */
+/* line 450, ../sass/screen.scss */
 footer .prop {
   font-size: 11px !important;
 }
-/* line 440, ../sass/screen.scss */
+/* line 453, ../sass/screen.scss */
 footer .row.ul.li.a {
   color: #f7f7f4;
   cursor: pointer;
 }
 
-/* line 446, ../sass/screen.scss */
+/* line 459, ../sass/screen.scss */
 .contactFooter {
   padding-left: 10px;
   font-size: 11px;
@@ -13016,26 +13032,26 @@ footer .row.ul.li.a {
   display: inline-block;
 }
 
-/* line 449, ../sass/screen.scss */
+/* line 462, ../sass/screen.scss */
 .social {
   padding-top: 10px;
 }
-/* line 451, ../sass/screen.scss */
+/* line 464, ../sass/screen.scss */
 .social .small-block-grid-3 > li {
   padding: 10px !important;
 }
 
-/* line 455, ../sass/screen.scss */
+/* line 468, ../sass/screen.scss */
 .mls {
   margin-top: 70px;
 }
 
-/* line 458, ../sass/screen.scss */
+/* line 471, ../sass/screen.scss */
 .properties {
   margin-left: 15px;
 }
 
-/* line 461, ../sass/screen.scss */
+/* line 474, ../sass/screen.scss */
 .propertiesFooter {
   font-weight: bold;
   display: inline-block;
@@ -13043,25 +13059,25 @@ footer .row.ul.li.a {
   color: #393939;
 }
 
-/* line 464, ../sass/screen.scss */
+/* line 477, ../sass/screen.scss */
 .copyright {
   background-color: #3f3f3f;
   padding-top: 10px;
 }
 
-/* line 468, ../sass/screen.scss */
+/* line 481, ../sass/screen.scss */
 .copy {
   color: #f7f7f4 !important;
 }
 
 /* =Contact Us */
-/* line 472, ../sass/screen.scss */
+/* line 485, ../sass/screen.scss */
 textarea {
   height: 300px;
   cursor: pointer;
 }
 
-/* line 476, ../sass/screen.scss */
+/* line 489, ../sass/screen.scss */
 fieldset legend {
   background-color: #f6f6f6 !important;
 }

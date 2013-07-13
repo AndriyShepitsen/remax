@@ -1731,3 +1731,86 @@ Load paths:
 2013-07-12 14:26:19 overwrite stylesheets/screen.css 
 2013-07-12 14:31:30 overwrite stylesheets/screen.css 
 2013-07-12 14:31:53 overwrite stylesheets/screen.css 
+2013-07-12 15:50:49     error sass/screen.scss (Line 168: Invalid CSS after "...und-image: url(": expected ")", was "{{ HTML::script...")
+2013-07-12 15:50:49 overwrite stylesheets/screen.css 
+2013-07-12 15:52:45     error sass/screen.scss (Line 168: Invalid CSS after "...und-image: url(": expected ")", was "{{ URL::asset('...")
+2013-07-12 15:52:45 overwrite stylesheets/screen.css 
+2013-07-12 15:55:15     error sass/screen.scss (Line 169: Invalid CSS after "	background-image:": expected expression (e.g. 1px, bold), was "}	")
+2013-07-12 15:55:15 overwrite stylesheets/screen.css 
+2013-07-12 15:55:52     error sass/screen.scss (Line 168: Invalid CSS after "...und-image: url(": expected ")", was "{{ URL::asset('...")
+2013-07-12 15:55:52 overwrite stylesheets/screen.css 
+2013-07-12 15:56:03     error sass/screen.scss (Line 168: Invalid CSS after "...und-image: url(": expected ")", was "{{ URL::asset('...")
+2013-07-12 15:56:03 identical stylesheets/screen.css 
+2013-07-12 15:56:18     error sass/screen.scss (Line 168: Invalid CSS after "...und-image: url(": expected ")", was "{{ URL::asset('...")
+2013-07-12 15:56:18 identical stylesheets/screen.css 
+2013-07-12 16:03:41     error sass/screen.scss (Line 168: Invalid CSS after "...kground-image: ": expected expression (e.g. 1px, bold), was "@include backgr...")
+2013-07-12 16:03:41 overwrite stylesheets/screen.css 
+2013-07-12 16:04:19    remove .sass-cache/ 
+2013-07-12 16:04:19    remove stylesheets/app.css 
+2013-07-12 16:04:19    remove stylesheets/normalize.css 
+2013-07-12 16:04:19    remove stylesheets/screen.css 
+2013-07-12 16:04:22    create stylesheets/app.css 
+2013-07-12 16:04:23    create stylesheets/normalize.css 
+2013-07-12 16:04:23     error sass/screen.scss (Line 168: Invalid CSS after "...kground-image: ": expected expression (e.g. 1px, bold), was "@include backgr...")
+2013-07-12 16:04:23    create stylesheets/screen.css 
+2013-07-12 16:04:24     error sass/screen.scss (Line 168: Invalid CSS after "...kground-image: ": expected expression (e.g. 1px, bold), was "@include backgr...")
+2013-07-12 16:04:24 overwrite stylesheets/screen.css 
+2013-07-12 16:05:43     error sass/screen.scss (Line 168: Invalid CSS after "...kground-image: ": expected expression (e.g. 1px, bold), was "@include backgr...")
+2013-07-12 16:05:43 overwrite stylesheets/screen.css 
+2013-07-12 16:06:59 overwrite stylesheets/screen.css 
+2013-07-12 16:15:12 overwrite stylesheets/screen.css 
+2013-07-12 16:16:52 overwrite stylesheets/screen.css 
+2013-07-12 16:20:38     error sass/screen.scss (Line 169: Invalid CSS after "      width": expected comma, was ": 136px;       ...")
+2013-07-12 16:20:38 overwrite stylesheets/screen.css 
+2013-07-12 16:21:04     error sass/screen.scss (Line 168: Invalid CSS after "...p-Service.png')": expected ")", was ";")
+2013-07-12 16:21:04 overwrite stylesheets/screen.css 
+2013-07-12 16:21:22 overwrite stylesheets/screen.css 
+2013-07-12 16:23:45 overwrite stylesheets/screen.css 
+2013-07-13 06:26:54 overwrite stylesheets/screen.css 
+2013-07-13 06:27:28 overwrite stylesheets/screen.css 
+2013-07-13 06:28:07 overwrite stylesheets/screen.css 
+2013-07-13 06:28:54 overwrite stylesheets/screen.css 
+2013-07-13 06:29:16 overwrite stylesheets/screen.css 
+2013-07-13 06:29:49 overwrite stylesheets/screen.css 
+2013-07-13 06:30:14 overwrite stylesheets/screen.css 
+2013-07-13 06:34:42 overwrite stylesheets/screen.css 
+2013-07-13 06:35:08 overwrite stylesheets/screen.css 
+2013-07-13 06:35:20 overwrite stylesheets/screen.css 
+2013-07-13 06:35:45 overwrite stylesheets/screen.css 
+2013-07-13 06:36:32 overwrite stylesheets/screen.css 
+2013-07-13 06:36:57     error sass/screen.scss (Line 176: Invalid CSS after "	font-size": expected ";", was ": 15px;")
+2013-07-13 06:36:57 overwrite stylesheets/screen.css 
+2013-07-13 06:37:15 overwrite stylesheets/screen.css 
+2013-07-13 06:37:38    remove .sass-cache/ 
+2013-07-13 06:37:38    remove stylesheets/app.css 
+2013-07-13 06:37:38    remove stylesheets/normalize.css 
+2013-07-13 06:37:38    remove stylesheets/screen.css 
+2013-07-13 06:37:42    create stylesheets/app.css 
+2013-07-13 06:37:42    create stylesheets/normalize.css 
+2013-07-13 06:37:47    create stylesheets/screen.css 
+2013-07-13 06:38:45 overwrite stylesheets/screen.css 
+2013-07-13 06:39:06     error sass/screen.scss (Line 174: Invalid CSS after "	text-align": expected ";", was ": center;")
+2013-07-13 06:39:06 overwrite stylesheets/screen.css 
+2013-07-13 06:39:24 overwrite stylesheets/screen.css 
+2013-07-13 06:39:47 overwrite stylesheets/screen.css 
+2013-07-13 06:40:24 overwrite stylesheets/screen.css 
+2013-07-13 06:40:45 overwrite stylesheets/screen.css 
+2013-07-13 06:41:09 overwrite stylesheets/screen.css 
+2013-07-13 06:41:27 overwrite stylesheets/screen.css 
+2013-07-13 06:41:56 overwrite stylesheets/screen.css 
+2013-07-13 06:58:00 identical stylesheets/screen.css 
+2013-07-13 06:59:47 overwrite stylesheets/screen.css 
+2013-07-13 07:00:06 overwrite stylesheets/screen.css 
+2013-07-13 07:00:34 overwrite stylesheets/screen.css 
+2013-07-13 07:02:42 overwrite stylesheets/screen.css 
+2013-07-13 07:04:54 overwrite stylesheets/screen.css 
+2013-07-13 07:06:04 overwrite stylesheets/screen.css 
+2013-07-13 07:06:51 overwrite stylesheets/screen.css 
+2013-07-13 07:07:29 overwrite stylesheets/screen.css 
+2013-07-13 07:07:39    remove .sass-cache/ 
+2013-07-13 07:07:39    remove stylesheets/app.css 
+2013-07-13 07:07:39    remove stylesheets/normalize.css 
+2013-07-13 07:07:47    remove stylesheets/screen.css 
+2013-07-13 07:07:53    create stylesheets/app.css 
+2013-07-13 07:07:53    create stylesheets/normalize.css 
+2013-07-13 07:07:59    create stylesheets/screen.css 

@@ -146,6 +146,7 @@ $myTextShadow: #FFFFFF 1px 1px 0px;
 	.callUsContent{
 		margin-top: 20px !important;
 		text-align: right;
+		padding:0px;
 	}
 
 	.contactTextStyle{
@@ -164,7 +165,18 @@ $myTextShadow: #FFFFFF 1px 1px 0px;
 		padding-right: 0px !important;
 	}
 }
-
+.sloganContent{
+	@include background(url('/comp/img/one_stop_service/One-Stop-Service.png'));
+	width: 136px;                
+	height: 136px;                
+	margin-left: 260px;
+	margin-top: -30px;
+	padding-top: 36px;
+	text-align: center;
+	color: $colorFontOffWhite;
+	font-weight: bold;
+	font-size: 19px;
+}	
 .realEstateRC{
 	font-family: 'Roboto Slab', serif;
 	color: #4B4F54;
@@ -180,9 +192,10 @@ $myTextShadow: #FFFFFF 1px 1px 0px;
 
 
 .iconMailHome{
-	margin-top: 10px;
+	margin-top: 45px;
 	text-align: right;
 	margin-bottom: -5px;
+	padding:0px;
 }
 .mailIcon{
 	@include mailIconStyle;

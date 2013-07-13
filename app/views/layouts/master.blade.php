@@ -121,285 +121,274 @@
 
 
                           <div class="row">
-                           <div class="large-7 columns sloganContent">
+                           <div class="large-5 columns sloganContent">
+
+                              <p>ONE STOP SERVICE</p>
 
                            </div> <!-- =sloganContent-->
 
-                           <div class="large-5 columns right callUsContent">
-                             <img  src="{{url('comp/img/phone40.png')}}" alt="name">
-                             <span class="callUs">(847) 674-9797</span>
+                           <div class="large-5 columns right ">
+                             <div class="large-12 columns callUsContent right">
+                               <img  src="{{url('comp/img/phone40.png')}}" alt="name">
+                               <span class="callUs">(847) 674-9797</span>
+                             </div>
+                             <div class="large-12 columns right iconMailHome">
+
+                               <a href="{{ URL::route('home')}}" class="homeIcon has-tip-left" title="Home Page">
+                                 <img src="{{url('comp/img/icons/home_remax.png')}}" alt="Remax First Class Home Icon">
+                               </a> 
+                               <!-- =mailIcon -->
+                               <a href="#" class="mailIcon has-tip-left" title="Send Us Email" data-reveal-id="myModal"> 
+                                 <img src="{{url('comp/img/icons/mail_remax.png')}}" alt="Remax First Class Mail Icon" ></a>
+                               </div>
+                             </div>
                            </div>
-                         </div>
 
-                         <div class="row">
-                          <div class="large-7 columns">
-                           <!--  <div class="realEstateRC">Residential, Commercial & Investment Real Estate</div> -->
 
                          </div>
-                         <div class="large-5 columns right iconMailHome">
+                       </div> <!--infoContent-->
 
-                           <a href="{{ URL::route('home')}}" class="homeIcon has-tip-left" title="Home Page">
-                             <img src="{{url('comp/img/icons/home_remax.png')}}" alt="Remax First Class Home Icon">
-                           </a> 
-                           <!-- =mailIcon -->
-                           <a href="#" class="mailIcon has-tip-left" title="Send Us Email" data-reveal-id="myModal"> 
-                             <img src="{{url('comp/img/icons/mail_remax.png')}}" alt="Remax First Class Mail Icon" ></a>
-
-                           </div>
-                         </div>
+                     </div>
+                   </div><!-- =logoWrapper ends here -->
+                   <!-- =header ends here -->
 
 
-
-
-
-                       </div>
-                     </div> <!--infoContent-->
-
-                   </div>
-                 </div><!-- =logoWrapper ends here -->
-                 <!-- =header ends here -->
-
-
-                 <div id="mainContent">
-                   <div class="row">
-                    <div class="large-8 columns">
-
-                     @yield('content')
-                   </div>
-
-                   <!--  =aside starts here-->
-                   <adide class="large-4 columns">
+                   <div id="mainContent">
                      <div class="row">
-                      <div class="large-12 columns panel">
-                       <span class="find">FIND YOUR HOME</span> <div class="row">
-                       <div class="large-12 columns">
+                      <div class="large-8 columns">
+
+                       @yield('content')
+                     </div>
+
+                     <!--  =aside starts here-->
+                     <adide class="large-4 columns">
+                       <div class="row">
+                        <div class="large-12 columns panel">
+                         <span class="find">FIND YOUR HOME</span> <div class="row">
+                         <div class="large-12 columns">
 
 
-                         {{Form::open(array('url' => 'search', 'method'=>'GET'))}}
+                           {{Form::open(array('url' => 'search', 'method'=>'GET'))}}
 
-                         <div class="row">
-                           <div class="large-12 columns">
-                             {{Form::label('location', 'Location')}}
-                             {{Form::text('location',Input::get('location'), array('placeholder'=>'City and State, Address or Zip Code', 'class'=>'findInput'))}}
+                           <div class="row">
+                             <div class="large-12 columns">
+                               {{Form::label('location', 'Location')}}
+                               {{Form::text('location',Input::get('location'), array('placeholder'=>'City and State, Address or Zip Code', 'class'=>'findInput'))}}
+                             </div>
                            </div>
+
+                           <div class="row">
+                             <div class="large-12 columns">
+                               {{Form::label('from', 'Price Range')}}
+                             </div>
+                           </div>
+
+                           <div class="row">
+                             <div class="large-6 columns">
+                               {{Form::text('from', Input::get('from'), array('placeholder'=>'$ From', 'class'=>'findInput'))}}
+                             </div>
+                             <div class="large-6 columns">
+                               {{Form::text('to',  Input::get('to'), array('placeholder'=>'$ To', 'class'=>'findInput'))}}
+                             </div>
+                           </div>
+                           <div class="row">
+                             <div class="large-6 columns">
+                               {{Form::label('beds', 'Bedrooms')}}
+                               {{Form::text('beds', Input::get('beds'), array('placeholder'=>'#', 'class'=>'findinput'))}}
+                             </div>
+                             <div class="large-6 columns">
+                               {{Form::label('baths', 'Bathrooms')}}
+                               {{Form::text('baths', Input::get('baths'), array('placeholder'=>'#', 'class'=>'findinput'))}}
+                             </div>
+
+                           </div>
+                           <div class="row">
+                             <div class="large-4 columns">
+
+                               {{ Form::submit('Search', array('class'=>'button small secondary radius'))}}
+                               <br/>
+                             </div>
+                           </div>
+
+                           {{Form::close()}}
+
+
                          </div>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="row">
+                     <div class="large-12 columns showAllListings">
+                      {{link_to('show-all-listings', 'BROWSE ALL LISTINGS', array('class'=>'browseAllListings button radius expand '));}} 
+                    </div>
+                  </div>
+                  <div class="row">
+                   <div class="large-6 columns">
+                     {{link_to('browse/1', 'SINGLE FAMILY', array('class'=>'alert-box secondary expand radius propertiesAllert'));}}
+                   </div>
 
-                         <div class="row">
-                           <div class="large-12 columns">
-                             {{Form::label('from', 'Price Range')}}
-                           </div>
-                         </div>
-
-                         <div class="row">
-                           <div class="large-6 columns">
-                             {{Form::text('from', Input::get('from'), array('placeholder'=>'$ From', 'class'=>'findInput'))}}
-                           </div>
-                           <div class="large-6 columns">
-                             {{Form::text('to',  Input::get('to'), array('placeholder'=>'$ To', 'class'=>'findInput'))}}
-                           </div>
-                         </div>
-                         <div class="row">
-                           <div class="large-6 columns">
-                             {{Form::label('beds', 'Bedrooms')}}
-                             {{Form::text('beds', Input::get('beds'), array('placeholder'=>'#', 'class'=>'findinput'))}}
-                           </div>
-                           <div class="large-6 columns">
-                             {{Form::label('baths', 'Bathrooms')}}
-                             {{Form::text('baths', Input::get('baths'), array('placeholder'=>'#', 'class'=>'findinput'))}}
-                           </div>
-<!--                    <div class="large-4 columns">
-                   {{Form::label('garage', 'garage')}}
-                   {{Form::text('garage', '', array('placeholder'=>'#', 'class'=>'findinput'))}}
+                   <div class="large-6 columns">
+                     {{link_to('browse/4', 'MULTI-FAMILY', array('class'=>'alert-box secondary expand radius propertiesAllert'));}}
+                   </div>
                  </div>
-               -->                 
-             </div>
-             <div class="row">
-               <div class="large-4 columns">
 
-                 {{ Form::submit('Search', array('class'=>'button small secondary radius'))}}
-                 <br/>
+                 <div class="row">
+                   <div class="large-6 columns">
+                     {{link_to('browse/3', 'CONDO', array('class'=>'alert-box secondary expand radius propertiesAllert'));}}
+                   </div>
+
+                   <div class="large-6 columns">
+                     {{link_to('browse/2', 'VACANT LAND', array('class'=>'alert-box secondary expand radius propertiesAllert'));}}
+                   </div>
+                 </div>
+
+                 <!-- =find your home ends here -->
+
+                 <div class="row">
+                   <section class="large-12 columns panel newListings">
+                     <div>
+                       <h4> <a class="newListingsTitle" href="#">NEW LISTINGS</a> </h4>
+                     </div>
+                     <hr/>
+                     <ul class="small-block-grid-3 clearing-thumbs ullistings">
+                       <li class="liNewListings"><a class="th radius" href="{{URL::to('search/1')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/1/1s.jpg')}}" alt=""><a/></li>
+                       <li class="liNewListings"><a class="th radius" href="{{URL::to('search/15')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/15/1s.jpg')}}" alt=""><a/></li>
+                       <li class="liNewListings"><a class="th radius" href="{{URL::to('search/16')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/16/1s.jpg')}}" alt=""><a/></li>
+                       <li class="liNewListings"><a class="th radius" href="{{URL::to('search/19')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/19/1s.jpg')}}" alt=""><a/></li>
+                       <li class="liNewListings"><a class="th radius" href="{{URL::to('search/5')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/5/1s.jpg')}}" alt=""><a/></li>
+                       <li class="liNewListings"><a class="th radius" href="{{URL::to('search/10')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/10/1s.jpg')}}" alt=""><a/></li>
+                     </ul>
+                   </section>
+                 </div>
+
+                 <div class="row">
+                   <div class="large-12 columns panel ourAgents">
+                     <h4><a class="newListingsTitle"href="">OUR AGENTS</a> <h4>
+                       <hr/>
+                       <ul class="small-block-grid-3 clearing-thumbs ulagents" data-clearing>
+                         <li  class="liAgents"><a class="th radius" data-reveal-id="danFlorian" href="#"><img src="{{url('comp/img/agents/Dan_I_Florian.jpg')}}" alt=""><a/>
+                           {{link_to('#', 'DAN I.', array('class'=>'agentLink'));}} <br/>
+                           {{link_to('#', 'FLORIAN', array('class'=>'agentLinkLast'));}}
+                         </li>
+                         <li class="liAgents"><a class="th radius ulagents" data-reveal-id="ivyMoy" href="#"><img src="{{url('comp/img/agents/Ivy_Moy.jpg')}}" alt=""><a/>
+                           {{link_to('#', 'IVY', array('class'=>'agentLink'));}} <br/>
+                           {{link_to('#', 'MOY', array('class'=>'agentLinkLast'));}}
+                         </li>
+                         <li class="liAgents"><a class="th radius ulagents" data-reveal-id="cheryletteHilton" href="#"><img src="{{url('comp/img/agents/Cherylette_Hilton.jpg')}}" alt=""><a/>
+                           {{link_to('#', 'CHERYLETTE', array('class'=>'agentLink'));}} <br/>
+                           {{link_to('#', 'HILTON', array('class'=>'agentLinkLast'));}}
+                         </li>
+                         <li class="liAgents"><a class="th radius ulagents" data-reveal-id="elenaDan" href="#"><img src="{{url('comp/img/agents/Dan_Elena.jpg')}}" alt=""><a/>
+                           {{link_to('#', 'ELENA', array('class'=>'agentLink'));}} <br/>
+                           {{link_to('#', 'DAN', array('class'=>'agentLinkLast'));}}
+                         </li>
+                         <li class="liAgents"><a class="th radius ulagents" data-reveal-id="mariusDan" href="#"><img src="{{url('comp/img/agents/Dan_Elena.jpg')}}" alt=""><a/>
+                           {{link_to('#', 'MARIUS', array('class'=>'agentLink'));}} <br/>
+                           {{link_to('#', 'DAN', array('class'=>'agentLinkLast'));}}
+                         </li>
+                         <li class="liAgents"><a class="th radius ulagents" data-reveal-id="barryBenveniste" href="#"><img src="{{url('comp/img/agents/Barry_Benveniste.jpg')}}" alt=""><a/>
+                           {{link_to('#', 'BARRY', array('class'=>'agentLink'));}} <br/>
+                           {{link_to('#', 'BENVENISTE', array('class'=>'agentLinkLast'));}}
+                         </li>
+                         <li class="liAgents"><a class="th radius ulagents" data-reveal-id="markFeyman" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt=""><a/>
+                           {{link_to('#', 'MARK', array('class'=>'agentLink'));}} <br/>
+                           {{link_to('#', 'FEYMAN', array('class'=>'agentLinkLast'));}}
+                         </li>
+                         <li class="liAgents"><a class="th radius ulagents" data-reveal-id="haroldOza" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt=""><a/>
+                           {{link_to('#', 'HAROLD', array('class'=>'agentLink'));}} <br/>
+                           {{link_to('#', 'OZA', array('class'=>'agentLinkLast'));}}
+                         </li>
+                         <li class="liAgents"><a class="th radius ulagents" data-reveal-id="johnDias" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt=""><a/>
+                           {{link_to('#', 'JOHN B.', array('class'=>'agentLink'));}} <br/>
+                           {{link_to('#', 'DIAS', array('class'=>'agentLinkLast'));}}
+                         </li>
+                       </ul>
+                     </div>
+                   </div>
+
+                 </adide>
+                 <!-- =adide ands here -->
+
                </div>
-             </div>
-
-             {{Form::close()}}
+             </div>     <!-- /* =mainContent ends here */ -->
 
 
-           </div>
-         </div>
-       </div>
-     </div>
-     <div class="row">
-       <div class="large-12 columns showAllListings">
-        {{link_to('show-all-listings', 'BROWSE ALL LISTINGS', array('class'=>'browseAllListings button radius expand '));}} 
-      </div>
-    </div>
-    <div class="row">
-     <div class="large-6 columns">
-       {{link_to('browse/1', 'SINGLE FAMILY', array('class'=>'alert-box secondary expand radius propertiesAllert'));}}
-     </div>
+             <!-- /* =footer starts here */ -->
 
-     <div class="large-6 columns">
-       {{link_to('browse/4', 'MULTI-FAMILY', array('class'=>'alert-box secondary expand radius propertiesAllert'));}}
-     </div>
-   </div>
+             <footer>
+              <div class="row">
+                <div class="large-4 columns">
+                  <div class="row">
+                    <div class="large-12 columns">
+                      <a class="th has-tip-left logoFooterPadding" title="Multiple Listing Service" href="#">
+                        <img src="{{url('comp/img/mls.png')}}" alt="Multiple Listing Service">
+                      </a>
+                      <a class="th has-tip-left logoFooterPadding" title="Remax Commercial" href="#">
+                        <img src="{{url('comp/img/remax-commercial-logo.png')}}" alt="Remax Commercial">
+                      </a>
+                      <a class="th has-tip-left logoFooterPadding"  title="Remax Short Sale Chicago"  href="http://www.shortsalechicago.us/Short-Sale-Chicago">
+                        <img src="{{url('comp/img/Chicago-Short-Sale-Logo.png')}}" alt="Chicago Short Sale">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="large-12 columns logoRemaxFooter">
+                      <a href="{{ URL::route('home')}}">
+                        <img src="{{url('comp/img/logo-footer.png')}}" alt="Logo Remax First Class">
+                        <a/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="large-4 columns">
 
-   <div class="row">
-     <div class="large-6 columns">
-       {{link_to('browse/3', 'CONDO', array('class'=>'alert-box secondary expand radius propertiesAllert'));}}
-     </div>
+                    <section class="large-6 columns social">
+                      <ul class="prop">
+                        <span class="propertiesFooter">PROPERTIES FOR SALE:</span> <br/>
+                        <li class="locality properties">{{link_to('browse/1', 'Single Family');}}</li>
+                        <li class="locality properties">{{link_to('browse/4', 'Multi-Family');}}</li>
+                        <li class="locality properties">{{link_to('browse/3', 'Condo');}}</li>
+                        <li class="locality properties">{{link_to('browse/2', 'Vacant Land');}}</li>
+                      </ul>
+                    </section>
 
-     <div class="large-6 columns">
-       {{link_to('browse/2', 'VACANT LAND', array('class'=>'alert-box secondary expand radius propertiesAllert'));}}
-     </div>
-   </div>
+                  </div>
 
-   <!-- =find your home ends here -->
+                  <div class="large-4 columns">
+                    <div class="large-6 columns">
+                      <ul class="vcard">
+                        <span class="connectFooter">CONTACT INFORMATION:</span>
+                        <li class="locality"> PHONE: (847) 674-9797</li>
+                        <li class="locality"> FAX: (847) 674-0411</li>
+                        <li class="street-address">4023 W. Church St.</li>
+                        <li class="locality">Skokie</li>
+                        <li><span class="state">IL</span> <span class="zip">600076</span></li>
+                        <li class="email" data-reveal-id="myModal">{{link_to('#', 'remax1stclass@gmail.com');}}</li>
+                      </ul>
+                    </div>
+                    <section class="large-6 columns social">
+                      <span class="contactFooter">CONNECT WITH US:</span>
+                      <ul class="small-block-grid-3">
+                        <li><a class="has-tip-left" title="Our Facebook Page" href="#"><img src="{{url('comp/img/social_footer/facebook.png')}}" alt="Skokie Remax First Class Facebook Icon"><a/></li>
+                        <li><a class="has-tip-left" title="Our Twitter Page" href="#"><img src="{{url('comp/img/social_footer/twitter.png')}}" alt="Skokie Remax First Class Twitter Icon"><a/></li>
+                        <li><a class="has-tip-left" title="Our Linkedin Page" href="#"><img src="{{url('comp/img/social_footer/linkedin.png')}}" alt="Skokie Remax First Class Linkedin Icon"><a/></li>
+                        <li><a class="has-tip-left" title="Our Google Plus Page" href="#"><img src="{{url('comp/img/social_footer/google.png')}}" alt="Skokie Remax First Class Google Icon"><a/></li>
+                        <li><a class="has-tip-left" title="Our Yelp Page" href="#"><img src="{{url('comp/img/social_footer/yelp.png')}}" alt="Skokie Remax First Class Feed Icon"><a/></li>
+                        <li><a class="has-tip-left" title="Our Page" href="#"><img src="{{url('comp/img/social_footer/you_tube.png')}}" alt="Skokie Remax First Class Youtube Icon"><a/></li>
+                      </ul>
+                    </section>
+                  </div>
+                </div>
+              </footer>
 
-   <div class="row">
-     <section class="large-12 columns panel newListings">
-       <div>
-         <h4> <a class="newListingsTitle" href="#">NEW LISTINGS</a> </h4>
-       </div>
-       <hr/>
-       <ul class="small-block-grid-3 clearing-thumbs ullistings">
-         <li class="liNewListings"><a class="th radius" href="{{URL::to('search/1')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/1/1s.jpg')}}" alt=""><a/></li>
-         <li class="liNewListings"><a class="th radius" href="{{URL::to('search/15')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/15/1s.jpg')}}" alt=""><a/></li>
-         <li class="liNewListings"><a class="th radius" href="{{URL::to('search/16')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/16/1s.jpg')}}" alt=""><a/></li>
-         <li class="liNewListings"><a class="th radius" href="{{URL::to('search/19')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/19/1s.jpg')}}" alt=""><a/></li>
-         <li class="liNewListings"><a class="th radius" href="{{URL::to('search/5')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/5/1s.jpg')}}" alt=""><a/></li>
-         <li class="liNewListings"><a class="th radius" href="{{URL::to('search/10')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/10/1s.jpg')}}" alt=""><a/></li>
-       </ul>
-     </section>
-   </div>
+              <!-- /* =copyright starts here */ -->
 
-   <div class="row">
-     <div class="large-12 columns panel ourAgents">
-       <h4><a class="newListingsTitle"href="">OUR AGENTS</a> <h4>
-         <hr/>
-         <ul class="small-block-grid-3 clearing-thumbs ulagents" data-clearing>
-           <li  class="liAgents"><a class="th radius" data-reveal-id="danFlorian" href="#"><img src="{{url('comp/img/agents/Dan_I_Florian.jpg')}}" alt=""><a/>
-             {{link_to('#', 'DAN I.', array('class'=>'agentLink'));}} <br/>
-             {{link_to('#', 'FLORIAN', array('class'=>'agentLinkLast'));}}
-           </li>
-           <li class="liAgents"><a class="th radius ulagents" data-reveal-id="ivyMoy" href="#"><img src="{{url('comp/img/agents/Ivy_Moy.jpg')}}" alt=""><a/>
-             {{link_to('#', 'IVY', array('class'=>'agentLink'));}} <br/>
-             {{link_to('#', 'MOY', array('class'=>'agentLinkLast'));}}
-           </li>
-           <li class="liAgents"><a class="th radius ulagents" data-reveal-id="cheryletteHilton" href="#"><img src="{{url('comp/img/agents/Cherylette_Hilton.jpg')}}" alt=""><a/>
-             {{link_to('#', 'CHERYLETTE', array('class'=>'agentLink'));}} <br/>
-             {{link_to('#', 'HILTON', array('class'=>'agentLinkLast'));}}
-           </li>
-           <li class="liAgents"><a class="th radius ulagents" data-reveal-id="elenaDan" href="#"><img src="{{url('comp/img/agents/Dan_Elena.jpg')}}" alt=""><a/>
-             {{link_to('#', 'ELENA', array('class'=>'agentLink'));}} <br/>
-             {{link_to('#', 'DAN', array('class'=>'agentLinkLast'));}}
-           </li>
-           <li class="liAgents"><a class="th radius ulagents" data-reveal-id="mariusDan" href="#"><img src="{{url('comp/img/agents/Dan_Elena.jpg')}}" alt=""><a/>
-             {{link_to('#', 'MARIUS', array('class'=>'agentLink'));}} <br/>
-             {{link_to('#', 'DAN', array('class'=>'agentLinkLast'));}}
-           </li>
-           <li class="liAgents"><a class="th radius ulagents" data-reveal-id="barryBenveniste" href="#"><img src="{{url('comp/img/agents/Barry_Benveniste.jpg')}}" alt=""><a/>
-             {{link_to('#', 'BARRY', array('class'=>'agentLink'));}} <br/>
-             {{link_to('#', 'BENVENISTE', array('class'=>'agentLinkLast'));}}
-           </li>
-           <li class="liAgents"><a class="th radius ulagents" data-reveal-id="markFeyman" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt=""><a/>
-             {{link_to('#', 'MARK', array('class'=>'agentLink'));}} <br/>
-             {{link_to('#', 'FEYMAN', array('class'=>'agentLinkLast'));}}
-           </li>
-           <li class="liAgents"><a class="th radius ulagents" data-reveal-id="haroldOza" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt=""><a/>
-             {{link_to('#', 'HAROLD', array('class'=>'agentLink'));}} <br/>
-             {{link_to('#', 'OZA', array('class'=>'agentLinkLast'));}}
-           </li>
-           <li class="liAgents"><a class="th radius ulagents" data-reveal-id="johnDias" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt=""><a/>
-             {{link_to('#', 'JOHN B.', array('class'=>'agentLink'));}} <br/>
-             {{link_to('#', 'DIAS', array('class'=>'agentLinkLast'));}}
-           </li>
-         </ul>
-       </div>
-     </div>
+              <div class="copyright">
+                <div class="row">
+                  <div class="large-4 large-centered columns copy">
+                    <p>© 2013 RE/MAX FIRST CLASS</p> 
+                  </div>
 
-   </adide>
-   <!-- =adide ands here -->
-
- </div>
-</div>     <!-- /* =mainContent ends here */ -->
-
-
-<!-- /* =footer starts here */ -->
-
-<footer>
-  <div class="row">
-    <div class="large-4 columns">
-      <div class="row">
-        <div class="large-12 columns">
-          <a class="th has-tip-left logoFooterPadding" title="Multiple Listing Service" href="#">
-            <img src="{{url('comp/img/mls.png')}}" alt="Multiple Listing Service">
-          </a>
-          <a class="th has-tip-left logoFooterPadding" title="Remax Commercial" href="#">
-            <img src="{{url('comp/img/remax-commercial-logo.png')}}" alt="Remax Commercial">
-          </a>
-          <a class="th has-tip-left logoFooterPadding"  title="Remax Short Sale Chicago"  href="http://www.shortsalechicago.us/Short-Sale-Chicago">
-            <img src="{{url('comp/img/Chicago-Short-Sale-Logo.png')}}" alt="Chicago Short Sale">
-          </a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-12 columns logoRemaxFooter">
-          <a href="{{ URL::route('home')}}">
-            <img src="{{url('comp/img/logo-footer.png')}}" alt="Logo Remax First Class">
-            <a/>
-          </div>
-        </div>
-      </div>
-      <div class="large-4 columns">
-
-        <section class="large-6 columns social">
-          <ul class="prop">
-            <span class="propertiesFooter">PROPERTIES FOR SALE:</span> <br/>
-            <li class="locality properties">{{link_to('browse/1', 'Single Family');}}</li>
-            <li class="locality properties">{{link_to('browse/4', 'Multi-Family');}}</li>
-            <li class="locality properties">{{link_to('browse/3', 'Condo');}}</li>
-            <li class="locality properties">{{link_to('browse/2', 'Vacant Land');}}</li>
-          </ul>
-        </section>
-
-      </div>
-
-      <div class="large-4 columns">
-        <div class="large-6 columns">
-          <ul class="vcard">
-            <span class="connectFooter">CONTACT INFORMATION:</span>
-            <li class="locality"> PHONE: (847) 674-9797</li>
-            <li class="locality"> FAX: (847) 674-0411</li>
-            <li class="street-address">4023 W. Church St.</li>
-            <li class="locality">Skokie</li>
-            <li><span class="state">IL</span> <span class="zip">600076</span></li>
-            <li class="email" data-reveal-id="myModal">{{link_to('#', 'remax1stclass@gmail.com');}}</li>
-          </ul>
-        </div>
-        <section class="large-6 columns social">
-          <span class="contactFooter">CONNECT WITH US:</span>
-          <ul class="small-block-grid-3">
-            <li><a class="has-tip-left" title="Our Facebook Page" href="#"><img src="{{url('comp/img/social_footer/facebook.png')}}" alt="Skokie Remax First Class Facebook Icon"><a/></li>
-            <li><a class="has-tip-left" title="Our Twitter Page" href="#"><img src="{{url('comp/img/social_footer/twitter.png')}}" alt="Skokie Remax First Class Twitter Icon"><a/></li>
-            <li><a class="has-tip-left" title="Our Linkedin Page" href="#"><img src="{{url('comp/img/social_footer/linkedin.png')}}" alt="Skokie Remax First Class Linkedin Icon"><a/></li>
-            <li><a class="has-tip-left" title="Our Google Plus Page" href="#"><img src="{{url('comp/img/social_footer/google.png')}}" alt="Skokie Remax First Class Google Icon"><a/></li>
-            <li><a class="has-tip-left" title="Our Yelp Page" href="#"><img src="{{url('comp/img/social_footer/yelp.png')}}" alt="Skokie Remax First Class Feed Icon"><a/></li>
-            <li><a class="has-tip-left" title="Our Page" href="#"><img src="{{url('comp/img/social_footer/you_tube.png')}}" alt="Skokie Remax First Class Youtube Icon"><a/></li>
-          </ul>
-        </section>
-      </div>
-    </div>
-  </footer>
-
-  <!-- /* =copyright starts here */ -->
-
-  <div class="copyright">
-    <div class="row">
-      <div class="large-4 large-centered columns copy">
-        <p>© 2013 RE/MAX FIRST CLASS</p> 
-      </div>
-
-  <!-- /* =copyright ends here */ -->
+                  <!-- /* =copyright ends here */ -->
 <!-- </div>
 </div> -->
 
@@ -1414,44 +1403,44 @@
           </div>
         </div>
         <!-- =John Dias  profile ends here --><script>
-  document.write('<script src=' +
-    ('_proto_' in {} ? 'comp/javascripts/vendor/zepto' : 'comp/javascripts/vendor/jquery') +
-    '.js><\/script>')
-</script>
+        document.write('<script src=' +
+          ('_proto_' in {} ? 'comp/javascripts/vendor/zepto' : 'comp/javascripts/vendor/jquery') +
+          '.js><\/script>')
+      </script>
 
-{{HTML::script("comp/javascripts/foundation/foundation.js")}}
+      {{HTML::script("comp/javascripts/foundation/foundation.js")}}
 
-{{HTML::script("comp/javascripts/foundation/foundation.alerts.js")}}
+      {{HTML::script("comp/javascripts/foundation/foundation.alerts.js")}}
 
-{{HTML::script("comp/javascripts/foundation/foundation.clearing.js")}}
+      {{HTML::script("comp/javascripts/foundation/foundation.clearing.js")}}
 
-{{HTML::script("comp/javascripts/foundation/foundation.cookie.js")}}
+      {{HTML::script("comp/javascripts/foundation/foundation.cookie.js")}}
 
-{{HTML::script("comp/javascripts/foundation/foundation.dropdown.js")}}
+      {{HTML::script("comp/javascripts/foundation/foundation.dropdown.js")}}
 
-{{HTML::script("comp/javascripts/foundation/foundation.forms.js")}}
+      {{HTML::script("comp/javascripts/foundation/foundation.forms.js")}}
 
-{{HTML::script("comp/javascripts/foundation/foundation.interchange.js")}}
+      {{HTML::script("comp/javascripts/foundation/foundation.interchange.js")}}
 
-{{HTML::script("comp/javascripts/foundation/foundation.joyride.js")}}
+      {{HTML::script("comp/javascripts/foundation/foundation.joyride.js")}}
 
-{{HTML::script("comp/javascripts/foundation/foundation.magellan.js")}}
+      {{HTML::script("comp/javascripts/foundation/foundation.magellan.js")}}
 
-{{HTML::script("comp/javascripts/foundation/foundation.orbit.js")}}
+      {{HTML::script("comp/javascripts/foundation/foundation.orbit.js")}}
 
-{{HTML::script("comp/javascripts/foundation/foundation.placeholder.js")}}
+      {{HTML::script("comp/javascripts/foundation/foundation.placeholder.js")}}
 
-{{HTML::script("comp/javascripts/foundation/foundation.reveal.js")}}
+      {{HTML::script("comp/javascripts/foundation/foundation.reveal.js")}}
 
-{{HTML::script("comp/javascripts/foundation/foundation.section.js")}}
+      {{HTML::script("comp/javascripts/foundation/foundation.section.js")}}
 
-{{HTML::script("comp/javascripts/foundation/foundation.tooltips.js")}}
+      {{HTML::script("comp/javascripts/foundation/foundation.tooltips.js")}}
 
-{{HTML::script("comp/javascripts/foundation/foundation.topbar.js")}}
+      {{HTML::script("comp/javascripts/foundation/foundation.topbar.js")}}
 
 
-<script>
-  $(document).foundation();
-</script>
-</body>
-</html>
+      <script>
+        $(document).foundation();
+      </script>
+    </body>
+    </html>
