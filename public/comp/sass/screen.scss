@@ -83,13 +83,10 @@ $colorBlue: #396C95;
 	// padding-left: 10px;
 	font-size: 11px;
 	font-weight: bold !important;
-	margin-left: 10px;
+	// margin-left: 10px;
 	margin-top: 3px !important;
-	margin-bottom: 10px !important;
+	margin-bottom: 11px !important;
 	display: inline-block;
-	text-shadow: $myTextShadow;
-	border-bottom: 1px solid $colorFontGray;
-
 }
 @mixin propertiesFooterStyle{
 	font-weight: bold;
@@ -97,8 +94,6 @@ $colorBlue: #396C95;
 	margin-bottom: 5px;
 	color: $colorNavPanel;
 	text-shadow: $myTextShadow;
-	border-bottom: 1px solid $colorFontGray;
-
 }
 
 @mixin connectFooterStyle{
@@ -107,8 +102,9 @@ $colorBlue: #396C95;
 	float: left;
 	font-weight: bold;
 	text-shadow: $myTextShadow;
-	border-bottom: 1px solid $colorFontGray;
-
+	border-bottom: 1px solid $colorNavPanel;
+	padding-bottom: 8px;
+	margin-bottom: -38px;
 }
 @mixin myThLiStyle{
 	margin-bottom: 0px !important;
@@ -122,6 +118,12 @@ $colorBlue: #396C95;
 	padding-bottom: 0px !important;
 	padding-top: 15px !important;
 	
+}
+h2, h3, h4{
+	color: $colorNavPanel !important;
+}
+h1{
+	color: $colorFontGray !important;
 }
 .name{
 	a{
@@ -208,6 +210,9 @@ $colorBlue: #396C95;
 	padding: 0px !important;
 	margin-top: 15px;
 	width: 350px !important;
+}
+.sloganTop{
+	margin-left: 10px;
 }
 .oneStopService{
 	// margin-top: -10px;
@@ -491,10 +496,13 @@ ul.ulagents li {
 }
 .connectFooter{
 	@include connectFooterStyle;
+	
+
 }
 .vcard{
 	border: 0em;
 	margin-bottom: 0em !important;
+	margin-left: 10px;
 }
 .vcard .fn{
 	font-size: 12px;
@@ -534,39 +542,80 @@ footer{
 
 .contactFooter{
 	@include contactFooterStyle;
+	hr { 
+		display: block; 
+		height: 1px;
+		border: 1px solid $colorNavPanel;
+		padding: 0; 
+		margin-bottom: 5px !important;
+		margin-top: 0px !important;
+	}
+
 }
 .ulFooterSocial{
 	margin: 0px !important;
-	padding-left: 10px;
+	padding-top: 10px !important;
+	// padding-left: 10px;
+	// border-top: 1px solid $colorFontGray;
+
 }
 .liFooterConnect{
 	padding-right: 0px !important;
 	padding-left: 0px !important;
 	width: 45px !important;
 	height: 45px !important;
-
-	
+	hr { 
+		display: block; 
+		height: 1px;
+		border: 1px solid $colorNavPanel;
+		padding: 0; 
+		margin-bottom: 5px !important;
+		margin-top: 0px !important;
+	}
+}
+.liFooterConnectRight{
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+	width: 32px !important;
+	height: 45px !important;
+	hr { 
+		display: block; 
+		height: 1px;
+		border: 1px solid $colorNavPanel;
+		padding: 0; 
+		margin-bottom: 5px !important;
+		margin-top: 0px !important;
+	}
 }
 .social{
 	padding-top: 10px;
+	width: 125px;
+	hr { 
+		display: block; 
+		height: 1px;
+		border-top: 1px solid $colorNavPanel;
+		padding: 0; 
+		margin-bottom: 5px !important;
+		margin-top: 0px !important;
+	}
 }
-.mls{
-	margin-top: 70px;
-}
-.properties{
-	
-	margin-left: 15px;
-	font-size: 10px;
-	line-height: 20px;
-	color: 	$colorBlue;
-	margin-left: 0px;
-	font-weight: bold;
-	letter-spacing: 1px;
-	text-shadow: $myTextShadow;
-}
+		.mls{
+			margin-top: 70px;
+		}
+		.properties{
 
-.propertiesFooter{
-	@include propertiesFooterStyle;
+			margin-left: 15px;
+			font-size: 10px;
+			line-height: 20px;
+			color: 	$colorBlue;
+			margin-left: 0px;
+			font-weight: bold;
+			letter-spacing: 1px;
+			text-shadow: $myTextShadow;
+		}
+
+		.propertiesFooter{
+			@include propertiesFooterStyle;
 	// border-bottom: 1px solid $colorFontGray;
 }
 .copyright{
