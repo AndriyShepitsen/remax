@@ -28,7 +28,7 @@ $colorFontOffWhite: #F7F7F4;
 $copyrightBackgroundColor: #3F3F3F;
 $colorRed: lighten(#B92025, 10%);
 $myTextShadow: #FFFFFF 1px 1px 0px;
-
+$colorBlue: #396C95;
 /*=mixins*/
 @mixin marginOneEmTopLeft{
 	margin-left:1em;
@@ -144,13 +144,13 @@ $myTextShadow: #FFFFFF 1px 1px 0px;
 		display: inline-block;
 	}
 	.callUsContent{
-		margin-top: 20px !important;
+		margin-top: 10px !important;
 		text-align: right;
 		padding:0px;
 	}
 
 	.contactTextStyle{
-		font-size: 12px;
+		font-size: 10px;
 		font-weight: bold;
 		margin-top: 5px;
 		color: $colorFontGray;
@@ -162,54 +162,94 @@ $myTextShadow: #FFFFFF 1px 1px 0px;
 	}
 	.connectWithContent{
 		margin-bottom: 10px;
-		padding-right: 0px !important;
+		padding: 0px !important;
+	}
+	.residentialCommercialContent{
+		padding: 0px !important;
+
+	}
+	.realEstateRC{
+		font-family: 'Roboto Slab', serif;
+		color: #4B4F54;
+		font-size: .6em;
+		margin-top: 1px;
+		text-shadow: $myTextShadow;
+		margin-left: -50px;
+		letter-spacing:1px;
+	}
+	.logoContent{
+		padding: 0px !important;
+		width: 120px !important;
 	}
 }
+// .phoneMailHomeWrapper{
+// 	padding: 0px !important;
+// }
 .sloganText{
 	p{
 		font-family: 'Noto Serif', ​serif;
-		font-size: 18px;
+		font-size: 17px;
 		margin-bottom: 0px !important;
-		color: #02629A;
+		color: $colorBlue;
 		font-weight: bold;
 		text-shadow: $myTextShadow;
+		letter-spacing: 1px;
+		line-height: 30px;
 	}	
+	padding: 0px !important;
+	margin-top: 15px;
+	width: 350px !important;
 }
-.sloganContent{
-	a{
-		color: $colorFontOffWhite !important;	
-		display: inline-block;
-		line-height: 20px;
-	}
-	@include background(url('/comp/img/one_stop_service/One-Stop-Service.png'));
-	width: 110px;                
-	height: 110px;                
-	// margin-left: 260px;
-	margin-top: -15px;
-	padding-top: 35px;
+.oneStopService{
+	// margin-top: -10px;
+	// padding-top: 35px;
 	text-align: center;
+	margin-left: -30px;
 	
-	font-weight: bold;
-	font-size: 16px;
-	padding-right:0px;
-	padding-left: 0px !important;
+	// font-weight: bold;
+	// font-size: 16px;
+	// padding-right:0px;
+	// padding-left: 0px !important;
 }	
-.realEstateRC{
-	font-family: 'Roboto Slab', serif;
-	color: #4B4F54;
-	font-size: .7em;
-	margin-top: 1px;
+
+.oneStopText{
+	color: $colorFontOffWhite;
+	font-size:14px;
+	line-height: 20px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: -65px;
+}
+.imgService{
+// margin-left: -35spx;
+}
+.customerTips{
+	padding: 0px !important;
+	width: 260px;
+	margin-top: -70px;
+	margin-right: -100px;
+	font-weight: bold;
+	color: $colorFontGray;
 	text-shadow: $myTextShadow;
-	margin-left: -75px;
+	
+}
+.ulCustomerTips{
+	// margin-left: 100px;
+	font-size: 13px !important;
+	line-height: 20px;
 }
 
-
-
+.buyOrSell{
+	margin-left: -20px;
+}
+.invOpportunity{
+	@extend .buyOrSell;
+}
 /*  =call us style starts here*/
 
 
 .iconMailHome{
-	margin-top: 45px;
+	margin-top: 35px;
 	text-align: right;
 	margin-bottom: -5px;
 	padding:0px;
@@ -265,6 +305,10 @@ label{
 		background-color: $colorNavPanel !important;
 	}
 }
+.listingImage{
+	margin-left: 0px !important;
+	margin-top: 5px !important;
+}
 .alert-box{
 	margin-bottom: .5em !important;
 }	
@@ -276,6 +320,9 @@ label{
 	a:hover{
 		color: lighten($colorFontGray, 10%);
 	}
+}
+.button.secondary{
+	color: $colorFontGray !important;
 }
 
 /* news start here */
@@ -422,7 +469,10 @@ ul.ulagents li {
 	margin-top:5px;
 	display: inline-block;
 }
-
+.profileContent{
+	padding-right: 25px !important;
+	padding-left: 25px !important;
+}
 /*=footer starts here */
 .logoFooterPadding{
 	@include marginOneEmTopLeft;
@@ -505,4 +555,24 @@ textarea{
 }
 fieldset legend{
 	background-color: $colorLogoWrapper !important;
+}
+
+.min{
+	margin-top: 20px !important;
+}
+
+.createAccount{
+
+	.account{
+		margin-top: 15px !important;
+		margin-bottom: 25px !important;
+	}
+
+	label{
+		font-size: 1em;
+		margin-bottom: 10px;
+	}
+	.button{
+		@include myButtonStyle;		
+	}
 }

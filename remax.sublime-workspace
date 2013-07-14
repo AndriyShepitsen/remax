@@ -63,18 +63,7 @@
 			"file": "app/views/search/onehouse.blade.php",
 			"settings":
 			{
-				"buffer_size": 720,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "//LOCATION: remax/public\n@import \"compass\";\n@import \"app\";\n@import \"foundation\";\n@import \"settings\";\n@import \"sassybuttons\";\n\n\n* {\n	vertical-align: top;\n	font-weight: inherit;\n	font-family: inherit;\n	font-style: inherit;\n	font-size: 100%;\n	border: 0 none;\n	outline: 0;\n	padding: 0;\n	margin: 0;\n}\n/* =navPanel starts here */\n/* =variables*/\n$colorNavPanel: #393939;\n$colorButtonBackground: #428CB9;\n$colorLogoWrapper: #F6F6F6;\n$colorFontGray: #525252;\n$colorSlash: #AAAAAA;\n$colorFontOffWhite: #F7F7F4;\n$copyrightBackgroundColor: #3F3F3F;\n$colorRed: lighten(#B92025, 10%);\n$myTextShadow: #FFFFFF 1px 1px 0px;\n\n/*=mixins*/\n@mixin marginOneEmTopLeft{\n	margin-left:1em;\n	margin-top: 1em;\n}\n\n@mixin myButtonStyle {\n	background-color: lighten($colorNavPanel, 15%) !important;\n	margin-top: .5em !important;\n	margin-bottom: .5em !important;\n	margin-right: 7em !important;\n	border-color: lighten($colorNavPanel, 15%) !important;\n	color: $colorFontOffWhite;\n}\n\n@mixin logoWrapperStyle{\n	padding: 10px;\n	background-color: darken($colorLogoWrapper, 10%);\n}\n\n@mixin mailIconStyle {\n	padding-left:10px;\n	padding-top:0px;\n	padding-bottom:0px;\n	\n}\n\n@mixin mainContentStyle{\n	padding-top: 10px;\n	padding-bottom: 20px;\n	background-color: $colorLogoWrapper;\n}\n@mixin findFormStyle {\n	display: inline-block;\n	font-weight:bold;\n	margin-bottom: 25px;\n	font-size: 20px;\n	color: $colorFontGray;\n}\n\n@mixin slashBefore{\n	color: $colorSlash;\n	content: \"/\";\n	position: relative;\n	top: -3px;\n}\n@mixin footerStyle{\n	background-color: darken($colorLogoWrapper, 10%);\n	padding-top: 10px;\n}\n@mixin contactFooterStyle{\n	padding-left: 10px;\n	font-size: 11px;\n	font-weight: bold !important;\n	margin-left: 10px;\n	margin-top: 3px !important;\n	margin-bottom: 10px !important;\n	display: inline-block;\n}\n@mixin propertiesFooterStyle{\n	font-weight: bold;\n	display: inline-block;\n	margin-bottom: 5px;\n	color: $colorNavPanel;\n}\n\n@mixin connectFooterStyle{\n	display: inline-block;\n	font-size: 11px;\n	float: left;\n	font-weight: bold;\n}\n@mixin myThLiStyle{\n	margin-bottom: 0px !important;\n	margin-right: 0px !important;\n	padding-bottom: 0px !important;\n	padding-right: 0px !important;\n	padding-left: 0px !important;\n}\n@mixin myPanelStyle {\n	margin-top: 15px;\n	padding-bottom: 0px !important;\n	padding-top: 15px !important;\n	\n}\n.name{\n	a{\n		color: $colorFontOffWhite; \n	}\n}\n.navPanel{\n	background-color: $colorNavPanel;\n\n}\n.top-bar{\n	margin-bottom: 0 !important;\n	background-color: $colorNavPanel !important;\n}\n.top-bar-section ul li > a {\n	background-color: $colorNavPanel !important;\n}\n.toggle-topbar, .top-bar.expanded .title-area{\n	background-color: $colorNavPanel !important;\n}\n.logoWrapper{\n	@include logoWrapperStyle;\n\n	.callUs{\n		color: $colorRed;\n		text-shadow: $colorFontOffWhite 1px 1px 0px;\n		font-size: 20px;\n		font-weight: bold;\n		display: inline-block;\n	}\n	.callUsContent{\n		margin-top: 20px !important;\n		text-align: right;\n	}\n\n	.contactTextStyle{\n		font-size: 12px;\n		font-weight: bold;\n		margin-top: 5px;\n		color: $colorFontGray;\n		display: inline-block;\n	}\n\n	.HeaderWrapper{\n		padding-right: 0px !important;\n	}\n	.connectWithContent{\n		margin-bottom: 10px;\n		padding-right: 0px !important;\n	}\n}\n\n.realEstateRC{\n	font-family: 'Roboto Slab', serif;\n	color: #4B4F54;\n	font-size: .7em;\n	margin-top: 1px;\n	text-shadow: $colorFontOffWhite 1px 1px 0px;\n	margin-left: -80px;\n}\n\n\n\n/*  =call us style starts here*/\n\n\n.iconMailHome{\n	margin-top: 10px;\n	text-align: right;\n	margin-bottom: -5px;\n}\n.mailIcon{\n	@include mailIconStyle;\n}\n\n.homeIcon{\n	@extend .mailIcon;\n}\n\n\n/* =mainContent starts here */\n#mainContent{\n	@include mainContentStyle;\n	h4{\n		margin-bottom: 9px !important;\n	}\n}\n\n/* =find starts here */\n\n\n.find{\n	@include findFormStyle;\n}\n.findInput{\n	margin-bottom: 15px !important;\n}\nlabel{\n	margin-bottom: .5em;\n}\n.propertiesAllert{\n	text-align: center;\n	color: $colorNavPanel;\n}\n.propertiesAllert:hover, .propertiesAllert:active{\n	color: lighten($colorNavPanel, 25%);\n}\n.priceStyle{\n	font-weight: bold !important;\n	color: $colorFontOffWhite !important;\n	background-color: lighten($colorNavPanel, 20%) !important;\n}\n\n\n.showAllListings{\n	button, .button {\n		@include myButtonStyle;\n	}\n	button:hover, button:focus, .button:hover, .button:focus{\n		background-color: $colorNavPanel !important;\n	}\n}\n.alert-box{\n	margin-bottom: .5em !important;\n}	\n\n.addressColor{\n	a{\n		color: $colorFontGray;\n	}\n	a:hover{\n		color: lighten($colorFontGray, 10%);\n	}\n}\n\n/* news start here */\n.readMore{\n	font-size: 0.6em;\n}\n.newsHead{\n	color: $colorFontGray; \n}\n.newsHead:hover{\n	color: lighten($colorFontGray, 10%);\n}\n.newsHead:active{\n	color: lighten($colorFontGray, 10%);\n\n}\n.newListingsTitle{\n	color: $colorFontGray;\n}\n.newListingsTitle:hover{\n	color: lighten($colorFontGray, 10%);\n}\n.newListingsTitle:active{\n	color: lighten($colorFontGray, 10%);\n\n}\narticle p{\n	font-size: .8em;\n	line-height: 1.7em; \n	margin-bottom: .5em;\n}\n.breadcrumbs{\n	border:none !important;\n	padding: 0px  !important;\n}\n.breadcrumbs li:before {\n	@include slashBefore;\n}\n/* =newListings style starts here  */\n.newListings{\n	@include myPanelStyle;\n	.liNewListings{\n		padding-right: 0px !important;\n		padding-left: 0px !important;\n	}\n}\n.imgNewListings{\n	width: 75px;\n}\n.ullistings{\n	display: inline-block;\n	padding-left: 15px;\n}\nul.newListings li{\n}\n\n.listingImage{\n	\n}\n.oneListing{\n	font-size:12px;\n}\n/* =newListings style ends here  *\n\n/* =our agents style starts here */\n.ulagents{\n	overflow: auto;\n	display: inline-block; \n	a{\n		text-align: center;\n	}\n}\n\nul.ulagents li {\n	font-size: 12px;\n	color: $colorNavPanel;\n	display: inline-block;\n	text-shadow:$myTextShadow;\n	text-align: center !important;\n	font-weight: bold;\n	letter-spacing: .04em;\n}\n\n.ourAgents{\n	@include myPanelStyle;\n	margin-bottom: 0px !important;\n	.carousel{\n		margin-left: -12px !important;\n	}\n	.liAgents{\n		margin-bottom: 0px !important;\n		margin-right: 0px !important;\n		padding-bottom: 0px !important;\n		padding-right: 0px !important;\n		padding-left: 0px !important;\n		text-align: center !important;\n	}\n	.agentLink{\n		color: $colorNavPanel;\n	}\n	.agentLinkLast{\n		color: $colorNavPanel;\n		margin-top: -5px;\n		display: inline-block;\n		margin-bottom: 10px;\n	}\n	.agentLink:hover{\n		color: lighten($colorNavPanel, 15%);\n	}\n	.agentLinkLast:hover{\n		color: lighten($colorNavPanel, 15%);\n	}\n}\n\n/* =agent profile starts here */\n\n.specialties{\n	font-size: 12px;\n}\n.agentName{\n	margin-bottom: 5px 	!important;\n}\n.specialist:hover, .specialist:focus{\n	color: $colorFontOffWhite !important;\n}\n.info{\n	margin-top: 25px !important;\n	padding-bottom: 15px !important;\n	padding-top: 0px !important;\n}\n.innerInfo{\n	padding-top: 0px !important;\n	padding-bottom: 0px !important;\n}\n.agentProp{\n	margin-top: 10px;\n}\n.logoS{\n	margin-top:5px;\n	display: inline-block;\n}\n\n/*=footer starts here */\n.logoFooterPadding{\n	@include marginOneEmTopLeft;\n}\n.logoRemaxFooter{\n	@include marginOneEmTopLeft;\n}\n.connectFooter{\n	@include connectFooterStyle;\n}\n.vcard{\n	border: 0em;\n	margin-bottom: 0em !important;\n}\n.vcard .fn{\n	font-size: 12px;\n}\n.vcard .street-address{\n	font-size: 12px;\n}\n.vcard .locality{\n	font-size: 12px;\n}\n.vcard .state{\n	font-size: 12px;\n}\n.vcard .zip{\n	font-size: 12px;\n	display: inline-block;\n}\n.vcard .email{\n	a{\n		font-size: 11px !important;\n	}\n}\nfooter{\n	@include footerStyle;\n	.row .columns{\n		padding-left: 0px !important;\n		padding-right: 0px !important;\n	}\n	.prop{\n		font-size: 11px !important;\n	}\n	.row.ul.li.a{\n		color: $colorFontOffWhite;\n		cursor: pointer;\n	}\n}\n\n.contactFooter{\n	@include contactFooterStyle;\n}\n.social{\n	padding-top: 10px;\n}\n.mls{\n	margin-top: 70px;\n}\n.properties{\n	margin-left: 15px;\n}\n.propertiesFooter{\n	@include propertiesFooterStyle;\n}\n.copyright{\n	background-color: $copyrightBackgroundColor;\n	padding-top: 10px;\n}\n.copy{\n	color: $colorFontOffWhite !important;\n}\n/* =Contact Us */\ntextarea{\n	height: 300px;\n	cursor: pointer;\n}\nfieldset legend{\n	background-color: $colorLogoWrapper !important;\n}",
-			"file": "public/comp/sass/screen.scss",
-			"file_size": 8357,
-			"file_write_time": 130181272611117980,
-			"settings":
-			{
-				"buffer_size": 7910,
+				"buffer_size": 1069,
 				"line_ending": "Windows"
 			}
 		},
@@ -82,8 +71,26 @@
 			"file": "app/views/layouts/master.blade.php",
 			"settings":
 			{
-				"buffer_size": 59961,
+				"buffer_size": 62209,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/comp/sass/screen.scss",
+			"settings":
+			{
+				"buffer_size": 8887,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nSublimeCodeIntel:\n----------------\n\n  SublimeCodeIntel v2.0.0 Release Notes\n  =====================================\n  [Please restart Sublime Text 2 after reading this. In case of trouble, please read the Troubleshooting section in the README]\n  \n  Code intelligence plugin ported from Open Komodo Editor to Sublime Text 2.\n  \n  Supports all the languages Komodo Editor supports for Code Intelligence (CIX, CodeIntel2):\n  \n  JavaScript, Mason, XBL, XUL, RHTML, SCSS, Python, HTML, Ruby, Python3, XML, Sass, XSLT, Django, HTML5, Perl, CSS, Twig, Less, Smarty, Node.js, Tcl, TemplateToolkit, PHP.\n  \n  Provides the following features:\n  \n  Jump to Symbol Definition - Jump to the file and line of the definition of a symbol.\n  Imports autocomplete - Shows autocomplete with the available modules/symbols in real time.\n  Function Call tooltips - Displays information in the status bar about the working function.\n  Plugin should work in all three platforms (MacOS X, Windows and Linux).\n  \n  + Shortcuts for jump to definition have changed:\n  \n    For Mac OS X:\n      * Jump to definition = ``Control+Click``\n      * Jump to definition = ``Control+Command+Alt+Up``\n      * Go back = ``Control+Command+Alt+Left``\n      * Manual CodeIntel = ``Control+Shift+space``\n  \n    For Linux:\n      * Jump to definition = ``Super+Click``\n      * Jump to definition = ``Control+Super+Alt+Up``\n      * Go back = ``Control+Super+Alt+Left``\n      * Manual CodeIntel = ``Control+Shift+space``\n  \n    For Windows:\n      * Jump to definition = ``Alt+Click``\n      * Jump to definition = ``Control+Windows+Alt+Up``\n      * Go back = ``Control+Windows+Alt+Left``\n      * Manual CodeIntel = ``Control+Shift+space``\n  \n  \n  For more information:\n  ---------------------\n  Please take the time to read the documentation:\n  \n  * Online - https://github.com/SublimeCodeIntel/SublimeCodeIntel\n  \n  \n  IMPORTANT\n  \n  Do NOT edit the default SublimeCodeIntel settings. Your changes will be lost\n  when SublimeCodeIntel is updated. ALWAYS edit the user SublimeCodeIntel settings\n  by selecting \"Preferences->Package Settings->SublimeCodeIntel->Settings - User\".\n  Note that individual settings you include in your user settings will **completely**\n  replace the corresponding default setting, so you must provide that setting in its entirety.\n  \n  \n  NEW FEATURES\n  \n  + SublimeCodeIntel's openkomodo codeintel engine updated. The new codeintel is faster and more reliable.\n  \n  + Sources have their own repositories at http://github.com/SublimeCodeIntel\n  \n  \n  CHANGES/FIXES\n  - Disables Sublime Text 2's auto_complete by default (new ``sublime_auto_complete`` setting)\n  \n  - JavaScript and PHP: Do not include all files and directories from the project base directory while scanning.\n  \n  - JavaScript: Maximum directory depth is set to 2 (add explicit paths using javascriptExtraPaths).\n  \n  - PHP: Maximum directory depth is set to 5 (add explicit paths using phpExtraPaths).\n  \n  + Snippets for functions inserted during autocomplete.\n  \n  + Binary files for Linux, Windows and Mac OS X updated.\n  \n  + Shortcuts for jump to definition have changed.\n  \n  - PHP and UDL languages bugs fixed.\n  \n  - Stability improved (Should no longer use 100% CPU all the time.)\n  \n",
+			"settings":
+			{
+				"buffer_size": 3291,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"scratch": true
 			}
 		},
 		{
@@ -171,6 +178,7 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/remax/app/views/layouts/master.blade.php",
 		"/C/xampp/htdocs/remax/app/views/search/showall.blade.php",
 		"/C/xampp/htdocs/remax/public/comp/sass/screen.scss",
 		"/C/xampp/htdocs/remax/app/views/search/results.blade.php",
@@ -180,7 +188,6 @@
 		"/C/xampp/htdocs/remax/app/controllers/home/HomeController.php",
 		"/C/xampp/htdocs/remax/app/config/database.php",
 		"/C/xampp/htdocs/remax/app/views/contact/vw_contact.blade.php",
-		"/C/xampp/htdocs/remax/app/views/layouts/master.blade.php",
 		"/C/xampp/htdocs/remax/app/views/news/vw_news.blade.php",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/laravel_image_url.sublime-snippet",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/laravel_img.sublime-snippet",
@@ -210,7 +217,7 @@
 	],
 	"find":
 	{
-		"height": 37.0
+		"height": 36.0
 	},
 	"find_in_files":
 	{
@@ -226,6 +233,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"phoneMailHomeWrapper",
+			"P",
+			"p",
+			"4",
+			"16px",
+			"slogan",
+			".small-block-grid-3 > li",
+			"\">\n",
+			"addresscol",
+			"assresscolor",
 			"assresscol",
 			"ends",
 			"body",
@@ -343,17 +360,7 @@
 			"button",
 			"footr",
 			"lighten(#B92025, 10%);",
-			"color: lighten(#B92025, 10%);",
-			"outst",
-			"icon",
-			"reale",
-			"residen",
-			"pric",
-			"outs",
-			"outsta",
-			"</p>",
-			"<p>",
-			"real"
+			"color: lighten(#B92025, 10%);"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -371,7 +378,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -420,15 +427,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 720,
+						"buffer_size": 1069,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								449,
-								449
+								597,
+								597
 							]
 						],
 						"settings":
@@ -436,70 +443,26 @@
 							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 3,
-			"sheets":
-			[
-				{
-					"buffer": 2,
-					"file": "public/comp/sass/screen.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7910,
-						"regions":
-						{
-							"bookmark_i":
-							{
-								"flags": 144,
-								"regions":
-								[
-									[
-										5152,
-										5152
-									]
-								]
-							}
-						},
-						"selection":
-						[
-							[
-								5288,
-								5288
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 5116.0,
+						"translation.y": 162.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "app/views/layouts/master.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 59961,
+						"buffer_size": 62209,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								56612,
-								56612
+								7647,
+								7647
 							]
 						],
 						"settings":
@@ -509,13 +472,84 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 30823.0,
+						"translation.y": 2518.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "public/comp/sass/screen.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8887,
+						"regions":
+						{
+							"bookmark_i":
+							{
+								"flags": 144,
+								"regions":
+								[
+									[
+										5984,
+										5984
+									]
+								]
+							}
+						},
+						"selection":
+						[
+							[
+								3112,
+								3112
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2796.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3291,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								284,
+								50
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
 					"file": "app/views/contact/vw_contact.blade.php",
 					"semi_transient": false,
 					"settings":
@@ -543,7 +577,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "app/views/search/results.blade.php",
 					"semi_transient": false,
 					"settings":
@@ -555,8 +589,8 @@
 						"selection":
 						[
 							[
-								736,
-								736
+								394,
+								427
 							]
 						],
 						"settings":
@@ -566,7 +600,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 57.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -576,7 +610,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 26.0
 	},
 	"input":
 	{
@@ -602,7 +636,7 @@
 		"cols":
 		[
 			0.0,
-			0.5,
+			0.555534010728,
 			1.0
 		],
 		"rows":
@@ -619,7 +653,7 @@
 	"project": "remax.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 48.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -627,6 +661,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"ma",
+				"app\\views\\layouts\\master.blade.php"
+			],
 			[
 				"vw",
 				"app\\views\\contact\\vw_contact.blade.php"
@@ -673,10 +711,6 @@
 			],
 			[
 				"mas",
-				"app\\views\\layouts\\master.blade.php"
-			],
-			[
-				"ma",
 				"app\\views\\layouts\\master.blade.php"
 			],
 			[
