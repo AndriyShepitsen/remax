@@ -372,12 +372,12 @@
                 <div class="large-4 columns">
 
                   <section class="large-6 columns social">
-                    <ul class="prop">
+                    <ul class="prop no-bullet">
                       <span class="propertiesFooter">PROPERTIES FOR SALE:</span> <br/>
-                      <li class="locality properties">{{link_to('browse/1', 'Single Family');}}</li>
-                      <li class="locality properties">{{link_to('browse/4', 'Multi-Family');}}</li>
-                      <li class="locality properties">{{link_to('browse/3', 'Condo');}}</li>
-                      <li class="locality properties">{{link_to('browse/2', 'Vacant Land');}}</li>
+                      <li class="locality properties">{{link_to('browse/1', 'SINGLE FAMILY');}}</li>
+                      <li class="locality properties">{{link_to('browse/4', 'MULTI-FAMILY');}}</li>
+                      <li class="locality properties">{{link_to('browse/3', 'CONDO');}}</li>
+                      <li class="locality properties">{{link_to('browse/2', 'VACANT LAND');}}</li>
                     </ul>
                   </section>
 
@@ -397,13 +397,13 @@
                   </div>
                   <section class="large-6 columns social">
                     <span class="contactFooter">CONNECT WITH US:</span>
-                    <ul class="small-block-grid-3">
-                      <li><a class="has-tip-left" title="Our Facebook Page" href="#"><img src="{{url('comp/img/social_footer/facebook.png')}}" alt="Skokie Remax First Class Facebook Icon"><a/></li>
-                      <li><a class="has-tip-left" title="Our Twitter Page" href="#"><img src="{{url('comp/img/social_footer/twitter.png')}}" alt="Skokie Remax First Class Twitter Icon"><a/></li>
-                      <li><a class="has-tip-left" title="Our Linkedin Page" href="#"><img src="{{url('comp/img/social_footer/linkedin.png')}}" alt="Skokie Remax First Class Linkedin Icon"><a/></li>
-                      <li><a class="has-tip-left" title="Our Google Plus Page" href="#"><img src="{{url('comp/img/social_footer/google.png')}}" alt="Skokie Remax First Class Google Icon"><a/></li>
-                      <li><a class="has-tip-left" title="Our Yelp Page" href="#"><img src="{{url('comp/img/social_footer/yelp.png')}}" alt="Skokie Remax First Class Feed Icon"><a/></li>
-                      <li><a class="has-tip-left" title="Our Page" href="#"><img src="{{url('comp/img/social_footer/you_tube.png')}}" alt="Skokie Remax First Class Youtube Icon"><a/></li>
+                    <ul class="small-block-grid-3 ulFooterSocial">
+                      <li class="liFooterConnect"><a class="has-tip-left" title="Our Facebook Page" href="#"><img src="{{url('comp/img/social_footer/facebook.png')}}" alt="Skokie Remax First Class Facebook Icon"><a/></li>
+                      <li class="liFooterConnect"><a class="has-tip-left" title="Our Twitter Page" href="#"><img src="{{url('comp/img/social_footer/twitter.png')}}" alt="Skokie Remax First Class Twitter Icon"><a/></li>
+                      <li class="liFooterConnect"><a class="has-tip-left" title="Our Linkedin Page" href="#"><img src="{{url('comp/img/social_footer/linkedin.png')}}" alt="Skokie Remax First Class Linkedin Icon"><a/></li>
+                      <li class="liFooterConnect"><a class="has-tip-left" title="Our Google Plus Page" href="#"><img src="{{url('comp/img/social_footer/google.png')}}" alt="Skokie Remax First Class Google Icon"><a/></li>
+                      <li class="liFooterConnect"><a class="has-tip-left" title="Our Yelp Page" href="#"><img src="{{url('comp/img/social_footer/yelp.png')}}" alt="Skokie Remax First Class Feed Icon"><a/></li>
+                      <li class="liFooterConnect"><a class="has-tip-left" title="Our Page" href="#"><img src="{{url('comp/img/social_footer/you_tube.png')}}" alt="Skokie Remax First Class Youtube Icon"><a/></li>
                     </ul>
                   </section>
                 </div>

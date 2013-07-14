@@ -80,19 +80,25 @@ $colorBlue: #396C95;
 	padding-top: 10px;
 }
 @mixin contactFooterStyle{
-	padding-left: 10px;
+	// padding-left: 10px;
 	font-size: 11px;
 	font-weight: bold !important;
 	margin-left: 10px;
 	margin-top: 3px !important;
 	margin-bottom: 10px !important;
 	display: inline-block;
+	text-shadow: $myTextShadow;
+	border-bottom: 1px solid $colorFontGray;
+
 }
 @mixin propertiesFooterStyle{
 	font-weight: bold;
 	display: inline-block;
 	margin-bottom: 5px;
 	color: $colorNavPanel;
+	text-shadow: $myTextShadow;
+	border-bottom: 1px solid $colorFontGray;
+
 }
 
 @mixin connectFooterStyle{
@@ -100,6 +106,9 @@ $colorBlue: #396C95;
 	font-size: 11px;
 	float: left;
 	font-weight: bold;
+	text-shadow: $myTextShadow;
+	border-bottom: 1px solid $colorFontGray;
+
 }
 @mixin myThLiStyle{
 	margin-bottom: 0px !important;
@@ -526,20 +535,39 @@ footer{
 .contactFooter{
 	@include contactFooterStyle;
 }
+.ulFooterSocial{
+	margin: 0px !important;
+	padding-left: 10px;
+}
+.liFooterConnect{
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+	width: 45px !important;
+	height: 45px !important;
+
+	
+}
 .social{
 	padding-top: 10px;
-	.small-block-grid-3 > li{
-		padding: 10px !important;
-	}
 }
 .mls{
 	margin-top: 70px;
 }
 .properties{
+	
 	margin-left: 15px;
+	font-size: 10px;
+	line-height: 20px;
+	color: 	$colorBlue;
+	margin-left: 0px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-shadow: $myTextShadow;
 }
+
 .propertiesFooter{
 	@include propertiesFooterStyle;
+	// border-bottom: 1px solid $colorFontGray;
 }
 .copyright{
 	background-color: $copyrightBackgroundColor;
