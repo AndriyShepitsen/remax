@@ -150,9 +150,9 @@
                 <div class="right">
                   <!-- <span class="contactTextStyle">CONNECT WITH US:</span> -->
 
-                  <a class="has-tip-left" title="Our Facebook Page" href="#"><img src="{{url('comp/img/social_header/facebook.png')}}" alt="Skokie Remax First Class Facebook Icon"><a/>
-                    <a class="has-tip-left" title="Our Twitter Page" href="#"><img src="{{url('comp/img/social_header/twitter.png')}}" alt="Skokie Remax First Class Twitter Icon"><a/>
-                      <a class="has-tip-left" title="Our Linkedin Page" href="#"><img src="{{url('comp/img/social_header/linkedin.png')}}" alt="Skokie Remax First Class Linkedin Icon"><a/>
+                  <a class="has-tip-left" title="Our Facebook Page" href="https://www.facebook.com/pages/Remax-1st-CLASS/177448822432081"><img src="{{url('comp/img/social_header/facebook.png')}}" alt="Skokie Remax First Class Facebook Icon"><a/>
+                    <a class="has-tip-left" title="Our Twitter Page" href="https://twitter.com/RemaxFirstClass"><img src="{{url('comp/img/social_header/twitter.png')}}" alt="Skokie Remax First Class Twitter Icon"><a/>
+                      <a class="has-tip-left" title="Our Linkedin Page" href="http://www.linkedin.com/profile/view?id=271875691&trk=nav_responsive_tab_profile"><img src="{{url('comp/img/social_header/linkedin.png')}}" alt="Skokie Remax First Class Linkedin Icon"><a/>
                         <a class="has-tip-left" title="Our Google Plus Page" href="#"><img src="{{url('comp/img/social_header/google.png')}}" alt="Skokie Remax First Class Google Icon"><a/>
                           <a class="has-tip-left" title="Our Yelp Page" href="#"><img src="{{url('comp/img/social_header/yelp.png')}}" alt="Skokie Remax First Class Feed Icon"><a/>
                             <a class="has-tip-left" title="Our Page" href="#"><img src="{{url('comp/img/social_header/you_tube.png')}}" alt="Skokie Remax First Class Youtube Icon"><a/>
@@ -401,9 +401,9 @@
                     <span class="contactFooter">CONNECT WITH US:</span>
                     <hr/>
                     <ul class="small-block-grid-3 ulFooterSocial">
-                      <li class="liFooterConnect"><a class="has-tip-left" title="Our Facebook Page" href="#"><img src="{{url('comp/img/social_footer/facebook.png')}}" alt="Skokie Remax First Class Facebook Icon"><a/></li>
-                      <li class="liFooterConnect"><a class="has-tip-left" title="Our Twitter Page" href="#"><img src="{{url('comp/img/social_footer/twitter.png')}}" alt="Skokie Remax First Class Twitter Icon"><a/></li>
-                      <li class="liFooterConnectRight"><a class="has-tip-left" title="Our Linkedin Page" href="#"><img src="{{url('comp/img/social_footer/linkedin.png')}}" alt="Skokie Remax First Class Linkedin Icon"><a/></li>
+                      <li class="liFooterConnect"><a class="has-tip-left" title="Our Facebook Page" href="https://www.facebook.com/pages/Remax-1st-CLASS/177448822432081"><img src="{{url('comp/img/social_footer/facebook.png')}}" alt="Skokie Remax First Class Facebook Icon"><a/></li>
+                      <li class="liFooterConnect"><a class="has-tip-left" title="Our Twitter Page" href="https://twitter.com/RemaxFirstClass"><img src="{{url('comp/img/social_footer/twitter.png')}}" alt="Skokie Remax First Class Twitter Icon"><a/></li>
+                      <li class="liFooterConnectRight"><a class="has-tip-left" title="Our Linkedin Page" href="http://www.linkedin.com/profile/view?id=271875691&trk=nav_responsive_tab_profile"><img src="{{url('comp/img/social_footer/linkedin.png')}}" alt="Skokie Remax First Class Linkedin Icon"><a/></li>
                       <li class="liFooterConnect"><a class="has-tip-left" title="Our Google Plus Page" href="#"><img src="{{url('comp/img/social_footer/google.png')}}" alt="Skokie Remax First Class Google Icon"><a/></li>
                       <li class="liFooterConnect"><a class="has-tip-left" title="Our Yelp Page" href="#"><img src="{{url('comp/img/social_footer/yelp.png')}}" alt="Skokie Remax First Class Feed Icon"><a/></li>
                       <li class="liFooterConnectRight"><a class="has-tip-left" title="Our Page" href="#"><img src="{{url('comp/img/social_footer/you_tube.png')}}" alt="Skokie Remax First Class Youtube Icon"><a/></li>
