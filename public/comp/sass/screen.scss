@@ -214,7 +214,7 @@ h1{
 	width: 350px !important;
 }
 .sloganTop{
-	margin-left: 10px;
+	margin-left: 15px;
 }
 .oneStopService{
 	// margin-top: -10px;
@@ -237,7 +237,10 @@ h1{
 	margin-top: -65px;
 }
 .imgService{
-// margin-left: -35spx;
+margin-top: -70px;
+}
+.oneStopDiv{
+	
 }
 .customerTips{
 	padding: 0px !important;
@@ -378,6 +381,7 @@ article p{
 	@include slashBefore;
 }
 /* =welcome style starts here */
+
 /* =newListings style starts here  */
 .newListings{
 	@include myPanelStyle;
@@ -603,23 +607,23 @@ footer{
 		margin-top: 0px !important;
 	}
 }
-		.mls{
-			margin-top: 70px;
-		}
-		.properties{
+.mls{
+	margin-top: 70px;
+}
+.properties{
 
-			margin-left: 15px;
-			font-size: 10px;
-			line-height: 20px;
-			color: 	$colorBlue;
-			margin-left: 0px;
-			font-weight: bold;
-			letter-spacing: 1px;
-			text-shadow: $myTextShadow;
-		}
+	margin-left: 15px;
+	font-size: 10px;
+	line-height: 20px;
+	color: 	$colorBlue;
+	margin-left: 0px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-shadow: $myTextShadow;
+}
 
-		.propertiesFooter{
-			@include propertiesFooterStyle;
+.propertiesFooter{
+	@include propertiesFooterStyle;
 	// border-bottom: 1px solid $colorFontGray;
 }
 .copyright{

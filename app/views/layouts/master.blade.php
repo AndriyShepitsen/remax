@@ -92,7 +92,7 @@
           <!-- =logoWrapper -->
           <div class="logoWrapper">
             <div class="row">
-              <div class="large-9 columns">
+              <div class="large-10 columns">
                 <div class="row">
                   <div class="large-2 columns logoContent">
                    <a href="{{URL::route('home')}}" title="Home Page">
@@ -110,40 +110,17 @@
                      <div class="large-6 columns  sloganText">
                       <p class="sloganTop">YOU NEED ONLY ONE COMPANY </p> <p> FOR ALL YOUR REAL ESTATE NEEDS</p>
                     </div>
-                    <div class="large-3 columns oneStopService">
-                      <div class="imgService">
-                        <img src="{{url('comp/img/one_stop_service/One-Stop-Service.png')}}" alt="name">
-                        <div class="oneStopText"><span>ONE STOP SERVICE</span></div>
-                      </div>
-                    </div>
-                    <div class="large-3 columns customerTips">
-                      <ul class="bullet ulCustomerTips">
-                        <li class="buyOrSell">
-                          Buy or Sell Home
-                        </li>
-                        <li>
-                         Get Aproved for Mortgage 
-                       </li>
-                       <li>
-                         Settle All Closing Papers 
-                       </li>
-                       
-                       <li>
-                         Short Sale 
-                       </li>
-                       <li class="invOpportunity">
-                         Real Estate Investment Opportunities 
-                       </li>
-                     </ul>
-
-                   </div>
+                    <aside class="small-6 columns oneStopDiv">
+                      <img class="imgService"src="{{url('comp/img/one_stop_service/One-Stop-Service-Text.png')}}" alt="One Stop Service">
+                                          
+                    </aside>
 
                  </div>
                </div>
              </div>
            </div>
 
-           <aside class="large-3 columns">
+           <aside class="large-2 columns">
              <div class="row">
               <div class="large-12 columns right connectWithContent">
 
