@@ -122,17 +122,17 @@
                           Buy or Sell Home
                         </li>
                         <li>
-                         Get Aproved for mortgage 
+                         Get Aproved for Mortgage 
                        </li>
                        <li>
-                         Settle all closing papers 
+                         Settle All Closing Papers 
                        </li>
                        
                        <li>
                          Short Sale 
                        </li>
                        <li class="invOpportunity">
-                         Real Estate Investment opportunities 
+                         Real Estate Investment Opportunities 
                        </li>
                      </ul>
 
@@ -371,7 +371,7 @@
                 </div>
                 <div class="large-4 columns">
 
-                  <section class="large-6 columns social">
+                  <section class="large-7 columns social">
                     <ul class="prop no-bullet">
                       <span class="propertiesFooter">PROPERTIES FOR SALE:</span> <br/>
                       <hr/>

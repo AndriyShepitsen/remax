@@ -87,6 +87,7 @@ $colorBlue: #396C95;
 	margin-top: 3px !important;
 	margin-bottom: 11px !important;
 	display: inline-block;
+	min-width: 180px;
 }
 @mixin propertiesFooterStyle{
 	font-weight: bold;
@@ -94,6 +95,7 @@ $colorBlue: #396C95;
 	margin-bottom: 5px;
 	color: $colorNavPanel;
 	text-shadow: $myTextShadow;
+	min-width: 150px;
 }
 
 @mixin connectFooterStyle{
@@ -375,6 +377,7 @@ article p{
 .breadcrumbs li:before {
 	@include slashBefore;
 }
+/* =welcome style starts here */
 /* =newListings style starts here  */
 .newListings{
 	@include myPanelStyle;
@@ -502,7 +505,8 @@ ul.ulagents li {
 .vcard{
 	border: 0em;
 	margin-bottom: 0em !important;
-	margin-left: 10px;
+	// margin-left: 10px;
+	min-width:170px;
 }
 .vcard .fn{
 	font-size: 12px;
