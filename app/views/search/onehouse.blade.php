@@ -35,7 +35,7 @@
 			<strong>Year:</strong> {{$house->year}} <br></br>
 
 			@if($imCounter)
-			@for ($i =1; $i < $imCounter; $i++)
+			@for ($i =1; $i <= $imCounter; $i++)
 			<p><img src="{{url('comp/img/images/'.$house->id.'/'.$i.'.jpg')}}"> </p>
 			@endfor
 

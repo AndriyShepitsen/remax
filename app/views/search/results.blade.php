@@ -24,7 +24,7 @@
 					</small>
 					@if($house->images()->first()->maxid)
 					<ul class="no-bullet listingImage">
-						<li><a href=""><img src="{{url('comp/img/thumbs/'.$house->id.'/1.jpg')}}"  class="th"></a> </li>
+						<li><a href="{{url('search/'.$house->id)}}"><img src="{{url('comp/img/thumbs/'.$house->id.'/1.jpg')}}"  class="th"></a> </li>
 						
 					</ul>
 					@endif
