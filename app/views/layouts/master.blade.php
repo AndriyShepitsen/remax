@@ -127,12 +127,12 @@
                 <div class="right">
                   <!-- <span class="contactTextStyle">CONNECT WITH US:</span> -->
 
-                  <a class="has-tip-left" title="Our Facebook Page" href="https://www.facebook.com/pages/Remax-1st-CLASS/177448822432081"><img src="{{url('comp/img/social_header/facebook.png')}}" alt="Skokie Remax First Class Facebook Icon"><a/>
-                    <a class="has-tip-left" title="Our Twitter Page" href="https://twitter.com/RemaxFirstClass"><img src="{{url('comp/img/social_header/twitter.png')}}" alt="Skokie Remax First Class Twitter Icon"><a/>
-                      <a class="has-tip-left" title="Our Linkedin Page" href="http://www.linkedin.com/profile/view?id=271875691&trk=nav_responsive_tab_profile"><img src="{{url('comp/img/social_header/linkedin.png')}}" alt="Skokie Remax First Class Linkedin Icon"><a/>
-                        <a class="has-tip-left" title="Our Google Plus Page" href="https://plus.google.com"><img src="{{url('comp/img/social_header/google.png')}}" alt="Skokie Remax First Class Google Icon"><a/>
-                          <a class="has-tip-left" title="Our Yelp Page" href="http://www.yelp.com/biz/remax-first-class-skokie"><img src="{{url('comp/img/social_header/yelp.png')}}" alt="Skokie Remax First Class Feed Icon"><a/>
-                            <a class="has-tip-left" title="Our Page" href="https://www.youtube.com/"><img src="{{url('comp/img/social_header/you_tube.png')}}" alt="Skokie Remax First Class Youtube Icon"><a/>
+                  <a target="_blank" class="has-tip-left" title="Our Facebook Page" href="https://www.facebook.com/pages/Remax-1st-CLASS/177448822432081"><img src="{{url('comp/img/social_header/facebook.png')}}" alt="Skokie Remax First Class Facebook Icon"><a/>
+                    <a target="_blank" class="has-tip-left" title="Our Twitter Page" href="https://twitter.com/RemaxFirstClass"><img src="{{url('comp/img/social_header/twitter.png')}}" alt="Skokie Remax First Class Twitter Icon"><a/>
+                      <a target="_blank" class="has-tip-left" title="Our Linkedin Page" href="http://www.linkedin.com/profile/view?id=271875691&trk=nav_responsive_tab_profile"><img src="{{url('comp/img/social_header/linkedin.png')}}" alt="Skokie Remax First Class Linkedin Icon"><a/>
+                        <a target="_blank" class="has-tip-left" title="Our Google Plus Page" href="https://plus.google.com"><img src="{{url('comp/img/social_header/google.png')}}" alt="Skokie Remax First Class Google Icon"><a/>
+                          <a target="_blank" class="has-tip-left" title="Our Yelp Page" href="http://www.yelp.com/biz/remax-first-class-skokie"><img src="{{url('comp/img/social_header/yelp.png')}}" alt="Skokie Remax First Class Feed Icon"><a/>
+                            <a target="_blank" class="has-tip-left" title="Our Page" href="https://www.youtube.com/"><img src="{{url('comp/img/social_header/you_tube.png')}}" alt="Skokie Remax First Class Youtube Icon"><a/>
                             </div>
 
                           </div>
@@ -140,7 +140,7 @@
                         <div class="row">
                          <div class="large-12 columns callUsContent right">
                            <img class="left"  src="{{url('comp/img/phone40.png')}}" alt="name">
-                           <span class="callUs">(847) 674-9797</span>
+                           <span class="callUs has-tip-left" title="Call Our Agents for a Free Consultation">(847) 674-9797</span>
                          </div>
                        </div>
                        <div class="row">
@@ -330,10 +330,10 @@
                     <a class="th has-tip-left logoFooterPadding" title="Multiple Listing Service" href="#">
                       <img src="{{url('comp/img/mls.png')}}" alt="Multiple Listing Service">
                     </a>
-                    <a class="th has-tip-left logoFooterPadding" title="Remax Commercial" href="#">
-                      <img src="{{url('comp/img/remax-commercial-logo.png')}}" alt="Remax Commercial">
+                    <a class="th has-tip-left logoFooterPadding" title="Coming Soon Remax 1st Class Commercial" href="#">
+                      <img src="{{url('comp/img/remax-commercial-logo.png')}}" alt="Remax 1st Class Commercial">
                     </a>
-                    <a target="_blank" class="th has-tip-left logoFooterPadding"  title="Remax Short Sale Chicago"  href="http://www.shortsalechicago.us/Short-Sale-Chicago">
+                    <a target="_blank" class="th has-tip-left logoFooterPadding"  title="Visit Our Remax Short Sale Chicago Website"  href="http://www.shortsalechicago.us/Short-Sale-Chicago">
                       <img src="{{url('comp/img/Chicago-Short-Sale-Logo.png')}}" alt="Chicago Short Sale">
                     </a>
                   </div>
@@ -378,12 +378,12 @@
                     <span class="contactFooter">CONNECT WITH US:</span>
                     <hr/>
                     <ul class="small-block-grid-3 ulFooterSocial">
-                      <li class="liFooterConnect"><a class="has-tip-left" title="Our Facebook Page" href="https://www.facebook.com/pages/Remax-1st-CLASS/177448822432081"><img src="{{url('comp/img/social_footer/facebook.png')}}" alt="Skokie Remax First Class Facebook Icon"><a/></li>
-                      <li class="liFooterConnect"><a class="has-tip-left" title="Our Twitter Page" href="https://twitter.com/RemaxFirstClass"><img src="{{url('comp/img/social_footer/twitter.png')}}" alt="Skokie Remax First Class Twitter Icon"><a/></li>
-                      <li class="liFooterConnectRight"><a class="has-tip-left" title="Our Linkedin Page" href="http://www.linkedin.com/profile/view?id=271875691&trk=nav_responsive_tab_profile"><img src="{{url('comp/img/social_footer/linkedin.png')}}" alt="Skokie Remax First Class Linkedin Icon"><a/></li>
-                      <li class="liFooterConnect"><a class="has-tip-left" title="Our Google Plus Page" href="#"><img src="{{url('comp/img/social_footer/google.png')}}" alt="Skokie Remax First Class Google Icon"><a/></li>
-                      <li class="liFooterConnect"><a class="has-tip-left" title="Our Yelp Page" href="http://www.yelp.com/biz/remax-first-class-skokie"><img src="{{url('comp/img/social_footer/yelp.png')}}" alt="Skokie Remax First Class Feed Icon"><a/></li>
-                      <li class="liFooterConnectRight"><a class="has-tip-left" title="Our Page" href="https://www.youtube.com/"><img src="{{url('comp/img/social_footer/you_tube.png')}}" alt="Skokie Remax First Class Youtube Icon"><a/></li>
+                      <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Facebook Page" href="https://www.facebook.com/pages/Remax-1st-CLASS/177448822432081"><img src="{{url('comp/img/social_footer/facebook.png')}}" alt="Skokie Remax First Class Facebook Icon"><a/></li>
+                      <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Twitter Page" href="https://twitter.com/RemaxFirstClass"><img src="{{url('comp/img/social_footer/twitter.png')}}" alt="Skokie Remax First Class Twitter Icon"><a/></li>
+                      <li class="liFooterConnectRight"><a target="_blank" class="has-tip-left" title="Our Linkedin Page" href="http://www.linkedin.com/profile/view?id=271875691&trk=nav_responsive_tab_profile"><img src="{{url('comp/img/social_footer/linkedin.png')}}" alt="Skokie Remax First Class Linkedin Icon"><a/></li>
+                      <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Google Plus Page" href="#"><img src="{{url('comp/img/social_footer/google.png')}}" alt="Skokie Remax First Class Google Icon"><a/></li>
+                      <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Yelp Page" href="http://www.yelp.com/biz/remax-first-class-skokie"><img src="{{url('comp/img/social_footer/yelp.png')}}" alt="Skokie Remax First Class Feed Icon"><a/></li>
+                      <li class="liFooterConnectRight"><a target="_blank" class="has-tip-left" title="Our Page" href="https://www.youtube.com/"><img src="{{url('comp/img/social_footer/you_tube.png')}}" alt="Skokie Remax First Class Youtube Icon"><a/></li>
                     </ul>
                   </section>
                 </div>
@@ -746,7 +746,7 @@
            </div>                           
          </div>
          <div class="agentPic"><img src="{{url('comp/img/agentsL/Ivy_Moy.jpg')}}" alt="Ivy Moy"></div>
-         <div>{{link_to('agent/4', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
+         <div>{{link_to('agent/2', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
          </div>
        </div>
 
@@ -839,7 +839,7 @@
                     <div class="agentPic">
                       <img src="{{url('comp/img/agentsL/Cherylette_Hilton.jpg')}}" alt="Crerylette Hilton">
                     </div>
-                    <div>{{link_to('agent/4', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
+                    <div>{{link_to('agent/1', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
                     </div>
                   </div>
 
@@ -936,7 +936,7 @@
              </div>                           
            </div>
            <div class="agentPic"><img src="{{url('comp/img/agentsL/Dan_Elena.jpg')}}" alt="Elena Dan"></div>
-           <div>{{link_to('agent/4', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
+           <div>{{link_to('agent/3', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
            </div>
          </div>
 
@@ -1029,7 +1029,7 @@
    <div class="agentPic">
      <img src="{{url('comp/img/agentsL/Dan_Elena.jpg')}}" alt="Marius Dan">
    </div>
-   <div>{{link_to('agent/4', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
+   <div>{{link_to('agent/5', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
    </div>
  </div>
 
@@ -1121,7 +1121,7 @@
  <div class="agentPic">
    <img src="{{url('comp/img/agentsL/Barry_Benveniste.jpg')}}" alt="Barry Benveniste">
  </div>
- <div>{{link_to('agent/4', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
+ <div>{{link_to('agent/6', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
  </div>
 </div>
 
@@ -1207,7 +1207,7 @@
  <div class="agentPic">
    <img src="{{url('comp/img/agentsL/3.png')}}" alt="Mark Feyman">
  </div>
- <div>{{link_to('agent/4', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
+ <div>{{link_to('agent/7', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
  </div>
 </div>
 
@@ -1296,7 +1296,7 @@
                      <div class="agentPic">
                        <img src="{{url('comp/img/agentsL/3.jpg')}}" alt="Harold Oza">
                      </div>
-                     <div>{{link_to('agent/4', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
+                     <div>{{link_to('agent/8', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
                      </div>
 
                    </div>
@@ -1376,7 +1376,7 @@
                  </div>
                  <div class="agentPic"><img src="{{url('comp/img/agentsL/3.png')}}" alt="John Dias"></div>
 
-                 <div>{{link_to('agent/4', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
+                 <div>{{link_to('agent/9', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
                  </div>
                </div>
 

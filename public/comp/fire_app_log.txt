@@ -2913,3 +2913,10 @@ Load paths:
 2013-07-16 16:29:16    create stylesheets/app.css 
 2013-07-16 16:29:16    create stylesheets/normalize.css 
 2013-07-16 16:29:21    create stylesheets/screen.css 
+2013-07-16 18:03:39    remove .sass-cache/ 
+2013-07-16 18:03:39    remove stylesheets/app.css 
+2013-07-16 18:03:39    remove stylesheets/normalize.css 
+2013-07-16 18:03:39    remove stylesheets/screen.css 
+2013-07-16 18:03:42    create stylesheets/app.css 
+2013-07-16 18:03:42    create stylesheets/normalize.css 
+2013-07-16 18:03:48    create stylesheets/screen.css 
