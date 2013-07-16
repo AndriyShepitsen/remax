@@ -92,7 +92,7 @@
           <!-- =logoWrapper -->
           <div class="logoWrapper">
             <div class="row">
-              <div class="large-10 columns">
+              <div class="large-10 columns ">
                 <div class="row">
                   <div class="large-2 columns logoContent">
                    <a href="{{URL::route('home')}}" title="Home Page">
@@ -102,7 +102,7 @@
 
                  <div class="large-10 columns">
                    <div class="row">
-                     <div class="large-12 columns residentialCommercialContent">
+                     <div class="small-12 columns residentialCommercialContent">
                        <div class="realEstateRC">RESIDENTIAL, COMMERCIAL & INVESTMENT REAL ESTATE</div>
                      </div>
                    </div>
@@ -110,17 +110,17 @@
                      <div class="large-6 columns  sloganText">
                       <p class="sloganTop">YOU NEED ONLY ONE COMPANY </p> <p> FOR ALL YOUR REAL ESTATE NEEDS</p>
                     </div>
-                    <aside class="small-6 columns oneStopDiv">
-                      <img class="imgService"src="{{url('comp/img/one_stop_service/One-Stop-Service-Text.png')}}" alt="One Stop Service">
+                    <div class="large-6 columns">
+                      <img src="{{url('comp/img/one_stop_service/One-Stop-Service-Text.png')}}" alt="One Stop Service">
                                           
-                    </aside>
+                    </div>
 
                  </div>
                </div>
              </div>
            </div>
 
-           <aside class="large-2 columns">
+           <aside class="large-2 columns logoDiv">
              <div class="row">
               <div class="large-12 columns right connectWithContent">
 
@@ -131,7 +131,7 @@
                     <a class="has-tip-left" title="Our Twitter Page" href="https://twitter.com/RemaxFirstClass"><img src="{{url('comp/img/social_header/twitter.png')}}" alt="Skokie Remax First Class Twitter Icon"><a/>
                       <a class="has-tip-left" title="Our Linkedin Page" href="http://www.linkedin.com/profile/view?id=271875691&trk=nav_responsive_tab_profile"><img src="{{url('comp/img/social_header/linkedin.png')}}" alt="Skokie Remax First Class Linkedin Icon"><a/>
                         <a class="has-tip-left" title="Our Google Plus Page" href="#"><img src="{{url('comp/img/social_header/google.png')}}" alt="Skokie Remax First Class Google Icon"><a/>
-                          <a class="has-tip-left" title="Our Yelp Page" href="#"><img src="{{url('comp/img/social_header/yelp.png')}}" alt="Skokie Remax First Class Feed Icon"><a/>
+                          <a class="has-tip-left" title="Our Yelp Page" href="http://www.yelp.com/biz/remax-first-class-skokie"><img src="{{url('comp/img/social_header/yelp.png')}}" alt="Skokie Remax First Class Feed Icon"><a/>
                             <a class="has-tip-left" title="Our Page" href="#"><img src="{{url('comp/img/social_header/you_tube.png')}}" alt="Skokie Remax First Class Youtube Icon"><a/>
                             </div>
 
@@ -139,7 +139,7 @@
                         </div>
                         <div class="row">
                          <div class="large-12 columns callUsContent right">
-                           <img  src="{{url('comp/img/phone40.png')}}" alt="name">
+                           <img class="left"  src="{{url('comp/img/phone40.png')}}" alt="name">
                            <span class="callUs">(847) 674-9797</span>
                          </div>
                        </div>
@@ -272,7 +272,7 @@
                  <div class="large-12 columns panel ourAgents">
                    <h4><a class="newListingsTitle"href="">OUR AGENTS</a> <h4>
                      <hr/>
-                     <ul class="small-block-grid-3 clearing-thumbs ulagents" data-clearing>
+                     <ul class="small-block-grid-3 ulagents">
                        <li  class="liAgents"><a class="th radius" data-reveal-id="danFlorian" href="#"><img src="{{url('comp/img/agents/Dan_I_Florian.jpg')}}" alt=""><a/>
                          {{link_to('#', 'DAN I.', array('class'=>'agentLink'));}} <br/>
                          {{link_to('#', 'FLORIAN', array('class'=>'agentLinkLast'));}}
@@ -350,7 +350,7 @@
 
                   <section class="large-7 columns social">
                     <ul class="prop no-bullet">
-                      <span class="propertiesFooter">PROPERTIES FOR SALE:</span> <br/>
+                      <span class="propertiesFooter">PROPERTIES FOR SALE:</span> 
                       <hr/>
                       <li class="locality properties">{{link_to('browse/1', 'SINGLE FAMILY');}}</li>
                       <li class="locality properties">{{link_to('browse/4', 'MULTI-FAMILY');}}</li>
@@ -382,7 +382,7 @@
                       <li class="liFooterConnect"><a class="has-tip-left" title="Our Twitter Page" href="https://twitter.com/RemaxFirstClass"><img src="{{url('comp/img/social_footer/twitter.png')}}" alt="Skokie Remax First Class Twitter Icon"><a/></li>
                       <li class="liFooterConnectRight"><a class="has-tip-left" title="Our Linkedin Page" href="http://www.linkedin.com/profile/view?id=271875691&trk=nav_responsive_tab_profile"><img src="{{url('comp/img/social_footer/linkedin.png')}}" alt="Skokie Remax First Class Linkedin Icon"><a/></li>
                       <li class="liFooterConnect"><a class="has-tip-left" title="Our Google Plus Page" href="#"><img src="{{url('comp/img/social_footer/google.png')}}" alt="Skokie Remax First Class Google Icon"><a/></li>
-                      <li class="liFooterConnect"><a class="has-tip-left" title="Our Yelp Page" href="#"><img src="{{url('comp/img/social_footer/yelp.png')}}" alt="Skokie Remax First Class Feed Icon"><a/></li>
+                      <li class="liFooterConnect"><a class="has-tip-left" title="Our Yelp Page" href="http://www.yelp.com/biz/remax-first-class-skokie"><img src="{{url('comp/img/social_footer/yelp.png')}}" alt="Skokie Remax First Class Feed Icon"><a/></li>
                       <li class="liFooterConnectRight"><a class="has-tip-left" title="Our Page" href="#"><img src="{{url('comp/img/social_footer/you_tube.png')}}" alt="Skokie Remax First Class Youtube Icon"><a/></li>
                     </ul>
                   </section>
@@ -925,7 +925,13 @@
                 <ul>
                  <h3 class="subheader agentName">Elena Dan</h3>
                  <a class="label has-tip-left specialist" title="Accredited Buyers Representative">ABR</a> 
-                 <a class="label has-tip-left specialist" title="Certified Residential Specialist">CRS</a>
+                 <a class="label has-tip-left specialist" title="203K Specialist">203K</a>
+                 <a class="label has-tip-left specialist" title="Certifies Distressed Property Expert">203K</a>
+                 <a class="label has-tip-left specialist" title="Canadian Employee Relo Council Specialist"> CERC</a>
+                 <a class="label has-tip-left specialist" title="Resort & Second-Home Property Specialist">RSPS</a>
+                 <a class="label has-tip-left specialist" title="Short Sale and Foreclosure Resource"> SFR </a>
+                 <a class="label has-tip-left specialist" title="Senior Real Estate Specialist">  SRES</a>
+                 <a class="label has-tip-left specialist" title="Seller Representative Specialist">   SRS</a>
                </ul>
              </div>                           
            </div>

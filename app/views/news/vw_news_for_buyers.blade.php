@@ -6,7 +6,7 @@
 	<div class="row">
 		<div class="large-12 columns">
 			<ul class="breadcrumbs">
-				<li class="newsL"><a href="#">NEWS</a></li>
+			<li class="newsL">{{link_to_route('real_estate_news', 'NEWS');}}</li>
 				@if ($news[0]->bs == 1 ) <!-- Laravel if clause with @ --> 	
 				<li class="current"><a href="">NEWS FOR BUYERS</a></li>
 				@endif
@@ -22,7 +22,7 @@
 
 		</div>
 
-		</aside>
+	</aside>
 	</div>
 </div>
 @stop

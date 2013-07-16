@@ -8,7 +8,8 @@
 	<div class="row">
 		<div class="large-12 columns about-us">
 			<div class="panel radius">
-				<h2>Welcome to Remax First Class.</h2>
+				<h1 class="welcome">Welcome to <br/>Remax First Class<br/>
+				Real Estate Company</h1>
 				<hr/>
 				<p>We are a trustful Real Estate Company located in Skokie, IL. We offer a comprehensive service in real estate. We can help to buy, sell or manage residential property. We will also help tp get the best mortgage conditions via our mortgage department as well as get all paper prepared by our staff attorneys. We have successful experience in short sales and always have a great investment opportunities. Our main price range is from 35k till 500k, though we also have experience and listing in luxury market.</p>
 				<p>Our first line districts are Skokie, Morton grove, Evanston, Niles, North Side Chicago, Ukrainian Village and neighboring areas.</p>
@@ -20,18 +21,18 @@
 		<div class="large-12 columns">
 			<div class="orbit-container panel">
 				<p>Our selected property</p>
-				<ul class="orbit-slides-container" data-orbit data-options="timer_speed:260000;">
+				<ul class="orbit-slides-container" data-orbit data-options="timer_speed:26000;">
 					<li>
-						<img src="{{url('comp/img/house.jpg')}}" alt="">
-						<div class="orbit-caption">Visit Open House Event</div>
+						<img src="{{url('comp/img/orbit/1.jpg')}}" alt="">
+						<div class="orbit-caption">Skokie, IL 60076   </div>
 					</li>
 					<li>
-						<img src="{{url('comp/img/house.jpg')}}" alt="">
-						<div class="orbit-caption">Visit Open House Event</div>
+						<img src="{{url('comp/img/orbit/4.jpg')}}" alt="">
+						<div class="orbit-caption">Glenview, IL 60025</div>
 					</li>
 					<li>
-						<img src="{{url('comp/img/house.jpg')}}" alt="">
-						<div class="orbit-caption">Visit Open House Event</div>
+						<img src="{{url('comp/img/orbit/2.jpg')}}" alt="">
+						<div class="orbit-caption">Morton Grove, IL</div>
 					</li>
 				</ul>
 			</div>

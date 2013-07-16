@@ -73,7 +73,7 @@ $colorBlue: #396C95;
 	color: $colorSlash;
 	content: "/";
 	position: relative;
-	top: -3px;
+	// top: -3px;
 }
 @mixin footerStyle{
 	background-color: darken($colorLogoWrapper, 10%);
@@ -122,10 +122,10 @@ $colorBlue: #396C95;
 	
 }
 h2, h3, h4{
-	color: $colorNavPanel !important;
+	color: $colorFontGray !important;
 }
 h1{
-	color: $colorFontGray !important;
+	color: $colorNavPanel !important;
 }
 .name{
 	a{
@@ -211,7 +211,7 @@ h1{
 	}	
 	padding: 0px !important;
 	margin-top: 15px;
-	width: 350px !important;
+	
 }
 .sloganTop{
 	margin-left: 15px;
@@ -237,11 +237,9 @@ h1{
 	margin-top: -65px;
 }
 .imgService{
-margin-top: -70px;
+//margin-top: -50px;
 }
-.oneStopDiv{
-	
-}
+
 .customerTips{
 	padding: 0px !important;
 	width: 260px;
@@ -289,7 +287,12 @@ margin-top: -70px;
 		margin-bottom: 9px !important;
 	}
 }
-
+/*  =home page starts here*/
+.ulWorkWith{
+	li{
+		margin-left: 20px;
+	}
+}
 /* =find starts here */
 
 
@@ -373,14 +376,23 @@ article p{
 	line-height: 1.7em; 
 	margin-bottom: .5em;
 }
-.breadcrumbs{
+.breadcrumbs {
 	border:none !important;
 	padding: 0px  !important;
+	li a{
+	font-size: 9px !important;
+		
+	}
 }
 .breadcrumbs li:before {
 	@include slashBefore;
 }
+
 /* =welcome style starts here */
+.welcome{
+	text-align: center;
+	line-height: 55px !important;
+}
 
 /* =newListings style starts here  */
 .newListings{

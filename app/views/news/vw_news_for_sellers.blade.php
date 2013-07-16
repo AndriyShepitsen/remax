@@ -6,7 +6,7 @@
 	<div class="row">
 		<div class="large-12 columns">
 			<ul class="breadcrumbs">
-				<li><a href="#">NEWS</a></li>
+				<li class="newsL">{{link_to_route('real_estate_news', 'NEWS');}}</li>
 				@if ($news[0]->bs == 2 )	
 				<li class="current"><a href="#">NEWS FOR SELLERS</a></li>
 				@endif
