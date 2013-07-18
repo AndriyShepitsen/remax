@@ -171,6 +171,21 @@
                    <adide class="large-4 columns">
                      <div class="row">
                       <div class="large-12 columns panel">
+
+
+
+
+
+<div class="section-container auto" data-section>
+  <section>
+    <p class="title" data-section-title><a href="#panel1">Homes for Sale</a></p>
+    <div class="content" data-section-content>
+      
+        
+<!-- Buy / SELL -->
+
+
+
                        <span class="find">FIND YOUR HOME</span> <div class="row">
                        <div class="large-12 columns">
 
@@ -220,11 +235,10 @@
                          {{Form::close()}}
 
 
-                       </div>
-                     </div>
-                   </div>
-                 </div>
-                 <div class="row">
+                       </div></div>
+<!-- Buy / SELL -->
+
+        <div class="row">
                    <div class="large-12 columns showAllListings">
                     {{link_to('show-all-listings', 'BROWSE ALL LISTINGS', array('class'=>'browseAllListings button radius expand '));}} 
                   </div>
@@ -251,9 +265,7 @@
 
                <!-- =find your home ends here -->
 
-               <div class="row">
-                 <section class="large-12 columns panel newListings">
-                   <div>
+               <div>
                      <h4> <a class="newListingsTitle" href="#">NEW LISTINGS</a> </h4>
                    </div>
                    <hr/>
@@ -265,9 +277,37 @@
                      <li class="liNewListings"><a class="th radius" href="{{URL::to('search/5')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/5/1s.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
                      <li class="liNewListings"><a class="th radius" href="{{URL::to('search/10')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/10/1s.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
                    </ul>
-                 </section>
-               </div>
+               
 
+      
+    </div>
+  </section>
+  <section>
+    <div class="title" data-section-title><a href="#panel2">Rentals</a></div>
+    <div class="content" data-section-content>
+    
+        
+<!-- Rent -->
+Rent
+
+<!-- Rent -->
+
+    
+    </div>
+  </section>
+</div>
+
+
+
+
+
+
+
+                   </div>
+                 </div>
+         
+
+           
                <div class="row">
                  <div class="large-12 columns panel ourAgents">
                    <h4><a class="newListingsTitle"href="">OUR AGENTS</a> <h4>
