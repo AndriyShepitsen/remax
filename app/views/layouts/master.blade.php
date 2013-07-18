@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Remax First Class Realty</title>
+    <title>RE/MAX FIRST CLASS Realty</title>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Numans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
@@ -111,7 +111,7 @@
                       <p class="sloganTop">YOU NEED ONLY ONE COMPANY </p> <p> FOR ALL YOUR REAL ESTATE NEEDS</p>
                     </div>
                     <div class="large-6 columns">
-                      <img src="{{url('comp/img/one_stop_service/One-Stop-Service-Text.png')}}" alt="One Stop Service">
+                      <img src="{{url('comp/img/one_stop_service/One-Stop-Service-Text.png')}}" alt="RE/MAX FIRST CLASS One Stop Service">
                                           
                     </div>
 
@@ -128,18 +128,18 @@
                   <!-- <span class="contactTextStyle">CONNECT WITH US:</span> -->
 
                   <a target="_blank" class="has-tip-left" title="Our Facebook Page" href="https://www.facebook.com/pages/Remax-1st-CLASS/177448822432081"><img src="{{url('comp/img/social_header/facebook.png')}}" alt="Skokie Remax First Class Facebook Icon"><a/>
-                    <a target="_blank" class="has-tip-left" title="Our Twitter Page" href="https://twitter.com/RemaxFirstClass"><img src="{{url('comp/img/social_header/twitter.png')}}" alt="Skokie Remax First Class Twitter Icon"><a/>
-                      <a target="_blank" class="has-tip-left" title="Our Linkedin Page" href="http://www.linkedin.com/profile/view?id=271875691&trk=nav_responsive_tab_profile"><img src="{{url('comp/img/social_header/linkedin.png')}}" alt="Skokie Remax First Class Linkedin Icon"><a/>
-                        <a target="_blank" class="has-tip-left" title="Our Google Plus Page" href="https://plus.google.com"><img src="{{url('comp/img/social_header/google.png')}}" alt="Skokie Remax First Class Google Icon"><a/>
-                          <a target="_blank" class="has-tip-left" title="Our Yelp Page" href="http://www.yelp.com/biz/remax-first-class-skokie"><img src="{{url('comp/img/social_header/yelp.png')}}" alt="Skokie Remax First Class Feed Icon"><a/>
-                            <a target="_blank" class="has-tip-left" title="Our Page" href="https://www.youtube.com/"><img src="{{url('comp/img/social_header/you_tube.png')}}" alt="Skokie Remax First Class Youtube Icon"><a/>
+                    <a target="_blank" class="has-tip-left" title="Our Twitter Page" href="https://twitter.com/RemaxFirstClass"><img src="{{url('comp/img/social_header/twitter.png')}}" alt="Skokie Remax First Class Twitter Profile"><a/>
+                      <a target="_blank" class="has-tip-left" title="Our Linkedin Page" href="http://www.linkedin.com/profile/view?id=271875691&trk=nav_responsive_tab_profile"><img src="{{url('comp/img/social_header/linkedin.png')}}" alt="Skokie Remax First Class Linkedin Profile"><a/>
+                        <a target="_blank" class="has-tip-left" title="Our Google Plus Page" href="https://plus.google.com"><img src="{{url('comp/img/social_header/google.png')}}" alt="Skokie Remax First Class Google Profile"><a/>
+                          <a target="_blank" class="has-tip-left" title="Our Yelp Page" href="http://www.yelp.com/biz/remax-first-class-skokie"><img src="{{url('comp/img/social_header/yelp.png')}}" alt="Skokie Remax First Class Feed Profile"><a/>
+                            <a target="_blank" class="has-tip-left" title="Our Page" href="https://www.youtube.com/"><img src="{{url('comp/img/social_header/you_tube.png')}}" alt="Skokie Remax First Class Youtube Profile"><a/>
                             </div>
 
                           </div>
                         </div>
                         <div class="row">
                          <div class="large-12 columns callUsContent right">
-                           <img class="left"  src="{{url('comp/img/phone40.png')}}" alt="name">
+                           <img class="left"  src="{{url('comp/img/phone40.png')}}" alt="phone icon">
                            <span class="callUs has-tip-left" title="Call Our Agents for a Free Consultation">(847) 674-9797</span>
                          </div>
                        </div>
@@ -147,11 +147,11 @@
                          <div class="large-12 columns right iconMailHome">
 
                           <a href="{{ URL::route('home')}}" class="homeIcon has-tip-left" title="Home Page">
-                            <img src="{{url('comp/img/icons/home_remax1.png')}}" alt="Remax First Class Home Icon">
+                            <img src="{{url('comp/img/icons/home_remax1.png')}}" alt="REMAX FIRST CLASS Home Icon">
                           </a> 
                           <!-- =mailIcon -->
                           <a href="#" class="mailIcon has-tip-left" title="Send Us Email" data-reveal-id="myModal"> 
-                            <img src="{{url('comp/img/icons/mail_remax1.png')}}" alt="Remax First Class Mail Icon" ></a>
+                            <img src="{{url('comp/img/icons/mail_remax1.png')}}" alt="REMAX FIRST CLASS Mail Icon" ></a>
                           </div>
                         </div>
                       </aside>          
@@ -258,12 +258,12 @@
                    </div>
                    <hr/>
                    <ul class="small-block-grid-3 clearing-thumbs ullistings">
-                     <li class="liNewListings"><a class="th radius" href="{{URL::to('search/7')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/7/1s.jpg')}}" alt=""><a/></li>
-                     <li class="liNewListings"><a class="th radius" href="{{URL::to('search/15')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/15/1s.jpg')}}" alt=""><a/></li>
-                     <li class="liNewListings"><a class="th radius" href="{{URL::to('search/14')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/14/1s.jpg')}}" alt=""><a/></li>
-                     <li class="liNewListings"><a class="th radius" href="{{URL::to('search/19')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/19/1s.jpg')}}" alt=""><a/></li>
-                     <li class="liNewListings"><a class="th radius" href="{{URL::to('search/5')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/5/1s.jpg')}}" alt=""><a/></li>
-                     <li class="liNewListings"><a class="th radius" href="{{URL::to('search/10')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/10/1s.jpg')}}" alt=""><a/></li>
+                     <li class="liNewListings"><a class="th radius" href="{{URL::to('search/7')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/7/1s.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
+                     <li class="liNewListings"><a class="th radius" href="{{URL::to('search/15')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/15/1s.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
+                     <li class="liNewListings"><a class="th radius" href="{{URL::to('search/14')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/14/1s.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
+                     <li class="liNewListings"><a class="th radius" href="{{URL::to('search/19')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/19/1s.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
+                     <li class="liNewListings"><a class="th radius" href="{{URL::to('search/5')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/5/1s.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
+                     <li class="liNewListings"><a class="th radius" href="{{URL::to('search/10')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/10/1s.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
                    </ul>
                  </section>
                </div>
@@ -273,39 +273,39 @@
                    <h4><a class="newListingsTitle"href="">OUR AGENTS</a> <h4>
                      <hr/>
                      <ul class="small-block-grid-3 ulagents">
-                       <li  class="liAgents"><a class="th radius" data-reveal-id="danFlorian" href="#"><img src="{{url('comp/img/agents/Dan_I_Florian.jpg')}}" alt=""><a/>
+                       <li  class="liAgents"><a class="th radius" data-reveal-id="danFlorian" href="#"><img src="{{url('comp/img/agents/Dan_I_Florian.jpg')}}" alt="RE/MAX FIRST CLASS agent profile, Dan I. Florian"><a/>
                          {{link_to('#', 'DAN I.', array('class'=>'agentLink'));}} <br/>
                          {{link_to('#', 'FLORIAN', array('class'=>'agentLinkLast'));}}
                        </li>
-                       <li class="liAgents"><a class="th radius ulagents" data-reveal-id="ivyMoy" href="#"><img src="{{url('comp/img/agents/Ivy_Moy.jpg')}}" alt=""><a/>
+                       <li class="liAgents"><a class="th radius ulagents" data-reveal-id="ivyMoy" href="#"><img src="{{url('comp/img/agents/Ivy_Moy.jpg')}}" alt="RE/MAX FIRST CLASS agent profile Ivy Moy"><a/>
                          {{link_to('#', 'IVY', array('class'=>'agentLink'));}} <br/>
                          {{link_to('#', 'MOY', array('class'=>'agentLinkLast'));}}
                        </li>
-                       <li class="liAgents"><a class="th radius ulagents" data-reveal-id="cheryletteHilton" href="#"><img src="{{url('comp/img/agents/Cherylette_Hilton.jpg')}}" alt=""><a/>
+                       <li class="liAgents"><a class="th radius ulagents" data-reveal-id="cheryletteHilton" href="#"><img src="{{url('comp/img/agents/Cherylette_Hilton.jpg')}}" alt="RE/MAX FIRST CLASS agent profile Cherylette Hilton"><a/>
                          {{link_to('#', 'CHERYLETTE', array('class'=>'agentLink'));}} <br/>
                          {{link_to('#', 'HILTON', array('class'=>'agentLinkLast'));}}
                        </li>
-                       <li class="liAgents"><a class="th radius ulagents" data-reveal-id="elenaDan" href="#"><img src="{{url('comp/img/agents/Dan_Elena.jpg')}}" alt=""><a/>
+                       <li class="liAgents"><a class="th radius ulagents" data-reveal-id="elenaDan" href="#"><img src="{{url('comp/img/agents/Dan_Elena.jpg')}}" alt="RE/MAX FIRST CLASS agent profile Dan Elena"><a/>
                          {{link_to('#', 'ELENA', array('class'=>'agentLink'));}} <br/>
                          {{link_to('#', 'DAN', array('class'=>'agentLinkLast'));}}
                        </li>
-                       <li class="liAgents"><a class="th radius ulagents" data-reveal-id="mariusDan" href="#"><img src="{{url('comp/img/agents/Dan_Elena.jpg')}}" alt=""><a/>
+                       <li class="liAgents"><a class="th radius ulagents" data-reveal-id="mariusDan" href="#"><img src="{{url('comp/img/agents/Dan_Elena.jpg')}}" alt="RE/MAX FIRST CLASS agent profile Marius Dan"><a/>
                          {{link_to('#', 'MARIUS', array('class'=>'agentLink'));}} <br/>
                          {{link_to('#', 'DAN', array('class'=>'agentLinkLast'));}}
                        </li>
-                       <li class="liAgents"><a class="th radius ulagents" data-reveal-id="barryBenveniste" href="#"><img src="{{url('comp/img/agents/Barry_Benveniste.jpg')}}" alt=""><a/>
+                       <li class="liAgents"><a class="th radius ulagents" data-reveal-id="barryBenveniste" href="#"><img src="{{url('comp/img/agents/Barry_Benveniste.jpg')}}" alt="RE/MAX FIRST CLASS agent profile Barry Benveniste"><a/>
                          {{link_to('#', 'BARRY', array('class'=>'agentLink'));}} <br/>
                          {{link_to('#', 'BENVENISTE', array('class'=>'agentLinkLast'));}}
                        </li>
-                       <li class="liAgents"><a class="th radius ulagents" data-reveal-id="markFeyman" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt=""><a/>
+                       <li class="liAgents"><a class="th radius ulagents" data-reveal-id="markFeyman" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt="RE/MAX FIRST CLASS agent profile Mark Feyman"><a/>
                          {{link_to('#', 'MARK', array('class'=>'agentLink'));}} <br/>
                          {{link_to('#', 'FEYMAN', array('class'=>'agentLinkLast'));}}
                        </li>
-                       <li class="liAgents"><a class="th radius ulagents" data-reveal-id="haroldOza" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt=""><a/>
+                       <li class="liAgents"><a class="th radius ulagents" data-reveal-id="haroldOza" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt="RE/MAX FIRST CLASS agent profile Harold Oza"><a/>
                          {{link_to('#', 'HAROLD', array('class'=>'agentLink'));}} <br/>
                          {{link_to('#', 'OZA', array('class'=>'agentLinkLast'));}}
                        </li>
-                       <li class="liAgents"><a class="th radius ulagents" data-reveal-id="johnDias" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt=""><a/>
+                       <li class="liAgents"><a class="th radius ulagents" data-reveal-id="johnDias" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt="RE/MAX FIRST CLASS agent profile John B. Dias"><a/>
                          {{link_to('#', 'JOHN B.', array('class'=>'agentLink'));}} <br/>
                          {{link_to('#', 'DIAS', array('class'=>'agentLinkLast'));}}
                        </li>
@@ -330,8 +330,8 @@
                     <a class="th has-tip-left logoFooterPadding" title="Multiple Listing Service" href="#">
                       <img src="{{url('comp/img/mls.png')}}" alt="Multiple Listing Service">
                     </a>
-                    <a class="th has-tip-left logoFooterPadding" title="Coming Soon Remax 1st Class Commercial" href="#">
-                      <img src="{{url('comp/img/remax-commercial-logo.png')}}" alt="Remax 1st Class Commercial">
+                    <a class="th has-tip-left logoFooterPadding" title="Coming Soon RE/MAX 1ST CLASS COMMERCIAL" href="#">
+                      <img src="{{url('comp/img/remax-commercial-logo.png')}}" alt="RE/MAX 1ST CLASS COMMERCIAL">
                     </a>
                     <a target="_blank" class="th has-tip-left logoFooterPadding"  title="Visit Our Remax Short Sale Chicago Website"  href="http://www.shortsalechicago.us/Short-Sale-Chicago">
                       <img src="{{url('comp/img/Chicago-Short-Sale-Logo.png')}}" alt="Chicago Short Sale">
@@ -341,7 +341,7 @@
                 <div class="row">
                   <div class="large-12 columns logoRemaxFooter">
                     <a href="{{ URL::route('home')}}">
-                      <img src="{{url('comp/img/logo-footer.png')}}" alt="Logo Remax First Class">
+                      <img src="{{url('comp/img/logo-footer.png')}}" alt="Logo RE/MAX FIRST CLASS">
                       <a/>
                     </div>
                   </div>
@@ -378,12 +378,12 @@
                     <span class="contactFooter">CONNECT WITH US:</span>
                     <hr/>
                     <ul class="small-block-grid-3 ulFooterSocial">
-                      <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Facebook Page" href="https://www.facebook.com/pages/Remax-1st-CLASS/177448822432081"><img src="{{url('comp/img/social_footer/facebook.png')}}" alt="Skokie Remax First Class Facebook Icon"><a/></li>
-                      <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Twitter Page" href="https://twitter.com/RemaxFirstClass"><img src="{{url('comp/img/social_footer/twitter.png')}}" alt="Skokie Remax First Class Twitter Icon"><a/></li>
-                      <li class="liFooterConnectRight"><a target="_blank" class="has-tip-left" title="Our Linkedin Page" href="http://www.linkedin.com/profile/view?id=271875691&trk=nav_responsive_tab_profile"><img src="{{url('comp/img/social_footer/linkedin.png')}}" alt="Skokie Remax First Class Linkedin Icon"><a/></li>
-                      <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Google Plus Page" href="#"><img src="{{url('comp/img/social_footer/google.png')}}" alt="Skokie Remax First Class Google Icon"><a/></li>
-                      <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Yelp Page" href="http://www.yelp.com/biz/remax-first-class-skokie"><img src="{{url('comp/img/social_footer/yelp.png')}}" alt="Skokie Remax First Class Feed Icon"><a/></li>
-                      <li class="liFooterConnectRight"><a target="_blank" class="has-tip-left" title="Our Page" href="https://www.youtube.com/"><img src="{{url('comp/img/social_footer/you_tube.png')}}" alt="Skokie Remax First Class Youtube Icon"><a/></li>
+                      <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Facebook Page" href="https://www.facebook.com/pages/Remax-1st-CLASS/177448822432081"><img src="{{url('comp/img/social_footer/facebook.png')}}" alt="RE/MAX FIRST CLASS Facebook Profile"><a/></li>
+                      <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Twitter Page" href="https://twitter.com/RemaxFirstClass"><img src="{{url('comp/img/social_footer/twitter.png')}}" alt="Remax First Class Twitter Profile"><a/></li>
+                      <li class="liFooterConnectRight"><a target="_blank" class="has-tip-left" title="Our Linkedin Page" href="http://www.linkedin.com/profile/view?id=271875691&trk=nav_responsive_tab_profile"><img src="{{url('comp/img/social_footer/linkedin.png')}}" alt="Remax First Class Linkedin Profile"><a/></li>
+                      <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Google Plus Page" href="#"><img src="{{url('comp/img/social_footer/google.png')}}" alt="Remax First Class Google Profile"><a/></li>
+                      <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Yelp Page" href="http://www.yelp.com/biz/remax-first-class-skokie"><img src="{{url('comp/img/social_footer/yelp.png')}}" alt="Remax First Class Feed Profile"><a/></li>
+                      <li class="liFooterConnectRight"><a target="_blank" class="has-tip-left" title="Our Page" href="https://www.youtube.com/"><img src="{{url('comp/img/social_footer/you_tube.png')}}" alt="Remax First Class Youtube Profile"><a/></li>
                     </ul>
                   </section>
                 </div>
@@ -415,7 +415,7 @@
           <div class="large-2 columns">
 
             <a class="logoS" href="{{URL::route('home')}}" title="Home Page">
-             <img src="{{url('comp/img/REMAX1LogoS.png')}}" alt="Remax First Class Logo">
+             <img src="{{url('comp/img/REMAX1LogoS.png')}}" alt="RE/MAX FIRST CLASS Logo">
            </a> 
          </div>
 
@@ -569,7 +569,7 @@
                           <div class="large-2 columns">
 
                             <a class="logoS" href="{{URL::route('home')}}" title="Home Page">
-                             <img src="{{url('comp/img/REMAX1LogoS.png')}}" alt="Remax First Class Logo">
+                             <img src="{{url('comp/img/REMAX1LogoS.png')}}" alt="RE/MAX FIRST CLASS Logo">
                            </a> 
                          </div>
 
@@ -624,7 +624,7 @@
                           <div class="large-2 columns">
 
                             <a class="logoS" href="{{URL::route('home')}}" title="Home Page">
-                             <img src="{{url('comp/img/REMAX1LogoS.png')}}" alt="Remax First Class Logo">
+                             <img src="{{url('comp/img/REMAX1LogoS.png')}}" alt="RE/MAX FIRST CLASS Logo">
                            </a> 
                          </div>
 
@@ -654,7 +654,7 @@
                      </ul>
                    </div>                           
                  </div>
-                 <div class="agentPic"><img src="{{url('comp/img/agentsL/Dan_I_Florian.jpg')}}" alt="Dan I. Florian">
+                 <div class="agentPic"><img src="{{url('comp/img/agentsL/Dan_I_Florian.jpg')}}" alt="Dan I. Florian, RE/MAX FIRST CLASS Agent">
                  </div>
                  <div>{{link_to('agent/4', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
                  </div>
@@ -714,7 +714,7 @@
                   <div class="large-2 columns">
 
                     <a class="logoS" href="{{URL::route('home')}}" title="Home Page">
-                     <img src="{{url('comp/img/REMAX1LogoS.png')}}" alt="Remax First Class Logo">
+                     <img src="{{url('comp/img/REMAX1LogoS.png')}}" alt="RE/MAX FIRST CLASS Logo">
                    </a> 
                  </div>
 
@@ -745,7 +745,7 @@
              </ul>
            </div>                           
          </div>
-         <div class="agentPic"><img src="{{url('comp/img/agentsL/Ivy_Moy.jpg')}}" alt="Ivy Moy"></div>
+         <div class="agentPic"><img src="{{url('comp/img/agentsL/Ivy_Moy.jpg')}}" alt="Ivy Moy, RE/MAX FIRST CLASS Agent"></div>
          <div>{{link_to('agent/2', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
          </div>
        </div>
@@ -805,7 +805,7 @@
                       <div class="large-2 columns">
 
                         <a class="logoS" href="{{URL::route('home')}}" title="Home Page">
-                         <img src="{{url('comp/img/REMAX1LogoS.png')}}" alt="Remax First Class Logo">
+                         <img src="{{url('comp/img/REMAX1LogoS.png')}}" alt="RE/MAX FIRST CLASS Logo">
                        </a> 
                      </div>
 
@@ -837,7 +837,7 @@
                       </div>                           
                     </div>
                     <div class="agentPic">
-                      <img src="{{url('comp/img/agentsL/Cherylette_Hilton.jpg')}}" alt="Crerylette Hilton">
+                      <img src="{{url('comp/img/agentsL/Cherylette_Hilton.jpg')}}" alt="Crerylette Hilton, RE/MAX FIRST CLASS Agent">
                     </div>
                     <div>{{link_to('agent/1', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
                     </div>
@@ -897,7 +897,7 @@
                     <div class="large-2 columns">
 
                       <a class="logoS" href="{{URL::route('home')}}" title="Home Page">
-                       <img src="{{url('comp/img/REMAX1LogoS.png')}}" alt="Remax First Class Logo">
+                       <img src="{{url('comp/img/REMAX1LogoS.png')}}" alt="RE/MAX FIRST CLASS Logo">
                      </a> 
                    </div>
 
@@ -935,7 +935,7 @@
                </ul>
              </div>                           
            </div>
-           <div class="agentPic"><img src="{{url('comp/img/agentsL/Dan_Elena.jpg')}}" alt="Elena Dan"></div>
+           <div class="agentPic"><img src="{{url('comp/img/agentsL/Dan_Elena.jpg')}}" alt="Elena Dan, RE/MAX FIRST CLASS Agent"></div>
            <div>{{link_to('agent/3', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
            </div>
          </div>
@@ -996,7 +996,7 @@
             <div class="large-2 columns">
 
               <a class="logoS" href="{{URL::route('home')}}" title="Home Page">
-               <img src="{{url('comp/img/REMAX1LogoS.png')}}" alt="Remax First Class Logo">
+               <img src="{{url('comp/img/REMAX1LogoS.png')}}" alt="RE/MAX FIRST CLASS Logo">
              </a> 
            </div>
 
@@ -1027,7 +1027,7 @@
      </div>                           
    </div>
    <div class="agentPic">
-     <img src="{{url('comp/img/agentsL/Dan_Elena.jpg')}}" alt="Marius Dan">
+     <img src="{{url('comp/img/agentsL/Dan_Elena.jpg')}}" alt="Marius Dan, RE/MAX FIRST CLASS Agent">
    </div>
    <div>{{link_to('agent/5', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
    </div>
@@ -1088,7 +1088,7 @@
           <div class="large-2 columns">
 
             <a class="logoS" href="{{URL::route('home')}}" title="Home Page">
-             <img src="{{url('comp/img/REMAX1LogoS.png')}}" alt="Remax First Class Logo">
+             <img src="{{url('comp/img/REMAX1LogoS.png')}}" alt="RE/MAX FIRST CLASS Logo">
            </a> 
          </div>
 
@@ -1119,7 +1119,7 @@
    </div>                           
  </div>
  <div class="agentPic">
-   <img src="{{url('comp/img/agentsL/Barry_Benveniste.jpg')}}" alt="Barry Benveniste">
+   <img src="{{url('comp/img/agentsL/Barry_Benveniste.jpg')}}" alt="Barry Benveniste, RE/MAX FIRST CLASS Agent">
  </div>
  <div>{{link_to('agent/6', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
  </div>
@@ -1174,7 +1174,7 @@
         <nav class="top-bar min">
           <div class="large-2 columns">
             <a class="logoS" href="{{URL::route('home')}}" title="Home Page">
-             <img src="{{url('comp/img/REMAX1LogoS.png')}}" alt="Remax First Class Logo">
+             <img src="{{url('comp/img/REMAX1LogoS.png')}}" alt="RE/MAX FIRST CLASS Logo">
            </a> 
          </div>
 
@@ -1205,7 +1205,7 @@
    </div>                           
  </div>
  <div class="agentPic">
-   <img src="{{url('comp/img/agentsL/3.png')}}" alt="Mark Feyman">
+   <img src="{{url('comp/img/agentsL/3.png')}}" alt="Mark Feyman, RE/MAX FIRST CLASS Agent">
  </div>
  <div>{{link_to('agent/7', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
  </div>
@@ -1262,7 +1262,7 @@
           <div class="large-2 columns">
 
             <a class="logoS" href="{{URL::route('home')}}" title="Home Page">
-             <img src="{{url('comp/img/REMAX1LogoS.png')}}" alt="Remax First Class Logo">
+             <img src="{{url('comp/img/REMAX1LogoS.png')}}" alt="RE/MAX FIRST CLASS Logo">
            </a> 
          </div>
 
@@ -1294,7 +1294,7 @@
                        </div>                           
                      </div>
                      <div class="agentPic">
-                       <img src="{{url('comp/img/agentsL/3.jpg')}}" alt="Harold Oza">
+                       <img src="{{url('comp/img/agentsL/3.jpg')}}" alt="Harold Oza, RE/MAX FIRST CLASS Agent">
                      </div>
                      <div>{{link_to('agent/8', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
                      </div>
@@ -1374,7 +1374,7 @@
                      </ul>
                    </div>                           
                  </div>
-                 <div class="agentPic"><img src="{{url('comp/img/agentsL/3.png')}}" alt="John Dias"></div>
+                 <div class="agentPic"><img src="{{url('comp/img/agentsL/3.png')}}" alt="John Dias, RE/MAX FIRST CLASS Agent"></div>
 
                  <div>{{link_to('agent/9', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
                  </div>
