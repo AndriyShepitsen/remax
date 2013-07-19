@@ -379,6 +379,8 @@ label{
 }
 .newListingsTitle{
 	color: $colorFontGray;
+	font-size: 14px;
+	letter-spacing: 1px;
 }
 .newListingsTitle:hover{
 	color: lighten($colorFontGray, 10%);
