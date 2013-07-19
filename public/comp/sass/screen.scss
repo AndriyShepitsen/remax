@@ -65,7 +65,7 @@ $colorBlue: #396C95;
 	display: inline-block;
 	font-weight:bold;
 	margin-bottom: 25px;
-	font-size: 20px;
+	font-size: 18px;
 	color: $colorFontGray;
 }
 
@@ -308,6 +308,7 @@ label{
 .propertiesAllert{
 	text-align: center;
 	color: $colorNavPanel;
+	font-size: 13px !important; 
 }
 .propertiesAllert:hover, .propertiesAllert:active{
 	color: lighten($colorNavPanel, 25%);
@@ -320,12 +321,16 @@ label{
 
 
 .showAllListings{
+	margin-bottom: 10px !important;	
 	button, .button {
 		@include myButtonStyle;
 	}
 	button:hover, button:focus, .button:hover, .button:focus{
 		background-color: $colorNavPanel !important;
 	}
+}
+.listingsAlertBox{
+	margin-bottom: 10px !important;
 }
 .listingImage{
 	margin-left: 0px !important;
@@ -380,7 +385,7 @@ article p{
 	border:none !important;
 	padding: 0px  !important;
 	li a{
-	font-size: 9px !important;
+		font-size: 9px !important;
 		
 	}
 }
