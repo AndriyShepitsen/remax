@@ -20,7 +20,7 @@
 	<div class="row">
 		<div class="large-12 columns">
 			<div class="orbit-container panel">
-				<h3>Our selected property</h3>
+				<h5>Our selected property</h5>
 				<ul class="orbit-slides-container" data-orbit data-options="timer_speed:26000;">
 					<li>
 						<img src="{{url('comp/img/orbit/1.jpg')}}" alt="">

@@ -124,6 +124,15 @@ h2, h3, h4{
 }
 h1{
 	color: $colorNavPanel !important;
+	font-size: 35px !important;
+	line-height: 40px !important;
+}
+p{
+	font-size:12px !important;
+	line-height: 22px !important;
+}
+.companyName{
+	font-size: 17px !important;
 }
 .name{
 	a{
@@ -140,6 +149,8 @@ h1{
 }
 .top-bar-section ul li > a {
 	background-color: $colorNavPanel !important;
+	font-size: 12px !important;
+	letter-spacing: 1px !important;
 }
 .toggle-topbar, .top-bar.expanded .title-area{
 	background-color: $colorNavPanel !important;
@@ -379,7 +390,7 @@ label{
 }
 .newListingsTitle{
 	color: $colorFontGray;
-	font-size: 14px;
+	font-size: 16px;
 	letter-spacing: 1px;
 }
 .newListingsTitle:hover{
@@ -485,8 +496,10 @@ ul.ulagents li {
 	}
 	.agentLink{
 		color: $colorNavPanel;
+		font-size: 10px !important;
 	}
 	.agentLinkLast{
+		font-size: 10px !important;
 		color: $colorNavPanel;
 		margin-top: -5px;
 		display: inline-block;

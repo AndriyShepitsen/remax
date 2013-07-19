@@ -31,7 +31,7 @@
             <ul class="title-area">
               <!-- Title Area -->
               <li class="name">
-                <h1>
+                <h1 class="companyName">
                   {{link_to_route('home', 'REMAX FIRST CLASS');}}
                 </h1>
               </li>
