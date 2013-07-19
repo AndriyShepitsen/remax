@@ -395,6 +395,10 @@ article p{
 }
 
 /* =newListings style starts here  */
+.listingSection{
+	padding-right: 0px 	!important;
+	padding-left: 0px 	!important;
+}
 .newListings{
 	@include myPanelStyle;
 	.liNewListings{

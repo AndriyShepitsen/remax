@@ -83,7 +83,7 @@
 			"file": "app/views/home/vw_home.blade.php",
 			"settings":
 			{
-				"buffer_size": 4324,
+				"buffer_size": 4318,
 				"line_ending": "Windows"
 			}
 		},
@@ -91,23 +91,15 @@
 			"file": "app/views/search/onehouse.blade.php",
 			"settings":
 			{
-				"buffer_size": 1069,
+				"buffer_size": 1070,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/views/layouts/master.blade.php",
+			"file": "app/views/search/results.blade.php",
 			"settings":
 			{
-				"buffer_size": 63511,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/views/search/showall.blade.php",
-			"settings":
-			{
-				"buffer_size": 1132,
+				"buffer_size": 1200,
 				"line_ending": "Windows"
 			}
 		},
@@ -125,6 +117,23 @@
 			{
 				"buffer_size": 728,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/layouts/master.blade.php",
+			"settings":
+			{
+				"buffer_size": 65113,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "65, Orrington Elementary School",
+			"settings":
+			{
+				"buffer_size": 31,
+				"line_ending": "Windows",
+				"name": "65, Orrington Elementary School"
 			}
 		}
 	],
@@ -196,13 +205,15 @@
 	},
 	"file_history":
 	[
+		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/link_to_new_page.sublime-snippet",
+		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/Gist.sublime-settings",
+		"/C/xampp/htdocs/remax/app/views/search/showall.blade.php",
 		"/C/xampp/htdocs/remax/app/views/news/vw_news_for_sellers.blade.php",
 		"/C/xampp/htdocs/remax/app/views/news/vw_news_for_buyers.blade.php",
 		"/C/xampp/htdocs/remax/app/views/contact/vw_contact.blade.php",
 		"/C/xampp/htdocs/remax/public/comp/sass/screen.scss",
 		"/C/xampp/htdocs/remax/app/views/search/results.blade.php",
 		"/C/xampp/htdocs/remax/app/views/layouts/master.blade.php",
-		"/C/xampp/htdocs/remax/app/views/search/showall.blade.php",
 		"/C/xampp/htdocs/remax/app/controllers/agent/AgentController.php",
 		"/C/xampp/htdocs/remax/app/views/search/onehouse.blade.php",
 		"/C/xampp/htdocs/remax/app/controllers/search/SearchController.php",
@@ -216,7 +227,6 @@
 		"/C/xampp/htdocs/remax/composer.json",
 		"/C/xampp/htdocs/remax/artisanCommand.txt",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/CHANGELOG",
-		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/Gist.sublime-settings",
 		"/C/xampp/htdocs/remax/app/views/home/vw_home.blade.php",
 		"/C/xampp/htdocs/remax/app/database/seeds/NewsTableSeeder.php",
 		"/C/xampp/htdocs/remax/app/database/seeds/DatabaseSeeder.php",
@@ -253,6 +263,42 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"alt",
+			"Remax First Class ",
+			"alt",
+			"Skokie ",
+			"Icon",
+			"alt",
+			"\"\"",
+			"alt",
+			"\"\"",
+			"alt",
+			"emax First Class",
+			"Icon",
+			"alt",
+			"ivy",
+			"MARK",
+			"mark",
+			"new listi",
+			"orbit",
+			"<a ",
+			"a ",
+			"<a ",
+			"short sale",
+			"Dias",
+			"Oz",
+			"Mark",
+			"Barry",
+			"marius",
+			"Florian",
+			"ivy",
+			"p",
+			"shortsale",
+			"search.showall",
+			"1",
+			"google",
+			"yout",
+			"orbit",
 			"maincont",
 			"ulWorkWith",
 			"clearing-thumbs",
@@ -344,43 +390,7 @@
 			"\n		",
 			"\n	",
 			"\n		",
-			"mypanel",
-			"ouragent",
-			"myPanelStyle",
-			"ouragen",
-			"ulagents",
-			"agent ",
-			"agent",
-			"ulagents",
-			"15",
-			"$colorNavPanel",
-			"-5",
-			"105",
-			"liAgents",
-			"<li",
-			".small-block-grid-3",
-			"DIAS",
-			"th radius agent",
-			"th radius",
-			"price",
-			"agentli",
-			"name",
-			"pagination",
-			"pa",
-			"pagination",
-			"pag",
-			"pagination",
-			"address",
-			"search",
-			"searsh",
-			"20",
-			"showAllListings",
-			"showAllListings .button",
-			"browseall",
-			"Title",
-			"title",
-			"Title",
-			"find"
+			"mypanel"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -398,7 +408,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -407,15 +417,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4324,
+						"buffer_size": 4318,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1036,
-								1036
+								1213,
+								1213
 							]
 						],
 						"settings":
@@ -424,7 +434,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 66.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -435,20 +445,21 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1069,
+						"buffer_size": 1070,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								597,
-								597
+								926,
+								926
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage"
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 162.0,
@@ -458,48 +469,19 @@
 				},
 				{
 					"buffer": 2,
-					"file": "app/views/layouts/master.blade.php",
+					"file": "app/views/search/results.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 63511,
+						"buffer_size": 1200,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								15404,
-								15404
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 5272.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/views/search/showall.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1132,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								956,
-								138
+								763,
+								763
 							]
 						],
 						"settings":
@@ -516,11 +498,11 @@
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "public/comp/sass/screen.scss",
 					"semi_transient": false,
 					"settings":
@@ -532,8 +514,8 @@
 						"selection":
 						[
 							[
-								5285,
-								5285
+								10846,
+								10849
 							]
 						],
 						"settings":
@@ -542,13 +524,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 5056.0,
+						"translation.y": 9466.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "app/views/news/vw_news.blade.php",
 					"semi_transient": false,
 					"settings":
@@ -568,6 +550,62 @@
 						{
 							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/views/layouts/master.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 65113,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								331,
+								334
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 31,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								31
+							]
+						],
+						"settings":
+						{
+							"auto_name": "65, Orrington Elementary School",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -606,7 +644,7 @@
 		"cols":
 		[
 			0.0,
-			0.586979166667,
+			0.400566389065,
 			1.0
 		],
 		"rows":
