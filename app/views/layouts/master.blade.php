@@ -174,7 +174,7 @@
 
                         <div class="section-container auto" data-section>
                           <section>
-                            <p class="title" data-section-title><a href="#panel1">Homes for Sale</a></p>
+                            <h5 class="title" data-section-title><a class="sectionWidth find" href="#panel1"> PROPERTY FOR SALE</a></h5>
                             <div class="content" data-section-content>
 
 
@@ -182,7 +182,6 @@
 
 
 
-                              <span class="find">FIND YOUR HOME FOR SALE</span> 
                               <div class="row">
                                 <div class="large-12 columns">
 
@@ -264,9 +263,8 @@
                          </div>
                        </section>   <!-- =find your home section ends here -->
                        <section>
-                         <p class="title" data-section-title><a href="#panel2">Homes for Rent</a></p>
+                         <h5 class="title" data-section-title><a class="sectionWidth find" href="#panel2">PROPERTY FOR RENT</a></h5>
                          <div class="content" data-section-content>
-                          <span class="find">FIND YOUR HOME FOR RENT</span> 
                           <div class="row">
                             <div class="large-12 columns">
 

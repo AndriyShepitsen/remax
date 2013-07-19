@@ -64,8 +64,6 @@ $colorBlue: #396C95;
 @mixin findFormStyle {
 	display: inline-block;
 	font-weight:bold;
-	margin-bottom: 25px;
-	font-size: 18px;
 	color: $colorFontGray;
 }
 
@@ -294,8 +292,16 @@ h1{
 	}
 }
 /* =find starts here */
-
-
+.submitSearch{
+	font-size: 11px !important;
+	letter-spacing: 1px;
+}
+.sectionWidth{
+	font-size: 11px !important;
+	font-weight: bold;
+	letter-spacing: 1px;
+	padding: 14px !important;
+}
 .find{
 	@include findFormStyle;
 }
@@ -304,11 +310,13 @@ h1{
 }
 label{
 	margin-bottom: .5em;
+	font-size: 12px !important;
 }
 .propertiesAllert{
 	text-align: center;
 	color: $colorNavPanel;
-	font-size: 13px !important; 
+	font-size: 11px !important; 
+	letter-spacing: 1px;
 }
 .propertiesAllert:hover, .propertiesAllert:active{
 	color: lighten($colorNavPanel, 25%);
@@ -324,6 +332,9 @@ label{
 	margin-bottom: 10px !important;	
 	button, .button {
 		@include myButtonStyle;
+		font-size: 11px !important;
+		letter-spacing: 1px;
+		word-spacing: 2px !important;
 	}
 	button:hover, button:focus, .button:hover, .button:focus{
 		background-color: $colorNavPanel !important;
@@ -403,6 +414,9 @@ article p{
 .listingSection{
 	padding-right: 0px 	!important;
 	padding-left: 0px 	!important;
+	input[type="text"]{
+		font-size: 12px !important;
+	}
 }
 .newListings{
 	@include myPanelStyle;
