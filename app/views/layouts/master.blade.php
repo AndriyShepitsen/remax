@@ -325,7 +325,7 @@
                         </div>
                         <div class="row">
                          <div class="large-6 columns">
-                         {{link_to('browse/1', 'APARTMENTS', array('class'=>'alert-box secondary expand radius p'));}}
+                         {{link_to('browse/1', 'APARTMENTS', array('class'=>'alert-box secondary expand radius propertiesAllert'));}}
                          </div>
 
                          <div class="large-6 columns">
@@ -344,7 +344,7 @@
              <div class="row">
                <div class="large-12 columns panel newListings"> 
                  <div>
-                  <h4> <a class="newListingsTitle" href="#">NEW LISTINGS FOR SALE</a> </h4>
+                  <h4> <a class="newsHead" href="#">NEW LISTINGS FOR SALE</a> </h4>
                 </div>
                 <hr/>
                 <ul class="small-block-grid-3 clearing-thumbs ullistings">
@@ -361,7 +361,7 @@
 
             <div class="row">
              <div class="large-12 columns panel ourAgents">
-               <h4><a class="newListingsTitle"href="">OUR AGENTS</a> <h4>
+               <div><h4 class="newsHead"><a class="newsHead"href="">OUR AGENTS</a> <h4></div>
                  <hr/>
                  <ul class="small-block-grid-3 ulagents">
                    <li  class="liAgents"><a class="th radius" data-reveal-id="danFlorian" href="#"><img src="{{url('comp/img/agents/Dan_I_Florian.jpg')}}" alt="RE/MAX FIRST CLASS agent profile, Dan I. Florian"><a/>
@@ -521,7 +521,7 @@
       </div>
     </nav>
   </div>
-  <h3 class="subheader">Contact Us</h3>
+  <h3 class="subheader contactModal">Contact Us</h3>
   {{Form::open(array('url' => 'sendmail'))}}
   {{Form::label('email', 'Your E-mail')}}
   {{Form::text('email', '', array('placeholder'=>'@', 'class'=>'txt'))}}

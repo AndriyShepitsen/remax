@@ -5,7 +5,7 @@
 
 <div class="mainContent">
 	<div class="row">
-		<div class="large-12 columns">
+		<div class="large-12 columns menues">
 			<h1>Anatomy of a Home Purchase</h1>
 			<hr/>
 			<p>For most people, finding the right home begins with a house-hunting strategy combining personal preferences, guidance from others (including an agent) and a mix of neighborhood exploring and online search.</p>

@@ -5,7 +5,7 @@
 
 <div class="mainContent">
 	<div class="row">
-		<div class="large-12 columns">
+		<div class="large-12 columns menues">
 			<h1>How an Agent Markets Your Home</h1>
 			<hr/>
 			<p>Experienced agents understand how to accurately price your home and make it stand out in the market. They also have access to a vast referral network, enabling them to connect with potential buyers across town or around the world.</p>

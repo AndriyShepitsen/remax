@@ -5,7 +5,7 @@
 
 <div class="mainContent">
 	<div class="row">
-		<div class="large-12 columns">
+		<div class="large-12 columns menues">
 			<h1>Finding the Right Mortgage Professional</h1>
 			<hr/>
 			<p>A RE/MAX agent can help you find a solid lender or broker. You might also ask friends, family members and colleagues for references.</p>

@@ -5,7 +5,7 @@
 
 <div class="mainContent">
 	<div class="row">
-		<div class="large-12 columns">
+		<div class="large-12 columns menues">
 			<h1>Consider a Home Inspection When Selling</h1>
 			<hr/>
 			<p>A home inspection isn’t just for buyers. It’s also something sellers should seriously consider before putting their house on the market.</p>

@@ -127,14 +127,31 @@ h1{
 	font-size: 35px !important;
 	line-height: 40px !important;
 }
-p{
-	font-size:12px !important;
-	line-height: 22px !important;
+h3{
+	font-size: 22px !important;
+}
+.ulWorkWith{
+	
+	p{
+		font-size:12px !important;
+		line-height: 22px !important;
+	}
+}
+.about-us{
+
+	p{
+		font-size:13px !important;
+		line-height: 22px !important;
+	}
 }
 .companyName{
 	font-size: 17px !important;
 }
 .name{
+	h1{
+
+		font-size: 17px !important;
+	}
 	a{
 		color: $colorFontOffWhite; 
 	}
@@ -292,26 +309,46 @@ p{
 /* =mainContent starts here */
 #mainContent{
 	@include mainContentStyle;
-	h4{
-		margin-bottom: 9px !important;
+	
+		dt{
+			font-size: 13px !important;
+		}
+		dd{
+			font-size: 13px !important;
+		}
+		.menues{
+		p{
+			font-size: 13px !important;
+		}
 	}
+		
 }
 /*  =home page starts here*/
+.selectedProperty{
+	letter-spacing: 1px;
+}
 .ulWorkWith{
 	li{
 		margin-left: 20px;
+		font-size: 13px !important;
 	}
 }
+
 /* =find starts here */
+.section-container.auto > section .content{
+	background-color: #FBFBFB;
+}
 .submitSearch{
 	font-size: 11px !important;
 	letter-spacing: 1px;
+	text-shadow: $myTextShadow;
 }
 .sectionWidth{
-	font-size: 11px !important;
+	font-size: 12px !important;
 	font-weight: bold;
-	letter-spacing: 1px;
-	padding: 14px !important;
+	padding-left: 14px !important;
+	text-shadow: $myTextShadow;
+
 }
 .find{
 	@include findFormStyle;
@@ -376,10 +413,13 @@ label{
 
 /* news start here */
 .readMore{
-	font-size: 0.6em;
+	font-size: 9px;
+	letter-spacing: 1px;
 }
 .newsHead{
-	color: $colorFontGray; 
+	color: $colorFontGray !important; 
+	font-size: 18px !important;
+	text-shadow: $myTextShadow !important;
 }
 .newsHead:hover{
 	color: lighten($colorFontGray, 10%);
@@ -387,6 +427,13 @@ label{
 .newsHead:active{
 	color: lighten($colorFontGray, 10%);
 
+}
+.newsHeadHover{
+	font-size: 14px !important;
+	font-weight: bold;
+	p{
+		font-size: 10px !important;
+	}
 }
 .newListingsTitle{
 	color: $colorFontGray;
@@ -401,9 +448,12 @@ label{
 
 }
 article p{
-	font-size: .8em;
+	font-size: 10px;
 	line-height: 1.7em; 
 	margin-bottom: .5em;
+}
+.pNews{
+	font-size: 10px !important;
 }
 .breadcrumbs {
 	border:none !important;
@@ -429,6 +479,9 @@ article p{
 	padding-left: 0px 	!important;
 	input[type="text"]{
 		font-size: 12px !important;
+	}
+	.content{
+		padding: 14px !important;
 	}
 }
 .newListings{
@@ -520,6 +573,7 @@ ul.ulagents li {
 }
 .agentName{
 	margin-bottom: 5px 	!important;
+	font-size:27px !important;
 }
 .specialist:hover, .specialist:focus{
 	color: $colorFontOffWhite !important;
@@ -710,4 +764,7 @@ fieldset legend{
 	.button{
 		@include myButtonStyle;		
 	}
+}
+.contactModal{
+	font-size: 27px !important;	
 }

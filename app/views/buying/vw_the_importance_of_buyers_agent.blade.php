@@ -5,7 +5,7 @@
 
 <div class="mainContent">
 	<div class="row">
-		<div class="large-12 columns">
+		<div class="large-12 columns menues">
 			<h1>The Importance of a Buyer's Agent</h1>
 			<hr/>
 				<p>A real estate transaction is a complex process involving stacks of paperwork and a number of outside service providers and contractors.</p>

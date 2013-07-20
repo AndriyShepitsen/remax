@@ -5,7 +5,7 @@
 
 <div class="mainContent">
 	<div class="row">
-		<div class="large-12 columns">
+		<div class="large-12 columns menues">
 			<h1>Deciding Where to Live </h1>
 			<hr/>
 				<p>If you're unfamiliar with the area where you’re moving, your buyer’s agent is an invaluable resource. He or she can offer insider knowledge on neighborhoods, schools, access to recreation and shopping districts, and the many other details on local neighborhoods and subdivisions.</p>

@@ -5,7 +5,7 @@
 
 <div class="mainContent">
 	<div class="row">
-		<div class="large-12 columns">
+		<div class="large-12 columns menues">
 			<h1>Prepping Your House for Sale</h1>
 			<hr/>
 			<p>Potential buyers get an impression of your home – either positive or negative – within 30 seconds of walking through the door. Having them see your home in tip-top selling shape is an absolute must.</p>

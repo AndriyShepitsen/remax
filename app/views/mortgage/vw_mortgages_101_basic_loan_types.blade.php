@@ -5,9 +5,9 @@
 
 <div class="mainContent">
 	<div class="row">
-		<div class="large-12 columns">
+		<div class="large-12 columns menues">
 			<h1>Mortgages 101: Basic Loan Types </h1>
-
+<hr/>
 			<h4>Fixed-rate mortgages</h4>
 			<p>With a fixed-rate mortgage, your interest rate – and your monthly payment of principal and interest – will stay the same for the entire term of the loan. This type of mortgage tends to be the most popular because it protects homeowners from the possibility of future monthly payment increases (a situation faced by borrowers who select an adjustable-rate mortgage) and is very straightforward.</p>
 			<h4>Fixed-period Adjustable-Rate Mortgage (ARM) or hybrid ARM</h4>

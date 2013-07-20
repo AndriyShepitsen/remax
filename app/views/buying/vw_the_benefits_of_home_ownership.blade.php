@@ -5,7 +5,7 @@
 
 <div class="mainContent">
 	<div class="row">
-		<div class="large-12 columns">
+		<div class="large-12 columns menues">
 			<h1>The Benefits of Home Ownership</h1>
 			<hr/>
 				<p>Plain and simple, owning a home can improve your quality of life, provide stability and give you a sense of control you just can't get from renting. You have a place to live when you rent, but buying is something much deeper – and better.</p>

@@ -5,7 +5,7 @@
 
 <div class="mainContent">
 	<div class="row">
-		<div class="large-12 columns">
+		<div class="large-12 columns menues">
 			<h1>Pricing Your Home to Sell</h1>
 			<hr/>
 			<p>Smart, competitive pricing is essential. When you price too high, your home stays on the market longer, prolonging the process and increasing your expenses along the way.</p>

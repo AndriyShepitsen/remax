@@ -4,7 +4,7 @@
 -->
 <div id="mainContent">
 	<div class="row">
-		<div class="large-12 columns">
+		<div class="large-12 columns menues">
 			<div class="newsContent">
 
 				<h1>Real Estate News</h1>		

@@ -4,7 +4,7 @@
 -->
 <div id="mainContent">
 	<div class="row">
-		<div class="large-12 columns">
+		<div class="large-12 columns menues">
 			<ul class="breadcrumbs">
 				<li class="newsL">{{link_to_route('real_estate_news', 'NEWS');}}</li>
 				@if ($news[0]->bs == 2 )	
@@ -12,6 +12,9 @@
 				@endif
 				<hr/> 
 			</ul>
+			<h1>News for Sellers</h1>
+			<hr/>
+
 			@foreach($news as $new)
 			<h4>{{$new->title}}</h4>
 			<hr/>

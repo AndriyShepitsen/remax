@@ -5,7 +5,7 @@
 
 <div class="mainContent">
 	<div class="row">
-		<div class="large-12 columns">
+		<div class="large-12 columns menues">
 			<h1>Getting Preapproved</h1>
 			<hr/>
 			<p>Getting approved for a loan prior to your home search is a smart move that offers several advantages. It gives you a benchmark for how much you can afford, helping you narrow down your home search from the start. It also allows you to be taken more seriously in the bidding stage, which can help tremendously in your negotiations, especially when dealing with distressed properties.</p>

@@ -4,7 +4,7 @@
 -->
 <div id="mainContent">
 	<div class="row">
-		<div class="large-12 columns">
+		<div class="large-12 columns menues">
 			<ul class="breadcrumbs">
 				<!-- <a href="#">NEWS</a></li> -->
 				<li class="breadcrumbsFontStyle">{{link_to_route('real_estate_news', 'NEWS');}}</li>

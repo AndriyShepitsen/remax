@@ -5,7 +5,7 @@
 
 <div class="mainContent">
 	<div class="row">
-		<div class="large-12 columns">
+		<div class="large-12 columns menues">
 			<h1>Down Payments: How Much Do You Need?</h1>
 			<hr/>
 			<p>Down payments for homes can range from 5 to 20 percent of the purchase price, depending on the type of product you are eligible for.</p>

@@ -5,7 +5,7 @@
 
 <div class="mainContent">
 	<div class="row">
-		<div class="large-12 columns">
+		<div class="large-12 columns menues">
 			<h1>How Much Can You Afford?</h1>
 			<hr/>
 			<p>Figuring out how much you can afford is a crucial first step in the home-buying process. Knowing the answer to this question early will make your home search more focused and less stressful.</p>

@@ -5,7 +5,7 @@
 
 <div class="mainContent">
 	<div class="row">
-		<div class="large-12 columns">
+		<div class="large-12 columns menues">
 			<h1>5 Tips to Narrow Your Online Home Search</h1>
 			<hr/>
 			<p>You’ve decided to make the leap and move. Excitement. Anticipation. A little anxiety. You’re probably feeling a mix of all these emotions, especially as you navigate various online home search sites out there.</p>
