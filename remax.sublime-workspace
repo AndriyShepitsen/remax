@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"tesh",
+				"myTextShadow"
+			],
+			[
+				"ls",
+				"letter-spacing"
+			],
+			[
 				"pa",
 				"padding-left"
 			],
@@ -79,63 +87,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "app/views/home/vw_home.blade.php",
-			"settings":
-			{
-				"buffer_size": 4318,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/views/search/onehouse.blade.php",
-			"settings":
-			{
-				"buffer_size": 1070,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/views/search/results.blade.php",
-			"settings":
-			{
-				"buffer_size": 1200,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "public/comp/sass/screen.scss",
-			"settings":
-			{
-				"buffer_size": 11537,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/views/news/vw_news.blade.php",
-			"settings":
-			{
-				"buffer_size": 728,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/views/layouts/master.blade.php",
-			"settings":
-			{
-				"buffer_size": 65113,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "65, Orrington Elementary School",
-			"settings":
-			{
-				"buffer_size": 31,
-				"line_ending": "Windows",
-				"name": "65, Orrington Elementary School"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -205,21 +156,42 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/remax/app/views/search/onehouse.blade.php",
+		"/C/xampp/htdocs/remax/public/comp/sass/screen.scss",
+		"/C/xampp/htdocs/remax/app/views/search/results.blade.php",
+		"/C/xampp/htdocs/remax/app/views/home/vw_home.blade.php",
+		"/C/xampp/htdocs/remax/app/views/layouts/master.blade.php",
+		"/C/xampp/htdocs/remax/app/views/news/vw_news_for_sellers.blade.php",
+		"/C/xampp/htdocs/remax/app/views/buying/vw_how_much_house_can_you_afford.blade.php",
+		"/C/xampp/htdocs/remax/app/views/news/vw_news_for_buyers.blade.php",
+		"/C/xampp/htdocs/remax/app/views/mortgage/vw_down_payments_how_much_do_you_need.blade.php",
+		"/C/xampp/htdocs/remax/app/views/mortgage/vw_finding_the_right_mortgage_professional.blade.php",
+		"/C/xampp/htdocs/remax/app/views/mortgage/vw_getting_preapproved.blade.php",
+		"/C/xampp/htdocs/remax/app/views/mortgage/vw_how_much_can_you_afford.blade.php",
+		"/C/xampp/htdocs/remax/app/views/mortgage/vw_mortgages_101_basic_loan_types.blade.php",
+		"/C/xampp/htdocs/remax/app/views/mortgage/vw_renovating_a_home.blade.php",
+		"/C/xampp/htdocs/remax/app/views/news/vw_news.blade.php",
+		"/C/xampp/htdocs/remax/app/views/news/vw_real_estate_news.blade.php",
+		"/C/xampp/htdocs/remax/app/views/selling/vw_consider_a_home_inspection_when_selling.blade.php",
+		"/C/xampp/htdocs/remax/app/views/selling/vw_how_an_agent_markets_your_home.blade.php",
+		"/C/xampp/htdocs/remax/app/views/selling/vw_pricing_your_home_to_sell.blade.php",
+		"/C/xampp/htdocs/remax/app/views/selling/vw_preparing_your_house_for_sale.blade.php",
+		"/C/xampp/htdocs/remax/app/views/selling/vw_the_right_listing_agent.blade.php",
+		"/C/xampp/htdocs/remax/app/views/buying/vw_anatomy_of_a_home_purchase.blade.php",
+		"/C/xampp/htdocs/remax/app/views/buying/vw_deciding_where_to_live.blade.php",
+		"/C/xampp/htdocs/remax/app/views/buying/vw_five_tips_to_narrow_your_online_home_search.blade.php",
+		"/C/xampp/htdocs/remax/app/views/buying/vw_the_benefits_of_home_ownership.blade.php",
+		"/C/xampp/htdocs/remax/app/views/buying/vw_the_importance_of_buyers_agent.blade.php",
+		"/C/xampp/htdocs/remax/app/views/about/vw_about.blade.php",
+		"/C/xampp/htdocs/remax/app/controllers/buying/The_benefits_of_home_ownershipController.php",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/link_to_new_page.sublime-snippet",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/Gist.sublime-settings",
 		"/C/xampp/htdocs/remax/app/views/search/showall.blade.php",
-		"/C/xampp/htdocs/remax/app/views/news/vw_news_for_sellers.blade.php",
-		"/C/xampp/htdocs/remax/app/views/news/vw_news_for_buyers.blade.php",
 		"/C/xampp/htdocs/remax/app/views/contact/vw_contact.blade.php",
-		"/C/xampp/htdocs/remax/public/comp/sass/screen.scss",
-		"/C/xampp/htdocs/remax/app/views/search/results.blade.php",
-		"/C/xampp/htdocs/remax/app/views/layouts/master.blade.php",
 		"/C/xampp/htdocs/remax/app/controllers/agent/AgentController.php",
-		"/C/xampp/htdocs/remax/app/views/search/onehouse.blade.php",
 		"/C/xampp/htdocs/remax/app/controllers/search/SearchController.php",
 		"/C/xampp/htdocs/remax/app/controllers/home/HomeController.php",
 		"/C/xampp/htdocs/remax/app/config/database.php",
-		"/C/xampp/htdocs/remax/app/views/news/vw_news.blade.php",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/laravel_image_url.sublime-snippet",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/laravel_img.sublime-snippet",
 		"/C/xampp/htdocs/remax/app/routes.php",
@@ -227,13 +199,11 @@
 		"/C/xampp/htdocs/remax/composer.json",
 		"/C/xampp/htdocs/remax/artisanCommand.txt",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/CHANGELOG",
-		"/C/xampp/htdocs/remax/app/views/home/vw_home.blade.php",
 		"/C/xampp/htdocs/remax/app/database/seeds/NewsTableSeeder.php",
 		"/C/xampp/htdocs/remax/app/database/seeds/DatabaseSeeder.php",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/laravel_link.sublime-snippet",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/1symsemi.sublime-macro",
-		"/C/xampp/htdocs/remax/app/views/about/vw_about.blade.php",
 		"/C/xampp/htdocs/remax/app/util/textoperations.php",
 		"/C/xampp/htdocs/remax/app/models/News.php",
 		"/C/xampp/htdocs/remax/app/controllers/news/NewsController.php",
@@ -263,6 +233,49 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"menues",
+			"about",
+			"text",
+			"h4",
+			"\n}",
+			"newsHead",
+			"content",
+			"conte",
+			"sect",
+			"17px",
+			"our agen",
+			"h5",
+			"h6",
+			"newshead",
+			"property for",
+			"prop",
+			"about",
+			"welcome",
+			"p{",
+			"news",
+			"slideDown",
+			"sendmail",
+			"myModal",
+			"myMod	",
+			"newsHeadHover",
+			"newsHead",
+			"17px",
+			"submitSearch",
+			"browseAllListings",
+			"brouse all",
+			"input[type=\"text\"]",
+			"findform",
+			"finsform",
+			"findFormStyle",
+			"p",
+			"large-6 columns",
+			"showall",
+			"BROWSE",
+			"BROUSE ALL",
+			"FIND",
+			"\n                        ",
+			"newlis",
+			"renta",
 			"alt",
 			"Remax First Class ",
 			"alt",
@@ -347,50 +360,7 @@
 			"             \n",
 			"residentialCommercialContent",
 			"oneStopService",
-			"a",
-			"phoneMailHomeWrapper",
-			"P",
-			"p",
-			"4",
-			"16px",
-			"slogan",
-			".small-block-grid-3 > li",
-			"\">\n",
-			"addresscol",
-			"assresscolor",
-			"assresscol",
-			"ends",
-			"body",
-			"'",
-			"body",
-			"find",
-			"#FFFFFF",
-			"#FFFFFF;",
-			"FFFFFF",
-			"colorFindFormFont",
-			"logoPadding",
-			" Icon",
-			"icon",
-			"phoneImg",
-			"callPanel",
-			"\n.",
-			"                          \n",
-			"logoPaddingHeader",
-			"		\n",
-			"outs",
-			"5px",
-			"}",
-			"mypanels",
-			"maincontentst",
-			"footerSt",
-			"footer",
-			"mypanels",
-			"img ",
-			"img",
-			"\n		",
-			"\n	",
-			"\n		",
-			"mypanel"
+			"a"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -408,217 +378,14 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "app/views/home/vw_home.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4318,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1213,
-								1213
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/views/search/onehouse.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1070,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								926,
-								926
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 162.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/views/search/results.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1200,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								763,
-								763
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 3,
-			"sheets":
-			[
-				{
-					"buffer": 3,
-					"file": "public/comp/sass/screen.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 11537,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								10846,
-								10849
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 9466.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/views/news/vw_news.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 728,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								227,
-								311
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/views/layouts/master.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 65113,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								331,
-								334
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 31,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								31
-							]
-						],
-						"settings":
-						{
-							"auto_name": "65, Orrington Elementary School",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 36.0
+		"height": 22.0
 	},
 	"input":
 	{
@@ -633,18 +400,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.400566389065,
 			1.0
 		],
 		"rows":
@@ -661,7 +421,7 @@
 	"project": "remax.sublime-project",
 	"replace":
 	{
-		"height": 48.0
+		"height": 40.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -670,16 +430,32 @@
 		"selected_items":
 		[
 			[
+				"vwa",
+				"app\\views\\about\\vw_about.blade.php"
+			],
+			[
+				"vwtheb",
+				"app\\views\\buying\\vw_the_benefits_of_home_ownership.blade.php"
+			],
+			[
+				"thebe",
+				"app\\controllers\\buying\\The_benefits_of_home_ownershipController.php"
+			],
+			[
+				"s",
+				"public\\comp\\sass\\screen.scss"
+			],
+			[
+				"scr",
+				"public\\comp\\sass\\screen.scss"
+			],
+			[
 				"vwnew",
 				"app\\views\\news\\vw_news_for_sellers.blade.php"
 			],
 			[
 				"conta",
 				"app\\views\\contact\\vw_contact.blade.php"
-			],
-			[
-				"s",
-				"public\\comp\\sass\\screen.scss"
 			],
 			[
 				"ma",
@@ -762,10 +538,6 @@
 				"app\\routes.php"
 			],
 			[
-				"scr",
-				"public\\comp\\sass\\screen.scss"
-			],
-			[
 				"controllhom",
 				"app\\controllers\\home\\HomeController.php"
 			],
@@ -805,12 +577,6 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"vintage":
@@ -820,7 +586,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 257.0,
 	"status_bar_visible": true,
 	"template_settings":
