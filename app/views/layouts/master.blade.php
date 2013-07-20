@@ -233,7 +233,7 @@
 
                                </div>
                              </div>
-                             <!-- Buy / SELL -->
+                            
 
                              <div class="row">
                                <div class="large-12 columns showAllListings">
@@ -262,44 +262,46 @@
 
                          </div>
                        </section>   <!-- =find your home section ends here -->
-                       <section>
+                        <!-- Buy / SELL -->
+
+                       <section >
                          <h5 class="title" data-section-title><a class="sectionWidth find" href="#panel2">PROPERTY FOR RENT</a></h5>
                          <div class="content" data-section-content>
                           <div class="row">
                             <div class="large-12 columns">
 
 
-                             {{Form::open(array('url' => 'search', 'method'=>'GET'))}}
+                             {{Form::open(array('url' => 'rent', 'method'=>'GET'))}}
 
                              <div class="row">
                                <div class="large-12 columns">
-                                 {{Form::label('location', 'Location')}}
-                                 {{Form::text('location',Input::get('location'), array('placeholder'=>'City and State, Address or Zip Code', 'class'=>'findInput'))}}
+                                 {{Form::label('location_r', 'Location')}}
+                                 {{Form::text('location_r',Input::get('location_r'), array('placeholder'=>'City and State, Address or Zip Code', 'class'=>'findInput'))}}
                                </div>
                              </div>
 
                              <div class="row">
                                <div class="large-12 columns">
-                                 {{Form::label('from', 'Price Range')}}
+                                 {{Form::label('from_r', 'Price Range')}}
                                </div>
                              </div>
 
                              <div class="row">
                                <div class="large-6 columns">
-                                 {{Form::text('from', Input::get('from'), array('placeholder'=>'$ From', 'class'=>'findInput'))}}
+                                 {{Form::text('from_r', Input::get('from_r'), array('placeholder'=>'$ From', 'class'=>'findInput'))}}
                                </div>
                                <div class="large-6 columns">
-                                 {{Form::text('to',  Input::get('to'), array('placeholder'=>'$ To', 'class'=>'findInput'))}}
+                                 {{Form::text('to_r',  Input::get('to_r'), array('placeholder'=>'$ To', 'class'=>'findInput'))}}
                                </div>
                              </div>
                              <div class="row">
                                <div class="large-6 columns">
-                                 {{Form::label('beds', 'Bedrooms')}}
-                                 {{Form::text('beds', Input::get('beds'), array('placeholder'=>'#', 'class'=>'findinput'))}}
+                                 {{Form::label('beds_r', 'Bedrooms')}}
+                                 {{Form::text('beds_r', Input::get('beds_r'), array('placeholder'=>'#', 'class'=>'findinput'))}}
                                </div>
                                <div class="large-6 columns">
-                                 {{Form::label('baths', 'Bathrooms')}}
-                                 {{Form::text('baths', Input::get('baths'), array('placeholder'=>'#', 'class'=>'findinput'))}}
+                                 {{Form::label('baths_r', 'Bathrooms')}}
+                                 {{Form::text('baths_r', Input::get('baths'), array('placeholder'=>'#', 'class'=>'findinput'))}}
                                </div>
 
                              </div>

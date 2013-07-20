@@ -5,6 +5,7 @@
 	"require": {
 		"laravel/framework": "4.0.*",
 		"way/generators": "dev-master",
+		"way/guard-laravel": "dev-master",
 		"pafelin/laravel-nonce": "dev-master",
 		"sunra/php-simple-html-dom-parser": "1.5.0.*@dev"
 	},
@@ -13,6 +14,7 @@
 			"app/commands",
 			"app/controllers",
 			"app/controllers/search",
+			"app/controllers/rent",
 			"app/controllers/about",
 			"app/controllers/buying",
 			"app/controllers/selling",
@@ -20,7 +22,7 @@
 			"app/controllers/mortgage",
 			"app/controllers/news",
 			"app/controllers/email",
-		"app/controllers/agent",
+			"app/controllers/agent",
 			"app/models",
 			"app/database/migrations",
 			"app/database/seeds",
