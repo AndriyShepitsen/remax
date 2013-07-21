@@ -1,6 +1,6 @@
 <?php
 
-//LOCATION: remax/public/search
+//LOCATION: remax/public
 
 class RentController extends BaseController {
 
@@ -9,7 +9,19 @@ class RentController extends BaseController {
      *
      * @return Response
      */
-  
+    public function appartments(){
+
+    $rentals = Rental::with('rental_images')->where('property_type','=', 1)->paginate(5);
+    return View::make('rent.rent_results')->with(compact('rentals'));
+
+    }
+
+    public function houses(){
+
+    $rentals = Rental::with('rental_images')->where('property_type','=', 2)->paginate(5);
+    return View::make('rent.rent_results')->with(compact('rentals'));
+
+    }
 
     public function index()
     {

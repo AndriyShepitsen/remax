@@ -327,11 +327,11 @@
                         </div>
                         <div class="row">
                          <div class="large-6 columns">
-                         {{link_to('browse/1', 'APARTMENTS', array('class'=>'alert-box secondary expand radius propertiesAllert'));}}
+                         {{link_to('rent-appartments', 'APARTMENTS', array('class'=>'alert-box secondary expand radius propertiesAllert'));}}
                          </div>
 
                          <div class="large-6 columns">
-                           {{link_to('browse/4', 'HOUSES', array('class'=>'alert-box secondary expand radius propertiesAllert'));}}
+                           {{link_to('rent-houses', 'HOUSES', array('class'=>'alert-box secondary expand radius propertiesAllert'));}}
                          </div>
                        </div>
 

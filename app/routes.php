@@ -81,3 +81,6 @@ Route::get('agent/{id}', 'AgentController@show_listings');
 
 /*  Renting  */
 Route::get('rent', 'RentController@index');
+Route::get('rent-appartments', 'RentController@appartments');
+Route::get('rent-houses', 'RentController@houses');
+
