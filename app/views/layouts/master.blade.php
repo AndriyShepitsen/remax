@@ -394,6 +394,14 @@
                      {{link_to('#', 'MARK', array('class'=>'agentLink'));}} <br/>
                      {{link_to('#', 'FEYMAN', array('class'=>'agentLinkLast'));}}
                    </li>
+                   <li class="liAgents"><a class="th radius ulagents" data-reveal-id="elizabethCherny" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt="RE/MAX FIRST CLASS agent profile Mark Feyman"><a/>
+                     {{link_to('#', 'ELIZABETH', array('class'=>'agentLink'));}} <br/>
+                     {{link_to('#', 'CHERNY', array('class'=>'agentLinkLast'));}}
+                   </li>
+                   <li class="liAgents"><a class="th radius ulagents" data-reveal-id="anthonyDavidson" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt="RE/MAX FIRST CLASS agent profile Mark Feyman"><a/>
+                     {{link_to('#', 'ANTHONY', array('class'=>'agentLink'));}} <br/>
+                     {{link_to('#', 'DAVIDSON', array('class'=>'agentLinkLast'));}}
+                   </li>
                    <li class="liAgents"><a class="th radius ulagents" data-reveal-id="haroldOza" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt="RE/MAX FIRST CLASS agent profile Harold Oza"><a/>
                      {{link_to('#', 'HAROLD', array('class'=>'agentLink'));}} <br/>
                      {{link_to('#', 'OZA', array('class'=>'agentLinkLast'));}}
@@ -1511,7 +1519,170 @@
             </div>
           </div>
         </div>
-        <!-- =John Dias  profile ends here --><script>
+        <!-- =John Dias  profile ends here -->
+
+
+            <!-- =Elizabeth Cherny profile starts here -->
+
+            <div id="elizabethCherny" class="reveal-modal medium adminAuth2 createAccount panel">
+              <a class="close-reveal-modal">&#215;</a>
+              <div class="row">
+                <div class="large-12 columns profileContent">
+                  {{Form::open(array('url'=>'/login'))}} 
+                  <div class="navPanel">
+                    <nav class="top-bar">
+                      <ul class="title-area right">
+                        <!-- Title Area -->
+                        <li class="name">
+                          <h1>
+                            {{link_to_route('home', 'REMAX FIRST CLASS');}}
+                          </h1>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+
+                  <!--  =elizabethCherny  top bar ends here-->
+
+                  <div class="row">
+                   <div class="large-4 columns">
+                    <div class="row">
+                     <div class="large-12 columns left">
+                      <br/>
+                      <ul>
+                       <h3 class="subheader agentName">Elizabeth Cherny</h3>
+                       <a class="label has-tip-left specialist" title="Short Sale and Foreclosure Resource">SFR</a> 
+                     </ul>
+                   </div>                           
+                 </div>
+                 <div class="agentPic"><img src="{{url('comp/img/agentsL/3.png')}}" alt="Elizabeth Cherny, RE/MAX FIRST CLASS Agent"></div>
+
+                 <div>{{link_to('agent/9', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
+                 </div>
+               </div>
+
+               <div class="large-7 columns left panel info">
+                 <br/>
+                 <ul class="vcard innerInfo">
+                   <h5>Associate</h5>
+                   <li class="subheader">Year Joined: <!-- 1994 --></li>
+                   <li class="subheader">Year Licensed: <!-- 1982 --></li>
+                   <hr/>
+                   <h6>Contact Information:</h6>
+                   <li class="subheader">Main: (847) 674-9797</li>
+                   <li class="subheader">Fax: (847) 674-0411</li>
+                   <li class="subheader">Languages: English, Russian</li>
+                 </ul>
+               </div>
+             </div>
+
+             <!--  =elizabethCherny contact information ends here-->
+
+             <div class="row">
+              <div class="large-12 columns">
+                <dl>                              
+<!--                   <dt><h5>Specialties</h5></dt>
+                  <hr/>
+ --><!--                   <dd class="specialties"><p>Condominiums, Foreclosure Property, Investments, Luxury Homes, New Construction, Relocation, Rentals, Senior Communities, Short Sales </p>
+                  </dd>  
+ -->                  <dt><h5>Service Area Information</h5></dt>
+                  <hr/>
+                  <dd class="specialties">
+                    <h6>Office Area:</h6>
+                    <p>Skokie IL, Chicago IL, Glenview IL, Morton Grove IL, Evanston IL, Wilmette IL, Niles IL, Lincolnwood IL</p>                            
+                    <h6>Agent Area:</h6>
+                    <p>Skokie IL</p>  
+                  </dd>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- =Elizabeth Cherny  profile ends here -->
+
+            <!-- =Anthony Davidson profile starts here -->
+
+            <div id="anthonyDavidson" class="reveal-modal medium adminAuth2 createAccount panel">
+              <a class="close-reveal-modal">&#215;</a>
+              <div class="row">
+                <div class="large-12 columns profileContent">
+                  {{Form::open(array('url'=>'/login'))}} 
+                  <div class="navPanel">
+                    <nav class="top-bar">
+                      <ul class="title-area right">
+                        <!-- Title Area -->
+                        <li class="name">
+                          <h1>
+                            {{link_to_route('home', 'REMAX FIRST CLASS');}}
+                          </h1>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+
+                  <!--  =anthonyDavidson top bar ends here-->
+
+                  <div class="row">
+                   <div class="large-4 columns">
+                    <div class="row">
+                     <div class="large-12 columns left">
+                      <br/>
+                      <!-- <ul> -->
+                       <h3 class="subheader agentName">Anthony Davidson</h3>
+                 <div class="position">Vice President at Re/Max 1St. Class Realty </div>
+                       <!-- <a class="label has-tip-left specialist" title="Short Sale and Foreclosure Resource">SFR</a>  -->
+                     <!-- </ul> -->
+                   </div>                           
+                 </div>
+                 <div class="agentPic"><img src="{{url('comp/img/agentsL/3.png')}}" alt="Anthony Davidson, RE/MAX FIRST CLASS Agent"></div>
+
+                 <div>{{link_to('agent/9', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
+                 </div>
+               </div>
+
+               <div class="large-7 columns left panel info">
+                 <br/>
+                 <ul class="vcard innerInfo">
+                   <h5>Associate</h5>
+                   
+                   <li class="subheader">Year Joined: </li>
+                   <li class="subheader">Year Licensed: </li>
+                   <hr/>
+                   <h6>Contact Information:</h6>
+                   <li class="subheader">Main: (847) 674-9797</li>
+                   <li class="subheader">Fax: (847) 674-0411</li>
+                   <li class="subheader">Languages: English</li>
+                 </ul>
+               </div>
+             </div>
+
+             <!--  =anthonyDavidson contact information ends here-->
+
+             <div class="row">
+              <div class="large-12 columns">
+                <dl>                              
+                  <dt><h5>Specialties</h5></dt>
+                  <hr/>
+                  <dd class="specialties"><p>Commercial Real Estate, Syndication and Property Management. </p>
+                  </dd>  
+                  <dt><h5>Service Area Information</h5></dt>
+                  <hr/>
+                  <dd class="specialties">
+                    <h6>Office Area:</h6>
+                    <p>Skokie IL, Chicago IL, Glenview IL, Morton Grove IL, Evanston IL, Wilmette IL, Niles IL, Lincolnwood IL</p>                            
+                    <h6>Agent Area:</h6>
+                    <p>Skokie IL</p>  
+                  </dd>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- =antonyDavidson profile ends here -->
+
+        <script>
         document.write('<script src=' +
           ('_proto_' in {} ? 'comp/javascripts/vendor/zepto' : 'comp/javascripts/vendor/jquery') +
           '.js><\/script>')
