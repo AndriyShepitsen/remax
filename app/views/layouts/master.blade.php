@@ -764,6 +764,8 @@
                  </div>
                  <div>{{link_to('agent/4', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
                  </div>
+                 <div>{{link_to('agent/4', 'Agent Property For Rent', array('class'=>'agentProp label specialist'));}}
+                 </div>
                </div>
 
                <div class="large-7 columns left panel info">
@@ -946,6 +948,8 @@
                       <img src="{{url('comp/img/agentsL/Cherylette_Hilton.jpg')}}" alt="Crerylette Hilton, RE/MAX FIRST CLASS Agent">
                     </div>
                     <div>{{link_to('agent/1', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
+                    </div>
+                    <div>{{link_to('agent/1', 'Agent Property For Rent', array('class'=>'agentProp label specialist'));}}
                     </div>
                   </div>
 
@@ -1315,6 +1319,8 @@
  </div>
  <div>{{link_to('agent/7', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
  </div>
+<div>{{link_to('agent/7', 'Agent Property For Rent', array('class'=>'agentProp label specialist'));}}
+ </div>
 </div>
 
 <div class="large-7 columns left panel info">
@@ -1484,6 +1490,8 @@
 
                  <div>{{link_to('agent/9', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
                  </div>
+                <div>{{link_to('agent/9', 'Agent Property For Rent', array('class'=>'agentProp label specialist'));}}
+                 </div>
                </div>
 
                <div class="large-7 columns left panel info">
@@ -1562,7 +1570,7 @@
                  </div>
                  <div class="agentPic"><img src="{{url('comp/img/agentsL/3.png')}}" alt="Elizabeth Cherny, RE/MAX FIRST CLASS Agent"></div>
 
-                 <div>{{link_to('agent/9', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
+                 <div>{{link_to('agent/11', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
                  </div>
                </div>
 
@@ -1642,7 +1650,7 @@
                  </div>
                  <div class="agentPic"><img src="{{url('comp/img/agentsL/3.png')}}" alt="Anthony Davidson, RE/MAX FIRST CLASS Agent"></div>
 
-                 <div>{{link_to('agent/9', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
+                 <div>{{link_to('agent/10', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
                  </div>
                </div>
 
