@@ -720,7 +720,7 @@
 
                  <!-- =Dan Florian profile starts here -->
 
-                 <div id="danFlorian" class="reveal-modal medium adminAuth2 createAccount panel">
+                 <div id="danFlorian" class="reveal-modal small adminAuth2 createAccount panel">
                    {{Form::open(array('url' => 'foo/bar'))}}
                    <a class="close-reveal-modal">&#215;</a>
                    <div class="row">
@@ -762,9 +762,9 @@
                  </div>
                  <div class="agentPic"><img src="{{url('comp/img/agentsL/Dan_I_Florian.jpg')}}" alt="Dan I. Florian, RE/MAX FIRST CLASS Agent">
                  </div>
-                 <div>{{link_to('agent/4', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
+                 <div>{{link_to('agent/4', 'Agent Listings For Sale', array('class'=>'agentProp label specialist'));}}
                  </div>
-                 <div>{{link_to('agent/4', 'Agent Property For Rent', array('class'=>'agentProp label specialist'));}}
+                 <div>{{link_to('agent/4', 'Agent Listings For Rent', array('class'=>'agentProp label specialist'));}}
                  </div>
                </div>
 
@@ -787,7 +787,7 @@
              <!--  =danFlorian contact information ends here-->
 
              <div class="row">
-              <div class="large-12 columns">
+              <div class="large-12 columns agentInfoContent">
                 <dl>                              
                   <dt><h5>Specialties</h5></dt>
                   <hr/>
@@ -813,7 +813,7 @@
 
         <!-- =Ivy Moy  profile starts here -->
 
-        <div id="ivyMoy" class="reveal-modal medium adminAuth2 createAccount panel">
+        <div id="ivyMoy" class="reveal-modal small adminAuth2 createAccount panel">
           <a class="close-reveal-modal">&#215;</a>
           <div class="row">
             <div class="large-12 columns profileContent">
@@ -854,7 +854,7 @@
            </div>                           
          </div>
          <div class="agentPic"><img src="{{url('comp/img/agentsL/Ivy_Moy.jpg')}}" alt="Ivy Moy, RE/MAX FIRST CLASS Agent"></div>
-         <div>{{link_to('agent/2', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
+         <div>{{link_to('agent/2', 'Agent Listings For Sale', array('class'=>'agentProp label specialist'));}}
          </div>
        </div>
 
@@ -904,7 +904,7 @@
 
             <!-- =Cherylette Hilton profile starts here -->
 
-            <div id="cheryletteHilton" class="reveal-modal medium adminAuth2 createAccount panel">
+            <div id="cheryletteHilton" class="reveal-modal small adminAuth2 createAccount panel">
               <a class="close-reveal-modal">&#215;</a>
               <div class="row">
                 <div class="large-12 columns profileContent">
@@ -947,9 +947,9 @@
                     <div class="agentPic">
                       <img src="{{url('comp/img/agentsL/Cherylette_Hilton.jpg')}}" alt="Crerylette Hilton, RE/MAX FIRST CLASS Agent">
                     </div>
-                    <div>{{link_to('agent/1', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
+                    <div>{{link_to('agent/1', 'Agent Listings For Sale', array('class'=>'agentProp label specialist'));}}
                     </div>
-                    <div>{{link_to('agent/1', 'Agent Property For Rent', array('class'=>'agentProp label specialist'));}}
+                    <div>{{link_to('agent/1', 'Agent Listings For Rent', array('class'=>'agentProp label specialist'));}}
                     </div>
                   </div>
 
@@ -998,7 +998,7 @@
 
           <!-- =Elena Dan profile starts here -->
 
-          <div id="elenaDan" class="reveal-modal medium adminAuth2 createAccount panel">
+          <div id="elenaDan" class="reveal-modal small adminAuth2 createAccount panel">
             <a class="close-reveal-modal">&#215;</a>
             <div class="row">
               <div class="large-12 columns profileContent">
@@ -1046,7 +1046,7 @@
              </div>                           
            </div>
            <div class="agentPic"><img src="{{url('comp/img/agentsL/Dan_Elena.jpg')}}" alt="Elena Dan, RE/MAX FIRST CLASS Agent"></div>
-           <div>{{link_to('agent/3', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
+           <div>{{link_to('agent/3', 'Agent Listings For Sale', array('class'=>'agentProp label specialist'));}}
            </div>
          </div>
 
@@ -1097,7 +1097,7 @@
 
   <!-- =Marius Dan profile starts here -->
 
-  <div id="mariusDan" class="reveal-modal medium adminAuth2 createAccount panel">
+  <div id="mariusDan" class="reveal-modal small adminAuth2 createAccount panel">
     <a class="close-reveal-modal">&#215;</a>
     <div class="row">
       <div class="large-12 columns profileContent">
@@ -1139,7 +1139,7 @@
    <div class="agentPic">
      <img src="{{url('comp/img/agentsL/Dan_Elena.jpg')}}" alt="Marius Dan, RE/MAX FIRST CLASS Agent">
    </div>
-   <div>{{link_to('agent/5', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
+   <div>{{link_to('agent/5', 'Agent Listings For Sale', array('class'=>'agentProp label specialist'));}}
    </div>
  </div>
 
@@ -1189,7 +1189,7 @@
 
 <!-- =Barry Benveniste profile starts here -->
 
-<div id="barryBenveniste" class="reveal-modal medium adminAuth2 createAccount panel">
+<div id="barryBenveniste" class="reveal-modal small adminAuth2 createAccount panel">
   <a class="close-reveal-modal">&#215;</a>
   <div class="row">
     <div class="large-12 columns profileContent">
@@ -1231,7 +1231,7 @@
  <div class="agentPic">
    <img src="{{url('comp/img/agentsL/Barry_Benveniste.jpg')}}" alt="Barry Benveniste, RE/MAX FIRST CLASS Agent">
  </div>
- <div>{{link_to('agent/6', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
+ <div>{{link_to('agent/6', 'Agent Listings For Sale', array('class'=>'agentProp label specialist'));}}
  </div>
 </div>
 
@@ -1276,7 +1276,7 @@
 
 <!-- =Mark Feyman profile starts here -->
 
-<div id="markFeyman" class="reveal-modal medium adminAuth2 createAccount panel">
+<div id="markFeyman" class="reveal-modal small adminAuth2 createAccount panel">
   <a class="close-reveal-modal">&#215;</a>
   <div class="row">
     <div class="large-12 columns profileContent">
@@ -1317,9 +1317,9 @@
  <div class="agentPic">
    <img src="{{url('comp/img/agentsL/3.png')}}" alt="Mark Feyman, RE/MAX FIRST CLASS Agent">
  </div>
- <div>{{link_to('agent/7', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
+ <div>{{link_to('agent/7', 'Agent Listings For Sale', array('class'=>'agentProp label specialist'));}}
  </div>
-<div>{{link_to('agent/7', 'Agent Property For Rent', array('class'=>'agentProp label specialist'));}}
+<div>{{link_to('agent/7', 'Agent Listings For Rent', array('class'=>'agentProp label specialist'));}}
  </div>
 </div>
 
@@ -1365,7 +1365,7 @@
 
 <!-- =Harold Oza profile starts here -->
 
-<div id="haroldOza" class="reveal-modal medium adminAuth2 createAccount panel">
+<div id="haroldOza" class="reveal-modal small adminAuth2 createAccount panel">
   <a class="close-reveal-modal">&#215;</a>
   <div class="row">
     <div class="large-12 columns profileContent">
@@ -1408,7 +1408,7 @@
                      <div class="agentPic">
                        <img src="{{url('comp/img/agentsL/3.jpg')}}" alt="Harold Oza, RE/MAX FIRST CLASS Agent">
                      </div>
-                     <div>{{link_to('agent/8', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
+                     <div>{{link_to('agent/8', 'Agent Listings For Sale', array('class'=>'agentProp label specialist'));}}
                      </div>
 
                    </div>
@@ -1455,7 +1455,7 @@
 
             <!-- =John Dias profile starts here -->
 
-            <div id="johnDias" class="reveal-modal medium adminAuth2 createAccount panel">
+            <div id="johnDias" class="reveal-modal small adminAuth2 createAccount panel">
               <a class="close-reveal-modal">&#215;</a>
               <div class="row">
                 <div class="large-12 columns profileContent">
@@ -1488,9 +1488,9 @@
                  </div>
                  <div class="agentPic"><img src="{{url('comp/img/agentsL/3.png')}}" alt="John Dias, RE/MAX FIRST CLASS Agent"></div>
 
-                 <div>{{link_to('agent/9', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
+                 <div>{{link_to('agent/9', 'Agent Listings For Sale', array('class'=>'agentProp label specialist'));}}
                  </div>
-                <div>{{link_to('agent/9', 'Agent Property For Rent', array('class'=>'agentProp label specialist'));}}
+                <div>{{link_to('agent/9', 'Agent Listings For Rent', array('class'=>'agentProp label specialist'));}}
                  </div>
                </div>
 
@@ -1537,7 +1537,7 @@
 
             <!-- =Elizabeth Cherny profile starts here -->
 
-            <div id="elizabethCherny" class="reveal-modal medium adminAuth2 createAccount panel">
+            <div id="elizabethCherny" class="reveal-modal small adminAuth2 createAccount panel">
               <a class="close-reveal-modal">&#215;</a>
               <div class="row">
                 <div class="large-12 columns profileContent">
@@ -1570,7 +1570,7 @@
                  </div>
                  <div class="agentPic"><img src="{{url('comp/img/agentsL/3.png')}}" alt="Elizabeth Cherny, RE/MAX FIRST CLASS Agent"></div>
 
-                 <div>{{link_to('agent/11', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
+                 <div>{{link_to('agent/11', 'Agent Listings For Sale', array('class'=>'agentProp label specialist'));}}
                  </div>
                </div>
 
@@ -1616,7 +1616,7 @@
 
             <!-- =Anthony Davidson profile starts here -->
 
-            <div id="anthonyDavidson" class="reveal-modal medium adminAuth2 createAccount panel">
+            <div id="anthonyDavidson" class="reveal-modal small adminAuth2 createAccount panel">
               <a class="close-reveal-modal">&#215;</a>
               <div class="row">
                 <div class="large-12 columns profileContent">
@@ -1650,7 +1650,7 @@
                  </div>
                  <div class="agentPic"><img src="{{url('comp/img/agentsL/3.png')}}" alt="Anthony Davidson, RE/MAX FIRST CLASS Agent"></div>
 
-                 <div>{{link_to('agent/10', 'Agent Property For Sale', array('class'=>'agentProp label specialist'));}}
+                 <div>{{link_to('agent/10', 'Agent Listings For Sale', array('class'=>'agentProp label specialist'));}}
                  </div>
                </div>
 
