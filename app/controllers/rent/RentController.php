@@ -9,9 +9,22 @@ class RentController extends BaseController {
      *
      * @return Response
      */
-    public function appartments(){
+    public function appartments() {
 
     $rentals = Rental::with('rental_images')->where('property_type','=', 1)->paginate(5);
+    return View::make('rent.rent_results')->with(compact('rentals'));
+
+    }
+
+    public function show($id) {
+
+    $rental = Rental::with('rental_images')->where('id','=', $id)->first();
+    return View::make('rent.one_rent')->with(compact('rental'));
+
+    }
+    public function all() {
+
+    $rentals = Rental::with('rental_images')->paginate(5);
     return View::make('rent.rent_results')->with(compact('rentals'));
 
     }
@@ -53,12 +66,7 @@ class RentController extends BaseController {
     return View::make('rent.rent_results')->with(compact('rentals'))->with('Input', Input::all());
 
     }
-    public function show($id)
-    {
-     $house = House::with('images')->where('id', '=', $id)->first();   
-     return View::make('search.onehouse')->with(compact('house'));
-    }
-
+ 
 
    
 }
