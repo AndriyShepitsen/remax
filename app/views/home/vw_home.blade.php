@@ -22,17 +22,21 @@
 				<div class="orbit-container panel">
 					<h5 class="selectedProperty">Our selected property</h5>
 					<ul class="orbit-slides-container" data-orbit data-options="timer_speed:26000;">
-						<li>
+						<li> <a href="{{URL::to('search/1')}}">
 							<img src="{{url('comp/img/orbit/1.jpg')}}" alt="">
 							<div class="orbit-caption">Skokie, IL 60076   </div>
+						</a>
 						</li>
 						<li>
+						<a href="{{URL::to('search/16')}}">
 							<img src="{{url('comp/img/orbit/4.jpg')}}" alt="">
 							<div class="orbit-caption">Glenview, IL 60025</div>
+						</a>
 						</li>
-						<li>
+						<li><a href="{{URL::to('search/4')}}">
 							<img src="{{url('comp/img/orbit/2.jpg')}}" alt="">
 							<div class="orbit-caption">Morton Grove, IL</div>
+							</a>
 						</li>
 					</ul>
 				</div>
