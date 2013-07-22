@@ -11,5 +11,9 @@ public function images()
 return $this->hasOne('Image');
 }
 
+public function agent()
+{
+return $this->belongsTo('Agent');
+}
 
 }

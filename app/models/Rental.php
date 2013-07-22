@@ -11,5 +11,9 @@ public function rental_images()
 return $this->hasOne('Rentalimage');
 }
 
+public function agent()
+{
+return $this->belongsTo('Agent');
+}
 
 }

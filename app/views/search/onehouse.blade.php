@@ -34,6 +34,14 @@
 
 			<strong>Year:</strong> {{$house->year}} <br></br>
 
+
+			@if($house->agent)
+							<a href="{{URL::to('agent/'.$house->agent['id'])}}">Listing Agent:
+							{{$house->agent['firstname'] . ' '. $house->agent['lastname']}}
+
+							 </a>
+							@endif
+
 			@if($imCounter)
 			@for ($i =1; $i <= $imCounter; $i++)
 			<p><img src="{{url('comp/img/images/'.$house->id.'/'.$i.'.jpg')}}"> </p>

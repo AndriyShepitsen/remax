@@ -36,6 +36,14 @@
 			<strong>Year:</strong> {{(new DateTime($rental->year))->format("Y")}} <br></br>
 			@endif
 
+
+			@if($rental->agent)
+							<a href="{{URL::to('agent/'.$rental->agent['id'])}}">Listing Agent:
+							{{$rental->agent['firstname'] . ' '. $rental->agent['lastname']}}
+
+							 </a>
+							@endif
+
 			@if($imCounter)
 			@for ($i =1; $i <= $imCounter; $i++)
 			<p><img src="{{url('comp/img/rent/'.$rental->id.'/'.$i.'.jpg')}}"> </p>
