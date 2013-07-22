@@ -8,7 +8,7 @@ class Rental extends Eloquent {
 
 public function rental_images()
 {
-return $this->hasOne('Rental_image');
+return $this->hasOne('Rentalimage');
 }
 
 
