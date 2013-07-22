@@ -24,15 +24,17 @@
 			<br></br>
 			<p>{{$rental->details}}</p>
 
-			<strong>MLS:</strong> {{$rental->listing}}<br></br>
-
+<!-- 			<strong>MLS:</strong> {{$rental->listing}}<br></br>
+ -->
 			<strong>bedrooms:</strong> {{$rental->bedrooms}} <br></br>
 
 			<strong>bathrooms:</strong> {{$rental->bathrooms}} <br></br>
 
-			<strong>Size:</strong> {{$rental->size}} <br></br>
-
-			<strong>Year:</strong> {{$rental->year}} <br></br>
+			<!-- <strong>Size:</strong> {{$rental->size}} <br></br> -->
+			
+			@if($rental->year)
+			<strong>Year:</strong> {{(new DateTime($rental->year))->format("Y")}} <br></br>
+			@endif
 
 			@if($imCounter)
 			@for ($i =1; $i <= $imCounter; $i++)
