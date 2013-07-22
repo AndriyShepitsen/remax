@@ -263,8 +263,13 @@
                          </div>
                        </section>   <!-- =find your home section ends here -->
                         <!-- Buy / SELL -->
-
-                       <section >
+                      
+                      @if(isset($rentals))
+                      <section class='active'>
+                      @else
+                      <section>
+                      @endif
+                      
                          <h5 class="title" data-section-title><a class="sectionWidth find" href="#panel2">PROPERTY FOR RENT</a></h5>
                          <div class="content" data-section-content>
                           <div class="row">
@@ -322,12 +327,12 @@
 
                          <div class="row">
                            <div class="large-12 columns showAllListings">
-                            {{link_to('show-all-listings', 'BROWSE ALL LISTINGS FOR RENT', array('class'=>'browseAllListings button radius expand '));}} 
+                            {{link_to('all-rent-listings', 'BROWSE ALL LISTINGS FOR RENT', array('class'=>'browseAllListings button radius expand '));}} 
                           </div>
                         </div>
                         <div class="row">
                          <div class="large-6 columns">
-                         {{link_to('rent-appartments', 'APARTMENTS', array('class'=>'alert-box secondary expand radius propertiesAllert'));}}
+                         {{link_to('rent-appartments', 'APPARTMENTS', array('class'=>'alert-box secondary expand radius propertiesAllert'));}}
                          </div>
 
                          <div class="large-6 columns">
