@@ -20,7 +20,7 @@
 				</div>
 			</div>
 			<hr/>
-			<strong>Decription:</strong>
+			<strong>Description:</strong>
 			<br></br>
 			<p>{{$house->details}}</p>
 
