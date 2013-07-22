@@ -44,9 +44,13 @@
 						</div>
 						<div class="large-6 columns">
 							<ul class="vcard">
-							<li><a href="">Property Details</a></li>
-							<li class="locality"><a href="{{URL::to('search/16')}}">  Listing Agent: </a></li>
+							<li><a href="{{url('search/'.$house->id)}}">Property Details</a></li>
+							@if($house->agent)
+							<li class="locality"><a href="{{URL::to('agent/'.$house->agent['id'])}}">Listing Agent:
+							{{$house->agent['firstname'] . ' '. $house->agent['lastname']}}
 
+							 </a></li>
+							@endif
 							</ul>
 						</div>
 					</div>

@@ -13,7 +13,7 @@ class SearchController extends BaseController {
 
      public function index()
     {
-    $houses = House::with('images')->where(function($query){
+    $houses = House::with('images', 'agent')->where(function($query){
 
     $location  = Input::get('location');
     if($location)
@@ -47,7 +47,7 @@ class SearchController extends BaseController {
     }
     public function show($id)
     {
-     $house = House::with('images')->where('id', '=', $id)->first();   
+     $house = House::with('images', 'agent')->where('id', '=', $id)->first();   
      return View::make('search.onehouse')->with(compact('house'));
     }
 
