@@ -13,7 +13,7 @@ class BrowseController extends BaseController {
     {
     
     $houses = House::with('images', 'agent')->where('propertytype_id', '=', $type)->paginate(5);
-    return View::make('search.results')->with(compact('houses'));
+    return View::make('search.results')->with(compact('houses'))->with('agents', parent::getRandomAgents());
 
     }
 

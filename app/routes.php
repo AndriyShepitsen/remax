@@ -78,6 +78,7 @@ Route::get('browse/{type}', array('as'=>'browse', 'uses'=>'BrowseController@inde
 /* Agent listing */
 
 Route::get('agent/{id}', 'AgentController@show_listings');
+Route::get('agent-rentals/{id}', 'AgentController@show_rentals');
 
 /*  Renting  */
 Route::get('rent', 'RentController@index');

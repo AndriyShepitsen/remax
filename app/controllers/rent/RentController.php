@@ -12,27 +12,27 @@ class RentController extends BaseController {
     public function appartments() {
 
     $rentals = Rental::with('rental_images', 'agent')->where('property_type','=', 1)->paginate(5);
-    return View::make('rent.rent_results')->with(compact('rentals'));
+    return View::make('rent.rent_results')->with(compact('rentals'))->with('agents', parent::getRandomAgents());
 
     }
 
     public function show($id) {
 
     $rental = Rental::with('rental_images', 'agent')->where('id','=', $id)->first();
-    return View::make('rent.one_rent')->with(compact('rental'));
+    return View::make('rent.one_rent')->with(compact('rental'))->with('agents', parent::getRandomAgents());
 
     }
     public function all() {
 
     $rentals = Rental::with('rental_images', 'agent')->paginate(5);
-    return View::make('rent.rent_results')->with(compact('rentals'));
+    return View::make('rent.rent_results')->with(compact('rentals'))->with('agents', parent::getRandomAgents());
 
     }
 
     public function houses(){
 
     $rentals = Rental::with('rental_images', 'agent')->where('property_type','=', 2)->paginate(5);
-    return View::make('rent.rent_results')->with(compact('rentals'));
+    return View::make('rent.rent_results')->with(compact('rentals'))->with('agents', parent::getRandomAgents());
 
     }
 
@@ -63,7 +63,7 @@ class RentController extends BaseController {
 
     })->paginate(5);
 
-    return View::make('rent.rent_results')->with(compact('rentals'))->with('Input', Input::all());
+    return View::make('rent.rent_results')->with(compact('rentals'))->with('Input', Input::all())->with('agents', parent::getRandomAgents());
 
     }
  

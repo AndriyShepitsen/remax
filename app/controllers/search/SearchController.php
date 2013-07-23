@@ -42,13 +42,13 @@ class SearchController extends BaseController {
    
 
 
-    return View::make('search.results')->with(compact('houses'))->with('Input', Input::all());
+    return View::make('search.results')->with(compact('houses'))->with('Input', Input::all())->with('agents', parent::getRandomAgents());
 
     }
     public function show($id)
     {
      $house = House::with('images', 'agent')->where('id', '=', $id)->first();   
-     return View::make('search.onehouse')->with(compact('house'));
+     return View::make('search.onehouse')->with(compact('house'))->with('agents', parent::getRandomAgents());
     }
 
 

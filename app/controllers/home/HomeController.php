@@ -27,6 +27,7 @@ class HomeController extends BaseController {
 		
 	return View::make('home.vw_home')
 	->with('newsBuy',$newsBuy[0])
-	->with('newsSell', $newsSell[0]);
+	->with('newsSell', $newsSell[0])
+	->with('agents', parent::getRandomAgents());
 	}
 }
