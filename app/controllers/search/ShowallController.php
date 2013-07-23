@@ -13,7 +13,7 @@ class ShowallController extends BaseController {
     {
     $houses = House::with('images', 'agent')->paginate(5);
 
-    return View::make('search.showall')->with(compact('houses'));
+    return View::make('search.showall')->with(compact('houses'))->with('agents', parent::getRandomAgents());
 
     }
 
