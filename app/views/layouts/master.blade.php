@@ -762,9 +762,9 @@
                  </div>
                  <div class="agentPic"><img src="{{url('comp/img/agentsL/Dan_I_Florian.jpg')}}" alt="Dan I. Florian, RE/MAX FIRST CLASS Agent">
                  </div>
-                 <div>{{link_to('agent/4', 'Agent Listings For Sale', array('class'=>'agentProp label specialist'));}}
+                 <div>{{link_to('agent/4', 'Agent Listings For Sale', array('class'=>'alert-box secondary agentProp'));}}
                  </div>
-                 <div>{{link_to('agent/4', 'Agent Listings For Rent', array('class'=>'agentProp label specialist'));}}
+                 <div>{{link_to('agent/4', 'Agent Listings For Rent', array('class'=>'alert-box secondary agentProp'));}}
                  </div>
                </div>
 

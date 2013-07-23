@@ -310,18 +310,18 @@ h3{
 #mainContent{
 	@include mainContentStyle;
 	
-		dt{
-			font-size: 13px !important;
-		}
-		dd{
-			font-size: 13px !important;
-		}
-		.menues{
+	dt{
+		font-size: 13px !important;
+	}
+	dd{
+		font-size: 13px !important;
+	}
+	.menues{
 		p{
 			font-size: 13px !important;
 		}
 	}
-		
+
 }
 /*  =home page starts here*/
 .selectedProperty{
@@ -585,9 +585,17 @@ ul.ulagents li {
 	margin-top: 10px;
 }
 
+.specialist{
+	font-size: 11px !important;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+	color: $colorFontGray;
+	background-color: darken(#E9E9E9, 15%);
+}
+
 .specialist:hover, .specialist:focus{
 	color: $colorFontOffWhite !important;
-	
+
 }
 .info{
 	margin-top: 25px !important;
@@ -599,11 +607,12 @@ ul.ulagents li {
 	padding-bottom: 0px !important;
 }
 .agentProp{
-	margin-top: 10px;
+	// font-size: 11px !important;
+	// padding-top: 5px !important;
+	// padding-bottom: 5px !important;
+	// margin-top: 10px;
 	font-size: 11px;
-	background-color: #5F5F5F;
-	padding-top: 5px !important;
-	padding-bottom: 5px !important;
+	// background-color: darken(#E9E9E9, 35%);
 }
 .logoS{
 	margin-top:5px;
