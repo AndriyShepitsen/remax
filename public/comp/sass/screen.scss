@@ -409,9 +409,15 @@ label{
 	display: inline-block !important;
 	font-size: 10px !important;
 }
+.aCallAgent{
+	display: inline-block !important;
+	border: none !important;
+	padding-bottom: 5px !important;
+	padding-top: 5px !important;
+}
 .callAgent{
 	font-size: 10px !important;
-border: 0px !important;	
+	border: 0px !important;	
 	background-color:  lighten(#F2F2F2, 3%)!important;
 	border: 1px solid darken(#F2F2F2, 5%)!important;
 	padding-top: 5px !important;
