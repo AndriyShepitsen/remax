@@ -236,7 +236,7 @@
                             
 
                              <div class="row">
-                               <div class="large-12 columns showAllListings">
+                               <div class="large-12 columns showAllListings ">
                                 {{link_to('show-all-listings', 'BROWSE ALL LISTINGS FOR SALE', array('class'=>'browseAllListings button radius expand '));}} 
                               </div>
                             </div>
