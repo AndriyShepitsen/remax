@@ -54,7 +54,7 @@
 								</li>
 								@if($house->agent)
 								<li class="locality right">
-									<a href="{{URL::to('agent/'.$house->agent['id'])}}">Listing Agent:
+									<a class="th radius" data-reveal-id="{{$house->agent['id']}}" href="#">Listing Agent:
 										<strong>{{$house->agent['firstname'] . ' '. $house->agent['lastname']}}</strong>
 									</a>
 									<br/>
