@@ -26,13 +26,13 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="large-6 columns">
+						<div class="large-7 columns">
 
 							<small>
-								bedrooms:{{$house->bedrooms}} | 
-								bathrooms:{{$house->bathrooms}} | 
-								@if ($house->size!=null)
-								size:{{$house->size}} sqft. 
+								Bedrooms:{{$house->bedrooms}} | 
+								Bathrooms:{{$house->bathrooms}} | 
+								@if ($house->year!=null)
+								Year:{{$house->year}} 
 								@endif
 							</small>
 							@if($house->images()->first()->maxid)
@@ -42,8 +42,9 @@
 							</ul>
 							@endif
 						</div>
-						<div class="large-6 columns">
+						<div class="large-5 columns">
 							<ul class="vcard">
+							<span class="label">Basic Information</span>
 							<li><a href="{{url('search/'.$house->id)}}">Property Details</a></li>
 							@if($house->agent)
 							<li class="locality"><a href="{{URL::to('agent/'.$house->agent['id'])}}">Listing Agent:
