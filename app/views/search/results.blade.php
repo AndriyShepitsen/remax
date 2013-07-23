@@ -21,45 +21,46 @@
 						</div>
 						<div class="large-2 columns">
 
-							<span class="priceStyle right radius label">${{number_format($house->price)}}
+							<span class="alert-box secondary radius priceStyle right ">${{number_format($house->price)}}
 							</span>
 						</div>
 					</div>
 					<div class="row">
-						<div class="large-7 columns">
+						<div class="large-7 columns houseImgWrapper">
 
 							<small>
+								MLS#:{{$house->listing}} | 
+								Year:{{$house->year}}| 
 								Bedrooms:{{$house->bedrooms}} | 
-								Bathrooms:{{$house->bathrooms}} | 
+								Bathrooms:{{$house->bathrooms}}  
 								@if ($house->year!=null)
-								Year:{{$house->year}} 
 								@endif
 							</small>
 							@if($house->images()->first()->maxid)
-							<ul class="no-bullet listingImage"
+							<ul class="no-bullet listingImage">
 								<li><a href="{{url('search/'.$house->id)}}"><img src="{{url('comp/img/thumbs/'.$house->id.'/1.jpg')}}"  class="th"></a> </li>
 							</ul>
 							@endif
 						</div>
 
-						<div class="large-5 columns">
-							<ul class="vcard">
-							<li><div class="label">Basic Information</div>
-							<div class="searchDescription">
-							{{Str::limit(ucfirst(strtolower($house->details)), 100)}} </br>
-							<a href="{{url('search/'.$house->id)}}" class="readMore">Property Details</a>
-							<hr/>
-							</div>
-								
-
-							</li>
-							
-							@if($house->agent)
-							<li class="locality"><a href="{{URL::to('agent/'.$house->agent['id'])}}">Listing Agent:
-							{{$house->agent['firstname'] . ' '. $house->agent['lastname']}}
-
-							 </a></li>
-							@endif
+						<div class="large-5 columns basicInfoWrapper">
+							<ul class="vcard basicInfoUl">
+								<li><div class="alert-box secondary expand basicInfo">Basic Information</div>
+									<div class="searchDescription">
+										{{Str::limit(ucfirst(strtolower($house->details)), 280)}} </br>
+										<a href="{{url('search/'.$house->id)}}" class="readMore"><em>Property Details</em></a>
+										<hr/>
+									</div>
+								</li>
+								@if($house->agent)
+								<li class="locality right">
+									<a href="{{URL::to('agent/'.$house->agent['id'])}}">Listing Agent:
+										<strong>{{$house->agent['firstname'] . ' '. $house->agent['lastname']}}</strong>
+									</a>
+									<br/>
+									<span>Direct Phone: <strong>{{$house->agent['directphone']}}</strong></span>
+								</li>
+								@endif
 							</ul>
 						</div>
 					</div>
