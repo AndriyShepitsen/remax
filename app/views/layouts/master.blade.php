@@ -371,50 +371,16 @@
                <div><h4 class="newsHead"><a class="newsHead"href="">OUR AGENTS</a> <h4></div>
                  <hr/>
                  <ul class="small-block-grid-3 ulagents">
-                   <li  class="liAgents"><a class="th radius" data-reveal-id="danFlorian" href="#"><img src="{{url('comp/img/agents/Dan_I_Florian.jpg')}}" alt="RE/MAX FIRST CLASS agent profile, Dan I. Florian"><a/>
-                     {{link_to('#', 'DAN I.', array('class'=>'agentLink'));}} <br/>
-                     {{link_to('#', 'FLORIAN', array('class'=>'agentLinkLast'));}}
-                   </li>
-                   <li class="liAgents"><a class="th radius ulagents" data-reveal-id="ivyMoy" href="#"><img src="{{url('comp/img/agents/Ivy_Moy.jpg')}}" alt="RE/MAX FIRST CLASS agent profile Ivy Moy"><a/>
-                     {{link_to('#', 'IVY', array('class'=>'agentLink'));}} <br/>
-                     {{link_to('#', 'MOY', array('class'=>'agentLinkLast'));}}
-                   </li>
-                   <li class="liAgents"><a class="th radius ulagents" data-reveal-id="cheryletteHilton" href="#"><img src="{{url('comp/img/agents/Cherylette_Hilton.jpg')}}" alt="RE/MAX FIRST CLASS agent profile Cherylette Hilton"><a/>
-                     {{link_to('#', 'CHERYLETTE', array('class'=>'agentLink'));}} <br/>
-                     {{link_to('#', 'HILTON', array('class'=>'agentLinkLast'));}}
-                   </li>
-                   <li class="liAgents"><a class="th radius ulagents" data-reveal-id="elenaDan" href="#"><img src="{{url('comp/img/agents/Dan_Elena.jpg')}}" alt="RE/MAX FIRST CLASS agent profile Dan Elena"><a/>
-                     {{link_to('#', 'ELENA', array('class'=>'agentLink'));}} <br/>
-                     {{link_to('#', 'DAN', array('class'=>'agentLinkLast'));}}
-                   </li>
-                   <li class="liAgents"><a class="th radius ulagents" data-reveal-id="mariusDan" href="#"><img src="{{url('comp/img/agents/Dan_Elena.jpg')}}" alt="RE/MAX FIRST CLASS agent profile Marius Dan"><a/>
-                     {{link_to('#', 'MARIUS', array('class'=>'agentLink'));}} <br/>
-                     {{link_to('#', 'DAN', array('class'=>'agentLinkLast'));}}
-                   </li>
-                   <li class="liAgents"><a class="th radius ulagents" data-reveal-id="barryBenveniste" href="#"><img src="{{url('comp/img/agents/Barry_Benveniste.jpg')}}" alt="RE/MAX FIRST CLASS agent profile Barry Benveniste"><a/>
-                     {{link_to('#', 'BARRY', array('class'=>'agentLink'));}} <br/>
-                     {{link_to('#', 'BENVENISTE', array('class'=>'agentLinkLast'));}}
-                   </li>
-                   <li class="liAgents"><a class="th radius ulagents" data-reveal-id="markFeyman" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt="RE/MAX FIRST CLASS agent profile Mark Feyman"><a/>
-                     {{link_to('#', 'MARK', array('class'=>'agentLink'));}} <br/>
-                     {{link_to('#', 'FEYMAN', array('class'=>'agentLinkLast'));}}
-                   </li>
-                   <li class="liAgents"><a class="th radius ulagents" data-reveal-id="elizabethCherny" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt="RE/MAX FIRST CLASS agent profile Mark Feyman"><a/>
-                     {{link_to('#', 'ELIZABETH', array('class'=>'agentLink'));}} <br/>
-                     {{link_to('#', 'CHERNY', array('class'=>'agentLinkLast'));}}
-                   </li>
-                   <li class="liAgents"><a class="th radius ulagents" data-reveal-id="anthonyDavidson" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt="RE/MAX FIRST CLASS agent profile Mark Feyman"><a/>
-                     {{link_to('#', 'ANTHONY', array('class'=>'agentLink'));}} <br/>
-                     {{link_to('#', 'DAVIDSON', array('class'=>'agentLinkLast'));}}
-                   </li>
-                   <li class="liAgents"><a class="th radius ulagents" data-reveal-id="haroldOza" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt="RE/MAX FIRST CLASS agent profile Harold Oza"><a/>
-                     {{link_to('#', 'HAROLD', array('class'=>'agentLink'));}} <br/>
-                     {{link_to('#', 'OZA', array('class'=>'agentLinkLast'));}}
-                   </li>
-                   <li class="liAgents"><a class="th radius ulagents" data-reveal-id="johnDias" href="#"><img src="{{url('comp/img/agents/3.png')}}" alt="RE/MAX FIRST CLASS agent profile John B. Dias"><a/>
-                     {{link_to('#', 'JOHN B.', array('class'=>'agentLink'));}} <br/>
-                     {{link_to('#', 'DIAS', array('class'=>'agentLinkLast'));}}
-                   </li>
+                   
+
+                  @foreach($agents as $agent)
+                  
+                 <li  class="liAgents"><a class="th radius" data-reveal-id="{{$agent['id']}}" href="#"><img src="{{url('comp/img/agents/'.$agent['id'].'.jpg')}}" alt="RE/MAX FIRST CLASS agent profile"><a/>
+                   {{link_to('#', $agent['firstname'], array('class'=>'agentLink'));}} <br/>
+                   {{link_to('#', $agent['lastname'], array('class'=>'agentLinkLast'));}}
+                 </li> 
+                  @endforeach
+                   
                  </ul>
                </div>
              </div>
@@ -718,7 +684,7 @@
 
 
 
-                 <!-- =Dan Florian profile starts here -->
+                 <!-- ################################################# =Dan Florian profile starts here -->
 
                  <div id="danFlorian" class="reveal-modal small adminAuth2 createAccount panel">
                    {{Form::open(array('url' => 'foo/bar'))}}
@@ -807,7 +773,7 @@
             </div>
           </div>
         </div>
-        <!-- =Dan Florian profile ends here -->
+        <!-- #################################################=Dan Florian profile ends here -->
 
 
 

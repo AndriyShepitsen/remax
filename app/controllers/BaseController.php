@@ -1,5 +1,6 @@
 <?php
-
+include_once app_path() . '/util/SelectRandomAgents.php';
+//LOCATION: remax/public
 class BaseController extends Controller {
 
 	/**
@@ -15,4 +16,11 @@ class BaseController extends Controller {
 		}
 	}
 
+
+
+protected function getRandomAgents()
+{
+	$agents = Agent::all()->toArray();
+	return SelectRandomAgents::choose($agents, 9);
+	}
 }
