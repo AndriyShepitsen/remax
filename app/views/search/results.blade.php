@@ -21,7 +21,7 @@
 						</div>
 						<div class="large-2 columns">
 
-							<span class="alert-box secondary radius priceStyle right ">${{number_format($house->price)}}
+							<span class="alert-box secondary radius priceStyle right "><em>${{number_format($house->price)}}</em>
 							</span>
 						</div>
 					</div>
@@ -29,10 +29,10 @@
 						<div class="large-7 columns houseImgWrapper">
 
 							<small>
-								MLS#:{{$house->listing}} | 
-								Year:{{$house->year}}| 
-								Bedrooms:{{$house->bedrooms}} | 
-								Bathrooms:{{$house->bathrooms}}  
+								MLS#: {{$house->listing}}  | 
+								Year: {{$house->year}}  | 
+								Bedrooms: {{$house->bedrooms}}  | 
+								Bathrooms: {{$house->bathrooms}}  
 								@if ($house->year!=null)
 								@endif
 							</small>
@@ -45,13 +45,15 @@
 
 						<div class="large-5 columns basicInfoWrapper">
 							<ul class="vcard basicInfoUl">
-								<li><div class="alert-box secondary expand basicInfo">Basic Information</div>
+								<li>
+									<div class="alert-box secondary expand basicInfo">Basic Information
+									</div>
 									<div class="searchDescription">
 										{{Str::limit(ucfirst(strtolower($house->details)), 280)}} </br>
-										<a href="{{url('search/'.$house->id)}}" class="readMore"><em>Property Details</em></a>
-										<hr/>
+										<a href="{{url('search/'.$house->id)}}" class="readMore details "><em>Property Details</em></a>
 									</div>
 								</li>
+<<<<<<< HEAD
 								@if($house->agent)
 								<li class="locality right">
 									<a class="th radius" data-reveal-id="{{$house->agent['id']}}" href="#">Listing Agent:
@@ -61,9 +63,23 @@
 									<span>Direct Phone: <strong>{{$house->agent['directphone']}}</strong></span>
 								</li>
 								@endif
+=======
+>>>>>>> 33f5917eeec8deffdffd431699f62dc30d4bdfd6
 							</ul>
+
+
+							@if($house->agent)
+							<div class="locality right alert-box secondary radius callAgent">
+								<a href="{{URL::to('agent/'.$house->agent['id'])}}">Listing Agent:
+									<strong>{{$house->agent['firstname'] . ' '. $house->agent['lastname']}}</strong>
+								</a>
+								<br/>
+								<a href="#">Direct Phone: {{$house->agent['directphone']}}</strong></span></a>
+							</div>
+							@endif
 						</div>
 					</div>
+					
 				</div>
 			</a>
 		</li>

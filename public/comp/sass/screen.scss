@@ -29,6 +29,7 @@ $copyrightBackgroundColor: #3F3F3F;
 $colorRed: lighten(#B92025, 10%);
 $myTextShadow: #FFFFFF 1px 1px 0px;
 $colorBlue: #396C95;
+$myBorderGray: 1px solid darken(#F2F2F2, 5%)!important;
 /*=mixins*/
 @mixin marginOneEmTopLeft{
 	margin-left:1em;
@@ -373,6 +374,7 @@ label{
 	font-weight: bold !important;
 	// color: $colorFontOffWhite !important;
 	background-color:  lighten(#F2F2F2, 1%)!important;
+	border: 1px solid darken(#F2F2F2, 5%)!important;
 	padding-right: 15px !important;
 	padding-left: 15px !important;
 	padding-top: 5px !important;
@@ -388,8 +390,10 @@ label{
 .basicInfo{
 	padding-top: 5px !important;
 	padding-bottom: 5px !important;
-	font-size: 14px !important;
-	border: 0px !important;
+	font-size: 12px !important;
+	border: 1px groove $colorFontOffWhite !important;
+	
+	background-color:  darken(#F2F2F2, 2%)!important;
 	margin-top: 10px !important;
 }
 .basicInfoUl{
@@ -400,8 +404,23 @@ label{
 	letter-spacing: 1px;
 	color: $colorFontGray !important;
 }
+.details{
+	margin-top: 5px !important;
+	display: inline-block !important;
+	font-size: 10px !important;
+}
+.callAgent{
+	font-size: 10px !important;
+border: 0px !important;	
+	background-color:  lighten(#F2F2F2, 3%)!important;
+	border: 1px solid darken(#F2F2F2, 5%)!important;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+	// margin-top: 10px !important;
+	margin-bottom: 0px !important;
+}
 .searchDescription{
-	font-size: 11px !important;
+	font-size: 10px !important;
 	hr{
 		margin-bottom: 10px !important;
 		margin-top: 5px !important;
@@ -429,6 +448,9 @@ label{
 }
 .houseImgWrapper{
 	padding-right: 0px !important;
+	font-size: 16px !important;
+	font-weight: bold !important;
+	// letter-spacing: .1em !important;
 }
 .alert-box{
 	margin-bottom: .5em !important;
