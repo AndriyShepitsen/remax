@@ -310,18 +310,18 @@ h3{
 #mainContent{
 	@include mainContentStyle;
 	
-		dt{
-			font-size: 13px !important;
-		}
-		dd{
-			font-size: 13px !important;
-		}
-		.menues{
+	dt{
+		font-size: 13px !important;
+	}
+	dd{
+		font-size: 13px !important;
+	}
+	.menues{
 		p{
 			font-size: 13px !important;
 		}
 	}
-		
+
 }
 /*  =home page starts here*/
 .selectedProperty{
@@ -371,11 +371,42 @@ label{
 }
 .priceStyle{
 	font-weight: bold !important;
-	color: $colorFontOffWhite !important;
-	background-color: lighten($colorNavPanel, 20%) !important;
+	// color: $colorFontOffWhite !important;
+	background-color:  lighten(#F2F2F2, 1%)!important;
+	padding-right: 15px !important;
+	padding-left: 15px !important;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+	font-size: 14px;
+	// margin-top: -10px; 
 }
 
-
+.basicInfoWrapper{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.basicInfo{
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+	font-size: 14px !important;
+	border: 0px !important;
+	margin-top: 10px !important;
+}
+.basicInfoUl{
+	padding-left: 0px !important;
+}
+.propDetails{
+	font-size: 10px;
+	letter-spacing: 1px;
+	color: $colorFontGray !important;
+}
+.searchDescription{
+	font-size: 11px !important;
+	hr{
+		margin-bottom: 10px !important;
+		margin-top: 5px !important;
+	}
+}
 .showAllListings{
 	margin-bottom: 10px !important;	
 	button, .button {
@@ -394,6 +425,10 @@ label{
 .listingImage{
 	margin-left: 0px !important;
 	margin-top: 5px !important;
+	width: 315px;
+}
+.houseImgWrapper{
+	padding-right: 0px !important;
 }
 .alert-box{
 	margin-bottom: .5em !important;
@@ -406,6 +441,7 @@ label{
 	a:hover{
 		color: lighten($colorFontGray, 10%);
 	}
+	margin-bottom: 10px !important;
 }
 .button.secondary{
 	color: $colorFontGray !important;
@@ -501,10 +537,6 @@ article p{
 ul.newListings li{
 }
 
-.priceStyle{
-	font-size: 15px;
-	margin-top: -10px; 
-}
 .oneListing{
 	font-size:12px;
 	h5{
@@ -585,9 +617,17 @@ ul.ulagents li {
 	margin-top: 10px;
 }
 
+.specialist{
+	font-size: 11px !important;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+	color: $colorFontGray;
+	background-color: darken(#E9E9E9, 15%);
+}
+
 .specialist:hover, .specialist:focus{
 	color: $colorFontOffWhite !important;
-	
+
 }
 .info{
 	margin-top: 25px !important;
@@ -599,11 +639,12 @@ ul.ulagents li {
 	padding-bottom: 0px !important;
 }
 .agentProp{
-	margin-top: 10px;
+	// font-size: 11px !important;
+	// padding-top: 5px !important;
+	// padding-bottom: 5px !important;
+	// margin-top: 10px;
 	font-size: 11px;
-	background-color: #5F5F5F;
-	padding-top: 5px !important;
-	padding-bottom: 5px !important;
+	// background-color: darken(#E9E9E9, 35%);
 }
 .logoS{
 	margin-top:5px;

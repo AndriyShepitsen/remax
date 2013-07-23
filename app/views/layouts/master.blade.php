@@ -731,6 +731,7 @@
                  <div>{{link_to('agent/'.$agent['id'], 'Agent Listings For Sale', array('class'=>'agentProp label specialist'));}}
                  </div>
                  <div>{{link_to('agent-rentals/'.$agent['id'], 'Agent Listings For Rent', array('class'=>'agentProp label specialist'));}}
+
                  </div>
                </div>
 
