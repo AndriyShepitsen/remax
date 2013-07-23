@@ -100,26 +100,26 @@
 	"buffers":
 	[
 		{
-			"file": "app/views/search/onehouse.blade.php",
-			"settings":
-			{
-				"buffer_size": 1268,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "app/views/search/results.blade.php",
 			"settings":
 			{
-				"buffer_size": 2430,
+				"buffer_size": 2903,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/views/layouts/master.blade.php",
+			"file": "app/views/rent/one_rent.blade.php",
 			"settings":
 			{
-				"buffer_size": 77762,
+				"buffer_size": 1361,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/rent/rent_results.blade.php",
+			"settings":
+			{
+				"buffer_size": 1434,
 				"line_ending": "Windows"
 			}
 		},
@@ -127,15 +127,7 @@
 			"file": "public/comp/sass/screen.scss",
 			"settings":
 			{
-				"buffer_size": 14428,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/views/home/vw_home.blade.php",
-			"settings":
-			{
-				"buffer_size": 4692,
+				"buffer_size": 15070,
 				"line_ending": "Windows"
 			}
 		}
@@ -208,15 +200,16 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/remax/app/views/search/onehouse.blade.php",
+		"/C/xampp/htdocs/remax/app/views/home/vw_home.blade.php",
+		"/C/xampp/htdocs/remax/app/views/layouts/master.blade.php",
+		"/C/xampp/htdocs/remax/app/views/rent/rent_results.blade.php",
 		"/C/xampp/htdocs/remax/app/controllers/search/SearchController.php",
 		"/C/xampp/htdocs/remax/app/controllers/search/BrowseController.php",
 		"/C/xampp/htdocs/remax/app/controllers/search/ShowallController.php",
 		"/C/xampp/htdocs/remax/artisanCommand.txt",
-		"/C/xampp/htdocs/remax/app/views/layouts/master.blade.php",
-		"/C/xampp/htdocs/remax/app/views/search/onehouse.blade.php",
 		"/C/xampp/htdocs/remax/public/comp/sass/screen.scss",
 		"/C/xampp/htdocs/remax/app/views/search/results.blade.php",
-		"/C/xampp/htdocs/remax/app/views/home/vw_home.blade.php",
 		"/C/xampp/htdocs/remax/app/views/news/vw_news_for_sellers.blade.php",
 		"/C/xampp/htdocs/remax/app/views/buying/vw_how_much_house_can_you_afford.blade.php",
 		"/C/xampp/htdocs/remax/app/views/news/vw_news_for_buyers.blade.php",
@@ -286,6 +279,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"details",
+			"Li",
+			"li",
 			"locality",
 			"agents",
 			"pricestyle",
@@ -410,10 +406,7 @@
 			"yelp",
 			"footer",
 			"asideHeader",
-			"maincontent",
-			"class",
-			"propertiesFooterStyle",
-			"social"
+			"maincontent"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -431,24 +424,52 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/search/onehouse.blade.php",
+					"file": "app/views/search/results.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1268,
+						"buffer_size": 2903,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								535,
-								535
+								549,
+								549
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 240.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/rent/one_rent.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1361,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -463,20 +484,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "app/views/search/results.blade.php",
+					"buffer": 2,
+					"file": "app/views/rent/rent_results.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2430,
+						"buffer_size": 1434,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2080,
-								2080
+								0,
+								0
 							]
 						],
 						"settings":
@@ -485,37 +506,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 700.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/views/layouts/master.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 77762,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								40235,
-								40235
-							]
-						],
-						"settings":
-						{
-							"history_list_is_closing": true,
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 17180.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -532,15 +523,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 14428,
+						"buffer_size": 15070,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7209,
-								7209
+								644,
+								644
 							]
 						],
 						"settings":
@@ -549,35 +540,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 7430.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/views/home/vw_home.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4692,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3540,
-								3540
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2580.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -639,6 +602,10 @@
 		"selected_items":
 		[
 			[
+				"mast",
+				"app\\views\\layouts\\master.blade.php"
+			],
+			[
 				"sho",
 				"app\\controllers\\search\\ShowallController.php"
 			],
@@ -653,10 +620,6 @@
 			[
 				"home",
 				"app\\views\\home\\vw_home.blade.php"
-			],
-			[
-				"mast",
-				"app\\views\\layouts\\master.blade.php"
 			],
 			[
 				"one",
