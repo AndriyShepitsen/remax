@@ -36,16 +36,24 @@
 								@endif
 							</small>
 							@if($house->images()->first()->maxid)
-							<ul class="no-bullet listingImage">
+							<ul class="no-bullet listingImage"
 								<li><a href="{{url('search/'.$house->id)}}"><img src="{{url('comp/img/thumbs/'.$house->id.'/1.jpg')}}"  class="th"></a> </li>
-
 							</ul>
 							@endif
 						</div>
+
 						<div class="large-5 columns">
 							<ul class="vcard">
-							<span class="label">Basic Information</span>
-							<li><a href="{{url('search/'.$house->id)}}">Property Details</a></li>
+							<li><div class="label">Basic Information</div>
+							<div class="searchDescription">
+							{{Str::limit(ucfirst(strtolower($house->details)), 100)}} </br>
+							<a href="{{url('search/'.$house->id)}}" class="readMore">Property Details</a>
+							<hr/>
+							</div>
+								
+
+							</li>
+							
 							@if($house->agent)
 							<li class="locality"><a href="{{URL::to('agent/'.$house->agent['id'])}}">Listing Agent:
 							{{$house->agent['firstname'] . ' '. $house->agent['lastname']}}
