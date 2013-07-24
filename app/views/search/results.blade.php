@@ -62,29 +62,29 @@
 								<div class="locality right alert-box secondary radius callAgent">
 									<a class="th radius aCallAgent" data-reveal-id="{{$house->agent['id']}}" href="#">Listing Agent:
 										<span class="agentNameList" >{{$house->agent['firstname'] . ' '. $house->agent['lastname']}}</span >
-									</a>
-									<br/>
-									<span class="agentPhoneList">Direct Phone: <strong>{{$house->agent['directphone']}}</strong></span>
-								</div>
-								@endif
-							</ul>
+										</a>
+										<br/>
+										<span class="agentPhoneList">Direct Phone: <strong>{{$house->agent['directphone']}}</strong></span>
+									</div>
+									@endif
+								</ul>
+							</div>
+							<!-- =basicInfoWrapper ends here -->
 						</div>
-						<!-- =basicInfoWrapper ends here -->
 					</div>
-				</div>
-				<!-- =panel addressColor ends here -->
-			</a>
-		</li>
-		@endforeach
-	</ul>
-	<?php echo $houses->appends(array(
-		'location' => Input::get('location'),
-		'from' => Input::get('from'),
-		'to' => Input::get('to'),
-		'beds' => Input::get('beds'),
-		'baths' => Input::get('baths')))->links(); ?>
-		@else
-		{No result found for your request}
-		@endif
-	</div>
-	@stop
+					<!-- =panel addressColor ends here -->
+				</a>
+			</li>
+			@endforeach
+		</ul>
+		<?php echo $houses->appends(array(
+			'location' => Input::get('location'),
+			'from' => Input::get('from'),
+			'to' => Input::get('to'),
+			'beds' => Input::get('beds'),
+			'baths' => Input::get('baths')))->links(); ?>
+			@else
+			{No result found for your request}
+			@endif
+		</div>
+		@stop

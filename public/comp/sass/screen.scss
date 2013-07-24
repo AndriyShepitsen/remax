@@ -503,6 +503,7 @@ label{
 }	
 
 .addressColor{
+		color: $colorFontGray;
 	a{
 		color: $colorFontGray;
 	}
@@ -512,6 +513,17 @@ label{
 	margin-bottom: 10px !important;
 	padding-bottom: 15px !important;
 }
+.oneListing{
+	font-size:12px;
+	padding-top: 20px !important;
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+	h5{
+		color: $colorFontGray;
+		font-size: 16px;
+	}
+}
+
 .button.secondary{
 	color: $colorFontGray !important;
 }
@@ -606,13 +618,6 @@ article p{
 ul.newListings li{
 }
 
-.oneListing{
-	font-size:12px;
-	h5{
-		color: $colorFontGray;
-		font-size: 16px;
-	}
-}
 /* =newListings style ends here  *
 
 /* =our agents style starts here */
