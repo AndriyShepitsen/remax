@@ -64,7 +64,7 @@
 										<span class="agentNameList" >{{$house->agent['firstname'] . ' '. $house->agent['lastname']}}</span >
 									</a>
 									<br/>
-									<span>Direct Phone: <strong>{{$house->agent['directphone']}}</strong></span>
+									<span class="agentPhoneList">Direct Phone: <strong>{{$house->agent['directphone']}}</strong></span>
 								</div>
 								@endif
 							</ul>
