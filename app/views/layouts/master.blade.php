@@ -825,5 +825,6 @@
         <script>
           $(document).foundation();
         </script>
+         @yield('agent_thumb')
       </body>
       </html>

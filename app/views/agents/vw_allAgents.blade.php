@@ -2,21 +2,23 @@
 @section('content')
 <!-- //LOCATION: remax/public
 -->
-<div id="innerContent">
-	
+<div id="mainContent">
+	<h1>Remax 1st Class Agents</h1>
 	<ul class="small-block-grid-3 ulagents">
     @foreach($allAgents as $agent)
-    <li  class="liAgents"><a class="th radius" data-reveal-id="{{$agent['id']}}" href="#"><img src="{{url('comp/img/agents/'.$agent['id'].'.jpg')}}" alt="RE/MAX FIRST CLASS agent profile"><a/>
-     {{link_to('#', $agent['firstname'], array('class'=>'agentLink'));}} <br/>
-     {{link_to('#', $agent['lastname'], array('class'=>'agentLinkLast'));}}
+    <li  class="liAgents"><a class="th radius" data-reveal-id="{{$agent['id']}}" href="#"><img src="{{url('comp/img/agents/'.$agent['id'].'.jpg')}}" alt="RE/MAX FIRST CLASS agent profile"><a/><br/>
+    <a class="agentLink" data-reveal-id="{{$agent['id']}}" href="#">
+                  {{$agent['firstname']}}  {{$agent['lastname']}}
+                  </a>
    </li> 
    @endforeach
    
  </ul>
  
 </div>
+@stop
 
-
+@section('agent_thumb')
 @foreach($allAgents as $agent)
 
 <div id="{{$agent['id']}}" class="reveal-modal small adminAuth2 createAccount panel">
@@ -108,6 +110,5 @@
 </div>
 </div>
 @endforeach
-
 @stop
 
