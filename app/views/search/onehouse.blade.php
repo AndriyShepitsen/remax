@@ -30,32 +30,33 @@
 		<div class="row">
 			<div class="large-12 columns">
 				<strong>Description:</strong>
-				<br></br>
-				<p>{{$house->details}}</p>
+				<br/><br/>
+				<p>{{ucfirst(strtolower($house->details))}}</p>
 
-				<strong>MLS:</strong> {{$house->listing}}<br></br>
+				<strong>MLS:</strong> {{$house->listing}}<br/><br/>
 
-				<strong>bedrooms:</strong> {{$house->bedrooms}} <br></br>
+				<strong>Bedrooms:</strong> {{$house->bedrooms}} <br/><br/>
 
-				<strong>bathrooms:</strong> {{$house->bathrooms}} <br></br>
+				<strong>Bathrooms:</strong> {{$house->bathrooms}} <br/><br/>
 
-				<strong>Size:</strong> {{$house->size}} <br></br>
+				<strong>Size:</strong> {{$house->size}} <br/><br/>
 
-				<strong>Year:</strong> {{$house->year}} <br></br>
-
+				<strong>Year:</strong> {{$house->year}} <br/><br/>
 
 				@if($house->agent)
-				<a href="{{URL::to('agent/'.$house->agent['id'])}}">Listing Agent:
-					{{$house->agent['firstname'] . ' '. $house->agent['lastname']}}
-
-				</a>
+				<strong>Listing Agent:</strong>
+				  <a class="agentLink" data-reveal-id="{{$house->agent['id']}}" href="#">
+                  {{$house->agent['firstname']}}  {{$house->agent['lastname']}}
+                  </a> <br/><br/>
 				@endif
 
 				@if($imCounter)
+				<ul class="clearing-thumbs" data-clearing>
 				@for ($i =1; $i <= $imCounter; $i++)
-				<p><img src="{{url('comp/img/images/'.$house->id.'/'.$i.'.jpg')}}"> </p>
+				<li><a class="th" href="{{url('comp/img/images/'.$house->id.'/'.$i.'.jpg')}}">
+				<img width="100px" height="50px" src="{{url('comp/img/images/'.$house->id.'/'.$i.'.jpg')}}"></a></li>
 				@endfor
-
+				</ul>	
 				@endif
 			</div>
 		</div>

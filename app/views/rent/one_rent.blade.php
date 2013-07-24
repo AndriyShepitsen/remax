@@ -38,16 +38,19 @@
 
 
 			@if($rental->agent)
-							<a href="{{URL::to('agent/'.$rental->agent['id'])}}">Listing Agent:
-							{{$rental->agent['firstname'] . ' '. $rental->agent['lastname']}}
-
-							 </a>
-							@endif
+			<strong>Listing Agent:</strong>
+				  <a class="agentLink" data-reveal-id="{{$rental->agent['id']}}" href="#">
+                  {{$rental->agent['firstname']}}  {{$rental->agent['lastname']}}
+                  </a> <br/><br/>			
+			@endif
 
 			@if($imCounter)
-			@for ($i =1; $i <= $imCounter; $i++)
-			<p><img src="{{url('comp/img/rent/'.$rental->id.'/'.$i.'.jpg')}}"> </p>
-			@endfor
+			<ul class="clearing-thumbs" data-clearing>
+				@for ($i =1; $i <= $imCounter; $i++)
+				<li><a class="th" href="{{url('comp/img/rent/'.$rental->id.'/'.$i.'.jpg')}}">
+				<img width="100px" height="50px" src="{{url('comp/img/rent/'.$rental->id.'/'.$i.'.jpg')}}"></a></li>
+				@endfor
+				</ul>
 
 			@endif
 
