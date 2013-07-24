@@ -54,7 +54,7 @@
 									</div>
 									<div class="searchDescription">
 										{{Str::limit(ucfirst(strtolower($house->details)), 280)}} </br>
-										<a href="{{url('search/'.$house->id)}}" class="readMore"><em>Property Details</em></a>
+										<a href="{{url('search/'.$house->id)}}" class="propDetails"><em>Property Details</em></a>
 										<hr/>
 									</div>
 								</li>

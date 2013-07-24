@@ -18,7 +18,7 @@
 							</strong> &nbsp	&nbsp	
 						</div>
 						<div class="large-2 columns">
-							<span class="alert-box secondary radius priceStyle right ">${{number_format($rental->price)}}
+							<span class="button secondary radius priceStyle right ">${{number_format($rental->price)}}
 							</span>
 						</div>
 						<div class="large-2 columns">
@@ -52,7 +52,7 @@
 									</div>
 									<div class="searchDescription">
 										{{Str::limit(ucfirst(strtolower($rental->details)), 280)}} </br>
-										<a href="{{url('search/'.$rental->id)}}" class="readMore"><em>Property Details</em></a>
+										<a href="{{url('search/'.$rental->id)}}" class="readMore propDetails"><em>Property Details</em></a>
 										<hr/>
 									</div>
 								</li>
