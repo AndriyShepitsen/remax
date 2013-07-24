@@ -424,7 +424,10 @@ label{
 	font-size: 11px;
 	text-shadow: $myTextShadow !important;
 	font-weight: bold !important;
+	&:hover{
+		color: lighten($colorBlue, 15%) !important;
 
+	}
 }
 .agentPhoneList{
 	font-size: 11px;
@@ -675,10 +678,10 @@ ul.ulagents li {
 		margin-bottom: 10px;
 	}
 	.agentLink:hover{
-		color: lighten($colorNavPanel, 15%);
+		color: lighten($colorBlue, 15%);
 	}
 	.agentLinkLast:hover{
-		color: lighten($colorNavPanel, 15%);
+		color: lighten($colorBlue, 15%);
 	}
 }
 
