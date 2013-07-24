@@ -233,7 +233,7 @@
 
                                </div>
                              </div>
-                            
+
 
                              <div class="row">
                                <div class="large-12 columns showAllListings ">
@@ -262,218 +262,220 @@
 
                          </div>
                        </section>   <!-- =find your home section ends here -->
-                        <!-- Buy / SELL -->
-                      
-                      @if(isset($rentals))
-                      <section class='active'>
-                      @else
-                      <section>
-                      @endif
-                      
-                         <h5 class="title" data-section-title><a class="sectionWidth find" href="#panel2">PROPERTY FOR RENT</a></h5>
-                         <div class="content" data-section-content>
+                       <!-- Buy / SELL -->
+
+                       @if(isset($rentals))
+                       <section class='active'>
+                        @else
+                        <section>
+                          @endif
+
+                          <h5 class="title" data-section-title><a class="sectionWidth find" href="#panel2">PROPERTY FOR RENT</a></h5>
+                          <div class="content" data-section-content>
+                            <div class="row">
+                              <div class="large-12 columns">
+
+
+                               {{Form::open(array('url' => 'rent', 'method'=>'GET'))}}
+
+                               <div class="row">
+                                 <div class="large-12 columns">
+                                   {{Form::label('location_r', 'Location')}}
+                                   {{Form::text('location_r',Input::get('location_r'), array('placeholder'=>'City and State, Address or Zip Code', 'class'=>'findInput'))}}
+                                 </div>
+                               </div>
+
+                               <div class="row">
+                                 <div class="large-12 columns">
+                                   {{Form::label('from_r', 'Price Range')}}
+                                 </div>
+                               </div>
+
+                               <div class="row">
+                                 <div class="large-6 columns">
+                                   {{Form::text('from_r', Input::get('from_r'), array('placeholder'=>'$ From', 'class'=>'findInput'))}}
+                                 </div>
+                                 <div class="large-6 columns">
+                                   {{Form::text('to_r',  Input::get('to_r'), array('placeholder'=>'$ To', 'class'=>'findInput'))}}
+                                 </div>
+                               </div>
+                               <div class="row">
+                                 <div class="large-6 columns">
+                                   {{Form::label('beds_r', 'Bedrooms')}}
+                                   {{Form::text('beds_r', Input::get('beds_r'), array('placeholder'=>'#', 'class'=>'findinput'))}}
+                                 </div>
+                                 <div class="large-6 columns">
+                                   {{Form::label('baths_r', 'Bathrooms')}}
+                                   {{Form::text('baths_r', Input::get('baths'), array('placeholder'=>'#', 'class'=>'findinput'))}}
+                                 </div>
+
+                               </div>
+                               <div class="row">
+                                 <div class="large-4 columns">
+
+                                   {{ Form::submit('Search', array('class'=>'button small secondary radius submitSearch'))}}
+                                   <br/>
+                                 </div>
+                               </div>
+
+                               {{Form::close()}}
+
+
+                             </div>
+                           </div>
+                           <!-- Buy / SELL -->
+
+                           <div class="row">
+                             <div class="large-12 columns showAllListings">
+                              {{link_to('all-rent-listings', 'BROWSE ALL LISTINGS FOR RENT', array('class'=>'browseAllListings button radius expand '));}} 
+                            </div>
+                          </div>
                           <div class="row">
-                            <div class="large-12 columns">
+                           <div class="large-6 columns">
+                             {{link_to('rent-appartments', 'APPARTMENTS', array('class'=>'alert-box secondary expand radius propertiesAllert'));}}
+                           </div>
 
-
-                             {{Form::open(array('url' => 'rent', 'method'=>'GET'))}}
-
-                             <div class="row">
-                               <div class="large-12 columns">
-                                 {{Form::label('location_r', 'Location')}}
-                                 {{Form::text('location_r',Input::get('location_r'), array('placeholder'=>'City and State, Address or Zip Code', 'class'=>'findInput'))}}
-                               </div>
-                             </div>
-
-                             <div class="row">
-                               <div class="large-12 columns">
-                                 {{Form::label('from_r', 'Price Range')}}
-                               </div>
-                             </div>
-
-                             <div class="row">
-                               <div class="large-6 columns">
-                                 {{Form::text('from_r', Input::get('from_r'), array('placeholder'=>'$ From', 'class'=>'findInput'))}}
-                               </div>
-                               <div class="large-6 columns">
-                                 {{Form::text('to_r',  Input::get('to_r'), array('placeholder'=>'$ To', 'class'=>'findInput'))}}
-                               </div>
-                             </div>
-                             <div class="row">
-                               <div class="large-6 columns">
-                                 {{Form::label('beds_r', 'Bedrooms')}}
-                                 {{Form::text('beds_r', Input::get('beds_r'), array('placeholder'=>'#', 'class'=>'findinput'))}}
-                               </div>
-                               <div class="large-6 columns">
-                                 {{Form::label('baths_r', 'Bathrooms')}}
-                                 {{Form::text('baths_r', Input::get('baths'), array('placeholder'=>'#', 'class'=>'findinput'))}}
-                               </div>
-
-                             </div>
-                             <div class="row">
-                               <div class="large-4 columns">
-
-                                 {{ Form::submit('Search', array('class'=>'button small secondary radius submitSearch'))}}
-                                 <br/>
-                               </div>
-                             </div>
-
-                             {{Form::close()}}
-
-
+                           <div class="large-6 columns">
+                             {{link_to('rent-houses', 'HOUSES', array('class'=>'alert-box secondary expand radius propertiesAllert'));}}
                            </div>
                          </div>
-                         <!-- Buy / SELL -->
 
-                         <div class="row">
-                           <div class="large-12 columns showAllListings">
-                            {{link_to('all-rent-listings', 'BROWSE ALL LISTINGS FOR RENT', array('class'=>'browseAllListings button radius expand '));}} 
-                          </div>
-                        </div>
-                        <div class="row">
-                         <div class="large-6 columns">
-                         {{link_to('rent-appartments', 'APPARTMENTS', array('class'=>'alert-box secondary expand radius propertiesAllert'));}}
-                         </div>
+                       </div>                        
+                     </section>
 
-                         <div class="large-6 columns">
-                           {{link_to('rent-houses', 'HOUSES', array('class'=>'alert-box secondary expand radius propertiesAllert'));}}
-                         </div>
-                       </div>
+                   </div>
 
-                     </div>                        
-                   </section>
+                 </div><!-- aside  large-12 columns panel --> 
+               </div>
 
-                 </div>
-
-               </div><!-- aside  large-12 columns panel --> 
-             </div>
-
-             <div class="row">
-               <div class="large-12 columns panel newListings"> 
-                 <div>
-                  <h4> <a class="newsHead" href="#">NEW LISTINGS FOR SALE</a> </h4>
+               <div class="row">
+                 <div class="large-12 columns panel newListings"> 
+                   <div>
+                    <h4> <a class="newsHead" href="#">NEW LISTINGS FOR SALE</a> </h4>
+                  </div>
+                  <hr/>
+                  <ul class="small-block-grid-3 clearing-thumbs ullistings">
+                    <li class="liNewListings"><a class="th radius" href="{{URL::to('search/7')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/7/1s.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
+                    <li class="liNewListings"><a class="th radius" href="{{URL::to('search/15')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/15/1s.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
+                    <li class="liNewListings"><a class="th radius" href="{{URL::to('search/14')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/14/1s.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
+                    <li class="liNewListings"><a class="th radius" href="{{URL::to('search/19')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/19/1s.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
+                    <li class="liNewListings"><a class="th radius" href="{{URL::to('search/5')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/5/1s.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
+                    <li class="liNewListings"><a class="th radius" href="{{URL::to('search/10')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/10/1s.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
+                  </ul>
                 </div>
-                <hr/>
-                <ul class="small-block-grid-3 clearing-thumbs ullistings">
-                  <li class="liNewListings"><a class="th radius" href="{{URL::to('search/7')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/7/1s.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
-                  <li class="liNewListings"><a class="th radius" href="{{URL::to('search/15')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/15/1s.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
-                  <li class="liNewListings"><a class="th radius" href="{{URL::to('search/14')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/14/1s.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
-                  <li class="liNewListings"><a class="th radius" href="{{URL::to('search/19')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/19/1s.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
-                  <li class="liNewListings"><a class="th radius" href="{{URL::to('search/5')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/5/1s.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
-                  <li class="liNewListings"><a class="th radius" href="{{URL::to('search/10')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/10/1s.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
-                </ul>
               </div>
-            </div>
 
- @if(isset($agents)) 
-            <div class="row">
-             <div class="large-12 columns panel ourAgents">
-               <div><h4 class="newsHead"><a class="newsHead"href="">OUR AGENTS</a> <h4></div>
+              @if(isset($agents)) 
+              <div class="row">
+               <div class="large-12 columns panel ourAgents">
+                 <div><h4 class="newsHead"><a class="newsHead"href="">OUR AGENTS</a> <h4></div>
                  <hr/>
-                
+
                  <ul class="small-block-grid-3 ulagents">
                   @foreach($agents as $agent)
-                 <li  class="liAgents"><a class="th radius" data-reveal-id="{{$agent['id']}}" href="#"><img src="{{url('comp/img/agents/'.$agent['id'].'.jpg')}}" alt="RE/MAX FIRST CLASS agent profile"><a/>
+                  <li  class="liAgents"><a class="th radius" data-reveal-id="{{$agent['id']}}" href="#"><img src="{{url('comp/img/agents/'.$agent['id'].'.jpg')}}" alt="RE/MAX FIRST CLASS agent profile"><a/>
                    {{link_to('#', $agent['firstname'], array('class'=>'agentLink'));}} <br/>
                    {{link_to('#', $agent['lastname'], array('class'=>'agentLinkLast'));}}
                  </li> 
-                  @endforeach
-                   
-                 </ul>
-                 
-                 <div class="allAgents"> 
-                {{link_to_route('allAgents', 'See all our agents');}}
-                  
-                 </div>
-               </div>
-             </div>
-@endif
-           </aside>
-           <!-- =adide ands here -->
+                 @endforeach
 
-         </div>
-       </div>     <!-- /* =mainContent ends here */ -->
+               </ul>
 
+               <div class="row">
+               <div class="large-12 columns showAllListings allAgents"> 
+                  {{link_to('all-agents', 'SEE ALL OUR AGENTS', array('class'=>'browseAllListings button radius expand '));}}
 
-       <!-- /* =footer starts here */ -->
-
-       <footer>
-        <div class="row">
-          <div class="large-4 columns">
-            <div class="row">
-              <div class="large-12 columns">
-                <a class="th has-tip-left logoFooterPadding" title="Multiple Listing Service" href="#">
-                  <img src="{{url('comp/img/mls.png')}}" alt="Multiple Listing Service">
-                </a>
-                <a class="th has-tip-left logoFooterPadding" title="Coming Soon RE/MAX 1ST CLASS COMMERCIAL" href="#">
-                  <img src="{{url('comp/img/remax-commercial-logo.png')}}" alt="RE/MAX 1ST CLASS COMMERCIAL">
-                </a>
-                <a target="_blank" class="th has-tip-left logoFooterPadding"  title="Visit Our Remax Short Sale Chicago Website"  href="http://www.shortsalechicago.us/Short-Sale-Chicago">
-                  <img src="{{url('comp/img/Chicago-Short-Sale-Logo.png')}}" alt="Chicago Short Sale">
-                </a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="large-12 columns logoRemaxFooter">
-                <a href="{{ URL::route('home')}}">
-                  <img src="{{url('comp/img/logo-footer.png')}}" alt="Logo RE/MAX FIRST CLASS">
-                  <a/>
                 </div>
               </div>
             </div>
-            <div class="large-4 columns">
+          </div>
+          @endif
+        </aside>
+        <!-- =adide ands here -->
 
-              <section class="large-7 columns social">
-                <ul class="prop no-bullet">
-                  <span class="propertiesFooter">PROPERTIES FOR SALE:</span> 
-                  <hr/>
-                  <li class="locality properties">{{link_to('browse/1', 'SINGLE FAMILY');}}</li>
-                  <li class="locality properties">{{link_to('browse/4', 'MULTI-FAMILY');}}</li>
-                  <li class="locality properties">{{link_to('browse/3', 'CONDO');}}</li>
-                  <li class="locality properties">{{link_to('browse/2', 'VACANT LAND');}}</li>
-                </ul>
-              </section>
+      </div>
+    </div>     <!-- /* =mainContent ends here */ -->
 
-            </div>
 
-            <div class="large-4 columns">
-              <div class="large-6 columns">
-                <ul class="vcard">
-                  <span class="connectFooter">CONTACT INFORMATION:</span>
-                  <hr/>
-                  <li class="locality"> PHONE: (847) 674-9797</li>
-                  <li class="locality"> FAX: (847) 674-0411</li>
-                  <li class="street-address">4023 W. Church St.</li>
-                  <li class="locality">Skokie</li>
-                  <li><span class="state">IL</span> <span class="zip">600076</span></li>
-                  <li class="email" data-reveal-id="myModal">{{link_to('#', 'remax1stclass@gmail.com');}}</li>
-                </ul>
-              </div>
-              <section class="large-6 columns social right">
-                <span class="contactFooter">CONNECT WITH US:</span>
-                <hr/>
-                <ul class="small-block-grid-3 ulFooterSocial">
-                  <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Facebook Page" href="https://www.facebook.com/pages/Remax-1st-CLASS/177448822432081"><img src="{{url('comp/img/social_footer/facebook.png')}}" alt="RE/MAX FIRST CLASS Facebook Profile"><a/></li>
-                  <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Twitter Page" href="https://twitter.com/RemaxFirstClass"><img src="{{url('comp/img/social_footer/twitter.png')}}" alt="Remax First Class Twitter Profile"><a/></li>
-                  <li class="liFooterConnectRight"><a target="_blank" class="has-tip-left" title="Our Linkedin Page" href="http://www.linkedin.com/profile/view?id=271875691&trk=nav_responsive_tab_profile"><img src="{{url('comp/img/social_footer/linkedin.png')}}" alt="Remax First Class Linkedin Profile"><a/></li>
-                  <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Google Plus Page" href="#"><img src="{{url('comp/img/social_footer/google.png')}}" alt="Remax First Class Google Profile"><a/></li>
-                  <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Yelp Page" href="http://www.yelp.com/biz/remax-first-class-skokie"><img src="{{url('comp/img/social_footer/yelp.png')}}" alt="Remax First Class Feed Profile"><a/></li>
-                  <li class="liFooterConnectRight"><a target="_blank" class="has-tip-left" title="Our Page" href="https://www.youtube.com/"><img src="{{url('comp/img/social_footer/you_tube.png')}}" alt="Remax First Class Youtube Profile"><a/></li>
-                </ul>
-              </section>
+    <!-- /* =footer starts here */ -->
+
+    <footer>
+      <div class="row">
+        <div class="large-4 columns">
+          <div class="row">
+            <div class="large-12 columns">
+              <a class="th has-tip-left logoFooterPadding" title="Multiple Listing Service" href="#">
+                <img src="{{url('comp/img/mls.png')}}" alt="Multiple Listing Service">
+              </a>
+              <a class="th has-tip-left logoFooterPadding" title="Coming Soon RE/MAX 1ST CLASS COMMERCIAL" href="#">
+                <img src="{{url('comp/img/remax-commercial-logo.png')}}" alt="RE/MAX 1ST CLASS COMMERCIAL">
+              </a>
+              <a target="_blank" class="th has-tip-left logoFooterPadding"  title="Visit Our Remax Short Sale Chicago Website"  href="http://www.shortsalechicago.us/Short-Sale-Chicago">
+                <img src="{{url('comp/img/Chicago-Short-Sale-Logo.png')}}" alt="Chicago Short Sale">
+              </a>
             </div>
           </div>
-        </footer>
-
-        <!-- /* =copyright starts here */ -->
-
-        <div class="copyright">
           <div class="row">
-            <div class="large-4 large-centered columns copy">
-              <p>© 2013 RE/MAX FIRST CLASS</p> 
+            <div class="large-12 columns logoRemaxFooter">
+              <a href="{{ URL::route('home')}}">
+                <img src="{{url('comp/img/logo-footer.png')}}" alt="Logo RE/MAX FIRST CLASS">
+                <a/>
+              </div>
             </div>
+          </div>
+          <div class="large-4 columns">
 
-            <!-- /* =copyright ends here */ -->
+            <section class="large-7 columns social">
+              <ul class="prop no-bullet">
+                <span class="propertiesFooter">PROPERTIES FOR SALE:</span> 
+                <hr/>
+                <li class="locality properties">{{link_to('browse/1', 'SINGLE FAMILY');}}</li>
+                <li class="locality properties">{{link_to('browse/4', 'MULTI-FAMILY');}}</li>
+                <li class="locality properties">{{link_to('browse/3', 'CONDO');}}</li>
+                <li class="locality properties">{{link_to('browse/2', 'VACANT LAND');}}</li>
+              </ul>
+            </section>
+
+          </div>
+
+          <div class="large-4 columns">
+            <div class="large-6 columns">
+              <ul class="vcard">
+                <span class="connectFooter">CONTACT INFORMATION:</span>
+                <hr/>
+                <li class="locality"> PHONE: (847) 674-9797</li>
+                <li class="locality"> FAX: (847) 674-0411</li>
+                <li class="street-address">4023 W. Church St.</li>
+                <li class="locality">Skokie</li>
+                <li><span class="state">IL</span> <span class="zip">600076</span></li>
+                <li class="email" data-reveal-id="myModal">{{link_to('#', 'remax1stclass@gmail.com');}}</li>
+              </ul>
+            </div>
+            <section class="large-6 columns social right">
+              <span class="contactFooter">CONNECT WITH US:</span>
+              <hr/>
+              <ul class="small-block-grid-3 ulFooterSocial">
+                <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Facebook Page" href="https://www.facebook.com/pages/Remax-1st-CLASS/177448822432081"><img src="{{url('comp/img/social_footer/facebook.png')}}" alt="RE/MAX FIRST CLASS Facebook Profile"><a/></li>
+                <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Twitter Page" href="https://twitter.com/RemaxFirstClass"><img src="{{url('comp/img/social_footer/twitter.png')}}" alt="Remax First Class Twitter Profile"><a/></li>
+                <li class="liFooterConnectRight"><a target="_blank" class="has-tip-left" title="Our Linkedin Page" href="http://www.linkedin.com/profile/view?id=271875691&trk=nav_responsive_tab_profile"><img src="{{url('comp/img/social_footer/linkedin.png')}}" alt="Remax First Class Linkedin Profile"><a/></li>
+                <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Google Plus Page" href="#"><img src="{{url('comp/img/social_footer/google.png')}}" alt="Remax First Class Google Profile"><a/></li>
+                <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Yelp Page" href="http://www.yelp.com/biz/remax-first-class-skokie"><img src="{{url('comp/img/social_footer/yelp.png')}}" alt="Remax First Class Feed Profile"><a/></li>
+                <li class="liFooterConnectRight"><a target="_blank" class="has-tip-left" title="Our Page" href="https://www.youtube.com/"><img src="{{url('comp/img/social_footer/you_tube.png')}}" alt="Remax First Class Youtube Profile"><a/></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </footer>
+
+      <!-- /* =copyright starts here */ -->
+
+      <div class="copyright">
+        <div class="row">
+          <div class="large-4 large-centered columns copy">
+            <p>© 2013 RE/MAX FIRST CLASS</p> 
+          </div>
+
+          <!-- /* =copyright ends here */ -->
 <!-- </div>
 </div> -->
 
@@ -685,9 +687,9 @@
                    <input type="submit" class="button tiny right loginButton" data-reveal-id="adminAuth" value="LOGIN">
                  -->
 
-@if(isset($agents)) 
+                 @if(isset($agents)) 
 
-@foreach($agents as $agent)
+                 @foreach($agents as $agent)
 
                  <div id="{{$agent['id']}}" class="reveal-modal small adminAuth2 createAccount panel">
                    {{Form::open(array('url' => '#'))}}
@@ -715,7 +717,7 @@
                     </nav>
                   </div>
 
-                
+
 
                   <div class="row">
                    <div class="large-4 columns">
@@ -754,7 +756,7 @@
                </div>
              </div>
 
-            
+
 
              <div class="row">
               <div class="large-12 columns agentInfoContent">
@@ -778,46 +780,46 @@
           </div>
         </div>
         @endforeach
-       @endif
+        @endif
         <script>
-        document.write('<script src=' +
-          ('_proto_' in {} ? 'comp/javascripts/vendor/zepto' : 'comp/javascripts/vendor/jquery') +
-          '.js><\/script>')
-      </script>
+          document.write('<script src=' +
+            ('_proto_' in {} ? 'comp/javascripts/vendor/zepto' : 'comp/javascripts/vendor/jquery') +
+            '.js><\/script>')
+        </script>
 
-      {{HTML::script("comp/javascripts/foundation/foundation.js")}}
+        {{HTML::script("comp/javascripts/foundation/foundation.js")}}
 
-      {{HTML::script("comp/javascripts/foundation/foundation.alerts.js")}}
+        {{HTML::script("comp/javascripts/foundation/foundation.alerts.js")}}
 
-      {{HTML::script("comp/javascripts/foundation/foundation.clearing.js")}}
+        {{HTML::script("comp/javascripts/foundation/foundation.clearing.js")}}
 
-      {{HTML::script("comp/javascripts/foundation/foundation.cookie.js")}}
+        {{HTML::script("comp/javascripts/foundation/foundation.cookie.js")}}
 
-      {{HTML::script("comp/javascripts/foundation/foundation.dropdown.js")}}
+        {{HTML::script("comp/javascripts/foundation/foundation.dropdown.js")}}
 
-      {{HTML::script("comp/javascripts/foundation/foundation.forms.js")}}
+        {{HTML::script("comp/javascripts/foundation/foundation.forms.js")}}
 
-      {{HTML::script("comp/javascripts/foundation/foundation.interchange.js")}}
+        {{HTML::script("comp/javascripts/foundation/foundation.interchange.js")}}
 
-      {{HTML::script("comp/javascripts/foundation/foundation.joyride.js")}}
+        {{HTML::script("comp/javascripts/foundation/foundation.joyride.js")}}
 
-      {{HTML::script("comp/javascripts/foundation/foundation.magellan.js")}}
+        {{HTML::script("comp/javascripts/foundation/foundation.magellan.js")}}
 
-      {{HTML::script("comp/javascripts/foundation/foundation.orbit.js")}}
+        {{HTML::script("comp/javascripts/foundation/foundation.orbit.js")}}
 
-      {{HTML::script("comp/javascripts/foundation/foundation.placeholder.js")}}
+        {{HTML::script("comp/javascripts/foundation/foundation.placeholder.js")}}
 
-      {{HTML::script("comp/javascripts/foundation/foundation.reveal.js")}}
+        {{HTML::script("comp/javascripts/foundation/foundation.reveal.js")}}
 
-      {{HTML::script("comp/javascripts/foundation/foundation.section.js")}}
+        {{HTML::script("comp/javascripts/foundation/foundation.section.js")}}
 
-      {{HTML::script("comp/javascripts/foundation/foundation.tooltips.js")}}
+        {{HTML::script("comp/javascripts/foundation/foundation.tooltips.js")}}
 
-      {{HTML::script("comp/javascripts/foundation/foundation.topbar.js")}}
+        {{HTML::script("comp/javascripts/foundation/foundation.topbar.js")}}
 
 
-      <script>
-        $(document).foundation();
-      </script>
-    </body>
-    </html>
+        <script>
+          $(document).foundation();
+        </script>
+      </body>
+      </html>

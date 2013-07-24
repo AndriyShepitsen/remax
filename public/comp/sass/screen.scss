@@ -418,6 +418,7 @@ label{
 	text-shadow: $myTextShadow !important;
 
 }
+
 .agentNameList{
 	color: 	$colorBlue !important;
 	font-size: 11px;
@@ -612,6 +613,13 @@ ul.newListings li{
 /* =newListings style ends here  *
 
 /* =our agents style starts here */
+// .allAgents{
+// 	a{
+// 	text-shadow: $myTextShadow !important;
+// 		color: 	$colorBlue !important;
+
+// 	}
+// }
 .position{
 	font-size: 13px;
 	margin-top: 5px;
@@ -639,6 +647,7 @@ ul.ulagents li {
 .ourAgents{
 	@include myPanelStyle;
 	margin-bottom: 0px !important;
+	padding-bottom: 20px !important;
 	.carousel{
 		margin-left: -12px !important;
 	}
@@ -651,12 +660,16 @@ ul.ulagents li {
 		text-align: center !important;
 	}
 	.agentLink{
-		color: $colorNavPanel;
-		font-size: 10px !important;
+		color: $colorBlue;
+		font-size: 11px !important;
+		font-weight: bold !important;
+		text-shadow: $myTextShadow;
 	}
 	.agentLinkLast{
-		font-size: 10px !important;
-		color: $colorNavPanel;
+		font-size: 11px !important;
+		font-weight: bold !important;
+		text-shadow: $myTextShadow;
+		color: $colorBlue;
 		margin-top: -5px;
 		display: inline-block;
 		margin-bottom: 10px;
