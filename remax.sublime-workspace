@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"tsh",
+				"text-shadow"
+			],
+			[
 				"pa",
 				"padding"
 			],
@@ -100,10 +104,10 @@
 	"buffers":
 	[
 		{
-			"file": "app/views/rent/one_rent.blade.php",
+			"file": "app/views/agents/vw_allAgents.blade.php",
 			"settings":
 			{
-				"buffer_size": 1361,
+				"buffer_size": 3562,
 				"line_ending": "Windows"
 			}
 		},
@@ -111,7 +115,7 @@
 			"file": "app/views/search/results.blade.php",
 			"settings":
 			{
-				"buffer_size": 2567,
+				"buffer_size": 2792,
 				"line_ending": "Windows"
 			}
 		},
@@ -119,18 +123,7 @@
 			"file": "public/comp/sass/screen.scss",
 			"settings":
 			{
-				"buffer_size": 15305,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "@extends('layouts.master')\n@section('content')\n\n<!-- //LOCATION: remax/public \n-->\n<div class=\"mainContent\">\n	@if(count($rentals)>0)\n	<ul class=\"no-bullet\">\n		@foreach ($rentals as $rental)\n		<li>\n\n			<a href=\"{{url('rent/'.$rental->id)}}\">\n				<div class=\"panel addressColor\">\n					<div class=\"row\">\n						<div class=\"large-10 columns\">\n							<strong>\n								{{$rental->address}}\n							</strong> &nbsp	&nbsp	\n						</div>\n							<span class=\"priceStyle right radius label\">${{number_format($rental->price)}}\n							</span>\n							<br/>\n					</div>\n					\n					<small>\n						bedrooms:{{$rental->bedrooms}} | \n						bathrooms:{{$rental->bathrooms}} | \n						@if ($rental->size!=null)\n						size:{{$rental->size}} sqft. \n						@endif\n					</small>\n					\n					@if($rental->agent)\n					<a href=\"{{URL::to('agent/'.$rental->agent['id'])}}\">Listing Agent:\n						{{$rental->agent['firstname'] . ' '. $rental->agent['lastname']}}\n\n					</a>\n					@endif\n\n\n					@if($rental->rental_images()->first()->maxid)\n					<ul class=\"no-bullet listingImage\">\n						<li><a href=\"{{url('rent/'.$rental->id)}}\"><img src=\"{{url('comp/img/rent_thumbs/'.$rental->id.'/1.jpg')}}\"  class=\"th\"></a> </li>\n						\n					</ul>\n					@endif\n				</div>\n				<!--  =panel addressColor ends here-->\n			</a>\n		</li>\n		@endforeach\n	</ul>\n	<?php echo $rentals->appends(array(\n		'location' => Input::get('location_r'),\n		'from' => Input::get('from_r'),\n		'to' => Input::get('to_r'),\n		'beds' => Input::get('beds_r'),\n		'baths' => Input::get('baths_r')))->links(); ?>\n		@else\n		{No result found for your request}\n		@endif\n	</div>\n	@stop\n",
-			"file": "app/views/rent/rent_results.blade.php",
-			"file_size": 1658,
-			"file_write_time": 130191528798058744,
-			"settings":
-			{
-				"buffer_size": 1595,
+				"buffer_size": 16584,
 				"line_ending": "Windows"
 			}
 		},
@@ -138,7 +131,7 @@
 			"file": "app/views/layouts/master.blade.php",
 			"settings":
 			{
-				"buffer_size": 39679,
+				"buffer_size": 40026,
 				"line_ending": "Windows"
 			}
 		}
@@ -213,14 +206,17 @@
 	[
 		"/C/xampp/htdocs/remax/app/views/search/results.blade.php",
 		"/C/xampp/htdocs/remax/app/views/search/onehouse.blade.php",
-		"/C/xampp/htdocs/remax/app/views/home/vw_home.blade.php",
+		"/C/xampp/htdocs/remax/public/comp/sass/screen.scss",
+		"/C/xampp/htdocs/remax/app/views/rent/one_rent.blade.php",
+		"/C/xampp/htdocs/remax/app/routes.php",
 		"/C/xampp/htdocs/remax/app/views/layouts/master.blade.php",
+		"/C/xampp/htdocs/remax/app/views/agents/vw_allAgents.blade.php",
 		"/C/xampp/htdocs/remax/app/views/rent/rent_results.blade.php",
+		"/C/xampp/htdocs/remax/app/views/home/vw_home.blade.php",
 		"/C/xampp/htdocs/remax/app/controllers/search/SearchController.php",
 		"/C/xampp/htdocs/remax/app/controllers/search/BrowseController.php",
 		"/C/xampp/htdocs/remax/app/controllers/search/ShowallController.php",
 		"/C/xampp/htdocs/remax/artisanCommand.txt",
-		"/C/xampp/htdocs/remax/public/comp/sass/screen.scss",
 		"/C/xampp/htdocs/remax/app/views/news/vw_news_for_sellers.blade.php",
 		"/C/xampp/htdocs/remax/app/views/buying/vw_how_much_house_can_you_afford.blade.php",
 		"/C/xampp/htdocs/remax/app/views/news/vw_news_for_buyers.blade.php",
@@ -253,7 +249,6 @@
 		"/C/xampp/htdocs/remax/app/config/database.php",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/laravel_image_url.sublime-snippet",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/laravel_img.sublime-snippet",
-		"/C/xampp/htdocs/remax/app/routes.php",
 		"/C/xampp/htdocs/remax/composer.json",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/CHANGELOG",
 		"/C/xampp/htdocs/remax/app/database/seeds/NewsTableSeeder.php",
@@ -274,7 +269,7 @@
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 37.0
 	},
 	"find_in_files":
 	{
@@ -290,6 +285,24 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"small",
+			"maincon",
+			"innercontent",
+			"addressco",
+			"small",
+			"agentNameList",
+			"agentl",
+			"showAllListings",
+			"array('class'=>'browseAllListings button radius expand ')",
+			"%)!",
+			"	color: 	$colorBlue !important;\n",
+			"locality",
+			"reedmore",
+			"agent",
+			"price",
+			"}} ",
+			"basicInfo",
+			"house",
 			"acallagent",
 			"callagen",
 			"details",
@@ -399,25 +412,7 @@
 			"short sale",
 			"Dias",
 			"Oz",
-			"Mark",
-			"Barry",
-			"marius",
-			"Florian",
-			"ivy",
-			"p",
-			"shortsale",
-			"search.showall",
-			"1",
-			"google",
-			"yout",
-			"orbit",
-			"maincont",
-			"ulWorkWith",
-			"clearing-thumbs",
-			"newsL",
-			"slashBefore",
-			"yelp",
-			"footer"
+			"Mark"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -435,30 +430,31 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/rent/one_rent.blade.php",
+					"file": "app/views/agents/vw_allAgents.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1361,
+						"buffer_size": 3562,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								631,
+								631
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -472,15 +468,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2567,
+						"buffer_size": 2792,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								289,
-								289
+								2781,
+								2781
 							]
 						],
 						"settings":
@@ -506,71 +502,44 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 15305,
+						"buffer_size": 16584,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7690,
-								7690
+								13418,
+								13423
 							]
 						],
 						"settings":
 						{
+							"history_list_is_closing": true,
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 7770.0,
+						"translation.y": 13267.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "app/views/rent/rent_results.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1595,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								426,
-								527
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
 					"file": "app/views/layouts/master.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 39679,
+						"buffer_size": 40026,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								22021,
-								22021
+								34357,
+								34357
 							]
 						],
 						"settings":
@@ -580,7 +549,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 9870.0,
+						"translation.y": 16093.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -616,7 +585,7 @@
 		"cols":
 		[
 			0.0,
-			0.520648238625,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -633,7 +602,7 @@
 	"project": "remax.sublime-project",
 	"replace":
 	{
-		"height": 40.0
+		"height": 66.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -642,12 +611,28 @@
 		"selected_items":
 		[
 			[
-				"mas",
-				"app\\views\\layouts\\master.blade.php"
+				"resul",
+				"app\\views\\search\\results.blade.php"
+			],
+			[
+				"one",
+				"app\\views\\search\\onehouse.blade.php"
 			],
 			[
 				"mast",
 				"app\\views\\layouts\\master.blade.php"
+			],
+			[
+				"alla",
+				"app\\views\\agents\\vw_allAgents.blade.php"
+			],
+			[
+				"mas",
+				"app\\views\\layouts\\master.blade.php"
+			],
+			[
+				"s",
+				"public\\comp\\sass\\screen.scss"
 			],
 			[
 				"sho",
@@ -664,10 +649,6 @@
 			[
 				"home",
 				"app\\views\\home\\vw_home.blade.php"
-			],
-			[
-				"one",
-				"app\\views\\search\\onehouse.blade.php"
 			],
 			[
 				"scr",
@@ -688,10 +669,6 @@
 			[
 				"thebe",
 				"app\\controllers\\buying\\The_benefits_of_home_ownershipController.php"
-			],
-			[
-				"s",
-				"public\\comp\\sass\\screen.scss"
 			],
 			[
 				"vwnew",
