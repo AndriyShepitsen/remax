@@ -371,8 +371,8 @@ label{
 	color: lighten($colorNavPanel, 25%);
 }
 .priceStyle{
+	color: $colorFontGray !important;
 	font-weight: bold !important;
-	// color: $colorFontOffWhite !important;
 	background-color:  lighten(#F2F2F2, 1%)!important;
 	border: 1px solid darken(#F2F2F2, 5%)!important;
 	padding-right: 15px !important;
@@ -382,7 +382,18 @@ label{
 	font-size: 14px;
 	// margin-top: -10px; 
 }
+.alertRentalStyle{
+	font-weight: bold !important;
+	background-color:  lighten(#F2F2F2, 1%)!important;
+	border: 1px groove lighten($colorRed, 35%)!important;
+	padding-right: 15px !important;
+	padding-left: 15px !important;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+	font-size: 14px;
+	color: $colorBlue !important;
 
+}
 .basicInfoWrapper{
 	padding-left: 0px;
 	padding-right: 0px;
@@ -410,10 +421,13 @@ label{
 	font-size: 10px !important;
 }
 .aCallAgent{
+
 	display: inline-block !important;
-	border: none !important;
+	border: 0px solid #FFFFFF !important;
 	padding-bottom: 5px !important;
 	padding-top: 5px !important;
+	box-shadow: 0px 0px 0px 0px #FFFFFF !important;
+	// outline-color: #FFFFFF !important;
 }
 .callAgent{
 	font-size: 10px !important;

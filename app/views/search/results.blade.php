@@ -12,7 +12,7 @@
 			<a href="{{url('search/'.$house->id)}}">
 				<div class="panel addressColor">
 					<div class="row">
-						<div class="large-10 columns">
+						<div class="large-8 columns">
 
 							<strong>
 								{{$house->address}}
@@ -23,6 +23,9 @@
 
 							<span class="alert-box secondary radius priceStyle right ">${{number_format($house->price)}}
 							</span>
+						</div>
+						<div class="large-2 columns">
+							<a class="alert-box secondary round alertRentalStyle right " href="">Sale</a>
 						</div>
 					</div>
 					<div class="row">
@@ -42,10 +45,13 @@
 							</ul>
 							@endif
 						</div>
+						<!-- =houseImgWrapper ends here -->
 
 						<div class="large-5 columns basicInfoWrapper">
 							<ul class="vcard basicInfoUl">
-								<li><div class="alert-box secondary expand basicInfo">Basic Information</div>
+								<li>
+									<div class="alert-box secondary expand basicInfo">Basic Information
+									</div>
 									<div class="searchDescription">
 										{{Str::limit(ucfirst(strtolower($house->details)), 280)}} </br>
 										<a href="{{url('search/'.$house->id)}}" class="readMore"><em>Property Details</em></a>
@@ -63,8 +69,10 @@
 								@endif
 							</ul>
 						</div>
+						<!-- =basicInfoWrapper ends here -->
 					</div>
 				</div>
+				<!-- =panel addressColor ends here -->
 			</a>
 		</li>
 		@endforeach

@@ -100,14 +100,6 @@
 	"buffers":
 	[
 		{
-			"file": "app/views/search/results.blade.php",
-			"settings":
-			{
-				"buffer_size": 2903,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "app/views/rent/one_rent.blade.php",
 			"settings":
 			{
@@ -116,10 +108,10 @@
 			}
 		},
 		{
-			"file": "app/views/rent/rent_results.blade.php",
+			"file": "app/views/search/results.blade.php",
 			"settings":
 			{
-				"buffer_size": 1434,
+				"buffer_size": 2567,
 				"line_ending": "Windows"
 			}
 		},
@@ -127,7 +119,26 @@
 			"file": "public/comp/sass/screen.scss",
 			"settings":
 			{
-				"buffer_size": 15070,
+				"buffer_size": 15305,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "@extends('layouts.master')\n@section('content')\n\n<!-- //LOCATION: remax/public \n-->\n<div class=\"mainContent\">\n	@if(count($rentals)>0)\n	<ul class=\"no-bullet\">\n		@foreach ($rentals as $rental)\n		<li>\n\n			<a href=\"{{url('rent/'.$rental->id)}}\">\n				<div class=\"panel addressColor\">\n					<div class=\"row\">\n						<div class=\"large-10 columns\">\n							<strong>\n								{{$rental->address}}\n							</strong> &nbsp	&nbsp	\n						</div>\n							<span class=\"priceStyle right radius label\">${{number_format($rental->price)}}\n							</span>\n							<br/>\n					</div>\n					\n					<small>\n						bedrooms:{{$rental->bedrooms}} | \n						bathrooms:{{$rental->bathrooms}} | \n						@if ($rental->size!=null)\n						size:{{$rental->size}} sqft. \n						@endif\n					</small>\n					\n					@if($rental->agent)\n					<a href=\"{{URL::to('agent/'.$rental->agent['id'])}}\">Listing Agent:\n						{{$rental->agent['firstname'] . ' '. $rental->agent['lastname']}}\n\n					</a>\n					@endif\n\n\n					@if($rental->rental_images()->first()->maxid)\n					<ul class=\"no-bullet listingImage\">\n						<li><a href=\"{{url('rent/'.$rental->id)}}\"><img src=\"{{url('comp/img/rent_thumbs/'.$rental->id.'/1.jpg')}}\"  class=\"th\"></a> </li>\n						\n					</ul>\n					@endif\n				</div>\n				<!--  =panel addressColor ends here-->\n			</a>\n		</li>\n		@endforeach\n	</ul>\n	<?php echo $rentals->appends(array(\n		'location' => Input::get('location_r'),\n		'from' => Input::get('from_r'),\n		'to' => Input::get('to_r'),\n		'beds' => Input::get('beds_r'),\n		'baths' => Input::get('baths_r')))->links(); ?>\n		@else\n		{No result found for your request}\n		@endif\n	</div>\n	@stop\n",
+			"file": "app/views/rent/rent_results.blade.php",
+			"file_size": 1658,
+			"file_write_time": 130191528798058744,
+			"settings":
+			{
+				"buffer_size": 1595,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/layouts/master.blade.php",
+			"settings":
+			{
+				"buffer_size": 39679,
 				"line_ending": "Windows"
 			}
 		}
@@ -200,6 +211,7 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/remax/app/views/search/results.blade.php",
 		"/C/xampp/htdocs/remax/app/views/search/onehouse.blade.php",
 		"/C/xampp/htdocs/remax/app/views/home/vw_home.blade.php",
 		"/C/xampp/htdocs/remax/app/views/layouts/master.blade.php",
@@ -209,7 +221,6 @@
 		"/C/xampp/htdocs/remax/app/controllers/search/ShowallController.php",
 		"/C/xampp/htdocs/remax/artisanCommand.txt",
 		"/C/xampp/htdocs/remax/public/comp/sass/screen.scss",
-		"/C/xampp/htdocs/remax/app/views/search/results.blade.php",
 		"/C/xampp/htdocs/remax/app/views/news/vw_news_for_sellers.blade.php",
 		"/C/xampp/htdocs/remax/app/views/buying/vw_how_much_house_can_you_afford.blade.php",
 		"/C/xampp/htdocs/remax/app/views/news/vw_news_for_buyers.blade.php",
@@ -279,6 +290,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"acallagent",
+			"callagen",
 			"details",
 			"Li",
 			"li",
@@ -404,9 +417,7 @@
 			"newsL",
 			"slashBefore",
 			"yelp",
-			"footer",
-			"asideHeader",
-			"maincontent"
+			"footer"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -424,39 +435,11 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/search/results.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2903,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								549,
-								549
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 240.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "app/views/rent/one_rent.blade.php",
 					"semi_transient": false,
 					"settings":
@@ -484,20 +467,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "app/views/rent/rent_results.blade.php",
+					"buffer": 1,
+					"file": "app/views/search/results.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1434,
+						"buffer_size": 2567,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								289,
+								289
 							]
 						],
 						"settings":
@@ -514,24 +497,24 @@
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "public/comp/sass/screen.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 15070,
+						"buffer_size": 15305,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								644,
-								644
+								7690,
+								7690
 							]
 						],
 						"settings":
@@ -540,7 +523,64 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
+						"translation.y": 7770.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/rent/rent_results.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1595,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								426,
+								527
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/views/layouts/master.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 39679,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								22021,
+								22021
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 9870.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -576,7 +616,7 @@
 		"cols":
 		[
 			0.0,
-			0.598773238625,
+			0.520648238625,
 			1.0
 		],
 		"rows":
@@ -601,6 +641,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"mas",
+				"app\\views\\layouts\\master.blade.php"
+			],
 			[
 				"mast",
 				"app\\views\\layouts\\master.blade.php"
@@ -688,10 +732,6 @@
 			[
 				"vwho",
 				"app\\views\\home\\vw_home.blade.php"
-			],
-			[
-				"mas",
-				"app\\views\\layouts\\master.blade.php"
 			],
 			[
 				"vwco",
