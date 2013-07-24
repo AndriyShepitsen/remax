@@ -374,8 +374,12 @@
                  <ul class="small-block-grid-3 ulagents">
                   @foreach($agents as $agent)
                   <li  class="liAgents"><a class="th radius" data-reveal-id="{{$agent['id']}}" href="#"><img src="{{url('comp/img/agents/'.$agent['id'].'.jpg')}}" alt="RE/MAX FIRST CLASS agent profile"><a/>
-                   {{link_to('#', $agent['firstname'], array('class'=>'agentLink'));}} <br/>
-                   {{link_to('#', $agent['lastname'], array('class'=>'agentLinkLast'));}}
+
+                  <a class="agentLink" data-reveal-id="{{$agent['id']}}" href="#">
+                  {{$agent['firstname']}}<br/>
+                  {{$agent['lastname']}}
+                  </a>
+                   
                  </li> 
                  @endforeach
 
