@@ -2,7 +2,7 @@
 @section('content')
 <!-- //LOCATION: remax/public
 -->
-<div id="innerContent">
+<div id="Content">
 	
 	<ul class="small-block-grid-3 ulagents">
     @foreach($allAgents as $agent)
@@ -11,9 +11,9 @@
      {{link_to('#', $agent['lastname'], array('class'=>'agentLinkLast'));}}
    </li> 
    @endforeach
-   
+
  </ul>
- 
+
 </div>
 
 
