@@ -18,6 +18,13 @@ class AgentController extends BaseController {
     }
 
  
+    public function all()
+    {
+    
+    $allAgents = Agent::orderBy('lastname')->get();
+    return View::make('agents.vw_allAgents')->with(compact('allAgents'));
+    }
+
     public function show_rentals($id)
     {
     

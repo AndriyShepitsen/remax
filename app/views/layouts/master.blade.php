@@ -365,16 +365,14 @@
               </div>
             </div>
 
-
+ @if(isset($agents)) 
             <div class="row">
              <div class="large-12 columns panel ourAgents">
                <div><h4 class="newsHead"><a class="newsHead"href="">OUR AGENTS</a> <h4></div>
                  <hr/>
+                
                  <ul class="small-block-grid-3 ulagents">
-                   
-
                   @foreach($agents as $agent)
-                  
                  <li  class="liAgents"><a class="th radius" data-reveal-id="{{$agent['id']}}" href="#"><img src="{{url('comp/img/agents/'.$agent['id'].'.jpg')}}" alt="RE/MAX FIRST CLASS agent profile"><a/>
                    {{link_to('#', $agent['firstname'], array('class'=>'agentLink'));}} <br/>
                    {{link_to('#', $agent['lastname'], array('class'=>'agentLinkLast'));}}
@@ -382,10 +380,15 @@
                   @endforeach
                    
                  </ul>
+                 
+                 <div class="allAgents"> 
+                {{link_to_route('allAgents', 'See all our agents');}}
+                  
+                 </div>
                </div>
              </div>
-
-           </adide>
+@endif
+           </aside>
            <!-- =adide ands here -->
 
          </div>
@@ -682,7 +685,7 @@
                    <input type="submit" class="button tiny right loginButton" data-reveal-id="adminAuth" value="LOGIN">
                  -->
 
-
+@if(isset($agents)) 
 
 @foreach($agents as $agent)
 
@@ -775,7 +778,7 @@
           </div>
         </div>
         @endforeach
-       
+       @endif
         <script>
         document.write('<script src=' +
           ('_proto_' in {} ? 'comp/javascripts/vendor/zepto' : 'comp/javascripts/vendor/jquery') +
