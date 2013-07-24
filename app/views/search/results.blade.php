@@ -61,7 +61,7 @@
 								@if($house->agent)
 								<div class="locality right alert-box secondary radius callAgent">
 									<a class="th radius aCallAgent" data-reveal-id="{{$house->agent['id']}}" href="#">Listing Agent:
-										<strong>{{$house->agent['firstname'] . ' '. $house->agent['lastname']}}</strong>
+										<span class="agentNameList" >{{$house->agent['firstname'] . ' '. $house->agent['lastname']}}</span >
 									</a>
 									<br/>
 									<span>Direct Phone: <strong>{{$house->agent['directphone']}}</strong></span>

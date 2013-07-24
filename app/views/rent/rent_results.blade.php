@@ -29,10 +29,10 @@
 					<div class="row">
 						<div class="large-7 columns houseImgWrapper">
 							<small>
-								Bedrooms:{{$rental->bedrooms}} | 
-								Bathrooms:{{$rental->bathrooms}} | 
+								Bedrooms: {{$rental->bedrooms}} | 
+								Bathrooms: {{$rental->bathrooms}} | 
 								@if ($rental->rental_propertytype!=null)
-								Property Type:{{$rental->rental_propertytype}} 
+								Property Type: {{$rental->rental_propertytype}} 
 								@endif
 							</small>
 

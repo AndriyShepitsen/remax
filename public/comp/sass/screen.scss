@@ -385,7 +385,7 @@ label{
 .alertRentalStyle{
 	font-weight: bold !important;
 	background-color:  lighten(#F2F2F2, 1%)!important;
-	border: 1px groove lighten($colorRed, 35%)!important;
+	border: 1px solid lighten($colorRed, 35%)!important;
 	padding-right: 15px !important;
 	padding-left: 15px !important;
 	padding-top: 5px !important;
@@ -406,6 +406,7 @@ label{
 	
 	background-color:  darken(#F2F2F2, 2%)!important;
 	margin-top: 10px !important;
+	text-shadow: $myTextShadow !important;
 }
 .basicInfoUl{
 	padding-left: 0px !important;
@@ -413,7 +414,27 @@ label{
 .propDetails{
 	font-size: 10px;
 	letter-spacing: 1px;
-	color: $colorFontGray !important;
+	color: 	$colorBlue !important;
+	text-shadow: $myTextShadow !important;
+
+}
+.agentNameList{
+	color: 	$colorBlue !important;
+	font-size: 11px;
+	text-shadow: $myTextShadow !important;
+	font-weight: bold !important;
+
+}
+.agentPhoneList{
+	font-size: 11px;
+	text-shadow: $myTextShadow !important;
+	font-weight: bold !important;
+
+}
+.propDetails:hover{
+	color: 	lighten($colorBlue, 10%)!important;
+	text-decoration: underline !important;
+
 }
 .details{
 	margin-top: 5px !important;
@@ -470,6 +491,7 @@ label{
 	padding-right: 0px !important;
 	font-size: 16px !important;
 	font-weight: bold !important;
+	color: $colorFontGray !important;
 	// letter-spacing: .1em !important;
 }
 .alert-box{
@@ -484,6 +506,7 @@ label{
 		color: lighten($colorFontGray, 10%);
 	}
 	margin-bottom: 10px !important;
+	padding-bottom: 15px !important;
 }
 .button.secondary{
 	color: $colorFontGray !important;
@@ -817,10 +840,10 @@ footer{
 	margin-left: 15px;
 	font-size: 10px;
 	line-height: 20px;
-	color: 	$colorBlue;
 	margin-left: 0px;
 	font-weight: bold;
 	letter-spacing: 1px;
+	color: 	$colorBlue;
 	text-shadow: $myTextShadow;
 }
 
