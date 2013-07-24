@@ -3747,3 +3747,10 @@ Load paths:
 2013-07-24 14:57:36 overwrite stylesheets/screen.css 
 2013-07-24 14:58:16 overwrite stylesheets/screen.css 
 2013-07-24 15:00:27 overwrite stylesheets/screen.css 
+2013-07-24 15:21:31    remove .sass-cache/ 
+2013-07-24 15:21:31    remove stylesheets/app.css 
+2013-07-24 15:21:31    remove stylesheets/normalize.css 
+2013-07-24 15:21:31    remove stylesheets/screen.css 
+2013-07-24 15:21:35    create stylesheets/app.css 
+2013-07-24 15:21:35    create stylesheets/normalize.css 
+2013-07-24 15:21:40    create stylesheets/screen.css 

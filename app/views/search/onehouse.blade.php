@@ -10,14 +10,18 @@
 <div class="mainContent">
 	<div class="panel oneListing">
 		<div class="row">
-			<div class="large-10 columns">
+			<div class="large-8 columns">
 				<h5 class="addressColor">{{$house->address}}</h5 >
 				</div> 
 				&nbsp &nbsp
 				<div class="large-2 columns">
-					<span class="priceStyle right top radius label">${{number_format($house->price)}}
+					<span class="alert-box secondary radius priceStyle right">${{number_format($house->price)}}
 					</span>
 				</div>
+				<div class="large-2 columns">
+					<a class="alert-box secondary round alertRentalStyle right " href="">Sale</a>
+				</div>
+
 			</div>
 			<hr/>
 			<strong>Description:</strong>
@@ -36,11 +40,11 @@
 
 
 			@if($house->agent)
-							<a href="{{URL::to('agent/'.$house->agent['id'])}}">Listing Agent:
-							{{$house->agent['firstname'] . ' '. $house->agent['lastname']}}
+			<a href="{{URL::to('agent/'.$house->agent['id'])}}">Listing Agent:
+				{{$house->agent['firstname'] . ' '. $house->agent['lastname']}}
 
-							 </a>
-							@endif
+			</a>
+			@endif
 
 			@if($imCounter)
 			@for ($i =1; $i <= $imCounter; $i++)
