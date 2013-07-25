@@ -13013,6 +13013,10 @@ label {
   margin-bottom: 10px !important;
   padding-bottom: 15px !important;
 }
+/* line 507, ../sass/screen.scss */
+.addressColor a {
+  color: #525252;
+}
 /* line 510, ../sass/screen.scss */
 .addressColor a:hover {
   color: #6c6c6c;
