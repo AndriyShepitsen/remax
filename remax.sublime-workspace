@@ -107,7 +107,15 @@
 			"file": "app/views/agents/vw_allAgents.blade.php",
 			"settings":
 			{
-				"buffer_size": 3562,
+				"buffer_size": 3577,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/rent/rent_results.blade.php",
+			"settings":
+			{
+				"buffer_size": 2735,
 				"line_ending": "Windows"
 			}
 		},
@@ -115,15 +123,7 @@
 			"file": "app/views/search/results.blade.php",
 			"settings":
 			{
-				"buffer_size": 2792,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "public/comp/sass/screen.scss",
-			"settings":
-			{
-				"buffer_size": 16584,
+				"buffer_size": 2801,
 				"line_ending": "Windows"
 			}
 		},
@@ -131,7 +131,15 @@
 			"file": "app/views/layouts/master.blade.php",
 			"settings":
 			{
-				"buffer_size": 40026,
+				"buffer_size": 39992,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/comp/sass/screen.scss",
+			"settings":
+			{
+				"buffer_size": 16890,
 				"line_ending": "Windows"
 			}
 		}
@@ -285,6 +293,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"label",
+			"Agent Listings For Sale",
+			"agentprop",
+			"specialist",
+			"specialis",
+			"sale",
+			"alertr",
 			"small",
 			"maincon",
 			"innercontent",
@@ -405,14 +420,7 @@
 			"MARK",
 			"mark",
 			"new listi",
-			"orbit",
-			"<a ",
-			"a ",
-			"<a ",
-			"short sale",
-			"Dias",
-			"Oz",
-			"Mark"
+			"orbit"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -430,7 +438,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -439,15 +447,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3562,
+						"buffer_size": 3577,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								631,
-								631
+								110,
+								110
 							]
 						],
 						"settings":
@@ -464,19 +472,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "app/views/search/results.blade.php",
+					"file": "app/views/rent/rent_results.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2792,
+						"buffer_size": 2735,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2781,
-								2781
+								671,
+								671
 							]
 						],
 						"settings":
@@ -489,38 +497,31 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 1,
-			"sheets":
-			[
+				},
 				{
 					"buffer": 2,
-					"file": "public/comp/sass/screen.scss",
+					"file": "app/views/search/results.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 16584,
+						"buffer_size": 2801,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								13418,
-								13423
+								613,
+								747
 							]
 						],
 						"settings":
 						{
-							"history_list_is_closing": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 13267.0,
+						"translation.y": 100.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -531,15 +532,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 40026,
+						"buffer_size": 39992,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								34357,
-								34357
+								36286,
+								36490
 							]
 						],
 						"settings":
@@ -549,7 +550,100 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 16093.0,
+						"translation.y": 14673.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "public/comp/sass/screen.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16890,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7311,
+								7311
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 7130.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "public/comp/sass/screen.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16890,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13738,
+								13738
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 13381.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/layouts/master.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 39992,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								36595,
+								36595
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 16687.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -585,7 +679,7 @@
 		"cols":
 		[
 			0.0,
-			0.5,
+			0.6953125,
 			1.0
 		],
 		"rows":
@@ -611,16 +705,24 @@
 		"selected_items":
 		[
 			[
+				"scre",
+				"public\\comp\\sass\\screen.scss"
+			],
+			[
+				"mast",
+				"app\\views\\layouts\\master.blade.php"
+			],
+			[
+				"resu",
+				"app\\views\\search\\results.blade.php"
+			],
+			[
 				"resul",
 				"app\\views\\search\\results.blade.php"
 			],
 			[
 				"one",
 				"app\\views\\search\\onehouse.blade.php"
-			],
-			[
-				"mast",
-				"app\\views\\layouts\\master.blade.php"
 			],
 			[
 				"alla",
@@ -684,10 +786,6 @@
 			],
 			[
 				"vwresul",
-				"app\\views\\search\\results.blade.php"
-			],
-			[
-				"resu",
 				"app\\views\\search\\results.blade.php"
 			],
 			[

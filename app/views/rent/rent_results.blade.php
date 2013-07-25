@@ -21,8 +21,8 @@
 							<span class="button secondary radius priceStyle right ">${{number_format($rental->price)}}
 							</span>
 						</div>
-						<div class="large-2 columns">
-							<a class="alert-box secondary round alertRentalStyle right " href="">Rental</a>
+						<div class="large-2 columns alert-box secondary radius alertRentalStyle right ">
+							<a class="" href="">Rental</a>
 						</div>
 					</div>
 					

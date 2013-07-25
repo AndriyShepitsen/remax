@@ -375,18 +375,18 @@
                   @foreach($agents as $agent)
                   <li  class="liAgents"><a class="th radius" data-reveal-id="{{$agent['id']}}" href="#"><img src="{{url('comp/img/agents/'.$agent['id'].'.jpg')}}" alt="RE/MAX FIRST CLASS agent profile"><a/>
 
-                  <a class="agentLink" data-reveal-id="{{$agent['id']}}" href="#">
-                  {{$agent['firstname']}}<br/>
-                  {{$agent['lastname']}}
-                  </a>
-                   
-                 </li> 
-                 @endforeach
+                    <a class="agentLink" data-reveal-id="{{$agent['id']}}" href="#">
+                      {{$agent['firstname']}}<br/>
+                      {{$agent['lastname']}}
+                    </a>
 
-               </ul>
+                  </li> 
+                  @endforeach
 
-               <div class="row">
-               <div class="large-12 columns showAllListings allAgents"> 
+                </ul>
+
+                <div class="row">
+                 <div class="large-12 columns showAllListings allAgents"> 
                   {{link_to('all-agents', 'SEE ALL OUR AGENTS', array('class'=>'browseAllListings button radius expand '));}}
 
                 </div>
@@ -735,96 +735,111 @@
                      </ul>
                    </div>                           
                  </div>
-                 <div class="agentPic"><img src="{{url('comp/img/agentsL/'. $agent['id'].'.jpg')}}" alt="{{$agent['firstname']}} {{$agent['lastname']}}, RE/MAX FIRST CLASS Agent">
+
+                 <div class="row">
+                   <div class="large-12 columns">
+                     <div class="agentPic"><img src="{{url('comp/img/agentsL/'. $agent['id'].'.jpg')}}" alt="{{$agent['firstname']}} {{$agent['lastname']}}, RE/MAX FIRST CLASS Agent">
+                     </div>
+                   </div>
+                 </div>  
+
+                 <div class="row"> 
+                 <div class="large-12 columns agentProp"> 
+                   <div>{{link_to('agent/'.$agent['id'], 'Agent Listings For Sale', array('class'=>'agentP'));}}
+                   </div>
                  </div>
-                 <div>{{link_to('agent/'.$agent['id'], 'Agent Listings For Sale', array('class'=>'agentProp label specialist'));}}
-                 </div>
-                 <div>{{link_to('agent-rentals/'.$agent['id'], 'Agent Listings For Rent', array('class'=>'agentProp label specialist'));}}
+               </div> 
 
-                 </div>
-               </div>
+               <div class="row"> 
+                <div class="large-12 columns agentProp">
+                  <div>{{link_to('agent-rentals/'.$agent['id'], 'Agent Listings For Rent', array('class'=>'agentP'));}}
+                  </div>
+                </div> 
 
-               <div class="large-7 columns left panel info">
-                 <br/>
-                 <ul class="vcard innerInfo">
-                   <h5>Associate</h5>
-                   <li class="subheader">Year Joined: {{$agent['yearjoined']}}</li>
-                   <li class="subheader">Year Licensed: {{$agent['yearlicenced']}}</li>
-                   <hr/>
-                   <h6>Contact Information:</h6>
-                   <li class="subheader">Main: (847) 674-9797</li>
-                   <li class="subheader">Fax: (847) 674-0411</li>
-                   <li class="subheader">Direct:  {{$agent['directphone']}} </li>
-                   <li class="subheader">Languages: {{$agent['languages']}} </li>
-                 </ul>
-               </div>
-             </div>
-
-
-
-             <div class="row">
-              <div class="large-12 columns agentInfoContent">
-                <dl>                              
-                  <dt><h5>Specialties</h5></dt>
-                  <hr/>
-                  <dd class="specialties"><p>{{$agent['specialties']}}</p>
-                  </dd>  
-                  <dt><h5>Service Area Information</h5></dt>
-                  <hr/>
-                  <dd class="specialties">
-                    <h6>Office Area:</h6>
-                    <p>Skokie IL, Chicago IL, Glenview IL, Morton Grove IL, Evanston IL, Wilmette IL, Niles IL, Lincolnwood IL</p>                            
-                    <h6>Agent Area:</h6>
-                    <p>{{$agent['agentarea']}}</p>  
-                  </dd>
-                </div>
               </div>
+            </div>
 
+            <div class="large-7 columns left panel info">
+             <br/>
+             <ul class="vcard innerInfo">
+               <h5>Associate</h5>
+               <li class="subheader">Year Joined: {{$agent['yearjoined']}}</li>
+               <li class="subheader">Year Licensed: {{$agent['yearlicenced']}}</li>
+               <hr/>
+               <h6>Contact Information:</h6>
+               <li class="subheader">Main: (847) 674-9797</li>
+               <li class="subheader">Fax: (847) 674-0411</li>
+               <li class="subheader">Direct:  {{$agent['directphone']}} </li>
+               <li class="subheader">Languages: {{$agent['languages']}} </li>
+             </ul>
+           </div>
+         </div>
+
+
+
+         <div class="row">
+          <div class="large-12 columns agentInfoContent">
+            <dl>                              
+              <dt><h5>Specialties</h5></dt>
+              <hr/>
+              <dd class="specialties"><p>{{$agent['specialties']}}</p>
+              </dd>  
+              <dt><h5>Service Area Information</h5></dt>
+              <hr/>
+              <dd class="specialties">
+                <h6>Office Area:</h6>
+                <p>Skokie IL, Chicago IL, Glenview IL, Morton Grove IL, Evanston IL, Wilmette IL, Niles IL, Lincolnwood IL</p>                            
+                <h6>Agent Area:</h6>
+                <p>{{$agent['agentarea']}}</p>  
+              </dd>
             </div>
           </div>
+
         </div>
-        @endforeach
-        @endif
-        <script>
-          document.write('<script src=' +
-            ('_proto_' in {} ? 'comp/javascripts/vendor/zepto' : 'comp/javascripts/vendor/jquery') +
-            '.js><\/script>')
-        </script>
+      </div>
+    </div>
+    @endforeach
+    @endif
+    <script>
+      document.write('<script src=' +
+        ('_proto_' in {} ? 'comp/javascripts/vendor/zepto' : 'comp/javascripts/vendor/jquery') +
+        '.js><\/script>')
+    </script>
 
-        {{HTML::script("comp/javascripts/foundation/foundation.js")}}
+    {{HTML::script("comp/javascripts/foundation/foundation.js")}}
 
-        {{HTML::script("comp/javascripts/foundation/foundation.alerts.js")}}
+    {{HTML::script("comp/javascripts/foundation/foundation.alerts.js")}}
 
-        {{HTML::script("comp/javascripts/foundation/foundation.clearing.js")}}
+    {{HTML::script("comp/javascripts/foundation/foundation.clearing.js")}}
 
-        {{HTML::script("comp/javascripts/foundation/foundation.cookie.js")}}
+    {{HTML::script("comp/javascripts/foundation/foundation.cookie.js")}}
 
-        {{HTML::script("comp/javascripts/foundation/foundation.dropdown.js")}}
+    {{HTML::script("comp/javascripts/foundation/foundation.dropdown.js")}}
 
-        {{HTML::script("comp/javascripts/foundation/foundation.forms.js")}}
+    {{HTML::script("comp/javascripts/foundation/foundation.forms.js")}}
 
-        {{HTML::script("comp/javascripts/foundation/foundation.interchange.js")}}
+    {{HTML::script("comp/javascripts/foundation/foundation.interchange.js")}}
 
-        {{HTML::script("comp/javascripts/foundation/foundation.joyride.js")}}
+    {{HTML::script("comp/javascripts/foundation/foundation.joyride.js")}}
 
-        {{HTML::script("comp/javascripts/foundation/foundation.magellan.js")}}
+    {{HTML::script("comp/javascripts/foundation/foundation.magellan.js")}}
 
-        {{HTML::script("comp/javascripts/foundation/foundation.orbit.js")}}
+    {{HTML::script("comp/javascripts/foundation/foundation.orbit.js")}}
 
-        {{HTML::script("comp/javascripts/foundation/foundation.placeholder.js")}}
+    {{HTML::script("comp/javascripts/foundation/foundation.placeholder.js")}}
 
-        {{HTML::script("comp/javascripts/foundation/foundation.reveal.js")}}
+    {{HTML::script("comp/javascripts/foundation/foundation.reveal.js")}}
 
-        {{HTML::script("comp/javascripts/foundation/foundation.section.js")}}
+    {{HTML::script("comp/javascripts/foundation/foundation.section.js")}}
 
-        {{HTML::script("comp/javascripts/foundation/foundation.tooltips.js")}}
+    {{HTML::script("comp/javascripts/foundation/foundation.tooltips.js")}}
 
-        {{HTML::script("comp/javascripts/foundation/foundation.topbar.js")}}
+    {{HTML::script("comp/javascripts/foundation/foundation.topbar.js")}}
 
 
-        <script>
-          $(document).foundation();
-        </script>
-         @yield('agent_thumb')
-      </body>
-      </html>
+    <script>
+      $(document).foundation();
+    </script>
+    @yield('agent_thumb')
+  </body>
+  </html>

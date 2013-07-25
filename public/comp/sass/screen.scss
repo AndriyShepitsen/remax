@@ -708,7 +708,9 @@ ul.ulagents li {
 	padding-top: 5px !important;
 	padding-bottom: 5px !important;
 	color: $colorFontGray;
-	background-color: darken(#E9E9E9, 15%);
+	background-color: darken(#F2F2F2, 7%) !important;
+	text-shadow: $myTextShadow !important;
+	border: 1px solid $colorFontOffWhite !important;
 }
 
 .specialist:hover, .specialist:focus{
@@ -725,11 +727,17 @@ ul.ulagents li {
 	padding-bottom: 0px !important;
 }
 .agentProp{
-	// font-size: 11px !important;
-	// padding-top: 5px !important;
-	// padding-bottom: 5px !important;
-	// margin-top: 10px;
+	font-size: 11px !important;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+	margin-top: 5px !important;
+	// margin-bottom: 5px !important;
+	margin-top: 10px;
 	font-size: 11px;
+	background-color: #F2F2F2 !important;
+	color: $colorBlue !important;
+	text-shadow: $myTextShadow !important;
+	border: 1px solid $colorFontOffWhite !important;
 	// background-color: darken(#E9E9E9, 35%);
 }
 .logoS{
