@@ -10,16 +10,16 @@
 <div class="mainContent">
 	<div class="panel addressColor">
 		<div class="row">
-			<div class="large-8 columns">
+			<div class="large-10 columns">
 				<strong>{{$house->address}}</strong>
 				&nbsp &nbsp
 				<br/>
 
 			</div> 
 			
-			<div class="large-2 columns">
+			<!-- <div class="large-2 columns">
 				<a class="alert-box secondary round alertRentalStyle right " href="">Sale</a>
-			</div>
+			</div> -->
 			<div class="large-2 columns">
 
 				<span class="alert-box secondary radius priceStyle right ">${{number_format($house->price)}}

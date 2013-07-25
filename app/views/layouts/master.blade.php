@@ -354,7 +354,7 @@
                     <h4> <a class="newsHead" href="#">NEW LISTINGS FOR SALE</a> </h4>
                   </div>
                   <hr/>
-                  <ul class="small-block-grid-3 clearing-thumbs ullistings">
+                  <ul class="small-block-grid-3 ullistings">
                     <li class="liNewListings"><a class="th radius" href="{{URL::to('search/7')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/7/1s.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
                     <li class="liNewListings"><a class="th radius" href="{{URL::to('search/15')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/15/1s.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
                     <li class="liNewListings"><a class="th radius" href="{{URL::to('search/14')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/14/1s.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
@@ -368,118 +368,129 @@
               @if(isset($agents)) 
               <div class="row">
                <div class="large-12 columns panel ourAgents">
-                 <div><h4 class="newsHead"><a class="newsHead"href="">OUR AGENTS</a> <h4></div>
+                 <div>
+                   <h4 class="newsHead">
+                     <a class="newsHead"href="">OUR AGENTS
+                     </a>
+                   </h4>
+                 </div>
                  <hr/>
 
                  <ul class="small-block-grid-3 ulagents">
                   @foreach($agents as $agent)
-                  <li  class="liAgents"><a class="th radius" data-reveal-id="{{$agent['id']}}" href="#"><img src="{{url('comp/img/agents/'.$agent['id'].'.jpg')}}" alt="RE/MAX FIRST CLASS agent profile"><a/>
+                  <li  class="liAgents">
+                  <a class="th radius" data-reveal-id="{{$agent['id']}}" href="#"><img src="{{url('comp/img/agents/'.$agent['id'].'.jpg')}}" alt="RE/MAX FIRST CLASS agent profile">
+                  <a/>
 
-                    <a class="agentLink" data-reveal-id="{{$agent['id']}}" href="#">
-                      {{$agent['firstname']}}<br/>
-                      {{$agent['lastname']}}
-                    </a>
+                  <div class="row marginPadding">
+                     <div class="large-12 columns marginPadding">
+                       <a class="agentLink" data-reveal-id="{{$agent['id']}}" href="#">
+                        {{$agent['firstname']}}
+                        {{$agent['lastname']}}
+                      </a>
+                    </div>
+                  </div>
 
-                  </li> 
-                  @endforeach
+                </li> 
+                @endforeach
 
-                </ul>
+              </ul>
 
-                <div class="row">
-                 <div class="large-12 columns showAllListings allAgents"> 
-                  {{link_to('all-agents', 'SEE ALL OUR AGENTS', array('class'=>'browseAllListings button radius expand '));}}
+              <div class="row">
+               <div class="large-12 columns showAllListings allAgents"> 
+                {{link_to('all-agents', 'SEE ALL OUR AGENTS', array('class'=>'browseAllListings button radius expand '));}}
 
-                </div>
               </div>
             </div>
-          </div>
-          @endif
-        </aside>
-        <!-- =adide ands here -->
-
-      </div>
-    </div>     <!-- /* =mainContent ends here */ -->
-
-
-    <!-- /* =footer starts here */ -->
-
-    <footer>
-      <div class="row">
-        <div class="large-4 columns">
-          <div class="row">
-            <div class="large-12 columns">
-              <a class="th has-tip-left logoFooterPadding" title="Multiple Listing Service" href="#">
-                <img src="{{url('comp/img/mls.png')}}" alt="Multiple Listing Service">
-              </a>
-              <a class="th has-tip-left logoFooterPadding" title="Coming Soon RE/MAX 1ST CLASS COMMERCIAL" href="#">
-                <img src="{{url('comp/img/remax-commercial-logo.png')}}" alt="RE/MAX 1ST CLASS COMMERCIAL">
-              </a>
-              <a target="_blank" class="th has-tip-left logoFooterPadding"  title="Visit Our Remax Short Sale Chicago Website"  href="http://www.shortsalechicago.us/Short-Sale-Chicago">
-                <img src="{{url('comp/img/Chicago-Short-Sale-Logo.png')}}" alt="Chicago Short Sale">
-              </a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns logoRemaxFooter">
-              <a href="{{ URL::route('home')}}">
-                <img src="{{url('comp/img/logo-footer.png')}}" alt="Logo RE/MAX FIRST CLASS">
-                <a/>
-              </div>
-            </div>
-          </div>
-          <div class="large-4 columns">
-
-            <section class="large-7 columns social">
-              <ul class="prop no-bullet">
-                <span class="propertiesFooter">PROPERTIES FOR SALE:</span> 
-                <hr/>
-                <li class="locality properties">{{link_to('browse/1', 'SINGLE FAMILY');}}</li>
-                <li class="locality properties">{{link_to('browse/4', 'MULTI-FAMILY');}}</li>
-                <li class="locality properties">{{link_to('browse/3', 'CONDO');}}</li>
-                <li class="locality properties">{{link_to('browse/2', 'VACANT LAND');}}</li>
-              </ul>
-            </section>
-
-          </div>
-
-          <div class="large-4 columns">
-            <div class="large-6 columns">
-              <ul class="vcard">
-                <span class="connectFooter">CONTACT INFORMATION:</span>
-                <hr/>
-                <li class="locality"> PHONE: (847) 674-9797</li>
-                <li class="locality"> FAX: (847) 674-0411</li>
-                <li class="street-address">4023 W. Church St.</li>
-                <li class="locality">Skokie</li>
-                <li><span class="state">IL</span> <span class="zip">600076</span></li>
-                <li class="email" data-reveal-id="myModal">{{link_to('#', 'remax1stclass@gmail.com');}}</li>
-              </ul>
-            </div>
-            <section class="large-6 columns social right">
-              <span class="contactFooter">CONNECT WITH US:</span>
-              <hr/>
-              <ul class="small-block-grid-3 ulFooterSocial">
-                <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Facebook Page" href="https://www.facebook.com/pages/Remax-1st-CLASS/177448822432081"><img src="{{url('comp/img/social_footer/facebook.png')}}" alt="RE/MAX FIRST CLASS Facebook Profile"><a/></li>
-                <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Twitter Page" href="https://twitter.com/RemaxFirstClass"><img src="{{url('comp/img/social_footer/twitter.png')}}" alt="Remax First Class Twitter Profile"><a/></li>
-                <li class="liFooterConnectRight"><a target="_blank" class="has-tip-left" title="Our Linkedin Page" href="http://www.linkedin.com/profile/view?id=271875691&trk=nav_responsive_tab_profile"><img src="{{url('comp/img/social_footer/linkedin.png')}}" alt="Remax First Class Linkedin Profile"><a/></li>
-                <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Google Plus Page" href="#"><img src="{{url('comp/img/social_footer/google.png')}}" alt="Remax First Class Google Profile"><a/></li>
-                <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Yelp Page" href="http://www.yelp.com/biz/remax-first-class-skokie"><img src="{{url('comp/img/social_footer/yelp.png')}}" alt="Remax First Class Feed Profile"><a/></li>
-                <li class="liFooterConnectRight"><a target="_blank" class="has-tip-left" title="Our Page" href="https://www.youtube.com/"><img src="{{url('comp/img/social_footer/you_tube.png')}}" alt="Remax First Class Youtube Profile"><a/></li>
-              </ul>
-            </section>
           </div>
         </div>
-      </footer>
+        @endif
+      </aside>
+      <!-- =adide ands here -->
 
-      <!-- /* =copyright starts here */ -->
+    </div>
+  </div>     <!-- /* =mainContent ends here */ -->
 
-      <div class="copyright">
+
+  <!-- /* =footer starts here */ -->
+
+  <footer>
+    <div class="row">
+      <div class="large-4 columns">
         <div class="row">
-          <div class="large-4 large-centered columns copy">
-            <p>© 2013 RE/MAX FIRST CLASS</p> 
+          <div class="large-12 columns">
+            <a class="th has-tip-left logoFooterPadding" title="Multiple Listing Service" href="#">
+              <img src="{{url('comp/img/mls.png')}}" alt="Multiple Listing Service">
+            </a>
+            <a class="th has-tip-left logoFooterPadding" title="Coming Soon RE/MAX 1ST CLASS COMMERCIAL" href="#">
+              <img src="{{url('comp/img/remax-commercial-logo.png')}}" alt="RE/MAX 1ST CLASS COMMERCIAL">
+            </a>
+            <a target="_blank" class="th has-tip-left logoFooterPadding"  title="Visit Our Remax Short Sale Chicago Website"  href="http://www.shortsalechicago.us/Short-Sale-Chicago">
+              <img src="{{url('comp/img/Chicago-Short-Sale-Logo.png')}}" alt="Chicago Short Sale">
+            </a>
           </div>
+        </div>
+        <div class="row">
+          <div class="large-12 columns logoRemaxFooter">
+            <a href="{{ URL::route('home')}}">
+              <img src="{{url('comp/img/logo-footer.png')}}" alt="Logo RE/MAX FIRST CLASS">
+              <a/>
+            </div>
+          </div>
+        </div>
+        <div class="large-4 columns">
 
-          <!-- /* =copyright ends here */ -->
+          <section class="large-7 columns social">
+            <ul class="prop no-bullet">
+              <span class="propertiesFooter">PROPERTIES FOR SALE:</span> 
+              <hr/>
+              <li class="locality properties">{{link_to('browse/1', 'SINGLE FAMILY');}}</li>
+              <li class="locality properties">{{link_to('browse/4', 'MULTI-FAMILY');}}</li>
+              <li class="locality properties">{{link_to('browse/3', 'CONDO');}}</li>
+              <li class="locality properties">{{link_to('browse/2', 'VACANT LAND');}}</li>
+            </ul>
+          </section>
+
+        </div>
+
+        <div class="large-4 columns">
+          <div class="large-6 columns">
+            <ul class="vcard">
+              <span class="connectFooter">CONTACT INFORMATION:</span>
+              <hr/>
+              <li class="locality"> PHONE: (847) 674-9797</li>
+              <li class="locality"> FAX: (847) 674-0411</li>
+              <li class="street-address">4023 W. Church St.</li>
+              <li class="locality">Skokie</li>
+              <li><span class="state">IL</span> <span class="zip">600076</span></li>
+              <li class="email" data-reveal-id="myModal">{{link_to('#', 'remax1stclass@gmail.com');}}</li>
+            </ul>
+          </div>
+          <section class="large-6 columns social right">
+            <span class="contactFooter">CONNECT WITH US:</span>
+            <hr/>
+            <ul class="small-block-grid-3 ulFooterSocial">
+              <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Facebook Page" href="https://www.facebook.com/pages/Remax-1st-CLASS/177448822432081"><img src="{{url('comp/img/social_footer/facebook.png')}}" alt="RE/MAX FIRST CLASS Facebook Profile"><a/></li>
+              <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Twitter Page" href="https://twitter.com/RemaxFirstClass"><img src="{{url('comp/img/social_footer/twitter.png')}}" alt="Remax First Class Twitter Profile"><a/></li>
+              <li class="liFooterConnectRight"><a target="_blank" class="has-tip-left" title="Our Linkedin Page" href="http://www.linkedin.com/profile/view?id=271875691&trk=nav_responsive_tab_profile"><img src="{{url('comp/img/social_footer/linkedin.png')}}" alt="Remax First Class Linkedin Profile"><a/></li>
+              <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Google Plus Page" href="#"><img src="{{url('comp/img/social_footer/google.png')}}" alt="Remax First Class Google Profile"><a/></li>
+              <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Yelp Page" href="http://www.yelp.com/biz/remax-first-class-skokie"><img src="{{url('comp/img/social_footer/yelp.png')}}" alt="Remax First Class Feed Profile"><a/></li>
+              <li class="liFooterConnectRight"><a target="_blank" class="has-tip-left" title="Our Page" href="https://www.youtube.com/"><img src="{{url('comp/img/social_footer/you_tube.png')}}" alt="Remax First Class Youtube Profile"><a/></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </footer>
+
+    <!-- /* =copyright starts here */ -->
+
+    <div class="copyright">
+      <div class="row">
+        <div class="large-4 large-centered columns copy">
+          <p>© 2013 RE/MAX FIRST CLASS</p> 
+        </div>
+
+        <!-- /* =copyright ends here */ -->
 <!-- </div>
 </div> -->
 
@@ -690,7 +701,7 @@
 /* insert data-reveal-id to your button with the same id */
                    <input type="submit" class="button tiny right loginButton" data-reveal-id="adminAuth" value="LOGIN">
                  -->
-
+                 <!-- =agentInfo starts here -->
                  @if(isset($agents)) 
 
                  @foreach($agents as $agent)
@@ -744,101 +755,104 @@
                  </div>  
 
                  <div class="row"> 
-                 <div class="large-12 columns agentPropSale"> 
-                   <em>{{link_to('agent/'.$agent['id'], 'AGENT LISTINGS FOR SALE', array('class'=>'agentP'));}}</em>
-                   
-                 </div>
-               </div> 
+                   <div class="large-12 columns agentPropSale"> 
+                     <em>{{link_to('agent/'.$agent['id'], 'AGENT LISTINGS FOR SALE', array('class'=>'agentP'));}}</em>
 
-               <div class="row"> 
-                <div class="large-12 columns agentPropRent">
-                  <em>{{link_to('agent-rentals/'.$agent['id'], 'AGENT LISTINGS FOR RENT', array('class'=>'agentP'));}}</em>
-                </div> 
+                   </div>
+                 </div> 
 
+                 <div class="row"> 
+                  <div class="large-12 columns agentPropRent">
+                    <em>{{link_to('agent-rentals/'.$agent['id'], 'AGENT LISTINGS FOR RENT', array('class'=>'agentP'));}}</em>
+                  </div> 
+
+                </div>
+              </div>
+
+              <div class="large-7 columns left panel info">
+               <br/>
+               <ul class="vcard innerInfo">
+                 <h5>Associate:</h5>
+                 <li class="subheader">Year Joined: {{$agent['yearjoined']}}</li>
+                 <li class="subheader">Year Licensed: {{$agent['yearlicenced']}}</li>
+                 <hr/>
+                 <h6>Contact Information:</h6>
+                 <li class="subheader">Main: (847) 674-9797</li>
+                 <li class="subheader">Fax: (847) 674-0411</li>
+                 <li class="subheader">Direct:  {{$agent['directphone']}} </li>
+                 <li class="subheader">Languages: {{$agent['languages']}} </li>
+               </ul>
+             </div>
+           </div>
+
+
+
+           <div class="row">
+            <div class="large-12 columns agentInfoContent">
+              <dl>                              
+                <dt><h5>Specialties</h5></dt>
+                <hr/>
+                <dd class="specialties"><p>{{$agent['specialties']}}</p>
+                </dd>  
+                <dt><h5>Service Area Information</h5></dt>
+                <hr/>
+                <dd class="specialties">
+                  <h6>Office Area:</h6>
+                  <p>Skokie IL, Chicago IL, Glenview IL, Morton Grove IL, Evanston IL, Wilmette IL, Niles IL, Lincolnwood IL</p>                            
+                  <h6>Agent Area:</h6>
+                  <p>{{$agent['agentarea']}}</p>  
+                </dd>
               </div>
             </div>
 
-            <div class="large-7 columns left panel info">
-             <br/>
-             <ul class="vcard innerInfo">
-               <h5>Associate:</h5>
-               <li class="subheader">Year Joined: {{$agent['yearjoined']}}</li>
-               <li class="subheader">Year Licensed: {{$agent['yearlicenced']}}</li>
-               <hr/>
-               <h6>Contact Information:</h6>
-               <li class="subheader">Main: (847) 674-9797</li>
-               <li class="subheader">Fax: (847) 674-0411</li>
-               <li class="subheader">Direct:  {{$agent['directphone']}} </li>
-               <li class="subheader">Languages: {{$agent['languages']}} </li>
-             </ul>
-           </div>
-         </div>
-
-
-
-         <div class="row">
-          <div class="large-12 columns agentInfoContent">
-            <dl>                              
-              <dt><h5>Specialties</h5></dt>
-              <hr/>
-              <dd class="specialties"><p>{{$agent['specialties']}}</p>
-              </dd>  
-              <dt><h5>Service Area Information</h5></dt>
-              <hr/>
-              <dd class="specialties">
-                <h6>Office Area:</h6>
-                <p>Skokie IL, Chicago IL, Glenview IL, Morton Grove IL, Evanston IL, Wilmette IL, Niles IL, Lincolnwood IL</p>                            
-                <h6>Agent Area:</h6>
-                <p>{{$agent['agentarea']}}</p>  
-              </dd>
-            </div>
           </div>
-
         </div>
       </div>
-    </div>
-    @endforeach
-    @endif
-    <script>
-      document.write('<script src=' +
-        ('_proto_' in {} ? 'comp/javascripts/vendor/zepto' : 'comp/javascripts/vendor/jquery') +
-        '.js><\/script>')
-    </script>
+      @endforeach
+      @endif
 
-    {{HTML::script("comp/javascripts/foundation/foundation.js")}}
+      <!-- =agentInfo ends here -->
 
-    {{HTML::script("comp/javascripts/foundation/foundation.alerts.js")}}
+      <script>
+        document.write('<script src=' +
+          ('_proto_' in {} ? 'comp/javascripts/vendor/zepto' : 'comp/javascripts/vendor/jquery') +
+          '.js><\/script>')
+      </script>
 
-    {{HTML::script("comp/javascripts/foundation/foundation.clearing.js")}}
+      {{HTML::script("comp/javascripts/foundation/foundation.js")}}
 
-    {{HTML::script("comp/javascripts/foundation/foundation.cookie.js")}}
+      {{HTML::script("comp/javascripts/foundation/foundation.alerts.js")}}
 
-    {{HTML::script("comp/javascripts/foundation/foundation.dropdown.js")}}
+      {{HTML::script("comp/javascripts/foundation/foundation.clearing.js")}}
 
-    {{HTML::script("comp/javascripts/foundation/foundation.forms.js")}}
+      {{HTML::script("comp/javascripts/foundation/foundation.cookie.js")}}
 
-    {{HTML::script("comp/javascripts/foundation/foundation.interchange.js")}}
+      {{HTML::script("comp/javascripts/foundation/foundation.dropdown.js")}}
 
-    {{HTML::script("comp/javascripts/foundation/foundation.joyride.js")}}
+      {{HTML::script("comp/javascripts/foundation/foundation.forms.js")}}
 
-    {{HTML::script("comp/javascripts/foundation/foundation.magellan.js")}}
+      {{HTML::script("comp/javascripts/foundation/foundation.interchange.js")}}
 
-    {{HTML::script("comp/javascripts/foundation/foundation.orbit.js")}}
+      {{HTML::script("comp/javascripts/foundation/foundation.joyride.js")}}
 
-    {{HTML::script("comp/javascripts/foundation/foundation.placeholder.js")}}
+      {{HTML::script("comp/javascripts/foundation/foundation.magellan.js")}}
 
-    {{HTML::script("comp/javascripts/foundation/foundation.reveal.js")}}
+      {{HTML::script("comp/javascripts/foundation/foundation.orbit.js")}}
 
-    {{HTML::script("comp/javascripts/foundation/foundation.section.js")}}
+      {{HTML::script("comp/javascripts/foundation/foundation.placeholder.js")}}
 
-    {{HTML::script("comp/javascripts/foundation/foundation.tooltips.js")}}
+      {{HTML::script("comp/javascripts/foundation/foundation.reveal.js")}}
 
-    {{HTML::script("comp/javascripts/foundation/foundation.topbar.js")}}
+      {{HTML::script("comp/javascripts/foundation/foundation.section.js")}}
+
+      {{HTML::script("comp/javascripts/foundation/foundation.tooltips.js")}}
+
+      {{HTML::script("comp/javascripts/foundation/foundation.topbar.js")}}
 
 
-    <script>
-      $(document).foundation();
-    </script>
-    @yield('agent_thumb')
-  </body>
-  </html>
+      <script>
+        $(document).foundation();
+      </script>
+      @yield('agent_thumb')
+    </body>
+    </html>
