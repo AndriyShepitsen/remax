@@ -435,6 +435,9 @@ label{
 	font-weight: bold !important;
 
 }
+.agentPic{
+	margin-bottom: 5px !important;
+}
 .propDetails:hover{
 	color: 	lighten($colorBlue, 10%)!important;
 	text-decoration: underline !important;
@@ -695,6 +698,9 @@ ul.ulagents li {
 .specialties{
 	font-size: 12px;
 }
+.ulAgentName{
+	margin-bottom: 10px !important;
+}
 .agentName{
 	margin-bottom: 5px 	!important;
 	font-size:22px !important;
@@ -714,7 +720,7 @@ ul.ulagents li {
 }
 
 .specialist:hover, .specialist:focus{
-	color: $colorFontOffWhite !important;
+	color: lighten($colorFontGray, 20%) !important;
 
 }
 .info{
@@ -725,20 +731,37 @@ ul.ulagents li {
 .innerInfo{
 	padding-top: 0px !important;
 	padding-bottom: 0px !important;
+	font-size: 14px !important;
 }
-.agentProp{
-	font-size: 11px !important;
+.agentPropSale{
+	font-size: 9px !important;
+	font-weight: bold !important;
 	padding-top: 5px !important;
 	padding-bottom: 5px !important;
 	margin-top: 5px !important;
-	// margin-bottom: 5px !important;
-	margin-top: 10px;
+	padding-left: 10px !important;
+	letter-spacing: 1px !important;
+	margin-left: 5px !important;
 	font-size: 11px;
-	background-color: #F2F2F2 !important;
+
+}
+.agentPropRent{
+	font-size: 9px !important;
+	font-weight: bold !important;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+	padding-left: 10px !important;
+	letter-spacing: 1px !important;
+	margin-left: 5px !important;
+	font-size: 11px;
+}
+
+.agentP{
 	color: $colorBlue !important;
-	text-shadow: $myTextShadow !important;
-	border: 1px solid $colorFontOffWhite !important;
-	// background-color: darken(#E9E9E9, 35%);
+	text-shadow: 1px solid $colorFontOffWhite !important;
+	&:hover{
+		color: lighten($colorBlue, 15%) !important;
+	}
 }
 .logoS{
 	margin-top:5px;

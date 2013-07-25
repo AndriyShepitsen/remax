@@ -728,7 +728,7 @@
                     <div class="row">
                      <div class="large-12 columns left">
                       <br/>
-                      <ul>
+                      <ul class="ulAgentName">
                        <h3 class="subheader agentName">{{$agent['firstname']}} {{$agent['lastname']}}</h3>
                        <a class="label has-tip-left specialist" title="Accredited Buyers Representative">ABR</a> 
                        <a class="label has-tip-left specialist" title="Certified Residential Specialist">CRS</a>
@@ -738,22 +738,21 @@
 
                  <div class="row">
                    <div class="large-12 columns">
-                     <div class="agentPic"><img src="{{url('comp/img/agentsL/'. $agent['id'].'.jpg')}}" alt="{{$agent['firstname']}} {{$agent['lastname']}}, RE/MAX FIRST CLASS Agent">
+                     <div class="th agentPic"><img src="{{url('comp/img/agentsL/'. $agent['id'].'.jpg')}}" alt="{{$agent['firstname']}} {{$agent['lastname']}}, RE/MAX FIRST CLASS Agent">
                      </div>
                    </div>
                  </div>  
 
                  <div class="row"> 
-                 <div class="large-12 columns agentProp"> 
-                   <div>{{link_to('agent/'.$agent['id'], 'Agent Listings For Sale', array('class'=>'agentP'));}}
-                   </div>
+                 <div class="large-12 columns agentPropSale"> 
+                   <em>{{link_to('agent/'.$agent['id'], 'AGENT LISTINGS FOR SALE', array('class'=>'agentP'));}}</em>
+                   
                  </div>
                </div> 
 
                <div class="row"> 
-                <div class="large-12 columns agentProp">
-                  <div>{{link_to('agent-rentals/'.$agent['id'], 'Agent Listings For Rent', array('class'=>'agentP'));}}
-                  </div>
+                <div class="large-12 columns agentPropRent">
+                  <em>{{link_to('agent-rentals/'.$agent['id'], 'AGENT LISTINGS FOR RENT', array('class'=>'agentP'));}}</em>
                 </div> 
 
               </div>
@@ -762,7 +761,7 @@
             <div class="large-7 columns left panel info">
              <br/>
              <ul class="vcard innerInfo">
-               <h5>Associate</h5>
+               <h5>Associate:</h5>
                <li class="subheader">Year Joined: {{$agent['yearjoined']}}</li>
                <li class="subheader">Year Licensed: {{$agent['yearlicenced']}}</li>
                <hr/>
