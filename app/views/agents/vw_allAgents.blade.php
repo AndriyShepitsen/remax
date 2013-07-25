@@ -4,7 +4,8 @@
 -->
 
 <div id="mainContent">
-  <h1>Remax 1st Class Agents</h1>
+  <h1>Remax 1st Class Realty Agents</h1>
+  <hr/>
   <ul class="small-block-grid-3 ulagents">
     @foreach($allAgents as $agent)
     <li  class="liAgents"><a class="th radius" data-reveal-id="{{$agent['id']}}" href="#"><img src="{{url('comp/img/agents/'.$agent['id'].'.jpg')}}" alt="RE/MAX FIRST CLASS agent profile"><a/><br/>

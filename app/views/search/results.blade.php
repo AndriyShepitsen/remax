@@ -19,15 +19,15 @@
 							</strong> &nbsp	&nbsp	
 							<br/>
 						</div>
-						<div class="large-2 columns">
+						<div class="large-4 columns">
 
 							<span class="alert-box secondary radius priceStyle right ">${{number_format($house->price)}}
 							</span>
 						</div>
-						<div class="large-2 columns">
+<!-- 						<div class="large-2 columns">
 							<a class="alert-box secondary round alertRentalStyle right " href="">Sale</a>
 						</div>
-					</div>
+ -->					</div>
 					<div class="row">
 						<div class="large-7 columns houseImgWrapper">
 
