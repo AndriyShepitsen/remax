@@ -38,7 +38,9 @@
 
 							@if($rental->rental_images()->first()->maxid)
 							<ul class="no-bullet listingImage">
-								<li><a href="{{url('rent/'.$rental->id)}}"><img src="{{url('comp/img/rent_thumbs/'.$rental->id.'/1.jpg')}}"class="th"></a> 
+								<li>
+									<a href="{{url('rent/'.$rental->id)}}"><img src="{{url('comp/img/rent_thumbs/'.$rental->id.'/1.jpg')}}"class="th">
+									</a> 
 								</li>
 
 							</ul>
@@ -72,6 +74,7 @@
 				<!--  =panel addressColor ends here-->
 			</a>
 		</li>
+
 		@endforeach
 	</ul>
 	<?php echo $rentals->appends(array(

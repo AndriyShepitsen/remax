@@ -337,6 +337,13 @@ h3{
 }
 
 /* =find starts here */
+.oneRentDescriptionUl{
+	font-size:12px !important;
+	p{
+		
+	font-size:12px !important;
+	}
+}
 .section-container.auto > section .content{
 	background-color: #FBFBFB;
 }
@@ -381,18 +388,18 @@ label{
 	padding-top: 5px !important;
 	padding-bottom: 5px !important;
 	font-size: 14px;
-	// margin-top: -10px; 
 }
 .alertRentalStyle{
-	font-weight: bold !important;
+	font-size: 14px;
+	color: $colorBlue !important;
+	display: inline-block !important;
+font-weight: bold !important;
 	background-color:  lighten(#F2F2F2, 1%)!important;
 	border: 1px solid lighten($colorRed, 35%)!important;
 	padding-right: 15px !important;
 	padding-left: 15px !important;
 	padding-top: 5px !important;
 	padding-bottom: 5px !important;
-	font-size: 14px;
-	color: $colorBlue !important;
 
 }
 .basicInfoWrapper{
@@ -434,7 +441,11 @@ label{
 	font-size: 11px;
 	text-shadow: $myTextShadow !important;
 	font-weight: bold !important;
+	margin-top: 4px !important;
 
+}
+.oneRentVcard{
+	padding: 0px !important;
 }
 .agentPic{
 	margin-bottom: 5px !important;
@@ -449,15 +460,6 @@ label{
 	display: inline-block !important;
 	font-size: 10px !important;
 }
-.aCallAgent{
-
-	display: inline-block !important;
-	border: 0px solid #FFFFFF !important;
-	padding-bottom: 5px !important;
-	padding-top: 5px !important;
-	box-shadow: 0px 0px 0px 0px #FFFFFF !important;
-	// outline-color: #FFFFFF !important;
-}
 .callAgent{
 	font-size: 10px !important;
 	border: 0px !important;	
@@ -467,6 +469,21 @@ label{
 	padding-bottom: 5px !important;
 	// margin-top: 10px !important;
 	margin-bottom: 0px !important;
+}
+.aCallAgent{
+
+	display: inline-block !important;
+	border: 0px solid #FFFFFF !important;
+	padding-bottom: 5px !important;
+	padding-top: 5px !important;
+	box-shadow: 0px 0px 0px 0px #FFFFFF !important;
+	color: $colorFontGray;
+	font-size: 11px !important;
+	// outline-color: #FFFFFF !important;
+}
+.callAgentRent{
+	
+	margin-bottom: 10px !important;
 }
 .searchDescription{
 	font-size: 10px !important;
@@ -615,16 +632,15 @@ article p{
 .imgNewListings{
 	width: 75px;
 }
-.ullistings{
-	display: inline-block;
-	padding-left: 15px;
-}
-ul.newListings li{
-}
+
 
 /* =newListings style ends here  *
 
 /* =our agents style starts here */
+.oneRentAgent{
+	padding-top: 10px !important;
+	// font-size: 12px;
+}
 .marginPadding{
 	margin: 0px !important;
 	padding: 0px !important;

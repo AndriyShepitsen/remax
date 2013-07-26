@@ -8,21 +8,18 @@
 <!-- //LOCATION: remax/public/search
 -->
 <div class="mainContent">
-	<div class="panel addressColor">
+	<div class="panel oneListing">
 		<div class="row">
 			<div class="large-10 columns">
-				<strong>{{$house->address}}</strong>
+				<h5>{{$house->address}}</h5>
 				&nbsp &nbsp
 				<br/>
 
 			</div> 
 			
-			<!-- <div class="large-2 columns">
-				<a class="alert-box secondary round alertRentalStyle right " href="">Sale</a>
-			</div> -->
 			<div class="large-2 columns">
 
-				<span class="alert-box secondary radius priceStyle right ">${{number_format($house->price)}}
+				<span class="priceStyle right top radius label">${{number_format($house->price)}}
 				</span>
 			</div>
 		</div>
@@ -33,7 +30,7 @@
 				<br/><br/>
 				<p>{{ucfirst(strtolower($house->details))}}</p>
 
-				<strong>MLS:</strong> {{$house->listing}}<br/><br/>
+				<strong>MLS: #</strong> {{$house->listing}}<br/><br/>
 
 				<strong>Bedrooms:</strong> {{$house->bedrooms}} <br/><br/>
 

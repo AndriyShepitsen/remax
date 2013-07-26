@@ -354,13 +354,13 @@
                     <h4> <a class="newsHead" href="#">NEW LISTINGS FOR SALE</a> </h4>
                   </div>
                   <hr/>
-                  <ul class="small-block-grid-3 ullistings">
-                    <li class="liNewListings"><a class="th radius" href="{{URL::to('search/7')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/7/1s.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
-                    <li class="liNewListings"><a class="th radius" href="{{URL::to('search/15')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/15/1s.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
+                  <ul class="large-block-grid-3 small-block-grid-2 marginPadding">
+                    <li class="liNewListings"><a class="th radius" href="{{URL::to('search/7')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/7/1.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
+                    <li class="liNewListings"><a class="th radius" href="{{URL::to('search/15')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/15/1.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
                     <li class="liNewListings"><a class="th radius" href="{{URL::to('search/14')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/14/1s.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
-                    <li class="liNewListings"><a class="th radius" href="{{URL::to('search/19')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/19/1s.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
-                    <li class="liNewListings"><a class="th radius" href="{{URL::to('search/5')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/5/1s.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
-                    <li class="liNewListings"><a class="th radius" href="{{URL::to('search/10')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/10/1s.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
+                    <li class="liNewListings"><a class="th radius" href="{{URL::to('search/19')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/19/1.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
+                    <li class="liNewListings"><a class="th radius" href="{{URL::to('search/5')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/5/1.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
+                    <li class="liNewListings"><a class="th radius" href="{{URL::to('search/10')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/10/1.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
                   </ul>
                 </div>
               </div>

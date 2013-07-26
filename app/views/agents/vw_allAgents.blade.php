@@ -9,20 +9,20 @@
   <ul class="small-block-grid-3 ulagents">
     @foreach($allAgents as $agent)
     <li  class="liAgents"><a class="th radius" data-reveal-id="{{$agent['id']}}" href="#"><img src="{{url('comp/img/agents/'.$agent['id'].'.jpg')}}" alt="RE/MAX FIRST CLASS agent profile"><a/><br/>
-    <a class="agentLink" data-reveal-id="{{$agent['id']}}" href="#">
-                  {{$agent['firstname']}}  {{$agent['lastname']}}
-                  </a>
-   </li> 
-   @endforeach
+      <a class="agentLink" data-reveal-id="{{$agent['id']}}" href="#">
+        {{$agent['firstname']}}  {{$agent['lastname']}}
+      </a>
+    </li> 
+    @endforeach
 
- </ul>
+  </ul>
 
 
 </div>
 @stop
 
 
- 
+
 </div>
 @stop
 
@@ -58,55 +58,55 @@
 
 
 <div class="row">
-                   <div class="large-4 columns">
-                    <div class="row">
-                     <div class="large-12 columns left">
-                      <br/>
-                      <ul class="ulAgentName">
-                       <h3 class="subheader agentName">{{$agent['firstname']}} {{$agent['lastname']}}</h3>
-                       <a class="label has-tip-left specialist" title="Accredited Buyers Representative">ABR</a> 
-                       <a class="label has-tip-left specialist" title="Certified Residential Specialist">CRS</a>
-                     </ul>
-                   </div>                           
-                 </div>
+ <div class="large-4 columns">
+  <div class="row">
+   <div class="large-12 columns left">
+    <br/>
+    <ul class="ulAgentName">
+     <h3 class="subheader agentName">{{$agent['firstname']}} {{$agent['lastname']}}</h3>
+     <a class="label has-tip-left specialist" title="Accredited Buyers Representative">ABR</a> 
+     <a class="label has-tip-left specialist" title="Certified Residential Specialist">CRS</a>
+   </ul>
+ </div>                           
+</div>
 
-                 <div class="row">
-                   <div class="large-12 columns">
-                     <div class="th agentPic"><img src="{{url('comp/img/agentsL/'. $agent['id'].'.jpg')}}" alt="{{$agent['firstname']}} {{$agent['lastname']}}, RE/MAX FIRST CLASS Agent">
-                     </div>
-                   </div>
-                 </div>  
+<div class="row">
+ <div class="large-12 columns">
+   <div class="th agentPic"><img src="{{url('comp/img/agentsL/'. $agent['id'].'.jpg')}}" alt="{{$agent['firstname']}} {{$agent['lastname']}}, RE/MAX FIRST CLASS Agent">
+   </div>
+ </div>
+</div>  
 
-                 <div class="row"> 
-                   <div class="large-12 columns agentPropSale"> 
-                     <em>{{link_to('agent/'.$agent['id'], 'AGENT LISTINGS FOR SALE', array('class'=>'agentP'));}}</em>
+<div class="row"> 
+ <div class="large-12 columns agentPropSale"> 
+   <em>{{link_to('agent/'.$agent['id'], 'AGENT LISTINGS FOR SALE', array('class'=>'agentP'));}}</em>
 
-                   </div>
-                 </div> 
+ </div>
+</div> 
 
-                 <div class="row"> 
-                  <div class="large-12 columns agentPropRent">
-                    <em>{{link_to('agent-rentals/'.$agent['id'], 'AGENT LISTINGS FOR RENT', array('class'=>'agentP'));}}</em>
-                  </div> 
+<div class="row"> 
+  <div class="large-12 columns agentPropRent">
+    <em>{{link_to('agent-rentals/'.$agent['id'], 'AGENT LISTINGS FOR RENT', array('class'=>'agentP'));}}</em>
+  </div> 
 
-                </div>
-              </div>
+</div>
+</div>
 
-              <div class="large-7 columns left panel info">
-               <br/>
-               <ul class="vcard innerInfo">
-                 <h5>Associate:</h5>
-                 <li class="subheader">Year Joined: {{$agent['yearjoined']}}</li>
-                 <li class="subheader">Year Licensed: {{$agent['yearlicenced']}}</li>
-                 <hr/>
-                 <h6>Contact Information:</h6>
-                 <li class="subheader">Main: (847) 674-9797</li>
-                 <li class="subheader">Fax: (847) 674-0411</li>
-                 <li class="subheader">Direct:  {{$agent['directphone']}} </li>
-                 <li class="subheader">Languages: {{$agent['languages']}} </li>
-               </ul>
-             </div>
-           </div>
+<div class="large-7 columns left panel info">
+ <br/>
+ <ul class="vcard innerInfo">
+   <h5>Associate:</h5>
+   <li class="subheader">Year Joined: {{$agent['yearjoined']}}</li>
+   <li class="subheader">Year Licensed: {{$agent['yearlicenced']}}</li>
+   <hr/>
+   <h6>Contact Information:</h6>
+   <li class="subheader">Main: (847) 674-9797</li>
+   <li class="subheader">Fax: (847) 674-0411</li>
+   <li class="subheader">Direct:  {{$agent['directphone']}} </li>
+   <li class="subheader">Languages: {{$agent['languages']}} </li>
+ </ul>
+</div>
+</div>
 
 
 
