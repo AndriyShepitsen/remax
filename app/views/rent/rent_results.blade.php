@@ -34,8 +34,8 @@
 						<div class="large-7 columns houseImgWrapper">
 							<small>
 
-								MLS#:{{$rental->listing}} | 
-								Bedrooms: {{$rental->bedrooms}} | 
+<!-- 								MLS#:{{$rental->listing}} | 
+ -->								Bedrooms: {{$rental->bedrooms}} | 
 								Bathrooms: {{$rental->bathrooms}}  
 								@if ($rental->property_type!=null)
 								Property Type: {{$rental->propertytype()
