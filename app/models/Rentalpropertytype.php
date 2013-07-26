@@ -1,7 +1,8 @@
 <?php
 
 
-class Rental_propertytype extends Eloquent {
+class Rentalpropertytype extends Eloquent {
+	public  $table = 'rental_propertytypes';
     protected $guarded = array();
 
     public static $rules = array();

@@ -33,10 +33,13 @@
 					<div class="row">
 						<div class="large-7 columns houseImgWrapper">
 							<small>
+
+								MLS#:{{$rental->listing}} | 
 								Bedrooms: {{$rental->bedrooms}} | 
-								Bathrooms: {{$rental->bathrooms}} | 
+								Bathrooms: {{$rental->bathrooms}}  
 								@if ($rental->property_type!=null)
-								Property Type: {{$rental->propertytype()->first()->rentaltype}} 
+								Property Type: {{$rental->propertytype()
+									 ->first()['rentaltype']}} 
 								@endif
 							</small>
 
