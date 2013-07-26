@@ -379,118 +379,118 @@
                  <ul class="small-block-grid-3 ulagents">
                   @foreach($agents as $agent)
                   <li  class="liAgents">
-                  <a class="th radius" data-reveal-id="{{$agent['id']}}" href="#"><img src="{{url('comp/img/agents/'.$agent['id'].'.jpg')}}" alt="RE/MAX FIRST CLASS agent profile">
-                  <a/>
+                    <a class="th radius" data-reveal-id="{{$agent['id']}}" href="#"><img src="{{url('comp/img/agents/'.$agent['id'].'.jpg')}}" alt="RE/MAX FIRST CLASS agent profile">
+                      <a/>
 
-                  <div class="row marginPadding">
-                     <div class="large-12 columns marginPadding">
-                       <a class="agentLink" data-reveal-id="{{$agent['id']}}" href="#">
-                        {{$agent['firstname']}}
-                        {{$agent['lastname']}}
-                      </a>
+                      <div class="row marginPadding">
+                       <div class="large-12 columns marginPadding">
+                         <a class="agentLink" data-reveal-id="{{$agent['id']}}" href="#">
+                          {{$agent['firstname']}}
+                          {{$agent['lastname']}}
+                        </a>
+                      </div>
                     </div>
-                  </div>
 
-                </li> 
-                @endforeach
+                  </li> 
+                  @endforeach
 
-              </ul>
+                </ul>
 
-              <div class="row">
-               <div class="large-12 columns showAllListings allAgents"> 
-                {{link_to('all-agents', 'SEE ALL OUR AGENTS', array('class'=>'browseAllListings button radius expand '));}}
+                <div class="row">
+                 <div class="large-12 columns showAllListings allAgents"> 
+                  {{link_to('all-agents', 'SEE ALL OUR AGENTS', array('class'=>'browseAllListings button radius expand '));}}
 
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        @endif
-      </aside>
-      <!-- =adide ands here -->
+          @endif
+        </aside>
+        <!-- =adide ands here -->
 
-    </div>
-  </div>     <!-- /* =mainContent ends here */ -->
+      </div>
+    </div>     <!-- /* =mainContent ends here */ -->
 
 
-  <!-- /* =footer starts here */ -->
+    <!-- /* =footer starts here */ -->
 
-  <footer>
-    <div class="row">
-      <div class="large-4 columns">
-        <div class="row">
-          <div class="large-12 columns">
-            <a class="th has-tip-left logoFooterPadding" title="Multiple Listing Service" href="#">
-              <img src="{{url('comp/img/mls.png')}}" alt="Multiple Listing Service">
-            </a>
-            <a class="th has-tip-left logoFooterPadding" title="Coming Soon RE/MAX 1ST CLASS COMMERCIAL" href="#">
-              <img src="{{url('comp/img/remax-commercial-logo.png')}}" alt="RE/MAX 1ST CLASS COMMERCIAL">
-            </a>
-            <a target="_blank" class="th has-tip-left logoFooterPadding"  title="Visit Our Remax Short Sale Chicago Website"  href="http://www.shortsalechicago.us/Short-Sale-Chicago">
-              <img src="{{url('comp/img/Chicago-Short-Sale-Logo.png')}}" alt="Chicago Short Sale">
-            </a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-12 columns logoRemaxFooter">
-            <a href="{{ URL::route('home')}}">
-              <img src="{{url('comp/img/logo-footer.png')}}" alt="Logo RE/MAX FIRST CLASS">
-              <a/>
+    <footer>
+      <div class="row">
+        <div class="large-4 columns">
+          <div class="row">
+            <div class="large-12 columns">
+              <a class="th has-tip-left logoFooterPadding" title="Multiple Listing Service" href="#">
+                <img src="{{url('comp/img/mls.png')}}" alt="Multiple Listing Service">
+              </a>
+              <a class="th has-tip-left logoFooterPadding" title="Coming Soon RE/MAX 1ST CLASS COMMERCIAL" href="#">
+                <img src="{{url('comp/img/remax-commercial-logo.png')}}" alt="RE/MAX 1ST CLASS COMMERCIAL">
+              </a>
+              <a target="_blank" class="th has-tip-left logoFooterPadding"  title="Visit Our Remax Short Sale Chicago Website"  href="http://www.shortsalechicago.us/Short-Sale-Chicago">
+                <img src="{{url('comp/img/Chicago-Short-Sale-Logo.png')}}" alt="Chicago Short Sale">
+              </a>
             </div>
           </div>
-        </div>
-        <div class="large-4 columns">
-
-          <section class="large-7 columns social">
-            <ul class="prop no-bullet">
-              <span class="propertiesFooter">PROPERTIES FOR SALE:</span> 
-              <hr/>
-              <li class="locality properties">{{link_to('browse/1', 'SINGLE FAMILY');}}</li>
-              <li class="locality properties">{{link_to('browse/4', 'MULTI-FAMILY');}}</li>
-              <li class="locality properties">{{link_to('browse/3', 'CONDO');}}</li>
-              <li class="locality properties">{{link_to('browse/2', 'VACANT LAND');}}</li>
-            </ul>
-          </section>
-
-        </div>
-
-        <div class="large-4 columns">
-          <div class="large-6 columns">
-            <ul class="vcard">
-              <span class="connectFooter">CONTACT INFORMATION:</span>
-              <hr/>
-              <li class="locality"> PHONE: (847) 674-9797</li>
-              <li class="locality"> FAX: (847) 674-0411</li>
-              <li class="street-address">4023 W. Church St.</li>
-              <li class="locality">Skokie</li>
-              <li><span class="state">IL</span> <span class="zip">600076</span></li>
-              <li class="email" data-reveal-id="myModal">{{link_to('#', 'remax1stclass@gmail.com');}}</li>
-            </ul>
+          <div class="row">
+            <div class="large-12 columns logoRemaxFooter">
+              <a href="{{ URL::route('home')}}">
+                <img src="{{url('comp/img/logo-footer.png')}}" alt="Logo RE/MAX FIRST CLASS">
+                <a/>
+              </div>
+            </div>
           </div>
-          <section class="large-6 columns social right">
-            <span class="contactFooter">CONNECT WITH US:</span>
-            <hr/>
-            <ul class="small-block-grid-3 ulFooterSocial">
-              <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Facebook Page" href="https://www.facebook.com/pages/Remax-1st-CLASS/177448822432081"><img src="{{url('comp/img/social_footer/facebook.png')}}" alt="RE/MAX FIRST CLASS Facebook Profile"><a/></li>
-              <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Twitter Page" href="https://twitter.com/RemaxFirstClass"><img src="{{url('comp/img/social_footer/twitter.png')}}" alt="Remax First Class Twitter Profile"><a/></li>
-              <li class="liFooterConnectRight"><a target="_blank" class="has-tip-left" title="Our Linkedin Page" href="http://www.linkedin.com/profile/view?id=271875691&trk=nav_responsive_tab_profile"><img src="{{url('comp/img/social_footer/linkedin.png')}}" alt="Remax First Class Linkedin Profile"><a/></li>
-              <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Google Plus Page" href="#"><img src="{{url('comp/img/social_footer/google.png')}}" alt="Remax First Class Google Profile"><a/></li>
-              <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Yelp Page" href="http://www.yelp.com/biz/remax-first-class-skokie"><img src="{{url('comp/img/social_footer/yelp.png')}}" alt="Remax First Class Feed Profile"><a/></li>
-              <li class="liFooterConnectRight"><a target="_blank" class="has-tip-left" title="Our Page" href="https://www.youtube.com/"><img src="{{url('comp/img/social_footer/you_tube.png')}}" alt="Remax First Class Youtube Profile"><a/></li>
-            </ul>
-          </section>
+          <div class="large-4 columns">
+
+            <section class="large-7 columns social">
+              <ul class="prop no-bullet">
+                <span class="propertiesFooter">PROPERTIES FOR SALE:</span> 
+                <hr/>
+                <li class="locality properties">{{link_to('browse/1', 'SINGLE FAMILY');}}</li>
+                <li class="locality properties">{{link_to('browse/4', 'MULTI-FAMILY');}}</li>
+                <li class="locality properties">{{link_to('browse/3', 'CONDO');}}</li>
+                <li class="locality properties">{{link_to('browse/2', 'VACANT LAND');}}</li>
+              </ul>
+            </section>
+
+          </div>
+
+          <div class="large-4 columns">
+            <div class="large-6 columns">
+              <ul class="vcard">
+                <span class="connectFooter">CONTACT INFORMATION:</span>
+                <hr/>
+                <li class="locality"> PHONE: (847) 674-9797</li>
+                <li class="locality"> FAX: (847) 674-0411</li>
+                <li class="street-address">4023 W. Church St.</li>
+                <li class="locality">Skokie</li>
+                <li><span class="state">IL</span> <span class="zip">600076</span></li>
+                <li class="email" data-reveal-id="myModal">{{link_to('#', 'remax1stclass@gmail.com');}}</li>
+              </ul>
+            </div>
+            <section class="large-6 columns social right">
+              <span class="contactFooter">CONNECT WITH US:</span>
+              <hr/>
+              <ul class="small-block-grid-3 ulFooterSocial">
+                <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Facebook Page" href="https://www.facebook.com/pages/Remax-1st-CLASS/177448822432081"><img src="{{url('comp/img/social_footer/facebook.png')}}" alt="RE/MAX FIRST CLASS Facebook Profile"><a/></li>
+                <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Twitter Page" href="https://twitter.com/RemaxFirstClass"><img src="{{url('comp/img/social_footer/twitter.png')}}" alt="Remax First Class Twitter Profile"><a/></li>
+                <li class="liFooterConnectRight"><a target="_blank" class="has-tip-left" title="Our Linkedin Page" href="http://www.linkedin.com/profile/view?id=271875691&trk=nav_responsive_tab_profile"><img src="{{url('comp/img/social_footer/linkedin.png')}}" alt="Remax First Class Linkedin Profile"><a/></li>
+                <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Google Plus Page" href="#"><img src="{{url('comp/img/social_footer/google.png')}}" alt="Remax First Class Google Profile"><a/></li>
+                <li class="liFooterConnect"><a target="_blank" class="has-tip-left" title="Our Yelp Page" href="http://www.yelp.com/biz/remax-first-class-skokie"><img src="{{url('comp/img/social_footer/yelp.png')}}" alt="Remax First Class Feed Profile"><a/></li>
+                <li class="liFooterConnectRight"><a target="_blank" class="has-tip-left" title="Our Page" href="https://www.youtube.com/"><img src="{{url('comp/img/social_footer/you_tube.png')}}" alt="Remax First Class Youtube Profile"><a/></li>
+              </ul>
+            </section>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
 
-    <!-- /* =copyright starts here */ -->
+      <!-- /* =copyright starts here */ -->
 
-    <div class="copyright">
-      <div class="row">
-        <div class="large-4 large-centered columns copy">
-          <p>© 2013 RE/MAX FIRST CLASS</p> 
-        </div>
+      <div class="copyright">
+        <div class="row">
+          <div class="large-4 large-centered columns copy">
+            <p>© 2013 RE/MAX FIRST CLASS</p> 
+          </div>
 
-        <!-- /* =copyright ends here */ -->
+          <!-- /* =copyright ends here */ -->
 <!-- </div>
 </div> -->
 
@@ -769,19 +769,21 @@
                 </div>
               </div>
 
-              <div class="large-7 columns left panel info">
-               <br/>
-               <ul class="vcard innerInfo">
-                 <h5>Associate:</h5>
-                 <li class="subheader">Year Joined: {{$agent['yearjoined']}}</li>
-                 <li class="subheader">Year Licensed: {{$agent['yearlicenced']}}</li>
-                 <hr/>
-                 <h6>Contact Information:</h6>
-                 <li class="subheader">Main: (847) 674-9797</li>
-                 <li class="subheader">Fax: (847) 674-0411</li>
-                 <li class="subheader">Direct:  {{$agent['directphone']}} </li>
-                 <li class="subheader">Languages: {{$agent['languages']}} </li>
-               </ul>
+              <div class="large-8 columns left">
+                <div class="panel info">
+                 <br/>
+                 <ul class="vcard innerInfo">
+                   <h5>Associate:</h5>
+                   <li class="subheader">Year Joined: {{$agent['yearjoined']}}</li>
+                   <li class="subheader">Year Licensed: {{$agent['yearlicenced']}}</li>
+                   <hr/>
+                   <h6>Contact Information:</h6>
+                   <li class="subheader">Main: (847) 674-9797</li>
+                   <li class="subheader">Fax: (847) 674-0411</li>
+                   <li class="subheader">Direct:  {{$agent['directphone']}} </li>
+                   <li class="subheader">Languages: {{$agent['languages']}} </li>
+                 </ul>
+               </div>
              </div>
            </div>
 

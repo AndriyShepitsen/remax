@@ -92,20 +92,23 @@
 </div>
 </div>
 
-<div class="large-7 columns left panel info">
- <br/>
- <ul class="vcard innerInfo">
-   <h5>Associate:</h5>
-   <li class="subheader">Year Joined: {{$agent['yearjoined']}}</li>
-   <li class="subheader">Year Licensed: {{$agent['yearlicenced']}}</li>
-   <hr/>
-   <h6>Contact Information:</h6>
-   <li class="subheader">Main: (847) 674-9797</li>
-   <li class="subheader">Fax: (847) 674-0411</li>
-   <li class="subheader">Direct:  {{$agent['directphone']}} </li>
-   <li class="subheader">Languages: {{$agent['languages']}} </li>
- </ul>
+<div class="large-8 columns left">
+  <div class="panel info">
+   <br/>
+   <ul class="vcard innerInfo">
+     <h5>Associate:</h5>
+     <li class="subheader">Year Joined: {{$agent['yearjoined']}}</li>
+     <li class="subheader">Year Licensed: {{$agent['yearlicenced']}}</li>
+     <hr/>
+     <h6>Contact Information:</h6>
+     <li class="subheader">Main: (847) 674-9797</li>
+     <li class="subheader">Fax: (847) 674-0411</li>
+     <li class="subheader">Direct:  {{$agent['directphone']}} </li>
+     <li class="subheader">Languages: {{$agent['languages']}} </li>
+   </ul>
+ </div>
 </div>
+
 </div>
 
 
