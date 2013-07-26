@@ -8,10 +8,28 @@
 <!-- //LOCATION: remax/public/search
 -->
 <div class="mainContent">
-	<div class="panel oneListing">
-		<div class="row">
+	<div class="panel oneListing oneRentAgent">
+		<div class="row callAgentRent">
 			<div class="large-10 columns left">
-				<br/>
+				@if($house->agent)
+				<ul class="vcard oneRentVcard">
+					<li>					
+						<div class="locality alert-box secondary radius callAgent">
+							<a class="th radius aCallAgent" data-reveal-id="{{$house->agent['id']}}" href="#">Listing Agent:
+								<span class="agentNameList" >{{$house->agent['firstname'] . ' '. $house->agent['lastname']}}
+								</span >
+							</a>
+							<br/>
+							<span class="agentPhoneList">
+								Direct Phone: 
+								<strong>
+									{{$house->agent['directphone']}}
+								</strong>
+							</span>
+						</div>
+					</li>
+				</ul>
+				@endif
 
 			</div> 
 			
