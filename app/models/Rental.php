@@ -13,7 +13,7 @@ return $this->hasOne('Rentalimage');
 
 public function propertytype()
 {
-return $this->hasOne('Rentalpropertytype');
+return $this->belongsTo('Rentalpropertytype');
 }
 
 public function agent()

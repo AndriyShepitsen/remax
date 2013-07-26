@@ -11,7 +11,7 @@ class Rentalpropertytype extends Eloquent {
 
 public function rental()
 {
-return $this->belongsTo('Rental');
+return $this->hasOne('Rental');
 }
 
 }

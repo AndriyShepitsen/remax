@@ -10,6 +10,6 @@ class Rentalimage extends Eloquent {
 
  public function rental()
 {
-return $this-belongsTo('Rental');
+return $this->belongsTo('Rental');
 }
 }

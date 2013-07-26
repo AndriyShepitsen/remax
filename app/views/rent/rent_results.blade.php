@@ -37,10 +37,13 @@
 <!-- 								MLS#:{{$rental->listing}} | 
  -->								Bedrooms: {{$rental->bedrooms}} | 
 								Bathrooms: {{$rental->bathrooms}}  
-								@if ($rental->property_type!=null)
-								Property Type: {{$rental->propertytype()
-									 ->first()['rentaltype']}} 
-								@endif
+							
+								Property Type: 
+								@if($rental->property_type==1)
+								Apartment
+								@else
+								House
+								@endif							
 							</small>
 
 							@if($rental->rental_images()->first()->maxid)
