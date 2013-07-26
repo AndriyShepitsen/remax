@@ -35,8 +35,8 @@
 							<small>
 								Bedrooms: {{$rental->bedrooms}} | 
 								Bathrooms: {{$rental->bathrooms}} | 
-								@if ($rental->rental_propertytype!=null)
-								Property Type: {{$rental->property_type}} 
+								@if ($rental->property_type!=null)
+								Property Type: {{$rental->propertytype()->first()->rentaltype}} 
 								@endif
 							</small>
 
