@@ -532,7 +532,11 @@ font-weight: bold !important;
 .alert-box{
 	margin-bottom: .5em !important;
 }	
-
+.listPropWrap{
+	hr{
+		margin-bottom: 10px !important;
+	}
+}
 .addressColor{
 		color: $colorFontGray;
 	a{

@@ -11,6 +11,11 @@ public function rental_images()
 return $this->hasOne('Rentalimage');
 }
 
+public function propertytype()
+{
+return $this->hasOne('Rental_propertytype');
+}
+
 public function agent()
 {
 return $this->belongsTo('Agent');

@@ -10,27 +10,26 @@
 		<li>
 
 			<a href="{{url('search/'.$house->id)}}">
+			<!-- =addressColor starts here -->
 				<div class="panel addressColor">
-					<div class="row">
-						<div class="large-8 columns">
-
-							<strong>
+					<div class="row listPropWrap">
+						<div class="large-10 columns">
+							<h6>
 								{{$house->address}}
-							</strong> &nbsp	&nbsp	
+							</h6> &nbsp	&nbsp	
 							<br/>
 						</div>
-						<div class="large-4 columns">
 
+						<div class="large-2 columns">
 							<span class="alert-box secondary radius priceStyle right ">${{number_format($house->price)}}
 							</span>
 						</div>
-<!-- 						<div class="large-2 columns">
-							<a class="alert-box secondary round alertRentalStyle right " href="">Sale</a>
-						</div>
- -->					</div>
+						<hr/>
+					</div>
+
+
 					<div class="row">
 						<div class="large-7 columns houseImgWrapper">
-
 							<small>
 								MLS#:{{$house->listing}} | 
 								Year:{{$house->year}}| 
@@ -47,18 +46,24 @@
 						</div>
 						<!-- =houseImgWrapper ends here -->
 
+						<!-- =badicInfoWrapper starts here -->
 						<div class="large-5 columns basicInfoWrapper">
 							<ul class="vcard basicInfoUl">
 								<li>
 									<div class="alert-box secondary expand basicInfo">Basic Information
 									</div>
+
+									<!-- =searchDescription starts here -->
 									<div class="searchDescription">
 										{{Str::limit(ucfirst(strtolower($house->details)), 280)}} </br>
 										<a href="{{url('search/'.$house->id)}}" class="propDetails"><em>Property Details</em></a>
 										<hr/>
 									</div>
+									<!-- =searchDescription ends here -->
 								</li>
 								@if($house->agent)
+
+								<!-- =callAgent starts here -->
 								<div class="locality right alert-box secondary radius callAgent">
 									<a class="th radius aCallAgent" data-reveal-id="{{$house->agent['id']}}" href="#">Listing Agent:
 										<span class="agentNameList" >{{$house->agent['firstname'] . ' '. $house->agent['lastname']}}</span >
@@ -66,6 +71,7 @@
 										<br/>
 										<span class="agentPhoneList">Direct Phone: <strong>{{$house->agent['directphone']}}</strong></span>
 									</div>
+									<!-- =callAgent ends here -->
 									@endif
 								</ul>
 							</div>
@@ -77,6 +83,7 @@
 			</li>
 			@endforeach
 		</ul>
+
 		<?php echo $houses->appends(array(
 			'location' => Input::get('location'),
 			'from' => Input::get('from'),
