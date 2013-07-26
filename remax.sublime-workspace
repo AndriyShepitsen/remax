@@ -104,34 +104,10 @@
 	"buffers":
 	[
 		{
-			"file": "app/views/rent/rent_results.blade.php",
-			"settings":
-			{
-				"buffer_size": 2735,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "app/views/layouts/master.blade.php",
 			"settings":
 			{
 				"buffer_size": 40523,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "public/comp/sass/screen.scss",
-			"settings":
-			{
-				"buffer_size": 17554,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/views/rent/one_rent.blade.php",
-			"settings":
-			{
-				"buffer_size": 1598,
 				"line_ending": "Windows"
 			}
 		}
@@ -143,6 +119,26 @@
 		"selected_items":
 		[
 			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
 				"rem",
 				"Package Control: Remove Package"
 			],
@@ -151,28 +147,12 @@
 				"Package Control: Remove Package"
 			],
 			[
-				"ins",
-				"Package Control: Install Package"
-			],
-			[
-				"sass",
-				"Set Syntax: Sass"
-			],
-			[
 				"i",
-				"Package Control: Install Package"
-			],
-			[
-				"inst",
 				"Package Control: Install Package"
 			],
 			[
 				"color",
 				"Convert Case: Lower Case"
-			],
-			[
-				"in",
-				"Package Control: Install Package"
 			],
 			[
 				"install",
@@ -183,7 +163,7 @@
 				"Package Control: Remove Package"
 			]
 		],
-		"width": 498.0
+		"width": 386.0
 	},
 	"console":
 	{
@@ -204,14 +184,16 @@
 	},
 	"file_history":
 	[
-		"/C/xampp/htdocs/remax/app/views/search/results.blade.php",
-		"/C/xampp/htdocs/remax/app/views/agents/vw_allAgents.blade.php",
-		"/C/xampp/htdocs/remax/app/views/rent/one_rent.blade.php",
-		"/C/xampp/htdocs/remax/app/views/search/onehouse.blade.php",
+		"/C/Users/Svitlana/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Svitlana/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/xampp/htdocs/remax/app/views/rent/rent_results.blade.php",
 		"/C/xampp/htdocs/remax/app/views/layouts/master.blade.php",
 		"/C/xampp/htdocs/remax/public/comp/sass/screen.scss",
+		"/C/xampp/htdocs/remax/app/views/rent/one_rent.blade.php",
+		"/C/xampp/htdocs/remax/app/views/search/results.blade.php",
+		"/C/xampp/htdocs/remax/app/views/agents/vw_allAgents.blade.php",
+		"/C/xampp/htdocs/remax/app/views/search/onehouse.blade.php",
 		"/C/xampp/htdocs/remax/app/routes.php",
-		"/C/xampp/htdocs/remax/app/views/rent/rent_results.blade.php",
 		"/C/xampp/htdocs/remax/app/views/home/vw_home.blade.php",
 		"/C/xampp/htdocs/remax/app/controllers/search/SearchController.php",
 		"/C/xampp/htdocs/remax/app/controllers/search/BrowseController.php",
@@ -430,137 +412,16 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/rent/rent_results.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2735,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								671,
-								671
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "app/views/layouts/master.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 40523,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								19996,
-								19996
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 8308.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "public/comp/sass/screen.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 17554,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								7338,
-								7338
-							]
-						],
-						"settings":
-						{
-							"history_list_is_closing": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 7130.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 2,
-					"file": "public/comp/sass/screen.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 17554,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								11501,
-								11501
-							]
-						],
-						"settings":
-						{
-							"history_list_is_closing": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 11272.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/views/rent/one_rent.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1598,
 						"regions":
 						{
 						},
@@ -574,10 +435,11 @@
 						"settings":
 						{
 							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 57.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -602,18 +464,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.48435269083,
 			1.0
 		],
 		"rows":
@@ -638,6 +493,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"mas",
+				"app\\views\\layouts\\master.blade.php"
+			],
 			[
 				"ma",
 				"app\\views\\layouts\\master.blade.php"
@@ -665,10 +524,6 @@
 			[
 				"alla",
 				"app\\views\\agents\\vw_allAgents.blade.php"
-			],
-			[
-				"mas",
-				"app\\views\\layouts\\master.blade.php"
 			],
 			[
 				"s",
@@ -811,10 +666,10 @@
 		{
 		}
 	},
-	"show_minimap": true,
+	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 257.0,
 	"status_bar_visible": true,
 	"template_settings":
