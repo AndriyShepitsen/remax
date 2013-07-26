@@ -64,12 +64,12 @@
 
 				<strong>Year:</strong> {{$house->year}} <br/><br/>
 
-				@if($house->agent)
+			<!-- 	@if($house->agent)
 				<strong>Listing Agent:</strong>
 				  <a class="agentLink" data-reveal-id="{{$house->agent['id']}}" href="#">
                   {{$house->agent['firstname']}}  {{$house->agent['lastname']}}
                   </a> <br/><br/>
-				@endif
+				@endif -->
 
 				@if($imCounter)
 				<ul class="clearing-thumbs" data-clearing>
