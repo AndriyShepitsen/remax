@@ -10,17 +10,23 @@
 <div class="mainContent">
 	<div class="panel oneListing">
 		<div class="row">
-			<div class="large-10 columns">
-				<h5>{{$house->address}}</h5>
-				&nbsp &nbsp
+			<div class="large-10 columns left">
 				<br/>
 
 			</div> 
 			
 			<div class="large-2 columns">
 
-				<span class="priceStyle right top radius label">${{number_format($house->price)}}
-				</span>
+				<a class="button secondary radius priceStyle right">${{number_format($house->price)}}
+				</a>
+			</div>
+		</div>
+		<hr/>
+		<div class="row">
+			<div class="large-12 columns">
+				<h5>{{$house->address}}</h5>
+				&nbsp &nbsp
+				
 			</div>
 		</div>
 		<hr/>

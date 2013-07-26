@@ -44,7 +44,7 @@
 		</div>
 		<hr/>
 		<div class="row">
-			<div class="large-8 columns">
+			<div class="large-12 columns">
 				<h5>
 					{{$rental->address}}
 				</h5> &nbsp	&nbsp	

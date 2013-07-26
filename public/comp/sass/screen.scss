@@ -132,6 +132,9 @@ h1{
 h3{
 	font-size: 22px !important;
 }
+.panel h5{
+	margin-bottom: 5px !important;
+}
 .ulWorkWith{
 	
 	p{
@@ -142,7 +145,7 @@ h3{
 .about-us{
 
 	p{
-		font-size:13px !important;
+		font-size:14px !important;
 		line-height: 22px !important;
 	}
 }
@@ -313,14 +316,14 @@ h3{
 	@include mainContentStyle;
 	
 	dt{
-		font-size: 13px !important;
+		font-size: 14px !important;
 	}
 	dd{
-		font-size: 13px !important;
+		font-size: 14px !important;
 	}
 	.menues{
 		p{
-			font-size: 13px !important;
+			font-size: 14px !important;
 		}
 	}
 
@@ -332,7 +335,7 @@ h3{
 .ulWorkWith{
 	li{
 		margin-left: 20px;
-		font-size: 13px !important;
+		font-size: 14px !important;
 	}
 }
 
@@ -387,6 +390,7 @@ label{
 	padding-left: 15px !important;
 	padding-top: 5px !important;
 	padding-bottom: 5px !important;
+	margin-bottom: 0px !important;
 	font-size: 14px;
 }
 .alertRentalStyle{
@@ -401,6 +405,12 @@ font-weight: bold !important;
 	padding-top: 5px !important;
 	padding-bottom: 5px !important;
 
+}
+.ulRent{
+	line-height: 14px !important;
+	a{
+		line-height: 14px !important;
+	}
 }
 .basicInfoWrapper{
 	padding-left: 0px;
@@ -441,9 +451,8 @@ font-weight: bold !important;
 	font-size: 11px;
 	text-shadow: $myTextShadow !important;
 	font-weight: bold !important;
-	margin-top: 4px !important;
-
 }
+
 .oneRentVcard{
 	padding: 0px !important;
 }
@@ -479,6 +488,7 @@ font-weight: bold !important;
 	box-shadow: 0px 0px 0px 0px #FFFFFF !important;
 	color: $colorFontGray;
 	font-size: 11px !important;
+	line-height: 14px !important;
 	// outline-color: #FFFFFF !important;
 }
 .callAgentRent{
@@ -486,7 +496,7 @@ font-weight: bold !important;
 	margin-bottom: 10px !important;
 }
 .searchDescription{
-	font-size: 10px !important;
+	font-size: 11px !important;
 	hr{
 		margin-bottom: 10px !important;
 		margin-top: 5px !important;
@@ -527,6 +537,7 @@ font-weight: bold !important;
 		color: $colorFontGray;
 	a{
 		color: $colorFontGray;
+		line-height: 14px !important;
 	}
 	a:hover{
 		color: lighten($colorFontGray, 10%);
@@ -551,7 +562,7 @@ font-weight: bold !important;
 
 /* news start here */
 .readMore{
-	font-size: 9px;
+	font-size: 10px;
 	letter-spacing: 1px;
 }
 .newsHead{
@@ -586,7 +597,7 @@ font-weight: bold !important;
 
 }
 article p{
-	font-size: 10px;
+	font-size: 11px;
 	line-height: 1.7em; 
 	margin-bottom: .5em;
 }
