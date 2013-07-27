@@ -38,7 +38,7 @@
  -->								Bedrooms: {{$rental->bedrooms}} | 
 								Bathrooms: {{$rental->bathrooms}}  
 							
-								Property Type: 
+								Property Type:  
 								@if($rental->property_type==1)
 								Apartment
 								@else

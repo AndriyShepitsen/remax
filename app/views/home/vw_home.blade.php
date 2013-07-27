@@ -20,8 +20,13 @@
 		<div class="row">
 			<div class="large-12 columns">
 				<div class="orbit-container panel">
-					<h5 class="selectedProperty">Our selected property</h5>
+					<h4 class="selectedProperty">Our selected property</h4>
 					<ul class="orbit-slides-container" data-orbit data-options="timer_speed:26000;">
+						<li> <a href="{{URL::to('search/22')}}">
+							<img src="{{url('comp/img/orbit/5.jpg')}}" alt="">
+							<div class="orbit-caption">Glenview, IL 60025</div>
+						</a>
+						</li>
 						<li> <a href="{{URL::to('search/1')}}">
 							<img src="{{url('comp/img/orbit/1.jpg')}}" alt="">
 							<div class="orbit-caption">Skokie, IL 60076   </div>

@@ -18,6 +18,7 @@
 	margin: 0;
 }
 /* =navPanel starts here */
+
 /* =variables*/
 $colorNavPanel: #393939;
 $colorButtonBackground: #428CB9;
@@ -28,8 +29,10 @@ $colorFontOffWhite: #F7F7F4;
 $copyrightBackgroundColor: #3F3F3F;
 $colorRed: lighten(#B92025, 10%);
 $myTextShadow: #FFFFFF 1px 1px 0px;
+$myTextShadow2: #FFFFFF 2px 2px 0px;
 $colorBlue: #396C95;
 $myBorderGray: 1px solid darken(#F2F2F2, 5%)!important;
+
 /*=mixins*/
 @mixin marginOneEmTopLeft{
 	margin-left:1em;
@@ -72,17 +75,14 @@ $myBorderGray: 1px solid darken(#F2F2F2, 5%)!important;
 	color: $colorSlash;
 	content: "/";
 	position: relative;
-	// top: -3px;
 }
 @mixin footerStyle{
 	background-color: darken($colorLogoWrapper, 10%);
 	padding-top: 10px;
 }
 @mixin contactFooterStyle{
-	// padding-left: 10px;
 	font-size: 11px;
 	font-weight: bold !important;
-	// margin-left: 10px;
 	margin-top: 3px !important;
 	margin-bottom: 11px !important;
 	display: inline-block;
@@ -121,7 +121,7 @@ $myBorderGray: 1px solid darken(#F2F2F2, 5%)!important;
 	padding-top: 15px !important;
 	
 }
-h2, h3, h4{
+h2, h3 {
 	color: $colorFontGray !important;
 }
 h1{
@@ -131,6 +131,9 @@ h1{
 }
 h3{
 	font-size: 22px !important;
+}
+h4{
+	color: $colorNavPanel !important;
 }
 .panel h5{
 	margin-bottom: 5px !important;
@@ -226,9 +229,7 @@ h3{
 		width: 120px !important;
 	}
 }
-// .phoneMailHomeWrapper{
-// 	padding: 0px !important;
-// }
+
 .sloganText{
 	p{
 		font-family: 'Noto Serif', ​serif;
@@ -248,15 +249,8 @@ h3{
 	margin-left: 15px;
 }
 .oneStopService{
-	// margin-top: -10px;
-	// padding-top: 35px;
 	text-align: center;
 	margin-left: -30px;
-	
-	// font-weight: bold;
-	// font-size: 16px;
-	// padding-right:0px;
-	// padding-left: 0px !important;
 }	
 
 .oneStopText{
@@ -266,9 +260,6 @@ h3{
 	font-weight: bold;
 	text-align: center;
 	margin-top: -65px;
-}
-.imgService{
-//margin-top: -50px;
 }
 
 .customerTips{
@@ -282,7 +273,6 @@ h3{
 	
 }
 .ulCustomerTips{
-	// margin-left: 100px;
 	font-size: 13px !important;
 	line-height: 20px;
 }
@@ -293,6 +283,7 @@ h3{
 .invOpportunity{
 	@extend .buyOrSell;
 }
+
 /*  =call us style starts here*/
 
 
@@ -331,6 +322,8 @@ h3{
 /*  =home page starts here*/
 .selectedProperty{
 	letter-spacing: 1px;
+	margin-bottom: 10px !important;
+	text-shadow: $myTextShadow2;
 }
 .ulWorkWith{
 	li{
@@ -344,7 +337,7 @@ h3{
 	font-size:12px !important;
 	p{
 		
-	font-size:12px !important;
+		font-size:12px !important;
 	}
 }
 .section-container.auto > section .content{
@@ -397,7 +390,7 @@ label{
 	font-size: 14px;
 	color: $colorBlue !important;
 	display: inline-block !important;
-font-weight: bold !important;
+	font-weight: bold !important;
 	background-color:  lighten(#F2F2F2, 1%)!important;
 	border: 1px solid lighten($colorRed, 35%)!important;
 	padding-right: 15px !important;
@@ -538,7 +531,7 @@ font-weight: bold !important;
 	}
 }
 .addressColor{
-		color: $colorFontGray;
+	color: $colorFontGray;
 	a{
 		color: $colorFontGray;
 		line-height: 14px !important;
@@ -566,6 +559,7 @@ font-weight: bold !important;
 
 /* news start here */
 .readMore{
+	color: $colorBlue !important;
 	font-size: 10px;
 	letter-spacing: 1px;
 }
@@ -608,6 +602,8 @@ article p{
 .pNews{
 	font-size: 10px !important;
 }
+
+/* =breadcrumbs style starts here */
 .breadcrumbs {
 	border:none !important;
 	padding: 0px  !important;
@@ -618,6 +614,22 @@ article p{
 }
 .breadcrumbs li:before {
 	@include slashBefore;
+}
+.breadcrumbsFontStyle{
+	a{
+		color: lighten($colorBlue, 15%) !important;
+	}
+	a:hover{
+		color: $colorBlue !important;
+		text-decoration: underline !important;
+	}
+}
+.current{
+	a{
+
+	color: lighten($colorFontGray, 10%)!important;
+	font-weight: bold;
+	}
 }
 
 /* =welcome style starts here */
@@ -724,15 +736,15 @@ ul.ulagents li {
 		color: lighten($colorBlue, 15%);
 	}
 }
-	.agentLink{
-		color: $colorBlue;
-		font-size: 10px !important;
-		font-weight: bold !important;
-		text-shadow: $myTextShadow;
-		margin-bottom: 7px !important;
-		margin-top: 5px !important;
-		display: inline-block !important;
-	}
+.agentLink{
+	color: $colorBlue;
+	font-size: 10px !important;
+	font-weight: bold !important;
+	text-shadow: $myTextShadow;
+	margin-bottom: 7px !important;
+	margin-top: 5px !important;
+	display: inline-block !important;
+}
 
 /* =agent profile starts here */
 
@@ -813,6 +825,7 @@ ul.ulagents li {
 	padding-left: 25px !important;
 	color: $colorFontGray !important;
 }
+
 /*=footer starts here */
 .logoFooterPadding{
 	@include marginOneEmTopLeft;
@@ -828,7 +841,6 @@ ul.ulagents li {
 .vcard{
 	border: 0em;
 	margin-bottom: 0em !important;
-	// margin-left: 10px;
 	min-width:170px;
 }
 .vcard .fn{
@@ -877,15 +889,13 @@ footer{
 		margin-bottom: 5px !important;
 		margin-top: 0px !important;
 	}
-
 }
+
 .ulFooterSocial{
 	margin: 0px !important;
 	padding-top: 10px !important;
-	// padding-left: 10px;
-	// border-top: 1px solid $colorFontGray;
-
 }
+
 .liFooterConnect{
 	padding-right: 0px !important;
 	padding-left: 0px !important;
