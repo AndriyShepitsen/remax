@@ -4141,3 +4141,31 @@ Load paths:
 2013-07-27 11:58:46 overwrite stylesheets/screen.css 
 2013-07-27 11:59:25 overwrite stylesheets/screen.css 
 2013-07-27 12:00:39 overwrite stylesheets/screen.css 
+2013-07-27 12:53:49     error sass/screen.scss (Line 475: Invalid CSS after "...FontGray, 10%) ": expected ";", was "!;")
+2013-07-27 12:53:49 overwrite stylesheets/screen.css 
+2013-07-27 12:53:52     error sass/screen.scss (Line 475: Invalid CSS after "...FontGray, 10%) ": expected ";", was "!;")
+2013-07-27 12:53:52 identical stylesheets/screen.css 
+2013-07-27 12:54:02 overwrite stylesheets/screen.css 
+2013-07-27 12:57:23 overwrite stylesheets/screen.css 
+2013-07-27 12:57:31 overwrite stylesheets/screen.css 
+2013-07-27 12:57:42 overwrite stylesheets/screen.css 
+2013-07-27 12:57:59     error sass/screen.scss (Line 969: Invalid CSS after "}": expected "}", was "")
+2013-07-27 12:57:59 overwrite stylesheets/screen.css 
+2013-07-27 12:58:17 overwrite stylesheets/screen.css 
+2013-07-27 12:58:34 overwrite stylesheets/screen.css 
+2013-07-27 12:59:07 identical stylesheets/screen.css 
+2013-07-27 12:59:16 overwrite stylesheets/screen.css 
+2013-07-27 12:59:26 overwrite stylesheets/screen.css 
+2013-07-27 13:01:46 overwrite stylesheets/screen.css 
+2013-07-27 13:19:59 overwrite stylesheets/screen.css 
+2013-07-27 13:20:19 overwrite stylesheets/screen.css 
+2013-07-27 13:23:23 overwrite stylesheets/screen.css 
+2013-07-27 13:24:56    remove .sass-cache/ 
+2013-07-27 13:24:56    remove stylesheets/app.css 
+2013-07-27 13:24:56    remove stylesheets/normalize.css 
+2013-07-27 13:24:56    remove stylesheets/screen.css 
+2013-07-27 13:25:00    create stylesheets/app.css 
+2013-07-27 13:25:00    create stylesheets/normalize.css 
+2013-07-27 13:25:05    create stylesheets/screen.css 
+2013-07-27 13:27:19 overwrite stylesheets/screen.css 
+2013-07-27 13:28:52 overwrite stylesheets/screen.css 

@@ -24,6 +24,7 @@ $colorNavPanel: #393939;
 $colorButtonBackground: #428CB9;
 $colorLogoWrapper: #F6F6F6;
 $colorFontGray: #525252;
+$colorGray: #4B4F54;
 $colorSlash: #AAAAAA;
 $colorFontOffWhite: #F7F7F4;
 $copyrightBackgroundColor: #3F3F3F;
@@ -138,13 +139,7 @@ h4{
 .panel h5{
 	margin-bottom: 5px !important;
 }
-.ulWorkWith{
-	
-	p{
-		font-size:12px !important;
-		line-height: 22px !important;
-	}
-}
+
 .about-us{
 
 	p{
@@ -217,7 +212,7 @@ h4{
 	}
 	.realEstateRC{
 		font-family: 'Roboto Slab', serif;
-		color: #4B4F54;
+		color: $colorGray;
 		font-size: .6em;
 		margin-top: 1px;
 		text-shadow: $myTextShadow;
@@ -303,7 +298,7 @@ h4{
 
 
 /* =mainContent starts here */
-#mainContent{
+.mainContent{
 	@include mainContentStyle;
 	
 	dt{
@@ -328,7 +323,10 @@ h4{
 .ulWorkWith{
 	li{
 		margin-left: 20px;
-		font-size: 14px !important;
+		p{
+			line-height: 22px !important;
+			font-size: 14px !important;
+		}
 	}
 }
 
@@ -471,6 +469,9 @@ label{
 	padding-bottom: 5px !important;
 	// margin-top: 10px !important;
 	margin-bottom: 0px !important;
+	a:hover{
+		color: lighten($colorFontGray, 10%) !important;
+	}
 }
 .aCallAgent{
 
@@ -481,8 +482,6 @@ label{
 	box-shadow: 0px 0px 0px 0px #FFFFFF !important;
 	color: $colorFontGray;
 	font-size: 11px !important;
-	line-height: 14px !important;
-	// outline-color: #FFFFFF !important;
 }
 .callAgentRent{
 	
@@ -609,7 +608,6 @@ article p{
 	padding: 0px  !important;
 	li a{
 		font-size: 9px !important;
-		
 	}
 }
 .breadcrumbs li:before {
@@ -627,8 +625,8 @@ article p{
 .current{
 	a{
 
-	color: lighten($colorFontGray, 10%)!important;
-	font-weight: bold;
+		color: lighten($colorFontGray, 10%)!important;
+		font-weight: bold;
 	}
 }
 
@@ -940,7 +938,6 @@ footer{
 	margin-top: 70px;
 }
 .properties{
-
 	margin-left: 15px;
 	font-size: 10px;
 	line-height: 20px;
@@ -953,7 +950,6 @@ footer{
 
 .propertiesFooter{
 	@include propertiesFooterStyle;
-	// border-bottom: 1px solid $colorFontGray;
 }
 .copyright{
 	background-color: $copyrightBackgroundColor;
