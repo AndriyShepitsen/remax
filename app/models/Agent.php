@@ -13,6 +13,7 @@ return $this->hasMany('House');
 
 public function rentals()
 {
+	
 return $this->hasMany('Rental');
 }
 

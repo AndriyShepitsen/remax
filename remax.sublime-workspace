@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"fo",
+				"foreach	foreach …"
+			],
+			[
 				"tsh",
 				"text-shadow"
 			],
@@ -104,10 +112,10 @@
 	"buffers":
 	[
 		{
-			"file": "app/views/layouts/master.blade.php",
+			"file": "app/views/rent/rent_results.blade.php",
 			"settings":
 			{
-				"buffer_size": 40523,
+				"buffer_size": 3200,
 				"line_ending": "Windows"
 			}
 		}
@@ -119,11 +127,11 @@
 		"selected_items":
 		[
 			[
-				"ins",
+				"inst",
 				"Package Control: Install Package"
 			],
 			[
-				"inst",
+				"ins",
 				"Package Control: Install Package"
 			],
 			[
@@ -163,7 +171,7 @@
 				"Package Control: Remove Package"
 			]
 		],
-		"width": 386.0
+		"width": 402.0
 	},
 	"console":
 	{
@@ -184,16 +192,25 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Svitlana/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/C/Users/Svitlana/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/C/xampp/htdocs/remax/app/views/rent/rent_results.blade.php",
+		"/C/xampp/htdocs/remax/app/models/Rental.php",
+		"/C/xampp/htdocs/remax/app/controllers/rent/RentController.php",
 		"/C/xampp/htdocs/remax/app/views/layouts/master.blade.php",
-		"/C/xampp/htdocs/remax/public/comp/sass/screen.scss",
+		"/C/xampp/htdocs/remax/app/routes.php",
+		"/C/xampp/htdocs/remax/app/models/Agent.php",
+		"/C/xampp/htdocs/remax/app/models/House.php",
+		"/C/xampp/htdocs/remax/app/models/Rentalpropertytype.php",
 		"/C/xampp/htdocs/remax/app/views/rent/one_rent.blade.php",
+		"/C/xampp/htdocs/remax/app/models/Rentalimage.php",
+		"/C/xampp/htdocs/remax/app/views/rent/rent_results.blade.php",
+		"/C/xampp/htdocs/remax/app/models/Rental_propertytype.php",
+		"/C/Users/Svitlana/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Svitlana/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Svitlana/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Svitlana/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/xampp/htdocs/remax/public/comp/sass/screen.scss",
 		"/C/xampp/htdocs/remax/app/views/search/results.blade.php",
 		"/C/xampp/htdocs/remax/app/views/agents/vw_allAgents.blade.php",
 		"/C/xampp/htdocs/remax/app/views/search/onehouse.blade.php",
-		"/C/xampp/htdocs/remax/app/routes.php",
 		"/C/xampp/htdocs/remax/app/views/home/vw_home.blade.php",
 		"/C/xampp/htdocs/remax/app/controllers/search/SearchController.php",
 		"/C/xampp/htdocs/remax/app/controllers/search/BrowseController.php",
@@ -251,7 +268,7 @@
 	],
 	"find":
 	{
-		"height": 37.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -267,6 +284,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"'propertytype'",
+			"appartm",
+			"property_type",
 			"1s",
 			"ullistings",
 			"ullis",
@@ -391,10 +411,7 @@
 			"FIND",
 			"\n                        ",
 			"newlis",
-			"renta",
-			"alt",
-			"Remax First Class ",
-			"alt"
+			"renta"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -402,6 +419,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"'rentalpropertytype'",
+			"propertytype"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -417,29 +436,28 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/layouts/master.blade.php",
+					"file": "app/views/rent/rent_results.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 40523,
+						"buffer_size": 3200,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1099,
+								1099
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 57.0,
+						"translation.y": 513.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -449,7 +467,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 22.0
+		"height": 37.0
 	},
 	"input":
 	{
@@ -494,8 +512,20 @@
 		"selected_items":
 		[
 			[
+				"ro",
+				"app\\routes.php"
+			],
+			[
 				"mas",
 				"app\\views\\layouts\\master.blade.php"
+			],
+			[
+				"rent",
+				"app\\views\\rent\\rent_results.blade.php"
+			],
+			[
+				"rentres",
+				"app\\views\\rent\\rent_results.blade.php"
 			],
 			[
 				"ma",
@@ -586,10 +616,6 @@
 				"app\\views\\contact\\vw_contact.blade.php"
 			],
 			[
-				"ro",
-				"app\\routes.php"
-			],
-			[
 				"m",
 				"app\\views\\layouts\\master.blade.php"
 			],
@@ -670,7 +696,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 257.0,
+	"side_bar_width": 284.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

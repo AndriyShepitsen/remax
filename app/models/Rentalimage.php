@@ -2,9 +2,7 @@
 
 
 class Rentalimage extends Eloquent {
-	public  $table = 'rental_images';
-
-    protected $guarded = array();
+	 protected $guarded = array();
 
     public static $rules = array();
 

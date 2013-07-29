@@ -35,18 +35,14 @@
 							<small>
 
 <!-- 								MLS#:{{$rental->listing}} | 
- -->								Bedrooms: {{$rental->bedrooms}} | 
+ -->							Bedrooms: {{$rental->bedrooms}} | 
 								Bathrooms: {{$rental->bathrooms}}  
 							
-								Property Type:  
-								@if($rental->property_type==1)
-								Apartment
-								@else
-								House
-								@endif							
+								Property Type: {{$rental ->rentalpropertytype->rentaltype}}  
+														
 							</small>
 
-							@if($rental->rental_images()->first()->maxid)
+							@if($rental->rentalimage()->first()->maxid)
 							<ul class="no-bullet listingImage">
 								<li>
 									<a href="{{url('rent/'.$rental->id)}}"><img src="{{url('comp/img/rent_thumbs/'.$rental->id.'/1.jpg')}}"class="th">

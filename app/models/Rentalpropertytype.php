@@ -2,7 +2,7 @@
 
 
 class Rentalpropertytype extends Eloquent {
-	public  $table = 'rental_propertytypes';
+	
     protected $guarded = array();
 
     public static $rules = array();
@@ -11,7 +11,7 @@ class Rentalpropertytype extends Eloquent {
 
 public function rental()
 {
-return $this->hasOne('Rental');
+return $this->hasMany('Rental');
 }
 
 }

@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('set')
-{{$imCounter = $rental->rental_images()->first()->maxid}}
+{{$imCounter = $rental->rentalimage->maxid}}
 @stop
 @section('content')
 

@@ -6,12 +6,12 @@ class Rental extends Eloquent {
 
     public static $rules = array();
 
-public function rental_images()
+public function rentalimage()
 {
 return $this->hasOne('Rentalimage');
 }
 
-public function propertytype()
+public function rentalpropertytype()
 {
 return $this->belongsTo('Rentalpropertytype');
 }

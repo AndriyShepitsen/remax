@@ -25,7 +25,12 @@
     <!-- navPanel starts here -->
     
 <div class="row">
-        <div class="large-12 columns">
+<div class="large-12 columns">
+<div class="large-3 columns">
+ {{link_to('#', 'Login', array('data-reveal-id'=>'adminAuth'))}}
+<br/>
+   
+</div>
 </div>
 </div>
     <div class="navPanel">
@@ -337,7 +342,7 @@
                           </div>
                           <div class="row">
                            <div class="large-6 columns">
-                             {{link_to('rent-appartments', 'APPARTMENTS', array('class'=>'alert-box secondary expand radius propertiesAllert'));}}
+                             {{link_to('rent-apartments', 'APARTMENTS', array('class'=>'alert-box secondary expand radius propertiesAllert'));}}
                            </div>
 
                            <div class="large-6 columns">
@@ -660,7 +665,7 @@
                   <a class="close-reveal-modal">&#215;</a>
                   <div class="row">
                     <div class="large-12 columns">
-                      {{Form::open(array('url'=>'/login'))}} 
+                      {{Form::open(array('url'=>'login'))}} 
                       <div class="navPanel">
                         <nav class="top-bar min">
                           <div class="large-2 columns">
@@ -681,20 +686,21 @@
                       </div>
                     </nav>
                   </div>
+                  
                   <div class="row"> 
                    <div class="large-12 columns">
                      <h3 class="subheader account">Sign in to Your Account</h3>
                      <div class="row">
                       <div class="large-6 columns">
-                        {{Form::label('emailSignIn', 'Your Email')}}
-                        {{ Form::email('emailSignIn', $value = null, $attributes = array())}}
+                        {{Form::label('email', 'Your Email')}}
+                        {{ Form::email('email', $value = null, $attributes = array())}}
                       </div>
                       <div class="large-6 columns">
-                        {{Form::label('passwordSignIn', 'Your Password')}}
-                        {{ Form::password('passwordSignIn', $value = null, $attributes = array())}}
+                        {{Form::label('password', 'Your Password')}}
+                        {{ Form::password('password', $value = null, $attributes = array())}}
                       </div>
                     </div>
-                    {{ Form::submit('Login', $attributes = array('class'=>'button secondary tiny radius'))}}
+                    {{ Form::submit('Login', $attributes = array('class'=>'button  tiny radius'))}}
                     {{Form::close()}} 
                   </div>
                 </div>

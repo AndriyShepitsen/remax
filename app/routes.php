@@ -16,6 +16,11 @@
 //{
 //	return View::make('hello');
 //});
+/* = Admin Panel */
+Route::post('login', array('uses'=>'LoginController@index'));
+
+
+
 
 /* =home */
 Route::post('sendmail', array('uses'=>'MailController@index'));
@@ -84,6 +89,6 @@ Route::get('all-agents', array('as'=>'allAgents', 'uses'=>'AgentController@all')
 /*  Renting  */
 Route::get('rent', 'RentController@index');
 Route::get('rent/{id}', 'RentController@show');
-Route::get('rent-appartments', 'RentController@appartments');
+Route::get('rent-apartments', 'RentController@apartments');
 Route::get('rent-houses', 'RentController@houses');
 Route::get('all-rent-listings', 'RentController@all');

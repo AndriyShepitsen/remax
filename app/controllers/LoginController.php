@@ -4,24 +4,37 @@ class LoginController extends BaseController {
 
 	public function index()
 	{
-		//$test = Input::get('email');
-		$valRules = array('email'=>'required|email',
-			'password'=>'required');
+		$email = Input::get('email');
+		$password = Input::get('password');
 
-		$validator = Validator::make(
-			Input::all(), 
-			$valRules
-			);
+		$validator  = User::validate([
+			'email'=>$email,
+			'password'=>$password
+			]);
 
-		$messages = $validator->messages();
-
-		if($validator->fails()){
-			return Redirect::route('home')->withErrors($validator);
+		if ($validator->fails()){
+		return Redirect::route('home')->withErrors($validator)
+		->withInput();
 		} else {
-		    
-		return View::make('admin.vw_panel');
+
+		if(Auth::attempt(array('email'=>$email, 'password'=>$password))){
+
+		echo "Success";
+
+		} else {
+
+		echo "Fail";
+
 		}
-	}
+}
+		    
+		//return View::make('admin.vw_panel');
+		
+	} 
+
+
+	
+
 
 }
 
