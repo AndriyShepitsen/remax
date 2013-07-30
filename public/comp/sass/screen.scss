@@ -17,7 +17,6 @@
 	padding: 0;
 	margin: 0;
 }
-/* =navPanel starts here */
 
 /* =variables*/
 $colorNavPanel: #393939;
@@ -136,6 +135,22 @@ h3{
 h4{
 	color: $colorNavPanel !important;
 }
+
+/* =accountPanel starts here */
+
+.accountPanelWrapper{
+	background-color: lighten($colorNavPanel, 30%); 
+}
+.liCreateAccount{
+	font-size: 12px !important;
+
+}
+.liSignIn{
+	font-size: 12px !important;
+
+}
+/* =navPanel starts here */
+
 .panel h5{
 	margin-bottom: 5px !important;
 }
