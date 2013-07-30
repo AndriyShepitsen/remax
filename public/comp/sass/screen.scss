@@ -150,6 +150,12 @@ h4{
 	padding-bottom: 5px !important;
 	padding-top: 5px !important;
 }
+.ulLoginError{
+	li{
+		color: $colorRed;
+		font-size: 14px;
+	}
+}
 .liCreateAccount{
 	font-size: 12px !important;
 	color: $colorFontOffWhite !important;
@@ -170,6 +176,23 @@ h4{
 		&:hover{
 			color: lighten($colorBlue, 30%);
 		}
+	}
+}
+.signInFormWrapper{
+	label{
+		font-size: 13px !important;
+	}
+	input{
+		font-size: 13px !important;
+	}
+	button, .button {
+		@include myButtonStyle;
+		font-size: 11px !important;
+		letter-spacing: 1px;
+		word-spacing: 2px !important;
+	}
+	button:hover, button:focus, .button:hover, .button:focus{
+		background-color: $colorNavPanel !important;
 	}
 }
 /* =navPanel starts here */

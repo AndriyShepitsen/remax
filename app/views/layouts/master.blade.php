@@ -697,8 +697,8 @@
                   </div>
                   
                   <div class="row"> 
-                   <div class="large-12 columns">
-                     <h3 class="subheader account">Sign in to Your Account</h3>
+                   <div class="large-12 columns signInFormWrapper">
+                     <h3 class="subheader account">Sign In to Your Account</h3>
                      <div class="row">
                       <div class="large-6 columns">
                         {{Form::label('email', 'Your Email')}}

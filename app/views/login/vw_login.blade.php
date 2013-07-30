@@ -3,26 +3,30 @@
 <!-- //LOCATION: remax/public/about 
 -->
 
-<div class="mainContent">
+<div class="mainContent panel">
 	<div class="row">
-		<div class="large-12 columns menues">
-		{{$errorMessages}}
+		<ul class=" large-6 columns large-centered no-bullet ulLoginError">
+			{{$errors->first('email', '<li>:message</li>')}}
+			{{$errors->first('password', '<li>:message</li>')}}
+			@if(Session::has('message'))
+			<li>{{Session::get('message')}}</li>
+			@endif
 
-		@if(isset($errorMessages))
-		These errors have occured	
-
-		@endif
+		</ul>
 
 
-			{{Form::open(array('url'=>'login'))}} 
-                             
-            {{Form::label('email', 'Your Email')}}
-            {{ Form::email('email', $value = null, $attributes = array())}}
-            {{Form::label('password', 'Your Password')}}
-            {{ Form::password('password', $value = null, $attributes = array())}}
-            {{ Form::submit('Login', $attributes = array('class'=>'button  tiny radius'))}}
-            {{Form::close()}} 
-                  
+
+		<div class="large-6 columns large-centered loginPageWrapper signInFormWrapper">
+			<div class="formLoginPage">
+				{{Form::open(array('url'=>'login'))}} 
+
+				{{Form::label('email', 'Your Email')}}
+				{{ Form::email('email', Input::old('email'), array())}}
+				{{Form::label('password', 'Your Password')}}
+				{{ Form::password('password', array())}}
+				{{ Form::submit('Login', $attributes = array('class'=>'button  tiny radius'))}}
+				{{Form::close()}} 
+			</div>                  
 
 		</div>
 	</div>
