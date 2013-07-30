@@ -139,15 +139,25 @@ h4{
 /* =accountPanel starts here */
 
 .accountPanelWrapper{
-	background-color: lighten($colorNavPanel, 30%); 
+	background-color: darken($colorNavPanel, 7%); 
+}
+.ulAccountPanel{
+	margin-bottom: 0px !important;
+	padding-bottom: 5px !important;
+	padding-top: 5px !important;
 }
 .liCreateAccount{
 	font-size: 12px !important;
-
+	color: $colorFontOffWhite !important;
 }
 .liSignIn{
 	font-size: 12px !important;
-
+	a{
+		color: $colorFontOffWhite;
+		&:hover{
+			color: lighten($colorBlue, 20%);
+		}
+	}
 }
 /* =navPanel starts here */
 
