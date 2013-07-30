@@ -29,7 +29,7 @@
         <div class="large-3 columns right accountPanel">
           <ul class="inline-list ulAccountPanel">
             <li class="liCreateAccount">
-              Create a free account
+            Create Your Free Account
             </li>
 
             <li class="liSignIn">
