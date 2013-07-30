@@ -13,7 +13,7 @@ class LoginController extends BaseController {
 			]);
 
 		if ($validator->fails()){
-		return Redirect::route('home')->withErrors($validator)
+		return View::make('login.vw_login')->withErrors($validator)
 		->withInput();
 		} else {
 
@@ -32,7 +32,10 @@ class LoginController extends BaseController {
 		
 	} 
 
-
+public function fail()
+{
+	return View::make('login.vw_login')->withErrors($validator);
+}
 	
 
 

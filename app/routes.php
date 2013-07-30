@@ -18,6 +18,7 @@
 //});
 /* = Admin Panel */
 Route::post('login', array('uses'=>'LoginController@index'));
+Route::get('login-attempt', array('as'=>'login-errors', 'uses'=>'LoginController@fail'));
 
 
 
