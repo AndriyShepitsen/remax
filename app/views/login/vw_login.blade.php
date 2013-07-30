@@ -6,7 +6,9 @@
 <div class="mainContent">
 	<div class="row">
 		<div class="large-12 columns menues">
-		@if($errors->has())
+		{{$errorMessages}}
+
+		@if(isset($errorMessages))
 		These errors have occured	
 
 		@endif

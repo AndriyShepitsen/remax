@@ -13,14 +13,10 @@ class LoginController extends BaseController {
 			]);
 
 		if ($validator->fails()){
-		$messages = $validator->messages();
+		$errorMessages = $validator->messages();
+		var_dump($errorMessages);
 
-		foreach ($messages as $message) {
-			dd($message);
-		}
-
-		return Redirect::route('login-errors')->withErrors($validator)
-		->withInput();
+		return View::make('login.vw_login')->with(compact($errorMessages));
 		} else {
 
 		if(Auth::attempt(array('email'=>$email, 'password'=>$password))){
