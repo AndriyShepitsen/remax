@@ -51,6 +51,7 @@ $myBorderGray: 1px solid darken(#F2F2F2, 5%)!important;
 @mixin logoWrapperStyle{
 	padding: 10px;
 	background-color: darken($colorLogoWrapper, 10%);
+	margin-bottom: 15px;
 }
 
 @mixin mailIconStyle {
@@ -141,6 +142,9 @@ h4{
 .accountPanelWrapper{
 	background-color: darken($colorNavPanel, 7%); 
 }
+.accountPanel{
+	padding-right: 0px !important;
+}
 .ulAccountPanel{
 	margin-bottom: 0px !important;
 	padding-bottom: 5px !important;
@@ -149,13 +153,22 @@ h4{
 .liCreateAccount{
 	font-size: 12px !important;
 	color: $colorFontOffWhite !important;
+	em{
+		color: $colorFontOffWhite;
+		&:hover{
+			color: lighten($colorBlue, 30%);
+		}
+	}
 }
 .liSignIn{
+	padding-right: 30px !important;
+	font-weight: bold;
+	letter-spacing: 1px;
 	font-size: 12px !important;
 	a{
 		color: $colorFontOffWhite;
 		&:hover{
-			color: lighten($colorBlue, 20%);
+			color: lighten($colorBlue, 30%);
 		}
 	}
 }

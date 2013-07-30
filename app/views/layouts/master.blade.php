@@ -29,10 +29,11 @@
         <div class="large-3 columns right accountPanel">
           <ul class="inline-list ulAccountPanel">
             <li class="liCreateAccount">
-            Create Your Free Account
+            <em>Create Your Free Account
+              </em>           
             </li>
 
-            <li class="liSignIn">
+            <li class="liSignIn right">
              {{link_to('#', 'Sign In', array('data-reveal-id'=>'adminAuth'))}}
            </li>
          </ul>
