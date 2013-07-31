@@ -5,13 +5,23 @@ class LoginController extends BaseController {
 
 	public function signup()
 	{
+		$first_name	= Input::get('first_name');
+		$last_name = Input::get('last_name');
+		$phone = Input::get('phone');
 		$email = Input::get('email');
 		$password = Input::get('password');
+		$password_confirmation = Input::get('password_confirmation');
+		$now = date('Y-m-d H:i:s');
+
+
 
 		$validator  = User::validate([
+			'first_name' => $first_name,
+			'last_name' => $last_name,
+			'phone' => $phone,
 			'email'=>$email,
-			'password'=>$password
-			]);
+			'password'=>$password,
+			'password_confirmation'=>$password_confirmation]);
 
 		if ($validator->fails()){
 			return Redirect::route('signup-errors')
@@ -20,7 +30,9 @@ class LoginController extends BaseController {
 			->with('agents', parent::getRandomAgents());
 		} else {
 
-			if(Auth::attempt(array('email'=>$email, 'password'=>$password))){
+			echo 'passed';
+
+		/*	if(Auth::attempt(array('email'=>$email, 'password'=>$password))){
 
 				return Redirect::route('home')
 				->with('message', 'You have been logged in')
@@ -42,10 +54,10 @@ class LoginController extends BaseController {
 				return Redirect::route('login-errors')
 				->withInput()
 				->with('message', $message)
-				->with('agents', parent::getRandomAgents());
+				->with('agents', parent::getRandomAgents());*/
 
 			}
-		}
+		
 
 		//return View::make('admin.vw_panel');
 		
@@ -62,9 +74,12 @@ class LoginController extends BaseController {
 		$email = Input::get('email');
 		$password = Input::get('password');
 
-		$validator  = User::validate([
+		$validator  = Validator::make([
 			'email'=>$email,
 			'password'=>$password
+			], [
+			'email'=>'required|email|min:4|alpha_dash|unique:users',
+			'password'=>'required|min:6|alpha_dash'
 			]);
 
 		if ($validator->fails()){

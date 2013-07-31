@@ -140,7 +140,37 @@ h5{
 }
 
 /* =accountPanel starts here */
+input[type="password"]{
+	padding: 6px !important;
+	line-height: 15px !important;
+	font-size: 12px !important;
+}
+.emailCreate{
+	font-size: 12px !important;
+}
+/* .passwordCreate{
+	padding: 6px !important;
+	line-height: 15px !important;
 
+} */
+
+.haveAccountWrapper{
+	margin-bottom: 7px !important;
+}
+.haveAccountSpan{
+	font-size: 13px !important;
+	color: $colorFontGray;
+}
+.signInStyle{
+	font-size: 13px !important;
+	font-weight: bold;
+	padding-right: 10px;
+}
+.forgotPassStyle{
+	font-size: 12px;
+	background-color: #FFFFFF;
+	color: $colorFontGray !important;
+}
 .accountPanelWrapper{
 	background-color: darken($colorNavPanel, 7%); 
 }
@@ -159,8 +189,14 @@ h5{
 	}
 }
 .liCreateAccount{
-	font-size: 12px !important;
-	color: $colorFontOffWhite !important;
+	a{
+
+		font-size: 12px !important;
+		color: $colorFontOffWhite !important;
+		&:hover{
+			color: lighten($colorBlue, 30%) !important;
+		}
+	}
 	em{
 		color: $colorFontOffWhite;
 		&:hover{
@@ -381,10 +417,10 @@ h5{
 
 }
 .menues{
-		p{
-			font-size: 14px !important;
-		}
+	p{
+		font-size: 14px !important;
 	}
+}
 /*  =home page starts here*/
 .selectedProperty{
 	letter-spacing: 1px;
@@ -716,9 +752,9 @@ article p{
 		padding: 14px !important;
 	}
 }
-	input[type="text"]{
-		font-size: 12px !important;
-	}
+input[type="text"]{
+	font-size: 12px !important;
+}
 .newListings{
 	@include myPanelStyle;
 	.liNewListings{

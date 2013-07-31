@@ -31,7 +31,7 @@
         
            @if(!Auth::check())
            <li class="liCreateAccount">
-            {{link_to('#', 'Create Your Free Account', array('data-reveal-id'=>'createAccount'))}}
+            <em>{{link_to('#', 'Create Your Free Account', array('data-reveal-id'=>'createAccount'))}}</em>
           </li>
           <li class="liSignIn right">
             {{link_to('#', 'Sign In', array('data-reveal-id'=>'adminAuth'))}}
@@ -581,7 +581,7 @@
 <div id="createAccount" class="reveal-modal medium createAccount panel">
   <a class="close-reveal-modal">&#215;</a>
   <div class="row">
-    <div class="large-12 columns">
+    <div class="large-12 columns profileContent">
       <div class="navPanel">
         <nav class="top-bar min">
           <div class="large-2 columns">
@@ -637,7 +637,7 @@
         </div>        
 
         <div class="large-6 columns">
-          {{Form::label('mobilePhoneCreate', 'Mobile Phone')}}
+          {{Form::label('mobilePhoneCreate', 'Phone (Optional)')}}
           {{Form::text('mobilePhoneCreate', '', array('placeholder'=>'(***)***-****', 'class'=>'className'))}}
         </div>
       </div>      
@@ -655,7 +655,7 @@
 
       <div class="row">
         <div class="small-2 columns">
-          {{ Form::submit('Create Your Free Account', array('class'=>'button secondary small radius'))}}
+          {{ Form::submit('Create Your Free Account', array('class'=>'button tiny radius'))}}
         </div>
       </div>
     </div>

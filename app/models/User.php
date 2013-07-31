@@ -6,9 +6,14 @@ use Illuminate\Auth\Reminders\RemindableInterface;
 class User extends BaseModel implements UserInterface, RemindableInterface {
 
 
-	public static $rules = [
-	'email'=>'required|email',
-	'password'=>'required'];
+	public static $rules = array(
+	'first_name'=>'required|min:2',
+	'last_name'=>'required|min:2',
+	'email'=>'required|email|min:4|alpha_dash|unique:users',
+	'password'=>'required|min:6|confirmed|alpha_dash',
+	'password_confirmation'=>'required|min:6|alpha_dash',
+	'phone'	=> 'min:10'
+	);
 
 	/**
 	 * The database table used by the model.
