@@ -712,13 +712,13 @@ article p{
 .listingSection{
 	padding-right: 0px 	!important;
 	padding-left: 0px 	!important;
-	input[type="text"]{
-		font-size: 12px !important;
-	}
 	.content{
 		padding: 14px !important;
 	}
 }
+	input[type="text"]{
+		font-size: 12px !important;
+	}
 .newListings{
 	@include myPanelStyle;
 	.liNewListings{
@@ -1033,7 +1033,9 @@ footer{
 }
 /* =Contact Us */
 
-
+.prefix{
+	font-size: 12px !important;
+}
 .contactUsFormWrapper{
 	legend{
 		background-color: none !important;
