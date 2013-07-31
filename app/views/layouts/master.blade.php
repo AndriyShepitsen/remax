@@ -28,7 +28,7 @@
       <div class="row">
         <div class="large-3 columns right accountPanel">
           <ul class="inline-list ulAccountPanel">
-        
+
            @if(!Auth::check())
            <li class="liCreateAccount">
             <em>{{link_to('#', 'Create Your Free Account', array('data-reveal-id'=>'createAccount'))}}</em>
@@ -41,8 +41,8 @@
             <a href=""> <em>{{Auth::user()->first_name}} {{Auth::user()->last_name}}</em></a>
           </li>
           <li class="liSignIn right">
-          {{link_to_route('logout', 'Logout');}}
-                      
+            {{link_to_route('logout', 'Logout');}}
+
           </li>
           @endif
         </ul>
@@ -578,7 +578,7 @@
 <!-- /* My slideDown Create account Form Starts Here */ -->
 
 
-<div id="createAccount" class="reveal-modal medium createAccount panel">
+<div id="createAccount" class="reveal-modal small createAccount panel">
   <a class="close-reveal-modal">&#215;</a>
   <div class="row">
     <div class="large-12 columns profileContent">
@@ -613,43 +613,43 @@
 
       <div class="row">
         <div class="large-6 columns">
-          {{Form::label('firstNameCreate', 'First Name')}}
-          {{Form::text('firstNameCreate', '', array('placeholder'=>'Your Name', 'class'=>'className'))}}
+          {{Form::label('first_name', 'First Name')}}
+          {{Form::text('first_name', Input::old('first_name'), array('placeholder'=>'Your Name', 'class'=>'className'))}}
         </div>
 
-        <div class="large-6 columns">{{Form::label('lastNameCreate', 'Last Name')}}
-          {{Form::text('lastNameCreate', '', array('placeholder'=>'Your last name', 'class'=>'className'))}}
+        <div class="large-6 columns">{{Form::label('last_name', 'Last Name')}}
+          {{Form::text('last_name', Input::old('last_name'), array('placeholder'=>'Your last name', 'class'=>'className'))}}
         </div>
       </div>
 
 
       <div class="row">
         <div class="large-6 columns">
-          {{Form::label('emailCreate', 'Email Address')}}
+          {{Form::label('email', 'Email Address')}}
           <div class="row collapse">
             <div class="small-2 columns">
               <span class="prefix">@</span>
             </div>
             <div class="small-10 columns">
-              {{Form::text('emailCreate', '', array('placeholder'=>'Your email', 'class'=>'className'))}}
+              {{Form::email('email', Input::old('email'), array('placeholder'=>'Your email', 'class'=>'emailCreate'))}}
             </div>
           </div>
-        </div>        
+        </div>
 
         <div class="large-6 columns">
-          {{Form::label('mobilePhoneCreate', 'Phone (Optional)')}}
-          {{Form::text('mobilePhoneCreate', '', array('placeholder'=>'(***)***-****', 'class'=>'className'))}}
+          {{Form::label('phone', 'Phone (Optional)')}}
+          {{Form::text('phone', Input::old('phone'), array('placeholder'=>'(***)***-****', 'class'=>'className'))}}
         </div>
       </div>      
 
       <div class="row">
         <div class="large-6 columns">
-          {{Form::label('passwordCreate', 'Password')}}
-          {{Form::text('passwordCreate', '', array('placeholder'=>'**********', 'class'=>'className'))}}
+          {{Form::label('password', 'Password')}}
+          {{Form::password('password', '', array('class'=>'className'))}}
         </div>
         <div class="large-6 columns">
-          {{Form::label('confirmPasswordCreate', 'Confirm Password')}}
-          {{Form::text('confirmPasswordCreate', '', array('placeholder'=>'**********', 'class'=>'className'))}}
+          {{Form::label('password_confirmation', 'Confirm Password')}}
+          {{Form::password('password_confirmation', '', array('class'=>'passwordCreate'))}}
         </div>
       </div>      
 
@@ -680,7 +680,7 @@
                  <div id="adminAuth" class="reveal-modal small adminAuth2 createAccount panel">
                   <a class="close-reveal-modal">&#215;</a>
                   <div class="row">
-                    <div class="large-12 columns">
+                    <div class="large-12 columns profileContent">
                       {{Form::open(array('url'=>'login'))}} 
                       <div class="navPanel">
                         <nav class="top-bar min">
@@ -709,7 +709,7 @@
                      <div class="row">
                       <div class="large-6 columns">
                         {{Form::label('email', 'Your Email')}}
-                        {{ Form::email('email', $value = null, $attributes = array())}}
+                        {{ Form::email('email', Input::old('email'), $attributes = array())}}
                       </div>
                       <div class="large-6 columns">
                         {{Form::label('password', 'Your Password')}}
