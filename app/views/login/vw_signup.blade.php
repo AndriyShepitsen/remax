@@ -4,17 +4,18 @@
 -->
 
 <div class="mainContent panel signUpPanel">
-	<div class="row">
-		<ul class=" large-6 columns no-bullet ulLoginError">
+  <div class="row">
+    <ul class=" large-6 columns no-bullet ulLoginError">
       {{$errors->first('first_name', '<li>:message</li>')}}
       {{$errors->first('last_name', '<li>:message</li>')}}
-			{{$errors->first('email', '<li>:message</li>')}}
-			{{$errors->first('password', '<li>:message</li>')}}
-			{{$errors->first('password_confirmation', '<li>:message</li>')}}
-			@if(Session::has('message'))
-			<li>{{Session::get('message')}}</li>
-			@endif
-		</ul>
+      {{$errors->first('phone', '<li>:message</li>')}}
+      {{$errors->first('email', '<li>:message</li>')}}
+      {{$errors->first('password', '<li>:message</li>')}}
+      {{$errors->first('password_confirmation', '<li>:message</li>')}}
+      @if(Session::has('message'))
+      <li>{{Session::get('message')}}</li>
+      @endif
+    </ul>
     <div class="row">
      <div class="large-6 columns">
        <div class="row">
@@ -38,7 +39,7 @@
   </div>
 </div>
 
-		<!-- <div class="large-12 columns large-centered loginPageWrapper signInFormWrapper">
+    <!-- <div class="large-12 columns large-centered loginPageWrapper signInFormWrapper">
     <div class="formLoginPage"> -->
 
       <div class="row">
@@ -63,31 +64,31 @@
               <div class="row">
                 <div class="large-6 columns">
                   {{Form::label('first_name', 'First Name')}}
-                  {{Form::text('first_name', '', array('placeholder'=>'Your Name', 'class'=>'className'))}}
+                  {{Form::text('first_name', Input::old('first_name'), array('placeholder'=>'Your Name', 'class'=>'className'))}}
                 </div>
 
                 <div class="large-6 columns">{{Form::label('last_name', 'Last Name')}}
-                  {{Form::text('last_name', '', array('placeholder'=>'Your last name', 'class'=>'className'))}}
+                  {{Form::text('last_name', Input::old('last_name'), array('placeholder'=>'Your last name', 'class'=>'className'))}}
                 </div>
               </div>
 
 
               <div class="row">
                 <div class="large-6 columns">
-                  {{Form::label('emailCreate', 'Email Address')}}
+                  {{Form::label('email', 'Email Address')}}
                   <div class="row collapse">
                     <div class="small-2 columns">
                       <span class="prefix">@</span>
                     </div>
                     <div class="small-10 columns">
-                      {{Form::email('email', '', array('placeholder'=>'Your email', 'class'=>'emailCreate'))}}
+                      {{Form::email('email', Input::old('email'), array('placeholder'=>'Your email', 'class'=>'emailCreate'))}}
                     </div>
                   </div>
                 </div>        
 
                 <div class="large-6 columns">
                   {{Form::label('phone', 'Phone (Optional)')}}
-                  {{Form::text('phone', '', array('placeholder'=>'(***)***-****', 'class'=>'className'))}}
+                  {{Form::text('phone', Input::old('phone'), array('placeholder'=>'(***)***-****', 'class'=>'className'))}}
                 </div>
               </div>      
 
