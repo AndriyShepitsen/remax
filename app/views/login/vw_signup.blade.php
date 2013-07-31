@@ -3,116 +3,128 @@
 <!-- //LOCATION: remax/public/about 
 -->
 
-<div class="mainContent panel">
-	<div class="row">
-		<ul class=" large-6 columns large-centered no-bullet ulLoginError">
-			{{$errors->first('email', '<li>:message</li>')}}
-			{{$errors->first('password', '<li>:message</li>')}}
-			{{$errors->first('password_confirmation', '<li>:message</li>')}}
-			@if(Session::has('message'))
-			<li>{{Session::get('message')}}</li>
-			@endif
-
-		</ul>
-
-
-
-		<div class="large-6 columns large-centered loginPageWrapper signInFormWrapper">
-			<div class="formLoginPage">
-				
-			
-  <a class="close-reveal-modal">&#215;</a>
+<div class="mainContent panel signUpPanel">
   <div class="row">
-    <div class="large-12 columns">
-      <div class="navPanel">
-        <nav class="top-bar min">
-          <div class="large-2 columns">
-
-            <a class="logoS" href="{{URL::route('home')}}" title="Home Page">
-             <img src="{{url('comp/img/REMAX1LogoS.png')}}" alt="Remax First Class Logo">
-           </a> 
-         </div>
-
-         <div class="large-10 columns"> <ul class="title-area right">
-          <!-- Title Area -->
-          <li class="name">
-            <h1>
-              {{link_to_route('home', 'REMAX FIRST CLASS');}}
-            </h1>
-          </li>
-        </ul>
+    <ul class=" large-6 columns no-bullet ulLoginError">
+      {{$errors->first('first_name', '<li>:message</li>')}}
+      {{$errors->first('last_name', '<li>:message</li>')}}
+      {{$errors->first('phone', '<li>:message</li>')}}
+      {{$errors->first('email', '<li>:message</li>')}}
+      {{$errors->first('password', '<li>:message</li>')}}
+      {{$errors->first('password_confirmation', '<li>:message</li>')}}
+      @if(Session::has('message'))
+      <li>{{Session::get('message')}}</li>
+      @endif
+    </ul>
+    <div class="row">
+     <div class="large-6 columns">
+       <div class="row">
+        @if(!Auth::check())
+        <div class="large-11 columns right haveAccountWrapper">
+          <span class="haveAccountSpan">Already Have an Account?</span>
+          {{link_to('#', 'Sign In', array('data-reveal-id'=>'adminAuth', 'class'=>'signInStyle'))}}
+        </div>
+        @endif
       </div>
-    </nav>
+      <div class="row">
+        @if(!Auth::check())
+        <div class="large-11 columns right">
+          <em>
+            {{link_to('#', 'Forgot Your Password?', array('data-reveal-id'=>'adminAuth', 'class'=>'forgotPassStyle'))}}
+          </em>                
+        </div>
+        @endif
+      </div>
+    </div> 
   </div>
-  <!-- =create an account panel ends here -->
+</div>
 
-  <!-- =create an account form starts here -->
-  {{Form::open(array('url' => 'foo/bar'))}}
-  <div class="row">
-
-    <div class="large-12 columns createAccount">  
-      <h3 class="subheader account">Create Your Account</h3>
+    <!-- <div class="large-12 columns large-centered loginPageWrapper signInFormWrapper">
+    <div class="formLoginPage"> -->
 
       <div class="row">
-        <div class="large-6 columns">
-          {{Form::label('firstNameCreate', 'First Name')}}
-          {{Form::text('firstNameCreate', '', array('placeholder'=>'Your Name', 'class'=>'className'))}}
-        </div>
+        <div class="large-12 columns large-centered profileContent">
 
-        <div class="large-6 columns">{{Form::label('lastNameCreate', 'Last Name')}}
-          {{Form::text('lastNameCreate', '', array('placeholder'=>'Your last name', 'class'=>'className'))}}
-        </div>
-      </div>
+          <!-- =create an account panel ends here -->
+
+          <!-- =create an account form starts here -->
+          {{Form::open(array('url' => 'sign-up'))}}
+          <div class="row">
+
+            <div class="large-12 columns createAccount">  
 
 
-      <div class="row">
-        <div class="large-6 columns">
-          {{Form::label('emailCreate', 'Email Address')}}
-          <div class="row collapse">
-            <div class="small-2 columns">
-              <span class="prefix">@</span>
+              <!-- =create your account form starts here -->
+              <div class="row">
+                <div class="large-6 columns">
+                  <h3 class="subheader account">Create Your Account</h3>
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="large-6 columns">
+                  {{Form::label('first_name', 'First Name')}}
+                  {{Form::text('first_name', Input::old('first_name'), array('placeholder'=>'Your Name', 'class'=>'className'))}}
+                </div>
+
+                <div class="large-6 columns">{{Form::label('last_name', 'Last Name')}}
+                  {{Form::text('last_name', Input::old('last_name'), array('placeholder'=>'Your last name', 'class'=>'className'))}}
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="large-6 columns">
+                  {{Form::label('email', 'Email Address')}}
+                  <div class="row collapse">
+                    <div class="small-2 columns">
+                      <span class="prefix">@</span>
+                    </div>
+                    <div class="small-10 columns">
+                      {{Form::email('email', Input::old('email'), array('placeholder'=>'Your email', 'class'=>'emailCreate'))}}
+                    </div>
+                  </div>
+                </div>        
+
+                <div class="large-6 columns">
+                  {{Form::label('phone', 'Phone (Optional)')}}
+                  {{Form::text('phone', Input::old('phone'), array('placeholder'=>'(***)***-****', 'class'=>'className'))}}
+                </div>
+              </div>      
+
+              <div class="row">
+                <div class="large-6 columns">
+                  {{Form::label('passwordCreate', 'Password')}}
+                  {{Form::password('password', '', array('class'=>'className'))}}
+                </div>
+                <div class="large-6 columns">
+                  {{Form::label('password_confirmation', 'Confirm Password')}}
+                  {{Form::password('password_confirmation', '', array('class'=>'passwordCreate'))}}
+                </div>
+              </div>      
+
+              <div class="row">
+                <div class="small-3 columns left">
+                  {{ Form::submit('Create Your Free Account', array('class'=>'button tiny radius'))}}
+                </div>
+              </div>
             </div>
-            <div class="small-10 columns">
-              {{Form::text('emailCreate', '', array('placeholder'=>'Your email', 'class'=>'className'))}}
-            </div>
+
+
+            {{Form::close()}}
           </div>
-        </div>        
 
-        <div class="large-6 columns">
-          {{Form::label('mobilePhoneCreate', 'Mobile Phone')}}
-          {{Form::text('mobilePhoneCreate', '', array('placeholder'=>'(***)***-****', 'class'=>'className'))}}
-        </div>
-      </div>      
 
-      <div class="row">
-        <div class="large-6 columns">
-          {{Form::label('passwordCreate', 'Password')}}
-          {{Form::text('passwordCreate', '', array('placeholder'=>'**********', 'class'=>'className'))}}
-        </div>
-        <div class="large-6 columns">
-          {{Form::label('confirmPasswordCreate', 'Confirm Password')}}
-          {{Form::text('confirmPasswordCreate', '', array('placeholder'=>'**********', 'class'=>'className'))}}
-        </div>
-      </div>      
 
-      <div class="row">
-        <div class="small-2 columns">
-          {{ Form::submit('Create Your Free Account', array('class'=>'button secondary small radius'))}}
+
         </div>
       </div>
-    </div>
 
 
-    {{Form::close()}}
+
+      <!-- </div>                  
+
+    </div> -->
+    <!-- </div> -->
   </div>
-</div>
-</div>
-
-
-
-			</div>                  
-
-		</div>
-	</div>
-</div>
-@stop
+  @stop
