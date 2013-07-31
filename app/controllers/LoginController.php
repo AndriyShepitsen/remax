@@ -30,8 +30,23 @@ class LoginController extends BaseController {
 			->with('agents', parent::getRandomAgents());
 		} else {
 
-			echo 'passed';
+			$justCreatedUser = User::create(array(
+				'first_name' => $first_name,
+				'last_name' => $last_name,
+				'phone' => $phone,
+				'email'=>$email,
+				'password'=>Hash::make($password),
+				 'created_at'=>$now,
+				 'updated_at'=>$now));
 
+			if ($justCreatedUser){
+
+			Auth::login($justCreatedUser);
+
+			return Redirect::route('home')
+				->with('message', 'You have been logged in')
+				->with('agents', parent::getRandomAgents());
+			}
 		/*	if(Auth::attempt(array('email'=>$email, 'password'=>$password))){
 
 				return Redirect::route('home')
