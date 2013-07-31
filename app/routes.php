@@ -18,9 +18,12 @@
 //});
 /* = Admin Panel */
 Route::post('login', array('uses'=>'LoginController@index'));
+Route::get('logout', array('as'=>'logout', 'uses'=>'LoginController@logout'));
 Route::get('login-attempt', array('as'=>'login-errors', 'uses'=>'LoginController@fail'));
 
 
+Route::post('sign-up', array('uses'=>'LoginController@signup'));
+Route::get('sign-up-attempt', array('as'=>'signup-errors', 'uses'=>'LoginController@signup_errors'));
 
 
 /* =home */

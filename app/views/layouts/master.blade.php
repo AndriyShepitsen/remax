@@ -28,17 +28,10 @@
       <div class="row">
         <div class="large-3 columns right accountPanel">
           <ul class="inline-list ulAccountPanel">
-            <!-- <li class="liCreateAccount">
-            <em>Create Your Free Account
-              </em>           
-            </li>
-
-            <li class="liSignIn right">
-             {{link_to('#', 'Sign In', array('data-reveal-id'=>'adminAuth'))}}
-           </li> -->
+        
            @if(!Auth::check())
            <li class="liCreateAccount">
-            <em>Create Your Free Account </em>
+            {{link_to('#', 'Create Your Free Account', array('data-reveal-id'=>'createAccount'))}}
           </li>
           <li class="liSignIn right">
             {{link_to('#', 'Sign In', array('data-reveal-id'=>'adminAuth'))}}
@@ -48,7 +41,8 @@
             <a href=""> <em>{{Auth::user()->first_name}} {{Auth::user()->last_name}}</em></a>
           </li>
           <li class="liSignIn right">
-            <a href="">Logout</a> 
+          {{link_to_route('logout', 'Logout');}}
+                      
           </li>
           @endif
         </ul>
@@ -611,7 +605,7 @@
   <!-- =create an account panel ends here -->
 
   <!-- =create an account form starts here -->
-  {{Form::open(array('url' => 'foo/bar'))}}
+  {{Form::open(array('url' => 'sign-up'))}}
   <div class="row">
 
     <div class="large-12 columns createAccount">  
