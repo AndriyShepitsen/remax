@@ -14,6 +14,7 @@
 			</ul>
 			<h1>News for Sellers</h1>
 			<hr/>
+			<br/>
 
 			@foreach($news as $new)
 			<h4>{{$new->title}}</h4>

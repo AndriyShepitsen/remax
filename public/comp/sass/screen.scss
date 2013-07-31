@@ -62,9 +62,8 @@ $myBorderGray: 1px solid darken(#F2F2F2, 5%)!important;
 }
 
 @mixin mainContentStyle{
-	padding-top: 10px;
+	// padding-top: 10px;
 	padding-bottom: 20px;
-	background-color: $colorLogoWrapper;
 }
 @mixin findFormStyle {
 	display: inline-block;
@@ -135,6 +134,9 @@ h3{
 }
 h4{
 	color: $colorNavPanel !important;
+}
+h5{
+	line-height: 25px !important;
 }
 
 /* =accountPanel starts here */
@@ -218,11 +220,14 @@ h4{
 	}
 	a{
 		color: $colorFontOffWhite; 
+		&:hover{
+			color: lighten($colorBlue, 30%);
+		}
 	}
 }
 .navPanel{
 	background-color: $colorNavPanel;
-
+	
 }
 .top-bar{
 	margin-bottom: 0 !important;
@@ -232,6 +237,10 @@ h4{
 	background-color: $colorNavPanel !important;
 	font-size: 12px !important;
 	letter-spacing: 1px !important;
+	color: $colorFontOffWhite; 
+	&:hover{
+		color: lighten($colorNavPanel, 45%);
+	}
 }
 .toggle-topbar, .top-bar.expanded .title-area{
 	background-color: $colorNavPanel !important;
@@ -368,13 +377,14 @@ h4{
 	dd{
 		font-size: 14px !important;
 	}
-	.menues{
+	
+
+}
+.menues{
 		p{
 			font-size: 14px !important;
 		}
 	}
-
-}
 /*  =home page starts here*/
 .selectedProperty{
 	letter-spacing: 1px;
@@ -383,6 +393,7 @@ h4{
 }
 .ulWorkWith{
 	li{
+		font-size: 14px !important;
 		margin-left: 20px;
 		p{
 			line-height: 22px !important;
@@ -743,6 +754,7 @@ article p{
 .ulagents{
 	overflow: auto;
 	display: inline-block; 
+	margin-top: 15px !important;
 	a{
 		text-align: center;
 	}
@@ -1020,12 +1032,16 @@ footer{
 	color: $colorFontOffWhite !important;
 }
 /* =Contact Us */
+
+
+.contactUsFormWrapper{
+	legend{
+		background-color: none !important;
+	}
+}
 textarea{
 	height: 300px;
 	cursor: pointer;
-}
-fieldset legend{
-	background-color: $colorLogoWrapper !important;
 }
 
 .min{

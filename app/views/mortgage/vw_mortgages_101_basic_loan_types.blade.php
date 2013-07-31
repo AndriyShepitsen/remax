@@ -13,7 +13,7 @@
 			<h4>Fixed-period Adjustable-Rate Mortgage (ARM) or hybrid ARM</h4>
 			<p>Most lenders today offer a fixed-period or "hybrid” ARM, which is an adjustable-rate mortgage featuring an initial fixed interest rate period, typically of 3, 5, 7, or 10 years. After the fixed-rate period expires, the interest rate becomes adjustable for the remainder of the loan term. Fixed-period ARMs are often named by the length of time the interest rate remains fixed.</p>
 			<div class="panel">
-				<p>Example: In a 5/1 ARM, the “5” stands for the five-year introductory period during which the interest rate remains fixed. The “1” indicates that the interest rate is subject to adjustment once per year after the introductory period, and for the remainder of the loan term.</p>
+				<p><strong>Example</strong>: In a 5/1 ARM, the “5” stands for the five-year introductory period during which the interest rate remains fixed. The “1” indicates that the interest rate is subject to adjustment once per year after the introductory period, and for the remainder of the loan term.</p>
 			</div>
 			<h4>Government loans (FHA and VA)</h4>
 			<p>If you're qualified, you may consider an FHA (Federal Housing Administration) or a VA (Department of Veterans Affairs) loan. These programs allow a lower down payment and credit score when compared to conventional loans.</p>

@@ -31,10 +31,10 @@
 					<div class="row">
 						<div class="large-7 columns houseImgWrapper">
 							<small>
-								MLS#:{{$house->listing}} | 
-								Year:{{$house->year}}| 
-								Bedrooms:{{$house->bedrooms}} | 
-								Bathrooms:{{$house->bathrooms}}  
+								<em>MLS#:</em>{{$house->listing}} | 
+								<em>Year:</em>{{$house->year}}| 
+								<em>Bedrooms:</em>{{$house->bedrooms}} | 
+								<em>Bathrooms:</em>{{$house->bathrooms}}  
 								@if ($house->year!=null)
 								@endif
 							</small>

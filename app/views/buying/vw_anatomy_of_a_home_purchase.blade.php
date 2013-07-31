@@ -42,7 +42,6 @@
 
 				<dt>Packing begins!</dt>
 				<dd>When the final signatures are in place, it’s time to put down the pens, shake hands, exchange smiles and start packing for the move!</dd>
-				<hr/>
 			</dl>
 
 		</div>

@@ -9,6 +9,7 @@
 
 				<h1>Real Estate News</h1>		
 				<hr/>
+				<br/>
 				@foreach($news as $n)
 				<h4>{{$n->title}}</h4>
 				<hr/>

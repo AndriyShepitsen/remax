@@ -17,8 +17,8 @@
 			</ul>
 
 			<h4>{{$news->title}}</h4>
-			<p>{{$news->body}}</p>
 			<hr/>
+			<p>{{$news->body}}</p>
 		</div>
 	</div>
 </div>

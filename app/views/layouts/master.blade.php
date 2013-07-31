@@ -28,21 +28,36 @@
       <div class="row">
         <div class="large-3 columns right accountPanel">
           <ul class="inline-list ulAccountPanel">
-            <li class="liCreateAccount">
+            <!-- <li class="liCreateAccount">
             <em>Create Your Free Account
               </em>           
             </li>
 
             <li class="liSignIn right">
              {{link_to('#', 'Sign In', array('data-reveal-id'=>'adminAuth'))}}
-           </li>
-         </ul>
-       </div>
-     </div>
+           </li> -->
+           @if(!Auth::check())
+           <li class="liCreateAccount">
+            <em>Create Your Free Account </em>
+          </li>
+          <li class="liSignIn right">
+            {{link_to('#', 'Sign In', array('data-reveal-id'=>'adminAuth'))}}
+          </li>
+          @else
+          <li class="liSignIn right">
+            <a href=""> <em>{{Auth::user()->first_name}} {{Auth::user()->last_name}}</em></a>
+          </li>
+          <li class="liSignIn right">
+            <a href="">Logout</a> 
+          </li>
+          @endif
+        </ul>
+      </div>
+    </div>
 
-   </div>
+  </div>
 
-   <div class="navPanel">
+  <div class="navPanel">
     <div class="row">
       <div class="large-12 columns">
 
@@ -69,7 +84,6 @@
                   <li>{{link_to_route('the_importance_of_buyers_agent', 'The Importance of a Buyer\'s Agent');}}</li>
                   <li>{{link_to_route('deciding_where_to_live', 'Deciding Where to Live');}}</li>
                   <li>{{link_to_route('anatomy_of_a_home_purchase', 'Anatomy of a Home Purchase');}}</li>
-                  <li>{{link_to_route('how_much_house_can_you_afford', 'How Much House Can You Afford?');}}</li>
                   <li>{{link_to_route('five_tips_to_narrow_your_online_home_search', '5 Tips to Narrow Your Online Home Search');}}</li>
                 </ul>
               </li>
@@ -84,7 +98,6 @@
                 <li/>
                 <li class="has-dropdown">{{link_to('#', 'Mortgage');}}
                   <ul class="dropdown">
-                    <li>{{link_to_route('preparing_your_house_for_sale', 'Preparing Your House for Sale');}}</li>
                     <li>{{link_to_route('finding_the_right_mortgage_professional', 'Finding the Right Mortgage Professional');}}</li>
                     <li>{{link_to_route('getting_preapproved', 'Getting Preapproved');}}</li>
                     <li>{{link_to_route('how_much_can_you_afford', 'How Much Can you afford?');}}</li>

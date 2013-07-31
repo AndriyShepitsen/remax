@@ -19,4 +19,5 @@ class The_benefits_of_home_ownershipController extends BaseController {
 	{
 		return View::make('buying.vw_the_benefits_of_home_ownership')->with('agents', parent::getRandomAgents());
 
+	}
 }

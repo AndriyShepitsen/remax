@@ -14,6 +14,7 @@
 			</ul>
 		<h1>News for Buyers</h1>
 		<hr/>
+		<br/>
 			
 			@foreach($news as $n) <!-- Iterate over the array of news -->
 			<h4>{{$n->title}}</h4>

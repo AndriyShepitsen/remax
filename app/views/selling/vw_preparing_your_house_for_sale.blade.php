@@ -12,7 +12,8 @@
 			<p>There are countless ways to put the freshest face on your home, many of them costing little more than a bit of your time. Here are a few pointers for the most significant impact:</p>
 
 			<div class="panel">
-				<ul class="bullet"><h4>Outside: The Power of Curb Appeal</h4>
+				<h4>Outside: The Power of Curb Appeal</h4>
+				<ul class="bullet ulWorkWith">
 					<li>Clear any clutter and keep lawn decorations to a minimum.</li>
 					<li>Mow your lawn and trim shrubs.</li>
 					<li>Add bushes and/or colorful flowers.</li>
@@ -25,7 +26,8 @@
 				</ul>
 			</div>
 			<div class="panel">
-				<ul class="bullet"><h4>Inside: Leave No Trace</h4>
+				<h4>Inside: Leave No Trace</h4>
+				<ul class="bullet ulWorkWith">
 					<p>Clean everything! Check for cobwebs on ceilings, dust on baseboards – everything.
 						De-clutter. Then de-clutter again. Rent a storage locker if you need to. This is very important for increasing your home's appeal.</p>	
 						<li>Add a fresh coat of paint to the walls.</li>
@@ -39,8 +41,8 @@
 						<li>Pet owners: Take Fido or Fluffy with you while your home is being shown.</li>
 					</ul>
 				</div>
-			</div>
 			<p>Your agent can provide additional advice on prepping your home, and also give you insights into the preferences of local buyers.</p>
+			</div>
 		</div>
 	</div>
 	@stop

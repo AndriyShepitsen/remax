@@ -12,15 +12,17 @@
 			<p>Getting preapproved is simply a matter of your lender checking your financial situation and writing a letter stating that it would be willing to lend you a certain amount of money.</p>
 			<div class="panel">
 				<h5>You'll need to assemble several documents to start the preapproval process:</h5>
-				<li>Federal tax returns for the last two years.</li>
-				<li>W2s (or 1099 statements) for the last two years.</li>
-				<li>Bank statements for the last two months.</li>
-				<li>Recent pay stubs and proof of any other income.</li>
-				<li>Proof of assets (stocks, mutual funds).</li>
-				<li>Information about your current debts.</li>
-				<li>Information about the source of your down payment, including gifts.</li>
+				<ul class="ulWorkWith">
+					<li>Federal tax returns for the last two years.</li>
+					<li>W2s (or 1099 statements) for the last two years.</li>
+					<li>Bank statements for the last two months.</li>
+					<li>Recent pay stubs and proof of any other income.</li>
+					<li>Proof of assets (stocks, mutual funds).</li>
+					<li>Information about your current debts.</li>
+					<li>Information about the source of your down payment, including gifts.</li>
+				</ul>
 			</div>
 		</div>
-	</div>
+</div>
 </div>
 @stop
