@@ -93,7 +93,7 @@ class LoginController extends BaseController {
 			'email'=>$email,
 			'password'=>$password
 			], [
-			'email'=>'required|email|min:4|unique:users',
+			'email'=>'required|email|min:4',
 			'password'=>'required|min:4|alpha_dash'
 			]);
 
