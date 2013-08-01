@@ -26,15 +26,15 @@
     
     <div class="accountPanelWrapper">
       <div class="row">
-        <div class="large-3 columns right accountPanel">
+        <div class="large-6 columns right accountPanel">
           <ul class="inline-list ulAccountPanel">
 
            @if(!Auth::check())
-           <li class="liCreateAccount">
-            <em>{{link_to('#', 'Create Your Free Account', array('data-reveal-id'=>'createAccount'))}}</em>
-          </li>
           <li class="liSignIn right">
             {{link_to('#', 'Sign In', array('data-reveal-id'=>'adminAuth'))}}
+          </li>
+           <li class="liCreateAccount right">
+            <em>{{link_to('#', 'Create Your Free Account', array('data-reveal-id'=>'createAccount'))}}</em>
           </li>
           @else
           <li class="liSignIn right">
