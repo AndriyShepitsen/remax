@@ -189,7 +189,9 @@
                 <div id="mainContent">
                  <div class="row">
                   <div class="large-8 columns">
-
+               <!--   @if(Session::has('message'))
+                 {{Session::get('message')}}
+                 @endif --> 
                    @yield('content')
                  </div>
 

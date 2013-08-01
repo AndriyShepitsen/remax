@@ -44,37 +44,15 @@ class LoginController extends BaseController {
 			Auth::login($justCreatedUser);
 
 			return Redirect::route('home')
-				->with('message', 'You have been logged in')
+				->with('message', 'You have been logged in.')
 				->with('agents', parent::getRandomAgents());
 			}
-		/*	if(Auth::attempt(array('email'=>$email, 'password'=>$password))){
-
-				return Redirect::route('home')
-				->with('message', 'You have been logged in')
-				->with('agents', parent::getRandomAgents());
-
-			} else {
-				$user = User::where('email','=', $email)->first();
-
-				if ($user){
-					$message = 'Your password is incorrect. Try agin';
-
-				} else {
-
-					$message = 'You are not registered. Please sign-up';
-
-				}
-
-
-				return Redirect::route('login-errors')
-				->withInput()
-				->with('message', $message)
-				->with('agents', parent::getRandomAgents());*/
+		
 
 			}
 		
 
-		//return View::make('admin.vw_panel');
+		
 		
 	} 
 

@@ -10,8 +10,8 @@ class User extends BaseModel implements UserInterface, RemindableInterface {
 	'first_name'=>'required|min:2',
 	'last_name'=>'required|min:2',
 	'email'=>'required|email|min:4|unique:users',
-	'password'=>'required|min:6|confirmed|alpha_dash',
-	'password_confirmation'=>'required|min:6|alpha_dash',
+	'password'=>'required|min:4|confirmed|alpha_dash',
+	'password_confirmation'=>'required|min:4|alpha_dash',
 	'phone'	=> 'min:10'
 	);
 
