@@ -2,78 +2,63 @@
 
 class UserController extends BaseController {
 
-    /**
-     * Display a listing of the resource.
-     *
-     * @return Response
-     */
-    public function index()
-    {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @return Response
-     */
-    public function store()
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return Response
-     */
-    public function show($id)
-    {
-    echo 'Success'; 
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return Response
-     */
     public function edit($id)
     {
-        //
+      
+      return View::make('admin.vw_user_edit')
+      ->with('user', User::find($id))
+      ->with('agents', parent::getRandomAgents());
+     
+    }
+   
+    public function update(){
+
+        $id = Input::get('id');
+        $first_name = Input::get('first_name');
+        $last_name = Input::get('last_name');
+        $phone = Input::get('phone');
+        $email = Input::get('email');
+        $password = Input::get('password');
+        $password_confirmation = Input::get('password_confirmation');
+        $now = date('Y-m-d H:i:s');
+
+
+        $userData = [
+            'first_name' => $first_name,
+            'last_name' => $last_name,
+            'phone' => $phone,
+            'email'=>$email,
+            'password'=>$password,
+            'password_confirmation'=>$password_confirmation];
+
+
+        $validator  = User::validate($userData);
+
+        if ($validator->fails()){
+            return Redirect::to('user-edit/'.$id)
+            ->withErrors($validator)
+            ->withInput()
+            ->with('agents', parent::getRandomAgents());
+        } else {
+
+            $user = User::find($id);
+            $user->first_name=$first_name;
+            $user->last_name=$last_name;
+            $user->phone=$phone;
+            $user->email=$email;
+            $user->password=$password;
+           
+            $user->save();
+
+
+
+                return Redirect::to('user-edit/'.$id)
+                ->with('message', 'Your information has been updated')
+                ->with('agents', parent::getRandomAgents());
+            
+}
+
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  int  $id
-     * @return Response
-     */
-    public function update($id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
 
 }

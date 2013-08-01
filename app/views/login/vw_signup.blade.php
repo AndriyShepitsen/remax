@@ -1,21 +1,13 @@
 @extends('layouts.master')
 @section('content')
-<!-- //LOCATION: remax/public/about 
+<!-- //LOCATION: remax/public
 -->
 
 <div class="mainContent panel signUpPanel">
   <div class="row">
-    <ul class=" large-6 columns no-bullet ulLoginError">
-      {{$errors->first('first_name', '<li>:message</li>')}}
-      {{$errors->first('last_name', '<li>:message</li>')}}
-      {{$errors->first('phone', '<li>:message</li>')}}
-      {{$errors->first('email', '<li>:message</li>')}}
-      {{$errors->first('password', '<li>:message</li>')}}
-      {{$errors->first('password_confirmation', '<li>:message</li>')}}
-      @if(Session::has('message'))
-      <li>{{Session::get('message')}}</li>
-      @endif
-    </ul>
+
+  @include('partials._user_error')
+
     <div class="row">
      <div class="large-6 columns">
        <div class="row">
