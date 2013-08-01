@@ -93,8 +93,8 @@ class LoginController extends BaseController {
 			'email'=>$email,
 			'password'=>$password
 			], [
-			'email'=>'required|email|min:4|alpha_dash|unique:users',
-			'password'=>'required|min:6|alpha_dash'
+			'email'=>'required|email|min:4',
+			'password'=>'required|min:4|alpha_dash'
 			]);
 
 		if ($validator->fails()){
