@@ -8,7 +8,9 @@
 			
 			<h1>Admin Panel</h1>
 			<hr/>
-			<p class="admContent">Panel Content</p>
+			{{link_to('user-edit/1', 'Edit My Information')}} <br/>
+			{{link_to_route('dream-home', 'Leave a request for your Dream Home')}} <br/>
+			
 		</div>
 	</div>
 </div>

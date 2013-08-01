@@ -23,7 +23,6 @@
 			"app/controllers/news",
 			"app/controllers/email",
 			"app/controllers/agent",
-			"app/controllers/users",
 			"app/models",
 			"app/database/migrations",
 			"app/database/seeds",
