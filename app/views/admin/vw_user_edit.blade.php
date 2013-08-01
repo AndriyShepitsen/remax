@@ -5,6 +5,7 @@
 <div class="mainContent">
 	<div class="row">
 		<div class="large-12 columns">
+    @include('partials._admin_panel_menu')
 	@include('partials._user_error')
 		
 	   {{Form::open(array('route'=>'user-update', 'method'=> 'PUT'))}}
