@@ -22,6 +22,8 @@ Route::get('logout', array('as'=>'logout', 'uses'=>'LoginController@logout'));
 Route::get('login-attempt', array('as'=>'login-errors', 'uses'=>'LoginController@fail'));
 Route::get('panel', array('as'=>'panel', 'uses'=>'PanelController@index'));
 
+Route::get('user-edit/{id}', array('as'=>'user-edit', 'uses'=>'UserController@show'));
+Route::get('dream-home', array('as'=>'dream-home', 'uses'=>'DreamHomeController@index'));
 
 Route::post('sign-up', array('uses'=>'LoginController@signup'));
 Route::get('sign-up-attempt', array('as'=>'signup-errors', 'uses'=>'LoginController@signup_errors'));
