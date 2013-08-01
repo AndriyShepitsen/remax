@@ -8,15 +8,15 @@
 			
 			<h1>User Panel</h1>
 			<hr/>
-			<ul class="inline-list ulUserPanel">	
-				<li class="leaveRequest">
+			<ul class="button-group ulUserPanel">	
+				<li class="button tiny leaveRequest">
 
 					{{link_to('dream-home', 'Leave a Request for my Dream Home', array('class'=>'aUserPanelStyle'))}} 
 				</li>
-				<li class="manageRequest">	
+				<li class="button tiny manageRequest">	
 					{{link_to('dream-home', 'Manage My Previous Request', array('class'=>'aUserPanelStyle'))}} 
 				</li>
-				<li class="right editProfile">
+				<li class="button tiny secondary right editProfile">
 					{{link_to('user-edit/'.Auth::user()->id, 'Edit My Profile', array('class'=>'aEditProfileStyle'))}} 
 				</li>
 
