@@ -9,11 +9,7 @@ class User extends BaseModel implements UserInterface, RemindableInterface {
 	public static $rules = array(
 	'first_name'=>'required|min:2',
 	'last_name'=>'required|min:2',
-<<<<<<< HEAD
 	'email'=>'required|email|min:4|unique:users',
-=======
-	'email'=>'required|email|min:4|alpha_dash|unique:users',
->>>>>>> 4cd633761e7021b90a93bed50314c355528e2cca
 	'password'=>'required|min:6|confirmed|alpha_dash',
 	'password_confirmation'=>'required|min:6|alpha_dash',
 	'phone'	=> 'min:10'
