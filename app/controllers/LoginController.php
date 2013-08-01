@@ -43,7 +43,7 @@ class LoginController extends BaseController {
 
 			Auth::login($justCreatedUser);
 
-			return Redirect::route('home')
+			return Redirect::route('panel')
 				->with('message', 'You have been logged in.')
 				->with('agents', parent::getRandomAgents());
 			}
@@ -84,7 +84,7 @@ class LoginController extends BaseController {
 
 			if(Auth::attempt(array('email'=>$email, 'password'=>$password))){
 
-				return Redirect::route('home')
+				return Redirect::route('panel')
 				->with('message', 'You have been logged in')
 				->with('agents', parent::getRandomAgents());
 

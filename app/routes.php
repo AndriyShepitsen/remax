@@ -20,6 +20,7 @@
 Route::post('login', array('uses'=>'LoginController@index'));
 Route::get('logout', array('as'=>'logout', 'uses'=>'LoginController@logout'));
 Route::get('login-attempt', array('as'=>'login-errors', 'uses'=>'LoginController@fail'));
+Route::get('panel', array('as'=>'panel', 'uses'=>'PanelController@index'));
 
 
 Route::post('sign-up', array('uses'=>'LoginController@signup'));
