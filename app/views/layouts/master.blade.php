@@ -38,7 +38,7 @@
           </li>
           @else
           <li class="liSignIn right">
-            <a href="">
+            <a href="{{URL::route('panel')}}">
             <img class="userImg"src="{{url('comp/img/user.png')}}" alt="name">
 
               <em>{{Auth::user()->first_name}} {{Auth::user()->last_name}}</em></a>

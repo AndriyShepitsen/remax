@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"Au",
+				"Auth	Laravel: Auth::user()"
+			],
+			[
 				"Sessh",
 				"Sess-has	Sess-has"
 			],
@@ -30,10 +34,6 @@
 			[
 				"Redi",
 				"Redirect	Laravel: Redirect::to_route()"
-			],
-			[
-				"Au",
-				"Auth	Laravel: Auth::logout()"
 			],
 			[
 				"A",
@@ -168,18 +168,18 @@
 	"buffers":
 	[
 		{
-			"file": "app/controllers/admin/UserController.php",
-			"settings":
-			{
-				"buffer_size": 307,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "app/views/admin/vw_panel.blade.php",
 			"settings":
 			{
-				"buffer_size": 369,
+				"buffer_size": 721,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/layouts/master.blade.php",
+			"settings":
+			{
+				"buffer_size": 40597,
 				"line_ending": "Windows"
 			}
 		},
@@ -187,7 +187,7 @@
 			"file": "app/routes.php",
 			"settings":
 			{
-				"buffer_size": 5391,
+				"buffer_size": 5516,
 				"line_ending": "Windows"
 			}
 		}
@@ -303,7 +303,7 @@
 				"Package Control: Remove Package"
 			]
 		],
-		"width": 402.0
+		"width": 498.0
 	},
 	"console":
 	{
@@ -326,17 +326,21 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/remax/app/views/admin/vw_user_edit.blade.php",
+		"/C/xampp/htdocs/remax/app/routes.php",
+		"/C/xampp/htdocs/remax/app/controllers/admin/UserController.php",
+		"/C/xampp/htdocs/remax/app/controllers/LoginController.php",
+		"/C/xampp/htdocs/remax/app/models/User.php",
+		"/C/xampp/htdocs/remax/.gitignore",
+		"/C/xampp/htdocs/remax/app/views/login/vw_signup.blade.php",
+		"/C/xampp/htdocs/remax/app/views/partials/_user_error.blade.php",
+		"/C/xampp/htdocs/remax/app/views/admin/vw_panel.blade.php",
 		"/C/xampp/htdocs/remax/app/controllers/admin/DreamHomeController.php",
 		"/C/xampp/htdocs/remax/composer.json",
 		"/C/xampp/htdocs/remax/app/views/layouts/master.blade.php",
-		"/C/xampp/htdocs/remax/app/controllers/LoginController.php",
 		"/C/xampp/htdocs/remax/app/controllers/admin/AdminPanel.php",
-		"/C/xampp/htdocs/remax/app/views/admin/vw_panel.blade.php",
-		"/C/xampp/htdocs/remax/app/routes.php",
 		"/C/xampp/htdocs/remax/app/controllers/users/UsersController.php",
-		"/C/xampp/htdocs/remax/app/views/login/vw_signup.blade.php",
 		"/C/xampp/htdocs/remax/app/controllers/Admin.AdminPanel.php",
-		"/C/xampp/htdocs/remax/app/models/User.php",
 		"/Z/xampp/htdocs/remax/app/views/layouts/master.blade.php",
 		"/Z/xampp/htdocs/remax/app/controllers/LoginController.php",
 		"/Z/xampp/htdocs/remax/app/views/login/vw_signup.blade.php",
@@ -594,48 +598,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/controllers/admin/UserController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 307,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								267,
-								271
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 57.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "app/views/admin/vw_panel.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 369,
+						"buffer_size": 721,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								276,
-								286
+								610,
+								610
 							]
 						],
 						"settings":
@@ -650,20 +625,49 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "app/routes.php",
+					"buffer": 1,
+					"file": "app/views/layouts/master.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5391,
+						"buffer_size": 40597,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								908,
-								908
+								1784,
+								1784
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 300.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/routes.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5516,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								762,
+								767
 							]
 						],
 						"settings":
@@ -730,6 +734,26 @@
 				"app\\routes.php"
 			],
 			[
+				"ma",
+				"app\\views\\layouts\\master.blade.php"
+			],
+			[
+				"vwpa",
+				"app\\views\\admin\\vw_panel.blade.php"
+			],
+			[
+				"user",
+				"app\\models\\User.php"
+			],
+			[
+				"lo",
+				"app\\controllers\\LoginController.php"
+			],
+			[
+				"use",
+				"app\\controllers\\admin\\UserController.php"
+			],
+			[
 				"vwp",
 				"app\\views\\admin\\vw_panel.blade.php"
 			],
@@ -738,16 +762,8 @@
 				"app\\controllers\\admin\\DreamHouseController.php"
 			],
 			[
-				"user",
-				"app\\controllers\\users\\UsersController.php"
-			],
-			[
 				"log",
 				"app\\controllers\\LoginController.php"
-			],
-			[
-				"ma",
-				"app\\views\\layouts\\master.blade.php"
 			],
 			[
 				"us",
@@ -760,10 +776,6 @@
 			[
 				"mas",
 				"app\\views\\layouts\\master.blade.php"
-			],
-			[
-				"lo",
-				"app\\controllers\\LoginController.php"
 			],
 			[
 				"",

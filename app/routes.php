@@ -20,8 +20,8 @@
 Route::post('login', array('uses'=>'LoginController@index'));
 Route::get('logout', array('as'=>'logout', 'uses'=>'LoginController@logout'));
 Route::get('login-attempt', array('as'=>'login-errors', 'uses'=>'LoginController@fail'));
-Route::get('panel', array('as'=>'panel', 'uses'=>'PanelController@index'));
 
+Route::get('panel', array('as'=>'panel', 'uses'=>'PanelController@index'));
 Route::get('user-edit/{id}', array('as'=>'user-edit', 'uses'=>'UserController@edit'));
 Route::put('user-update', array('as'=>'user-update', 'uses'=>'UserController@update'));
 
