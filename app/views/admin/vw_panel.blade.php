@@ -5,6 +5,7 @@
 <div class="mainContent">
 	<div class="row">
 		<div class="large-12 columns userPanel">
+<<<<<<< HEAD
 			
 			<h1>User Panel</h1>
 			<hr/>
@@ -21,6 +22,11 @@
 				</li>
 
 			</ul>	
+=======
+				
+			@include('partials._admin_panel_menu')
+
+>>>>>>> 4907aa44aab9208ba41a5144031dce4dde9ba3f2
 		</div>
 	</div>
 </div>
