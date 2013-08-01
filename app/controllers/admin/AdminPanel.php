@@ -9,7 +9,8 @@ class PanelController extends BaseController {
      */
     public function index()
     {
-        return View::make('admin.vw_panel');
+        return View::make('admin.vw_panel')
+        ->with('agents', parent::getRandomAgents());
     }
 
     

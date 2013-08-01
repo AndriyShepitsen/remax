@@ -25,7 +25,12 @@ Route::get('panel', array('as'=>'panel', 'uses'=>'PanelController@index'));
 Route::get('user-edit/{id}', array('as'=>'user-edit', 'uses'=>'UserController@edit'));
 Route::put('user-update', array('as'=>'user-update', 'uses'=>'UserController@update'));
 
-Route::get('dream-home', array('as'=>'dream-home', 'uses'=>'DreamHomeController@index'));
+Route::get('dream-home-request', array('as'=>'dream-home-request', 'uses'=>'DreamHomeController@request'));
+Route::get('dream-home-request-management', array('as'=>'dream-home-request-management', 'uses'=>'DreamHomeController@manage'));
+
+
+
+
 Route::get('sign-up-attempt', array('as'=>'signup-errors', 'uses'=>'LoginController@signup_errors'));
 Route::get('sign-up-attempt', array('as'=>'signup-errors', 'uses'=>'LoginController@signup_errors'));
 
