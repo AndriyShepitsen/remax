@@ -208,7 +208,7 @@ input[type="password"]{
 	letter-spacing: 1px;
 	font-size: 12px !important;
 	a{
-	display: inline-block !important;
+		display: inline-block !important;
 		color: $colorFontOffWhite;
 		&:hover{
 			color: lighten($colorBlue, 30%);
@@ -247,19 +247,28 @@ input[type="password"]{
 	}
 }
 .aEditProfileStyle{
-	color: #FFFFFF !important;
+	color: $colorFontGray !important;
 	
 }
 /* .editProfile{
 	background-color: $colorBlue !important;
 }
- */
- .leaveRequest{
-	background-color: lighten($colorBlue, 20%)!important;
+*/
+.leaveRequest{
+	background-color: lighten($colorBlue, 15%)!important;
+	border-color: lighten($colorBlue, 15%)!important;
 
+	&:hover{
+		background-color: lighten($colorBlue, 5%)!important;
+	}
 }
 .manageRequest{
-	background-color: lighten($colorBlue, 20%)!important;
+	background-color: lighten($colorBlue, 15%)!important;
+	border-color: lighten($colorBlue, 15%)!important;
+
+	&:hover{
+		background-color: lighten($colorBlue, 5%)!important;
+	}
 
 }
 /* =navPanel starts here */
