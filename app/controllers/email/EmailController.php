@@ -5,16 +5,21 @@ class EmailController extends BaseController {
 
 	public function index()
 	{
-	  $email  = Input::get('email');	
-	  $subject  = Input::get('subject');	
-	  $message  = Input::get('message');	
-	  $data = array();
+	  $from  = Input::get('email');	
+	  $subj  = Input::get('subject');	
+	  $body  = Input::get('message');	
+	  $data = array(
+	  	'from'=>$from,
+	  	'subj'=>$subj,
+	  	'body'=> $body	
+	  	);
 	  Mail::send('emails.welcome', $data, function($m)
 {
-	$m->to('drivanbohun@gmail.com', 'Ivan Bohun')->subject('Welcome!');
+	// $m->to('Svitlana.Shepitsena@gmail.com', 'Svitlana Shepitsena')->subject($subject);
+	 $m->to('drivanbohun@gmail.com', 'Ivan Bohun')->subject('From the site Form');
 });
 
-		return 'Thanks for your email';
+		return View::make('emails.thank_you');;
 	}
 
 }
