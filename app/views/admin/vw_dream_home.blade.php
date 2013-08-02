@@ -10,24 +10,24 @@
 
 				<div class="row">
 				<div class="large-6 large-centered columns">	
-						<h4> Dream Home Request</h4>
-						{{Form::open(array('url' => 'search', 'method'=>'GET'))}}
+				<h4> Dream Home Request</h4>
+				{{Form::open(array('route' => 'my-dream-home-request', 'method'=>'POST'))}}
 
 						<div class="row">
 							<div class="large-12 columns">
 								{{Form::label('location', 'Location')}}
-								{{Form::text('location',Input::get('location'), array('placeholder'=>'City and State, Address or Zip Code', 'class'=>'findInput'))}}
+								{{Form::text('location','', array('placeholder'=>'City, State, Address or Zip Code', 'class'=>'findInput'))}}
 							</div>
 						</div>
 
 						<div class="row">
 							<div class="large-6 columns">
-								{{Form::label('location', 'Property Type')}}
-								{{Form::text('location',Input::get('location'), array('placeholder'=>'', 'class'=>'findInput'))}}
+								{{Form::label('property_type', 'Property Type')}}
+								{{Form::text('property_type','', array('placeholder'=>'', 'class'=>'findInput'))}}
 							</div>
 							<div class="large-6 columns">
-								{{Form::label('location', 'Garage')}}
-								{{Form::text('location',Input::get('location'), array('placeholder'=>'', 'class'=>'findInput'))}}
+								{{Form::label('garage', 'Garage')}}
+								{{Form::text('garage','', array('placeholder'=>'', 'class'=>'findInput'))}}
 
 							</div>
 						</div>
@@ -35,7 +35,7 @@
 						<div class="row">
 							<div class="large-6 columns">
 								{{Form::label('beds', 'Bedrooms')}}
-								{{Form::text('beds', Input::get('beds'), array('placeholder'=>'#', 'class'=>'findinput'))}}
+								{{Form::text('beds', '', array('placeholder'=>'#', 'class'=>'findinput'))}}
 							</div>
 							<div class="large-6 columns">
 								{{Form::label('baths', 'Bathrooms')}}
@@ -46,7 +46,7 @@
 						<div class="row">
 							<div class="large-4 columns">
 
-								{{ Form::submit('Search', array('class'=>'button small secondary radius submitSearch'))}}
+								{{ Form::submit('Submit', array('class'=>'button small secondary radius submitSearch'))}}
 								<br/>
 							</div>
 						</div>

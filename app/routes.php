@@ -27,15 +27,19 @@ Route::put('user-update', array('as'=>'user-update', 'uses'=>'UserController@upd
 
 Route::get('dream-home-request', array('as'=>'dream-home-request', 'uses'=>'DreamHomeController@request'));
 Route::get('dream-home-request-management', array('as'=>'dream-home-request-management', 'uses'=>'DreamHomeController@manage'));
+Route::post('dream-home-request', array('as'=>'my-dream-home-request', 'uses'=>'DreamHomeController@store'));
 
+Route::get('dream-home-request-edit/{id}', array('as'=>'dream-home-request-edit', 'uses'=>'DreamHomeController@edit'));
+Route::post('dream-home-request-update', array('as'=>'dream-home-request-update', 'uses'=>'DreamHomeController@update'));
+Route::get('dream-home-request-delete/{id}', array('as'=>'dream-home-request-delete', 'uses'=>'DreamHomeController@destroy'));
 
 
 
 
 Route::post('sign-up', array('uses'=>'LoginController@signup'));
+
+
 Route::get('sign-up-attempt', array('as'=>'signup-errors', 'uses'=>'LoginController@signup_errors'));
-
-
 /* =home */
 Route::post('sendmail', array('uses'=>'MailController@index'));
 Route::get('/', array('as'=>'home', 'uses'=>'HomeController@index'));
