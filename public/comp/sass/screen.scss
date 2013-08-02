@@ -234,6 +234,12 @@ input[type="password"]{
 }
 
 /* =userPanel starts here */
+.userPanel{
+	padding-left: 10px !important;
+}
+.userImgL{
+	padding: 0px !important;
+}
 .ulUserPanel{
 	li a{
 		font-size: 13px !important;
