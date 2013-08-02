@@ -7,6 +7,7 @@
 	<div class="row">
 		<div class="large-12 columns userPanel">
 			@include('partials._admin_panel_menu')
+			<div class="userPanelContent"></div>
 
 		</div>
 	</div>

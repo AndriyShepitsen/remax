@@ -5,8 +5,8 @@
 <div class="mainContent">
 	<div class="row">
 		<div class="large-12 columns userPanel">
-				
 			@include('partials._admin_panel_menu')
+
 			<h4>Manage Dreamhomes Request</h4>
 			@if(isset($dreamhomes))
 			<ol>
@@ -27,7 +27,6 @@
 			</ol>
 			@endforeach
 			@endif
-
 
 		</div>
 	</div>
