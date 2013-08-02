@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row noMargin">
 	<div class="large-1 column userImgL">
 		<img class="userImg"src="{{url('comp/img/userL.png')}}" alt="name">
 	</div>
@@ -10,9 +10,8 @@
 		{{link_to('user-edit/'.Auth::user()->id, 'Edit My Profile', array('class'=>'aEditProfileStyle'))}} 
 	</div>
 </div>          
-<hr/>
 <div class="row">
-<div class="large-12 columns requestButtons">
+	<div class="large-12 columns requestButtons">
 		<ul class="inline-list ulUserPanel">	
 			<li class="leaveRequest button tiny">
 
@@ -25,4 +24,6 @@
 				{{link_to('dream-home-request-management', 'My Saved Homes', array('class'=>'aUserPanelStyle'))}} 
 			</li>
 		</ul>
-	</div></div>
+	</div>
+</div>
+<hr/>

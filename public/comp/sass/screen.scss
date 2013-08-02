@@ -139,7 +139,9 @@ h4{
 h5{
 	line-height: 25px !important;
 }
-
+.noMargin{
+	margin: 0px !important;
+}
 /* =accountPanel starts here */
 
 input[type="password"]{
@@ -234,6 +236,10 @@ input[type="password"]{
 }
 
 /* =userPanel starts here */
+.requestButtons{
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
 .userPanel{
 	padding-left: 10px !important;
 }
