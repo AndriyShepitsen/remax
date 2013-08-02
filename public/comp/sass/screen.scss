@@ -69,6 +69,7 @@ $myBorderGray: 1px solid darken(#F2F2F2, 5%)!important;
 	display: inline-block;
 	font-weight:bold;
 	color: $colorFontGray;
+	border-color: darken(#FBFBFB, 10%) !importantr;
 }
 
 @mixin slashBefore{
@@ -143,6 +144,11 @@ h5{
 	margin: 0px !important;
 }
 /* =accountPanel starts here */
+.panel{
+
+		border-color: darken(#FBFBFB, 10%) !important;
+		background-color: lighten(#F2F2F2, 2%) !important;
+}
 
 input[type="password"]{
 	padding: 6px !important;
@@ -242,6 +248,10 @@ input[type="password"]{
 }
 .userPanel{
 	padding-left: 10px !important;
+	.panel{
+		background-color: #FBFBFB !important;
+		border-color: darken(#FBFBFB, 10%) !important;
+	}
 }
 .userImgL{
 	padding: 0px !important;
@@ -496,9 +506,10 @@ input[type="password"]{
 		font-size:12px !important;
 	}
 }
-.section-container.auto > section .content{
-	background-color: #FBFBFB;
-}
+// .section-container.auto > section .content{
+// 	background-color: #FBFBFB;
+// 	border-color: darken(#FBFBFB, 10%) !important;
+// }
 .submitSearch{
 	font-size: 11px !important;
 	letter-spacing: 1px;
