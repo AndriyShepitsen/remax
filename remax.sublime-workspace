@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"cbl",
+				"colorBlue"
+			],
+			[
+				"border",
+				"border-color"
+			],
+			[
+				"cb",
+				"colorBlue"
+			],
+			[
+				"colg",
+				"colorFontGray"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
 				"pa",
 				"padding-top"
 			],
@@ -104,10 +124,34 @@
 	"buffers":
 	[
 		{
-			"file": "/C/xampp/htdocs/remax/app/views/partials/_admin_panel_menu.blade.php",
+			"file": "app/views/partials/_admin_panel_menu.blade.php",
 			"settings":
 			{
-				"buffer_size": 536,
+				"buffer_size": 1067,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/admin/vw_dream_home.blade.php",
+			"settings":
+			{
+				"buffer_size": 1788,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/comp/sass/screen.scss",
+			"settings":
+			{
+				"buffer_size": 21238,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/admin/vw_panel.blade.php",
+			"settings":
+			{
+				"buffer_size": 243,
 				"line_ending": "Windows"
 			}
 		}
@@ -115,12 +159,52 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 335.0,
+		"height": 375.0,
 		"selected_items":
 		[
 			[
+				"seed",
+				"Laravel Generate: Seed"
+			],
+			[
+				"see",
+				"Laravel Artisan: DB:Seed"
+			],
+			[
+				"mi",
+				"Laravel Artisan: Migrate"
+			],
+			[
+				"roll",
+				"Laravel Artisan: Migrate: Rollback"
+			],
+			[
+				"mig",
+				"Laravel Artisan: Migrate"
+			],
+			[
+				"ge",
+				"Laravel Generate: Migration"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
 				"Package Control: ",
-				"Package Control: List Packages"
+				"Package Control: Install Package"
+			],
+			[
+				"g",
+				"Laravel Generate: Migration"
+			],
+			[
+				"gene",
+				"Laravel Generate: Migration"
 			],
 			[
 				"rem",
@@ -151,15 +235,11 @@
 				"Convert Case: Lower Case"
 			],
 			[
-				"in",
-				"Package Control: Install Package"
-			],
-			[
 				"install",
 				"Package Control: Install Package"
 			]
 		],
-		"width": 498.0
+		"width": 402.0
 	},
 	"console":
 	{
@@ -180,63 +260,72 @@
 	},
 	"file_history":
 	[
-		"/C/xampp/htdocs/remax/app/views/partials/_admin_panel_menu.blade.php",
+		"/C/xampp/htdocs/remax/app/views/home/vw_home.blade.php",
+		"/C/xampp/htdocs/remax/app/views/layouts/master.blade.php",
 		"/C/xampp/htdocs/remax/app/views/admin/vw_panel.blade.php",
-		"/C/xampp/htdocs/remax/public/comp/stylesheets/screen.css",
-		"/Z/xampp/htdocs/remax/app/views/layouts/master.blade.php",
-		"/Z/xampp/htdocs/remax/app/models/User.php",
-		"/Z/xampp/htdocs/remax/app/views/admin/vw_panel.blade.php",
-		"/Z/xampp/htdocs/remax/app/views/login/vw_login.blade.php",
-		"/Z/xampp/htdocs/remax/app/views/contact/vw_contact.blade.php",
-		"/Z/xampp/htdocs/remax/app/views/mortgage/vw_finding_the_right_mortgage_professional.blade.php",
-		"/Z/xampp/htdocs/remax/public/comp/sass/screen.scss",
-		"/Z/xampp/htdocs/remax/app/views/home/vw_home.blade.php",
+		"/C/xampp/htdocs/remax/.gitignore",
+		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/xampp/htdocs/remax/app/database/seeds/UsersTableSeeder.php",
+		"/C/xampp/htdocs/remax/app/database/migrations/2013_08_02_160509_create_tests_table.php",
+		"/C/xampp/htdocs/remax/app/views/partials/_user_error.blade.php",
+		"/C/xampp/htdocs/remax/app/views/login/vw_signup.blade.php",
+		"/C/xampp/htdocs/remax/app/views/contact/vw_contact.blade.php",
+		"/C/xampp/htdocs/remax/app/database/seeds/DatabaseSeeder.php",
+		"/C/xampp/htdocs/remax/app/database/seeds/TestsTableSeeder.php",
+		"/C/xampp/htdocs/remax/app/database/seeds/HousesTableSeeder.php",
+		"/C/xampp/htdocs/remax/app/database/migrations/2013_07_29_164713_create_users_table.php",
+		"/C/xampp/htdocs/remax/app/database/migrations/2013_08_02_155151_create_table_tests.php",
+		"/C/xampp/htdocs/remax/app/views/login/vw_login.blade.php",
+		"/C/xampp/htdocs/remax/app/views/rent/rent_results.blade.php",
+		"/C/xampp/htdocs/remax/app/views/rent/one_rent.blade.php",
+		"/C/xampp/htdocs/remax/app/controllers/buying/The_importance_of_buyers_agentController.php",
+		"/C/xampp/htdocs/remax/public/comp/sass/screen.scss",
+		"/C/xampp/htdocs/remax/app/views/news/vw_real_estate_news.blade.php",
+		"/C/xampp/htdocs/remax/app/controllers/buying/The_benefits_of_home_ownershipController.php",
+		"/C/xampp/htdocs/remax/app/views/news/vw_news_for_buyers.blade.php",
+		"/C/xampp/htdocs/remax/app/views/news/vw_news_for_sellers.blade.php",
+		"/C/xampp/htdocs/remax/app/views/mortgage/vw_mortgages_101_basic_loan_types.blade.php",
+		"/C/xampp/htdocs/remax/app/views/mortgage/vw_how_much_can_you_afford.blade.php",
+		"/C/xampp/htdocs/remax/app/controllers/mortgage/How_much_can_you_affordController.php",
+		"/C/xampp/htdocs/remax/app/controllers/buying/How_much_house_can_you_affordController.php",
+		"/C/xampp/htdocs/remax/app/views/mortgage/vw_getting_preapproved.blade.php",
+		"/C/xampp/htdocs/remax/app/views/buying/vw_how_much_house_can_you_afford.blade.php",
+		"/C/xampp/htdocs/remax/app/routes.php",
+		"/C/xampp/htdocs/remax/app/models/User.php",
 		"/C/xampp/htdocs/remax/app/views/selling/vw_preparing_your_house_for_sale.blade.php",
 		"/C/xampp/htdocs/remax/app/controllers/selling/Preparing_your_house_for_saleController.php",
+		"/C/xampp/htdocs/remax/vendor/laravel/framework/src/Illuminate/Routing/Route.php",
+		"/C/xampp/htdocs/remax/app/views/buying/vw_anatomy_of_a_home_purchase.blade.php",
+		"/C/xampp/htdocs/remax/app/views/buying/vw_deciding_where_to_live.blade.php",
+		"/C/xampp/htdocs/remax/app/views/about/vw_about.blade.php",
+		"/C/xampp/htdocs/remax/app/views/mortgage/vw_finding_the_right_mortgage_professional.blade.php",
 		"/C/xampp/htdocs/remax/app/views/news/vw_news.blade.php",
-		"/C/xampp/htdocs/remax/app/views/rent/rent_results.blade.php",
 		"/C/xampp/htdocs/remax/app/controllers/LoginController.php",
 		"/C/xampp/htdocs/remax/app/views/search/onehouse.blade.php",
 		"/C/xampp/htdocs/remax/app/views/search/results.blade.php",
-		"/C/xampp/htdocs/remax/app/views/news/vw_news_for_buyers.blade.php",
-		"/C/xampp/htdocs/remax/app/views/home/vw_home.blade.php",
-		"/C/xampp/htdocs/remax/app/views/rent/one_rent.blade.php",
-		"/C/xampp/htdocs/remax/public/comp/sass/screen.scss",
 		"/C/xampp/htdocs/remax/app/models/Rentalpropertytype.php",
 		"/C/xampp/htdocs/remax/app/models/Rentalimage.php",
 		"/C/xampp/htdocs/remax/app/models/Rental.php",
 		"/C/xampp/htdocs/remax/app/views/agents/vw_allAgents.blade.php",
 		"/C/xampp/htdocs/remax/app/controllers/rent/RentController.php",
 		"/C/xampp/htdocs/remax/artisanCommand.txt",
-		"/C/xampp/htdocs/remax/app/views/layouts/master.blade.php",
-		"/C/xampp/htdocs/remax/app/routes.php",
 		"/C/xampp/htdocs/remax/app/controllers/search/SearchController.php",
 		"/C/xampp/htdocs/remax/app/controllers/search/BrowseController.php",
 		"/C/xampp/htdocs/remax/app/controllers/search/ShowallController.php",
-		"/C/xampp/htdocs/remax/app/views/news/vw_news_for_sellers.blade.php",
-		"/C/xampp/htdocs/remax/app/views/buying/vw_how_much_house_can_you_afford.blade.php",
 		"/C/xampp/htdocs/remax/app/views/mortgage/vw_down_payments_how_much_do_you_need.blade.php",
-		"/C/xampp/htdocs/remax/app/views/mortgage/vw_finding_the_right_mortgage_professional.blade.php",
-		"/C/xampp/htdocs/remax/app/views/mortgage/vw_getting_preapproved.blade.php",
-		"/C/xampp/htdocs/remax/app/views/mortgage/vw_how_much_can_you_afford.blade.php",
-		"/C/xampp/htdocs/remax/app/views/mortgage/vw_mortgages_101_basic_loan_types.blade.php",
 		"/C/xampp/htdocs/remax/app/views/mortgage/vw_renovating_a_home.blade.php",
-		"/C/xampp/htdocs/remax/app/views/news/vw_real_estate_news.blade.php",
 		"/C/xampp/htdocs/remax/app/views/selling/vw_consider_a_home_inspection_when_selling.blade.php",
 		"/C/xampp/htdocs/remax/app/views/selling/vw_how_an_agent_markets_your_home.blade.php",
 		"/C/xampp/htdocs/remax/app/views/selling/vw_pricing_your_home_to_sell.blade.php",
 		"/C/xampp/htdocs/remax/app/views/selling/vw_the_right_listing_agent.blade.php",
-		"/C/xampp/htdocs/remax/app/views/buying/vw_anatomy_of_a_home_purchase.blade.php",
-		"/C/xampp/htdocs/remax/app/views/buying/vw_deciding_where_to_live.blade.php",
 		"/C/xampp/htdocs/remax/app/views/buying/vw_five_tips_to_narrow_your_online_home_search.blade.php",
 		"/C/xampp/htdocs/remax/app/views/buying/vw_the_benefits_of_home_ownership.blade.php",
 		"/C/xampp/htdocs/remax/app/views/buying/vw_the_importance_of_buyers_agent.blade.php",
-		"/C/xampp/htdocs/remax/app/views/about/vw_about.blade.php",
-		"/C/xampp/htdocs/remax/app/controllers/buying/The_benefits_of_home_ownershipController.php",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/link_to_new_page.sublime-snippet",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/Gist.sublime-settings",
 		"/C/xampp/htdocs/remax/app/views/search/showall.blade.php",
-		"/C/xampp/htdocs/remax/app/views/contact/vw_contact.blade.php",
 		"/C/xampp/htdocs/remax/app/controllers/agent/AgentController.php",
 		"/C/xampp/htdocs/remax/app/controllers/home/HomeController.php",
 		"/C/xampp/htdocs/remax/app/config/database.php",
@@ -245,8 +334,6 @@
 		"/C/xampp/htdocs/remax/composer.json",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/CHANGELOG",
 		"/C/xampp/htdocs/remax/app/database/seeds/NewsTableSeeder.php",
-		"/C/xampp/htdocs/remax/app/database/seeds/DatabaseSeeder.php",
-		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/laravel_link.sublime-snippet",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/1symsemi.sublime-macro",
 		"/C/xampp/htdocs/remax/app/util/textoperations.php",
@@ -256,7 +343,6 @@
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/Gist/Gist.sublime-settings",
 		"/C/Users/ckotcha/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/C/xampp/htdocs/remax/app/controllers/news/RealEstateNewsController.php",
-		"/C/xampp/htdocs/remax/app/models/User.php",
 		"/C/xampp/htdocs/remax/app/controllers/BaseController.php",
 		"/C/xampp/htdocs/remaxfc/application/modules/home/controllers/home.php"
 	],
@@ -278,6 +364,72 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"datetime",
+			"find",
+			"title",
+			"section",
+			"auto",
+			"content",
+			"title",
+			"findf",
+			"findfor",
+			"cont",
+			".section-container.auto > section .content",
+			".section-container.auto > section > ",
+			".section-container.auto > section > .title",
+			"find",
+			"fins",
+			"panel",
+			"userPanel",
+			"FBFBFB",
+			"requestbu",
+			"li ",
+			"Type",
+			"location",
+			"$colorBlue ",
+			"10",
+			"$colorBlue ",
+			"edit",
+			"editp",
+			"leaveRequest",
+			"admin]",
+			"user",
+			"<br/>",
+			"lisi",
+			"footers",
+			"footer",
+			"signInStyle",
+			"signup",
+			"signin",
+			"create",
+			"input",
+			"input[type=\"password\"]",
+			"'placeholder'=>'**********', ",
+			"confirmPasswordCreate",
+			"mobilePhoneCreate",
+			"crea",
+			"emailC",
+			"creat",
+			"classname",
+			"phone",
+			"text",
+			"classname",
+			"lastNameCreate",
+			"firstNameCreate",
+			"label",
+			"text",
+			"5",
+			"account",
+			"sign in",
+			"create your ",
+			"create you",
+			"licre",
+			"create your f",
+			"create",
+			"prefix",
+			"profileCont",
+			"5",
+			"h5",
 			"maincon",
 			"agent",
 			"menues",
@@ -339,73 +491,7 @@
 			"alertr",
 			"small",
 			"maincon",
-			"innercontent",
-			"addressco",
-			"small",
-			"agentNameList",
-			"agentl",
-			"showAllListings",
-			"array('class'=>'browseAllListings button radius expand ')",
-			"%)!",
-			"	color: 	$colorBlue !important;\n",
-			"locality",
-			"reedmore",
-			"agent",
-			"price",
-			"}} ",
-			"basicInfo",
-			"house",
-			"acallagent",
-			"callagen",
-			"details",
-			"Li",
-			"li",
-			"locality",
-			"agents",
-			"pricestyle",
-			"\n}",
-			"top",
-			"\n								",
-			"	// font-size: 11px !important;\n	// padding-top: 5px !important;\n	// padding-bottom: 5px !important;\n	// margin-top: 10px;\n",
-			"agentProp label",
-			"specialist",
-			"agentlist",
-			"sqft",
-			"size",
-			"news",
-			"medium",
-			"eveal-modal ",
-			"Agent Property For",
-			"Agent Property For Sale",
-			"specialist",
-			"\n							",
-			"Details",
-			"footer",
-			"							<span class=\"priceStyle right radius label\">${{number_format($house->price)}}\n								</span>\n",
-			"cheryl",
-			"john",
-			"dan fl",
-			"mark F",
-			"div",
-			"Tony ",
-			"top",
-			"johnDias  ",
-			")}} ",
-			"jstonyDavidson",
-			"John Dias ",
-			"=  ",
-			"John Dias",
-			"Cherny",
-			"Elizabeth Cherny ",
-			"menues",
-			"about",
-			"text",
-			"h4",
-			"\n}",
-			"newsHead",
-			"content",
-			"conte",
-			"sect"
+			"innercontent"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -424,30 +510,118 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/C/xampp/htdocs/remax/app/views/partials/_admin_panel_menu.blade.php",
-					"semi_transient": true,
+					"file": "app/views/partials/_admin_panel_menu.blade.php",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 536,
+						"buffer_size": 1067,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								536,
-								536
+								1053,
+								1053
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/admin/vw_dream_home.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1788,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "public/comp/sass/screen.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 21238,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5008,
+								5008
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4830.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/admin/vw_panel.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 243,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								174,
+								212
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -460,7 +634,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 38.0
 	},
 	"input":
 	{
@@ -475,11 +649,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -509,8 +690,84 @@
 				"app\\views\\admin\\vw_panel.blade.php"
 			],
 			[
-				"scr",
-				"public\\comp\\stylesheets\\screen.css"
+				"vwhom",
+				"app\\views\\home\\vw_home.blade.php"
+			],
+			[
+				"pane",
+				"app\\views\\admin\\vw_panel.blade.php"
+			],
+			[
+				"panel",
+				"app\\views\\admin\\vw_panel.blade.php"
+			],
+			[
+				"ma",
+				"app\\views\\layouts\\master.blade.php"
+			],
+			[
+				"mast",
+				"app\\views\\layouts\\master.blade.php"
+			],
+			[
+				"real",
+				"app\\views\\news\\vw_real_estate_news.blade.php"
+			],
+			[
+				"the",
+				"app\\controllers\\buying\\The_importance_of_buyers_agentController.php"
+			],
+			[
+				"vwne",
+				"app\\views\\news\\vw_news_for_buyers.blade.php"
+			],
+			[
+				"vwnews",
+				"app\\views\\news\\vw_news_for_sellers.blade.php"
+			],
+			[
+				"vw101",
+				"app\\views\\mortgage\\vw_mortgages_101_basic_loan_types.blade.php"
+			],
+			[
+				"how",
+				"app\\views\\mortgage\\vw_how_much_can_you_afford.blade.php"
+			],
+			[
+				"routes",
+				"app\\routes.php"
+			],
+			[
+				"getting",
+				"app\\views\\mortgage\\vw_getting_preapproved.blade.php"
+			],
+			[
+				"vwpre",
+				"app\\views\\selling\\vw_preparing_your_house_for_sale.blade.php"
+			],
+			[
+				"pre",
+				"app\\controllers\\selling\\Preparing_your_house_for_saleController.php"
+			],
+			[
+				"rou",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php"
+			],
+			[
+				"vwhowm",
+				"app\\views\\mortgage\\vw_how_much_can_you_afford.blade.php"
+			],
+			[
+				"vwana",
+				"app\\views\\buying\\vw_anatomy_of_a_home_purchase.blade.php"
+			],
+			[
+				"deci",
+				"app\\views\\buying\\vw_deciding_where_to_live.blade.php"
+			],
+			[
+				"about",
+				"app\\views\\about\\vw_about.blade.php"
 			],
 			[
 				"vwfinding",
@@ -545,6 +802,10 @@
 				"app\\controllers\\LoginController.php"
 			],
 			[
+				"scr",
+				"public\\comp\\sass\\screen.scss"
+			],
+			[
 				"s",
 				"public\\comp\\sass\\screen.scss"
 			],
@@ -561,16 +822,8 @@
 				"app\\views\\search\\results.blade.php"
 			],
 			[
-				"ma",
-				"app\\views\\layouts\\master.blade.php"
-			],
-			[
 				"scre",
 				"public\\comp\\sass\\screen.scss"
-			],
-			[
-				"mast",
-				"app\\views\\layouts\\master.blade.php"
 			],
 			[
 				"resu",
@@ -673,14 +926,6 @@
 				"app\\controllers\\news\\NewsController.php"
 			],
 			[
-				"vwne",
-				"app\\views\\news\\vw_news.blade.php"
-			],
-			[
-				"rou",
-				"app\\routes.php"
-			],
-			[
 				"controllhom",
 				"app\\controllers\\home\\HomeController.php"
 			],
@@ -713,6 +958,21 @@
 	},
 	"settings":
 	{
+		"last_automatic_layout":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
 		"vintage":
 		{
 		}
@@ -720,8 +980,8 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
-	"side_bar_width": 347.0,
+	"side_bar_visible": false,
+	"side_bar_width": 335.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

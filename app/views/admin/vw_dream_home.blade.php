@@ -5,11 +5,11 @@
 <div class="mainContent">
 	<div class="row">
 		<div class="large-12 columns userPanel">
-			<div class="panel">
-				@include('partials._admin_panel_menu')
+			@include('partials._admin_panel_menu')
 
+			<div class="panel userPanelContent">
 				<div class="row">
-				<div class="large-6 large-centered columns">	
+					<div class="large-6 large-centered columns">	
 						<h4> Dream Home Request</h4>
 						{{Form::open(array('url' => 'search', 'method'=>'GET'))}}
 
@@ -46,7 +46,7 @@
 						<div class="row">
 							<div class="large-4 columns">
 
-								{{ Form::submit('Search', array('class'=>'button small secondary radius submitSearch'))}}
+							{{ Form::submit('Submit', array('class'=>'button small secondary radius submitSearch'))}}
 								<br/>
 							</div>
 						</div>

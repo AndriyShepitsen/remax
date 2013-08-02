@@ -39,7 +39,7 @@
           @else
           <li class="liSignIn right">
             <a href="{{URL::route('panel')}}">
-            <img class="userImg"src="{{url('comp/img/user.png')}}" alt="name">
+              <img class="userImg"src="{{url('comp/img/user.png')}}" alt="name">
 
               <em>{{Auth::user()->first_name}} {{Auth::user()->last_name}}</em></a>
             </li>
@@ -118,7 +118,7 @@
             </div>
           </div>
 
-          <!-- =logoWrapper -->
+         <!-- =logoWrapper -->
           <div class="logoWrapper">
             <div class="row">
               <div class="large-10 columns ">
@@ -203,7 +203,7 @@
                  <div class="row">
                   <div class="large-12 columns listingSection">
 
-                    <div class="section-container auto" data-section>
+                    <div class="section-container tabs" data-section="tabs">
                       <section>
                         <h5 class="title" data-section-title><a class="sectionWidth find" href="#panel1"> PROPERTY FOR SALE</a></h5>
                         <div class="content" data-section-content>
