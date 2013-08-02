@@ -31,7 +31,8 @@ Route::get('dream-home-request-management', array('as'=>'dream-home-request-mana
 
 
 
-Route::get('sign-up-attempt', array('as'=>'signup-errors', 'uses'=>'LoginController@signup_errors'));
+
+Route::post('sign-up', array('uses'=>'LoginController@signup'));
 Route::get('sign-up-attempt', array('as'=>'signup-errors', 'uses'=>'LoginController@signup_errors'));
 
 
@@ -41,7 +42,7 @@ Route::get('/', array('as'=>'home', 'uses'=>'HomeController@index'));
 Route::get('sendmail', array('as'=>'sendmail', 'uses'=>'EmailController@index'));
 /* =about */
 
-Route::post('sendmail', array('uses'=>'MailController@index'));
+Route::post('sendmail', array('uses'=>'EmailController@index'));
 
 Route::get('about', array('as'=>'about', 'uses'=>'AboutController@index'));
 Route::get('parse', array('as'=>'parse', 'uses'=>'ParseController@index'));
