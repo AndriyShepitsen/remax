@@ -13,6 +13,13 @@ class DreamHomeController extends BaseController {
         ->with('agents', parent::getRandomAgents());    
     }
 
+    public function edit($id)
+    {
+    return View::make('admin.vw_dream_home_edit')
+        ->with('dreamhome', Dreamhome::find($id))    
+        ->with('agents', parent::getRandomAgents());    
+    }
+
     public function store()
     {
 
@@ -47,4 +54,36 @@ class DreamHomeController extends BaseController {
     	->with('dreamhomes', Dreamhome::where('user_id', '=', Auth::user()->id)->get())
         ->with('agents', parent::getRandomAgents()); 
     }
+
+    public function update()
+    {
+
+    $id = Input::get('id');
+    $location = Input::get('location');
+    $property_type = Input::get('property_type');
+    $garage = Input::get('garage');
+    $beds = Input::get('beds');
+    $baths = Input::get('baths');
+    $user_id = Auth::user()->id;
+
+     
+    $dreamhome = Dreamhome::find($id);
+
+    $dreamhome->location = $location;
+    $dreamhome->property_type = $property_type;
+    $dreamhome->garage = $garage;
+    $dreamhome->beds = $beds;
+    $dreamhome->baths = $baths;
+    
+    $dreamhome->save();
+
+
+    return View::make('admin.vw_dream_home_manage')
+        ->with('dreamhomes', Dreamhome::where('user_id', '=', $user_id)->get())
+        ->with('agents', parent::getRandomAgents()) 
+        ->with('note', 'You dreamhome request has been succesfully updated'); 
+       
+    }
+
+
 }
