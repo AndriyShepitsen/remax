@@ -12,8 +12,9 @@
 				<div class="large-6 columns">
 					@if(isset($dreamhomes))
 					<ol class="olDreamhomes">
+						
+						@foreach($dreamhomes as $dreamhome)
 						<li>
-							@foreach($dreamhomes as $dreamhome)
 							<ul class="no-bullet panel radius">
 								<li>
 									<em> Location: </em>{{$dreamhome->location}} <br/>
@@ -40,11 +41,9 @@
 								</li>
 							</ul>
 						</li>
-						<li>
-							@endforeach
-						</li>
+						@endforeach
 					</ol>
-						@endif
+					@endif
 				</div>
 			</div>
 
