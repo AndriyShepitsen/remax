@@ -85,5 +85,15 @@ class DreamHomeController extends BaseController {
        
     }
 
+     public function destroy($id) 
+    {
+
+        Dreamhome::find($id)->delete();
+
+   return View::make('admin.vw_dream_home_manage')
+        ->with('dreamhomes', Dreamhome::where('user_id', '=', Auth::user()->id)->get())
+        ->with('note', 'You dreamhome request has been deleted')
+        ->with('agents', parent::getRandomAgents()); 
+    }
 
 }
