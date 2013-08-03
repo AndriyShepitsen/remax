@@ -43,7 +43,12 @@
 								{{Form::label('baths', 'Bathrooms')}}
 								{{Form::text('baths', $dreamhome->baths, array('placeholder'=>'#', 'class'=>'findinput'))}}
 							</div>
-
+<div class="row">
+							<div class="large-12 columns">
+								{{Form::label('comments', 'Comments')}}
+								{{Form::textarea('comments',$dreamhome->comments, array('placeholder'=>'Provide please any additional details for your request.', 'class'=>'findInput'))}}
+							</div>
+						</div>
 						</div>
 						<div class="row">
 							<div class="large-4 columns">

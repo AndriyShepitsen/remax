@@ -13,12 +13,7 @@ class DreamHomeController extends BaseController {
         ->with('agents', parent::getRandomAgents());    
     }
 
-    public function edit($id)
-    {
-    return View::make('admin.vw_dream_home_edit')
-        ->with('dreamhome', Dreamhome::find($id))    
-        ->with('agents', parent::getRandomAgents());    
-    }
+  
 
     public function store()
     {
@@ -28,6 +23,7 @@ class DreamHomeController extends BaseController {
     $garage = Input::get('garage');
     $beds = Input::get('beds');
     $baths = Input::get('baths');
+    $comments = Input::get('comments');
     $user_id = Auth::user()->id;
 
 	 
@@ -38,6 +34,7 @@ class DreamHomeController extends BaseController {
     $dreamhome->beds = $beds;
     $dreamhome->baths = $baths;
     $dreamhome->user_id = $user_id;
+    $dreamhome->comments = $comments;
 
     $dreamhome->save();
 
@@ -55,6 +52,13 @@ class DreamHomeController extends BaseController {
         ->with('agents', parent::getRandomAgents()); 
     }
 
+  public function edit($id)
+    {
+    return View::make('admin.vw_dream_home_edit')
+        ->with('dreamhome', Dreamhome::find($id))    
+        ->with('agents', parent::getRandomAgents());    
+    }
+
     public function update()
     {
 
@@ -64,6 +68,7 @@ class DreamHomeController extends BaseController {
     $garage = Input::get('garage');
     $beds = Input::get('beds');
     $baths = Input::get('baths');
+    $comments = Input::get('comments');
     $user_id = Auth::user()->id;
 
      
@@ -74,6 +79,7 @@ class DreamHomeController extends BaseController {
     $dreamhome->garage = $garage;
     $dreamhome->beds = $beds;
     $dreamhome->baths = $baths;
+    $dreamhome->comments = $comments;
     
     $dreamhome->save();
 

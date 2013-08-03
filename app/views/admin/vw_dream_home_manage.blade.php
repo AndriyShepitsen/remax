@@ -37,6 +37,11 @@
 									<em> Garage: </em>{{$dreamhome->garage}} <br/>
 								</li>
 								<li>
+									<em> Comments: </em>{{$dreamhome->comments}} <br/>
+								</li>
+
+
+								<li>
 									<ul class="inline-list">
 										<li>
 								{{link_to_route('dream-home-request-edit', 
