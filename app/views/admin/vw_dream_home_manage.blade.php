@@ -50,7 +50,8 @@
 											'Edit', $dreamhome->id)}} 
 										</li>
 										<li>
-											{{link_to('dream-home-request-delete/'.$dreamhome->id, 'Delete')}}
+							    {{link_to_route('dream-home-request-delete', 
+							    'Delete', $dreamhome->id)}}
 										</li>
 									</ul>
 								</li>
