@@ -242,12 +242,18 @@ input[type="password"]{
 }
 
 /* =userPanel starts here */
+.updated{
+	padding: 7px !important;
+}
 .optionStyle{
 	font-size: 11px !important;
 	color: $colorFontGray !important;
 }
 .olDreamhomes{
 	margin-left: 20px !important;
+	.inline-list{
+		margin-bottom: 0px !important;
+	}
 }
 .requestButtons{
 	padding-left: 20px !important;

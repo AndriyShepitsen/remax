@@ -7,15 +7,22 @@
 		<div class="large-12 columns userPanel">
 			@include('partials._admin_panel_menu')
 
-			<h4>Manage Dreamhomes Request</h4>
-			<div class="row">
-				<div class="large-6 columns">
+			<h4 class="subheader">Manage Your Dreamhomes Requests</h4>
 
-				@if(isset($note))
-				<div class="success">
-				{{$note}}
+			<div class="row">
+				<div class="large-12 columns">
+					@if(isset($note))
+					<div class="label radius success updated">
+						{{$note}}
+					</div>
+					<hr/>
+					@endif
 				</div>
-				@endif
+
+			</div>
+			<br/>
+			<div class="row">
+				<div class="large-7 columns">
 
 					@if(isset($dreamhomes))
 					<ol class="olDreamhomes">
@@ -39,8 +46,8 @@
 								<li>
 									<ul class="inline-list">
 										<li>
-								{{link_to_route('dream-home-request-edit', 
-								'Edit', $dreamhome->id)}} 
+											{{link_to_route('dream-home-request-edit', 
+											'Edit', $dreamhome->id)}} 
 										</li>
 										<li>
 											{{link_to('dream-home-request-delete/'.$dreamhome->id, 'Delete')}}
