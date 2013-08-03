@@ -25,43 +25,45 @@
 				<div class="row">
 					<div class="large-7 columns">
 						
-						@if(isset($dreamhomes))
-						<ol class="olDreamhomes">
-							
-							@foreach($dreamhomes as $dreamhome)
-							<li>
-								<ul class="no-bullet panel radius">
-									<li>
-										<em> Location: </em>{{$dreamhome->location}} <br/>
-									</li>
-									<li>
-										<em> Property type: </em>{{$dreamhome->property_type}} <br/>
-									</li>
-									<li>
-										<em> Beds: </em>{{$dreamhome->beds}} <br/>
-									</li>
-									<em> Baths: </em>{{$dreamhome->baths}} <br/>
-									<li>
-										<em> Garage: </em>{{$dreamhome->garage}} <br/>
-									</li>
-									<li>
-										<ul class="inline-list">
-											<li>
-												{{link_to_route('dream-home-request-edit', 
-												'Edit', $dreamhome->id)}} 
-											</li>
-											<li>
-												{{link_to_route('dream-home-request-delete', 
-												'Delete', $dreamhome->id)}}
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							@endforeach
-						</ol>
-						@endif
-					</div>
+
+						@foreach($dreamhomes as $dreamhome)
+						<li>
+							<ul class="no-bullet panel radius">
+								<li>
+									<em> Location: </em>{{$dreamhome->location}} <br/>
+								</li>
+								<li>
+									<em> Property type: </em>{{$dreamhome->property_type}} <br/>
+								</li>
+								<li>
+									<em> Beds: </em>{{$dreamhome->beds}} <br/>
+								</li>
+								<em> Baths: </em>{{$dreamhome->baths}} <br/>
+								<li>
+									<em> Garage: </em>{{$dreamhome->garage}} <br/>
+								</li>
+								<li>
+									<em> Comments: </em>{{$dreamhome->comments}} <br/>
+								</li>
+
+
+								<li>
+									<ul class="inline-list">
+										<li>
+											{{link_to_route('dream-home-request-edit', 
+											'Edit', $dreamhome->id)}} 
+										</li>
+										<li>
+							    {{link_to_route('dream-home-request-delete', 
+							    'Delete', $dreamhome->id)}}
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						@endforeach
+					</ol>
+					@endif
 				</div>
 				
 			</div>

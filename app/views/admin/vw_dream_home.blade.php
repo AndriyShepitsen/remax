@@ -35,7 +35,7 @@
 							</div>
 							<div class="large-4 columns">
 								{{Form::label('baths', 'Bathrooms')}}
-								{{Form::text('baths', Input::get('baths'), array('placeholder'=>'#', 'class'=>'findinput'))}}
+								{{Form::text('baths', '', array('placeholder'=>'#', 'class'=>'findinput'))}}
 							</div>
 							<div class="large-4 columns">
 								{{Form::label('garage', 'Garage')}}
@@ -44,10 +44,11 @@
 							</div>
 
 						</div>
-						<div class="row textareaCommentsWrapper">
-							<div class="large-8 columns">
-								{{Form::label('location', 'Your Comments')}}
-								{{Form::textarea('location','', array('placeholder'=>'', 'class'=>'findInput'))}}
+
+						<div class="row">
+							<div class="large-12 columns">
+								{{Form::label('comments', 'Comments')}}
+								{{Form::textarea('comments','', array('placeholder'=>'Provide please any additional details for your request.', 'class'=>'findInput'))}}
 							</div>
 						</div>
 
