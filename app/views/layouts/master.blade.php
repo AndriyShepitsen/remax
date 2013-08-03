@@ -530,7 +530,6 @@
 --> 
 
 <div id="myModal" class="reveal-modal small myModal2 panel">
-  <a class="close-reveal-modal">&#215;</a>
   <div class="row">
     <div class="large-12 columns profileContent">
       <div class="navPanel">
@@ -568,6 +567,7 @@
   {{Form::close()}}
 </div>
 </div>
+  <a class="close-reveal-modal">&#215;</a>
 </div>
 <!-- =myModal ends here -->
 

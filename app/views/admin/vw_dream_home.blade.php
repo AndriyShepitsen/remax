@@ -45,8 +45,8 @@
 
 						</div>
 
-						<div class="row">
-							<div class="large-12 columns">
+						<div class="row textareaCommentsWrapper">
+							<div class="large-8 columns">
 								{{Form::label('comments', 'Comments')}}
 								{{Form::textarea('comments','', array('placeholder'=>'Provide please any additional details for your request.', 'class'=>'findInput'))}}
 							</div>
