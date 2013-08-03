@@ -10,10 +10,18 @@
 			<h4>Manage Dreamhomes Request</h4>
 			<div class="row">
 				<div class="large-6 columns">
+
+				@if(isset($note))
+				<div class="success">
+				{{$note}}
+				</div>
+				@endif
+
 					@if(isset($dreamhomes))
 					<ol class="olDreamhomes">
+						
+						@foreach($dreamhomes as $dreamhome)
 						<li>
-							@foreach($dreamhomes as $dreamhome)
 							<ul class="no-bullet panel radius">
 								<li>
 									<em> Location: </em>{{$dreamhome->location}} <br/>
@@ -31,7 +39,8 @@
 								<li>
 									<ul class="inline-list">
 										<li>
-											{{link_to('dream-home-request-edit/'.$dreamhome->id, 'Edit')}} 
+								{{link_to_route('dream-home-request-edit', 
+								'Edit', $dreamhome->id)}} 
 										</li>
 										<li>
 											{{link_to('dream-home-request-delete/'.$dreamhome->id, 'Delete')}}
@@ -40,11 +49,9 @@
 								</li>
 							</ul>
 						</li>
-						<li>
-							@endforeach
-						</li>
+						@endforeach
 					</ol>
-						@endif
+					@endif
 				</div>
 			</div>
 
