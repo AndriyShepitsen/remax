@@ -27,6 +27,7 @@
 								{{Form::label('property_type', 'Property Type')}}
 								{{Form::text('property_type','', array('placeholder'=>'', 'class'=>'findInput'))}}
 							</div>
+							
 							<div class="large-6 columns">
 								{{Form::label('garage', 'Garage')}}
 								{{Form::text('garage','', array('placeholder'=>'', 'class'=>'findInput'))}}
@@ -45,6 +46,13 @@
 							</div>
 
 						</div>
+						<div class="row">
+							<div class="large-12 columns">
+								{{Form::label('location', 'Comments')}}
+								{{Form::textarea('location','', array('placeholder'=>'', 'class'=>'findInput'))}}
+							</div>
+						</div>
+
 						<div class="row">
 							<div class="large-4 columns">
 
