@@ -48,10 +48,9 @@
 								{{Form::textarea('comments',$dreamhome->comments, array('placeholder'=>'Provide please any additional details for your request.', 'class'=>'findInput'))}}
 							</div>
 						</div>
+
 						<div class="row">
 							<div class="large-4 columns">
-
-
 								{{ Form::submit('Submit', array('class'=>'button small secondary radius submitSearch'))}}
 
 								<br/>

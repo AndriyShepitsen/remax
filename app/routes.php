@@ -31,8 +31,7 @@ Route::post('dream-home-request', array('as'=>'my-dream-home-request', 'uses'=>'
 
 Route::get('dream-home-request-edit/{id}', array('as'=>'dream-home-request-edit', 'uses'=>'DreamHomeController@edit'));
 Route::put('dream-home-request-update', array('as'=>'dream-home-request-update', 'uses'=>'DreamHomeController@update'));
-Route::delete('dream-home-request-delete/{id}', array('as'=>'dream-home-request-delete', 'uses'=>'DreamHomeController@destroy'));
-
+Route::delete('dreamhomes/{id}/delete', array('as'=>'dreamhomes.delete', 'uses'=>'DreamHomeController@destroy'));
 
 
 

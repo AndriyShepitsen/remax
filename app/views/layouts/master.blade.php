@@ -118,7 +118,7 @@
             </div>
           </div>
 
-         <!-- =logoWrapper -->
+          <!-- =logoWrapper -->
           <div class="logoWrapper">
             <div class="row">
               <div class="large-10 columns ">
@@ -567,7 +567,7 @@
   {{Form::close()}}
 </div>
 </div>
-  <a class="close-reveal-modal">&#215;</a>
+<a class="close-reveal-modal">&#215;</a>
 </div>
 <!-- =myModal ends here -->
 
@@ -584,7 +584,6 @@
 
 
 <div id="createAccount" class="reveal-modal small createAccount panel">
-  <a class="close-reveal-modal">&#215;</a>
   <div class="row">
     <div class="large-12 columns profileContent">
       <div class="navPanel">
@@ -670,6 +669,7 @@
   </div>
 </div>
 </div>
+<a class="close-reveal-modal">&#215;</a>
 </div>
 
 <!-- =create an account form ends here -->
@@ -683,7 +683,6 @@
 
 
                  <div id="adminAuth" class="reveal-modal small adminAuth2 createAccount panel">
-                  <a class="close-reveal-modal">&#215;</a>
                   <div class="row">
                     <div class="large-12 columns profileContent">
                       {{Form::open(array('url'=>'login'))}} 
@@ -725,6 +724,7 @@
                     {{Form::close()}} 
                   </div>
                 </div>
+                <a class="close-reveal-modal">&#215;</a>
               </div>
             </div>
 
@@ -740,7 +740,6 @@
 
                  <div id="{{$agent['id']}}" class="reveal-modal small adminAuth2 createAccount panel">
                    {{Form::open(array('url' => '#'))}}
-                   <a class="close-reveal-modal">&#215;</a>
                    <div class="row">
                     <div class="large-12 columns profileContent">
                       <div class="navPanel">
@@ -841,6 +840,7 @@
 
           </div>
         </div>
+        <a class="close-reveal-modal">&#215;</a>
       </div>
       @endforeach
       @endif

@@ -58,18 +58,15 @@ $myBorderGray: 1px solid darken(#F2F2F2, 5%)!important;
 	padding-left:10px;
 	padding-top:0px;
 	padding-bottom:0px;
-	
 }
 
 @mixin mainContentStyle{
-	// padding-top: 10px;
 	padding-bottom: 20px;
 }
 @mixin findFormStyle {
 	display: inline-block;
 	font-weight:bold;
 	color: $colorFontGray;
-	// border-color: darken(#FBFBFB, 10%) !importantr;
 }
 
 @mixin slashBefore{
@@ -143,11 +140,17 @@ h5{
 .noMargin{
 	margin: 0px !important;
 }
+.noPadding{
+	padding: 0px !important;
+}
+.fivePadding{
+	padding: 5px !important;
+}
 /* =accountPanel starts here */
 .panel{
 
-		border-color: darken(#FBFBFB, 10%) !important;
-		background-color: lighten(#F2F2F2, 2%) !important;
+	border-color: darken(#FBFBFB, 10%) !important;
+	background-color: lighten(#F2F2F2, 2%) !important;
 }
 
 input[type="password"]{
@@ -196,7 +199,6 @@ input[type="password"]{
 }
 .liCreateAccount{
 	a{
-
 		font-size: 12px !important;
 		color: $colorFontOffWhite !important;
 		&:hover{
@@ -242,6 +244,7 @@ input[type="password"]{
 }
 
 /* =userPanel starts here */
+
 .updated{
 	padding: 7px !important;
 }
@@ -264,394 +267,422 @@ input[type="password"]{
 	.panel{
 		background-color: #FBFBFB !important;
 		border-color: darken(#FBFBFB, 10%) !important;
-		padding: 15px !important;
-		margin-bottom: 15px !important;
+		padding-right: 15px !important;
+		padding-left: 15px !important;
+		padding-top: 15px !important;
+		padding-bottom: 0px !important;
+		margin-bottom: 25px !important; }
 	}
-}
-.userPanelContent{
+	.userPanelContent{
 
-}
-.userImgL{
-	padding: 0px !important;
-}
-.ulUserPanel{
-	margin-bottom: 0px !important;
-	li a{
-		font-size: 11px !important;
-		font-weight: bold !important;
 	}
-}
-.aUserPanelStyle{
-	color: #FFFFFF !important;
-	&:hover{
-		color: #FFFFFF !important;
+	.userImgL{
+		padding: 0px !important;
 	}
-}
-.aEditProfileStyle{
-	color: $colorFontGray !important;
-	
-}
-/* .editProfile{
-	background-color: $colorBlue !important;
-}
-*/
-.leaveRequest{
-	background-color: lighten($colorBlue, 15%)!important;
-	border-color: lighten($colorBlue, 15%)!important;
-
-	&:hover{
-		background-color: lighten($colorBlue, 5%)!important;
-	}
-}
-.manageRequest{
-	background-color: lighten($colorBlue, 15%)!important;
-	border-color: lighten($colorBlue, 15%)!important;
-
-	&:hover{
-		background-color: lighten($colorBlue, 5%)!important;
-	}
-
-}
-/* =navPanel starts here */
-
-.panel h5{
-	margin-bottom: 5px !important;
-}
-
-.about-us{
-
-	p{
-		font-size:14px !important;
-		line-height: 22px !important;
-	}
-}
-.companyName{
-	font-size: 17px !important;
-}
-.name{
-	h1{
-
-		font-size: 17px !important;
-	}
-	a{
-		color: $colorFontOffWhite; 
-		&:hover{
-			color: lighten($colorBlue, 30%);
+	.ulUserPanel{
+		margin-bottom: 0px !important;
+		li a{
+			font-size: 11px !important;
+			font-weight: bold !important;
 		}
 	}
-}
-.navPanel{
-	background-color: $colorNavPanel;
-	
-}
-.top-bar{
-	margin-bottom: 0 !important;
-	background-color: $colorNavPanel !important;
-}
-.top-bar-section ul li > a {
-	background-color: $colorNavPanel !important;
-	font-size: 12px !important;
-	letter-spacing: 1px !important;
-	color: $colorFontOffWhite; 
-	&:hover{
-		color: lighten($colorNavPanel, 45%);
+	.aUserPanelStyle{
+		color: #FFFFFF !important;
+		&:hover{
+			color: #FFFFFF !important;
+		}
 	}
-}
-.toggle-topbar, .top-bar.expanded .title-area{
-	background-color: $colorNavPanel !important;
-}
-.logoWrapper{
-	@include logoWrapperStyle;
+	.aEditProfileStyle{
+		color: $colorFontGray !important;
 
-	.callUs{
-		color: $colorRed;
-		text-shadow: $colorFontOffWhite 1px 1px 0px;
-		font-size: 20px;
-		font-weight: bold;
-		display: inline-block;
 	}
-	.callUsContent{
-		margin-top: 10px !important;
+	.requestResultButtons{
+		margin-left: 10px !important;
+	}
+	.editRequestButton{
+		padding: 7px !important;
+		.tiny{
+			font-size:12px !important;
+			letter-spacing: 1px !important;
+		}
+	}
+
+	.submitDeleteButton{
+		.button{
+
+			.tiny{
+
+				font-size:12px !important;
+				letter-spacing: 1px !important;
+			}
+		}
+	}
+
+	.leaveRequest{
+		background-color: lighten($colorBlue, 15%)!important;
+		border-color: lighten($colorBlue, 15%)!important;
+
+		&:hover{
+			background-color: lighten($colorBlue, 5%)!important;
+		}
+	}
+	.manageRequest{
+		background-color: lighten($colorBlue, 15%)!important;
+		border-color: lighten($colorBlue, 15%)!important;
+
+		&:hover{
+			background-color: lighten($colorBlue, 5%)!important;
+		}
+
+	}
+	.editButtonWrapper{
+		padding-left: 5px !important;
+		padding-right: 5px !important;
+	}
+	.deleteButtonWrapper{
+		padding-left: 5px !important;
+		padding-right: 5px !important;
+	}
+	/* =navPanel starts here */
+
+	.panel h5{
+		margin-bottom: 5px !important;
+	}
+
+	.about-us{
+
+		p{
+			font-size:14px !important;
+			line-height: 22px !important;
+		}
+	}
+	.companyName{
+		font-size: 17px !important;
+	}
+	.name{
+		h1{
+
+			font-size: 17px !important;
+		}
+		a{
+			color: $colorFontOffWhite; 
+			&:hover{
+				color: lighten($colorBlue, 30%);
+			}
+		}
+	}
+	.navPanel{
+		background-color: $colorNavPanel;
+
+	}
+	.top-bar{
+		margin-bottom: 0 !important;
+		background-color: $colorNavPanel !important;
+	}
+	.top-bar-section ul li > a {
+		background-color: $colorNavPanel !important;
+		font-size: 12px !important;
+		letter-spacing: 1px !important;
+		color: $colorFontOffWhite; 
+		&:hover{
+			color: lighten($colorNavPanel, 45%);
+		}
+	}
+	.toggle-topbar, .top-bar.expanded .title-area{
+		background-color: $colorNavPanel !important;
+	}
+	.logoWrapper{
+		@include logoWrapperStyle;
+
+		.callUs{
+			color: $colorRed;
+			text-shadow: $colorFontOffWhite 1px 1px 0px;
+			font-size: 20px;
+			font-weight: bold;
+			display: inline-block;
+		}
+		.callUsContent{
+			margin-top: 10px !important;
+			text-align: right;
+			padding:0px;
+		}
+
+		.contactTextStyle{
+			font-size: 10px;
+			font-weight: bold;
+			margin-top: 5px;
+			color: $colorFontGray;
+			display: inline-block;
+		}
+
+		.HeaderWrapper{
+			padding-right: 0px !important;
+		}
+		.connectWithContent{
+			margin-bottom: 10px;
+			padding: 0px !important;
+		}
+		.residentialCommercialContent{
+			padding: 0px !important;
+
+		}
+		.realEstateRC{
+			font-family: 'Roboto Slab', serif;
+			color: $colorGray;
+			font-size: .6em;
+			margin-top: 1px;
+			text-shadow: $myTextShadow;
+			margin-left: -50px;
+			letter-spacing:1px;
+		}
+		.logoContent{
+			padding: 0px !important;
+			width: 120px !important;
+		}
+	}
+
+	.sloganText{
+		p{
+			font-family: 'Noto Serif', ​serif;
+			font-size: 17px;
+			margin-bottom: 0px !important;
+			color: $colorBlue;
+			font-weight: bold;
+			text-shadow: $myTextShadow;
+			letter-spacing: 1px;
+			line-height: 30px;
+		}	
+		padding: 0px !important;
+		margin-top: 15px;
+
+	}
+	.sloganTop{
+		margin-left: 15px;
+	}
+	.oneStopService{
+		text-align: center;
+		margin-left: -30px;
+	}	
+
+	.oneStopText{
+		color: $colorFontOffWhite;
+		font-size:14px;
+		line-height: 20px;
+		font-weight: bold;
+		text-align: center;
+		margin-top: -65px;
+	}
+
+	.customerTips{
+		padding: 0px !important;
+		width: 260px;
+		margin-top: -70px;
+		margin-right: -100px;
+		font-weight: bold;
+		color: $colorFontGray;
+		text-shadow: $myTextShadow;
+
+	}
+	.ulCustomerTips{
+		font-size: 13px !important;
+		line-height: 20px;
+	}
+
+	.buyOrSell{
+		margin-left: -20px;
+	}
+	.invOpportunity{
+		@extend .buyOrSell;
+	}
+
+	/*  =call us style starts here*/
+
+
+	.iconMailHome{
+		margin-top: 35px;
 		text-align: right;
+		margin-bottom: -5px;
 		padding:0px;
 	}
-
-	.contactTextStyle{
-		font-size: 10px;
-		font-weight: bold;
-		margin-top: 5px;
-		color: $colorFontGray;
-		display: inline-block;
+	.mailIcon{
+		@include mailIconStyle;
 	}
 
-	.HeaderWrapper{
-		padding-right: 0px !important;
+	.homeIcon{
+		@extend .mailIcon;
 	}
-	.connectWithContent{
-		margin-bottom: 10px;
-		padding: 0px !important;
+
+
+	/* =mainContent starts here */
+	.mainContent{
+		@include mainContentStyle;
+
+		dt{
+			font-size: 14px !important;
+		}
+		dd{
+			font-size: 14px !important;
+		}
+
+
 	}
-	.residentialCommercialContent{
-		padding: 0px !important;
-
-	}
-	.realEstateRC{
-		font-family: 'Roboto Slab', serif;
-		color: $colorGray;
-		font-size: .6em;
-		margin-top: 1px;
-		text-shadow: $myTextShadow;
-		margin-left: -50px;
-		letter-spacing:1px;
-	}
-	.logoContent{
-		padding: 0px !important;
-		width: 120px !important;
-	}
-}
-
-.sloganText{
-	p{
-		font-family: 'Noto Serif', ​serif;
-		font-size: 17px;
-		margin-bottom: 0px !important;
-		color: $colorBlue;
-		font-weight: bold;
-		text-shadow: $myTextShadow;
-		letter-spacing: 1px;
-		line-height: 30px;
-	}	
-	padding: 0px !important;
-	margin-top: 15px;
-	
-}
-.sloganTop{
-	margin-left: 15px;
-}
-.oneStopService{
-	text-align: center;
-	margin-left: -30px;
-}	
-
-.oneStopText{
-	color: $colorFontOffWhite;
-	font-size:14px;
-	line-height: 20px;
-	font-weight: bold;
-	text-align: center;
-	margin-top: -65px;
-}
-
-.customerTips{
-	padding: 0px !important;
-	width: 260px;
-	margin-top: -70px;
-	margin-right: -100px;
-	font-weight: bold;
-	color: $colorFontGray;
-	text-shadow: $myTextShadow;
-	
-}
-.ulCustomerTips{
-	font-size: 13px !important;
-	line-height: 20px;
-}
-
-.buyOrSell{
-	margin-left: -20px;
-}
-.invOpportunity{
-	@extend .buyOrSell;
-}
-
-/*  =call us style starts here*/
-
-
-.iconMailHome{
-	margin-top: 35px;
-	text-align: right;
-	margin-bottom: -5px;
-	padding:0px;
-}
-.mailIcon{
-	@include mailIconStyle;
-}
-
-.homeIcon{
-	@extend .mailIcon;
-}
-
-
-/* =mainContent starts here */
-.mainContent{
-	@include mainContentStyle;
-	
-	dt{
-		font-size: 14px !important;
-	}
-	dd{
-		font-size: 14px !important;
-	}
-	
-
-}
-.menues{
-	p{
-		font-size: 14px !important;
-	}
-}
-/*  =home page starts here*/
-.selectedProperty{
-	letter-spacing: 1px;
-	margin-bottom: 10px !important;
-	text-shadow: $myTextShadow2;
-}
-.ulWorkWith{
-	li{
-		font-size: 14px !important;
-		margin-left: 20px;
+	.menues{
 		p{
-			line-height: 22px !important;
 			font-size: 14px !important;
 		}
 	}
-}
+	/*  =home page starts here*/
+	.selectedProperty{
+		letter-spacing: 1px;
+		margin-bottom: 10px !important;
+		text-shadow: $myTextShadow2;
+	}
+	.ulWorkWith{
+		li{
+			font-size: 14px !important;
+			margin-left: 20px;
+			p{
+				line-height: 22px !important;
+				font-size: 14px !important;
+			}
+		}
+	}
 
-/* =find starts here */
-.oneRentDescriptionUl{
-	font-size:12px !important;
-	p{
-		
+	/* =find starts here */
+	.oneRentDescriptionUl{
 		font-size:12px !important;
+		p{
+
+			font-size:12px !important;
+		}
 	}
-}
 
-.submitSearch{
-	font-size: 11px !important;
-	letter-spacing: 1px;
-	text-shadow: $myTextShadow;
-}
-.sectionWidth{
-	font-size: 12px !important;
-	font-weight: bold;
-	padding-left: 14px !important;
-	text-shadow: $myTextShadow;
+	.submitSearch{
+		font-size: 11px !important;
+		letter-spacing: 1px;
+		text-shadow: $myTextShadow;
+	}
+	.sectionWidth{
+		font-size: 12px !important;
+		font-weight: bold;
+		padding-left: 14px !important;
+		text-shadow: $myTextShadow;
 
-}
-.find{
-	@include findFormStyle;
-}
-.findInput{
-	margin-bottom: 15px !important;
-}
-label{
-	margin-bottom: .5em;
-	font-size: 12px !important;
-}
-.propertiesAllert{
-	text-align: center;
-	color: $colorNavPanel;
-	font-size: 11px !important; 
-	letter-spacing: 1px;
-}
-.propertiesAllert:hover, .propertiesAllert:active{
-	color: lighten($colorNavPanel, 25%);
-}
-.priceStyle{
-	color: $colorFontGray !important;
-	font-weight: bold !important;
-	background-color:  lighten(#F2F2F2, 1%)!important;
-	border: 1px solid darken(#F2F2F2, 5%)!important;
-	padding-right: 15px !important;
-	padding-left: 15px !important;
-	padding-top: 5px !important;
-	padding-bottom: 5px !important;
-	margin-bottom: 0px !important;
-	font-size: 14px;
-}
-.alertRentalStyle{
-	font-size: 14px;
-	color: $colorBlue !important;
-	display: inline-block !important;
-	font-weight: bold !important;
-	background-color:  lighten(#F2F2F2, 1%)!important;
-	border: 1px solid lighten($colorRed, 35%)!important;
-	padding-right: 15px !important;
-	padding-left: 15px !important;
-	padding-top: 5px !important;
-	padding-bottom: 5px !important;
+	}
+	.find{
+		@include findFormStyle;
+	}
+	.findInput{
+		margin-bottom: 15px !important;
+	}
+	label{
+		margin-bottom: .5em;
+		font-size: 12px !important;
+	}
+	.propertiesAllert{
+		text-align: center;
+		color: $colorNavPanel;
+		font-size: 11px !important; 
+		letter-spacing: 1px;
+	}
+	.propertiesAllert:hover, .propertiesAllert:active{
+		color: lighten($colorNavPanel, 25%);
+	}
+	.priceStyle{
+		color: $colorFontGray !important;
+		font-weight: bold !important;
+		background-color:  lighten(#F2F2F2, 1%)!important;
+		border: 1px solid darken(#F2F2F2, 5%)!important;
+		padding-right: 15px !important;
+		padding-left: 15px !important;
+		padding-top: 5px !important;
+		padding-bottom: 5px !important;
+		margin-bottom: 0px !important;
+		font-size: 14px;
+	}
+	.alertRentalStyle{
+		font-size: 14px;
+		color: $colorBlue !important;
+		display: inline-block !important;
+		font-weight: bold !important;
+		background-color:  lighten(#F2F2F2, 1%)!important;
+		border: 1px solid lighten($colorRed, 35%)!important;
+		padding-right: 15px !important;
+		padding-left: 15px !important;
+		padding-top: 5px !important;
+		padding-bottom: 5px !important;
 
-}
-.ulRent{
-	line-height: 14px !important;
-	a{
+	}
+	.ulRent{
 		line-height: 14px !important;
+		a{
+			line-height: 14px !important;
+		}
 	}
-}
-.basicInfoWrapper{
-	padding-left: 0px;
-	padding-right: 0px;
-}
-.basicInfo{
-	padding-top: 5px !important;
-	padding-bottom: 5px !important;
-	font-size: 12px !important;
-	border: 1px groove $colorFontOffWhite !important;
-	
-	background-color:  darken(#F2F2F2, 2%)!important;
-	margin-top: 10px !important;
-	text-shadow: $myTextShadow !important;
-}
-.basicInfoUl{
-	padding-left: 0px !important;
-}
-.propDetails{
-	font-size: 10px;
-	letter-spacing: 1px;
-	color: 	$colorBlue !important;
-	text-shadow: $myTextShadow !important;
+	.basicInfoWrapper{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.basicInfo{
+		padding-top: 5px !important;
+		padding-bottom: 5px !important;
+		font-size: 12px !important;
+		border: 1px groove $colorFontOffWhite !important;
 
-}
-
-.agentNameList{
-	color: 	$colorBlue !important;
-	font-size: 11px;
-	text-shadow: $myTextShadow !important;
-	font-weight: bold !important;
-	&:hover{
-		color: lighten($colorBlue, 15%) !important;
+		background-color:  darken(#F2F2F2, 2%)!important;
+		margin-top: 10px !important;
+		text-shadow: $myTextShadow !important;
+	}
+	.basicInfoUl{
+		padding-left: 0px !important;
+	}
+	.propDetails{
+		font-size: 10px;
+		letter-spacing: 1px;
+		color: 	$colorBlue !important;
+		text-shadow: $myTextShadow !important;
 
 	}
-}
-.agentPhoneList{
-	font-size: 11px;
-	text-shadow: $myTextShadow !important;
-	font-weight: bold !important;
-}
 
-.oneRentVcard{
-	padding: 0px !important;
-}
-.agentPic{
-	margin-bottom: 5px !important;
-}
-.propDetails:hover{
-	color: 	lighten($colorBlue, 10%)!important;
-	text-decoration: underline !important;
+	.agentNameList{
+		color: 	$colorBlue !important;
+		font-size: 11px;
+		text-shadow: $myTextShadow !important;
+		font-weight: bold !important;
+		&:hover{
+			color: lighten($colorBlue, 15%) !important;
 
-}
-.details{
-	margin-top: 5px !important;
-	display: inline-block !important;
-	font-size: 10px !important;
-}
-.callAgent{
-	font-size: 10px !important;
-	border: 0px !important;	
-	background-color:  lighten(#F2F2F2, 3%)!important;
-	border: 1px solid darken(#F2F2F2, 5%)!important;
-	padding-top: 5px !important;
-	padding-bottom: 5px !important;
+		}
+	}
+	.agentPhoneList{
+		font-size: 11px;
+		text-shadow: $myTextShadow !important;
+		font-weight: bold !important;
+	}
+
+	.oneRentVcard{
+		padding: 0px !important;
+	}
+	.agentPic{
+		margin-bottom: 5px !important;
+	}
+	.propDetails:hover{
+		color: 	lighten($colorBlue, 10%)!important;
+		text-decoration: underline !important;
+
+	}
+	.details{
+		margin-top: 5px !important;
+		display: inline-block !important;
+		font-size: 10px !important;
+	}
+	.callAgent{
+		font-size: 10px !important;
+		border: 0px !important;	
+		background-color:  lighten(#F2F2F2, 3%)!important;
+		border: 1px solid darken(#F2F2F2, 5%)!important;
+		padding-top: 5px !important;
+		padding-bottom: 5px !important;
 	// margin-top: 10px !important;
 	margin-bottom: 0px !important;
 	a:hover{
@@ -1160,7 +1191,7 @@ textarea{
 }
 .textareaCommentsWrapper{
 	textarea{
-	height: 200px !important;
+		height: 200px !important;
 	}
 }
 
