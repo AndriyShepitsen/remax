@@ -9,7 +9,23 @@ class SearchController extends BaseController {
      *
      * @return Response
      */
-  
+ public function alert_signup($house_id)
+  {
+      $user_id  = Auth::user()->id;
+      $user  = User::find($user_id);
+      $user->houses()->attach($house_id);
+
+      return Redirect::route('saved-homes');
+  }
+
+  public function alert_signup_remove($house_id)
+  {
+      $user_id  = Auth::user()->id;
+      $user  = User::find($user_id);
+      $user->houses()->detach($house_id);
+
+      return Redirect::route('saved-homes');
+  }  
 
      public function index()
     {

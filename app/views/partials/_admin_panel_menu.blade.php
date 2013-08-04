@@ -22,7 +22,7 @@
 					{{link_to('dream-home-request-management', 'Manage My Previous Request', array('class'=>'aUserPanelStyle'))}} 
 				</li>
 				<li class="manageRequest button tiny">	
-					{{link_to('dream-home-request-management', 'My Saved Homes', array('class'=>'aUserPanelStyle'))}} 
+					{{link_to('saved-homes', 'My Saved Homes', array('class'=>'aUserPanelStyle'))}} 
 				</li>
 			</ul>
 		</div>

@@ -6,6 +6,11 @@ class House extends Eloquent {
 
     public static $rules = array();
 
+    public function users()
+    {
+    	return $this->belongsToMany('User');
+    }
+
 public function images()
 {
 return $this->hasOne('Image');

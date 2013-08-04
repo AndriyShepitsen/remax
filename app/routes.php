@@ -17,11 +17,16 @@
 //	return View::make('hello');
 //});
 /* = Admin Panel */
+
+
+
 Route::post('login', array('uses'=>'LoginController@index'));
 Route::get('logout', array('as'=>'logout', 'uses'=>'LoginController@logout'));
 Route::get('login-attempt', array('as'=>'login-errors', 'uses'=>'LoginController@fail'));
 
 Route::get('panel', array('as'=>'panel', 'uses'=>'PanelController@index'));
+Route::get('saved-homes', array('as'=>'saved-homes', 'uses'=>'PanelController@saved_homes'));
+
 Route::get('user-edit/{id}', array('as'=>'user-edit', 'uses'=>'UserController@edit'));
 Route::put('user-update', array('as'=>'user-update', 'uses'=>'UserController@update'));
 
@@ -33,6 +38,8 @@ Route::get('dream-home-request-edit/{id}', array('as'=>'dream-home-request-edit'
 Route::put('dream-home-request-update', array('as'=>'dream-home-request-update', 'uses'=>'DreamHomeController@update'));
 Route::delete('dreamhomes/{id}/delete', array('as'=>'dreamhomes.delete', 'uses'=>'DreamHomeController@destroy'));
 
+Route::post('house-alert/{house_id}', array('as'=>'house-alert', 'uses'=>'SearchController@alert_signup'));
+Route::post('house-alert-remove/{house_id}', array('as'=>'house-alert-remove', 'uses'=>'SearchController@alert_signup_remove'));
 
 
 Route::post('sign-up', array('uses'=>'LoginController@signup'));

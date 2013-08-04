@@ -64,12 +64,13 @@
 
 				<strong>Year:</strong> {{$house->year}} <br/><br/>
 
-			<!-- 	@if($house->agent)
-				<strong>Listing Agent:</strong>
-				  <a class="agentLink" data-reveal-id="{{$house->agent['id']}}" href="#">
-                  {{$house->agent['firstname']}}  {{$house->agent['lastname']}}
-                  </a> <br/><br/>
-				@endif -->
+			@if(Auth::check())
+						{{Form::open(array('url' => 'house-alert/'.$house->id, 'method'=>'POST'))}}
+{{ Form::submit('Receive Price Change Alerts for this Property', array('class'=>'button small secondary radius'))}}
+						{{Form::close()}}
+					@else
+				<div>Please sign-in to receive price change alerts for this Property</div>
+					@endif
 
 				@if($imCounter)
 				<ul class="clearing-thumbs" data-clearing>

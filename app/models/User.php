@@ -5,6 +5,11 @@ use Illuminate\Auth\Reminders\RemindableInterface;
 
 class User extends BaseModel implements UserInterface, RemindableInterface {
 
+	public function houses()
+	{
+		return $this->belongsToMany('House');
+	}
+
 
 	public static $rules = array(
 	'first_name'=>'required|min:2',

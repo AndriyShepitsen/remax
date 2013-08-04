@@ -1,16 +1,17 @@
 @extends('layouts.master')
 @section('content')
-
-<!-- //LOCATION: remax/public/search 
+<!-- 
+//LOCATION: remax/public 
 -->
 <div class="mainContent">
-	@if(count($houses)>0)
-	<ul class="no-bullet">
-		@foreach ($houses as $house)
-		<li>
+	<div class="row">
+		<div class="large-12 columns userPanel">
+			@include('partials._admin_panel_menu')
+			<div class="userPanelContent">
+				<h2>Saved Homes</h2>
+				@foreach($user->houses as $house)
 
-			<a href="{{url('search/'.$house->id)}}">
-			<!-- =addressColor starts here -->
+				<!-- =addressColor starts here -->
 				<div class="panel addressColor">
 					<div class="row listPropWrap">
 						<div class="large-10 columns">
@@ -61,46 +62,29 @@
 									</div>
 									<!-- =searchDescription ends here -->
 								</li>
-								@if($house->agent)
-
-								<!-- =callAgent starts here -->
-								<div class="locality right alert-box secondary radius callAgent">
-									<a class="th radius aCallAgent" data-reveal-id="{{$house->agent['id']}}" href="#">Listing Agent:
-										<span class="agentNameList" >{{$house->agent['firstname'] . ' '. $house->agent['lastname']}}</span >
-										</a>
-										<br/>
-										<span class="agentPhoneList">Direct Phone: <strong>{{$house->agent['directphone']}}</strong></span>
-									</div>
-									<!-- =callAgent ends here -->
-									@endif
-								</ul>
-							</div>
-							<!-- =basicInfoWrapper ends here -->
+							</ul>
 						</div>
-						@if(Auth::check())
-						{{Form::open(array('url' => 'house-alert/'.$house->id, 'method'=>'POST'))}}
-{{ Form::submit('Receive Price Change Alerts for this Property', array('class'=>'button small secondary radius'))}}
+					</div>
+					@if(Auth::check())
+						{{Form::open(array('url' => 'house-alert-remove/'.$house->id, 'method'=>'POST'))}}
+{{ Form::submit('Stop Receiving Price Change Alerts for this Property', array('class'=>'button small secondary radius'))}}
 						{{Form::close()}}
 					@else
-				<div>Please sign-in to receive price change alerts for this Property</div>
+				<div>Please sign-in to stop receiving price change alerts for this Property</div>
 					@endif
 
-					</div>
-					<!-- =panel addressColor ends here -->
-				</a>
 
-			</li>
-			@endforeach
-		</ul>
+				</div>
 
-		<?php echo $houses->appends(array(
-			'location' => Input::get('location'),
-			'from' => Input::get('from'),
-			'to' => Input::get('to'),
-			'beds' => Input::get('beds'),
-			'baths' => Input::get('baths')))->links(); ?>
-			@else
-			No result found for your request.
-			@endif
+
+
+
+
+				@endforeach
+
+			</div>
+
 		</div>
-		@stop
+	</div>
+</div>
+@stop
