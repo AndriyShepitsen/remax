@@ -8,7 +8,9 @@
 		<div class="large-12 columns userPanel">
 			@include('partials._admin_panel_menu')
 			<div class="userPanelContent">
-				<h2>Saved Homes</h2>
+				<h2 class="subheader">Saved Homes</h2>
+				<hr/>
+				<br/>
 				@foreach($user->houses as $house)
 
 				<!-- =addressColor starts here -->
@@ -43,7 +45,22 @@
 							<ul class="no-bullet listingImage">
 								<li><a href="{{url('search/'.$house->id)}}"><img src="{{url('comp/img/thumbs/'.$house->id.'/1.jpg')}}"  class="th"></a> </li>
 							</ul>
+
 							@endif
+							<div class="row">
+								<div class="large-12 large-centered columns deletePropertyButtonWrapper">
+									@if(Auth::check())
+									{{Form::open(array('url' => 'house-alert-remove/'.$house->id, 'method'=>'POST'))}}
+									{{ Form::submit('Delete this Property from My Account', array('class'=>'button tiny secondary radius deletePropertyButton'))}}
+									{{Form::close()}}
+									@else
+									<div>Please sign-in to stop receiving price change alerts for this Property
+									</div>
+									@endif
+
+
+								</div>
+							</div>
 						</div>
 						<!-- =houseImgWrapper ends here -->
 
@@ -62,29 +79,33 @@
 									</div>
 									<!-- =searchDescription ends here -->
 								</li>
-							</ul>
-						</div>
-					</div>
-					@if(Auth::check())
-						{{Form::open(array('url' => 'house-alert-remove/'.$house->id, 'method'=>'POST'))}}
-{{ Form::submit('Stop Receiving Price Change Alerts for this Property', array('class'=>'button small secondary radius'))}}
-						{{Form::close()}}
-					@else
-				<div>Please sign-in to stop receiving price change alerts for this Property</div>
-					@endif
+								@if($house->agent)
 
+								<!-- =callAgent starts here -->
+								<div class="locality right alert-box secondary radius callAgent">
+									<a class="th radius aCallAgent" data-reveal-id="{{$house->agent['id']}}" href="#">Listing Agent:
+										<span class="agentNameList" >{{$house->agent['firstname'] . ' '. $house->agent['lastname']}}</span >
+										</a>
+										<br/>
+										<span class="agentPhoneList">Direct Phone: <strong>{{$house->agent['directphone']}}</strong></span>
+									</div>
+									<!-- =callAgent ends here -->
+									@endif
+								</ul>
+							</div>
+						</div>
+
+					</div>
+
+
+
+
+
+					@endforeach
 
 				</div>
 
-
-
-
-
-				@endforeach
-
 			</div>
-
 		</div>
 	</div>
-</div>
-@stop
+	@stop

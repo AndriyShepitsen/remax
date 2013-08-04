@@ -10,7 +10,7 @@
 		<li>
 
 			<a href="{{url('search/'.$house->id)}}">
-			<!-- =addressColor starts here -->
+				<!-- =addressColor starts here -->
 				<div class="panel addressColor">
 					<div class="row listPropWrap">
 						<div class="large-10 columns">
@@ -43,6 +43,19 @@
 								<li><a href="{{url('search/'.$house->id)}}"><img src="{{url('comp/img/thumbs/'.$house->id.'/1.jpg')}}"  class="th"></a> </li>
 							</ul>
 							@endif
+							<div class="row">
+								<div class="large-12 large-centered columns receivePriceChangeButtonWrapper">
+									@if(Auth::check())
+									{{Form::open(array('url' => 'house-alert/'.$house->id, 'method'=>'POST'))}}
+									{{ Form::submit('Save this Property to My Account', array('class'=>'button tiny secondary radius addPropertyButton'))}}
+									{{Form::close()}}
+									@else
+									<div>Please sign-in to receive price change alerts for this Property
+									</div>
+									@endif
+								</div>
+							</div>
+
 						</div>
 						<!-- =houseImgWrapper ends here -->
 
@@ -77,13 +90,7 @@
 							</div>
 							<!-- =basicInfoWrapper ends here -->
 						</div>
-						@if(Auth::check())
-						{{Form::open(array('url' => 'house-alert/'.$house->id, 'method'=>'POST'))}}
-{{ Form::submit('Receive Price Change Alerts for this Property', array('class'=>'button small secondary radius'))}}
-						{{Form::close()}}
-					@else
-				<div>Please sign-in to receive price change alerts for this Property</div>
-					@endif
+
 
 					</div>
 					<!-- =panel addressColor ends here -->
