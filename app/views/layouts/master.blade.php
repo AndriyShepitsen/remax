@@ -56,7 +56,7 @@
 
     <div class="navPanel">
       <div class="row">
-        <div class="large-12 columns">
+      <div class="large-12 columns noPadding">
 
           <nav class="top-bar">
             <ul class="title-area">
@@ -139,8 +139,8 @@
                      <div class="large-6 columns  sloganText">
                       <p class="sloganTop">YOU NEED ONLY ONE COMPANY </p> <p> FOR ALL YOUR REAL ESTATE NEEDS</p>
                     </div>
-                    <div class="large-6 columns">
-                      <img src="{{url('comp/img/one_stop_service/One-Stop-Service-Text.png')}}" alt="RE/MAX FIRST CLASS One Stop Service">
+                    <div class="large-6 columns oneStopService">
+                      <img class="left" src="{{url('comp/img/one_stop_service/One-Stop-Service-Text.png')}}" alt="RE/MAX FIRST CLASS One Stop Service">
 
                     </div>
 
@@ -149,31 +149,34 @@
               </div>
             </div>
 
-            <aside class="large-2 columns logoDiv">
-             <div class="row">
-              <div class="large-12 columns right connectWithContent">
+            <aside class="large-2 left columns logoDiv">
+             <div class="row left">
+              <div class="large-12 columns left connectWithContent">
 
-                <div class="right">
-                  <!-- <span class="contactTextStyle">CONNECT WITH US:</span> -->
+                <!-- <span class="contactTextStyle">CONNECT WITH US:</span> -->
 
-                  <a target="_blank" class="has-tip-left" title="Our Facebook Page" href="https://www.facebook.com/pages/Remax-1st-CLASS/177448822432081"><img src="{{url('comp/img/social_header/facebook.png')}}" alt="Skokie Remax First Class Facebook Icon"><a/>
-                    <a target="_blank" class="has-tip-left" title="Our Twitter Page" href="https://twitter.com/RemaxFirstClass"><img src="{{url('comp/img/social_header/twitter.png')}}" alt="Skokie Remax First Class Twitter Profile"><a/>
-                      <a target="_blank" class="has-tip-left" title="Our Linkedin Page" href="http://www.linkedin.com/profile/view?id=271875691&trk=nav_responsive_tab_profile"><img src="{{url('comp/img/social_header/linkedin.png')}}" alt="Skokie Remax First Class Linkedin Profile"><a/>
-                        <a target="_blank" class="has-tip-left" title="Our Google Plus Page" href="https://plus.google.com"><img src="{{url('comp/img/social_header/google.png')}}" alt="Skokie Remax First Class Google Profile"><a/>
-                          <a target="_blank" class="has-tip-left" title="Our Yelp Page" href="http://www.yelp.com/biz/remax-first-class-skokie"><img src="{{url('comp/img/social_header/yelp.png')}}" alt="Skokie Remax First Class Feed Profile"><a/>
-                            <a target="_blank" class="has-tip-left" title="Our Page" href="https://www.youtube.com/"><img src="{{url('comp/img/social_header/you_tube.png')}}" alt="Skokie Remax First Class Youtube Profile"><a/>
-                            </div>
+                <a target="_blank" class="has-tip-left" title="Our Facebook Page" href="https://www.facebook.com/pages/Remax-1st-CLASS/177448822432081"><img src="{{url('comp/img/social_header/facebook.png')}}" alt="Skokie Remax First Class Facebook Icon"><a/>
+                  <a target="_blank" class="has-tip-left" title="Our Twitter Page" href="https://twitter.com/RemaxFirstClass"><img src="{{url('comp/img/social_header/twitter.png')}}" alt="Skokie Remax First Class Twitter Profile">
+                    <a/>
+                    <a target="_blank" class="has-tip-left" title="Our Linkedin Page" href="http://www.linkedin.com/profile/view?id=271875691&trk=nav_responsive_tab_profile"><img src="{{url('comp/img/social_header/linkedin.png')}}" alt="Skokie Remax First Class Linkedin Profile">
+                      <a/>
+
+                      <a target="_blank" class="has-tip-left" title="Our Google Plus Page" href="https://plus.google.com"><img src="{{url('comp/img/social_header/google.png')}}" alt="Skokie Remax First Class Google Profile">
+                        <a/>
+                        <a target="_blank" class="has-tip-left" title="Our Yelp Page" href="http://www.yelp.com/biz/remax-first-class-skokie"><img src="{{url('comp/img/social_header/yelp.png')}}" alt="Skokie Remax First Class Feed Profile">
+                          <a/>
+                          <a target="_blank" class="has-tip-left" title="Our Page" href="https://www.youtube.com/"><img src="{{url('comp/img/social_header/you_tube.png')}}" alt="Skokie Remax First Class Youtube Profile"><a/>
 
                           </div>
                         </div>
                         <div class="row">
                          <div class="large-12 columns callUsContent right">
                            <img class="left"  src="{{url('comp/img/phone40.png')}}" alt="phone icon">
-                           <span class="callUs has-tip-left" title="Call Our Agents for a Free Consultation">(847) 674-9797</span>
+                           <div class="callUs left has-tip-left" title="Call Our Agents for a Free Consultation">(847) 674-9797</div>
                          </div>
                        </div>
-                       <div class="row">
-                         <div class="large-12 columns right iconMailHome">
+                       <div class="row right">
+                         <div class="large-12 columns left iconMailHome">
 
                           <a href="{{ URL::route('home')}}" class="homeIcon has-tip-left" title="Home Page">
                             <img src="{{url('comp/img/icons/home_remax1.png')}}" alt="REMAX FIRST CLASS Home Icon">
@@ -724,9 +727,9 @@
                     {{Form::close()}} 
                   </div>
                 </div>
-                <a class="close-reveal-modal">&#215;</a>
               </div>
             </div>
+            <a class="close-reveal-modal">&#215;</a>
 
           </div>
 <!--

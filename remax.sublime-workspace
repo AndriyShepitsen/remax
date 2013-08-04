@@ -151,7 +151,7 @@
 			"file": "app/views/search/results.blade.php",
 			"settings":
 			{
-				"buffer_size": 3518,
+				"buffer_size": 3511,
 				"line_ending": "Windows"
 			}
 		},
@@ -159,7 +159,7 @@
 			"file": "app/views/admin/vw_saved_homes.blade.php",
 			"settings":
 			{
-				"buffer_size": 2471,
+				"buffer_size": 3274,
 				"line_ending": "Windows"
 			}
 		},
@@ -167,7 +167,7 @@
 			"file": "public/comp/sass/screen.scss",
 			"settings":
 			{
-				"buffer_size": 22212,
+				"buffer_size": 22229,
 				"line_ending": "Windows"
 			}
 		},
@@ -407,6 +407,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"2",
+			"listingImage",
+			"reseiveprice",
 			"div",
 			"stop",
 			"navp",
@@ -531,10 +534,7 @@
 			"ullis",
 			"agentname",
 			"myPanelStyle",
-			"columns",
-			"browse",
-			"browseall",
-			"allagents"
+			"columns"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -647,15 +647,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3518,
+						"buffer_size": 3511,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1522,
-								1522
+								3171,
+								3171
 							]
 						],
 						"settings":
@@ -664,7 +664,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 480.0,
+						"translation.y": 330.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -675,15 +675,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2471,
+						"buffer_size": 3274,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								308,
+								308
 							]
 						],
 						"settings":
@@ -700,7 +700,7 @@
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -709,15 +709,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 22212,
+						"buffer_size": 22229,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								12699,
-								12699
+								12635,
+								12635
 							]
 						],
 						"settings":
@@ -726,7 +726,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 13370.0,
+						"translation.y": 13430.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -800,8 +800,8 @@
 						"selection":
 						[
 							[
-								1170,
-								1170
+								6036,
+								6036
 							]
 						],
 						"settings":
@@ -811,7 +811,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2280.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -847,7 +847,7 @@
 		"cols":
 		[
 			0.0,
-			0.453547252892,
+			0.211359752892,
 			1.0
 		],
 		"rows":
