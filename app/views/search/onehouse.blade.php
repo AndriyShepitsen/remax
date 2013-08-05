@@ -66,7 +66,7 @@
 
 				@if(Auth::check())
 				{{Form::open(array('url' => 'house-alert/'.$house->id, 'method'=>'POST'))}}
-				{{ Form::submit('Receive Price Change Alerts for this Property', array('class'=>'button small secondary radius'))}}
+				{{ Form::submit('Receive Price Change Alerts for this Property', array('class'=>'button small radius'))}}
 				{{Form::close()}}
 				@else
 				<div class="label radius pleaseSignInOneListing">PLEASE SIGN-IN TO RECEIVE ALERTS FOR THIS PROPERTY </div>
