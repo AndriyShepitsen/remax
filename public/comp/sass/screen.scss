@@ -140,6 +140,9 @@ h5{
 .noMargin{
 	margin: 0px !important;
 }
+.fiveMarginBottom{
+	margin-bottom: 5px !important;
+}
 .noPadding{
 	padding: 0px !important;
 }
@@ -787,7 +790,20 @@ label{
 		font-size: 16px;
 	}
 }
-
+.pleaseSignIn{
+	padding-right: 10px !important;
+	padding-left: 10px !important;
+	padding-top: 7px !important;
+	padding-bottom: 7px !important;
+	font-size: 11px !important;
+	background-color: lighten($colorGray, 25%) !important;
+	font-weight: normal !important;
+	letter-spacing: 1px !important;
+}
+.pleaseSignInOneListing{
+	@extend .pleaseSignIn;
+	margin-bottom: 15px !important;
+}
 .button.secondary{
 	color: $colorFontGray !important;
 }
