@@ -64,27 +64,27 @@
 
 				<strong>Year:</strong> {{$house->year}} <br/><br/>
 
-			@if(Auth::check())
-						{{Form::open(array('url' => 'house-alert/'.$house->id, 'method'=>'POST'))}}
-{{ Form::submit('Receive Price Change Alerts for this Property', array('class'=>'button small secondary radius'))}}
-						{{Form::close()}}
-					@else
-				<div>Please sign-in to receive price change alerts for this Property</div>
-					@endif
+				@if(Auth::check())
+				{{Form::open(array('url' => 'house-alert/'.$house->id, 'method'=>'POST'))}}
+				{{ Form::submit('Receive Price Change Alerts for this Property', array('class'=>'button small secondary radius'))}}
+				{{Form::close()}}
+				@else
+				<div class="label radius pleaseSignInOneListing">PLEASE SIGN-IN TO RECEIVE ALERTS FOR THIS PROPERTY </div>
+				@endif
 
 				@if($imCounter)
 				<ul class="clearing-thumbs" data-clearing>
-				@for ($i =1; $i <= $imCounter; $i++)
-				<li><a class="th" href="{{url('comp/img/images/'.$house->id.'/'.$i.'.jpg')}}">
-				<img width="100px" height="50px" src="{{url('comp/img/images/'.$house->id.'/'.$i.'.jpg')}}"></a></li>
-				@endfor
-				</ul>	
-				@endif
+					@for ($i =1; $i <= $imCounter; $i++)
+					<li><a class="th" href="{{url('comp/img/images/'.$house->id.'/'.$i.'.jpg')}}">
+						<img width="100px" height="50px" src="{{url('comp/img/images/'.$house->id.'/'.$i.'.jpg')}}"></a></li>
+						@endfor
+					</ul>	
+					@endif
+				</div>
 			</div>
-		</div>
 
+		</div>
 	</div>
-</div>
-@stop
+	@stop
 
 

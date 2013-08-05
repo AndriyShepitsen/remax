@@ -140,8 +140,14 @@ h5{
 .noMargin{
 	margin: 0px !important;
 }
+.fiveMarginBottom{
+	margin-bottom: 5px !important;
+}
 .noPadding{
 	padding: 0px !important;
+}
+.noRightPadding{
+	padding-right:0px !important;
 }
 .fivePadding{
 	padding: 5px !important;
@@ -213,7 +219,7 @@ input[type="password"]{
 	}
 }
 .liSignIn{
-	padding-right: 30px !important;
+	padding-right: 15px !important;
 	font-weight: bold;
 	letter-spacing: 1px;
 	font-size: 12px !important;
@@ -401,13 +407,16 @@ input[type="password"]{
 		font-size: 20px;
 		font-weight: bold;
 		display: inline-block;
+		padding-left: 5px;
 	}
 	.callUsContent{
 		margin-top: 10px !important;
 		text-align: right;
 		padding:0px;
 	}
-
+.oneStopService{
+	margin-bottom: 10px !important;
+}
 	.contactTextStyle{
 		font-size: 10px;
 		font-weight: bold;
@@ -441,7 +450,9 @@ input[type="password"]{
 		width: 120px !important;
 	}
 }
-
+.logoContentRow{
+	margin-right: 0px !important;
+}
 .sloganText{
 	p{
 		font-family: 'Noto Serif', ​serif;
@@ -779,7 +790,20 @@ label{
 		font-size: 16px;
 	}
 }
-
+.pleaseSignIn{
+	padding-right: 10px !important;
+	padding-left: 10px !important;
+	padding-top: 7px !important;
+	padding-bottom: 7px !important;
+	font-size: 11px !important;
+	background-color: lighten($colorGray, 25%) !important;
+	font-weight: normal !important;
+	letter-spacing: 1px !important;
+}
+.pleaseSignInOneListing{
+	@extend .pleaseSignIn;
+	margin-bottom: 15px !important;
+}
 .button.secondary{
 	color: $colorFontGray !important;
 }
