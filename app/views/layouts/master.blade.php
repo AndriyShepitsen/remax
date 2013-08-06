@@ -394,7 +394,7 @@
                 <h4> <a class="newsHead" href="#">NEW LISTINGS FOR SALE</a> </h4>
               </div>
               <hr/>
-              <ul class="large-block-grid-3 small-block-grid-2 marginPadding">
+              <ul class="large-block-grid-3 small-block-grid-2 ulagents">
                 <li class="liNewListings"><a class="th radius" href="{{URL::to('search/7')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/7/1.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
                 <li class="liNewListings"><a class="th radius" href="{{URL::to('search/15')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/15/1.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
                 <li class="liNewListings"><a class="th radius" href="{{URL::to('search/14')}}"><img class="imgNewListings"src="{{url('comp/img/thumbs/14/1s.jpg')}}" alt="RE/MAX FIRST CLASS New Listing"><a/></li>
@@ -416,10 +416,11 @@
              </div>
              <hr/>
 
-             <ul class="small-block-grid-3 ulagents">
+             <ul class="large-block-grid-3  small-block-grid-2 ulagents">
               @foreach($agents as $agent)
               <li  class="liAgents">
-                <a class="th radius" data-reveal-id="{{$agent['id']}}" href="#"><img src="{{url('comp/img/agents/'.$agent['id'].'.jpg')}}" alt="RE/MAX FIRST CLASS agent profile">
+                <a class="th radius" data-reveal-id="{{$agent['id']}}" href="#">
+                  <img src="{{url('comp/img/agents/'.$agent['id'].'.jpg')}}" alt="RE/MAX FIRST CLASS agent profile">
                   <a/>
 
                   <div class="row marginPadding">
@@ -480,7 +481,7 @@
       </div>
       <div class="large-4 columns">
 
-      <section class="large-6 small-6 columns social">
+        <section class="large-6 small-6 columns social">
           <ul class="prop no-bullet">
             {{link_to('show-all-listings', 'PROPERTIES FOR SALE', array('class'=>'propertiesFooter'));}} 
             <hr/>

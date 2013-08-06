@@ -13593,16 +13593,14 @@ input[type="text"] {
 
 /* line 941, ../sass/screen.scss */
 .ulagents {
-  overflow: auto;
-  display: inline-block;
   margin-top: 15px !important;
 }
-/* line 945, ../sass/screen.scss */
+/* line 943, ../sass/screen.scss */
 .ulagents a {
   text-align: center;
 }
 
-/* line 950, ../sass/screen.scss */
+/* line 948, ../sass/screen.scss */
 ul.ulagents li {
   font-size: 12px;
   color: #393939;
@@ -13613,7 +13611,7 @@ ul.ulagents li {
   letter-spacing: .04em;
 }
 
-/* line 960, ../sass/screen.scss */
+/* line 958, ../sass/screen.scss */
 .ourAgents {
   margin-top: 15px;
   padding: 15px !important;
@@ -13622,11 +13620,11 @@ ul.ulagents li {
   margin-bottom: 0px !important;
   padding-bottom: 20px !important;
 }
-/* line 964, ../sass/screen.scss */
+/* line 962, ../sass/screen.scss */
 .ourAgents .carousel {
   margin-left: -12px !important;
 }
-/* line 967, ../sass/screen.scss */
+/* line 965, ../sass/screen.scss */
 .ourAgents .liAgents {
   margin-bottom: 0px !important;
   margin-right: 0px !important;
@@ -13635,14 +13633,14 @@ ul.ulagents li {
   padding-left: 0px !important;
   text-align: center !important;
 }
-/* line 974, ../sass/screen.scss */
+/* line 972, ../sass/screen.scss */
 .ourAgents .liAgents .th {
   border-right-width: 2px !important;
   border-left-width: 2px !important;
   border-top-width: 2px !important;
   border-bottom-width: 2px !important;
 }
-/* line 981, ../sass/screen.scss */
+/* line 979, ../sass/screen.scss */
 .ourAgents .agentLinkLast {
   font-size: 11px !important;
   font-weight: bold !important;
@@ -13652,16 +13650,16 @@ ul.ulagents li {
   display: inline-block;
   margin-bottom: 10px;
 }
-/* line 990, ../sass/screen.scss */
+/* line 988, ../sass/screen.scss */
 .ourAgents .agentLink:hover {
   color: #5a93c0;
 }
-/* line 993, ../sass/screen.scss */
+/* line 991, ../sass/screen.scss */
 .ourAgents .agentLinkLast:hover {
   color: #5a93c0;
 }
 
-/* line 997, ../sass/screen.scss */
+/* line 995, ../sass/screen.scss */
 .agentLink {
   color: #396c95;
   font-size: 10px !important;
@@ -13673,28 +13671,28 @@ ul.ulagents li {
 }
 
 /* =agent profile starts here */
-/* line 1009, ../sass/screen.scss */
+/* line 1007, ../sass/screen.scss */
 .specialties {
   font-size: 12px;
 }
 
-/* line 1012, ../sass/screen.scss */
+/* line 1010, ../sass/screen.scss */
 .ulAgentName {
   margin-bottom: 10px !important;
 }
 
-/* line 1015, ../sass/screen.scss */
+/* line 1013, ../sass/screen.scss */
 .agentName {
   margin-bottom: 5px !important;
   font-size: 22px !important;
 }
 
-/* line 1019, ../sass/screen.scss */
+/* line 1017, ../sass/screen.scss */
 .agentInfoContent {
   margin-top: 10px;
 }
 
-/* line 1023, ../sass/screen.scss */
+/* line 1021, ../sass/screen.scss */
 .specialist {
   font-size: 11px !important;
   padding-top: 5px !important;
@@ -13705,26 +13703,26 @@ ul.ulagents li {
   border: 1px solid #f7f7f4 !important;
 }
 
-/* line 1033, ../sass/screen.scss */
+/* line 1031, ../sass/screen.scss */
 .specialist:hover, .specialist:focus {
   color: #858585 !important;
 }
 
-/* line 1037, ../sass/screen.scss */
+/* line 1035, ../sass/screen.scss */
 .info {
   margin-top: 25px !important;
   padding-bottom: 25px !important;
   padding-top: 0px !important;
 }
 
-/* line 1042, ../sass/screen.scss */
+/* line 1040, ../sass/screen.scss */
 .innerInfo {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
   font-size: 14px !important;
 }
 
-/* line 1047, ../sass/screen.scss */
+/* line 1045, ../sass/screen.scss */
 .agentPropSale {
   font-size: 9px !important;
   font-weight: bold !important;
@@ -13737,7 +13735,7 @@ ul.ulagents li {
   font-size: 11px;
 }
 
-/* line 1059, ../sass/screen.scss */
+/* line 1057, ../sass/screen.scss */
 .agentPropRent {
   font-size: 9px !important;
   font-weight: bold !important;
@@ -13749,23 +13747,23 @@ ul.ulagents li {
   font-size: 11px;
 }
 
-/* line 1070, ../sass/screen.scss */
+/* line 1068, ../sass/screen.scss */
 .agentP {
   color: #396c95 !important;
   text-shadow: 1px solid #f7f7f4 !important;
 }
-/* line 1073, ../sass/screen.scss */
+/* line 1071, ../sass/screen.scss */
 .agentP:hover {
   color: #5a93c0 !important;
 }
 
-/* line 1077, ../sass/screen.scss */
+/* line 1075, ../sass/screen.scss */
 .logoS {
   margin-top: 5px;
   display: inline-block;
 }
 
-/* line 1081, ../sass/screen.scss */
+/* line 1079, ../sass/screen.scss */
 .profileContent {
   padding-right: 25px !important;
   padding-left: 25px !important;
@@ -13773,19 +13771,19 @@ ul.ulagents li {
 }
 
 /*=footer starts here */
-/* line 1088, ../sass/screen.scss */
+/* line 1086, ../sass/screen.scss */
 .logoFooterPadding {
   margin-left: 1em;
   margin-top: 1em;
 }
 
-/* line 1091, ../sass/screen.scss */
+/* line 1089, ../sass/screen.scss */
 .logoRemaxFooter {
   margin-left: 1em;
   margin-top: 1em;
 }
 
-/* line 1094, ../sass/screen.scss */
+/* line 1092, ../sass/screen.scss */
 .connectFooter {
   padding-bottom: 5px !important;
   display: inline-block;
@@ -13796,70 +13794,70 @@ ul.ulagents li {
   border-bottom: 1px solid #393939;
 }
 
-/* line 1099, ../sass/screen.scss */
+/* line 1097, ../sass/screen.scss */
 .vcard {
   border: 0em;
   margin-bottom: 0em !important;
   min-width: 170px;
 }
-/* line 1103, ../sass/screen.scss */
+/* line 1101, ../sass/screen.scss */
 .vcard hr {
   margin-bottom: 5px !important;
 }
 
-/* line 1107, ../sass/screen.scss */
+/* line 1105, ../sass/screen.scss */
 .vcard .fn {
   font-size: 12px;
 }
 
-/* line 1110, ../sass/screen.scss */
+/* line 1108, ../sass/screen.scss */
 .vcard .street-address {
   font-size: 12px;
 }
 
-/* line 1113, ../sass/screen.scss */
+/* line 1111, ../sass/screen.scss */
 .vcard .locality {
   font-size: 12px;
 }
 
-/* line 1116, ../sass/screen.scss */
+/* line 1114, ../sass/screen.scss */
 .vcard .state {
   font-size: 12px;
 }
 
-/* line 1119, ../sass/screen.scss */
+/* line 1117, ../sass/screen.scss */
 .vcard .zip {
   font-size: 12px;
   display: inline-block;
 }
 
-/* line 1124, ../sass/screen.scss */
+/* line 1122, ../sass/screen.scss */
 .vcard .email a {
   font-size: 11px !important;
 }
 
-/* line 1128, ../sass/screen.scss */
+/* line 1126, ../sass/screen.scss */
 footer {
   background-color: #dddddd;
   padding-top: 10px;
   margin-top: 17px;
 }
-/* line 1130, ../sass/screen.scss */
+/* line 1128, ../sass/screen.scss */
 footer .row .columns {
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
-/* line 1134, ../sass/screen.scss */
+/* line 1132, ../sass/screen.scss */
 footer .prop {
   font-size: 11px !important;
 }
-/* line 1137, ../sass/screen.scss */
+/* line 1135, ../sass/screen.scss */
 footer .row.ul.li.a {
   color: #f7f7f4;
   cursor: pointer;
 }
 
-/* line 1143, ../sass/screen.scss */
+/* line 1141, ../sass/screen.scss */
 .contactFooter {
   font-size: 11px;
   font-weight: bold !important;
@@ -13868,7 +13866,7 @@ footer .row.ul.li.a {
   min-width: 180px;
   line-height: 17px !important;
 }
-/* line 1145, ../sass/screen.scss */
+/* line 1143, ../sass/screen.scss */
 .contactFooter hr {
   display: block;
   height: 1px;
@@ -13878,20 +13876,20 @@ footer .row.ul.li.a {
   margin-top: 0px !important;
 }
 
-/* line 1155, ../sass/screen.scss */
+/* line 1153, ../sass/screen.scss */
 .ulFooterSocial {
   margin: 0px !important;
   padding-top: 5px !important;
 }
 
-/* line 1160, ../sass/screen.scss */
+/* line 1158, ../sass/screen.scss */
 .liFooterConnect {
   padding-right: 0px !important;
   padding-left: 0px !important;
   width: 45px !important;
   height: 45px !important;
 }
-/* line 1165, ../sass/screen.scss */
+/* line 1163, ../sass/screen.scss */
 .liFooterConnect hr {
   display: block;
   height: 1px;
@@ -13901,14 +13899,14 @@ footer .row.ul.li.a {
   margin-top: 0px !important;
 }
 
-/* line 1174, ../sass/screen.scss */
+/* line 1172, ../sass/screen.scss */
 .liFooterConnectRight {
   padding-right: 0px !important;
   padding-left: 0px !important;
   width: 32px !important;
   height: 45px !important;
 }
-/* line 1179, ../sass/screen.scss */
+/* line 1177, ../sass/screen.scss */
 .liFooterConnectRight hr {
   display: block;
   height: 1px;
@@ -13918,12 +13916,12 @@ footer .row.ul.li.a {
   margin-top: 0px !important;
 }
 
-/* line 1188, ../sass/screen.scss */
+/* line 1186, ../sass/screen.scss */
 .social {
   padding-top: 10px;
   width: 125px;
 }
-/* line 1191, ../sass/screen.scss */
+/* line 1189, ../sass/screen.scss */
 .social hr {
   display: block;
   height: 1px;
@@ -13933,13 +13931,13 @@ footer .row.ul.li.a {
   margin-top: 0px !important;
 }
 
-/* line 1200, ../sass/screen.scss */
+/* line 1198, ../sass/screen.scss */
 .propRent {
   padding-top: 10px;
   margin-right: 30px !important;
   width: 130px;
 }
-/* line 1204, ../sass/screen.scss */
+/* line 1202, ../sass/screen.scss */
 .propRent hr {
   display: block;
   height: 1px;
@@ -13949,12 +13947,12 @@ footer .row.ul.li.a {
   margin-top: 0px !important;
 }
 
-/* line 1213, ../sass/screen.scss */
+/* line 1211, ../sass/screen.scss */
 .mls {
   margin-top: 70px;
 }
 
-/* line 1216, ../sass/screen.scss */
+/* line 1214, ../sass/screen.scss */
 .properties {
   margin-left: 15px;
   font-size: 10px;
@@ -13966,7 +13964,7 @@ footer .row.ul.li.a {
   text-shadow: white 1px 1px 0px;
 }
 
-/* line 1227, ../sass/screen.scss */
+/* line 1225, ../sass/screen.scss */
 .propertiesFooter {
   font-weight: bold;
   display: inline-block;
@@ -13976,55 +13974,55 @@ footer .row.ul.li.a {
   min-width: 150px;
 }
 
-/* line 1230, ../sass/screen.scss */
+/* line 1228, ../sass/screen.scss */
 .copyright {
   background-color: #3f3f3f;
   padding-top: 10px;
 }
 
-/* line 1234, ../sass/screen.scss */
+/* line 1232, ../sass/screen.scss */
 .copy {
   color: #f7f7f4 !important;
 }
 
 /* =Contact Us */
-/* line 1239, ../sass/screen.scss */
+/* line 1237, ../sass/screen.scss */
 .prefix {
   font-size: 12px !important;
 }
 
-/* line 1243, ../sass/screen.scss */
+/* line 1241, ../sass/screen.scss */
 .contactUsFormWrapper legend {
   background-color: none !important;
 }
 
-/* line 1247, ../sass/screen.scss */
+/* line 1245, ../sass/screen.scss */
 textarea {
   height: 300px;
   cursor: pointer;
 }
 
-/* line 1252, ../sass/screen.scss */
+/* line 1250, ../sass/screen.scss */
 .textareaCommentsWrapper textarea {
   height: 200px !important;
 }
 
-/* line 1257, ../sass/screen.scss */
+/* line 1255, ../sass/screen.scss */
 .min {
   margin-top: 20px !important;
 }
 
-/* line 1263, ../sass/screen.scss */
+/* line 1261, ../sass/screen.scss */
 .createAccount .account {
   margin-top: 15px !important;
   margin-bottom: 25px !important;
 }
-/* line 1268, ../sass/screen.scss */
+/* line 1266, ../sass/screen.scss */
 .createAccount label {
   font-size: 1em;
   margin-bottom: 10px;
 }
-/* line 1272, ../sass/screen.scss */
+/* line 1270, ../sass/screen.scss */
 .createAccount .button {
   background-color: #5f5f5f !important;
   margin-top: .5em !important;
@@ -14034,7 +14032,7 @@ textarea {
   color: #f7f7f4;
 }
 
-/* line 1276, ../sass/screen.scss */
+/* line 1274, ../sass/screen.scss */
 .contactModal {
   font-size: 27px !important;
 }

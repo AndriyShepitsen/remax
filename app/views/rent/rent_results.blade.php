@@ -30,12 +30,12 @@
 							<span class="alert-box secondary radius priceStyle right ">${{number_format($rental->price)}}
 							</span>
 						</div>
-						<hr/>
 					</div>
+					<hr/>
 
 					<div class="row">
 						<div class="large-7 columns houseImgWrapper">
-						<div class="fiveMarginBottom">
+							<div class="fiveMarginBottom">
 								<small>
 									<em>Bedrooms:</em> {{$rental->bedrooms}} | 
 									<em>Bathrooms:</em> {{$rental->bathrooms}} | 
@@ -52,16 +52,7 @@
 							<!-- </div> -->
 							@endif
 
-							<div class="signinLabel">
-								@if(Auth::check())
-								{{Form::open(array('url' => 'house-alert/'.$house->id, 'method'=>'POST'))}}
-								{{ Form::submit('Save this Property to My Account', array('class'=>'button tiny secondary radius addPropertyButton'))}}
-								{{Form::close()}}
-								@else
-								<div class="label radius pleaseSignIn"><em>Please Sign-in to Receive Alerts for this Property</em>
-								</div>
-								@endif
-							</div>
+							
 							<!-- </div> -->
 						</div>					
 						<!-- =houseImgWrapper ends here -->

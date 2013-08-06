@@ -73,18 +73,7 @@
 		</div>
 	</div>
 
-	<div class="row">
-		<div class="large-12 large-centered columns receivePriceChangeButtonWrapper">
-			@if(Auth::check())
-			{{Form::open(array('url' => 'house-alert/'.$house->id, 'method'=>'POST'))}}
-			{{ Form::submit('Save this Property to My Account', array('class'=>'button tiny secondary radius addPropertyButton'))}}
-			{{Form::close()}}
-			@else
-			<div class="label radius pleaseSignIn">Please Sign-in to Receive Alerts for this Property
-			</div>
-			@endif
-		</div>
-	</div>
+	
 	@if($imCounter)
 	<div class="row">
 		<div class="large-6 columns">
