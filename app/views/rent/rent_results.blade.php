@@ -21,50 +21,48 @@
 								{{$rental->address}}
 							</h6> &nbsp	&nbsp	
 						</div>
-						<div class="large-2 columns ">
+						<div class="large-2 small-3 columns">
 							<a class="alert-box secondary round alertRentalStyle" href="">Rental</a>
 
 
 						</div>
-						<div class="large-2 columns">
+						<div class="large-2 small-3 columns">
 							<span class="alert-box secondary radius priceStyle right ">${{number_format($rental->price)}}
 							</span>
 						</div>
+						<hr/>
 					</div>
 
 					<div class="row">
 						<div class="large-7 columns houseImgWrapper">
-							<small>
+						<div class="fiveMarginBottom">
+								<small>
+									<em>Bedrooms:</em> {{$rental->bedrooms}} | 
+									<em>Bathrooms:</em> {{$rental->bathrooms}} | 
 
-								<em>Bedrooms:</em> {{$rental->bedrooms}} | 
-								<em>Bathrooms:</em> {{$rental->bathrooms}} | 
-
-								<em>Property Type:</em> {{$rental ->rentalpropertytype->rentaltype}}  
-
-							</small>
+									<em>Property Type:</em> {{$rental ->rentalpropertytype->rentaltype}}  
+								</small>
+							</div>
 
 							@if($rental->rentalimage()->first()->maxid)
-							<ul class="no-bullet listingImage">
-								<li>
-									<a href="{{url('rent/'.$rental->id)}}"><img src="{{url('comp/img/rent_thumbs/'.$rental->id.'/1.jpg')}}"class="th">
-									</a> 
-								</li>
+							<!-- <div class="listingImage"> -->
+							<a class="listingImage" href="{{url('rent/'.$rental->id)}}"><img src="{{url('comp/img/rent_thumbs/'.$rental->id.'/1.jpg')}}"class="th">
+							</a> 
 
-							</ul>
+							<!-- </div> -->
 							@endif
-							
-							<div class="row">
-								<div class="large-12 large-centered columns receivePriceChangeButtonWrapper">
-									@if(Auth::check())
-									{{Form::open(array('url' => 'house-alert/'.$house->id, 'method'=>'POST'))}}
-									{{ Form::submit('Save this Property to My Account', array('class'=>'button tiny secondary radius addPropertyButton'))}}
-									{{Form::close()}}
-									@else
-									<div class="label radius pleaseSignIn">Please Sign-in to Receive Alerts for this Property
-									</div>
-									@endif
+
+							<div class="signinLabel">
+								@if(Auth::check())
+								{{Form::open(array('url' => 'house-alert/'.$house->id, 'method'=>'POST'))}}
+								{{ Form::submit('Save this Property to My Account', array('class'=>'button tiny secondary radius addPropertyButton'))}}
+								{{Form::close()}}
+								@else
+								<div class="label radius pleaseSignIn"><em>Please Sign-in to Receive Alerts for this Property</em>
 								</div>
+								@endif
 							</div>
+							<!-- </div> -->
 						</div>					
 						<!-- =houseImgWrapper ends here -->
 

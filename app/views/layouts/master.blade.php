@@ -27,9 +27,9 @@
     <div class="accountPanelWrapper">
       <div class="row">
 
-      <div class="large-7 columns small-12 columns residentialCommercialContent">
-         <div class="realEstateRC">RESIDENTIAL, COMMERCIAL & INVESTMENT REAL ESTATE
-         </div>
+        <div class="large-7 columns small-12 columns residentialCommercialContent">
+         <p class="realEstateRC">RESIDENTIAL, COMMERCIAL & INVESTMENT REAL ESTATE
+         </p>
 
        </div>
        <div class="large-5 columns small-12 columns right accountPanel">
@@ -156,7 +156,7 @@
 
         <aside class="large-2 left columns logoDiv">
          <div class="row left">
-          <div class="large-12 columns left connectWithContent">
+          <div class="large-12 small-12 columns left connectWithContent">
 
             <!-- <span class="contactTextStyle">CONNECT WITH US:</span> -->
 
@@ -174,8 +174,9 @@
 
                       </div>
                     </div>
+
                     <div class="row">
-                     <div class="large-12 columns callUsContent right">
+                     <div class="large-12 small-12 columns callUsContent">
                        <img class="left"  src="{{url('comp/img/phone40.png')}}" alt="phone icon">
                        <div class="callUs left has-tip-left" title="Call Our Agents for a Free Consultation">(847) 674-9797</div>
                      </div>
@@ -479,9 +480,9 @@
       </div>
       <div class="large-4 columns">
 
-        <section class="large-6 columns social">
+      <section class="large-6 small-6 columns social">
           <ul class="prop no-bullet">
-          {{link_to('show-all-listings', 'PROPERTIES FOR SALE', array('class'=>'propertiesFooter'));}} 
+            {{link_to('show-all-listings', 'PROPERTIES FOR SALE', array('class'=>'propertiesFooter'));}} 
             <hr/>
             <li class="locality properties">{{link_to('browse/1', 'SINGLE FAMILY');}}</li>
             <li class="locality properties">{{link_to('browse/4', 'MULTI-FAMILY');}}</li>
@@ -489,9 +490,9 @@
             <li class="locality properties">{{link_to('browse/2', 'VACANT LAND');}}</li>
           </ul>
         </section>
-        <section class="large-6 columns propRent">
+        <section class="large-6 small-6 columns propRent">
           <ul class="prop no-bullet">
-          {{link_to('all-rent-listings', 'PROPERTIES FOR RENT', array('class'=>'propertiesFooter'));}} 
+            {{link_to('all-rent-listings', 'PROPERTIES FOR RENT', array('class'=>'propertiesFooter'));}} 
             <hr/>
             <li class="locality properties">{{link_to('rent-apartments', 'APARTMENTS');}}</li>
             <li class="locality properties">{{link_to('rent-houses', 'HOUSES');}}</li>
@@ -501,19 +502,19 @@
       </div>
 
       <div class="large-4 columns">
-        <div class="large-6 columns">
+        <div class="large-6 small-6 columns">
           <ul class="vcard">
             <span class="connectFooter">CONTACT INFORMATION:</span>
             <hr/>
             <li class="locality"> PHONE: (847) 674-9797</li>
             <li class="locality"> FAX: (847) 674-0411</li>
             <li class="street-address">4023 W. Church St.</li>
-            <li class="locality">Skokie, IL 60076</li>
-            <!-- <li><span class="state">IL</span> <span class="zip">60076</span></li> -->
+            <li class="locality">Skokie, IL 60076 </li>
+            <li><span class="state">IL</span> <span class="zip">60076</span></li>
             <li class="email" data-reveal-id="myModal">{{link_to('#', 'remax1stclass@gmail.com');}}</li>
           </ul>
         </div>
-        <section class="large-6 columns social right">
+        <section class="large-6 small-6 columns social right">
           <span class="contactFooter">CONNECT WITH US:</span>
           <hr/>
           <ul class="small-block-grid-3 ulFooterSocial">

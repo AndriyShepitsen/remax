@@ -30,30 +30,30 @@
 
 					<div class="row">
 						<div class="large-7 columns houseImgWrapper">
-							<small>
-								<em>MLS#:</em>{{$house->listing}} | 
-								<em>Year:</em>{{$house->year}}| 
-								<em>Bedrooms:</em>{{$house->bedrooms}} | 
-								<em>Bathrooms:</em>{{$house->bathrooms}}  
-								@if ($house->year!=null)
-								@endif
-							</small>
-							@if($house->images()->first()->maxid)
-							<ul class="no-bullet listingImage">
-								<li><a href="{{url('search/'.$house->id)}}"><img src="{{url('comp/img/thumbs/'.$house->id.'/1.jpg')}}"  class="th"></a> </li>
-							</ul>
-							@endif
-							<div class="row">
-								<div class="large-12 large-centered columns receivePriceChangeButtonWrapper">
-									@if(Auth::check())
-									{{Form::open(array('url' => 'house-alert/'.$house->id, 'method'=>'POST'))}}
-									{{ Form::submit('Save this Property to My Account', array('class'=>'button tiny secondary radius addPropertyButton'))}}
-									{{Form::close()}}
-									@else
-									<div class="label radius pleaseSignIn">Please Sign-in to Receive Alerts for this Property
-									</div>
+
+							<div class="fiveMarginBottom">
+								<small>
+								<em>MLS#: </em>{{$house->listing}} | 
+									<em>Year: </em>{{$house->year}}| 
+									<em>Bedrooms: </em>{{$house->bedrooms}} | 
+									<em>Bathrooms: </em>{{$house->bathrooms}}  
+									@if ($house->year!=null)
 									@endif
+								</small>
+							</div>
+							@if($house->images()->first()->maxid)
+							<a class="listingImage" href="{{url('search/'.$house->id)}}"><img src="{{url('comp/img/thumbs/'.$house->id.'/1.jpg')}}"  class="th">
+							</a> 
+							@endif
+							<div class="signinLabel">
+								@if(Auth::check())
+								{{Form::open(array('url' => 'house-alert/'.$house->id, 'method'=>'POST'))}}
+								{{ Form::submit('Save this Property to My Account', array('class'=>'button tiny secondary radius addPropertyButton'))}}
+								{{Form::close()}}
+								@else
+								<div class="label radius pleaseSignIn"><em>Please Sign-in to Receive Alerts for this Property</em>
 								</div>
+								@endif
 							</div>
 
 						</div>
