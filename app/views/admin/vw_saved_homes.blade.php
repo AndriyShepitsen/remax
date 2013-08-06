@@ -27,39 +27,35 @@
 							<span class="alert-box secondary radius priceStyle right ">${{number_format($house->price)}}
 							</span>
 						</div>
-						<hr/>
 					</div>
+					<hr/>
 
 
 					<div class="row">
 						<div class="large-7 columns houseImgWrapper">
-							<small>
-								<em>MLS#:</em>{{$house->listing}} | 
-								<em>Year:</em>{{$house->year}}| 
-								<em>Bedrooms:</em>{{$house->bedrooms}} | 
-								<em>Bathrooms:</em>{{$house->bathrooms}}  
-								@if ($house->year!=null)
-								@endif
-							</small>
+
+							<div class="fiveMarginBottom">
+								<small>
+									<em>MLS#: </em>{{$house->listing}} | 
+									<em>Year: </em>{{$house->year}} | 
+									<em>Bedrooms: </em>{{$house->bedrooms}} | 
+									<em>Bathrooms: </em>{{$house->bathrooms}}  
+									@if ($house->year!=null)
+									@endif
+								</small>
+							</div>
 							@if($house->images()->first()->maxid)
-							<ul class="no-bullet listingImage">
-								<li><a href="{{url('search/'.$house->id)}}"><img src="{{url('comp/img/thumbs/'.$house->id.'/1.jpg')}}"  class="th"></a> </li>
-							</ul>
+							<a class="listingImage" href="{{url('search/'.$house->id)}}"><img src="{{url('comp/img/thumbs/'.$house->id.'/1.jpg')}}"  class="th">
+							</a> 
 
 							@endif
-							<div class="row">
-								<div class="large-12 large-centered columns deletePropertyButtonWrapper">
-									@if(Auth::check())
-									{{Form::open(array('url' => 'house-alert-remove/'.$house->id, 'method'=>'POST'))}}
-									{{ Form::submit('Delete this Property from My Account', array('class'=>'button tiny secondary radius deletePropertyButton'))}}
-									{{Form::close()}}
-									@else
-									<div>Please sign-in to stop receiving price change alerts for this Property
-									</div>
-									@endif
-
-
-								</div>
+							<div class="deletePropertyButtonWrapper">
+								@if(Auth::check())
+								{{Form::open(array('url' => 'house-alert-remove/'.$house->id, 'method'=>'POST'))}}
+								{{ Form::submit('Delete this Property from My Account', array('class'=>'button tiny secondary radius deletePropertyButton'))}}
+								{{Form::close()}}
+								@else
+								@endif
 							</div>
 						</div>
 						<!-- =houseImgWrapper ends here -->

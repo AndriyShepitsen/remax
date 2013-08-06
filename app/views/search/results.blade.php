@@ -24,8 +24,8 @@
 							<span class="alert-box secondary radius priceStyle right ">${{number_format($house->price)}}
 							</span>
 						</div>
-						<hr/>
 					</div>
+						<hr/>
 
 
 					<div class="row">
@@ -34,7 +34,7 @@
 							<div class="fiveMarginBottom">
 								<small>
 								<em>MLS#: </em>{{$house->listing}} | 
-									<em>Year: </em>{{$house->year}}| 
+									<em>Year: </em>{{$house->year}} | 
 									<em>Bedrooms: </em>{{$house->bedrooms}} | 
 									<em>Bathrooms: </em>{{$house->bathrooms}}  
 									@if ($house->year!=null)
