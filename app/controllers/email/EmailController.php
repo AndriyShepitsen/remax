@@ -16,7 +16,7 @@ class EmailController extends BaseController {
 	  Mail::send('emails.welcome', $data, function($m)
 {
 	// $m->to('Svitlana.Shepitsena@gmail.com', 'Svitlana Shepitsena')->subject($subject);
-	 $m->to('drivanbohun@gmail.com', 'Ivan Bohun')->subject('From the site Form');
+	 $m->to('remax1stclass@gmail.com', 'Remax First Class')->subject('From the site Form');
 });
 
 		return View::make('emails.thank_you');;
