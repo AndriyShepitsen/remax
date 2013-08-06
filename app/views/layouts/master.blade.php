@@ -26,175 +26,180 @@
     
     <div class="accountPanelWrapper">
       <div class="row">
-        <div class="large-6 columns right accountPanel">
-          <ul class="inline-list ulAccountPanel">
 
-           @if(!Auth::check())
-           <li class="liSignIn right">
-            {{link_to('#', 'Sign In', array('data-reveal-id'=>'adminAuth'))}}
+      <div class="large-7 columns small-12 columns residentialCommercialContent">
+         <div class="realEstateRC">RESIDENTIAL, COMMERCIAL & INVESTMENT REAL ESTATE
+         </div>
+
+       </div>
+       <div class="large-5 columns small-12 columns right accountPanel">
+        <ul class="inline-list ulAccountPanel">
+
+         @if(!Auth::check())
+         <li class="liSignIn right">
+          {{link_to('#', 'Sign In', array('data-reveal-id'=>'adminAuth'))}}
+        </li>
+        <li class="liCreateAccount right">
+          <em>{{link_to('#', 'Create Your Free Account', array('data-reveal-id'=>'createAccount'))}}</em>
+        </li>
+        @else
+        <li class="liSignIn right">
+          <a href="{{URL::route('panel')}}">
+            <img class="userImg"src="{{url('comp/img/user.png')}}" alt="name">
+
+            <em>{{Auth::user()->first_name}} {{Auth::user()->last_name}}</em></a>
           </li>
-          <li class="liCreateAccount right">
-            <em>{{link_to('#', 'Create Your Free Account', array('data-reveal-id'=>'createAccount'))}}</em>
-          </li>
-          @else
           <li class="liSignIn right">
-            <a href="{{URL::route('panel')}}">
-              <img class="userImg"src="{{url('comp/img/user.png')}}" alt="name">
+            {{link_to_route('logout', 'Logout');}}
 
-              <em>{{Auth::user()->first_name}} {{Auth::user()->last_name}}</em></a>
-            </li>
-            <li class="liSignIn right">
-              {{link_to_route('logout', 'Logout');}}
-
-            </li>
-            @endif
-          </ul>
-        </div>
+          </li>
+          @endif
+        </ul>
       </div>
-
     </div>
 
-    <div class="navPanel">
-      <div class="row">
+  </div>
+
+  <div class="navPanel">
+    <div class="row">
       <div class="large-12 columns noPadding">
 
-          <nav class="top-bar">
-            <ul class="title-area">
-              <!-- Title Area -->
-              <li class="name">
-                <h1 class="companyName">
-                  {{link_to_route('home', 'REMAX FIRST CLASS');}}
-                </h1>
+        <nav class="top-bar">
+          <ul class="title-area">
+            <!-- Title Area -->
+            <li class="name">
+              <h1 class="companyName">
+                {{link_to_route('home', 'REMAX FIRST CLASS');}}
+              </h1>
+            </li>
+            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out  "Menu" to just have icon alone -->
+
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+          </ul>
+          <section class="top-bar-section">
+            <ul class="right">
+              <li>{{link_to_route('home', 'Home');}}</li>
+              <li>{{link_to_route('about', 'About');}}</li>
+              <li class="has-dropdown">{{link_to('#', 'Buying');}}
+
+                <ul class="dropdown">
+                  <li>{{link_to_route('the_benefits_of_home_ownership', 'The Benefits of Home Ownership');}}</li>
+                  <li>{{link_to_route('the_importance_of_buyers_agent', 'The Importance of a Buyer\'s Agent');}}</li>
+                  <li>{{link_to_route('deciding_where_to_live', 'Deciding Where to Live');}}</li>
+                  <li>{{link_to_route('anatomy_of_a_home_purchase', 'Anatomy of a Home Purchase');}}</li>
+                  <li>{{link_to_route('five_tips_to_narrow_your_online_home_search', '5 Tips to Narrow Your Online Home Search');}}</li>
+                </ul>
               </li>
-              <!-- Remove the class "menu-icon" to get rid of menu icon. Take out  "Menu" to just have icon alone -->
-
-              <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-            </ul>
-            <section class="top-bar-section">
-              <ul class="right">
-                <li>{{link_to_route('home', 'Home');}}</li>
-                <li>{{link_to_route('about', 'About');}}</li>
-                <li class="has-dropdown">{{link_to('#', 'Buying');}}
-
+              <li class="has-dropdown">{{link_to('#', 'Selling');}}
+                <ul class="dropdown">
+                  <li>{{link_to_route('the_right_listing_agent', 'The Right Listing Agent');}}</li>
+                  <li>{{link_to_route('how_an_agent_markets_your_home', 'How an Agent Markets Your Home');}}</li>
+                  <li>{{link_to_route('pricing_your_home_to_sell', 'Pricing Your Home to Sell');}}</li>
+                  <li>{{link_to_route('preparing_your_house_for_sale', 'Preparing Your House for Sale');}}</li>
+                  <li>{{link_to_route('consider_a_home_inspection_when_selling', 'Consider a Home Inspection When Selling');}}</li>
+                </ul>
+                <li/>
+                <li class="has-dropdown">{{link_to('#', 'Mortgage');}}
                   <ul class="dropdown">
-                    <li>{{link_to_route('the_benefits_of_home_ownership', 'The Benefits of Home Ownership');}}</li>
-                    <li>{{link_to_route('the_importance_of_buyers_agent', 'The Importance of a Buyer\'s Agent');}}</li>
-                    <li>{{link_to_route('deciding_where_to_live', 'Deciding Where to Live');}}</li>
-                    <li>{{link_to_route('anatomy_of_a_home_purchase', 'Anatomy of a Home Purchase');}}</li>
-                    <li>{{link_to_route('five_tips_to_narrow_your_online_home_search', '5 Tips to Narrow Your Online Home Search');}}</li>
-                  </ul>
-                </li>
-                <li class="has-dropdown">{{link_to('#', 'Selling');}}
-                  <ul class="dropdown">
-                    <li>{{link_to_route('the_right_listing_agent', 'The Right Listing Agent');}}</li>
-                    <li>{{link_to_route('how_an_agent_markets_your_home', 'How an Agent Markets Your Home');}}</li>
-                    <li>{{link_to_route('pricing_your_home_to_sell', 'Pricing Your Home to Sell');}}</li>
-                    <li>{{link_to_route('preparing_your_house_for_sale', 'Preparing Your House for Sale');}}</li>
-                    <li>{{link_to_route('consider_a_home_inspection_when_selling', 'Consider a Home Inspection When Selling');}}</li>
+                    <li>{{link_to_route('finding_the_right_mortgage_professional', 'Finding the Right Mortgage Professional');}}</li>
+                    <li>{{link_to_route('getting_preapproved', 'Getting Preapproved');}}</li>
+                    <li>{{link_to_route('how_much_can_you_afford', 'How Much Can you afford?');}}</li>
+                    <li>{{link_to_route('down_payments_how_much_do_you_need', 'Down Payments: How Much Do You Need?');}}</li>
+                    <li>{{link_to_route('mortgages_101_basic_loan_types', 'Mortgages 101: Basic Loan Types');}}</li>
+                    <li>{{link_to_route('renovating_a_home', 'Renovating a Home? Consider a 203(k) Loan');}}</li>
                   </ul>
                   <li/>
-                  <li class="has-dropdown">{{link_to('#', 'Mortgage');}}
+                  <li class="has-dropdown">{{link_to('#', 'News');}}
                     <ul class="dropdown">
-                      <li>{{link_to_route('finding_the_right_mortgage_professional', 'Finding the Right Mortgage Professional');}}</li>
-                      <li>{{link_to_route('getting_preapproved', 'Getting Preapproved');}}</li>
-                      <li>{{link_to_route('how_much_can_you_afford', 'How Much Can you afford?');}}</li>
-                      <li>{{link_to_route('down_payments_how_much_do_you_need', 'Down Payments: How Much Do You Need?');}}</li>
-                      <li>{{link_to_route('mortgages_101_basic_loan_types', 'Mortgages 101: Basic Loan Types');}}</li>
-                      <li>{{link_to_route('renovating_a_home', 'Renovating a Home? Consider a 203(k) Loan');}}</li>
+                      <li>{{link_to_route('real_estate_news', 'Real Estate News');}}</li>
+                      <li>{{link_to_route('news_for_buyers', 'News for Buyers');}}</li>
+                      <li>{{link_to_route('news_for_sellers', 'News for Sellers');}}</li>
                     </ul>
                     <li/>
-                    <li class="has-dropdown">{{link_to('#', 'News');}}
-                      <ul class="dropdown">
-                        <li>{{link_to_route('real_estate_news', 'Real Estate News');}}</li>
-                        <li>{{link_to_route('news_for_buyers', 'News for Buyers');}}</li>
-                        <li>{{link_to_route('news_for_sellers', 'News for Sellers');}}</li>
-                      </ul>
-                      <li/>
-                      <li>{{link_to_route('contact', 'Contact');}}</li> 
-                    </ul>
-                  </section>
-                </nav>
+                    <li>{{link_to_route('contact', 'Contact');}}</li> 
+                  </ul>
+                </section>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <!-- =logoWrapper -->
+        <div class="logoWrapper">
+         <div class="row">
+          <div class="large-10 columns ">
+            <div class="row">
+              <div class="large-2 columns logoContent">
+               <a href="{{URL::route('home')}}" title="Home Page">
+                 <img src="{{url('comp/img/REMAX1Logo.png')}}" alt="Remax First Class Logo">
+               </a> 
+             </div><!-- =logoContent -->
+
+             <div class="large-10 columns">
+               <div class="row">
+                 <div class="small-12 columns residentialCommercialContent">
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="large-6 columns  sloganText">
+                  <p class="sloganTop">YOU NEED ONLY ONE COMPANY </p> <p> FOR ALL YOUR REAL ESTATE NEEDS</p>
+                </div>
+                <div class="large-6 columns oneStopService">
+                  <img class="left" src="{{url('comp/img/one_stop_service/One-Stop-Service-Text.png')}}" alt="RE/MAX FIRST CLASS One Stop Service">
+
+                </div>
+
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- =logoWrapper -->
-          <div class="logoWrapper">
-            <div class="row">
-              <div class="large-10 columns ">
-                <div class="row">
-                  <div class="large-2 columns logoContent">
-                   <a href="{{URL::route('home')}}" title="Home Page">
-                     <img src="{{url('comp/img/REMAX1Logo.png')}}" alt="Remax First Class Logo">
-                   </a> 
-                 </div><!-- =logoContent -->
+        <aside class="large-2 left columns logoDiv">
+         <div class="row left">
+          <div class="large-12 columns left connectWithContent">
 
-                 <div class="large-10 columns">
-                   <div class="row">
-                     <div class="small-12 columns residentialCommercialContent">
-                       <div class="realEstateRC">RESIDENTIAL, COMMERCIAL & INVESTMENT REAL ESTATE</div>
+            <!-- <span class="contactTextStyle">CONNECT WITH US:</span> -->
+
+            <a target="_blank" class="has-tip-left" title="Our Facebook Page" href="https://www.facebook.com/pages/Remax-1st-CLASS/177448822432081"><img class="fiveMarginBottom" src="{{url('comp/img/social_header/facebook.png')}}" alt="Skokie Remax First Class Facebook Icon"><a/>
+              <a target="_blank" class="has-tip-left" title="Our Twitter Page" href="https://twitter.com/RemaxFirstClass"><img class="fiveMarginBottom" src="{{url('comp/img/social_header/twitter.png')}}" alt="Skokie Remax First Class Twitter Profile">
+                <a/>
+                <a target="_blank" class="has-tip-left" title="Our Linkedin Page" href="http://www.linkedin.com/profile/view?id=271875691&trk=nav_responsive_tab_profile"><img class="fiveMarginBottom" src="{{url('comp/img/social_header/linkedin.png')}}" alt="Skokie Remax First Class Linkedin Profile">
+                  <a/>
+
+                  <a target="_blank" class="has-tip-left" title="Our Google Plus Page" href="https://plus.google.com"><img class="fiveMarginBottom" src="{{url('comp/img/social_header/google.png')}}" alt="Skokie Remax First Class Google Profile">
+                    <a/>
+                    <a target="_blank" class="has-tip-left" title="Our Yelp Page" href="http://www.yelp.com/biz/remax-first-class-skokie"><img class="fiveMarginBottom" src="{{url('comp/img/social_header/yelp.png')}}" alt="Skokie Remax First Class Feed Profile">
+                      <a/>
+                      <a target="_blank" class="has-tip-left" title="Our Page" href="https://www.youtube.com/"><img class="fiveMarginBottom" src="{{url('comp/img/social_header/you_tube.png')}}" alt="Skokie Remax First Class Youtube Profile"><a/>
+
+                      </div>
+                    </div>
+                    <div class="row">
+                     <div class="large-12 columns callUsContent right">
+                       <img class="left"  src="{{url('comp/img/phone40.png')}}" alt="phone icon">
+                       <div class="callUs left has-tip-left" title="Call Our Agents for a Free Consultation">(847) 674-9797</div>
                      </div>
                    </div>
-                   <div class="row">
-                     <div class="large-6 columns  sloganText">
-                      <p class="sloganTop">YOU NEED ONLY ONE COMPANY </p> <p> FOR ALL YOUR REAL ESTATE NEEDS</p>
-                    </div>
-                    <div class="large-6 columns oneStopService">
-                      <img class="left" src="{{url('comp/img/one_stop_service/One-Stop-Service-Text.png')}}" alt="RE/MAX FIRST CLASS One Stop Service">
+                   <div class="row right">
+                     <div class="large-12 columns left iconMailHome">
 
+                      <a href="{{ URL::route('home')}}" class="homeIcon has-tip-left" title="Home Page">
+                        <img src="{{url('comp/img/icons/home_remax1.png')}}" alt="REMAX FIRST CLASS Home Icon">
+                      </a> 
+                      <!-- =mailIcon -->
+                      <a href="#" class="mailIcon has-tip-left" title="Send Us Email" data-reveal-id="myModal"> 
+                        <img src="{{url('comp/img/icons/mail_remax1.png')}}" alt="REMAX FIRST CLASS Mail Icon" ></a>
+                      </div>
                     </div>
-
-                  </div>
+                  </aside>          
                 </div>
-              </div>
-            </div>
-
-            <aside class="large-2 left columns logoDiv">
-             <div class="row left">
-              <div class="large-12 columns left connectWithContent">
-
-                <!-- <span class="contactTextStyle">CONNECT WITH US:</span> -->
-
-                <a target="_blank" class="has-tip-left" title="Our Facebook Page" href="https://www.facebook.com/pages/Remax-1st-CLASS/177448822432081"><img class="fiveMarginBottom" src="{{url('comp/img/social_header/facebook.png')}}" alt="Skokie Remax First Class Facebook Icon"><a/>
-                  <a target="_blank" class="has-tip-left" title="Our Twitter Page" href="https://twitter.com/RemaxFirstClass"><img src="{{url('comp/img/social_header/twitter.png')}}" alt="Skokie Remax First Class Twitter Profile">
-                    <a/>
-                    <a target="_blank" class="has-tip-left" title="Our Linkedin Page" href="http://www.linkedin.com/profile/view?id=271875691&trk=nav_responsive_tab_profile"><img class="fiveMarginBottom" src="{{url('comp/img/social_header/linkedin.png')}}" alt="Skokie Remax First Class Linkedin Profile">
-                      <a/>
-
-                      <a target="_blank" class="has-tip-left" title="Our Google Plus Page" href="https://plus.google.com"><img class="fiveMarginBottom" src="{{url('comp/img/social_header/google.png')}}" alt="Skokie Remax First Class Google Profile">
-                        <a/>
-                        <a target="_blank" class="has-tip-left" title="Our Yelp Page" href="http://www.yelp.com/biz/remax-first-class-skokie"><img class="fiveMarginBottom" src="{{url('comp/img/social_header/yelp.png')}}" alt="Skokie Remax First Class Feed Profile">
-                          <a/>
-                          <a target="_blank" class="has-tip-left" title="Our Page" href="https://www.youtube.com/"><img class="fiveMarginBottom" src="{{url('comp/img/social_header/you_tube.png')}}" alt="Skokie Remax First Class Youtube Profile"><a/>
-
-                          </div>
-                        </div>
-                        <div class="row">
-                         <div class="large-12 columns callUsContent right">
-                           <img class="left"  src="{{url('comp/img/phone40.png')}}" alt="phone icon">
-                           <div class="callUs left has-tip-left" title="Call Our Agents for a Free Consultation">(847) 674-9797</div>
-                         </div>
-                       </div>
-                       <div class="row right">
-                         <div class="large-12 columns left iconMailHome">
-
-                          <a href="{{ URL::route('home')}}" class="homeIcon has-tip-left" title="Home Page">
-                            <img src="{{url('comp/img/icons/home_remax1.png')}}" alt="REMAX FIRST CLASS Home Icon">
-                          </a> 
-                          <!-- =mailIcon -->
-                          <a href="#" class="mailIcon has-tip-left" title="Send Us Email" data-reveal-id="myModal"> 
-                            <img src="{{url('comp/img/icons/mail_remax1.png')}}" alt="REMAX FIRST CLASS Mail Icon" ></a>
-                          </div>
-                        </div>
-                      </aside>          
-                    </div>
-                  </div><!-- =logoWrapper ends here -->
-                  <!-- =header ends here -->
+              </div><!-- =logoWrapper ends here -->
+              <!-- =header ends here -->
 
 
-                  <div id="mainContent">
-                   <div class="row">
-                    <div class="large-8 columns">
+              <div id="mainContent">
+               <div class="row">
+                <div class="large-8 columns">
                <!--   @if(Session::has('message'))
                  {{Session::get('message')}}
                  @endif --> 
@@ -474,14 +479,22 @@
       </div>
       <div class="large-4 columns">
 
-        <section class="large-7 columns social">
+        <section class="large-6 columns social">
           <ul class="prop no-bullet">
-            <span class="propertiesFooter">PROPERTIES FOR SALE:</span> 
+          {{link_to('show-all-listings', 'PROPERTIES FOR SALE', array('class'=>'propertiesFooter'));}} 
             <hr/>
             <li class="locality properties">{{link_to('browse/1', 'SINGLE FAMILY');}}</li>
             <li class="locality properties">{{link_to('browse/4', 'MULTI-FAMILY');}}</li>
             <li class="locality properties">{{link_to('browse/3', 'CONDO');}}</li>
             <li class="locality properties">{{link_to('browse/2', 'VACANT LAND');}}</li>
+          </ul>
+        </section>
+        <section class="large-6 columns propRent">
+          <ul class="prop no-bullet">
+          {{link_to('all-rent-listings', 'PROPERTIES FOR RENT', array('class'=>'propertiesFooter'));}} 
+            <hr/>
+            <li class="locality properties">{{link_to('rent-apartments', 'APARTMENTS');}}</li>
+            <li class="locality properties">{{link_to('rent-houses', 'HOUSES');}}</li>
           </ul>
         </section>
 
@@ -495,8 +508,8 @@
             <li class="locality"> PHONE: (847) 674-9797</li>
             <li class="locality"> FAX: (847) 674-0411</li>
             <li class="street-address">4023 W. Church St.</li>
-            <li class="locality">Skokie</li>
-            <li><span class="state">IL</span> <span class="zip">600076</span></li>
+            <li class="locality">Skokie, IL 60076</li>
+            <!-- <li><span class="state">IL</span> <span class="zip">60076</span></li> -->
             <li class="email" data-reveal-id="myModal">{{link_to('#', 'remax1stclass@gmail.com');}}</li>
           </ul>
         </div>

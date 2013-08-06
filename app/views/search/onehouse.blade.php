@@ -64,13 +64,18 @@
 
 				<strong>Year:</strong> {{$house->year}} <br/><br/>
 
-				@if(Auth::check())
-				{{Form::open(array('url' => 'house-alert/'.$house->id, 'method'=>'POST'))}}
-				{{ Form::submit('Receive Price Change Alerts for this Property', array('class'=>'button small radius'))}}
-				{{Form::close()}}
-				@else
-				<div class="label radius pleaseSignInOneListing">PLEASE SIGN-IN TO RECEIVE ALERTS FOR THIS PROPERTY </div>
-				@endif
+				<div class="row">
+					<div class="large-12 large-centered columns receivePriceChangeButtonWrapper">
+						@if(Auth::check())
+						{{Form::open(array('url' => 'house-alert/'.$house->id, 'method'=>'POST'))}}
+						{{ Form::submit('Save this Property to My Account', array('class'=>'button tiny secondary radius addPropertyButton'))}}
+						{{Form::close()}}
+						@else
+						<div class="label radius pleaseSignIn">Please Sign-in to Receive Alerts for this Property
+						</div>
+						@endif
+					</div>
+				</div>
 
 				@if($imCounter)
 				<ul class="clearing-thumbs" data-clearing>

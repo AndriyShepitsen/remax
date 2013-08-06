@@ -82,10 +82,11 @@ $myBorderGray: 1px solid darken(#F2F2F2, 5%)!important;
 @mixin contactFooterStyle{
 	font-size: 11px;
 	font-weight: bold !important;
-	margin-top: 3px !important;
-	margin-bottom: 11px !important;
+	// margin-top: 3px !important;
+	margin-bottom: 5px !important;
 	display: inline-block;
 	min-width: 180px;
+	line-height: 17px !important;
 }
 @mixin propertiesFooterStyle{
 	font-weight: bold;
@@ -103,7 +104,7 @@ $myBorderGray: 1px solid darken(#F2F2F2, 5%)!important;
 	font-weight: bold;
 	text-shadow: $myTextShadow;
 	border-bottom: 1px solid $colorNavPanel;
-	padding-bottom: 8px;
+	padding-bottom: 5px;
 	margin-bottom: -38px;
 }
 @mixin myThLiStyle{
@@ -414,9 +415,9 @@ input[type="password"]{
 		text-align: right;
 		padding:0px;
 	}
-.oneStopService{
-	margin-bottom: 10px !important;
-}
+	.oneStopService{
+		margin-bottom: 10px !important;
+	}
 	.contactTextStyle{
 		font-size: 10px;
 		font-weight: bold;
@@ -436,19 +437,18 @@ input[type="password"]{
 		padding: 0px !important;
 
 	}
-	.realEstateRC{
-		font-family: 'Roboto Slab', serif;
-		color: $colorGray;
-		font-size: .6em;
-		margin-top: 1px;
-		text-shadow: $myTextShadow;
-		margin-left: -50px;
-		letter-spacing:1px;
-	}
 	.logoContent{
 		padding: 0px !important;
 		width: 120px !important;
 	}
+}
+.realEstateRC{
+	font-family: 'Roboto Slab', serif !important;
+	color: lighten($colorNavPanel, 30%) !important;
+	font-size: .6em !important;
+	margin-top: 10px !important;
+	padding-bottom: 5px !important;
+	letter-spacing:1px !important;
 }
 .logoContentRow{
 	margin-right: 0px !important;
@@ -800,6 +800,7 @@ label{
 	font-weight: normal !important;
 	letter-spacing: 1px !important;
 	border: 1px solid $colorFontOffWhite;
+	margin-bottom: 15px !important;
 }
 .pleaseSignInOneListing{
 	@extend .pleaseSignIn;
@@ -1088,8 +1089,8 @@ ul.ulagents li {
 .connectFooter{
 	@include connectFooterStyle;
 	
-
 }
+
 .vcard{
 	border: 0em;
 	margin-bottom: 0em !important;
@@ -1179,6 +1180,19 @@ footer{
 .social{
 	padding-top: 10px;
 	width: 125px;
+	hr { 
+		display: block; 
+		height: 1px;
+		border-top: 1px solid $colorNavPanel;
+		padding: 0; 
+		margin-bottom: 5px !important;
+		margin-top: 0px !important;
+	}
+}
+.propRent{
+	padding-top: 10px;
+	margin-right: 30px !important;
+	width:130px;
 	hr { 
 		display: block; 
 		height: 1px;
