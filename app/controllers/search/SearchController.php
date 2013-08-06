@@ -58,7 +58,7 @@ class SearchController extends BaseController {
    
 
 
-    return View::make('search.results')->with(compact('houses'))->with('Input', Input::all())->with('agents', parent::getRandomAgents());
+    return View::make('search.results')->with(compact('houses'))->with('agents', parent::getRandomAgents());
 
     }
     public function show($id)
